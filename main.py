@@ -11,34 +11,29 @@ from serpapi import GoogleSearch
 
 # ==========================================
 #              1. 全局配置区域 (CONFIG)
-#         ⚙️ 所有的数字都在这里！
+#         ⚙️ 纯净版：无魔法数字
 # ==========================================
 
 CONFIG = {
     # --- 文件路径 ---
-    "DATA_FILE": "data/reports.json",      # 【精华库】给前端/邮件看
-    "HISTORY_FILE": "data/history.json",   # 【黑名单】给爬虫去重用
+    "DATA_FILE": "data/reports.json",      # 【精华库】给前端/邮件看 (只存高分)
+    "HISTORY_FILE": "data/history.json",   # 【黑名单】给爬虫去重用 (存所有读过的)
     
-    # --- 核心容量控制 (无魔法数字!) ---
-    # 1. 黑名单容量: 必须远大于 MAX_SEARCH_DEPTH，否则会重复抓取旧文
-    "MAX_HISTORY_SIZE": 3000,         
-    
-    # 2. 精华库容量: reports.json 保留多少条高分文章供回看
-    "MAX_REPORT_SIZE": 500,           
-    
-    # 3. 邮件发送上限: 即使有100篇新文章，邮件里也只展示前 N 篇，防止邮件过大发不出去
-    "MAX_EMAIL_ITEM_LIMIT": 50,       
+    # --- 核心容量控制 ---
+    "MAX_HISTORY_SIZE": 3000,         # 黑名单容量 (必须 > 挖掘深度)
+    "MAX_REPORT_SIZE": 500,           # 精华库容量 (保留最近500篇高分)
+    "MAX_EMAIL_ITEM_LIMIT": 50,       # 邮件保护阀 (防止邮件过大发不出去)
     
     # --- 阈值设置 ---
-    "MIN_SCORE": 5.0,                 # 5分以上才有资格进 reports.json
+    "MIN_SCORE": 4.0,                 # 4分以上才有资格进 reports.json
     "PUSH_THRESHOLD": 6.0,            # 6分以上才推钉钉
     
-    "FINAL_SAVE_COUNT": 15,           # 每天最多新增 15 篇精华 (控制预算和阅读量)
+    "FINAL_SAVE_COUNT": 15,           # 每天最多收录 15 篇
     "DINGTALK_PUSH_LIMIT": 5,         # 钉钉只推 Top 5
     
     # --- 抓取设置 ---
     "CANDIDATE_POOL_SIZE": 20,        # 每次必须凑齐 N 篇【未读】文章喂给 AI
-    "MAX_SEARCH_DEPTH": 1000,         # ArXiv 最大翻页深度 (钻头长度)
+    "MAX_SEARCH_DEPTH": 1000,         # ArXiv 最大翻页深度
     
     "FETCH_COUNT_GOOGLE_PER_QUERY": 10, # Google 每个关键词抓 N 条
     
@@ -93,7 +88,6 @@ def fetch_arxiv_smart(history_titles):
     try:
         search = arxiv.Search(
             query=query,
-            # 使用配置中的最大深度
             max_results=CONFIG['MAX_SEARCH_DEPTH'], 
             sort_by=arxiv.SortCriterion.SubmittedDate,
             sort_order=arxiv.SortOrder.Descending
@@ -104,14 +98,17 @@ def fetch_arxiv_smart(history_titles):
             scanned += 1
             if not any(tag.startswith(('q-fin', 'cs', 'stat')) for tag in r.categories): continue
             
-            # === 核心去重 ===
-            # 把历史记录和当前标题都转成小写、去空格再比对
-            if r.title.strip().lower() in [t.strip().lower() for t in history_titles]:
-                continue
+            # === 简单去重 ===
+            # 只去除首尾空格，不做复杂的大小写转换
+            if r.title.strip() in history_titles:
+                continue 
                 
             candidates.append({
-                "title": r.title, "url": r.pdf_url, "source": "ArXiv",
-                "date": r.published.strftime("%Y-%m-%d"), "abstract": r.summary,
+                "title": r.title.strip(), # 存的时候也去一下空格
+                "url": r.pdf_url, 
+                "source": "ArXiv",
+                "date": r.published.strftime("%Y-%m-%d"), 
+                "abstract": r.summary,
                 "broker": "Cornell Univ" 
             })
             
@@ -132,9 +129,9 @@ def fetch_google_scholar():
     for base_query in CONFIG['GOOGLE_QUERIES']:
         try:
             params = {
-                "engine": "google_scholar", "q": f'{base_query} after:{CONFIG["SEARCH_YEAR"]}',
+                "engine": "google_scholar", 
+                "q": f'{base_query} after:{CONFIG["SEARCH_YEAR"]}',
                 "api_key": SERPAPI_KEY, 
-                # 使用配置中的数量
                 "num": CONFIG['FETCH_COUNT_GOOGLE_PER_QUERY'], 
                 "hl": "en"
             }
@@ -142,9 +139,12 @@ def fetch_google_scholar():
             for item in search.get_dict().get("organic_results", []):
                 if 'link' not in item: continue
                 all_results.append({
-                    "title": item.get("title"), "url": item.get("link"),
-                    "source": "Scholar", "date": datetime.datetime.now().strftime("%Y-%m-%d"),
-                    "abstract": item.get("snippet", item.get("title")), "broker": "Google Scholar"
+                    "title": item.get("title").strip(), # 去空格
+                    "url": item.get("link"),
+                    "source": "Scholar", 
+                    "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                    "abstract": item.get("snippet", item.get("title")), 
+                    "broker": "Google Scholar"
                 })
         except: pass
     return all_results
@@ -155,7 +155,6 @@ def fetch_google_scholar():
 
 def analyze_with_llm(item):
     try:
-        # 使用配置中的截断长度
         prompt = f"""
         你是一名量化交易员。评估以下论文对“实战交易”的价值。
         标题: {item['title']}
@@ -192,7 +191,7 @@ def send_email(subject, html):
     except: pass
 
 # ==========================================
-#              5. 主程序 (双文件 + 无魔法数字)
+#              5. 主程序 (Simple & Clean)
 # ==========================================
 
 def main():
@@ -208,10 +207,10 @@ def main():
         
     print(f"载入历史记录: {len(history_titles)} 条")
 
-    # 临时列表：用于存放本次新分析的标题 (追加到 history.json)
+    # 本次运行新增的已读标题 (无论分高低，都追加到这里)
     new_analyzed_titles = []
     
-    # 临时列表：用于存放本次入选的高分文章 (追加到 reports.json)
+    # 本次运行入选的高分文章 (追加到 reports.json)
     qualified_items = []
 
     # === 阶段一：ArXiv ===
@@ -219,23 +218,22 @@ def main():
     
     for item in candidates:
         if len(qualified_items) >= CONFIG['FINAL_SAVE_COUNT']:
-            print(">>> 今日高分名额已满，停止分析。")
+            print(">>> [ArXiv] 今日高分名额已满，停止分析。")
             break
             
         print(f"分析: {item['title'][:30]}...")
         result = analyze_with_llm(item)
         
-        # 只要分析过，就加入已读 (防止重复分析)
+        # 只要分析过，就记录 (用于去重)
         new_analyzed_titles.append(item['title'])
         
         if result['score'] >= CONFIG['MIN_SCORE']:
             item.update(result)
             item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
-            # 给个ID
             item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_" + str(len(qualified_items))
             qualified_items.append(item)
 
-    # === 阶段二：Scholar 补货 ===
+    # === 阶段二：Scholar 补货 (简单版去重) ===
     if len(qualified_items) < CONFIG['FINAL_SAVE_COUNT']:
         needed = CONFIG['FINAL_SAVE_COUNT'] - len(qualified_items)
         print(f">>> Scholar 补货 (缺 {needed} 条)...")
@@ -243,7 +241,11 @@ def main():
         scholar_candidates = fetch_google_scholar()
         for item in scholar_candidates:
             if len(qualified_items) >= CONFIG['FINAL_SAVE_COUNT']: break
+            
+            # --- 简单去重逻辑 ---
+            # 1. 查历史总账
             if item['title'] in history_titles: continue 
+            # 2. 查刚才 ArXiv 的账 (防止本次运行撞车)
             if item['title'] in new_analyzed_titles: continue 
             
             print(f"分析: {item['title'][:30]}...")
@@ -257,19 +259,18 @@ def main():
                 item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_s_" + str(len(qualified_items))
                 qualified_items.append(item)
 
-    # === 保存逻辑 (截断保护) ===
+    # === 保存逻辑 ===
     
-    # A. 保存 history.json
+    # A. 保存 history.json (所有标题，用于去重)
     if new_analyzed_titles:
         final_history = new_analyzed_titles + history_titles
-        # 【关键】使用 CONFIG 中的参数进行截断
         final_history = final_history[:CONFIG['MAX_HISTORY_SIZE']]
         
         os.makedirs(os.path.dirname(CONFIG["HISTORY_FILE"]), exist_ok=True)
         with open(CONFIG["HISTORY_FILE"], 'w', encoding='utf-8') as f:
             json.dump(final_history, f, ensure_ascii=False, indent=2)
             
-    # B. 保存 reports.json
+    # B. 保存 reports.json (仅高分文章，用于展示)
     if qualified_items:
         qualified_items.sort(key=lambda x: x['score'], reverse=True)
         
@@ -279,7 +280,6 @@ def main():
         else: old_reports = []
         
         final_reports = qualified_items + old_reports
-        # 【关键】使用 CONFIG 中的参数进行截断
         final_reports = final_reports[:CONFIG['MAX_REPORT_SIZE']]
         
         with open(CONFIG["DATA_FILE"], 'w', encoding='utf-8') as f:
@@ -287,7 +287,7 @@ def main():
 
         # === 推送逻辑 ===
         
-        # 1. 钉钉 (Top N)
+        # 1. 钉钉 (Top 5)
         top_picks = [r for r in qualified_items if r['score'] >= CONFIG['PUSH_THRESHOLD']]
         if top_picks:
             push_limit = CONFIG['DINGTALK_PUSH_LIMIT']
@@ -298,18 +298,16 @@ def main():
                 ding_md += f"\n> 💡 还有 {len(qualified_items)-push_limit} 篇已发邮箱。"
             send_dingtalk(ding_md)
 
-        # 2. 邮件 (限制邮件长度，防止发送失败)
-        # 【关键】使用 CONFIG 中的参数控制邮件列表长度
+        # 2. 邮件 (限制最大条数)
         email_items = qualified_items[:CONFIG['MAX_EMAIL_ITEM_LIMIT']]
-        
-        html = f"<h2>量化日报 ({len(email_items)}篇)</h2><hr>"
+        html = f"<h2>量化日报 ({len(qualified_items)}篇)</h2><hr>"
         for r in email_items:
             color = "red" if r['score']>=8 else "black"
             html += f"<div><h3><a href='{r['url']}'>{r['title']}</a> <span style='color:{color}'>({r['score']}分)</span></h3><p>{r['source']} | {r['date']}</p><div style='background:#f9f9f9;padding:10px'>{r['summary']}</div></div><br>"
-            
+        
         if len(qualified_items) > len(email_items):
-            html += f"<p>... (还有 {len(qualified_items) - len(email_items)} 篇未显示)</p>"
-            
+             html += f"<p>... (还有 {len(qualified_items) - len(email_items)} 篇未显示)</p>"
+
         send_email(f"量化日报 - {len(qualified_items)}篇", html)
         
         print(f">>> 成功更新: 新增历史 {len(new_analyzed_titles)} 条, 新增精华 {len(qualified_items)} 条")
