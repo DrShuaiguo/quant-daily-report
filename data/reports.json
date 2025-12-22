@@ -1,5 +1,65 @@
 [
   {
+    "title": "EXFormer: A Multi-Scale Trend-Aware Transformer with Dynamic Variable Selection for Foreign Exchange Returns Prediction",
+    "url": "https://arxiv.org/pdf/2512.12727v1",
+    "source": "ArXiv",
+    "date": "2025-12-14",
+    "abstract": "Accurately forecasting daily exchange rate returns represents a longstanding challenge in international finance, as the exchange rate returns are driven by a multitude of correlated market factors and exhibit high-frequency fluctuations. This paper proposes EXFormer, a novel Transformer-based architecture specifically designed for forecasting the daily exchange rate returns. We introduce a multi-scale trend-aware self-attention mechanism that employs parallel convolutional branches with differing receptive fields to align observations on the basis of local slopes, preserving long-range dependencies while remaining sensitive to regime shifts. A dynamic variable selector assigns time-varying importance weights to 28 exogenous covariates related to exchange rate returns, providing pre-hoc interpretability. An embedded squeeze-and-excitation block recalibrates channel responses to emphasize informative features and depress noise in the forecasting. Using the daily data for EUR/USD, USD/JPY, and GBP/USD, we conduct out-of-sample evaluations across five different sliding windows. EXFormer consistently outperforms the random walk and other baselines, improving directional accuracy by a statistically significant margin of up to 8.5--22.8%. In nearly one year of trading backtests, the model converts these gains into cumulative returns of 18%, 25%, and 18% for the three pairs, with Sharpe ratios exceeding 1.8. When conservative transaction costs and slippage are accounted for, EXFormer retains cumulative returns of 7%, 19%, and 9%, while other baselines achieve negative. The robustness checks further confirm the model's superiority under high-volatility and bear-market regimes. EXFormer furnishes both economically valuable forecasts and transparent, time-varying insights into the drivers of exchange rate dynamics for international investors, corporations, and central bank practitioners.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "准确预测每日汇率回报是国际金融领域长期存在的挑战，因为汇率回报受众多相关市场因素驱动且呈现高频波动。本文提出EXFormer，一种专门用于预测每日汇率回报的新型Transformer架构。我们引入多尺度趋势感知自注意力机制，采用具有不同感受野的并行卷积分支，基于局部斜率对齐观测值，在保持长期依赖关系的同时对市场状态转换保持敏感。动态变量选择器为28个与汇率回报相关的外生协变量分配时变重要性权重，提供事前可解释性。嵌入的挤压-激励模块重新校准通道响应，以强调信息特征并抑制预测中的噪声。使用欧元/美元、美元/日元和英镑/美元的日度数据，我们在五个不同滑动窗口上进行样本外评估。EXFormer始终优于随机游走和其他基线模型，显著提升了方向预测准确性。",
+    "fetch_date": "2025-12-22",
+    "id": "20251222_3"
+  },
+  {
+    "title": "Interpretable Hypothesis-Driven Trading:A Rigorous Walk-Forward Validation Framework for Market Microstructure Signals",
+    "url": "https://arxiv.org/pdf/2512.12924v1",
+    "source": "ArXiv",
+    "date": "2025-12-15",
+    "abstract": "We develop a rigorous walk-forward validation framework for algorithmic trading designed to mitigate overfitting and lookahead bias. Our methodology combines interpretable hypothesis-driven signal generation with reinforcement learning and strict out-of-sample testing. The framework enforces strict information set discipline, employs rolling window validation across 34 independent test periods, maintains complete interpretability through natural language hypothesis explanations, and incorporates realistic transaction costs and position constraints. Validating five market microstructure patterns across 100 US equities from 2015 to 2024, the system yields modest annualized returns (0.55%, Sharpe ratio 0.33) with exceptional downside protection (maximum drawdown -2.76%) and market-neutral characteristics (beta = 0.058). Performance exhibits strong regime dependence, generating positive returns during high-volatility periods (0.60% quarterly, 2020-2024) while underperforming in stable markets (-0.16%, 2015-2019). We report statistically insignificant aggregate results (p-value 0.34) to demonstrate a reproducible, honest validation protocol that prioritizes interpretability and extends naturally to advanced hypothesis generators, including large language models. The key empirical finding reveals that daily OHLCV-based microstructure signals require elevated information arrival and trading activity to function effectively. The framework provides complete mathematical specifications and open-source implementation, establishing a template for rigorous trading system evaluation that addresses the reproducibility crisis in quantitative finance research. For researchers, practitioners, and regulators, this work demonstrates that interpretable algorithmic trading strategies can be rigorously validated without sacrificing transparency or regulatory compliance.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "本文开发了一个严谨的前向验证框架，旨在减少算法交易中的过拟合和前瞻性偏差。该方法将可解释的假设驱动信号生成与强化学习及严格的样本外测试相结合。框架通过以下机制确保可靠性：严格的信息集约束、在34个独立测试周期上进行滚动窗口验证、通过自然语言假设解释保持完全可解释性，并纳入真实的交易成本和仓位限制。通过对2015年至2024年间100只美股的五种市场微观结构模式进行验证，系统实现了适度的年化收益（0.55%，夏普比率0.33），同时展现出卓越的下行保护（最大回撤-2.76%）和市场中性特征（贝塔系数=0.058）。研究发现绩效具有显著的市场状态依赖性：在高波动时期（2020-2024年）产生正收益（季度0.60%），而在稳定市场（2015-2019年）表现不佳（-0.16%）。作者报告了统计上不显著的总体结果（p值0.34），以展示一个可重复、诚实的验证协议，该协议优先考虑可解释性，并扩展了现有方法。",
+    "fetch_date": "2025-12-22",
+    "id": "20251222_1"
+  },
+  {
+    "title": "Deep Learning and Elicitability for McKean-Vlasov FBSDEs With Common Noise",
+    "url": "https://arxiv.org/pdf/2512.14967v1",
+    "source": "ArXiv",
+    "date": "2025-12-16",
+    "abstract": "We present a novel numerical method for solving McKean-Vlasov forward-backward stochastic differential equations (MV-FBSDEs) with common noise, combining Picard iterations, elicitability and deep learning. The key innovation involves elicitability to derive a path-wise loss function, enabling efficient training of neural networks to approximate both the backward process and the conditional expectations arising from common noise - without requiring computationally expensive nested Monte Carlo simulations. The mean-field interaction term is parameterized via a recurrent neural network trained to minimize an elicitable score, while the backward process is approximated through a feedforward network representing the decoupling field. We validate the algorithm on a systemic risk inter-bank borrowing and lending model, where analytical solutions exist, demonstrating accurate recovery of the true solution. We further extend the model to quantile-mediated interactions, showcasing the flexibility of the elicitability framework beyond conditional means or moments. Finally, we apply the method to a non-stationary Aiyagari--Bewley--Huggett economic growth model with endogenous interest rates, illustrating its applicability to complex mean-field games without closed-form solutions.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了一种新颖的数值方法，用于求解带有共同噪声的McKean-Vlasov前向-后向随机微分方程（MV-FBSDEs）。该方法结合了Picard迭代、可引出性（elicitability）和深度学习技术。核心创新在于利用可引出性推导出路径损失函数，从而能够高效训练神经网络来近似后向过程以及由共同噪声产生的条件期望，避免了计算成本高昂的嵌套蒙特卡洛模拟。其中，平均场交互项通过一个循环神经网络（RNN）进行参数化，该网络通过最小化可引出性得分进行训练；而后向过程则通过一个前馈网络来近似解耦场。作者在存在解析解的系统性风险银行间借贷模型上验证了算法的有效性，并准确恢复了真实解。此外，该方法还扩展到分位数介导的交互模型，展示了可引出性框架在超越条件均值或矩的灵活性。最后，作者将该方法应用于具有内生利率的非平稳Aiyagari-Bewley-Huggett经济增长模型，进一步证明了其适用性。",
+    "fetch_date": "2025-12-22",
+    "id": "20251222_0"
+  },
+  {
+    "title": "Empirical Mode Decomposition and Graph Transformation of the MSCI World Index: A Multiscale Topological Analysis for Graph Neural Network Modeling",
+    "url": "https://arxiv.org/pdf/2512.12526v1",
+    "source": "ArXiv",
+    "date": "2025-12-14",
+    "abstract": "This study applies Empirical Mode Decomposition (EMD) to the MSCI World index and converts the resulting intrinsic mode functions (IMFs) into graph representations to enable modeling with graph neural networks (GNNs). Using CEEMDAN, we extract nine IMFs spanning high-frequency fluctuations to long-term trends. Each IMF is transformed into a graph using four time-series-to-graph methods: natural visibility, horizontal visibility, recurrence, and transition graphs. Topological analysis shows clear scale-dependent structure: high-frequency IMFs yield dense, highly connected small-world graphs, whereas low-frequency IMFs produce sparser networks with longer characteristic path lengths. Visibility-based methods are more sensitive to amplitude variability and typically generate higher clustering, while recurrence graphs better preserve temporal dependencies. These results provide guidance for designing GNN architectures tailored to the structural properties of decomposed components, supporting more effective predictive modeling of financial time series.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本研究对MSCI World指数应用经验模态分解（EMD），将分解得到的本征模态函数（IMFs）转化为图结构，以便使用图神经网络（GNNs）进行建模。通过CEEMDAN方法，我们提取了九个IMF，涵盖了从高频波动到长期趋势的不同尺度。每个IMF通过四种时间序列转图方法（自然可见性图、水平可见性图、递归图和转移图）转化为图表示。拓扑分析显示明显的尺度依赖结构：高频IMF产生密集、高度连接的小世界图，而低频IMF则生成更稀疏、特征路径长度更长的网络。基于可见性的方法对振幅变化更敏感，通常产生更高的聚类系数，而递归图能更好地保留时间依赖性。这些结果为设计针对分解成分结构特性的GNN架构提供了指导，有助于更有效地预测金融时间序列。",
+    "fetch_date": "2025-12-22",
+    "id": "20251222_4"
+  },
+  {
+    "title": "Credit Risk Estimation with Non-Financial Features: Evidence from a Synthetic Istanbul Dataset",
+    "url": "https://arxiv.org/pdf/2512.12783v2",
+    "source": "ArXiv",
+    "date": "2025-12-14",
+    "abstract": "Financial exclusion constrains entrepreneurship, increases income volatility, and widens wealth gaps. Underbanked consumers in Istanbul often have no bureau file because their earnings and payments flow through informal channels. To study how such borrowers can be evaluated we create a synthetic dataset of one hundred thousand Istanbul residents that reproduces first quarter 2025 TÜİK census marginals and telecom usage patterns. Retrieval augmented generation feeds these public statistics into the OpenAI o3 model, which synthesises realistic yet private records. Each profile contains seven socio demographic variables and nine alternative attributes that describe phone specifications, online shopping rhythm, subscription spend, car ownership, monthly rent, and a credit card flag. To test the impact of the alternative financial data CatBoost, LightGBM, and XGBoost are each trained in two versions. Demo models use only the socio demographic variables; Full models include both socio demographic and alternative attributes. Across five fold stratified validation the alternative block raises area under the curve by about one point three percentage and lifts balanced \\(F_{1}\\) from roughly 0.84 to 0.95, a fourteen percent gain. We contribute an open Istanbul 2025 Q1 synthetic dataset, a fully reproducible modeling pipeline, and empirical evidence that a concise set of behavioural attributes can approach bureau level discrimination power while serving borrowers who lack formal credit records. These findings give lenders and regulators a transparent blueprint for extending fair and safe credit access to the underbanked.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "金融排斥会限制创业、增加收入波动并扩大财富差距。伊斯坦布尔的银行服务不足消费者由于收入和支付通过非正规渠道流动，往往没有信用局档案。为了研究如何评估这类借款人，我们创建了一个包含十万名伊斯坦布尔居民的综合数据集，该数据集复制了2025年第一季度土耳其统计局（TÜİK）的人口普查边际和电信使用模式。检索增强生成技术将这些公共统计数据输入OpenAI o3模型，合成了真实但私密的记录。每个档案包含七个社会人口统计变量和九个替代属性，描述手机规格、在线购物节奏、订阅支出、汽车拥有情况、月租金和信用卡标志。为了测试替代金融数据的影响，我们分别训练了CatBoost、LightGBM和XGBoost的两个版本：演示模型仅使用社会人口统计变量；完整模型同时包含社会人口统计和替代属性。在五折分层验证中，替代数据块使曲线下面积提高了约1.3个百分点，并将平衡F1分数从大约...",
+    "fetch_date": "2025-12-22",
+    "id": "20251222_2"
+  },
+  {
     "title": "Adaptive quantitative trading: An imitative deep reinforcement learning approach",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5587",
     "source": "Scholar",
