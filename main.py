@@ -26,8 +26,8 @@ CONFIG = {
     "DINGTALK_PUSH_LIMIT": 5,         # 钉钉最多推送几篇 (防止刷屏)
     
     # --- 抓取源设置 ---
-    "FETCH_COUNT_ARXIV": 100,          # ArXiv 原始抓取量
-    "FETCH_COUNT_GOOGLE_PER_QUERY": 10,# Google 每个关键词抓取量
+    "FETCH_COUNT_ARXIV": 50,          # ArXiv 原始抓取量
+    "FETCH_COUNT_GOOGLE_PER_QUERY": 5,# Google 每个关键词抓取量
     
     # --- 文本处理 ---
     "MAX_TEXT_LENGTH_FOR_AI": 1200,   # 喂给 AI 的摘要最大长度 (字符数)
