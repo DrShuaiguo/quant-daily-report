@@ -1,0 +1,6 @@
+requests
+pandas
+akshare
+arxiv
+openai
+google-search-results
