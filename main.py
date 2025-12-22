@@ -30,7 +30,7 @@ CONFIG = {
     "MAX_EMAIL_ITEM_LIMIT": 50,       
     
     # --- 阈值设置 ---
-    "MIN_SCORE": 4.0,                 # 4分以上才有资格进 reports.json
+    "MIN_SCORE": 5.0,                 # 5分以上才有资格进 reports.json
     "PUSH_THRESHOLD": 6.0,            # 6分以上才推钉钉
     
     "FINAL_SAVE_COUNT": 15,           # 每天最多新增 15 篇精华 (控制预算和阅读量)
