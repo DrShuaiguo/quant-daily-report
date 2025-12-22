@@ -221,13 +221,13 @@ def send_email(subject, html_content):
         print(f"邮件发送失败: {e}")
 
 # ==========================================
-#              5. 主程序入口
+#              5. 主程序入口 (逻辑修复版)
 # ==========================================
 
 def main():
     print(">>> 任务开始")
     
-    # 1. 加载历史
+    # 1. 加载历史 (避免重复)
     history_ids = []
     if os.path.exists(CONFIG["DATA_FILE"]):
         try:
@@ -236,59 +236,77 @@ def main():
                 history_ids = [item.get('title') for item in old_data]
         except: pass
 
-    # 2. 抓取
+    # 2. 抓取 (ArXiv + Scholar)
+    # 建议：为了防止 ArXiv 太多，可以把 Scholar 放在前面，或者打乱顺序
+    # 但最稳妥的还是“全部分析，最后排序”
     raw_items = []
+    raw_items += fetch_google_scholar() # 把 Scholar 放到前面抓
     raw_items += fetch_arxiv()
-    raw_items += fetch_google_scholar()
     
-    print(f">>> 共抓取到 {len(raw_items)} 条，开始 AI 翻译...")
+    print(f">>> 共抓取到 {len(raw_items)} 条，开始 AI 翻译与评分...")
+    print(">>> 注意：将对所有内容进行打分，这可能需要 1-2 分钟...")
 
-    # 3. AI 分析
-    new_qualified = []
+    # 3. AI 分析 (移除 break 限制，让大家公平竞争)
+    processed_items = []
     
     for item in raw_items:
-        if item['title'] in history_ids: continue
+        # 去重
+        if item['title'] in history_ids: 
+            continue
             
-        print(f"正在翻译: {item['title'][:30]}...")
+        print(f"正在分析: [{item['source']}] {item['title'][:30]}...")
         result = analyze_with_llm(item)
         
+        # 只要分数达标，先存进临时列表
         if result['score'] >= CONFIG['MIN_SCORE']:
             item['score'] = result['score']
-            item['summary'] = result['summary'] # 这里现在是详细的中文翻译
+            item['summary'] = result['summary']
             item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
-            item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_" + str(len(new_qualified))
+            # 临时 ID
+            item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_" + str(len(processed_items))
             
-            new_qualified.append(item)
-            if len(new_qualified) >= CONFIG['FINAL_SAVE_COUNT']: break
+            processed_items.append(item)
+            
+    # 4. 排序与截断 (关键修改)
+    # 先按分数从高到低排序
+    processed_items.sort(key=lambda x: x['score'], reverse=True)
     
-    new_qualified.sort(key=lambda x: x['score'], reverse=True)
+    # 然后只取前 N 名 (精英策略)
+    new_qualified = processed_items[:CONFIG['FINAL_SAVE_COUNT']]
+    
+    print(f">>> 经 AI 筛选，共有 {len(new_qualified)} 条入选今日日报")
 
-    # 4. 推送
+    # 5. 推送逻辑
     if new_qualified:
-        print(f">>> 正在推送 {len(new_qualified)} 条内容...")
-        
-        # 保存
+        # A. 保存到 JSON
         if os.path.exists(CONFIG["DATA_FILE"]):
             with open(CONFIG["DATA_FILE"], 'r', encoding='utf-8') as f:
                 current = json.load(f)
         else: current = []
+        
+        # 把最新的插到最前面
         final_data = new_qualified + current
         with open(CONFIG["DATA_FILE"], 'w', encoding='utf-8') as f:
             json.dump(final_data[:CONFIG['MAX_HISTORY']], f, ensure_ascii=False, indent=2)
 
-        # 钉钉推送
+        # B. 钉钉推送 (推送前 5 条)
         top_picks = [r for r in new_qualified if r['score'] >= CONFIG['PUSH_THRESHOLD']]
+        # 如果虽然入选了，但分数都没达到推送门槛，就不推钉钉
         if top_picks:
+            # 取前 5 个，或者全部 top_picks 中较少的那个
+            push_list = top_picks[:5]
+            
             ding_md = "# 📅 今日量化论文摘要\n\n"
-            for r in top_picks[:5]:
-                # 钉钉里引用中文摘要
+            for r in push_list:
                 ding_md += f"### {r['title']}\n"
                 ding_md += f"**{r['score']}分** | {r['source']}\n\n"
                 ding_md += f"> **中文摘要**：\n> {r['summary']}\n\n"
                 ding_md += f"[📄 原文链接]({r['url']})\n\n---\n"
             send_dingtalk(ding_md)
+        else:
+            print(">>> 虽然有入选文章，但分数均未达到推送门槛 (PUSH_THRESHOLD)，跳过钉钉。")
 
-        # 邮件推送 (HTML 优化版)
+        # C. 邮件推送 (推送所有入选的，最多 15 条)
         email_html = "<h2>📅 今日量化交易学术精选</h2><hr>"
         for r in new_qualified:
             color = "red" if r['score'] >= 8 else "black"
@@ -302,7 +320,7 @@ def main():
                 </div>
             </div>
             """
-        send_email(f"量化日报 ({datetime.date.today()}) - AI中文精读", email_html)
+        send_email(f"量化日报 ({datetime.date.today()}) - {len(new_qualified)}篇 AI 精读", email_html)
         
     else:
         print(">>> 无更新。")
