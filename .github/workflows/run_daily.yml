@@ -33,7 +33,7 @@ jobs:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
         SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-      run: python main.py
+      run: python test_ding.py
 
     # === 关键修改在这里 ===
     - name: Commit and push changes
