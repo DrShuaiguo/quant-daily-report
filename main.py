@@ -105,8 +105,9 @@ def fetch_arxiv_smart(history_titles):
             if not any(tag.startswith(('q-fin', 'cs', 'stat')) for tag in r.categories): continue
             
             # === 核心去重 ===
-            if r.title in history_titles:
-                continue 
+            # 把历史记录和当前标题都转成小写、去空格再比对
+            if r.title.strip().lower() in [t.strip().lower() for t in history_titles]:
+                continue
                 
             candidates.append({
                 "title": r.title, "url": r.pdf_url, "source": "ArXiv",
