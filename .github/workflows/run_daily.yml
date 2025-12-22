@@ -1,38 +1,31 @@
-name: Quant Daily Report # 任务名称
+name: Quant Daily Report
 
 on:
   schedule:
-    # 定时任务：每天 UTC 0:00 (北京时间 08:00) 运行
-    - cron: '0 0 * * *'
-  # 允许手动点击按钮触发 (方便你测试)
+    - cron: '0 0 * * *' # 北京时间 08:00
   workflow_dispatch:
 
 permissions:
-  contents: write # 赋予脚本修改仓库文件的权限 (为了保存 reports.json)
+  contents: write
 
 jobs:
   build-and-run:
-    runs-on: ubuntu-latest # 使用最新的 Linux 服务器
+    runs-on: ubuntu-latest
 
     steps:
-    # 1. 把代码拉取到服务器
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 2. 安装 Python 环境
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
-    # 3. 安装依赖库 (根据 requirements.txt)
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # 4. 运行核心脚本 main.py
-    # 注意：这里把 Secrets 注入到环境变量里，脚本才能读到
     - name: Run daily report script
       env:
         LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -42,12 +35,20 @@ jobs:
         SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
       run: python main.py
 
-    # 5. 如果 reports.json 有更新，提交保存回仓库
+    # === 关键修改在这里 ===
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
+        
+        # 1. 先把生成的文件加入暂存区
         git add data/reports.json
-        # 如果有变化才提交，否则不报错
-        git commit -m "Update daily reports data" || exit 0
-        git push
+        
+        # 2. 尝试提交 (如果没有变化，这步会跳过，不会报错)
+        git commit -m "Update daily reports data" || echo "No changes to commit"
+        
+        # 3. 关键一步：拉取远程最新代码并变基 (解决冲突)
+        git pull origin main --rebase
+        
+        # 4. 推送
+        git push origin main
