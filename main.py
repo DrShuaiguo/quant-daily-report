@@ -61,8 +61,10 @@ client = OpenAI(api_key=LLM_API_KEY, base_url="https://api.deepseek.com")
 # ==========================================
 
 def fetch_arxiv():
-    """抓取 ArXiv"""
+    """抓取 ArXiv (修复版：适配 arxiv 库新版本)"""
     print(f"--- 正在抓取 ArXiv ---")
+    
+    # 构造查询语句
     keywords_query = " OR ".join([f'"{k}"' for k in CONFIG['ARXIV_KEYWORDS']])
     query = f'(cat:q-fin.* OR cat:cs.AI) AND ({keywords_query})'
     
@@ -72,11 +74,15 @@ def fetch_arxiv():
             max_results=CONFIG['FETCH_COUNT_ARXIV'],
             sort_by=arxiv.SortCriterion.SubmittedDate
         )
+        
         results = []
         for r in search.results():
-            # 简单分类过滤
-            if not any(tag.startswith(('q-fin', 'cs', 'stat')) for tag in [t.term for t in r.categories]):
+            # === 修复点开始 ===
+            # 新版 arxiv 库中，r.categories 本身就是 ['q-fin.CP', 'cs.AI'] 这样的字符串列表
+            # 所以直接判断字符串即可，不需要 .term
+            if not any(tag.startswith(('q-fin', 'cs', 'stat')) for tag in r.categories):
                 continue
+            # === 修复点结束 ===
 
             results.append({
                 "title": r.title,
@@ -90,6 +96,9 @@ def fetch_arxiv():
         return results
     except Exception as e:
         print(f"ArXiv 抓取失败: {e}")
+        # 为了调试，打印一下错误详情
+        import traceback
+        traceback.print_exc()
         return []
 
 def fetch_google_scholar():
@@ -170,20 +179,30 @@ def analyze_with_llm(item):
         return {"score": 6.0, "summary": "AI 翻译失败，请查看原文。"}
 
 def send_dingtalk(msg_markdown):
-    """发送钉钉 (支持长文本)"""
-    if not DINGTALK_WEBHOOK: return
+    """发送钉钉消息 (调试版)"""
+    if not DINGTALK_WEBHOOK: 
+        print(">>> 警告: 未配置 DINGTALK_WEBHOOK，跳过钉钉推送")
+        return
+    
     try:
         headers = {"Content-Type": "application/json"}
         data = {
             "msgtype": "markdown",
             "markdown": {
-                "title": "量化日报",
+                "title": "量化日报推送", # 注意：如果你的关键词设为'量化'，这个标题能命中
                 "text": msg_markdown
             }
         }
-        requests.post(DINGTALK_WEBHOOK, json=data)
+        
+        # 发送请求
+        response = requests.post(DINGTALK_WEBHOOK, json=data)
+        
+        # === 关键修改：打印钉钉服务器的回复 ===
+        print(f"钉钉发送状态码: {response.status_code}")
+        print(f"钉钉响应内容: {response.text}")
+        
     except Exception as e:
-        print(f"钉钉发送失败: {e}")
+        print(f"钉钉请求发生异常: {e}")
 
 def send_email(subject, html_content):
     """发送邮件"""
