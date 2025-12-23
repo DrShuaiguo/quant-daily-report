@@ -1,0 +1,38 @@
+name: Daily Finance News
+
+on:
+  schedule:
+    # 比如：北京时间早上 7:00 运行 (UTC 23:00)
+    # 早起先看宏观新闻，8点再看论文
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      # 记得确保 requirements.txt 里加了 feedparser
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run News Crawler
+      env:
+        LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        # 新闻不需要 SerpApi，也不需要存 JSON 历史
+      run: python news_main.py
