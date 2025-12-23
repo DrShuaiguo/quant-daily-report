@@ -4,3 +4,4 @@ akshare
 arxiv
 openai
 google-search-results
+feedparser
