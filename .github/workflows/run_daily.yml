@@ -2,7 +2,7 @@ name: Quant Daily Report
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 北京时间 08:00
+    - cron: '0 19 * * *' # 北京时间 03:00
   workflow_dispatch:
 
 permissions:
