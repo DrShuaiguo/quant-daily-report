@@ -2,7 +2,7 @@ name: Quant Daily Report
 
 on:
   schedule:
-    - cron: '0 19 * * *' # 北京时间 03:00
+    - cron: '0 19 * * *' # 北京时间 03:00 (UTC 19:00)
   workflow_dispatch:
 
 permissions:
@@ -41,13 +41,14 @@ jobs:
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         
-        # 1. 先把生成的文件加入暂存区
-        git add data/reports.json
+        # 🔥 修改点：使用通配符 *.json
+        # 必须同时保存 history.json (记忆) 和 reports.json (结果)
+        git add data/*.json
         
-        # 2. 尝试提交 (如果没有变化，这步会跳过，不会报错)
-        git commit -m "Update daily reports data" || echo "No changes to commit"
+        # 2. 尝试提交
+        git commit -m "🤖 Auto-update data (Reports & History)" || echo "No changes to commit"
         
-        # 3. 关键一步：拉取远程最新代码并变基 (解决冲突)
+        # 3. 拉取最新代码并变基 (防止冲突)
         git pull origin main --rebase
         
         # 4. 推送
