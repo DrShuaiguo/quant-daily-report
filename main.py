@@ -4,6 +4,7 @@ import datetime
 import requests
 import smtplib
 import arxiv
+import hashlib  # ✅ 新增：用于生成唯一 ID
 from email.mime.text import MIMEText
 from email.header import Header
 from openai import OpenAI
@@ -11,34 +12,34 @@ from serpapi import GoogleSearch
 
 # ==========================================
 #              1. 全局配置区域 (CONFIG)
-#         ⚙️ 纯净版：无魔法数字
+#          ⚙️ 纯净版：无魔法数字
 # ==========================================
 
 CONFIG = {
     # --- 文件路径 ---
-    "DATA_FILE": "data/reports.json",      # 【精华库】给前端/邮件看 (只存高分)
-    "HISTORY_FILE": "data/history.json",   # 【黑名单】给爬虫去重用 (存所有读过的)
+    "DATA_FILE": "data/reports.json",       # 【精华库】给前端/邮件看 (只存高分)
+    "HISTORY_FILE": "data/history.json",    # 【黑名单】给爬虫去重用 (存所有读过的)
     
     # --- 核心容量控制 ---
-    "MAX_HISTORY_SIZE": 3000,         # 黑名单容量 (必须 > 挖掘深度)
-    "MAX_REPORT_SIZE": 500,           # 精华库容量 (保留最近500篇高分)
-    "MAX_EMAIL_ITEM_LIMIT": 50,       # 邮件保护阀 (防止邮件过大发不出去)
+    "MAX_HISTORY_SIZE": 3000,          # 黑名单容量 (必须 > 挖掘深度)
+    "MAX_REPORT_SIZE": 500,            # 精华库容量 (保留最近500篇高分)
+    "MAX_EMAIL_ITEM_LIMIT": 50,        # 邮件保护阀 (防止邮件过大发不出去)
     
     # --- 阈值设置 ---
-    "MIN_SCORE": 4.0,                 # 4分以上才有资格进 reports.json
-    "PUSH_THRESHOLD": 6.0,            # 6分以上才推钉钉
+    "MIN_SCORE": 4.0,                  # 4分以上才有资格进 reports.json
+    "PUSH_THRESHOLD": 6.0,             # 6分以上才推钉钉
     
-    "FINAL_SAVE_COUNT": 15,           # 每天最多收录 15 篇
-    "DINGTALK_PUSH_LIMIT": 5,         # 钉钉只推 Top 5
+    "FINAL_SAVE_COUNT": 15,            # 每天最多收录 15 篇
+    "DINGTALK_PUSH_LIMIT": 5,          # 钉钉只推 Top 5
     
     # --- 抓取设置 ---
-    "CANDIDATE_POOL_SIZE": 20,        # 每次必须凑齐 N 篇【未读】文章喂给 AI
-    "MAX_SEARCH_DEPTH": 1000,         # ArXiv 最大翻页深度
+    "CANDIDATE_POOL_SIZE": 20,         # 每次必须凑齐 N 篇【未读】文章喂给 AI
+    "MAX_SEARCH_DEPTH": 1000,          # ArXiv 最大翻页深度
     
     "FETCH_COUNT_GOOGLE_PER_QUERY": 10, # Google 每个关键词抓 N 条
     
-    "MAX_TEXT_LENGTH_FOR_AI": 1200,   # 摘要截断长度
-    "SEARCH_YEAR": "2024",            # 搜索年份
+    "MAX_TEXT_LENGTH_FOR_AI": 1200,    # 摘要截断长度
+    "SEARCH_YEAR": "2024",             # 搜索年份
     
     # --- 关键词 ---
     "ARXIV_KEYWORDS": [
@@ -70,8 +71,25 @@ SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
 client = OpenAI(api_key=LLM_API_KEY, base_url="https://api.deepseek.com")
 
 # ==========================================
-#              3. 抓取函数
+#              3. 核心工具函数
 # ==========================================
+
+def generate_stable_id(item):
+    """
+    ✅ 生成稳定的唯一 ID
+    规则：YYYYMMDD_MD5(URL或标题的前8位)
+    """
+    # 优先用 URL 做唯一标识，没有则用标题
+    unique_source = item.get('url') or item.get('title')
+    if not unique_source:
+        unique_source = str(datetime.datetime.now()) # 极端的保底
+        
+    # 生成 MD5 哈希
+    hash_obj = hashlib.md5(unique_source.encode('utf-8'))
+    hash_str = hash_obj.hexdigest()[:8] # 取前8位足够了，碰撞概率极低
+    
+    today_str = datetime.datetime.now().strftime("%Y%m%d")
+    return f"{today_str}_{hash_str}"
 
 def fetch_arxiv_smart(history_titles):
     """
@@ -99,12 +117,11 @@ def fetch_arxiv_smart(history_titles):
             if not any(tag.startswith(('q-fin', 'cs', 'stat')) for tag in r.categories): continue
             
             # === 简单去重 ===
-            # 只去除首尾空格，不做复杂的大小写转换
             if r.title.strip() in history_titles:
                 continue 
                 
             candidates.append({
-                "title": r.title.strip(), # 存的时候也去一下空格
+                "title": r.title.strip(),
                 "url": r.pdf_url, 
                 "source": "ArXiv",
                 "date": r.published.strftime("%Y-%m-%d"), 
@@ -139,7 +156,7 @@ def fetch_google_scholar():
             for item in search.get_dict().get("organic_results", []):
                 if 'link' not in item: continue
                 all_results.append({
-                    "title": item.get("title").strip(), # 去空格
+                    "title": item.get("title").strip(),
                     "url": item.get("link"),
                     "source": "Scholar", 
                     "date": datetime.datetime.now().strftime("%Y-%m-%d"),
@@ -191,7 +208,7 @@ def send_email(subject, html):
     except: pass
 
 # ==========================================
-#              5. 主程序 (Simple & Clean)
+#              5. 主程序
 # ==========================================
 
 def main():
@@ -224,13 +241,15 @@ def main():
         print(f"分析: {item['title'][:30]}...")
         result = analyze_with_llm(item)
         
-        # 只要分析过，就记录 (用于去重)
         new_analyzed_titles.append(item['title'])
         
         if result['score'] >= CONFIG['MIN_SCORE']:
             item.update(result)
             item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
-            item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_" + str(len(qualified_items))
+            
+            # 🔥🔥🔥 修复核心：使用 Hash 生成唯一且固定的 ID
+            item['id'] = generate_stable_id(item)
+            
             qualified_items.append(item)
 
     # === 阶段二：Scholar 补货 (简单版去重) ===
@@ -242,10 +261,7 @@ def main():
         for item in scholar_candidates:
             if len(qualified_items) >= CONFIG['FINAL_SAVE_COUNT']: break
             
-            # --- 简单去重逻辑 ---
-            # 1. 查历史总账
             if item['title'] in history_titles: continue 
-            # 2. 查刚才 ArXiv 的账 (防止本次运行撞车)
             if item['title'] in new_analyzed_titles: continue 
             
             print(f"分析: {item['title'][:30]}...")
@@ -256,12 +272,15 @@ def main():
             if result['score'] >= CONFIG['MIN_SCORE']:
                 item.update(result)
                 item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
-                item['id'] = datetime.datetime.now().strftime("%Y%m%d") + "_s_" + str(len(qualified_items))
+                
+                # 🔥🔥🔥 修复核心：使用 Hash 生成唯一且固定的 ID
+                item['id'] = generate_stable_id(item)
+                
                 qualified_items.append(item)
 
     # === 保存逻辑 ===
     
-    # A. 保存 history.json (所有标题，用于去重)
+    # A. 保存 history.json
     if new_analyzed_titles:
         final_history = new_analyzed_titles + history_titles
         final_history = final_history[:CONFIG['MAX_HISTORY_SIZE']]
@@ -270,7 +289,7 @@ def main():
         with open(CONFIG["HISTORY_FILE"], 'w', encoding='utf-8') as f:
             json.dump(final_history, f, ensure_ascii=False, indent=2)
             
-    # B. 保存 reports.json (仅高分文章，用于展示)
+    # B. 保存 reports.json
     if qualified_items:
         qualified_items.sort(key=lambda x: x['score'], reverse=True)
         
@@ -279,6 +298,7 @@ def main():
                 old_reports = json.load(f)
         else: old_reports = []
         
+        # 将新数据加到旧数据前面
         final_reports = qualified_items + old_reports
         final_reports = final_reports[:CONFIG['MAX_REPORT_SIZE']]
         
