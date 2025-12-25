@@ -1,10 +1,11 @@
 import os
 import json
 import datetime
+from datetime import timedelta, timezone # ✅ 新增：用于处理时区
 import requests
 import smtplib
 import arxiv
-import hashlib  # ✅ 新增：用于生成唯一 ID
+import hashlib
 from email.mime.text import MIMEText
 from email.header import Header
 from openai import OpenAI
@@ -45,7 +46,7 @@ CONFIG = {
     "ARXIV_KEYWORDS": [
         "quantitative finance", "factor model", "portfolio optimization",
         "deep learning trading", "reinforcement learning trading", 
-        "machine learning trading", "algorithm trading",          
+        "machine learning trading", "algorithm trading",           
         "market microstructure", "risk premia", "quantitative trading",
         "deep reinforcement learning", "transformer finance",
         "large language model trading"
@@ -74,21 +75,31 @@ client = OpenAI(api_key=LLM_API_KEY, base_url="https://api.deepseek.com")
 #              3. 核心工具函数
 # ==========================================
 
+def get_beijing_now():
+    """
+    ✅ 新增：获取当前的北京时间 (UTC+8)
+    解决 GitHub Action 默认 UTC 时间导致日期错误的问题
+    """
+    utc_now = datetime.datetime.now(timezone.utc)
+    beijing_now = utc_now + timedelta(hours=8)
+    return beijing_now
+
 def generate_stable_id(item):
     """
-    ✅ 生成稳定的唯一 ID
+    生成稳定的唯一 ID
     规则：YYYYMMDD_MD5(URL或标题的前8位)
     """
     # 优先用 URL 做唯一标识，没有则用标题
     unique_source = item.get('url') or item.get('title')
     if not unique_source:
-        unique_source = str(datetime.datetime.now()) # 极端的保底
+        unique_source = str(get_beijing_now()) # 极端的保底
         
     # 生成 MD5 哈希
     hash_obj = hashlib.md5(unique_source.encode('utf-8'))
     hash_str = hash_obj.hexdigest()[:8] # 取前8位足够了，碰撞概率极低
     
-    today_str = datetime.datetime.now().strftime("%Y%m%d")
+    # ✅ 修改：使用北京时间生成日期前缀
+    today_str = get_beijing_now().strftime("%Y%m%d")
     return f"{today_str}_{hash_str}"
 
 def fetch_arxiv_smart(history_titles):
@@ -159,7 +170,8 @@ def fetch_google_scholar():
                     "title": item.get("title").strip(),
                     "url": item.get("link"),
                     "source": "Scholar", 
-                    "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                    # ✅ 修改：使用北京时间
+                    "date": get_beijing_now().strftime("%Y-%m-%d"),
                     "abstract": item.get("snippet", item.get("title")), 
                     "broker": "Google Scholar"
                 })
@@ -245,9 +257,9 @@ def main():
         
         if result['score'] >= CONFIG['MIN_SCORE']:
             item.update(result)
-            item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
+            # ✅ 修改：使用北京时间记录收录日期
+            item['fetch_date'] = get_beijing_now().strftime("%Y-%m-%d")
             
-            # 🔥🔥🔥 修复核心：使用 Hash 生成唯一且固定的 ID
             item['id'] = generate_stable_id(item)
             
             qualified_items.append(item)
@@ -271,9 +283,9 @@ def main():
             
             if result['score'] >= CONFIG['MIN_SCORE']:
                 item.update(result)
-                item['fetch_date'] = datetime.datetime.now().strftime("%Y-%m-%d")
+                # ✅ 修改：使用北京时间记录收录日期
+                item['fetch_date'] = get_beijing_now().strftime("%Y-%m-%d")
                 
-                # 🔥🔥🔥 修复核心：使用 Hash 生成唯一且固定的 ID
                 item['id'] = generate_stable_id(item)
                 
                 qualified_items.append(item)
