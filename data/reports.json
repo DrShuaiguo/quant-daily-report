@@ -1,5 +1,41 @@
 [
   {
+    "title": "Deep learning based hybrid transformer model for stock price prediction",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10894439/",
+    "source": "Scholar",
+    "date": "2026-02-19",
+    "abstract": "… The backtesting of this study on global indices further displays that the Transformer proves to be even more superior to traditional methods and can offer investors with avenues to earn …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "本研究提出了一种基于深度学习的混合Transformer模型用于股票价格预测。该模型在全球指数上的回测结果显示，Transformer模型相比传统方法表现更优，能为投资者提供盈利途径。",
+    "fetch_date": "2026-02-19",
+    "id": "20260219_1c77b35c"
+  },
+  {
+    "title": "Generalizable Multi-Agent Framework for Quantitative Trading of US Education Funds",
+    "url": "https://ojs.sgsci.org/journals/iaet/article/view/362",
+    "source": "Scholar",
+    "date": "2026-02-19",
+    "abstract": "… employing LLM debates among agents with different roles. … -Driven Agents Reinforcement learning methods align LLM outputs … and reflection to refine LLM predictions based on market …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文提出了一种可泛化的多智能体框架，用于美国教育基金的量化交易。通过在不同角色的智能体之间进行大型语言模型（LLM）辩论，并结合强化学习方法对齐LLM输出，以及基于市场反馈的反思机制来优化LLM预测。",
+    "fetch_date": "2026-02-19",
+    "id": "20260219_899c9b90"
+  },
+  {
+    "title": "LLM-Guided Evolutionary Strategy Generation for Quantitative Trading",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11343400/",
+    "source": "Scholar",
+    "date": "2026-02-19",
+    "abstract": "… Quantitative Trading with LLMs The application of LLMs in quantitative trading is becoming … [6] systematically reviews the current research status of LLMs as financial trading agents, …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文探讨了利用大语言模型（LLMs）指导进化策略生成在量化交易中的应用。摘要指出，LLMs作为金融交易代理的研究正在兴起，并系统回顾了当前LLMs在量化交易领域的研究现状。论文聚焦于通过LLMs生成和优化交易策略，属于实战导向的研究，结合了进化算法与LLMs的智能生成能力，对实际交易策略开发具有较高的参考价值。",
+    "fetch_date": "2026-02-19",
+    "id": "20260219_52821c2d"
+  },
+  {
     "title": "FactorMiner: A Self-Evolving Agent with Skills and Experience Memory for Financial Alpha Discovery",
     "url": "https://arxiv.org/pdf/2602.14670v1",
     "source": "ArXiv",
@@ -5962,41 +5998,5 @@
     "summary": "本文介绍了PriceSeer，一个专为大型语言模型（LLMs）执行股票预测任务设计的实时、动态且数据无污染的基准测试。该基准包含来自11个工业部门的110只美国股票，每只股票包含249个历史数据点，并通过内部和外部信息扩展（如额外金融指标、新闻和虚假新闻）来评估LLMs在不同预测周期下的表现。研究展示了LLMs在获取准确价格预测后生成投资策略的潜力，并分析了其在长期预测中的不足，包括对虚假新闻和特定行业的脆弱性。代码和评估数据将开源。",
     "fetch_date": "2026-01-14",
     "id": "20260114_0822b69a"
-  },
-  {
-    "title": "A Clarifying Note on Long-Horizon Investment and Dollar-Cost Averaging: An Effective Investment Exposure Perspective",
-    "url": "https://arxiv.org/pdf/2601.06074v1",
-    "source": "ArXiv",
-    "date": "2025-12-29",
-    "abstract": "It is widely claimed in investment education and practice that extending the investment horizon reduces risk, and that diversifying investment timing, for example through dollar-cost averaging (DCA), further mitigates investment risk. Although such claims are intuitively appealing, they are often stated without precise definitions of risk or a clear separation between risk and uncertainty.\n  This paper revisits these two beliefs within a unified probabilistic framework. We define risk at the expectation level as a property of the generating distribution of cumulative investment outcomes, and distinguish it from uncertainty, understood as the dispersion of realized outcomes across possible paths. To enable meaningful comparisons across horizons and investment schedules, we introduce the notion of effective investment exposure, defined as time-integrated invested capital.\n  Under stationary return processes with finite variance, we show that extending the investment horizon does not alter expected risk, expected return, or the risk-return ratio on a per-unit-exposure basis. In contrast, different investment timing strategies can induce distinct exposure profiles over time. As a result, lump-sum investment and dollar-cost averaging may differ not only in uncertainty but also in expected risk when compared at equal return exposure, although the resulting risk differences are of constant order and do not grow with the investment horizon.\n  These results clarify why common narratives surrounding long-horizon investment and dollar-cost averaging are conceptually misleading, while also explaining why adopting such strategies under budgetary or timing constraints need not be regarded as irrational.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文在统一的概率框架下重新审视了“延长投资期限降低风险”和“分散投资时机（如定投）进一步降低风险”这两种常见观点。作者明确定义了风险（期望层面的累积投资结果分布特性）与不确定性（实现结果在不同路径上的离散度），并引入了“有效投资暴露”（时间积分投资资本）的概念进行比较分析。研究表明：在有限方差的平稳收益过程中，延长投资期限不会改变单位暴露的预期风险、预期收益或风险收益比；而不同的投资时机策略会产生随时间变化的暴露特征。",
-    "fetch_date": "2026-01-14",
-    "id": "20260114_a6e0d2ea"
-  },
-  {
-    "title": "DeePM: Regime-Robust Deep Learning for Systematic Macro Portfolio Management",
-    "url": "https://arxiv.org/pdf/2601.05975v1",
-    "source": "ArXiv",
-    "date": "2026-01-09",
-    "abstract": "We propose DeePM (Deep Portfolio Manager), a structured deep-learning macro portfolio manager trained end-to-end to maximize a robust, risk-adjusted utility. DeePM addresses three fundamental challenges in financial learning: (1) it resolves the asynchronous \"ragged filtration\" problem via a Directed Delay (Causal Sieve) mechanism that prioritizes causal impulse-response learning over information freshness; (2) it combats low signal-to-noise ratios via a Macroeconomic Graph Prior, regularizing cross-asset dependence according to economic first principles; and (3) it optimizes a distributionally robust objective where a smooth worst-window penalty serves as a differentiable proxy for Entropic Value-at-Risk (EVaR) - a window-robust utility encouraging strong performance in the most adverse historical subperiods. In large-scale backtests from 2010-2025 on 50 diversified futures with highly realistic transaction costs, DeePM attains net risk-adjusted returns that are roughly twice those of classical trend-following strategies and passive benchmarks, solely using daily closing prices. Furthermore, DeePM improves upon the state-of-the-art Momentum Transformer architecture by roughly fifty percent. The model demonstrates structural resilience across the 2010s \"CTA (Commodity Trading Advisor) Winter\" and the post-2020 volatility regime shift, maintaining consistent performance through the pandemic, inflation shocks, and the subsequent higher-for-longer environment. Ablation studies confirm that strictly lagged cross-sectional attention, graph prior, principled treatment of transaction costs, and robust minimax optimization are the primary drivers of this generalization capability.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "我们提出DeePM（深度投资组合管理器），一种结构化深度学习宏观投资组合管理器，通过端到端训练以最大化稳健的风险调整后效用。DeePM解决了金融学习中的三个基本挑战：（1）通过定向延迟（因果筛选）机制解决异步“不规则过滤”问题，优先考虑因果脉冲响应学习而非信息新鲜度；（2）通过宏观经济图先验对抗低信噪比，根据经济第一原理正则化跨资产依赖性；（3）优化分布稳健目标，其中平滑的最差窗口惩罚作为熵风险价值（EVaR）的可微代理——一种窗口稳健的效用，鼓励在最不利历史子期间表现强劲。在2010-2025年对50种多元化期货进行的大规模回测中，DeePM仅使用每日收盘价就实现了净风险调整后收益，大约是经典趋势跟踪策略和被动基准的两倍。此外，DeePM相对于最先进的动量Transformer架构提升了约50%。",
-    "fetch_date": "2026-01-13",
-    "id": "20260113_f8fa8183"
-  },
-  {
-    "title": "Forecast-to-Fill: Benchmark-Neutral Alpha and Billion-Dollar Capacity in Gold Futures (2015-2025)",
-    "url": "https://arxiv.org/pdf/2511.08571v1",
-    "source": "ArXiv",
-    "date": "2025-11-11",
-    "abstract": "We test whether simple, interpretable state variables-trend and momentum-can generate durable out-of-sample alpha in one of the world's most liquid assets, gold. Using a rolling 10-year training and 6-month testing walk-forward from 2015 to 2025 (2,793 trading days), we convert a smoothed trend-momentum regime signal into volatility-targeted, friction-aware positions through fractional, impact-adjusted Kelly sizing and ATR-based exits. Out of sample, the strategy delivers a Sharpe ratio of 2.88 and a maximum drawdown of 0.52 percent, net of 0.7 basis-point linear cost and a square-root impact term (gamma = 0.02). A regression on spot-gold returns yields a 43 percent annualized return (CAGR approximately 43 percent) and a 37 percent alpha (Sharpe = 2.88, IR = 2.09) at a 15 percent volatility target with beta approximately 0.03, confirming benchmark-neutral performance. Bootstrap confidence intervals ([2.49, 3.27]) and SPA tests (p = 0.000) confirm statistical significance and robustness to latency, reversal, and cost stress. We conclude that forecast-to-fill engineering-linking transparent signals to executable trades with explicit risk, cost, and impact control-can transform modest predictability into allocator-grade, billion-dollar-scalable alpha.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "我们测试了简单、可解释的状态变量——趋势和动量——能否在全球最具流动性的资产之一黄金中产生持久的样本外阿尔法。采用2015年至2025年滚动10年训练和6个月测试的前向验证（2,793个交易日），通过分数、影响调整的凯利头寸规模和基于ATR的退出，将平滑的趋势-动量机制信号转化为波动率目标、考虑摩擦的仓位。样本外，该策略在扣除0.7个基点的线性成本和平方根影响项（gamma = 0.02）后，实现了2.88的夏普比率和0.52%的最大回撤。对现货黄金收益的回归显示，在15%的波动率目标下，年化收益率为43%（复合年增长率约43%），阿尔法为37%（夏普比率=2.88，信息比率=2.09），贝塔约0.03，确认了基准中性表现。自助法置信区间（[2.49, 3.27]）和SPA检验（p = 0.000）证实了统计显著性以及对延迟、反转和成本压力的稳健性。我们得出结论，预测到执行工程——将透明信号与具有明确风险、成本和影响控制的可执行交易联系起来——可以转化适度的信号为实际交易价值。",
-    "fetch_date": "2026-01-13",
-    "id": "20260113_bf90557f"
   }
 ]
