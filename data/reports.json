@@ -1,5 +1,53 @@
 [
   {
+    "title": "Design and Empirical Analysis of Financial Quantitative Trading Model based on VMD-DCNN-SGRU Architecture and Integrated System",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11035952/",
+    "source": "Scholar",
+    "date": "2026-02-27",
+    "abstract": "… This paper proposes a quantitative trading model (VMD-DCNN-SGRU) that integrates … of deep learning and reinforcement learning technologies, the application of quantitative trading …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "本文提出了一种基于VMD-DCNN-SGRU架构与集成系统的金融量化交易模型。该模型整合了深度学习与强化学习技术，应用于量化交易领域。",
+    "fetch_date": "2026-02-27",
+    "id": "20260227_26324da8"
+  },
+  {
+    "title": "Algorithmic trading and machine learning: Advanced techniques for market prediction and strategy development",
+    "url": "https://www.researchgate.net/profile/Sunday-Esebre/publication/383304301_Developing_machine_learning_models_to_evaluate_the_environmental_impact_of_financial_policies/links/66c78fa797265406eaa34359/Developing-machine-learning-models-to-evaluate-the-environmental-impact-of-financial-policies.pdf",
+    "source": "Scholar",
+    "date": "2026-02-27",
+    "abstract": "… algorithmic trading and machine learning, focusing on their impact on market prediction and trading strategies… management in developing robust trading strategies. It also addresses the …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文探讨算法交易与机器学习，重点研究其对市场预测和交易策略的影响，以及风险管理在开发稳健交易策略中的作用。",
+    "fetch_date": "2026-02-27",
+    "id": "20260227_f2de6342"
+  },
+  {
+    "title": "A Transformer Architecture for Time-Series Data Applied to Stock-Market Closing-Price Prediction",
+    "url": "https://deepblue.lib.umich.edu/items/dbb6a84b-ee53-40b1-ba83-9594c2da68f1",
+    "source": "Scholar",
+    "date": "2026-02-27",
+    "abstract": "… Their transformer architecture outperformed both baselines in … transformers to surpass established methods in specific contexts [13]. Yawei Li and Xingua Liu incorporated transformers …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文提出了一种基于Transformer架构的时间序列数据处理方法，并将其应用于股票市场收盘价预测。研究显示，该Transformer架构在特定情境下超越了现有基准方法，表明其在金融时间序列预测中具有实际应用潜力。",
+    "fetch_date": "2026-02-27",
+    "id": "20260227_14fdcefc"
+  },
+  {
+    "title": "Autonomous AI Agents for Stock Market Analysis utilizing Large Language Models",
+    "url": "https://scholarworks.calstate.edu/downloads/p26775379",
+    "source": "Scholar",
+    "date": "2026-02-27",
+    "abstract": "The architecture of the system proposed in this thesis a hybrid engine fusing statistical forecasting with Large Language Model (LLM) reasoning. It sits at the convergence of three …",
+    "broker": "Google Scholar",
+    "score": 4,
+    "summary": "该论文提出了一种融合统计预测与大语言模型推理的混合引擎架构，用于股票市场分析。系统位于三个领域的交汇点：传统量化方法、自然语言处理技术和自主AI代理技术。论文主要探讨了理论框架和架构设计，但缺乏具体的实战交易策略验证、回测结果或实盘性能数据，因此对实战交易的实际指导价值有限。",
+    "fetch_date": "2026-02-27",
+    "id": "20260227_410cd3d7"
+  },
+  {
     "title": "RAmmStein: Regime Adaptation in Mean-reverting Markets with Stein Thresholds -- Optimal Impulse Control in Concentrated AMMs",
     "url": "https://arxiv.org/pdf/2602.19419v1",
     "source": "ArXiv",
@@ -5950,53 +5998,5 @@
     "summary": "论文《机器人顾问在行动：一种模型预测控制方法》提出了一种动态多周期资产配置框架，利用模型预测控制（MPC）生成次优但实际有效的策略。该方法结合隐马尔可夫模型与Black-Litterman（BL）方法来预测资产收益和协方差，并纳入实际重要约束，包括换手率限制、交易成本和目标投资组合配置。研究比较了动态均值-方差（MV）和动态风险预算（MRB）两种最优性标准。数值实验表明，基于MPC的策略持续优于短视方法，MV提供灵活多元的投资组合，而MRB则产生对关键参数不敏感的更平滑配置。这些发现突出了实际机器人顾问设计中适应性与稳定性之间的权衡。",
     "fetch_date": "2026-01-16",
     "id": "20260116_3bf2d2c5"
-  },
-  {
-    "title": "XGBoost Forecasting of NEPSE Index Log Returns with Walk Forward Validation",
-    "url": "https://arxiv.org/pdf/2601.08896v1",
-    "source": "ArXiv",
-    "date": "2026-01-13",
-    "abstract": "This study develops a robust machine learning framework for one-step-ahead forecasting of daily log-returns in the Nepal Stock Exchange (NEPSE) Index using the XGBoost regressor. A comprehensive feature set is engineered, including lagged log-returns (up to 30 days) and established technical indicators such as short- and medium-term rolling volatility measures and the 14-period Relative Strength Index. Hyperparameter optimization is performed using Optuna with time-series cross-validation on the initial training segment. Out-of-sample performance is rigorously assessed via walk-forward validation under both expanding and fixed-length rolling window schemes across multiple lag configurations, simulating real-world deployment and avoiding lookahead bias. Predictive accuracy is evaluated using root mean squared error, mean absolute error, coefficient of determination (R-squared), and directional accuracy on both log-returns and reconstructed closing prices. Empirical results show that the optimal configuration, an expanding window with 20 lags, outperforms tuned ARIMA and Ridge regression benchmarks, achieving the lowest log-return RMSE (0.013450) and MAE (0.009814) alongside a directional accuracy of 65.15%. While the R-squared remains modest, consistent with the noisy nature of financial returns, primary emphasis is placed on relative error reduction and directional prediction. Feature importance analysis and visual inspection further enhance interpretability. These findings demonstrate the effectiveness of gradient boosting ensembles in modeling nonlinear dynamics in volatile emerging market time series and establish a reproducible benchmark for NEPSE Index forecasting.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本研究开发了一个稳健的机器学习框架，使用XGBoost回归器对尼泊尔证券交易所（NEPSE）指数的日对数收益率进行一步超前预测。通过工程化特征集（包括滞后对数收益率（最多30天）和成熟的技术指标，如短期和中期滚动波动率测量以及14周期相对强弱指数），并利用Optuna在初始训练段上进行时间序列交叉验证进行超参数优化。通过在前瞻验证（walk-forward validation）下采用扩展窗口和固定长度滚动窗口方案，在多个滞后配置中严格评估样本外性能，模拟真实世界部署并避免前瞻偏差（lookahead bias）。使用均方根误差、平均绝对误差、决定系数（R-squared）以及对数收益率和重构收盘价的方向准确性来评估预测准确性。实证结果表明，最优配置（具有20个滞后的扩展窗口）优于调优的ARIMA和岭回归基准，实现了最低的对数收益率RMSE（0.013450）和MAE（0.009814），并具有较高的方向准确性。",
-    "fetch_date": "2026-01-16",
-    "id": "20260116_62fa7036"
-  },
-  {
-    "title": "Equilibrium Portfolio Selection under Utility-Variance Analysis of Log Returns in Incomplete Markets",
-    "url": "https://arxiv.org/pdf/2511.05861v2",
-    "source": "ArXiv",
-    "date": "2025-11-08",
-    "abstract": "This paper investigates a time-inconsistent portfolio selection problem in the incomplete mar ket model, integrating expected utility maximization with risk control. The objective functional\n  balances the expected utility and variance on log returns, giving rise to time inconsistency and\n  motivating the search of a time-consistent equilibrium strategy. We characterize the equilibrium\n  via a coupled quadratic backward stochastic differential equation (BSDE) system and establish\n  the existence theory in two special cases: (i)the two Brownian motions driven the price dynamics\n  and the factor process are independent with $ρ= 0$; (ii) the trading strategy is constrained to\n  be bounded. For the general case with correlation coefficient $ρ\\neq 0$, we introduce the notion\n  of an approximate time-consistent equilibrium. Employing the solution structure from the\n  equilibrium in the case $ρ= 0$, we can construct an approximate time-consistent equilibrium in\n  the general case with an error of order $O(ρ^2)$. Numerical examples and financial insights are\n  also presented based on deep learning algorithms.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文在不完全市场模型中研究了一个时间不一致的投资组合选择问题，将期望效用最大化与风险控制相结合。目标函数平衡了对数收益的期望效用和方差，导致了时间不一致性，并促使寻找时间一致的均衡策略。我们通过一个耦合的二次倒向随机微分方程（BSDE）系统来刻画均衡，并在两种特殊情况下建立了存在性理论：（i）驱动价格动态和因子过程的两个布朗运动相互独立（ρ=0）；（ii）交易策略被约束为有界的。对于相关系数ρ≠0的一般情况，我们引入了近似时间一致均衡的概念。利用ρ=0情况下均衡的解结构，我们可以在一般情况下构造一个误差为O(ρ²)的近似时间一致均衡。本文还基于深度学习算法提供了数值算例和金融见解。",
-    "fetch_date": "2026-01-16",
-    "id": "20260116_21d54c72"
-  },
-  {
-    "title": "Economic uncertainty and exchange rates linkage revisited: modelling tail dependence with high frequency data",
-    "url": "https://arxiv.org/pdf/2511.05315v1",
-    "source": "ArXiv",
-    "date": "2025-11-07",
-    "abstract": "The aim of this paper is to dig deeper into understanding the exchange rates and uncertainty dependence. Using the novel Baker et al. (2020)'s daily Twitter Uncertainty Index and BRICS exchange rates, we investigate their extreme tail dependence within an original time-varying copula framework. Our analysis makes several noteworthy results. Evidence for Indian, Russian and South African currencies indicates an elliptical copulas' dominance implying neither asymmetric features nor extreme movements in their dependence structure with the global economic uncertainty. Importantly, Brazilian and Chinese currencies tail dependence is upward trending suggesting a safe-haven role in times of high global economic uncertainty including the recent COVID-19 pandemic. In such circumstances, these markets offer opportunities to significant gains through portfolio diversification.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文旨在深入探究汇率与不确定性之间的依赖关系。利用Baker等人（2020）提出的每日Twitter不确定性指数和BRICS国家汇率，在原创的时变Copula框架内研究其极端尾部依赖。分析得出若干重要发现：印度、俄罗斯和南非货币的证据表明椭圆Copula占主导，意味着其与全球经济不确定性的依赖结构既无不对称特征也无极端波动。重要的是，巴西和中国货币的尾部依赖呈上升趋势，表明在全球经济高度不确定性（包括近期COVID-19大流行）时期具有避险作用。在此类情况下，这些市场通过投资组合多样化提供了显著收益的机会。",
-    "fetch_date": "2026-01-16",
-    "id": "20260116_5a9f4a23"
-  },
-  {
-    "title": "Multi-period Learning for Financial Time Series Forecasting",
-    "url": "https://arxiv.org/pdf/2511.08622v1",
-    "source": "ArXiv",
-    "date": "2025-11-07",
-    "abstract": "Time series forecasting is important in finance domain. Financial time series (TS) patterns are influenced by both short-term public opinions and medium-/long-term policy and market trends. Hence, processing multi-period inputs becomes crucial for accurate financial time series forecasting (TSF). However, current TSF models either use only single-period input, or lack customized designs for addressing multi-period characteristics. In this paper, we propose a Multi-period Learning Framework (MLF) to enhance financial TSF performance. MLF considers both TSF's accuracy and efficiency requirements. Specifically, we design three new modules to better integrate the multi-period inputs for improving accuracy: (i) Inter-period Redundancy Filtering (IRF), that removes the information redundancy between periods for accurate self-attention modeling, (ii) Learnable Weighted-average Integration (LWI), that effectively integrates multi-period forecasts, (iii) Multi-period self-Adaptive Patching (MAP), that mitigates the bias towards certain periods by setting the same number of patches across all periods. Furthermore, we propose a Patch Squeeze module to reduce the number of patches in self-attention modeling for maximized efficiency. MLF incorporates multiple inputs with varying lengths (periods) to achieve better accuracy and reduces the costs of selecting input lengths during training. The codes and datasets are available at https://github.com/Meteor-Stars/MLF.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一种多周期学习框架（MLF）用于提升金融时间序列预测（TSF）性能。该框架针对金融时间序列受短期舆论和中长期政策/市场趋势共同影响的特点，设计了三个新模块以更好地整合多周期输入：1) 周期间冗余过滤（IRF），用于消除周期间信息冗余以提升自注意力建模准确性；2) 可学习加权平均集成（LWI），用于有效整合多周期预测结果；3) 多周期自适应分块（MAP），通过设置跨周期统一分块数来减少对特定周期的偏差。此外还提出了补丁压缩模块以减少自注意力计算量。该研究兼顾了预测精度与效率需求，对量化交易中多时间尺度特征融合具有直接应用价值。",
-    "fetch_date": "2026-01-16",
-    "id": "20260116_5e774279"
   }
 ]
