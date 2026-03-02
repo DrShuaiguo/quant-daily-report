@@ -1,5 +1,29 @@
 [
   {
+    "title": "TradeFM: A Generative Foundation Model for Trade-flow and Market Microstructure",
+    "url": "https://arxiv.org/pdf/2602.23784v1",
+    "source": "ArXiv",
+    "date": "2026-02-27",
+    "abstract": "Foundation models have transformed domains from language to genomics by learning general-purpose representations from large-scale, heterogeneous data. We introduce TradeFM, a 524M-parameter generative Transformer that brings this paradigm to market microstructure, learning directly from billions of trade events across >9K equities. To enable cross-asset generalization, we develop scale-invariant features and a universal tokenization scheme that map the heterogeneous, multi-modal event stream of order flow into a unified discrete sequence -- eliminating asset-specific calibration. Integrated with a deterministic market simulator, TradeFM-generated rollouts reproduce key stylized facts of financial returns, including heavy tails, volatility clustering, and absence of return autocorrelation. Quantitatively, TradeFM achieves 2-3x lower distributional error than Compound Hawkes baselines and generalizes zero-shot to geographically out-of-distribution APAC markets with moderate perplexity degradation. Together, these results suggest that scale-invariant trade representations capture transferable structure in market microstructure, opening a path toward synthetic data generation, stress testing, and learning-based trading agents.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "TradeFM是一个拥有5.24亿参数的生成式Transformer基础模型，专门针对市场微观结构。它从超过9000只股票的数十亿交易事件中学习，通过尺度不变特征和通用标记化方案，将异构、多模态的订单流事件流映射为统一的离散序列，实现了跨资产泛化而无需资产特定校准。与确定性市场模拟器集成后，TradeFM生成的模拟数据能重现金融收益的关键典型事实，包括厚尾、波动率聚集和收益自相关缺失。在定量评估中，其分布误差比复合Hawkes基线低2-3倍，并能零样本泛化到地理分布外的APAC市场，困惑度仅有适度下降。这些结果表明，尺度不变的交易表征捕捉了市场微观结构中的可转移结构，为合成数据生成、压力测试等实战应用开辟了路径。",
+    "fetch_date": "2026-03-03",
+    "id": "20260303_4c8a1408"
+  },
+  {
+    "title": "One Rising Ship Sinks Other Ships: Cross-Chain Negative Spillovers in Crypto Markets",
+    "url": "https://arxiv.org/pdf/2602.23762v1",
+    "source": "ArXiv",
+    "date": "2026-02-27",
+    "abstract": "We document the first systematic evidence of negative spillover effects in crypto asset returns across blockchains. Using on-chain data from Ethereum, Solana, Binance Smart Chain, Arbitrum, and Avalanche (2022-2025), we show that surges on one chain often coincide with declines on others, in contrast to the positive co-movements typical of equity markets. These spillovers intensify during attention shocks, proxied by chain activity and extreme return events, and persist after controlling for global equity returns, interest rates, and Bitcoin. Nonlinear factor models reveal that attention-driven capital reallocation, rather than common information, underlies these dynamics. Our findings introduce a new form of cross-market linkage, attention-induced substitution, that shapes risk transmission in crypto markets. The results carry implications for portfolio diversification, systemic risk measurement, and regulation of token launches that may trigger cross-chain capital flight.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文首次系统性地记录了加密资产在不同区块链间存在负向溢出效应的证据。基于以太坊、Solana、币安智能链、Arbitrum和Avalanche的链上数据（2022-2025年），研究发现一条链的上涨常伴随其他链的下跌，这与股票市场典型的正向联动形成对比。这些溢出效应在注意力冲击（以链上活动和极端收益事件为代理变量）期间加剧，且在控制全球股票收益、利率和比特币后依然存在。非线性因子模型表明，其动态机制源于注意力驱动的资本再配置，而非共同信息。研究提出了一种新的跨市场关联形式——注意力诱导的替代效应，它塑造了加密市场的风险传导。这些发现对投资组合分散化、系统性风险度量以及可能引发跨链资本外逃的代币发行监管具有启示意义。",
+    "fetch_date": "2026-03-03",
+    "id": "20260303_c21521a2"
+  },
+  {
     "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
     "url": "https://arxiv.org/pdf/2602.23330v1",
     "source": "ArXiv",
@@ -5974,29 +5998,5 @@
     "summary": "本文研究了一种结合空间交互与多因子分析的空间套利定价理论（SAPT）模型的估计与推断，该模型同时容纳可观测因子与潜在因子。基于经典的均值-方差分析，我们引入了一类空间资本资产定价模型（SCAPM），用于处理高维资产中的空间效应，其中定义了“空间rho”作为CAPM中市场beta的对应概念。随后，通过在“完全”市场设定下纳入多因子，我们将SCAPM扩展为通用的SAPT框架。对于含可观测因子的SAPT，我们提出了一种广义收缩Yule-Walker（SYW）估计方法，该方法结合岭回归来估计空间与因子系数。当因子为潜在时，我们首先应用基于自协方差的特征分析提取因子，然后使用估计的因子采用SYW方法。我们在高维设定下建立了这些估计量的渐近性质，其中维度与样本量均发散。最后，我们通过模拟与真实数据示例展示了所提模型与方法的有效性和实用性。",
     "fetch_date": "2026-01-18",
     "id": "20260118_9b921678"
-  },
-  {
-    "title": "History Is Not Enough: An Adaptive Dataflow System for Financial Time-Series Synthesis",
-    "url": "https://arxiv.org/pdf/2601.10143v1",
-    "source": "ArXiv",
-    "date": "2026-01-15",
-    "abstract": "In quantitative finance, the gap between training and real-world performance-driven by concept drift and distributional non-stationarity-remains a critical obstacle for building reliable data-driven systems. Models trained on static historical data often overfit, resulting in poor generalization in dynamic markets. The mantra \"History Is Not Enough\" underscores the need for adaptive data generation that learns to evolve with the market rather than relying solely on past observations. We present a drift-aware dataflow system that integrates machine learning-based adaptive control into the data curation process. The system couples a parameterized data manipulation module comprising single-stock transformations, multi-stock mix-ups, and curation operations, with an adaptive planner-scheduler that employs gradient-based bi-level optimization to control the system. This design unifies data augmentation, curriculum learning, and data workflow management under a single differentiable framework, enabling provenance-aware replay and continuous data quality monitoring. Extensive experiments on forecasting and reinforcement learning trading tasks demonstrate that our framework enhances model robustness and improves risk-adjusted returns. The system provides a generalizable approach to adaptive data management and learning-guided workflow automation for financial data.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "在量化金融中，训练与实战表现之间的差距——由概念漂移和分布非平稳性驱动——仍是构建可靠数据驱动系统的关键障碍。基于静态历史数据训练的模型常过拟合，导致在动态市场中泛化能力差。“历史不足够”这一理念强调了需要能够随市场演化的自适应数据生成，而非仅依赖过往观测。本文提出一个漂移感知的数据流系统，将基于机器学习的自适应控制集成到数据管理流程中。该系统将参数化数据操作模块（包括单股变换、多股混合和管理操作）与采用基于梯度的双层优化的自适应规划调度器耦合。该设计将数据增强、课程学习和数据工作流管理统一于单一可微分框架下，支持溯源感知的回放和持续数据质量监控。在预测和强化学习交易任务上的大量实验表明，该框架提升了模型性能。",
-    "fetch_date": "2026-01-17",
-    "id": "20260117_cfe4d383"
-  },
-  {
-    "title": "Reasoning on Time-Series for Financial Technical Analysis",
-    "url": "https://arxiv.org/pdf/2511.08616v1",
-    "source": "ArXiv",
-    "date": "2025-11-06",
-    "abstract": "While Large Language Models have been used to produce interpretable stock forecasts, they mainly focus on analyzing textual reports but not historical price data, also known as Technical Analysis. This task is challenging as it switches between domains: the stock price inputs and outputs lie in the time-series domain, while the reasoning step should be in natural language. In this work, we introduce Verbal Technical Analysis (VTA), a novel framework that combine verbal and latent reasoning to produce stock time-series forecasts that are both accurate and interpretable. To reason over time-series, we convert stock price data into textual annotations and optimize the reasoning trace using an inverse Mean Squared Error (MSE) reward objective. To produce time-series outputs from textual reasoning, we condition the outputs of a time-series backbone model on the reasoning-based attributes. Experiments on stock datasets across U.S., Chinese, and European markets show that VTA achieves state-of-the-art forecasting accuracy, while the reasoning traces also perform well on evaluation by industry experts.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "该论文提出了一种名为“言语技术分析”（VTA）的新框架，旨在结合言语推理与潜在推理，以生成既准确又可解释的股票时间序列预测。其核心创新在于：将股票价格数据转换为文本注释，通过逆均方误差（MSE）奖励目标优化推理轨迹，并基于推理属性调整时间序列骨干模型的输出。实验表明，VTA在美国、中国和欧洲市场股票数据集上实现了最先进的预测精度，且推理轨迹在行业专家评估中表现良好。该方法直接针对实战交易中的技术分析需求，通过提升预测准确性和可解释性，对量化交易策略开发具有明确的应用价值。",
-    "fetch_date": "2026-01-17",
-    "id": "20260117_00abbb00"
   }
 ]
