@@ -1,5 +1,29 @@
 [
   {
+    "title": "Statistical Inference for Score Decompositions",
+    "url": "https://arxiv.org/pdf/2603.04275v1",
+    "source": "ArXiv",
+    "date": "2026-03-04",
+    "abstract": "We introduce inference methods for score decompositions, which partition scoring functions for predictive assessment into three interpretable components: miscalibration, discrimination, and uncertainty. Our estimation and inference relies on a linear recalibration of the forecasts, which is applicable to general multi-step ahead point forecasts such as means and quantiles due to its validity for both smooth and non-smooth scoring functions. This approach ensures desirable finite-sample properties, enables asymptotic inference, and establishes a direct connection to the classical Mincer-Zarnowitz regression. The resulting inference framework facilitates tests for equal forecast calibration or discrimination, which yield three key advantages. They enhance the information content of predictive ability tests by decomposing scores, deliver higher statistical power in certain scenarios, and formally connect scoring-function-based evaluation to traditional calibration tests, such as financial backtests. Applications demonstrate the method's utility. We find that for survey inflation forecasts, discrimination abilities can differ significantly even when overall predictive ability does not. In an application to financial risk models, our tests provide deeper insights into the calibration and information content of volatility and Value-at-Risk forecasts. By disentangling forecast accuracy from backtest performance, the method exposes critical shortcomings in current banking regulation.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文介绍了评分分解的推断方法，将预测评估的评分函数分解为三个可解释的组成部分：校准误差、区分度和不确定性。该方法基于预测的线性重新校准，适用于多步点预测（如均值和分位数），并能处理平滑和非平滑评分函数。该框架具有良好的有限样本性质，支持渐近推断，并与经典的Mincer-Zarnowitz回归建立直接联系。其推断框架可用于检验预测校准或区分度的等价性，具有三大优势：通过分解评分增强预测能力测试的信息含量，在特定场景下提供更高的统计功效，以及将基于评分函数的评估与传统校准测试（如金融回测）正式联系起来。应用实例表明，该方法能揭示在整体预测能力无差异时，区分度可能存在显著差异，如调查通胀预测所示。",
+    "fetch_date": "2026-03-06",
+    "id": "20260306_52aaa87e"
+  },
+  {
+    "title": "Is an investor stolen their profits by mimic investors? Investigated by an agent-based model",
+    "url": "https://arxiv.org/pdf/2603.03671v1",
+    "source": "ArXiv",
+    "date": "2026-03-04",
+    "abstract": "Some investors say increasing investors with the same strategy decreasing their profits per an investor. On the other hand, some investors using technical analysis used to use same strategy and parameters with other investors, and say that it is better. Those argues are conflicted each other because one argues using with same strategy decreases profits but another argues it increase profits. However, those arguments have not been investigated yet. In this study, the agent-based artificial financial market model(ABAFMM) was built by adding \"additional agents\"(AAs) that includes additional fundamental agents (AFAs) and additional technical agents (ATAs) to the prior model. The AFAs(ATAs) trade obeying simple fundamental(technical) strategy having only the one parameter. We investigated earnings of AAs when AAs increased. We found that in the case with increasing AFAs, market prices are made stable that leads to decrease their profits. In the case with increasing ATAs, market prices are made unstable that leads to gain their profits more.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "一些投资者认为，采用相同策略的投资者增加会降低每位投资者的利润；而另一些使用技术分析的投资者则认为，采用与其他投资者相同的策略和参数更好。这些观点相互矛盾，因为一方认为使用相同策略会减少利润，另一方则认为会增加利润。然而，这些观点尚未得到研究。本研究通过向先前模型添加“额外代理”（AAs，包括额外基本面代理（AFAs）和额外技术代理（ATAs）），构建了基于代理的人工金融市场模型（ABAFMM）。AFAs（ATAs）遵循仅有一个参数的简单基本面（技术）策略进行交易。我们研究了AAs增加时其收益情况。结果发现，当AFAs增加时，市场价格趋于稳定，导致其利润减少；而当ATAs增加时，市场价格变得不稳定，使其利润增加。",
+    "fetch_date": "2026-03-06",
+    "id": "20260306_54e8ec8b"
+  },
+  {
     "title": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
     "url": "https://arxiv.org/pdf/2603.02620v1",
     "source": "ArXiv",
@@ -5974,29 +5998,5 @@
     "summary": "本文提出了一种基于Black-Scholes-Merton方程的精确终端条件神经网络（ETCNN），用于精确求解美式期权定价问题。该方法通过精心设计的函数确保数值解不仅精确满足BSM方程的终端条件，还能匹配期权价格在到期日附近的不光滑和奇异行为，有效处理了BSM方程中的不等式约束，并可轻松扩展到高维场景。实验表明，该方法具有高精度和鲁棒性，优于传统数值方法和其他机器学习方法。",
     "fetch_date": "2026-01-19",
     "id": "20260119_12ea4ded"
-  },
-  {
-    "title": "Cost-of-capital valuation with risky assets",
-    "url": "https://arxiv.org/pdf/2511.00895v1",
-    "source": "ArXiv",
-    "date": "2025-11-02",
-    "abstract": "Cost-of-capital valuation is a well-established approach to the valuation of liabilities and is one of the cornerstones of current regulatory frameworks for the insurance industry. Standard cost-of-capital considerations typically rely on the assumption that the required buffer capital is held in risk-less one-year bonds. The aim of this work is to analyze the effects of allowing investments of the buffer capital in risky assets, e.g.~in a combination of stocks and bonds. In particular, we make precise how the decomposition of the buffer capital into contributions from policyholders and investors varies as the degree of riskiness of the investment increases, and highlight the role of limited liability in the case of heavy-tailed insurance risks. We present a combination of general theoretical results, explicit results for certain stochastic models and numerical results that emphasize the key findings.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文探讨了资本成本估值中缓冲资本投资于风险资产（如股票和债券组合）的影响。作为保险业监管框架的基石，传统方法假设缓冲资本仅投资于无风险一年期债券。研究分析了投资风险增加时，缓冲资本在投保人和投资者之间分配的变化，并强调了在厚尾保险风险情况下有限责任的作用。结合理论分析、特定随机模型和数值结果，突出了关键发现。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_5fbf0f16"
-  },
-  {
-    "title": "Robust Hedging of path-dependent options using a min-max algorithm",
-    "url": "https://arxiv.org/pdf/2511.00781v1",
-    "source": "ArXiv",
-    "date": "2025-11-02",
-    "abstract": "We consider an investor who wants to hedge a path-dependent option with maturity $T$ using a static hedging portfolio using cash, the underlying, and vanilla put/call options on the same underlying with maturity $ t_1$, where $0 < t_1 < T$. We propose a model-free approach to construct such a portfolio. The framework is inspired by the \\textit{primal-dual} Martingale Optimal Transport (MOT) problem, which was pioneered by \\cite{beiglbock2013model}. The optimization problem is to determine the portfolio composition that minimizes the expected worst-case hedging error at $t_1$ (that coincides with the maturity of the options that are used in the hedging portfolio). The worst-case scenario corresponds to the distribution that yields the worst possible hedging performance. This formulation leads to a \\textit{min-max} problem. We provide a numerical scheme for solving this problem when a finite number of vanilla option prices are available. Numerical results on the hedging performance of this model-free approach when the option prices are generated using a \\textit{Black-Scholes} and a \\textit{Merton Jump diffusion} model are presented. We also provide theoretical bounds on the hedging error at $T$, the maturity of the target option.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种基于原始-对偶鞅最优传输（MOT）理论的无模型方法，用于构建路径依赖期权的稳健对冲组合。该方法通过现金、标的资产及到期日为t₁的普通看跌/看涨期权构建静态对冲组合，以最小化在t₁时刻的最坏情况对冲误差（即最不利分布下的最大损失）。研究提供了数值求解方案，并在Black-Scholes和Merton跳跃扩散模型下验证了其对冲效果，同时给出了理论误差界。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_7d301669"
   }
 ]
