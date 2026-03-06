@@ -1,5 +1,53 @@
 [
   {
+    "title": "Explainable Regime Aware Investing",
+    "url": "https://arxiv.org/pdf/2603.04441v1",
+    "source": "ArXiv",
+    "date": "2026-02-21",
+    "abstract": "We propose an explainable regime-aware portfolio construction framework based on a strictly causal Wasserstein Hidden Markov Model. The model combines rolling Gaussian HMM inference with predictive model-order selection and template-based identity tracking using the 2-Wasserstein distance between Gaussian components. This allows regime complexity to adapt dynamically while preserving stable economic interpretation. Regime probabilities are embedded into a transaction-cost-aware mean-variance optimization framework and evaluated on a diversified daily cross-asset universe. Relative to equal-weight and SPX buy-and-hold benchmarks, the Wasserstein HMM achieves materially higher risk-adjusted performance with Sharpe ratios of 2.18 versus 1.59 and 1.18 and substantially lower maximum drawdown of negative 5.43 percent versus negative 14.62 percent for SPX. During the early 2025 equity selloff labeled Liberation Day, the strategy dynamically reduced equity exposure and shifted toward defensive assets, mitigating peak-to-trough losses. Compared to a nonparametric KNN conditional-moment estimator using the same features and optimization layer, the parametric regime model produces materially lower turnover and smoother weight evolution. The results demonstrate that regime inference stability, particularly identity preservation and adaptive complexity control, is a first-order determinant of portfolio drawdown and implementation robustness in daily asset allocation.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "我们提出了一种基于严格因果Wasserstein隐马尔可夫模型的可解释性制度感知投资组合构建框架。该模型通过结合滚动高斯HMM推断、预测性模型阶数选择以及基于模板的身份追踪（使用高斯分量间的2-Wasserstein距离），使制度复杂性能够动态适应，同时保持稳定的经济解释。制度概率被嵌入到考虑交易成本的均值-方差优化框架中，并在多样化的日频跨资产组合中进行评估。相对于等权重和SPX买入持有基准，Wasserstein HMM实现了显著更高的风险调整后绩效（夏普比率分别为2.18 vs. 1.59和1.18），以及显著更低的最大回撤（-5.43% vs. SPX的-14.62%）。在2025年初被标记为“解放日”的股市抛售期间，该策略动态降低了股票敞口并转向防御性资产，从而缓解了峰谷损失。与使用相同特征和优化层的非参数KNN条件矩估计器相比，参数化制度模型产生了实质性的改进。",
+    "fetch_date": "2026-03-07",
+    "id": "20260307_c75d931a"
+  },
+  {
+    "title": "Extreme Value Analysis for Finite, Multivariate and Correlated Systems with Finance as an Example",
+    "url": "https://arxiv.org/pdf/2603.05260v1",
+    "source": "ArXiv",
+    "date": "2026-03-05",
+    "abstract": "Extreme values and the tail behavior of probability distributions are essential for quantifying and mitigating risk in complex systems of all kinds. In multivariate settings, accounting for correlations is crucial. Although extreme value analysis for infinite correlated systems remains an open challenge, we propose a practical framework for handling a large but finite number of correlated time series. We develop our approach for finance as a concrete example but emphasize its generality. We study the extremal behavior of high-frequency stock returns after rotating them into the eigenbasis of the correlation matrix. This separates and extracts various collective effects, including information on the correlated market as a whole and on correlated sectoral behavior from idiosyncratic features, while allowing us to use univariate tools of extreme value analysis. This holds even for high-frequency data where discretization effects normally complicate analysis. We employ a peaks-over-threshold approach and thereby fully avoid the analysis of block maxima. We estimate the tail shape of the rotated returns while explicitly accounting for nonstationarity, a key feature in finance and many other complex systems. Our framework facilitates tail risk estimation relative to larger trends and intraday seasonalities at both market and sectoral levels.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出了一种针对有限、多元且相关系统的极值分析实用框架，并以金融领域为例进行阐述。核心方法包括：将高频股票收益率旋转至相关矩阵的特征基，以分离并提取整体市场、行业相关性与特质性特征等集体效应，从而能够应用单变量极值分析工具。研究采用超阈值峰值法，完全避免了区块最大值的分析，并在估计旋转后收益率的尾部形态时，明确考虑了非平稳性这一关键特征。该方法旨在量化和管理复杂系统中的风险，尤其适用于处理大量但有限的相关时间序列。",
+    "fetch_date": "2026-03-07",
+    "id": "20260307_599fbf39"
+  },
+  {
+    "title": "Riemannian Geometry of Optimal Rebalancing in Dynamic Weight Automated Market Makers",
+    "url": "https://arxiv.org/pdf/2603.05326v1",
+    "source": "ArXiv",
+    "date": "2026-03-05",
+    "abstract": "In Temporal Function Market Making (TFMM), a dynamic weight AMM pool rebalances from initial to final holdings by creating a series of arbitrage opportunities whose total cost depends on the weight trajectory taken. We show that the per-step arbitrage loss is the KL divergence between new and old weight vectors, meaning the Fisher--Rao metric is the natural Riemannian metric on the weight simplex. The loss-minimising interpolation under the leading-order expansion of this KL cost is SLERP (Spherical Linear Interpolation) in the Hellinger coordinates $η_i = \\sqrt{w_i}$, i.e.\\ a geodesic on the positive orthant of the unit sphere traversed at constant speed. The SLERP midpoint equals the (AM+GM)/normalise heuristic of prior work (Willetts & Harrington, 2024), so the heuristic lies on the geodesic. This identity holds for any number of tokens and any magnitude of weight change; using this link, all dyadic points on the geodesic can be reached by recursive AM-GM bisection without trigonometric functions. SLERP's relative sub-optimality on the full KL cost is proportional to the squared magnitude of the overall weight change and to $1/f^2$, where $f$ is the number of interpolation steps.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究了动态权重自动化做市商（AMM）中的最优再平衡问题。核心发现是：在时间函数做市（TFMM）框架下，每步套利损失等于新旧权重向量间的KL散度，这使Fisher-Rao度量成为权重单纯形上的自然黎曼度量。最小化KL成本主导项的最优插值路径是Hellinger坐标（η_i = √w_i）中的球面线性插值（SLERP），即单位球正象限上以恒定速度遍历的测地线。论文证明SLERP中点等于先前研究中的（算术平均+几何平均）/归一化启发式方法，且该启发式位于测地线上。这一关系适用于任意代币数量和权重变化幅度，通过递归AM-GM二分法无需三角函数即可计算测地线上所有二分点。SLERP在完整KL成本上的相对次优性与整体权重变化幅度的平方及插值步数倒数平方（1/f²）成正比。",
+    "fetch_date": "2026-03-07",
+    "id": "20260307_739b05f3"
+  },
+  {
+    "title": "Asymptotic Separability of Diffusion and Jump Components in High-Frequency CIR and CKLS Models",
+    "url": "https://arxiv.org/pdf/2603.05119v1",
+    "source": "ArXiv",
+    "date": "2026-03-05",
+    "abstract": "This paper develops a robust parametric framework for jump detection in discretely observed CKLS-type jump-diffusion processes with high-frequency asymptotics, based on the minimum density power divergence estimator (MDPDE). The methodology exploits the intrinsic asymptotic scale separation between diffusion increments, which decay at rate $\\sqrt{Δ_n}$, and jump increments, which remain of non-vanishing stochastic magnitude. Using robust MDPDE-based estimators of the drift and diffusion coefficients, we construct standardized residuals whose extremal behavior provides a principled basis for statistical discrimination between continuous and discontinuous components. We establish that, over diffusion intervals, the maximum of the normalized residuals converges to the Gumbel extreme-value distribution, yielding an explicit and asymptotically valid detection threshold. Building on this result, we prove classification consistency of the proposed robust detection procedure: the probability of correctly identifying all jump and diffusion increments converges to one under proper asymptotics. The MDPDE-based normalization attenuates the influence of atypical increments and stabilizes the detection boundary in the presence of discontinuities. Simulation results confirm that robustness improves finite-sample stability and reduces spurious detections without compromising asymptotic validity. The proposed methodology provides a theoretically rigorous and practically resilient robust approach to jump identification in high-frequency stochastic systems.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文针对高频观测的CKLS型跳跃-扩散过程，开发了一个基于最小密度幂散度估计器（MDPDE）的稳健参数化跳跃检测框架。该方法利用扩散增量（以速率√Δ_n衰减）与跳跃增量（保持非消失随机幅度）之间的内在渐近尺度分离特性。通过使用基于MDPDE的漂移和扩散系数稳健估计器，构建标准化残差，其极值行为为连续与不连续分量的统计区分提供了原则性基础。研究证明，在扩散区间上，归一化残差的最大值收敛于Gumbel极值分布，从而产生显式且渐近有效的检测阈值。基于此结果，证明了所提稳健检测程序的分类一致性：在适当渐近条件下，正确识别所有跳跃和扩散增量的概率收敛于1。基于MDPDE的归一化减弱了非典型增量的影响并稳定了检测过程。",
+    "fetch_date": "2026-03-07",
+    "id": "20260307_0d25fe21"
+  },
+  {
     "title": "Statistical Inference for Score Decompositions",
     "url": "https://arxiv.org/pdf/2603.04275v1",
     "source": "ArXiv",
@@ -5950,53 +5998,5 @@
     "summary": "本文比较了比特币交易中两种机器学习模型（LightGBM和LSTM）与两种技术分析策略（EMA交叉和MACD+ADX组合）的表现。研究动机源于美国SEC于2024年1月10日批准首批现货比特币ETF。结果显示，LSTM模型在不到一年内实现了约65.23%的累计回报，显著优于LightGBM、EMA、MACD+ADX策略及基准买入持有策略。该研究强调了在快速发展的加密货币市场中，机器学习与技术分析深度融合的潜力。",
     "fetch_date": "2026-01-19",
     "id": "20260119_2f7c2b8e"
-  },
-  {
-    "title": "How Digital Asset Treasury Companies Can Survive Bear Markets: The Case of the Strategy and Bitcoin",
-    "url": "https://arxiv.org/pdf/2511.01135v1",
-    "source": "ArXiv",
-    "date": "2025-11-03",
-    "abstract": "Digital Asset Treasury (DAT) companies, public firms that hold large crypto reserves as a core strategy, deliver levered exposure to digital assets but face acute downside risk when equity premia over net asset value multiples (mNAV) compress in bear markets. This paper develops a survival framework that couples conservative treasury policy with an operating line that monetizes holdings independent of mark-to-market gains. Using Strategy (formerly MicroStrategy) as a case, we propose a \"BTC-to-sats\" payments rail that allocates a small, risk-capped liquidity sleeve of the treasury to Lightning Network channels, generating price-agnostic fee revenue (acquiring bps, routing, hedge/FX spread) while keeping settlement exposure near zero beta to BTC. We formalize a no-forced-sale condition and show how disclosed KPIs allow investors to test whether operating cash flows can bridge an 18 to 24-month bear without liquidations. The feasibility of the rail is supported by Strategy's Lightning initiative and empirical Lightning performance. Our model generalizes across DAT types and provides implementable disclosures that can sustain an mNAV premium through cycles.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "数字资产财库（DAT）公司（如持有大量加密储备作为核心战略的上市公司）在熊市中面临股权溢价相对于净资产价值倍数（mNAV）压缩带来的下行风险。本文提出一个生存框架，将保守的财库政策与独立于市值损益的运营线相结合。以Strategy（原MicroStrategy）为例，提出“BTC-to-sats”支付通道，将财库中一小部分风险上限的流动性分配到闪电网络通道，产生与价格无关的费用收入（如基点获取、路由、对冲/外汇价差），同时保持结算风险对比特币的贝塔值接近零。该框架形式化了无强制出售条件，并展示如何通过披露的关键绩效指标（KPIs）让投资者测试运营现金流能否在18至24个月的熊市中避免清算。模型的可行性得到Strategy的闪电网络倡议和实证闪电网络性能的支持，可推广到各类DAT公司，并提供可实施的披露方案以维持周期中的mNAV溢价。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_8b708016"
-  },
-  {
-    "title": "Deep reinforcement learning for optimal trading with partial information",
-    "url": "https://arxiv.org/pdf/2511.00190v1",
-    "source": "ArXiv",
-    "date": "2025-10-31",
-    "abstract": "Reinforcement Learning (RL) applied to financial problems has been the subject of a lively area of research. The use of RL for optimal trading strategies that exploit latent information in the market is, to the best of our knowledge, not widely tackled. In this paper we study an optimal trading problem, where a trading signal follows an Ornstein-Uhlenbeck process with regime-switching dynamics. We employ a blend of RL and Recurrent Neural Networks (RNN) in order to make the most at extracting underlying information from the trading signal with latent parameters.\n  The latent parameters driving mean reversion, speed, and volatility are filtered from observations of the signal, and trading strategies are derived via RL. To address this problem, we propose three Deep Deterministic Policy Gradient (DDPG)-based algorithms that integrate Gated Recurrent Unit (GRU) networks to capture temporal dependencies in the signal. The first, a one -step approach (hid-DDPG), directly encodes hidden states from the GRU into the RL trader. The second and third are two-step methods: one (prob-DDPG) makes use of posterior regime probability estimates, while the other (reg-DDPG) relies on forecasts of the next signal value. Through extensive simulations with increasingly complex Markovian regime dynamics for the trading signal's parameters, as well as an empirical application to equity pair trading, we find that prob-DDPG achieves superior cumulative rewards and exhibits more interpretable strategies. By contrast, reg-DDPG provides limited benefits, while hid-DDPG offers intermediate performance with less interpretable strategies. Our results show that the quality and structure of the information supplied to the agent are crucial: embedding probabilistic insights into latent regimes substantially improves both profitability and robustness of reinforcement learning-based trading strategies.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究利用深度强化学习进行最优交易，针对部分信息（交易信号遵循具有状态切换动态的Ornstein-Uhlenbeck过程）的场景。作者提出了三种基于深度确定性策略梯度（DDPG）的算法，这些算法集成了门控循环单元（GRU）网络以捕捉信号中的时间依赖性，旨在从具有潜在参数的交易信号中提取底层信息并推导交易策略。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_2b0fdeed"
-  },
-  {
-    "title": "Dynamic Spatial Treatment Effects and Network Fragility: Theory and Evidence from the 2008 Financial Crisis",
-    "url": "https://arxiv.org/pdf/2511.08602v1",
-    "source": "ArXiv",
-    "date": "2025-11-02",
-    "abstract": "The 2008 financial crisis exposed fundamental vulnerabilities in interconnected banking systems, yet existing frameworks fail to integrate spatial propagation with network contagion mechanisms. This paper develops a unified spatial-network framework to analyze systemic risk dynamics, revealing three critical findings that challenge conventional wisdom. First, banking consolidation paradoxically increased systemic fragility: while bank numbers declined 47.3% from 2007 to 2023, network fragility measured by algebraic connectivity rose 315.8%, demonstrating that interconnectedness intensity dominates institutional count. Second, financial contagion propagates globally with negligible spatial decay (boundary d* = 47,474 km), contrasting sharply with localized technology diffusion (d* = 69 km)--a scale difference of 688 times. Third, traditional difference-in-differences methods overestimate crisis impacts by 73.2% when ignoring network structure, producing severely biased policy assessments. Using bilateral exposure data from 156 institutions across 28 countries (2007-2023) and employing spectral analysis of network Laplacian operators combined with spatial difference-in-differences identification, we document that crisis effects amplified over time rather than dissipating, increasing fragility 68.4% above pre-crisis levels with persistent effects through 2023. The consolidation paradox exhibits near-perfect correlation (R = 0.97) between coupling strength and systemic vulnerability, validating theoretical predictions from continuous spatial dynamics. Policy simulations demonstrate network-targeted capital requirements achieve 11.3x amplification effects versus uniform regulations. These findings establish that accurate systemic risk assessment and macroprudential policy design require explicit incorporation of both spatial propagation and network topology.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文通过构建统一的空间-网络框架分析系统性风险动态，揭示了三个关键发现：1) 银行整合反而增加了系统脆弱性（2007-2023年间银行数量减少47.3%，但网络脆弱性指标代数连通性上升315.8%）；2) 金融传染具有全球性传播特征（边界衰减距离d*=47,474公里），与局部化的技术扩散（d*=69公里）形成688倍差异；3) 忽略网络结构的传统双重差分法会高估危机影响73.2%。研究采用28个国家156家机构的双边敞口数据（2007-2023），结合网络拉普拉斯算子的谱分析和空间双重差分法。对实战交易的价值在于：为系统性风险建模提供新框架，揭示网络结构对风险评估的关键影响，但需结合具体交易策略转化应用。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_91480d97"
-  },
-  {
-    "title": "Exact Terminal Condition Neural Network for American Option Pricing Based on the Black-Scholes-Merton Equations",
-    "url": "https://arxiv.org/pdf/2510.27132v1",
-    "source": "ArXiv",
-    "date": "2025-10-31",
-    "abstract": "This paper proposes the Exact Terminal Condition Neural Network (ETCNN), a deep learning framework for accurately pricing American options by solving the Black-Scholes-Merton (BSM) equations. The ETCNN incorporates carefully designed functions that ensure the numerical solution not only exactly satisfies the terminal condition of the BSM equations but also matches the non-smooth and singular behavior of the option price near expiration. This method effectively addresses the challenges posed by the inequality constraints in the BSM equations and can be easily extended to high-dimensional scenarios. Additionally, input normalization is employed to maintain the homogeneity. Multiple experiments are conducted to demonstrate that the proposed method achieves high accuracy and exhibits robustness across various situations, outperforming both traditional numerical methods and other machine learning approaches.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文提出了一种基于Black-Scholes-Merton方程的精确终端条件神经网络（ETCNN），用于精确求解美式期权定价问题。该方法通过精心设计的函数确保数值解不仅精确满足BSM方程的终端条件，还能匹配期权价格在到期日附近的不光滑和奇异行为，有效处理了BSM方程中的不等式约束，并可轻松扩展到高维场景。实验表明，该方法具有高精度和鲁棒性，优于传统数值方法和其他机器学习方法。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_12ea4ded"
   }
 ]
