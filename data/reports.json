@@ -1,5 +1,53 @@
 [
   {
+    "title": "Stock Market Prediction Using Node Transformer Architecture Integrated with BERT Sentiment Analysis",
+    "url": "https://arxiv.org/pdf/2603.05917v1",
+    "source": "ArXiv",
+    "date": "2026-03-06",
+    "abstract": "Stock market prediction presents considerable challenges for investors, financial institutions, and policymakers operating in complex market environments characterized by noise, non-stationarity, and behavioral dynamics. Traditional forecasting methods often fail to capture the intricate patterns and cross-sectional dependencies inherent in financial markets. This paper presents an integrated framework combining a node transformer architecture with BERT-based sentiment analysis for stock price forecasting. The proposed model represents the stock market as a graph structure where individual stocks form nodes and edges capture relationships including sectoral affiliations, correlated price movements, and supply chain connections. A fine-tuned BERT model extracts sentiment from social media posts and combines it with quantitative market features through attention-based fusion. The node transformer processes historical market data while capturing both temporal evolution and cross-sectional dependencies among stocks. Experiments on 20 S&P 500 stocks spanning January 1982 to March 2025 demonstrate that the integrated model achieves a mean absolute percentage error (MAPE) of 0.80% for one-day-ahead predictions, compared to 1.20% for ARIMA and 1.00% for LSTM. Sentiment analysis reduces prediction error by 10% overall and 25% during earnings announcements, while graph-based modeling contributes an additional 15% improvement by capturing inter-stock dependencies. Directional accuracy reaches 65% for one-day forecasts. Statistical validation through paired t-tests confirms these improvements (p < 0.05 for all comparisons). The model maintains MAPE below 1.5% during high-volatility periods where baseline models exceed 2%.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "股票市场预测在充满噪声、非平稳性和行为动态的复杂市场环境中对投资者、金融机构和政策制定者构成重大挑战。传统预测方法往往难以捕捉金融市场固有的复杂模式和横截面依赖关系。本文提出了一种集成框架，将节点变换器架构与基于BERT的情感分析相结合，用于股价预测。该模型将股票市场表示为图结构，其中个股作为节点，边捕捉包括行业关联、相关价格变动和供应链连接在内的关系。一个微调的BERT模型从社交媒体帖子中提取情感，并通过基于注意力的融合将其与定量市场特征相结合。节点变换器处理历史市场数据，同时捕捉股票间的时间演化和横截面依赖关系。在1982年1月至2025年3月期间对20只标普500股票进行的实验表明，集成模型在一日预测中实现了0.80%的平均绝对百分比误差（MAPE）。",
+    "fetch_date": "2026-03-10",
+    "id": "20260310_1c83dd3b"
+  },
+  {
+    "title": "Boosting deep Reinforcement Learning using pretraining with Logical Options",
+    "url": "https://arxiv.org/pdf/2603.06565v1",
+    "source": "ArXiv",
+    "date": "2026-03-06",
+    "abstract": "Deep reinforcement learning agents are often misaligned, as they over-exploit early reward signals. Recently, several symbolic approaches have addressed these challenges by encoding sparse objectives along with aligned plans. However, purely symbolic architectures are complex to scale and difficult to apply to continuous settings. Hence, we propose a hybrid approach, inspired by humans' ability to acquire new skills. We use a two-stage framework that injects symbolic structure into neural-based reinforcement learning agents without sacrificing the expressivity of deep policies. Our method, called Hybrid Hierarchical RL (H^2RL), introduces a logical option-based pretraining strategy to steer the learning policy away from short-term reward loops and toward goal-directed behavior while allowing the final policy to be refined via standard environment interaction. Empirically, we show that this approach consistently improves long-horizon decision-making and yields agents that outperform strong neural, symbolic, and neuro-symbolic baselines.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文提出了一种名为混合分层强化学习（H²RL）的混合方法，通过逻辑选项预训练策略将符号结构注入基于神经网络的强化学习智能体。该方法采用两阶段框架：首先通过逻辑选项预训练引导学习策略远离短期奖励循环，转向目标导向行为；随后通过标准环境交互精炼最终策略。实证表明，该方法能持续改善长周期决策能力，使智能体在神经网络、符号及神经符号基线方法中表现更优。",
+    "fetch_date": "2026-03-10",
+    "id": "20260310_a757ea7e"
+  },
+  {
+    "title": "Convergence of Neural Network Policies for Risk--Reward Optimization",
+    "url": "https://arxiv.org/pdf/2603.06563v1",
+    "source": "ArXiv",
+    "date": "2026-03-06",
+    "abstract": "We develop a neural-network framework for multi-period risk--reward stochastic control problems with constrained two-step feedback policies that may be discontinuous in the state. We allow a broad class of objectives built on a finite-dimensional performance vector, including terminal and path-dependent statistics, with risk functionals admitting auxiliary-variable optimization representations (e.g.\\ Conditional Value-at-Risk and buffered probability of exceedance) and optional moment dependence. Our approach parametrizes the two-step policy using two coupled feedforward networks with constraint-enforcing output layers, reducing the constrained control problem to unconstrained training over network parameters. Under mild regularity conditions, we prove that the empirical optimum of the NN-parametrized objective converges in probability to the true optimal value as network capacity and training sample size increase. The proof is modular, separating policy approximation, propagation through the controlled recursion, and preservation under the scalarized risk--reward objective. Numerical experiments confirm the predicted convergence-in-probability behavior, show close agreement between learned and reference control heat maps, and demonstrate out-of-sample robustness on a large independent scenario set.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文开发了一个神经网络框架，用于解决多期风险-回报随机控制问题，采用约束的两步反馈策略（状态可能不连续）。该方法允许基于有限维性能向量构建广泛的目标函数，包括终端和路径依赖统计量，风险泛函采用辅助变量优化表示（如条件风险价值和缓冲超限概率），并可选择矩依赖。通过两个耦合的前馈网络参数化两步策略，并使用约束强制输出层，将约束控制问题简化为网络参数的无约束训练。在温和的正则条件下，证明了随着网络容量和训练样本量的增加，神经网络参数化目标的经验最优值依概率收敛于真实最优值。数值实验验证了依概率收敛行为，并显示了与理论预测的密切一致性。",
+    "fetch_date": "2026-03-10",
+    "id": "20260310_3bd539fe"
+  },
+  {
+    "title": "Impact of arbitrage between leveraged ETF and futures on market liquidity during market crash",
+    "url": "https://arxiv.org/pdf/2603.05862v1",
+    "source": "ArXiv",
+    "date": "2026-03-06",
+    "abstract": "Leveraged ETFs (L-ETFs) are exchange-traded funds that achieve price movements several times greater than an index by holding index-linked futures such as Nikkei Stock Average Index futures. It is known that when the price of an L-ETF falls, the L-ETF uses the liquidity of futures to limit the decline through arbitrage trading. Conversely, when the price of a futures contract falls, the futures contract uses the liquidity of the L-ETF to limit its decline. However, the impact of arbitrage trading on the liquidity of these markets has been little studied. Therefore, the present study used artificial market simulations to investigate how the liquidity (Volume, SellDepth, BuyDepth, Tightness) of both markets changes when prices plummet in either (i.e., the L-ETF or futures market), depending on the presence or absence of arbitrage trading. As a result, it was found that when erroneous orders occur in the L-ETF market, the existence of arbitrage trading causes liquidity to be supplied from the futures market to the L-ETF market in terms of SellDepth and Tightness. When erroneous orders occur in the futures market, the existence of arbitrage trading causes liquidity to be supplied from the L-ETF market to the futures market in terms of SellDepth and Tightness, and liquidity to be supplied from the futures market to the L-ETF market in terms of Volume. We also analyzed the internal market mechanisms that led to these results.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本研究通过人工市场模拟，探讨了在市场暴跌期间，杠杆ETF（L-ETF）与期货（如日经平均指数期货）之间的套利交易对双方市场流动性（包括成交量、卖盘深度、买盘深度和紧密度）的影响。研究发现，当L-ETF市场出现错误订单时，套利交易的存在会促使期货市场向L-ETF市场提供流动性（尤其在卖盘深度和紧密度方面）；反之，当期货市场出现错误订单时，套利交易则从L-ETF市场向期货市场输送流动性。该研究揭示了套利机制在极端市场条件下对流动性的双向稳定作用，对实战交易中理解市场联动、流动性风险管理和套利策略设计具有参考价值，但结论基于模拟环境，需结合实盘验证。",
+    "fetch_date": "2026-03-10",
+    "id": "20260310_39369320"
+  },
+  {
     "title": "Explainable Regime Aware Investing",
     "url": "https://arxiv.org/pdf/2603.04441v1",
     "source": "ArXiv",
@@ -5950,53 +5998,5 @@
     "summary": "本文提出了一种基于策略的深度强化学习超启发式框架，用于解决作业车间调度问题。该超启发式代理学习根据系统状态动态切换调度规则。我们通过两个关键机制扩展了该框架：首先，动作预过滤将决策限制在可行的低层动作上，使低层启发式方法能够独立于环境约束进行评估，并提供无偏评估；其次，承诺机制调节启发式切换的频率。我们研究了从逐步切换到全周期承诺的不同承诺策略对训练行为和完工时间的影响，并比较了策略层面的两种动作选择策略：确定性贪婪选择和随机采样。在标准JSSP基准上的计算实验表明，该方法优于传统启发式、元启发式和最近的基于神经网络的调度方法。",
     "fetch_date": "2026-01-20",
     "id": "20260120_e49bd93a"
-  },
-  {
-    "title": "Optimal Liquidation of Perpetual Contracts",
-    "url": "https://arxiv.org/pdf/2601.10812v1",
-    "source": "ArXiv",
-    "date": "2026-01-15",
-    "abstract": "An agent holds a position in a perpetual contract with payoff function $ψ$ and attempts to liquidate the position while managing transaction costs, inventory risk, and funding rate payments. By solving the agent's stochastic control problem we obtain a closed-form expression for the optimal trading strategy when the payoff function is given by $ψ(s) = s$. When the payoff function is non-linear we provide approximations to the optimal strategy which apply when the funding rate parameter is small or when the length of the trading interval is small. We further prove that when $ψ$ is non-linear, the short time approximation can be written in terms of the closed-form trading strategy corresponding to the case of the identity payoff function.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究了永续合约的最优清算问题，考虑了交易成本、持仓风险和资金费率支付等因素。通过求解随机控制问题，在线性收益函数ψ(s)=s时得到了最优交易策略的闭式解；对于非线性收益函数，提供了资金费率参数较小或交易区间较短时的近似策略，并证明了非线性情况下的短时近似可用线性情况的闭式策略表示。",
-    "fetch_date": "2026-01-20",
-    "id": "20260120_ebea0f8a"
-  },
-  {
-    "title": "When AI Trading Agents Compete: Adverse Selection of Meta-Orders by Reinforcement Learning-Based Market Making",
-    "url": "https://arxiv.org/pdf/2510.27334v1",
-    "source": "ArXiv",
-    "date": "2025-10-31",
-    "abstract": "We investigate the mechanisms by which medium-frequency trading agents are adversely selected by opportunistic high-frequency traders. We use reinforcement learning (RL) within a Hawkes Limit Order Book (LOB) model in order to replicate the behaviours of high-frequency market makers. In contrast to the classical models with exogenous price impact assumptions, the Hawkes model accounts for endogenous price impact and other key properties of the market (Jain et al. 2024a). Given the real-world impracticalities of the market maker updating strategies for every event in the LOB, we formulate the high-frequency market making agent via an impulse control reinforcement learning framework (Jain et al. 2025). The RL used in the simulation utilises Proximal Policy Optimisation (PPO) and self-imitation learning. To replicate the adverse selection phenomenon, we test the RL agent trading against a medium frequency trader (MFT) executing a meta-order and demonstrate that, with training against the MFT meta-order execution agent, the RL market making agent learns to capitalise on the price drift induced by the meta-order. Recent empirical studies have shown that medium-frequency traders are increasingly subject to adverse selection by high-frequency trading agents. As high-frequency trading continues to proliferate across financial markets, the slippage costs incurred by medium-frequency traders are likely to increase over time. However, we do not observe that increased profits for the market making RL agent necessarily cause significantly increased slippages for the MFT agent.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文研究高频做市商如何通过强化学习（RL）在Hawkes限价订单簿（LOB）模型中利用中频交易者的元订单执行进行逆向选择。论文采用脉冲控制强化学习框架（PPO与自模仿学习），模拟高频做市商捕捉元订单引发的价格漂移，揭示了中频交易者在实际市场中面临的逆向选择风险。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_aae970e9"
-  },
-  {
-    "title": "Clustering-Based Weight Orthogonalization for Stabilizing Deep Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2511.11607v1",
-    "source": "ArXiv",
-    "date": "2025-11-02",
-    "abstract": "Reinforcement learning (RL) has made significant advancements, achieving superhuman performance in various tasks. However, RL agents often operate under the assumption of environmental stationarity, which poses a great challenge to learning efficiency since many environments are inherently non-stationary. This non-stationarity results in the requirement of millions of iterations, leading to low sample efficiency. To address this issue, we introduce the Clustering Orthogonal Weight Modified (COWM) layer, which can be integrated into the policy network of any RL algorithm and mitigate non-stationarity effectively. The COWM layer stabilizes the learning process by employing clustering techniques and a projection matrix. Our approach not only improves learning speed but also reduces gradient interference, thereby enhancing the overall learning efficiency. Empirically, the COWM outperforms state-of-the-art methods and achieves improvements of 9% and 12.6% in vision based and state-based DMControl benchmark. It also shows robustness and generality across various algorithms and tasks.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文《基于聚类的权重正交化用于稳定深度强化学习》提出了一种可集成到任何RL算法策略网络中的COWM层，通过聚类技术和投影矩阵有效缓解环境非平稳性问题，提高了学习速度、减少梯度干扰，在DMControl基准测试中实现9%-12.6%的性能提升，对实战交易中处理市场非平稳性具有直接应用价值。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_c0731931"
-  },
-  {
-    "title": "Technical Analysis Meets Machine Learning: Bitcoin Evidence",
-    "url": "https://arxiv.org/pdf/2511.00665v1",
-    "source": "ArXiv",
-    "date": "2025-11-01",
-    "abstract": "In this note, we compare Bitcoin trading performance using two machine learning models-Light Gradient Boosting Machine (LightGBM) and Long Short-Term Memory (LSTM)-and two technical analysis-based strategies: Exponential Moving Average (EMA) crossover and a combination of Moving Average Convergence/Divergence with the Average Directional Index (MACD+ADX). The objective is to evaluate how trading signals can be used to maximize profits in the Bitcoin market. This comparison was motivated by the U.S. Securities and Exchange Commission's (SEC) approval of the first spot Bitcoin exchange-traded funds (ETFs) on 2024-01-10. Our results show that the LSTM model achieved a cumulative return of approximately 65.23% in under a year, significantly outperforming LightGBM, the EMA and MACD+ADX strategies, as well as the baseline buy-and-hold. This study highlights the potential for deeper integration of machine learning and technical analysis in the rapidly evolving cryptocurrency landscape.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文比较了比特币交易中两种机器学习模型（LightGBM和LSTM）与两种技术分析策略（EMA交叉和MACD+ADX组合）的表现。研究动机源于美国SEC于2024年1月10日批准首批现货比特币ETF。结果显示，LSTM模型在不到一年内实现了约65.23%的累计回报，显著优于LightGBM、EMA、MACD+ADX策略及基准买入持有策略。该研究强调了在快速发展的加密货币市场中，机器学习与技术分析深度融合的潜力。",
-    "fetch_date": "2026-01-19",
-    "id": "20260119_2f7c2b8e"
   }
 ]
