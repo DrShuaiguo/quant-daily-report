@@ -1,5 +1,77 @@
 [
   {
+    "title": "DatedGPT: Preventing Lookahead Bias in Large Language Models with Time-Aware Pretraining",
+    "url": "https://arxiv.org/pdf/2603.11838v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "In financial backtesting, large language models pretrained on internet-scale data risk introducing lookahead bias that undermines their forecasting validity, as they may have already seen the true outcome during training. To address this, we present DatedGPT, a family of twelve 1.3B-parameter language models, each trained from scratch on approximately 100 billion tokens of temporally partitioned data with strict annual cutoffs spanning 2013 to 2024. We further enhance each model with instruction fine-tuning on both general-domain and finance-specific datasets curated to respect the same temporal boundaries. Perplexity-based probing confirms that each model's knowledge is effectively bounded by its data cutoff year, while evaluation on standard benchmarks shows competitive performance with existing models of similar scale. We provide an interactive web demo that allows users to query and compare responses from models across different cutoff years.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "在金融回测中，基于互联网规模数据预训练的大语言模型存在引入前瞻性偏差的风险，这会削弱其预测有效性，因为它们可能在训练期间已经看到了真实结果。为解决此问题，我们提出了DatedGPT系列模型，包含12个13亿参数的语言模型，每个模型均使用约1000亿个按时间划分的token从头开始训练，并严格遵守2013年至2024年的年度截止日期。我们进一步通过指令微调增强了每个模型，使用了尊重相同时间边界的通用领域和金融特定数据集。基于困惑度的探测证实每个模型的知识被其数据截止年份有效限制，而在标准基准测试上的评估显示其与类似规模现有模型具有竞争力。我们提供了一个交互式网络演示，允许用户查询和比较不同截止年份模型的响应。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_7ecc6bc7"
+  },
+  {
+    "title": "Language model guided reinforcement learning in quantitative trading",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11390898/",
+    "source": "Scholar",
+    "date": "2026-03-14",
+    "abstract": "… -generated strategies through expert review, and (ii) the performance of LLM-guided agents against unguided RL baselines using Sharpe Ratio (SR) and Maximum Drawdown (MDD). …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文通过专家评审评估LLM生成策略，并比较LLM引导的强化学习代理与无引导基线在夏普比率和最大回撤上的表现，对实战交易具有较高价值，因为它结合了前沿的LLM技术来优化量化交易策略。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_86bb636a"
+  },
+  {
+    "title": "Beyond Polarity: Multi-Dimensional LLM Sentiment Signals for WTI Crude Oil Futures Return Prediction",
+    "url": "https://arxiv.org/pdf/2603.11408v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "Forecasting crude oil prices remains challenging because market-relevant information is embedded in large volumes of unstructured news and is not fully captured by traditional polarity-based sentiment measures. This paper examines whether multi-dimensional sentiment signals extracted by large language models improve the prediction of weekly WTI crude oil futures returns. Using energy-sector news articles from 2020 to 2025, we construct five sentiment dimensions covering relevance, polarity, intensity, uncertainty, and forwardness based on GPT-4o, Llama 3.2-3b, and two benchmark models, FinBERT and AlphaVantage. We aggregate article-level signals to the weekly level and evaluate their predictive performance in a classification framework. The best results are achieved by combining GPT-4o and FinBERT, suggesting that LLM-based and conventional financial sentiment models provide complementary predictive information. SHAP analysis further shows that intensity- and uncertainty-related features are among the most important predictors, indicating that the predictive value of news sentiment extends beyond simple polarity. Overall, the results suggest that multi-dimensional LLM-based sentiment measures can improve commodity return forecasting and support energy-market risk monitoring.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "预测原油价格具有挑战性，因为市场相关信息嵌入大量非结构化新闻中，传统基于极性的情绪测量无法完全捕捉。本文研究通过大型语言模型提取的多维情绪信号是否能改善WTI原油期货周度收益预测。使用2020-2025年能源领域新闻文章，基于GPT-4o、Llama 3.2-3b及基准模型FinBERT和AlphaVantage构建五个情绪维度：相关性、极性、强度、不确定性和前瞻性。将文章级信号聚合至周度，在分类框架中评估预测性能。最佳结果通过结合GPT-4o和FinBERT实现，表明基于LLM和传统金融情绪模型提供互补预测信息。SHAP分析进一步显示强度和不确定性相关特征是最重要预测因子，表明新闻情绪的预测价值超越简单极性。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_4f9ae57b"
+  },
+  {
+    "title": "Weighted Generalized Risk Measure and Risk Quadrangle: Characterization, Optimization and Application",
+    "url": "https://arxiv.org/pdf/2603.10327v2",
+    "source": "ArXiv",
+    "date": "2026-03-11",
+    "abstract": "Various financial market scenarios may cause heterogeneous risk assessments among analysts, which motivates the usage of the Generalized Risk Measure in Fadina et al. (2024, Finance and Stochastics). Effectively synthesizing these diverse assessments avoids over-relying on a single, potentially flawed or conservative forecast and promotes more robust decision-making. Motivated by this, we establish analytical characterizations of the Weighted Generalized Risk Measure (WGRM) under both discrete and continuous settings. Building upon the WGRM, we incorporate the Fundamental Risk Quadrangle (FRQ) in Rockafellar and Uryasev (2013, Surveys in Operations Research and Management Science) into the Weighted Risk Quadrangle (WRQ) and show that the intrinsic relationships among risk, deviation, regret, error, and statistics in FRQ are preserved under weighted aggregation across scenarios. Moreover, we demonstrate that certain complex risk optimization problems under the WGRM can be reformulated as tractable linear programs through the WRQ structure, thus ensuring computational feasibility. Finally, the WGRM and WRQ framework is applied to empirical analyses using constituents of the NASDAQ 100 and S&P 500 indices across recession and expansion regimes, which validates that WGRM-based portfolios exhibit superior risk-adjusted performance and enhanced downside resilience and effectively mitigate losses arising from erroneous single-scenario judgments.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出了加权广义风险度量（WGRM）及其在加权风险四边形（WRQ）框架下的理论刻画，证明了在离散和连续场景下加权聚合能保持风险、偏差、遗憾、误差和统计量之间的内在关系。通过WRQ结构，可将复杂风险优化问题转化为可处理的线性规划，确保计算可行性。最后将WGRM和WRQ框架应用于纳斯达克100成分股的实证分析。该研究对实战交易的价值在于提供了处理异质风险评估的理论工具和计算框架，但主要贡献仍偏重理论构建和优化方法，而非直接的交易策略或预测模型。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_9b77b80e"
+  },
+  {
+    "title": "Entropic signatures of market response under concentrated policy communication",
+    "url": "https://arxiv.org/pdf/2603.12040v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "The first 100 days of Donald Trump second presidential term (January 20th - April 30th, 2025) featured policy actions with potential market repercussions, constituting a well-suited case study of a concentrated policy scenario. Here, we provide a first look at this period, rooted in the information theory, by analyzing major stock indices across the Americas, Europe as well as Asia and Oceania. Our approach jointly examines dispersion (standard deviation) and information complexity (entropy), but also employs a sliding window cumulative entropy to localize extreme events. We find a notable decoupling between the first two measures, indicating that entropy is not merely a proxy for amplitude but reflects the diversity of populated outcomes. As such, they allow us to capture both market volatility and narrative constraints, signaling large and coherent moves driven by policy changes. In turn, the cumulative entropy is found to notably increase during regional episodes with high information density, providing effective signatures of such events. We argue that the obtained results indicate short-term globally coupled, yet regionally modulated, market impacts with clear connection to introduced policies. In what follows, the presented entropic framework emerges as an efficient complement to standard methods for characterizing markets under turbulent conditions, with potential to enhance forecasting strategies such as the stochastic modeling.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文以信息论为基础，分析了特朗普第二任期前100天（2025年1月20日至4月30日）这一政策密集期的市场反应。通过联合考察主要股票指数的离散度（标准差）和信息复杂度（熵），并采用滑动窗口累积熵来定位极端事件，研究发现熵与离散度之间存在显著脱钩，表明熵不仅反映波动幅度，更体现了市场结果的多样性，从而能同时捕捉市场波动性和叙事约束。累积熵在信息密度高的区域性事件期间显著增加，为这类事件提供了有效特征。研究认为，结果表明政策变化引发了短期全球耦合但区域调制的市场影响。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_50df1d48"
+  },
+  {
+    "title": "Sim-to-reality adaptation for Deep Reinforcement Learning applied to an underwater docking application",
+    "url": "https://arxiv.org/pdf/2603.12020v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "Deep Reinforcement Learning (DRL) offers a robust alternative to traditional control methods for autonomous underwater docking, particularly in adapting to unpredictable environmental conditions. However, bridging the \"sim-to-real\" gap and managing high training latencies remain significant bottlenecks for practical deployment. This paper presents a systematic approach for autonomous docking using the Girona Autonomous Underwater Vehicle (AUV) by leveraging a high-fidelity digital twin environment. We adapted the Stonefish simulator into a multiprocessing RL framework to significantly accelerate the learning process while incorporating realistic AUV dynamics, collision models, and sensor noise. Using the Proximal Policy Optimization (PPO) algorithm, we developed a 6-DoF control policy trained in a headless environment with randomized starting positions to ensure generalized performance. Our reward structure accounts for distance, orientation, action smoothness, and adaptive collision penalties to facilitate soft docking. Experimental results demonstrate that the agent achieved a success rate of over 90% in simulation. Furthermore, successful validation in a physical test tank confirmed the efficacy of the sim-to-reality adaptation, with the DRL controller exhibiting emergent behaviors such as pitch-based braking and yaw oscillations to assist in mechanical alignment.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出了一种用于自主水下对接的深度强化学习方法，通过高保真数字孪生环境和Stonefish模拟器加速训练，采用PPO算法开发6自由度控制策略，在模拟中实现超过90%的成功率，并在物理测试池中验证。虽然展示了从模拟到现实的适应能力，但主要针对特定水下机器人应用，与量化交易的实战需求关联较弱。",
+    "fetch_date": "2026-03-14",
+    "id": "20260314_58cfb0f1"
+  },
+  {
     "title": "A Bipartite Graph Approach to U.S.-China Cross-Market Return Forecasting",
     "url": "https://arxiv.org/pdf/2603.10559v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本文提出SPIRAL（自我博弈增量赛车算法），一种用于训练多智能体无人机竞赛中自主无人机的新方法。SPIRAL独特地采用自我博弈机制，在具有挑战性的动态环境中逐步培养复杂的赛车行为。通过这一核心机制，无人机持续与日益熟练的自身版本竞争，自然地提升竞争互动的难度。这一渐进式学习过程引导智能体从掌握基本飞行控制发展到执行复杂的协作多无人机赛车策略。该方法设计灵活，允许在其自我博弈框架内集成任何最先进的深度强化学习算法。仿真实验展示了SPIRAL的显著优势，并对其中运行的各种DRL算法进行了性能基准测试。因此，我们为自主无人机赛车领域贡献了一个通用、可扩展且自我改进的学习框架。SPIRAL通过其自我博弈动态自主生成适当且逐步升级挑战的能力。",
     "fetch_date": "2026-01-23",
     "id": "20260123_9a1291f0"
-  },
-  {
-    "title": "General Equilibrium Amplification and Crisis Vulnerability: Cross-Crisis Evidence from Global Banks",
-    "url": "https://arxiv.org/pdf/2510.24775v2",
-    "source": "ArXiv",
-    "date": "2025-10-25",
-    "abstract": "This paper develops a continuous framework for analyzing financial contagion that incorporates both geographic proximity and interbank network linkages. The framework characterizes stress propagation through a master equation whose solution admits a Feynman-Kac representation as expected cumulative stress along stochastic paths through spatial-network space. From this representation, I derive the General Equilibrium Amplification Factor -- a structural measure of systemic importance that captures the ratio of total system-wide effects to direct effects following a localized shock. The amplification factor decomposes naturally into spatial, network, and interaction components, revealing which transmission channels contribute most to each institution's systemic importance. The framework nests discrete cascade models as a limiting case when jump intensity becomes infinite above default thresholds, clarifying that continuous and discrete approaches describe different regimes of the same phenomenon. Empirical validation using 38 global banks across the 2008 financial crisis and COVID-19 pandemic demonstrates that the amplification factor correctly identifies systemically important institutions (Pearson correlation $ρ= -0.450$, $p = 0.080$ between amplification factor and crisis drawdowns) and predicts crisis outcomes out-of-sample ($ρ= -0.352$ for COVID-19). Robustness analysis using cumulative abnormal returns -- a measure more directly connected to the Feynman-Kac integral -- strengthens these findings ($ρ= -0.512$, $p = 0.042$). Time-series analysis confirms that average pairwise bank correlations track macroeconomic stress indicators ($ρ= 0.265$ with VIX, $p < 0.001$). Comparing the two crises reveals that COVID-19 produced a sharper correlation spike (+93%) despite smaller equity losses, reflecting different contagion dynamics for exogenous versus endogenous shocks.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文开发了一个连续框架来分析金融传染，该框架结合了地理邻近性和银行间网络联系。该框架通过主方程描述压力传播，其解采用费曼-卡茨表示作为通过空间-网络空间的随机路径上的预期累积压力。由此表示，作者推导出一般均衡放大因子——一种系统性重要性的结构性度量，捕捉局部冲击后系统范围总效应与直接效应的比率。放大因子自然分解为空间、网络和相互作用分量，揭示哪些传播渠道对每个机构的系统性重要性贡献最大。当跳跃强度在违约阈值以上变为无限时，该框架将离散级联模型作为极限情况嵌套，阐明连续和离散方法描述同一现象的不同机制。使用2008年金融危机和COVID-19大流行期间的38家全球银行进行实证验证表明，放大因子正确识别了系统重要性机构。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_d41b445c"
-  },
-  {
-    "title": "Knowledge-Integrated Representation Learning for Crypto Anomaly Detection under Extreme Label Scarcity; Relational Domain-Logic Integration with Retrieval-Grounded Context and Path-Level Explanations",
-    "url": "https://arxiv.org/pdf/2601.12839v1",
-    "source": "ArXiv",
-    "date": "2026-01-19",
-    "abstract": "Detecting anomalous trajectories in decentralized crypto networks is fundamentally challenged by extreme label scarcity and the adaptive evasion strategies of illicit actors. While Graph Neural Networks (GNNs) effectively capture local structural patterns, they struggle to internalize multi hop, logic driven motifs such as fund dispersal and layering that characterize sophisticated money laundering, limiting their forensic accountability under regulations like the FATF Travel Rule. To address this limitation, we propose Relational Domain Logic Integration (RDLI), a framework that embeds expert derived heuristics as differentiable, logic aware latent signals within representation learning. Unlike static rule based approaches, RDLI enables the detection of complex transactional flows that evade standard message passing. To further account for market volatility, we incorporate a Retrieval Grounded Context (RGC) module that conditions anomaly scoring on regulatory and macroeconomic context, mitigating false positives caused by benign regime shifts. Under extreme label scarcity (0.01%), RDLI outperforms state of the art GNN baselines by 28.9% in F1 score. A micro expert user study further confirms that RDLI path level explanations significantly improve trustworthiness, perceived usefulness, and clarity compared to existing methods, highlighting the importance of integrating domain logic with contextual grounding for both accuracy and explainability.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一种名为关系领域逻辑集成（RDLI）的框架，用于解决去中心化加密货币网络中异常检测面临的极端标签稀缺（0.01%）和复杂洗钱模式（如资金分散、分层）的挑战。RDLI将专家启发式知识嵌入为可微分的逻辑感知潜在信号，增强了图神经网络（GNN）对多跳、逻辑驱动模式的学习能力。此外，论文还引入了检索式上下文（RGC）模块，结合监管和宏观经济背景调整异常评分，减少因市场波动导致的误报。在极端标签稀缺条件下，RDLI的F1分数比现有GNN基准模型提高了28.9%。该研究对实战交易中的反洗钱监控、风险管理和合规性具有直接应用价值。",
-    "fetch_date": "2026-01-22",
-    "id": "20260122_3cab7c3f"
-  },
-  {
-    "title": "Autonomous Market Intelligence: Agentic AI Nowcasting Predicts Stock Returns",
-    "url": "https://arxiv.org/pdf/2601.11958v1",
-    "source": "ArXiv",
-    "date": "2026-01-17",
-    "abstract": "Can fully agentic AI nowcast stock returns? We deploy a state-of-the-art Large Language Model to evaluate the attractiveness of each Russell 1000 stock daily, starting from April 2025 when AI web interfaces enabled real-time search. Our data contribution is unique along three dimensions. First, the nowcasting framework is completely out-of-sample and free of look-ahead bias by construction: predictions are collected at the current edge of time, ensuring the AI has no knowledge of future outcomes. Second, this temporal design is irreproducible -- once the information environment passes, it can never be recreated. Third, our framework is 100% agentic: we do not feed the model news, disclosures, or curated text; it autonomously searches the web, filters sources, and synthesises information into quantitative predictions. We find that AI possesses genuine stock selection ability, but only for identifying top winners. Longing the 20 highest-ranked stocks generates a daily Fama-French five-factor plus momentum alpha of 18.4 basis points and an annualised Sharpe ratio of 2.43. Critically, these returns derive from an implementable strategy trading highly liquid Russell 1000 constituents, with transaction costs representing less than 10\\% of gross alpha. However, this predictability is highly concentrated: expanding beyond the top tier rapidly dilutes alpha, and bottom-ranked stocks exhibit returns statistically indistinguishable from the market. We hypothesise that this asymmetry reflects online information structure: genuinely positive news generates coherent signals, while negative news is contaminated by strategic corporate obfuscation and social media noise.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "论文《自主市场情报：智能体AI即时预测股票收益》提出了一种完全自主的AI即时预测框架，用于评估罗素1000指数成分股的吸引力。该框架具有三个独特优势：完全样本外且无前瞻性偏差的预测设计、不可复现的时间窗口、100%自主的信息获取与处理能力。研究发现，AI在识别顶级赢家股票方面具有真实选股能力，做多排名前20的股票可获得每日18.4个基点的五因子加动量超额收益和2.43的年化夏普比率。这些收益来自对高流动性罗素1000成分股的可执行交易策略，对实战交易具有显著价值。",
-    "fetch_date": "2026-01-22",
-    "id": "20260122_9fb33dba"
-  },
-  {
-    "title": "Leveraged positions on decentralized lending platforms",
-    "url": "https://arxiv.org/pdf/2601.14005v1",
-    "source": "ArXiv",
-    "date": "2026-01-20",
-    "abstract": "We develop a mathematical framework to optimize leveraged staking (\"loopy\") strategies in Decentralized Finance (DeFi), in which a staked asset is supplied as collateral, the underlying is borrowed and re-staked, and the loop can be repeated across multiple lending markets. Exploiting the fact that DeFi borrow rates are deterministic functions of pool utilization, we reduce the multi-market problem to a convex allocation over market exposures and obtain closed-form solutions under three interest-rate models: linear, kinked, and adaptive (Morpho's AdaptiveCurveIRM). The framework incorporates market-specific leverage limits, utilization-dependent borrowing costs, and transaction fees. Backtests on the Ethereum and Base blockchains using the largest Morpho wstETH/WETH markets (from January 1 to April 1, 2025) show that rebalanced leveraged positions can reach up to 6.2% APY versus 3.1% for unleveraged staking, with strong dependence on position size and rebalancing frequency. Our results provide a mathematical basis for transparent, automated DeFi portfolio optimization.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文开发了一个数学框架，用于优化去中心化金融（DeFi）中的杠杆质押（“循环”）策略，其中质押资产作为抵押品，借入底层资产并重新质押，该循环可在多个借贷市场中重复。利用DeFi借款利率是资金池利用率的确定性函数这一事实，我们将多市场问题简化为市场敞口的凸分配问题，并在三种利率模型（线性、拐点和自适应（Morpho的AdaptiveCurveIRM））下获得闭式解。该框架结合了市场特定的杠杆限制、利用率依赖的借款成本和交易费用。在以太坊和Base区块链上使用最大的Morpho wstETH/WETH市场（从2025年1月1日至4月1日）进行的回测显示，再平衡的杠杆头寸年化收益率可达6.2%，而非杠杆质押为3.1%，且对头寸规模和再平衡频率有强依赖性。我们的结果为透明、自动化的DeFi投资组合优化提供了数学基础。",
-    "fetch_date": "2026-01-22",
-    "id": "20260122_8d0c7743"
-  },
-  {
-    "title": "Look-Ahead-Bench: a Standardized Benchmark of Look-ahead Bias in Point-in-Time LLMs for Finance",
-    "url": "https://arxiv.org/pdf/2601.13770v1",
-    "source": "ArXiv",
-    "date": "2026-01-20",
-    "abstract": "We introduce Look-Ahead-Bench, a standardized benchmark measuring look-ahead bias in Point-in-Time (PiT) Large Language Models (LLMs) within realistic and practical financial workflows. Unlike most existing approaches that primarily test inner lookahead knowledge via Q\\\\&A, our benchmark evaluates model behavior in practical scenarios. To distinguish genuine predictive capability from memorization-based performance, we analyze performance decay across temporally distinct market regimes, incorporating several quantitative baselines to establish performance thresholds. We evaluate prominent open-source LLMs -- Llama 3.1 (8B and 70B) and DeepSeek 3.2 -- against a family of Point-in-Time LLMs (Pitinf-Small, Pitinf-Medium, and frontier-level model Pitinf-Large) from PiT-Inference. Results reveal significant lookahead bias in standard LLMs, as measured with alpha decay, unlike Pitinf models, which demonstrate improved generalization and reasoning abilities as they scale in size. This work establishes a foundation for the standardized evaluation of temporal bias in financial LLMs and provides a practical framework for identifying models suitable for real-world deployment. Code is available on GitHub: https://github.com/benstaf/lookaheadbench",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文介绍了Look-Ahead-Bench，这是一个用于衡量金融工作流中Point-in-Time（PiT）大语言模型（LLMs）前瞻性偏差的标准化基准。与主要通过问答测试内部前瞻知识的现有方法不同，该基准评估模型在实际场景中的行为。为区分真实预测能力与基于记忆的性能，我们分析了不同时间市场制度下的性能衰减，并引入多个量化基线以建立性能阈值。我们评估了主流开源LLMs（Llama 3.1的8B和70B版本、DeepSeek 3.2）与PiT-Inference的Point-in-Time LLMs系列（Pitinf-Small、Pitinf-Medium及前沿模型Pitinf-Large）。结果显示，标准LLMs存在显著的前瞻性偏差（通过alpha衰减衡量），而Pitinf模型则随着规模扩大展现出更好的泛化与推理能力。这项工作为金融LLMs时间偏差的标准化评估奠定了基础，并为识别适合实际部署的模型提供了实用框架。",
-    "fetch_date": "2026-01-22",
-    "id": "20260122_9b482fc1"
-  },
-  {
-    "title": "Beyond Visual Realism: Toward Reliable Financial Time Series Generation",
-    "url": "https://arxiv.org/pdf/2601.12990v1",
-    "source": "ArXiv",
-    "date": "2026-01-19",
-    "abstract": "Generative models for financial time series often create data that look realistic and even reproduce stylized facts such as fat tails or volatility clustering. However, these apparent successes break down under trading backtests: models like GANs or WGAN-GP frequently collapse, yielding extreme and unrealistic results that make the synthetic data unusable in practice. We identify the root cause in the neglect of financial asymmetry and rare tail events, which strongly affect market risk but are often overlooked by objectives focusing on distribution matching. To address this, we introduce the Stylized Facts Alignment GAN (SFAG), which converts key stylized facts into differentiable structural constraints and jointly optimizes them with adversarial loss. This multi-constraint design ensures that generated series remain aligned with market dynamics not only in plots but also in backtesting. Experiments on the Shanghai Composite Index (2004--2024) show that while baseline GANs produce unstable and implausible trading outcomes, SFAG generates synthetic data that preserve stylized facts and support robust momentum strategy performance. Our results highlight that structure-preserving objectives are essential to bridge the gap between superficial realism and practical usability in financial generative modeling.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文《超越视觉真实：迈向可靠的金融时间序列生成》指出，现有生成模型（如GANs、WGAN-GP）虽能生成视觉上逼真且符合厚尾、波动聚集等典型事实的金融时间序列，但在实战回测中常因忽略金融不对称性和罕见尾部事件而失效，导致合成数据不实用。为此，作者提出Stylized Facts Alignment GAN（SFAG），将关键典型事实转化为可微的结构约束，并与对抗损失联合优化，确保生成序列在回测中仍与市场动态保持一致。基于上证综指（2004-2024）的实验表明，SFAG生成的合成数据能保持典型事实并支持稳健的动量策略表现，突显了结构保留目标对实战交易的价值。",
-    "fetch_date": "2026-01-22",
-    "id": "20260122_69b7dcda"
   }
 ]
