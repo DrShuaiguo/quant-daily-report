@@ -1,5 +1,17 @@
 [
   {
+    "title": "Adaptive LLM-based multi-agent systems to enhance quantitative trading performance",
+    "url": "https://peerj.com/articles/cs-3630/",
+    "source": "Scholar",
+    "date": "2026-03-16",
+    "abstract": "Traditional quantitative trading approaches have limited capacity for synthesizing heterogeneous data sources and adapting to market regime shifts. We propose a three-layer …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "传统量化交易方法在整合异构数据源和适应市场机制转换方面能力有限。本文提出一种三层自适应基于大语言模型的多智能体系统，旨在通过增强数据处理和市场适应性来提升量化交易表现。",
+    "fetch_date": "2026-03-16",
+    "id": "20260316_fd803b39"
+  },
+  {
     "title": "DatedGPT: Preventing Lookahead Bias in Large Language Models with Time-Aware Pretraining",
     "url": "https://arxiv.org/pdf/2603.11838v1",
     "source": "ArXiv",
@@ -5986,17 +5998,5 @@
     "summary": "该论文提出了一种名为TABL-ABM的混合框架，用于合成限价订单簿（LOB）数据生成。该框架将基于代理的Chiarella模型（模拟日内交易活动）与TABL深度学习模型（用于预测多变量时间序列）相结合，并耦合了匹配引擎模拟及一种新颖的模拟删除订单流的方法。该模拟器能够使用程式化事实测试预测模型的生成能力。论文主要关注于生成高保真合成数据以补充历史数据，用于训练大型交易模型，属于方法论研究，对实战交易的价值主要体现在数据生成和模型测试层面，而非直接提供交易策略或Alpha信号。",
     "fetch_date": "2026-01-23",
     "id": "20260123_6c3ccac7"
-  },
-  {
-    "title": "SPIRAL: Self-Play Incremental Racing Algorithm for Learning in Multi-Drone Competitions",
-    "url": "https://arxiv.org/pdf/2510.22568v1",
-    "source": "ArXiv",
-    "date": "2025-10-26",
-    "abstract": "This paper introduces SPIRAL (Self-Play Incremental Racing Algorithm for Learning), a novel approach for training autonomous drones in multi-agent racing competitions. SPIRAL distinctively employs a self-play mechanism to incrementally cultivate complex racing behaviors within a challenging, dynamic environment. Through this self-play core, drones continuously compete against increasingly proficient versions of themselves, naturally escalating the difficulty of competitive interactions. This progressive learning journey guides agents from mastering fundamental flight control to executing sophisticated cooperative multi-drone racing strategies. Our method is designed for versatility, allowing integration with any state-of-the-art Deep Reinforcement Learning (DRL) algorithms within its self-play framework. Simulations demonstrate the significant advantages of SPIRAL and benchmark the performance of various DRL algorithms operating within it. Consequently, we contribute a versatile, scalable, and self-improving learning framework to the field of autonomous drone racing. SPIRAL's capacity to autonomously generate appropriate and escalating challenges through its self-play dynamic offers a promising direction for developing robust and adaptive racing strategies in multi-agent environments. This research opens new avenues for enhancing the performance and reliability of autonomous racing drones in increasingly complex and competitive scenarios.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出SPIRAL（自我博弈增量赛车算法），一种用于训练多智能体无人机竞赛中自主无人机的新方法。SPIRAL独特地采用自我博弈机制，在具有挑战性的动态环境中逐步培养复杂的赛车行为。通过这一核心机制，无人机持续与日益熟练的自身版本竞争，自然地提升竞争互动的难度。这一渐进式学习过程引导智能体从掌握基本飞行控制发展到执行复杂的协作多无人机赛车策略。该方法设计灵活，允许在其自我博弈框架内集成任何最先进的深度强化学习算法。仿真实验展示了SPIRAL的显著优势，并对其中运行的各种DRL算法进行了性能基准测试。因此，我们为自主无人机赛车领域贡献了一个通用、可扩展且自我改进的学习框架。SPIRAL通过其自我博弈动态自主生成适当且逐步升级挑战的能力。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_9a1291f0"
   }
 ]
