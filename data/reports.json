@@ -1,5 +1,77 @@
 [
   {
+    "title": "Efficient Real-World Autonomous Racing via Attenuated Residual Policy Optimization",
+    "url": "https://arxiv.org/pdf/2603.12960v1",
+    "source": "ArXiv",
+    "date": "2026-03-13",
+    "abstract": "Residual policy learning (RPL), in which a learned policy refines a static base policy using deep reinforcement learning (DRL), has shown strong performance across various robotic applications. Its effectiveness is particularly evident in autonomous racing, a domain that serves as a challenging benchmark for real-world DRL. However, deploying RPL-based controllers introduces system complexity and increases inference latency. We address this by introducing an extension of RPL named attenuated residual policy optimization ($α$-RPO). Unlike standard RPL, $α$-RPO yields a standalone neural policy by progressively attenuating the base policy, which initially serves to bootstrap learning. Furthermore, this mechanism enables a form of privileged learning, where the base policy is permitted to use sensor modalities not required for final deployment. We design $α$-RPO to integrate seamlessly with PPO, ensuring that the attenuated influence of the base controller is dynamically compensated during policy optimization. We evaluate $α$-RPO by building a framework for 1:10-scaled autonomous racing around it. In both simulation and zero-shot real-world transfer to Roboracer cars, $α$-RPO not only reduces system complexity but also improves driving performance compared to baselines - demonstrating its practicality for robotic deployment. Our code is available at: https://github.com/raphajaner/arpo_racing.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "本文提出了一种名为衰减残差策略优化（α-RPO）的扩展方法，用于改进残差策略学习（RPL）。RPL通过深度强化学习（DRL）让学习策略优化静态基础策略，在机器人应用中表现优异，尤其适用于作为现实世界DRL挑战基准的自动驾驶赛车领域。然而，基于RPL的控制器部署会增加系统复杂性和推理延迟。α-RPO通过逐步衰减基础策略（最初用于引导学习）来生成独立的神经策略，解决了这一问题。该机制还支持特权学习，允许基础策略使用最终部署不需要的传感器模态。α-RPO设计为与PPO无缝集成，确保在策略优化期间动态补偿基础控制器的衰减影响。作者围绕α-RPO构建了1:10比例自动驾驶赛车框架进行评估，在仿真和零样本现实世界转移到Roboracer汽车中，α-RPO均表现出色。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_f5d0fdc0"
+  },
+  {
+    "title": "Feynman-Kac Derivatives Pricing on the Full Forward Curve",
+    "url": "https://arxiv.org/pdf/2603.12375v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "This paper introduces a no-arbitrage, Monte Carlo-free approach to pricing path-dependent interest rate derivatives. The Heath-Jarrow-Morton model gives arbitrage-free contingent claims prices but is infinite-dimensional, making traditional numerical methods computationally prohibitive. To make the problem computationally tractable, I cast the stochastic pricing problem as a deterministic partial differential equation (PDE). Finance-Informed Neural Networks (FINNs) solve this PDE directly by minimizing violations of the differential equation and boundary condition, with automatic differentiation efficiently computing the exact derivatives needed to evaluate PDE terms. FINNs achieve pricing accuracy within 0.04 to 0.07 cents per dollar of contract value compared to Monte Carlo benchmarks. Once trained, FINNs price caplets in a few microseconds regardless of dimension, delivering speedups ranging from 300,000 to 4.5 million times faster than Monte Carlo simulation as the state space discretization of the forward curve grows from 10 to 150 nodes. The major Greeks-theta and curve deltas-come for free, computed automatically during PDE evaluation at zero marginal cost, whereas Monte Carlo requires complete re-simulation for each sensitivity. The framework generalizes naturally beyond caplets to other path-dependent derivatives-caps, swaptions, callable bonds-requiring only boundary condition modifications while retaining the same core PDE structure.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "本文提出了一种基于费曼-卡茨公式的无套利、无需蒙特卡洛模拟的方法，用于定价路径依赖型利率衍生品。通过将随机定价问题转化为确定性偏微分方程，并利用金融信息神经网络直接求解该PDE，实现了高精度定价（误差为每美元合约价值0.04-0.07美分）。训练完成后，FINNs可在微秒级时间内定价caplets，速度比蒙特卡洛模拟快30万至450万倍，且可自动零边际成本计算主要希腊字母（theta和曲线delta）。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_6442bcc7"
+  },
+  {
+    "title": "Microstructural Foundation of Rough Log-Normal Volatility Models",
+    "url": "https://arxiv.org/pdf/2603.13170v1",
+    "source": "ArXiv",
+    "date": "2026-03-13",
+    "abstract": "We establish a microstructural foundation of the rough Bergomi model. Specifically, we consider a sequence of order driven financial market models where orders to buy or sell an asset arrive according to a Poisson process and have a long lasting impact on volatility. Using a recently established C-tightness result for càdlàg processes we establish the weak convergence of the price-volatility process to a log-normal rough volatility model. Our weak convergence result is accompanied by weak error rates that employ a recently established Clark-Ocone formula for Poisson processes and turn our microstructure model into viable alternative to classical simulation schemes. The weak error rates strongly hinge on Poisson arrival dynamics and are novel to the rough microstructure literature.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文为粗糙Bergomi模型建立了微观结构基础。具体而言，我们考虑一系列订单驱动的金融市场模型，其中买卖资产的订单按照泊松过程到达，并对波动率产生持久影响。利用最近建立的càdlàg过程的C-紧性结果，我们证明了价格-波动率过程弱收敛于对数正态粗糙波动率模型。弱收敛结果伴随着弱误差率，这些误差率采用了最近建立的泊松过程Clark-Ocone公式，使我们的微观结构模型成为经典模拟方案的可行替代方案。弱误差率强烈依赖于泊松到达动态，这在粗糙微观结构文献中是新颖的。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_fff5119e"
+  },
+  {
+    "title": "A property of log-concave and weakly-symmetric distributions for two step approximations of random variables",
+    "url": "https://arxiv.org/pdf/2603.12767v1",
+    "source": "ArXiv",
+    "date": "2026-03-13",
+    "abstract": "In this paper we introduce a generalization of classical risk measures in which the risk is represented by a step function taking two values, corresponding to two endogenously determined market regimes. This extends the traditional framework where risk measures map random variables to single real numbers. For the quadratic loss function, we study the optimization problem of determining the optimal regime threshold and corresponding values. In the case of log-concave distributions we give conditions for the uniqueness of the regime changing. We treat the case of one dimension and also of multi-dimensions for elliptic distributions.\n  We demonstrate the necessity of convexity through counterexamples.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了一种风险度量的广义框架，其中风险由取两个值的阶梯函数表示，对应两个内生确定的市场状态，扩展了传统风险度量将随机变量映射为单个实数的框架。针对二次损失函数，研究了确定最优状态阈值及对应值的优化问题。对于对数凹分布，给出了状态转换唯一性的条件，并处理了一维和椭圆分布的多维情况。通过反例论证了凸性的必要性。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_76327821"
+  },
+  {
+    "title": "Mortgage Burnout and Selection Effects in Heterogeneous Cox Hazard Models",
+    "url": "https://arxiv.org/pdf/2603.12422v1",
+    "source": "ArXiv",
+    "date": "2026-03-12",
+    "abstract": "We study the aggregate hazard rate of a heterogeneous population whose individual event intensities are modeled as Cox (doubly stochastic) processes. In the deterministic hazard setting, the observed pool hazard is the survival weighted mean of the individual hazards, and its time derivative equals the mean individual hazard drift minus a variance term. This yields a transparent structural explanation of burnout in mortgage pools. We extend this perspective to stochastic intensity models. The observed pool hazard remains a survival-weighted mean, but now evolves as an Ito process whose drift contains the mean drift of the individual hazards and a negative selection term driven by cross-sectional dispersion, together with a diffusion term inherited from the common factor. We formulate the general identity and discuss special cases relevant to mortgage prepayment modeling.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文研究异质群体（如抵押贷款池）的聚合风险率，其中个体事件强度由Cox（双重随机）过程建模。在确定性风险设定下，观察到的池风险率是个体风险率的生存加权均值，其时间导数等于个体风险漂移的均值减去一个方差项，这为抵押贷款池中的“燃尽”现象提供了清晰的结构性解释。作者将此视角扩展到随机强度模型，此时池风险率仍为生存加权均值，但演化为一个伊藤过程，其漂移项包含个体风险的平均漂移和一个由横截面离散驱动的负选择项，以及一个从共同因子继承的扩散项。文章建立了通用恒等式，并讨论了与抵押贷款提前还款建模相关的特例。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_771403a8"
+  },
+  {
+    "title": "From Garbage to Gold: A Data-Architectural Theory of Predictive Robustness",
+    "url": "https://arxiv.org/pdf/2603.12288v1",
+    "source": "ArXiv",
+    "date": "2026-03-08",
+    "abstract": "Tabular machine learning presents a paradox: modern models achieve state-of-the-art performance using high-dimensional (high-D), collinear, error-prone data, defying the \"Garbage In, Garbage Out\" mantra. To help resolve this, we synthesize principles from Information Theory, Latent Factor Models, and Psychometrics, clarifying that predictive robustness arises not solely from data cleanliness, but from the synergy between data architecture and model capacity. Partitioning predictor-space \"noise\" into \"Predictor Error\" and \"Structural Uncertainty\" (informational deficits from stochastic generative mappings), we prove that leveraging high-D sets of error-prone predictors asymptotically overcomes both types of noise, whereas cleaning a low-D set is fundamentally bounded by Structural Uncertainty. We demonstrate why \"Informative Collinearity\" (dependencies from shared latent causes) enhances reliability and convergence efficiency, and explain why increased dimensionality reduces the latent inference burden, enabling feasibility with finite samples. To address practical constraints, we propose \"Proactive Data-Centric AI\" to identify predictors that enable robustness efficiently. We also derive boundaries for Systematic Error Regimes and show why models that absorb \"rogue\" dependencies can mitigate assumption violations. Linking latent architecture to Benign Overfitting, we offer a first step towards a unified view of robustness to Outcome Error and predictor-space noise, while also delineating when traditional DCAI's focus on label cleaning remains powerful. By redefining data quality from item-level perfection to portfolio-level architecture, we provide a theoretical rationale for \"Local Factories\" -- learning from live, uncurated enterprise \"data swamps\" -- supporting a deployment paradigm shift from \"Model Transfer\" to \"Methodology Transfer'' to overcome static generalizability limitations.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文《从垃圾到黄金：预测鲁棒性的数据架构理论》探讨了表格机器学习中的一个悖论：现代模型使用高维、共线、易出错的数据仍能取得最优性能，违背了“垃圾进，垃圾出”的格言。通过综合信息论、潜在因子模型和心理测量学的原理，论文阐明预测鲁棒性不仅源于数据清洁度，更源于数据架构与模型能力之间的协同作用。通过将预测空间“噪声”划分为“预测器误差”和“结构不确定性”（来自随机生成映射的信息缺陷），论文证明利用高维易出错预测器集合能渐进克服这两种噪声，而清洁低维集合则受限于结构不确定性。论文解释了“信息性共线性”（来自共享潜在原因的依赖）如何增强可靠性和收敛效率，并说明增加维度如何减轻潜在推断负担，使有限样本下的可行性成为可能。针对实际约束，论文提出“主动数据为中心的AI”以高效识别实现鲁棒性的预测器。",
+    "fetch_date": "2026-03-17",
+    "id": "20260317_a20847a9"
+  },
+  {
     "title": "Adaptive LLM-based multi-agent systems to enhance quantitative trading performance",
     "url": "https://peerj.com/articles/cs-3630/",
     "source": "Scholar",
@@ -5926,77 +5998,5 @@
     "summary": "本研究从欧盟排放交易体系（EU ETS）视角分析碳交易动态，这是全球最大的限额与交易碳市场。研究分析了2010年至2020年间的市场效率、价格行为和市场结构。采用AR-GARCH框架发现显著的价格聚类和短期收益可预测性，方向准确性达60.05%，预测区间内命中率为70.78%。国家间交易的网络分析显示市场结构集中，少数注册机构控制大部分高价值流动。特定国家的价格与交易量对数回归显示异质性弹性，有时超过1，表明交易量常随价格上涨。这些结果指向EU ETS中持续存在的低效率，包括部分可预测性、不对称市场力量和非传统价量关系，暗示虽然系统有助于脱碳，但其交易动态和价格形成仍不完善。",
     "fetch_date": "2026-01-23",
     "id": "20260123_9e87199a"
-  },
-  {
-    "title": "An uncertainty-aware physics-informed neural network solution for the Black-Scholes equation: a novel framework for option pricing",
-    "url": "https://arxiv.org/pdf/2511.05519v1",
-    "source": "ArXiv",
-    "date": "2025-10-27",
-    "abstract": "We present an uncertainty-aware, physics-informed neural network (PINN) for option pricing that solves the Black--Scholes (BS) partial differential equation (PDE) as a mesh-free, global surrogate over $(S,t)$. The model embeds the BS operator and boundary/terminal conditions in a residual-based objective and requires no labeled prices. For American options, early exercise is handled via an obstacle-style relaxation while retaining the BS residual in the continuation region. To quantify \\emph{epistemic} uncertainty, we introduce an anchored-ensemble fine-tuning stage (AT--PINN) that regularizes each model toward a sampled anchor and yields prediction bands alongside point estimates. On European calls/puts, the approach attains low errors (e.g., MAE $\\sim 5\\times10^{-2}$, RMSE $\\sim 7\\times10^{-2}$, explained variance $\\approx 0.999$ in representative settings) and tracks ground truth closely across strikes and maturities. For American puts, the method remains accurate (MAE/RMSE on the order of $10^{-1}$ with EV $\\approx 0.999$) and does not exhibit the error accumulation associated with time-marching schemes. Against data-driven baselines (ANN, RNN) and a Kolmogorov--Arnold FINN variant (KAN), our PINN matches or outperforms on accuracy while training more stably; anchored ensembles provide uncertainty bands that align with observed error scales. We discuss design choices (loss balancing, sampling near the payoff kink), limitations, and extensions to higher-dimensional BS settings and alternative dynamics.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出了一种不确定性感知的物理信息神经网络（PINN）用于期权定价，通过求解Black-Scholes偏微分方程作为无网格全局代理模型。该方法将BS算子和边界/终端条件嵌入基于残差的目标函数中，无需标注价格数据。对于美式期权，通过障碍式松弛处理提前行权，同时在继续区域保留BS残差。为量化认知不确定性，引入了锚定集成微调阶段（AT-PINN），使每个模型向采样锚点正则化，并提供预测区间和点估计。在欧洲看涨/看跌期权上，该方法实现了低误差（如MAE约5×10^-2，RMSE约7×10^-2，解释方差约0.999），并在不同行权价和到期日上紧密跟踪真实值。对于美式看跌期权，方法保持准确性（MAE/RMSE约10^-1，EV约0.999），且未出现时间推进方案相关的误差累积。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_9f68c927"
-  },
-  {
-    "title": "Solving Continuous Mean Field Games: Deep Reinforcement Learning for Non-Stationary Dynamics",
-    "url": "https://arxiv.org/pdf/2510.22158v1",
-    "source": "ArXiv",
-    "date": "2025-10-25",
-    "abstract": "Mean field games (MFGs) have emerged as a powerful framework for modeling interactions in large-scale multi-agent systems. Despite recent advancements in reinforcement learning (RL) for MFGs, existing methods are typically limited to finite spaces or stationary models, hindering their applicability to real-world problems. This paper introduces a novel deep reinforcement learning (DRL) algorithm specifically designed for non-stationary continuous MFGs. The proposed approach builds upon a Fictitious Play (FP) methodology, leveraging DRL for best-response computation and supervised learning for average policy representation. Furthermore, it learns a representation of the time-dependent population distribution using a Conditional Normalizing Flow. To validate the effectiveness of our method, we evaluate it on three different examples of increasing complexity. By addressing critical limitations in scalability and density approximation, this work represents a significant advancement in applying DRL techniques to complex MFG problems, bringing the field closer to real-world multi-agent systems.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出了一种新颖的深度强化学习（DRL）算法，专门用于解决非平稳连续均值场博弈（MFG）。该方法基于虚构博弈（FP）框架，利用DRL计算最优响应，并通过监督学习表示平均策略。此外，它使用条件归一化流学习时间依赖的种群分布表示。通过在三个复杂度递增的示例上验证，该方法在可扩展性和密度近似方面取得显著进展，推动了DRL在复杂MFG问题中的应用，使其更接近现实世界的多智能体系统。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_9de9d7f0"
-  },
-  {
-    "title": "Vehicle Routing with Finite Time Horizon using Deep Reinforcement Learning with Improved Network Embedding",
-    "url": "https://arxiv.org/pdf/2601.15131v1",
-    "source": "ArXiv",
-    "date": "2026-01-21",
-    "abstract": "In this paper, we study the vehicle routing problem with a finite time horizon. In this routing problem, the objective is to maximize the number of customer requests served within a finite time horizon. We present a novel routing network embedding module which creates local node embedding vectors and a context-aware global graph representation. The proposed Markov decision process for the vehicle routing problem incorporates the node features, the network adjacency matrix and the edge features as components of the state space. We incorporate the remaining finite time horizon into the network embedding module to provide a proper routing context to the embedding module. We integrate our embedding module with a policy gradient-based deep Reinforcement Learning framework to solve the vehicle routing problem with finite time horizon. We trained and validated our proposed routing method on real-world routing networks, as well as synthetically generated Euclidean networks. Our experimental results show that our method achieves a higher customer service rate than the existing routing methods. Additionally, the solution time of our method is significantly lower than that of the existing methods.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究有限时间范围内的车辆路径规划问题，目标是最大化有限时间内服务的客户请求数量。提出了一种新颖的路由网络嵌入模块，该模块创建局部节点嵌入向量和上下文感知的全局图表示。将有限剩余时间纳入网络嵌入模块，为嵌入模块提供适当的路径规划上下文。将该嵌入模块与基于策略梯度的深度强化学习框架集成，以解决有限时间范围内的车辆路径规划问题。在真实世界路由网络和合成欧几里得网络上进行了训练和验证，实验结果表明该方法比现有路由方法实现了更高的客户服务率，且求解时间显著降低。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_7d94bf8a"
-  },
-  {
-    "title": "The Limits of Lognormal: Assessing Cryptocurrency Volatility and VaR using Geometric Brownian Motion",
-    "url": "https://arxiv.org/pdf/2601.14272v1",
-    "source": "ArXiv",
-    "date": "2026-01-09",
-    "abstract": "The integration of cryptocurrencies into institutional portfolios necessitates the adoption of robust risk modeling frameworks. This study is a part of a series of subsequent works to fine-tune model risk analysis for cryptocurrencies. Through this first research work, we establish a foundational benchmark by applying the traditional industry-standard Geometric Brownian Motion (GBM) model. Popularly used for non-crypto financial assets, GBM assumes Lognormal return distributions for a multi-asset cryptocurrency portfolio (XRP, SOL, ADA). This work utilizes Maximum Likelihood Estimation and a correlated Monte Carlo Simulation incorporating the Cholesky decomposition of historical covariance. We present our stock portfolio model as a Minimum Variance Portfolio (MVP). We observe the model's structural shift within the heavy-tailed, non-Gaussian cryptocurrency environment. The results reveal limitations of the Lognormal assumption: the calculated Value-at-Risk at the 5% confidence level over the one-year horizon. For baselining our results, we also present a holistic comparative analysis with an equity portfolio (AAPL, TSLA, NVDA), demonstrating a significantly lower failure rate. This performance provides conclusive evidence that the GBM model is fundamentally the perfect benchmark for our subsequent works. Results from this novel work will be an indicator for the success criteria in our future model for crypto risk management, rigorously motivating the development and application of advanced models.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "将传统行业标准几何布朗运动（GBM）模型应用于加密货币投资组合（XRP、SOL、ADA），作为风险建模的基准。该模型假设对数正态收益分布，并采用最大似然估计和基于历史协方差Cholesky分解的蒙特卡洛模拟。研究发现，在加密货币的重尾、非高斯环境中，对数正态假设存在局限性，导致在5%置信水平下计算的一年期风险价值（VaR）表现不佳。通过与股票投资组合（AAPL、TSLA、NVDA）的对比分析，进一步突显了该模型在加密货币领域的适用性不足。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_6d56face"
-  },
-  {
-    "title": "The Breadth Premium: Measuring the Firm-level Impact of CEO Career Breadth",
-    "url": "https://arxiv.org/pdf/2511.05515v1",
-    "source": "ArXiv",
-    "date": "2025-10-26",
-    "abstract": "Prevailing career and education systems continue to reward early specialization and deep expertise within narrow domains. While such depth promotes efficiency, it may also limit adaptability in complex and rapidly changing environments. Building on research showing that variability in training inputs enhances learning outcomes across cognitive and behavioral domains, this study explores whether the same principle applies to executive performance.\n  Using an original dataset of 650 CEOs leading firms that together represent roughly 85% of US market capitalization, we construct a composite Breadth Index capturing cross-domain educational and professional breadth. Preliminary analyses reveal that firms led by higher-breadth CEOs outperform their industry peers by an average of 9.8 percentage points over a three-year window. Regression results indicate that each one-point increase on the five-point Range Index corresponds to a 1.8-point gain in abnormal returns (p < 0.03), with effects remaining robust across industries, firm sizes, and CEO age groups.\n  These early findings suggest that leadership breadth, defined as experience spanning multiple functions, disciplines, and sectors, is positively associated with firm-level performance. While the dataset remains under validation, the pattern observed supports the emerging view that as specialization deepens, the marginal value of lateral insight rises. Breadth, in this light, functions as a form of adaptive capital; it enhances leaders' capacity for integrative reasoning, organizational translation, and strategic flexibility in uncertain environments.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "标题：广度溢价：衡量CEO职业广度对公司层面的影响。摘要：主流职业与教育体系仍奖励早期专业化与狭窄领域的精深专长。虽然这种深度能提升效率，但也可能限制在复杂快速变化环境中的适应能力。本研究基于显示训练输入的变异性能提升认知与行为领域学习成果的研究，探讨这一原则是否适用于高管绩效。通过使用包含650位CEO的原创数据集（这些CEO领导的公司合计约占美国市值的85%），我们构建了一个综合广度指数，以捕捉跨领域的教育与职业广度。初步分析显示，由广度较高的CEO领导的公司，在三年窗口期内平均比行业同行表现高出9.8个百分点。回归结果表明，在五分制广度指数上每增加一分，异常回报相应增加1.8个百分点（p < 0.03），且该效应在不同行业、公司规模和CEO年龄组中保持稳健。这些早期发现表明，领导力广度（定义为跨越多个职能、学科和部门的经验）可能是一种被低估的战略资产。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_9f15ebed"
-  },
-  {
-    "title": "TABL-ABM: A Hybrid Framework for Synthetic LOB Generation",
-    "url": "https://arxiv.org/pdf/2510.22685v1",
-    "source": "ArXiv",
-    "date": "2025-10-26",
-    "abstract": "The recent application of deep learning models to financial trading has heightened the need for high fidelity financial time series data. This synthetic data can be used to supplement historical data to train large trading models. The state-of-the-art models for the generative application often rely on huge amounts of historical data and large, complicated models. These models range from autoregressive and diffusion-based models through to architecturally simpler models such as the temporal-attention bilinear layer. Agent-based approaches to modelling limit order book dynamics can also recreate trading activity through mechanistic models of trader behaviours. In this work, we demonstrate how a popular agent-based framework for simulating intraday trading activity, the Chiarella model, can be combined with one of the most performant deep learning models for forecasting multi-variate time series, the TABL model. This forecasting model is coupled to a simulation of a matching engine with a novel method for simulating deleted order flow. Our simulator gives us the ability to test the generative abilities of the forecasting model using stylised facts. Our results show that this methodology generates realistic price dynamics however, when analysing deeper, parts of the markets microstructure are not accurately recreated, highlighting the necessity for including more sophisticated agent behaviors into the modeling framework to help account for tail events.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了一种名为TABL-ABM的混合框架，用于合成限价订单簿（LOB）数据生成。该框架将基于代理的Chiarella模型（模拟日内交易活动）与TABL深度学习模型（用于预测多变量时间序列）相结合，并耦合了匹配引擎模拟及一种新颖的模拟删除订单流的方法。该模拟器能够使用程式化事实测试预测模型的生成能力。论文主要关注于生成高保真合成数据以补充历史数据，用于训练大型交易模型，属于方法论研究，对实战交易的价值主要体现在数据生成和模型测试层面，而非直接提供交易策略或Alpha信号。",
-    "fetch_date": "2026-01-23",
-    "id": "20260123_6c3ccac7"
   }
 ]
