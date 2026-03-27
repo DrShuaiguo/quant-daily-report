@@ -1,5 +1,65 @@
 [
   {
+    "title": "Modeling and Forecasting Tail Risk Spillovers: A Component-Based CAViaR Approach",
+    "url": "https://arxiv.org/pdf/2603.25217v1",
+    "source": "ArXiv",
+    "date": "2026-03-26",
+    "abstract": "This paper introduces a new extension of the Conditional Autoregressive Value at Risk (CAViaR) model aimed at improving tail risk forecasting across assets. The proposed component-based model, CAViaR with Spillover Effects (CAViaR-SE), decomposes the conditional Value at Risk into a proper-risk component and a spillover component driven by a linear combination of tail risks from influential assets. These assets are selected via a recursive partial correlation algorithm, allowing multiple spillover sources with minimal parameterization. The spillover component acts as a predictable quantile shifter, directly affecting the conditional quantile dynamics rather than the volatility scale. Empirical results on Dow Jones Industrial Average stocks show that spillover effects account for a substantial share of total tail risk and significantly improve out-of-sample tail risk forecasts. Backtesting procedures, together with Model Confidence Set (MCS) analysis, confirm that CAViaR-SE provides well-calibrated risk measures and statistically superior forecasts compared to standard and augmented CAViaR models.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了一种基于分量的CAViaR模型扩展——CAViaR-SE，旨在改进跨资产的尾部风险预测。该模型将条件在险价值分解为自身风险分量和由影响资产尾部风险线性组合驱动的溢出分量，通过递归偏相关算法选择影响资产，实现多溢出源的最小参数化。实证结果显示，溢出效应在总尾部风险中占显著比例，并显著提高了样本外尾部风险预测的准确性。回测和模型置信集分析证实，CAViaR-SE相比标准及增强CAViaR模型提供了校准良好的风险度量和统计上更优的预测。",
+    "fetch_date": "2026-03-28",
+    "id": "20260328_30ebf042"
+  },
+  {
+    "title": "Semi-Static Variance-Optimal Hedging of Covariance Risk in Multi-Asset Derivatives",
+    "url": "https://arxiv.org/pdf/2603.25320v1",
+    "source": "ArXiv",
+    "date": "2026-03-26",
+    "abstract": "We develop a semi-static framework for the variance-optimal hedging of multi-asset derivatives exposed to correlation and covariance risk. The approach combines continuous-time dynamic trading in the underlying assets with a static portfolio of auxiliary contingent claims. Using a multivariate Galtchouk--Kunita--Watanabe decomposition, we show that the resulting global mean-variance problem decouples naturally into an inner continuous-time projection onto the space spanned by the underlying assets and an outer finite-dimensional quadratic optimization over the static hedging instruments. To systematically select suitable auxiliary claims, we leverage multidimensional functional spanning theory, establishing that otherwise unhedgeable cross-gamma exposures can be structurally mitigated through static strips of vanilla, product, and spread options. As a central application, we derive explicit semi-static replication formulas for covariance swaps and geometric dispersion trades. Our framework accommodates a broad class of asset dynamics, including quadratic and stochastic Volterra covariance models, as well as affine stochastic covariance models with jumps, yielding tractable semi-closed-form solutions via Fourier transform techniques. Extensive numerical experiments demonstrate that incorporating optimally weighted static strips of cross-asset instruments substantially reduces the mean-squared hedging error relative to purely dynamic benchmark strategies across various model classes.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出了一种用于多资产衍生品协方差风险对冲的半静态框架。该方法结合了标的资产的连续时间动态交易与辅助或有权益的静态投资组合。通过多元Galtchouk-Kunita-Watanabe分解，全局均值-方差问题可自然解耦为：对内连续时间投影到标的资产张成的空间，对外在静态对冲工具上进行有限维二次优化。为系统选择辅助权益，利用多维函数张成理论，证明不可对冲的交叉伽马风险可通过静态的香草期权、乘积期权和价差期权条带结构性缓解。核心应用包括协方差互换和几何离散交易的显式半静态复制公式。该框架适用于广泛的资产动态模型，包括二次和随机Volterra协方差模型，以及带跳跃的仿射随机协方差模型，从而得到可处理的半封闭解。",
+    "fetch_date": "2026-03-28",
+    "id": "20260328_1a6f89d5"
+  },
+  {
+    "title": "Shifting Correlations: How Trade Policy Uncertainty Alters stock-T bill Relationships",
+    "url": "https://arxiv.org/pdf/2603.25285v1",
+    "source": "ArXiv",
+    "date": "2026-03-26",
+    "abstract": "This paper examines how trade policy uncertainty influences the correlation between U.S. stock indices and short-term government bonds. The objective is to assess whether policy-related shocks, especially those linked to trade tensions, alter the traditional stock-T bill relationship and its implications for investors. We extend the Dynamic Conditional Correlation (DCC) framework by incorporating exogenous variables to account for external shocks. Three specifications are analyzed: one using the Trade Policy Uncertainty (TPU) index, one including a dummy variable reflecting presidential-cycle effects, and one combining both through an interaction term. The analysis is based on daily data for major U.S. stock indices and the 3-month Treasury bill. Results indicate that trade policy uncertainty exerts a significant effect on stock-T bill correlations. Moreover, its influence becomes stronger under specific political conditions, suggesting that political agendas can amplify the impact of trade-related shocks on financial markets. Crucially, augmenting the DCC framework with trade-policy-related variables improves also the economic relevance of correlation forecasts. Therefore, this study contributes to the literature by explicitly integrating policy-related uncertainty into correlation modeling through an augmented DCC framework. The findings provide new insights for portfolio allocation and risk management in environments characterized by heightened trade tensions.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文研究了贸易政策不确定性如何影响美国股指与短期国债之间的相关性。通过扩展动态条件相关（DCC）模型，纳入贸易政策不确定性指数、总统周期虚拟变量及其交互项作为外生变量，分析发现贸易政策不确定性显著改变了股票与国债的传统关系，且其影响在特定政治条件下会增强。研究还表明，在DCC模型中引入贸易政策相关变量能提升相关性预测的经济意义。",
+    "fetch_date": "2026-03-28",
+    "id": "20260328_51c343ed"
+  },
+  {
+    "title": "Bid--Ask Martingale Optimal Transport",
+    "url": "https://arxiv.org/pdf/2603.24605v1",
+    "source": "ArXiv",
+    "date": "2026-03-14",
+    "abstract": "Martingale Optimal Transport (MOT) provides a framework for robust pricing and hedging of illiquid derivatives. Classical MOT enforces exact calibration of model marginals to the mid-prices of vanilla options. Motivated by the industry practice of fitting bid and ask marginals to vanilla prices, we introduce a relaxation of MOT in which model-implied volatilities are only required to lie within observed bid--ask spreads; equivalently, model marginals lie between the bid and ask marginals in convex order. The resulting Bid--Ask MOT (BAMOT) yields realistic price bounds for illiquid derivatives and, via strong duality, can be interpreted as the superhedging price when short and long positions in vanilla options are priced at the bid and ask, respectively. We further establish convergence of BAMOT to classical MOT as bid--ask spreads vanish, and quantify the convergence rate using a novel distance intrinsically linked to bid--ask spreads. Finally, we support our findings with several synthetic and real-data examples.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出了一种Bid-Ask鞅最优传输（BAMOT）方法，作为经典鞅最优传输（MOT）的松弛版本。经典MOT要求模型边际严格校准至期权中间价，而BAMOT允许模型隐含波动率落在观测到的买卖价差内，即模型边际在凸序下位于买卖边际之间。该方法为流动性差的衍生品提供了更现实的价格边界，并通过强对偶性可解释为：当看涨/看跌期权分别按买价/卖价定价时的超对冲成本。研究证明了买卖价差趋零时BAMOT收敛至经典MOT，并通过与价差内在关联的新距离度量量化收敛速率。论文通过合成与真实数据案例验证了理论框架。",
+    "fetch_date": "2026-03-28",
+    "id": "20260328_93254c03"
+  },
+  {
+    "title": "Macroscopic Characteristics of Mixed Traffic Flow with Deep Reinforcement Learning Based Automated and Human-Driven Vehicles",
+    "url": "https://arxiv.org/pdf/2603.25328v1",
+    "source": "ArXiv",
+    "date": "2026-03-26",
+    "abstract": "Automated Vehicle (AV) control in mixed traffic, where AVs coexist with human-driven vehicles, poses significant challenges in balancing safety, efficiency, comfort, fuel efficiency, and compliance with traffic rules while capturing heterogeneous driver behavior. Traditional car-following models, such as the Intelligent Driver Model (IDM), often struggle to generalize across diverse traffic scenarios and typically do not account for fuel efficiency, motivating the use of learning-based approaches. Although Deep Reinforcement Learning (DRL) has shown strong microscopic performance in car-following conditions, its macroscopic traffic flow characteristics remain underexplored. This study focuses on analyzing the macroscopic traffic flow characteristics and fuel efficiency of DRL-based models in mixed traffic. A Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm is implemented for AVs' control and trained using the NGSIM highway dataset, enabling realistic interaction with human-driven vehicles. Traffic performance is evaluated using the Fundamental Diagram (FD) under varying driver heterogeneity, heterogeneous time-gap penetration levels, and different shares of RL-controlled vehicles. A macroscopic level comparison of fuel efficiency between the RL-based AV model and the IDM is also conducted. Results show that traffic performance is sensitive to the distribution of safe time gaps and the proportion of RL vehicles. Transitioning from fully human-driven to fully RL-controlled traffic can increase road capacity by approximately 7.52%. Further, RL-based AVs also improve average fuel efficiency by about 28.98% at higher speeds (above 50 km/h), and by 1.86% at lower speeds (below 50 km/h) compared to the IDM. Overall, the DRL framework enhances traffic capacity and fuel efficiency without compromising safety.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究了在混合交通流（自动驾驶车辆与人类驾驶车辆共存）中，基于深度强化学习（DRL）的自动驾驶控制模型的宏观交通流特性与燃油效率。研究采用Twin Delayed Deep Deterministic Policy Gradient (TD3)算法，使用NGSIM高速公路数据集进行训练，并在不同驾驶员异质性、异质性时距渗透水平及RL控制车辆占比下，利用基本图（Fundamental Diagram）评估交通性能。论文主要贡献在于分析了DRL模型在宏观层面的表现，而非直接提供可部署的实战交易策略或算法。",
+    "fetch_date": "2026-03-28",
+    "id": "20260328_b2c401c8"
+  },
+  {
     "title": "Bridging the Reality Gap in Limit Order Book Simulation",
     "url": "https://arxiv.org/pdf/2603.24137v1",
     "source": "ArXiv",
@@ -5938,65 +5998,5 @@
     "summary": "该论文提出了一种软约束薛定谔桥问题（SCSBP），通过用一般惩罚函数替代硬终端约束来解决经典薛定谔桥问题（SBP）在高维或数据稀缺场景下的不稳定性。论文建立了所有惩罚水平下最优解的存在性，并证明随着惩罚增加，控制和价值函数以线性速率收敛到经典SBP。该研究基于Doob的h变换表示、薛定谔势的稳定性结果、Gamma收敛和新型不动点论证，属于生成式AI的理论框架研究。",
     "fetch_date": "2026-01-29",
     "id": "20260129_534db736"
-  },
-  {
-    "title": "MarketGANs: Multivariate financial time-series data augmentation using generative adversarial networks",
-    "url": "https://arxiv.org/pdf/2601.17773v1",
-    "source": "ArXiv",
-    "date": "2026-01-25",
-    "abstract": "This paper introduces MarketGAN, a factor-based generative framework for high-dimensional asset return generation under severe data scarcity. We embed an explicit asset-pricing factor structure as an economic inductive bias and generate returns as a single joint vector, thereby preserving cross-sectional dependence and tail co-movement alongside inter-temporal dynamics. MarketGAN employs generative adversarial learning with a temporal convolutional network (TCN) backbone, which models stochastic, time-varying factor loadings and volatilities and captures long-range temporal dependence. Using daily returns of large U.S. equities, we find that MarketGAN more closely matches empirical stylized facts of asset returns, including heavy-tailed marginal distributions, volatility clustering, leverage effects, and, most notably, high-dimensional cross-sectional correlation structures and tail co-movement across assets, than conventional factor-model-based bootstrap approaches. In portfolio applications, covariance estimates derived from MarketGAN-generated samples outperform those derived from other methods when factor information is at least weakly informative, demonstrating tangible economic value.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "本文提出MarketGAN，一种基于因子的生成框架，用于在数据严重稀缺的情况下生成高维资产收益。该框架将显式的资产定价因子结构作为经济归纳偏置嵌入，并以单个联合向量的形式生成收益，从而在保留截面依赖性和尾部共动性的同时，捕捉跨期动态。MarketGAN采用以时间卷积网络（TCN）为骨干的生成对抗学习，建模随机的、时变的因子载荷和波动率，并捕获长程时间依赖性。基于美国大型股票的日收益数据，研究发现，与传统基于因子模型的bootstrap方法相比，MarketGAN生成的收益更贴近资产收益的经验化事实，包括厚尾边际分布、波动率聚类、杠杆效应，以及尤为显著的高维截面相关结构和跨资产尾部共动。在投资组合应用中，当因子信息至少具有弱信息性时，基于MarketGAN生成样本得到的协方差估计优于其他方法，展示了切实的经济效益。",
-    "fetch_date": "2026-01-28",
-    "id": "20260128_2f7ca671"
-  },
-  {
-    "title": "Learning Market Making with Closing Auctions",
-    "url": "https://arxiv.org/pdf/2601.17247v1",
-    "source": "ArXiv",
-    "date": "2026-01-24",
-    "abstract": "In this work, we investigate the market-making problem on a trading session in which a continuous phase on a limit order book is followed by a closing auction. Whereas standard optimal market-making models typically rely on terminal inventory penalties to manage end-of-day risk, ignoring the significant liquidity events available in closing auctions, we propose a Deep Q-Learning framework that explicitly incorporates this mechanism. We introduce a market-making framework designed to explicitly anticipate the closing auction, continuously refining the projected clearing price as the trading session evolves. We develop a generative stochastic market model to simulate the trading session and to emulate the market. Our theoretical model and Deep Q-Learning method is applied on the generator in two settings: (1) when the mid price follows a rough Heston model with generative data from this stochastic model; and (2) when the mid price corresponds to historical data of assets from the S&P 500 index and the performance of our algorithm is compared with classical benchmarks from optimal market making.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "本文提出了一种结合收盘竞价机制的做市商深度学习框架，通过深度Q学习在包含连续交易阶段和收盘竞价阶段的交易会话中进行做市决策。该方法利用生成随机市场模型模拟交易会话，并在两种设置下验证：一是基于粗糙Heston模型生成中间价数据；二是基于标普500指数成分股历史数据，并与经典最优做市基准进行比较。该研究对实战交易具有较高价值，因为它直接针对收盘竞价这一重要流动性事件进行优化，而非依赖传统的终端库存惩罚机制。",
-    "fetch_date": "2026-01-28",
-    "id": "20260128_42f61a11"
-  },
-  {
-    "title": "Optimal strategy and deep hedging for share repurchase programs",
-    "url": "https://arxiv.org/pdf/2601.18686v1",
-    "source": "ArXiv",
-    "date": "2026-01-26",
-    "abstract": "In recent decades, companies have frequently adopted share repurchase programs to return capital to shareholders or for other strategic purposes, instructing investment banks to rapidly buy back shares on their behalf. When the executing institution is allowed to hedge its exposure, it encounters several challenges due to the intrinsic features of the product. Moreover, contractual clauses or market regulations on trading activity may make it infeasible to rely on Greeks. In this work, we address the hedging of these products by developing a machine-learning framework that determines the optimal execution of the buyback while explicitly accounting for the bank's actual trading capabilities. This unified treatment of execution and hedging yields substantial performance improvements, resulting in an optimized policy that provides a feasible and realistic hedging approach. The pricing of these programs can be framed in terms of the discount that banks offer to the client on the price at which the shares are delivered. Since, in our framework, risk measures serve as objective functions, we exploit the concept of indifference pricing to compute this discount, thereby capturing the actual execution performance.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "近年来，企业频繁采用股票回购计划向股东返还资本或实现其他战略目的，委托投资银行快速代其回购股票。当执行机构被允许对冲其风险敞口时，由于产品的内在特性，会面临若干挑战。此外，合同条款或市场交易活动监管可能使得依赖希腊字母（Greeks）变得不可行。本研究通过开发一个机器学习框架来解决这些产品的对冲问题，该框架在明确考虑银行实际交易能力的同时，确定最优的回购执行策略。这种执行与对冲的统一处理方法带来了显著的性能提升，产生了一种优化的策略，提供了一种可行且现实的对冲方法。这些计划的定价可以依据银行在股票交付价格上为客户提供的折扣来构建。在我们的框架中，风险度量作为目标函数，我们利用无差异定价（indifference pricing）的概念来计算这一折扣，从而捕捉实际风险成本。",
-    "fetch_date": "2026-01-28",
-    "id": "20260128_8f4d3f12"
-  },
-  {
-    "title": "The Compounded BSDE method: A fully-forward method for option pricing and optimal stopping problems in finance",
-    "url": "https://arxiv.org/pdf/2601.18634v1",
-    "source": "ArXiv",
-    "date": "2026-01-26",
-    "abstract": "We propose the Compound BSDE method, a fully forward, deep-learning-based approach for solving a broad class of problems in financial mathematics, including optimal stopping. The method is based on a reformulation of option pricing problems in terms of a system of backward stochastic differential equations (BSDEs), which offers a new perspective on the numerical treatment of compound options and optimal stopping problems such as Bermudan option pricing. Building on the classical deep BSDE method for a single BSDE, we develop an algorithm for compound BSDEs and establish its convergence properties. In particular, we derive an \\emph{a posteriori} error estimate for the proposed method. Numerical experiments demonstrate the accuracy and computational efficiency of the approach, and illustrate its effectiveness for high-dimensional option pricing and optimal stopping problems.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种名为'复合BSDE方法'的完全前向、基于深度学习的算法，用于解决金融数学中的一类广泛问题，包括最优停止问题（如百慕大期权定价）。该方法基于将期权定价问题重新表述为反向随机微分方程（BSDEs）系统，为复合期权和最优停止问题的数值处理提供了新视角。在经典深度BSDE方法的基础上，开发了复合BSDEs的算法并建立了其收敛性，推导了后验误差估计。数值实验验证了该方法在高维期权定价和最优停止问题中的准确性和计算效率。",
-    "fetch_date": "2026-01-28",
-    "id": "20260128_57089a4d"
-  },
-  {
-    "title": "Regret-Driven Portfolios: LLM-Guided Smart Clustering for Optimal Allocation",
-    "url": "https://arxiv.org/pdf/2601.17021v1",
-    "source": "ArXiv",
-    "date": "2026-01-16",
-    "abstract": "We attempt to mitigate the persistent tradeoff between risk and return in medium- to long-term portfolio management. This paper proposes a novel LLM-guided no-regret portfolio allocation framework that integrates online learning dynamics, market sentiment indicators, and large language model (LLM)-based hedging to construct high-Sharpe ratio portfolios tailored for risk-averse investors and institutional fund managers. Our approach builds on a follow-the-leader approach, enriched with sentiment-based trade filtering and LLM-driven downside protection. Empirical results demonstrate that our method outperforms a SPY buy-and-hold baseline by 69% in annualized returns and 119% in Sharpe ratio.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种新颖的LLM引导的无悔投资组合分配框架，旨在缓解中长期投资管理中风险与回报之间的持续权衡。该方法整合了在线学习动态、市场情绪指标和基于大语言模型（LLM）的对冲策略，以构建高夏普比率投资组合，适用于风险厌恶型投资者和机构基金经理。实证结果显示，该方法在年化回报率上比SPY买入持有基准高出69%，夏普比率高出119%。",
-    "fetch_date": "2026-01-28",
-    "id": "20260128_ab81d040"
   }
 ]
