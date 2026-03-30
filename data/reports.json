@@ -1,5 +1,77 @@
 [
   {
+    "title": "Semi-structured multi-state delinquency model for mortgage default",
+    "url": "https://arxiv.org/pdf/2603.26309v1",
+    "source": "ArXiv",
+    "date": "2026-03-27",
+    "abstract": "We propose a semi-structured discrete-time multi-state model to analyse mortgage delinquency transitions. This model combines an easy-to-understand structured additive predictor, which includes linear effects and smooth functions of time and covariates, with a flexible neural network component that captures complex nonlinearities and higher-order interactions. To ensure identifiability when covariates are present in both components, we orthogonalise the unstructured part relative to the structured design. For discrete-time competing transitions, we derive exact transformations that map binary logistic models to valid competing transition probabilities, avoiding the need for continuous-time approximations. In simulations, our framework effectively recovers structured baseline and covariate effects while using the neural component to detect interaction patterns. We demonstrate the method using the Freddie Mac Single-Family Loan-Level Dataset, employing an out-of-time test design. Compared with a structured generalised additive benchmark, the semi-structured model provides modest but consistent gains in discrimination across the earliest prediction spans, while maintaining similar Brier scores. Adding macroeconomic indicators provides limited incremental benefit in this out-of-time evaluation and does not materially change the estimated borrower-, loan-, or duration-driven effects. Overall, semi-structured multi-state modelling offers a practical compromise between transparent effect estimates and flexible pattern learning, with potential applications beyond credit-transition forecasting.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出了一种半结构化离散时间多状态模型，用于分析抵押贷款违约的过渡过程。该模型结合了易于理解的结构化加性预测器（包含线性效应以及时间和协变量的平滑函数）与灵活的神经网络组件（用于捕捉复杂的非线性关系和更高阶的交互作用）。为确保协变量同时出现在两个组件时的可识别性，作者将非结构化部分相对于结构化设计进行了正交化处理。对于离散时间的竞争性过渡，本文推导了将二元逻辑模型映射为有效竞争过渡概率的精确变换，避免了连续时间近似的需求。在模拟中，该框架能有效恢复结构化的基线和协变量效应，同时利用神经网络组件检测交互模式。作者使用Freddie Mac单户贷款级数据集，采用超时测试设计验证了该方法。与结构化的广义加性基准模型相比，半结构化模型在最早的预测跨度上提供了适度但一致的区分度提升，同时保持了相似的Brier分数。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_7824ac94"
+  },
+  {
+    "title": "Rough volatility dynamics in commodity markets",
+    "url": "https://arxiv.org/pdf/2603.26514v1",
+    "source": "ArXiv",
+    "date": "2026-03-27",
+    "abstract": "In this paper, we develop a general rough volatility model for commodities that provides an automatic calibration of the initial term structure of the futures prices and an appropriate treatment of the Samuelson effect. After the theoretical analysis of this general model, we focus on the rBergomi and rHeston models and their calibration to market data of vanilla futures options on WTI Crude Oil. Finally, numerical results illustrate the performance of the proposed rough volatility models for commodities pricing.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文为大宗商品开发了一个通用的粗糙波动率模型，能够自动校准期货价格的初始期限结构，并适当处理萨缪尔森效应。在对此通用模型进行理论分析后，重点研究了rBergomi和rHeston模型及其对WTI原油香草期货期权市场数据的校准。数值结果展示了所提出的粗糙波动率模型在大宗商品定价方面的性能。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_0d3b1ae7"
+  },
+  {
+    "title": "STN-GPR: A Singularity Tensor Network Framework for Efficient Option Pricing",
+    "url": "https://arxiv.org/pdf/2603.26318v1",
+    "source": "ArXiv",
+    "date": "2026-03-27",
+    "abstract": "We develop a tensor-network surrogate for option pricing, targeting large-scale portfolio revaluation problems arising in market risk management (e.g., VaR and Expected Shortfall computations). The method involves representing high-dimensional price surfaces in tensor-train (TT) form using TT-cross approximation, constructing the surrogate directly from black-box price evaluations without materializing the full training tensor. For inference, we use a Laplacian kernel and derive TT representations of the kernel matrix and its closed-form inverse in the noise-free setting, enabling TT-based Gaussian process regression without dense matrix factorization or iterative linear solves. We found that hyperparameter optimization consistently favors a large kernel length-scale and show that in this regime the GPR predictor reduces to multilinear interpolation for off-grid inputs; we also derive a low-rank TT representation for this limit. We evaluate the approach on five-asset basket options over an eight dimensional parameter space (asset spot levels, strike, interest rate, and time to maturity). For European geometric basket puts, the tensor surrogate achieves lower test error at shorter training times than standard GPR by scaling to substantially larger effective training sets. For American arithmetic basket puts trained on LSMC data, the surrogate exhibits more favorable scaling with training-set size while providing millisecond-level evaluation per query, with overall runtime dominated by data generation.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了一种基于张量网络的期权定价代理模型STN-GPR，针对市场风险管理中的大规模投资组合重估问题（如VaR和预期短缺计算）。该方法使用TT交叉近似将高维价格曲面表示为张量列车形式，直接从黑盒价格评估构建代理模型，无需生成完整的训练张量。在推理阶段，采用拉普拉斯核函数，并在无噪声设置下推导了核矩阵及其闭式逆的TT表示，实现了无需密集矩阵分解或迭代线性求解的基于TT的高斯过程回归。研究发现超参数优化始终偏好较大的核长度尺度，并证明在此机制下GPR预测器可简化为离网格输入的多线性插值；同时推导了该极限下的低秩TT表示。该方法在八维参数空间（资产现货水平、行权价、利率和到期时间）的五资产篮子期权上进行了评估。对于欧式几何篮子看跌期权，张量代理模型在更短的训练时间内实现了更低的测试误差。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_d744a7ee"
+  },
+  {
+    "title": "Monotone 2D Integration Scheme for Mean-CVaR Optimization via Fourier-Trained Transition Kernels",
+    "url": "https://arxiv.org/pdf/2603.26291v1",
+    "source": "ArXiv",
+    "date": "2026-03-27",
+    "abstract": "We present a strictly monotone, provably convergent two-dimensional (2D) integration method for multi-period mean-conditional value-at-risk (mean-CVaR) reward-risk stochastic control in models whose one-step increment law is specified via a closed-form characteristic function (CF). When the transition density is unavailable in closed form, we learn a nonnegative, normalized 2D transition kernel in Fourier space using a simplex-constrained Gaussian-mixture parameterization, and discretize the resulting convolution integrals with composite quadrature rules with nonnegative weights to guarantee monotonicity. The scheme is implemented efficiently using 2D fast Fourier transforms. Under mild Fourier-tail decay assumptions on the CF, we derive Fourier-domain $L_2$ kernel-approximation and truncation error estimates and translate them into real-space bounds that are used to establish $\\ell_\\infty$-stability, consistency, and pointwise convergence as the discretization and kernel-approximation parameters vanish. Numerical experiments for a fully coupled 2D jump--diffusion model in a multi-period portfolio optimization setting illustrate robustness and accuracy.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了一种严格单调、可证明收敛的二维积分方法，用于多周期均值-条件风险价值（mean-CVaR）的随机控制问题，适用于一步增量律通过闭式特征函数指定的模型。当转移密度无法闭式表达时，该方法在傅里叶空间中学习非负、归一化的二维转移核（采用单纯形约束的高斯混合参数化），并使用具有非负权重的复合求积规则离散化卷积积分以保证单调性。该方案通过二维快速傅里叶变换高效实现。在特征函数满足温和的傅里叶尾衰减假设下，推导了傅里叶域的L2核近似和截断误差估计，并将其转化为实空间界，用于建立ℓ∞稳定性、一致性和点态收敛性。数值实验在一个多周期投资组合优化的完全耦合二维跳跃-扩散模型中展示了方法的鲁棒性和准确性。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_974fdda2"
+  },
+  {
+    "title": "PEB Separation and State Migration: Unmasking the New Frontiers of DeFi AML Evasion",
+    "url": "https://arxiv.org/pdf/2603.26290v1",
+    "source": "ArXiv",
+    "date": "2026-03-27",
+    "abstract": "Transfer-based anti-money laundering (AML) systems monitor token flows through transaction-graph abstractions, implicitly assuming that economically meaningful value migration is sufficiently encoded in transfer-layer connectivity. In this paper, we demonstrate that this assumption, the bedrock of current industrial forensics, fundamentally collapses in composable smart-contract ecosystems.\n  We formalize two structural mechanisms that undermine the completeness of transfer-layer attribution. First, we introduce Principal-Execution-Beneficiary (PEB) separation, where intent originators, transaction executors (e.g., MEV searchers), and ultimate beneficiaries are functionally decoupled. Second, we formalize state-mediated value migration, where economic coupling is enforced through invariant-driven contract state transitions (e.g., AMM reserve rebalancing) rather than explicit transfer continuity.\n  Through a real-world case study of role-separated limit order execution and a constructive cross-pool arbitrage model, we prove that these mechanisms render transfer-layer observation neither attribution-complete nor causally closed. We further argue that simply expanding transfer-layer tracing capabilities fails to resolve the underlying attribution ambiguity inherent in structurally decoupled execution. Under modular composition and open participation markets, these mechanisms are structurally generative, implying that heuristic-based flow tracing has reached a formal observational boundary. We advocate for a paradigm shift toward AML based on execution semantics, focusing on the restitution of economic causality from atomic execution logic and state invariants rather than static graph connectivity.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文揭示了当前DeFi反洗钱（AML）系统在可组合智能合约生态中的根本缺陷。论文形式化提出了两种破坏转账层归因完整性的结构机制：一是委托人-执行人-受益人（PEB）分离，即意图发起者、交易执行者（如MEV搜索者）和最终受益者在功能上解耦；二是状态中介的价值迁移，即经济耦合通过不变量驱动的合约状态转换（如AMM储备再平衡）而非显式转账连续性实现。通过实际案例研究，论文证明这些机制使转账层观测既不具备归因完整性也不具备因果封闭性。论文属于理论分析范畴，对实战交易的价值主要体现在风险认知层面，而非直接提供可操作的交易策略。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_e189958e"
+  },
+  {
+    "title": "Beyond identifiability: Learning causal representations with few environments and finite samples",
+    "url": "https://arxiv.org/pdf/2603.25796v1",
+    "source": "ArXiv",
+    "date": "2026-03-26",
+    "abstract": "We provide explicit, finite-sample guarantees for learning causal representations from data with a sublinear number of environments. Causal representation learning seeks to provide a rigourous foundation for the general representation learning problem by bridging causal models with latent factor models in order to learn interpretable representations with causal semantics. Despite a blossoming theory of identifiability in causal representation learning, estimation and finite-sample bounds are less well understood. We show that causal representations can be learned with only a logarithmic number of unknown, multi-node interventions, and that the intervention targets need not be carefully designed in advance. Through a careful perturbation analysis, we provide a new analysis of this problem that guarantees consistent recovery of (a) the latent causal graph, (b) the mixing matrix and representations, and (c) \\emph{unknown} intervention targets.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文为因果表示学习提供了有限样本下的显式保证，能够在亚线性环境数量下从数据中学习因果表示。研究通过将因果模型与隐变量因子模型结合，旨在学习具有因果语义的可解释表示。尽管因果表示学习的可识别性理论已有发展，但估计和有限样本界限仍较少被理解。本文表明，仅需对数数量的未知多节点干预即可学习因果表示，且干预目标无需预先精心设计。通过细致的扰动分析，该研究保证了（a）潜在因果图、（b）混合矩阵与表示、以及（c）未知干预目标的一致恢复。",
+    "fetch_date": "2026-03-31",
+    "id": "20260331_fc4f2d5a"
+  },
+  {
     "title": "Modeling and Forecasting Tail Risk Spillovers: A Component-Based CAViaR Approach",
     "url": "https://arxiv.org/pdf/2603.25217v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "大多数金融推荐系统往往未能考虑关键的行为和监管因素，导致建议与用户偏好不一致、难以解释或不太可能被遵循。我们提出了FLARKO（基于知识图谱优化的金融资产推荐语言模型），这是一个新颖的框架，它整合了大型语言模型（LLMs）、知识图谱（KGs）和卡尼曼-特沃斯基优化（KTO），以生成既盈利又行为一致的资产推荐。FLARKO将用户的交易历史和资产趋势编码为结构化的知识图谱，为LLM提供可解释和可控的上下文。为了展示我们方法的适应性，我们开发并评估了集中式架构（CenFLARKO）和联邦式变体（FedFLARKO）。据我们所知，这是首次将KTO用于金融资产推荐的LLM微调。我们还首次在联邦学习（FL）环境中使用结构化知识图谱来支撑LLM对行为金融数据的推理。在FAR-Trans数据集上的评估表明，FLARKO始终优于最先进的推荐基线。",
     "fetch_date": "2026-01-29",
     "id": "20260129_1c45b240"
-  },
-  {
-    "title": "The Invisible Handshake: Tacit Collusion between Adaptive Market Agents",
-    "url": "https://arxiv.org/pdf/2510.15995v1",
-    "source": "ArXiv",
-    "date": "2025-10-14",
-    "abstract": "We study the emergence of tacit collusion between adaptive trading agents in a stochastic market with endogenous price formation. Using a two-player repeated game between a market maker and a market taker, we characterize feasible and collusive strategy profiles that raise prices beyond competitive levels. We show that, when agents follow simple learning algorithms (e.g., gradient ascent) to maximize their own wealth, the resulting dynamics converge to collusive strategy profiles, even in highly liquid markets with small trade sizes. By highlighting how simple learning strategies naturally lead to tacit collusion, our results offer new insights into the dynamics of AI-driven markets.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文研究了自适应交易代理在具有内生价格形成的随机市场中隐性合谋的出现。通过分析做市商与交易者之间的重复博弈，刻画了能够将价格推高至竞争水平之上的可行合谋策略。研究表明，当代理采用简单学习算法（如梯度上升）最大化自身财富时，即使在高流动性、小交易规模的市场中，动态演化也会收敛至合谋策略。这些发现揭示了简单学习策略如何自然导致隐性合谋，为理解AI驱动市场的动态机制提供了新视角。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_3b1c2251"
-  },
-  {
-    "title": "Prediction Markets as Bayesian Inverse Problems: Uncertainty Quantification, Identifiability, and Information Gain from Price-Volume Histories under Latent Types",
-    "url": "https://arxiv.org/pdf/2601.18815v1",
-    "source": "ArXiv",
-    "date": "2026-01-22",
-    "abstract": "Prediction markets are often described as mechanisms that ``aggregate information'' into prices, yet the mapping from dispersed private information to observed market histories is typically noisy, endogenous, and shaped by heterogeneous and strategic participation. This paper formulates prediction markets as Bayesian inverse problems in which the unknown event outcome \\(Y\\in\\{0,1\\}\\) is inferred from an observed history of market-implied probabilities and traded volumes. We introduce a mechanism-agnostic observation model in log-odds space in which price increments conditional on volume arise from a latent mixture of trader types. The resulting likelihood class encompasses informed and uninformed trading, heavy-tailed microstructure noise, and adversarial or manipulative flow, while requiring only price and volume as observables.\n  Within this framework we define posterior uncertainty quantification for \\(Y\\), provide identifiability and well-posedness criteria in terms of Kullback--Leibler separation between outcome-conditional increment laws, and derive posterior concentration statements and finite-sample error bounds under general regularity assumptions. We further study stability of posterior odds to perturbations of the observed price--volume path and define realized and expected information gain via the posterior-vs-prior KL divergence and mutual information. The inverse-problem formulation yields explicit diagnostics for regimes in which market histories are informative and stable versus regimes in which inference is ill-posed due to type-composition confounding or outcome--nuisance symmetries.\n  Extensive experiments on synthetic data validate our theoretical predictions regarding posterior concentration rates and identifiability thresholds.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文将预测市场建模为贝叶斯逆问题，从观察到的市场隐含概率和交易量历史中推断未知事件结果Y。论文引入了一个机制无关的对数赔率空间观测模型，其中价格增量条件于交易量源自潜在交易者类型的混合。该框架涵盖了知情与不知情交易、厚尾微观结构噪声以及对抗性或操纵性资金流，仅需价格和交易量作为观测变量。论文定义了Y的后验不确定性量化，基于结果条件增量定律之间的Kullback-Leibler分离提供了可识别性和适定性准则，并在一般正则性假设下推导了后验集中性陈述和有限样本误差界。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_6c691422"
-  },
-  {
-    "title": "Variational Quantum Circuit-Based Reinforcement Learning for Dynamic Portfolio Optimization",
-    "url": "https://arxiv.org/pdf/2601.18811v1",
-    "source": "ArXiv",
-    "date": "2026-01-20",
-    "abstract": "This paper presents a Quantum Reinforcement Learning (QRL) solution to the dynamic portfolio optimization problem based on Variational Quantum Circuits. The implemented QRL approaches are quantum analogues of the classical neural-network-based Deep Deterministic Policy Gradient and Deep Q-Network algorithms. Through an empirical evaluation on real-world financial data, we show that our quantum agents achieve risk-adjusted performance comparable to, and in some cases exceeding, that of classical Deep RL models with several orders of magnitude more parameters. In addition to improved parameter efficiency, quantum agents exhibit reduced variability across market regimes, indicating robust behaviour under changing conditions. However, while quantum circuit execution is inherently fast at the hardware level, practical deployment on cloud-based quantum systems introduces substantial latency, making end-to-end runtime currently dominated by infrastructural overhead and limiting practical applicability. Taken together, our results suggest that QRL is theoretically competitive with state-of-the-art classical reinforcement learning and may become practically advantageous as deployment overheads diminish. This positions QRL as a promising paradigm for dynamic decision-making in complex, high-dimensional, and non-stationary environments such as financial markets. The complete codebase is released as open source at: https://github.com/VincentGurgul/qrl-dpo-public",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了一种基于变分量子电路的量子强化学习（QRL）方法，用于动态投资组合优化。通过实证评估，量子智能体在风险调整后表现上与经典深度强化学习模型相当甚至更优，且参数效率更高、在不同市场环境下表现更稳定。然而，尽管量子电路在硬件层面执行速度快，但在云量子系统上的实际部署存在显著延迟，当前端到端运行时间主要受基础设施开销影响，限制了实际应用。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_a7e80e77"
-  },
-  {
-    "title": "Biased-Attention Guided Risk Prediction for Safe Decision-Making at Unsignalized Intersections",
-    "url": "https://arxiv.org/pdf/2510.12428v1",
-    "source": "ArXiv",
-    "date": "2025-10-14",
-    "abstract": "Autonomous driving decision-making at unsignalized intersections is highly challenging due to complex dynamic interactions and high conflict risks. To achieve proactive safety control, this paper proposes a deep reinforcement learning (DRL) decision-making framework integrated with a biased attention mechanism. The framework is built upon the Soft Actor-Critic (SAC) algorithm. Its core innovation lies in the use of biased attention to construct a traffic risk predictor. This predictor assesses the long-term risk of collision for a vehicle entering the intersection and transforms this risk into a dense reward signal to guide the SAC agent in making safe and efficient driving decisions. Finally, the simulation results demonstrate that the proposed method effectively improves both traffic efficiency and vehicle safety at the intersection, thereby proving the effectiveness of the intelligent decision-making framework in complex scenarios. The code of our work is available at https://github.com/hank111525/SAC-RWB.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种用于无信号交叉口自动驾驶决策的深度强化学习框架，核心创新在于结合了偏置注意力机制构建交通风险预测器。该预测器评估车辆进入交叉口的长期碰撞风险，并将风险转化为密集奖励信号，以指导基于Soft Actor-Critic算法的智能体做出安全高效的驾驶决策。仿真结果表明，该方法能有效提升交叉口的交通效率和车辆安全性。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_a65cf391"
-  },
-  {
-    "title": "On Bellman equation in the limit order optimization problem for high-frequency trading",
-    "url": "https://arxiv.org/pdf/2510.15988v1",
-    "source": "ArXiv",
-    "date": "2025-10-13",
-    "abstract": "An approximation method for construction of optimal strategies in the bid \\& ask limit order book in the high-frequency trading (HFT) is studied. The basis is the article by M. Avellaneda \\& S. Stoikov 2008, in which certain seemingly serious gaps have been found; in the present paper they are carefully corrected. However, a bit surprisingly, our corrections do not change the main answer in the cited paper, so that, in fact, the gaps turn out to be unimportant. An explanation of this effect is offered.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究了高频交易中买卖限价订单簿最优策略构建的近似方法。基于M. Avellaneda & S. Stoikov 2008年的论文，发现了其中一些看似严重的缺陷并进行了仔细修正。但令人惊讶的是，这些修正并未改变原论文的主要结论，因此这些缺陷实际上并不重要。文中对这一现象进行了解释。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_0eb12b8d"
-  },
-  {
-    "title": "Schrödinger bridge for generative AI: Soft-constrained formulation and convergence analysis",
-    "url": "https://arxiv.org/pdf/2510.11829v2",
-    "source": "ArXiv",
-    "date": "2025-10-13",
-    "abstract": "Generative AI can be framed as the problem of learning a model that maps simple reference measures into complex data distributions, and it has recently found a strong connection to the classical theory of the Schrödinger bridge problems (SBPs) due partly to their common nature of interpolating between prescribed marginals via entropy-regularized stochastic dynamics. However, the classical SBP enforces hard terminal constraints, which often leads to instability in practical implementations, especially in high-dimensional or data-scarce regimes. To address this challenge, we follow the idea of the so-called soft-constrained Schrödinger bridge problem (SCSBP), in which the terminal constraint is replaced by a general penalty function. This relaxation leads to a more flexible stochastic control formulation of McKean-Vlasov type.\n  We establish the existence of optimal solutions for all penalty levels and prove that, as the penalty grows, both the controls and value functions converge to those of the classical SBP at a linear rate. Our analysis builds on Doob's h-transform representations, the stability results of Schrödinger potentials, Gamma-convergence, and a novel fixed-point argument that couples an optimization problem over the space of measures with an auxiliary entropic optimal transport problem. These results not only provide the first quantitative convergence guarantees for soft-constrained bridges but also shed light on how penalty regularization enables robust generative modeling, fine-tuning, and transfer learning.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了一种软约束薛定谔桥问题（SCSBP），通过用一般惩罚函数替代硬终端约束来解决经典薛定谔桥问题（SBP）在高维或数据稀缺场景下的不稳定性。论文建立了所有惩罚水平下最优解的存在性，并证明随着惩罚增加，控制和价值函数以线性速率收敛到经典SBP。该研究基于Doob的h变换表示、薛定谔势的稳定性结果、Gamma收敛和新型不动点论证，属于生成式AI的理论框架研究。",
-    "fetch_date": "2026-01-29",
-    "id": "20260129_534db736"
   }
 ]
