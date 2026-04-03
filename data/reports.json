@@ -1,5 +1,77 @@
 [
   {
+    "title": "The Self Driving Portfolio: Agentic Architecture for Institutional Asset Management",
+    "url": "https://arxiv.org/pdf/2604.02279v1",
+    "source": "ArXiv",
+    "date": "2026-04-02",
+    "abstract": "Agentic AI shifts the investor's role from analytical execution to oversight. We present an agentic strategic asset allocation pipeline in which approximately 50 specialized agents produce capital market assumptions, construct portfolios using over 20 competing methods, and critique and vote on each other's output. A researcher agent proposes new portfolio construction methods not yet represented, and a meta-agent compares past forecasts against realized returns and rewrites agent code and prompts to improve future performance. The entire pipeline is governed by the Investment Policy Statement--the same document that guides human portfolio managers can now constrain and direct autonomous agents.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "《自动驾驶投资组合：机构资产管理的智能体架构》提出了一种智能体驱动的战略资产配置流程。该架构将投资者的角色从分析执行转变为监督，通过约50个专业智能体生成资本市场假设，使用超过20种竞争性方法构建投资组合，并相互评审和投票。研究智能体可提出尚未采用的新投资组合构建方法，元智能体通过对比历史预测与实际回报，重写智能体代码和提示以优化未来表现。整个流程由投资政策声明（IPS）治理，该文件同样指导人类投资经理，现可约束和引导自主智能体。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_06074928"
+  },
+  {
+    "title": "Do Prediction Markets Forecast Cryptocurrency Volatility? Evidence from Kalshi Macro Contracts",
+    "url": "https://arxiv.org/pdf/2604.01431v1",
+    "source": "ArXiv",
+    "date": "2026-04-01",
+    "abstract": "Daily probability changes in Kalshi macro prediction markets forecast cryptocurrency realized volatility through two distinct channels. The monetary policy channel, measured by Fed rate repricing on KXFED contracts, predicts Bitcoin volatility in sample with t = 3.63 and p < 0.001 but exhibits regime dependence tied to the 2024-2025 rate-cutting cycle. The recession risk signal from KXRECSSNBER proves more stable out of sample, delivering an MSFE ratio of 0.979 with Clark-West p = 0.020. The inflation channel, measured by CPI repricing on KXCPI contracts, predicts altcoin volatility for Ethereum, Solana, Cardano, and Chainlink with t-statistics ranging from -2.1 to -3.4 and out-of-sample gains for Ethereum at MSFE = 0.959 with p = 0.010 and Solana at p = 0.048. Both the Bitcoin--Fed-dovish and Chainlink--CPI specifications survive Benjamini-Hochberg correction at q = 0.05. Orthogonalization and baseline comparisons against Fed Funds futures, Treasury yields, and the Deribit implied volatility index confirm that these signals carry information not embedded in conventional financial instruments. The sample covers ten Kalshi event series and six cryptocurrency assets over January 2023 to March 2026.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "Kalshi宏观预测市场的每日概率变化通过两个独立渠道预测加密货币实际波动率。货币政策渠道（通过KXFED合约衡量美联储利率重新定价）在样本内预测比特币波动率（t=3.63，p<0.001），但表现出与2024-2025降息周期相关的机制依赖性。衰退风险信号（来自KXRECSSNBER）在样本外更稳定，提供MSFE比率为0.979（Clark-West p=0.020）。通胀渠道（通过KXCPI合约衡量CPI重新定价）预测以太坊、Solana、Cardano和Chainlink等替代币的波动率，t统计量在-2.1至-3.4之间，以太坊样本外收益MSFE=0.959（p=0.010），Solana p=0.048。比特币-美联储鸽派和Chainlink-CPI模型通过Benjamini-Hochberg校正（q=0.05）。正交化和与联邦基金期货、国债收益率及Deribit隐含波动率指数的基准比较确认，这些信号包含传统金融工具未嵌入的信息。样本涵盖2023年1月起的十个Kalshi事件系列和六种加密货币资产。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_8203c0f5"
+  },
+  {
+    "title": "Hedging market risk and uncertainty via a robust portfolio approach",
+    "url": "https://arxiv.org/pdf/2604.02126v1",
+    "source": "ArXiv",
+    "date": "2026-04-02",
+    "abstract": "Shorting for hedging exposes to risk when the market dynamics is uncertain. Managing uncertainty and risk exposure is key in portfolio management practice. This paper develops a robust framework for dynamic minimum-variance hedging that explicitly accounts for forecast uncertainty in volatility estimation to achieve empirical stability and reduced turnover, further improving other standard performance metrics. The approach combines high-frequency realized variance and covariance measures, autoregressive models for multi-step volatility forecasting, and a box-uncertainty robust optimization scheme. We derive a closed-form solution for the robust hedge ratio, which adjusts the standard minimum-variance hedge by incorporating variance forecast uncertainty. Using a diversified sample of equity, bond, and commodity ETFs over 2016-2024, we show that robust hedge ratios are more stable and entail lower turnover than standard dynamic hedges. While overall variance reduction is comparable, the robust approach improves downside protection and risk-adjusted performance, particularly when transaction costs are considered. Bootstrap evidence supports the statistical significance of these gains.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文提出了一种用于动态最小方差对冲的稳健框架，通过结合高频已实现方差/协方差度量、多步波动率预测的自回归模型以及盒式不确定性稳健优化方案，在波动率估计中明确考虑预测不确定性，以实现经验稳定性和降低换手率。研究表明，相比标准对冲，稳健对冲比率更稳定、换手率更低，在考虑交易成本时能改善下行保护和风险调整后绩效。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_b1c6148d"
+  },
+  {
+    "title": "Reinforcement Learning for Speculative Trading under Exploratory Framework",
+    "url": "https://arxiv.org/pdf/2604.02035v1",
+    "source": "ArXiv",
+    "date": "2026-04-02",
+    "abstract": "We study a speculative trading problem within the exploratory reinforcement learning (RL) framework of Wang et al. [2020]. The problem is formulated as a sequential optimal stopping problem over entry and exit times under general utility function and price process. We first consider a relaxed version of the problem in which the stopping times are modeled by the jump times of Cox processes driven by bounded, non-randomized intensity controls. Under the exploratory formulation, the agent's randomized control is characterized via the probability measure over the jump intensities, and their objective function is regularized by Shannon's differential entropy. This yields a system of the exploratory HJB equations and Gibbs distributions in closed-form as the optimal policy. Error estimates and convergence of the RL objective to the value function of the original problem are established. Finally, an RL algorithm is designed, and its implementation is showcased in a pairs-trading application.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文在探索性强化学习框架下研究投机交易问题，将其建模为具有一般效用函数和价格过程的序列最优停止问题。通过将停止时间建模为受控Cox过程的跳变时间，推导出探索性HJB方程和闭式Gibbs分布作为最优策略，并建立了RL目标函数向原问题值函数的误差估计与收敛性。最后设计了RL算法并在配对交易应用中展示。该研究为RL在交易策略优化中的应用提供了理论框架和算法实现，对实战交易中策略探索与优化具有参考价值。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_e23b8828"
+  },
+  {
+    "title": "Quantitative Universal Approximation for Noisy Quantum Neural Networks",
+    "url": "https://arxiv.org/pdf/2604.02064v1",
+    "source": "ArXiv",
+    "date": "2026-04-02",
+    "abstract": "We provide here a universal approximation theorem with precise quantitative error bounds for noisy quantum neural networks. We focus on applications to Quantitative Finance, where target functions are often given as expectations. We further provide a detailed numerical analysis, testing our results on actual noisy quantum hardware.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了带噪声量子神经网络的通用逼近定理，并给出了精确的定量误差界。研究聚焦于量化金融应用，其中目标函数常以期望形式给出。此外，论文还提供了详细的数值分析，并在实际带噪声的量子硬件上测试了结果。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_0238e56b"
+  },
+  {
+    "title": "On the mean-variance problem through the lens of multivariate fake stationary affine Volterra dynamics",
+    "url": "https://arxiv.org/pdf/2604.01300v1",
+    "source": "ArXiv",
+    "date": "2026-04-01",
+    "abstract": "We investigate the continuous-time Markowitz mean-variance portfolio selection problem within a multivariate class of fake stationary affine Volterra models. In this non-Markovian and non-semimartingale market framework with unbounded random coefficients, the classical stochastic control approach cannot be directly applied to the associated optimization task. Instead, the problem is tackled using a stochastic factor solution to a Riccati backward stochastic differential equation (BSDE). The optimal feedback control is characterized by means of this equation, whose explicit solutions is derived in terms of multi-dimensional Riccati-Volterra equations. Specifically, we obtain analytical closed-form expressions for the optimal portfolio policies as well as the mean-variance efficient frontier, both of which depend on the solution to the associated multivariate Riccati-Volterra system. To illustrate our results, numerical experiments based on a two dimensional fake stationary rough Heston model highlight the impact of rough volatilities and stochastic correlations on the optimal Markowitz strategies.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文在多元伪平稳仿射Volterra模型的框架下，研究了连续时间Markowitz均值-方差投资组合选择问题。在此具有无界随机系数的非马尔可夫和非半鞅市场框架中，经典随机控制方法无法直接应用于相关优化任务。该问题通过Riccati倒向随机微分方程（BSDE）的随机因子解来处理。最优反馈控制通过该方程表征，其显式解以多维Riccati-Volterra方程的形式导出。具体而言，我们获得了最优投资组合策略以及均值-方差有效边界的解析闭式表达式，两者均依赖于相关多元Riccati-Volterra系统的解。为了说明我们的结果，基于二维伪平稳粗糙Heston模型的数值实验突出了粗糙波动率和随机相关性对最优Markowitz策略的影响。",
+    "fetch_date": "2026-04-04",
+    "id": "20260404_4a28790d"
+  },
+  {
     "title": "Model Predictive Control For Trade Execution",
     "url": "https://arxiv.org/pdf/2603.28898v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本文提出了一种整合交易与所有权网络的多模态中小企业信用评分方法。中小企业因财务历史有限、抵押品约束和宏观经济冲击而面临信贷挑战，且违约风险可通过企业网络传播。该研究利用一家主要金融机构提供的大型中小企业贷款数据集，采用图神经网络，基于企业间的共同所有权和金融交易构建多层网络数据来预测违约。结果表明，将此类网络信息与传统结构化数据结合，不仅能提升申请评分性能，还能显式建模企业间的传染风险。进一步分析揭示了这些连接的方向性和强度如何影响金融风险传染，从而深化了对底层机制的理解。",
     "fetch_date": "2026-01-31",
     "id": "20260131_81f03daf"
-  },
-  {
-    "title": "SIA: Symbolic Interpretability for Anticipatory Deep Reinforcement Learning in Network Control",
-    "url": "https://arxiv.org/pdf/2601.22044v1",
-    "source": "ArXiv",
-    "date": "2026-01-29",
-    "abstract": "Deep reinforcement learning (DRL) promises adaptive control for future mobile networks but conventional agents remain reactive: they act on past and current measurements and cannot leverage short-term forecasts of exogenous KPIs such as bandwidth. Augmenting agents with predictions can overcome this temporal myopia, yet uptake in networking is scarce because forecast-aware agents act as closed-boxes; operators cannot tell whether predictions guide decisions or justify the added complexity. We propose SIA, the first interpreter that exposes in real time how forecast-augmented DRL agents operate. SIA fuses Symbolic AI abstractions with per-KPI Knowledge Graphs to produce explanations, and includes a new Influence Score metric. SIA achieves sub-millisecond speed, over 200x faster than existing XAI methods. We evaluate SIA on three diverse networking use cases, uncovering hidden issues, including temporal misalignment in forecast integration and reward-design biases that trigger counter-productive policies. These insights enable targeted fixes: a redesigned agent achieves a 9% higher average bitrate in video streaming, and SIA's online Action-Refinement module improves RAN-slicing reward by 25% without retraining. By making anticipatory DRL transparent and tunable, SIA lowers the barrier to proactive control in next-generation mobile networks.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "论文《SIA：面向网络控制中预见性深度强化学习的符号可解释性方法》提出了一种实时解释预测增强型深度强化学习（DRL）代理操作的方法。SIA融合符号人工智能抽象与每个关键绩效指标（KPI）的知识图谱来生成解释，并引入新的影响力评分指标。该方法实现了亚毫秒级速度，比现有可解释人工智能（XAI）方法快200倍以上。在三个网络用例评估中，SIA揭示了隐藏问题（如预测集成中的时间错位和奖励设计偏差），并支持针对性改进：重新设计的代理在视频流中实现了9%的平均比特率提升，其在线动作优化模块提高了无线接入网切片奖励。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_4e51d6cb"
-  },
-  {
-    "title": "Robust Exploratory Stopping under Ambiguity in Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2510.10260v1",
-    "source": "ArXiv",
-    "date": "2025-10-11",
-    "abstract": "We propose and analyze a continuous-time robust reinforcement learning framework for optimal stopping problems under ambiguity. In this framework, an agent chooses a stopping rule motivated by two objectives: robust decision-making under ambiguity and learning about the unknown environment. Here, ambiguity refers to considering multiple probability measures dominated by a reference measure, reflecting the agent's awareness that the reference measure representing her learned belief about the environment would be erroneous. Using the $g$-expectation framework, we reformulate an optimal stopping problem under ambiguity as an entropy-regularized optimal control problem under ambiguity, with Bernoulli distributed controls to incorporate exploration into the stopping rules. We then derive the optimal Bernoulli distributed control characterized by backward stochastic differential equations. Moreover, we establish a policy iteration theorem and implement it as a reinforcement learning algorithm. Numerical experiments demonstrate the convergence and robustness of the proposed algorithm across different levels of ambiguity and exploration.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出并分析了一个用于模糊环境下最优停止问题的连续时间鲁棒强化学习框架。在该框架中，智能体选择停止规则时兼顾两个目标：模糊环境下的鲁棒决策以及对未知环境的学习。这里的模糊性指考虑由参考测度支配的多个概率测度，反映了智能体意识到代表其学习信念的参考测度可能存在错误。利用g-期望框架，我们将模糊环境下的最优停止问题重新表述为模糊环境下的熵正则化最优控制问题，其中采用伯努利分布控制将探索融入停止规则。随后，我们推导出由后向随机微分方程刻画的最优伯努利分布控制。此外，我们建立了策略迭代定理并将其实现为强化学习算法。数值实验证明了所提算法在不同模糊性和探索水平下的收敛性和鲁棒性。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_3ff348ad"
-  },
-  {
-    "title": "Toxicity Bounds for Dynamic Liquidation Incentives",
-    "url": "https://arxiv.org/pdf/2510.10171v1",
-    "source": "ArXiv",
-    "date": "2025-10-11",
-    "abstract": "We derive a slippage-aware toxicity condition for on-chain liquidations executed via a constant-product automated market maker (CP-AMM). For a fixed (constant) liquidation incentive $i$, the familiar toxicity frontier $ν< 1/(1+i)$ tightens to $ν< 1/((1+i)λ)$ for a liquidity penalty factor $λ$ that we derive for both the CP-AMM and a generalised form. Using a dynamic health-linked liquidation incentive $i(h) = i(1 - h)$, we obtain a state-dependent bound and, at the liquidation boundary, a liquidity-depth-only condition $ν< 1/λ$. This reconciles dynamic incentives with the impact of the CP-AMM price and clarifies when dynamic liquidation incentives reduce versus exacerbate spiral risk.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文针对通过恒定乘积自动做市商（CP-AMM）执行的链上清算，推导了考虑滑点的毒性条件。对于固定清算激励i，传统的毒性边界ν<1/(1+i)收紧为ν<1/((1+i)λ)，其中λ为流动性惩罚因子（适用于CP-AMM及其广义形式）。采用与健康度挂钩的动态清算激励i(h)=i(1-h)后，得到状态依赖的边界，并在清算边界处获得仅与流动性深度相关的条件ν<1/λ。该研究阐明了动态激励何时降低或加剧螺旋风险，对设计抗毒性清算机制具有直接参考价值。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_9b8a4a1d"
-  },
-  {
-    "title": "The Pitfalls of Continuous Heavy-Tailed Distributions in High-Frequency Data Analysis",
-    "url": "https://arxiv.org/pdf/2510.09785v1",
-    "source": "ArXiv",
-    "date": "2025-10-10",
-    "abstract": "We address the challenges of modeling high-frequency integer price changes in financial markets using continuous distributions, particularly the Student's t-distribution. We demonstrate that traditional GARCH models, which rely on continuous distributions, are ill-suited for high-frequency data due to the discreteness of price changes. We propose a modification to the maximum likelihood estimation procedure that accounts for the discrete nature of observations while still using continuous distributions. Our approach involves modeling the log-likelihood in terms of intervals corresponding to the rounding of continuous price changes to the nearest integer. The findings highlight the importance of adjusting for discreteness in volatility analysis and provide a framework for incroporating any continuous distribution for modeling high-frequency prices.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文探讨了在高频数据分析中使用连续分布（特别是学生t分布）来建模金融市场整数价格变动所面临的挑战。研究表明，依赖连续分布的传统GARCH模型因价格变动的离散性而不适用于高频数据。作者提出了一种修正的最大似然估计方法，该方法在仍使用连续分布的同时考虑了观测值的离散特性，其核心思想是通过与连续价格变动四舍五入至最近整数相对应的区间来建模对数似然函数。研究结果强调了在波动率分析中调整离散性的重要性，并提供了一个框架，可将任何连续分布用于高频价格建模。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_7bf2979b"
-  },
-  {
-    "title": "Finite-Sample Properties of Model Specification Tests for Multivariate Dynamic Regression Models",
-    "url": "https://arxiv.org/pdf/2601.21272v1",
-    "source": "ArXiv",
-    "date": "2026-01-29",
-    "abstract": "This paper proposes a new multivariate model specification test that generalizes Durbin regression to a seemingly unrelated regression framework and reframes the Durbin approach as a GLS-class estimator. The proposed estimator explicitly models cross-equation dependence and the joint second-order dynamics of regressors and disturbances. It remains consistent under a comparatively weak dependence condition in which conventional OLS- and GLS-based estimators can be inconsistent, and it is asymptotically efficient under stronger conditions. Monte Carlo experiments indicate that the associated Wald test achieves improved size control and competitive power in finite samples, especially when combined with a bootstrap-based bias correction. An empirical application further illustrates that the proposed procedure delivers stable inference and is practically useful for multi-equation specification testing.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种新的多元模型设定检验方法，将Durbin回归推广至似不相关回归框架，并将Durbin方法重构为GLS类估计量。该估计量明确建模了方程间依赖关系以及回归量与扰动项的联合二阶动态特性。在传统OLS和GLS估计量可能不一致的较弱依赖条件下，该估计量仍保持一致性；在更强条件下则具有渐近有效性。蒙特卡洛实验表明，相关Wald检验在有限样本中实现了改进的尺度控制和具有竞争力的功效，特别是与基于自助法的偏差校正结合时。实证应用进一步说明，所提程序能提供稳定的推断，对多方程设定检验具有实际应用价值。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_fabd056a"
-  },
-  {
-    "title": "ESG Signaling on Wall Street in the AI Era",
-    "url": "https://arxiv.org/pdf/2510.15956v1",
-    "source": "ArXiv",
-    "date": "2025-10-11",
-    "abstract": "I identify a new signaling channel in ESG research by empirically examining whether environmental, social, and governance (ESG) investing remains valuable as large institutional investors increasingly shift toward artificial intelligence (AI). Using winsorized ESG scores of S&P 500 firms from Yahoo Finance and controlling for market value of equity, I conduct cross-sectional regressions to test the signaling mechanism. I demonstrate that Environmental, Social, Governance, and composite ESG scores strongly and positively signal higher debt-to-total-capital ratio, both individually and in various combinations. My findings contribute to the growing literature on ESG investing, offering economically meaningful signaling channel with implications for long-term portfolio management amid the rise of AI.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文通过实证研究，在ESG投资领域识别了一个新的信号传递渠道。作者使用雅虎财经的缩尾ESG评分数据，控制股权市值后，通过横截面回归检验信号机制。研究发现，环境、社会和治理（ESG）评分（包括单项和综合评分）与更高的债务与总资本比率呈显著正相关，表明ESG评分可作为长期投资组合管理的有意义信号渠道，特别是在人工智能（AI）日益普及的背景下。",
-    "fetch_date": "2026-01-31",
-    "id": "20260131_bf6181e2"
   }
 ]
