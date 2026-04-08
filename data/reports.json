@@ -1,5 +1,29 @@
 [
   {
+    "title": "Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models",
+    "url": "https://arxiv.org/pdf/2604.06068v1",
+    "source": "ArXiv",
+    "date": "2026-04-07",
+    "abstract": "This research addresses accurate option pricing by employing models beyond the traditional Black-Scholes framework. While Black-Scholes provides a closed-form solution, it is limited by assumptions of constant volatility, no dividends, and continuous price movements. To overcome these limitations, we use Monte Carlo simulation alongside the GARCH model, Heston stochastic volatility model, and Merton jump-diffusion model. The Black-Scholes-Monte Carlo method simulates diverse stock price paths using geometric Brownian motion. The GARCH model forecasts time-varying volatility from historical data. The Heston model incorporates stochastic volatility to capture volatility clustering and skew. The Merton jump-diffusion model adds sudden price jumps via a Poisson process. Results show the Heston model consistently produces estimates closer to market prices, while the Merton model performs well for volatile assets with sudden price movements. The GARCH model provides improved volatility forecasts for future option price prediction. All experiments used live market data from November 2024.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本研究通过超越传统Black-Scholes框架的模型解决期权定价的准确性问题。Black-Scholes虽然提供闭式解，但受限于恒定波动率、无股息和连续价格变动等假设。为克服这些限制，我们采用蒙特卡洛模拟结合GARCH模型、Heston随机波动率模型和Merton跳跃扩散模型。Black-Scholes-蒙特卡洛方法使用几何布朗运动模拟多样化股价路径；GARCH模型从历史数据预测时变波动率；Heston模型引入随机波动率以捕捉波动率聚集和偏斜；Merton跳跃扩散模型通过泊松过程添加突发价格跳跃。结果显示，Heston模型持续产生更接近市场价格的估计，而Merton模型对具有突发价格变动的波动性资产表现良好；GARCH模型为未来期权价格预测提供改进的波动率预测。所有实验均使用2024年11月的实时市场数据。",
+    "fetch_date": "2026-04-09",
+    "id": "20260409_a6223d57"
+  },
+  {
+    "title": "Priced risk in corporate bonds",
+    "url": "https://arxiv.org/pdf/2604.05699v1",
+    "source": "ArXiv",
+    "date": "2026-04-07",
+    "abstract": "Recent studies document strong empirical support for multifactor models that aim to explain the cross-sectional variation in corporate bond expected excess returns. We revisit these findings and provide evidence that common factor pricing in corporate bonds is exceedingly difficult to establish. Based on portfolio- and bond-level analyses, we demonstrate that previously proposed bond risk factors, with traded liquidity as the only marginal exception, do not have any incremental explanatory power over the corporate bond market factor. Consequently, this implies that the bond CAPM is not dominated by either traded- or nontraded-factor models in pairwise and multiple model comparison tests.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "近期研究表明，旨在解释公司债券预期超额收益横截面差异的多因子模型获得了强有力的实证支持。本文重新审视这些发现，并证明在公司债券中建立共同因子定价极其困难。通过投资组合和债券层面的分析，我们发现先前提出的债券风险因子（交易流动性是唯一的边际例外）对公司债券市场因子没有任何增量解释力。因此，这意味着在成对和多重模型比较测试中，债券CAPM并未被交易或非交易因子模型所主导。",
+    "fetch_date": "2026-04-09",
+    "id": "20260409_eb934718"
+  },
+  {
     "title": "PolySwarm: A Multi-Agent Large Language Model Framework for Prediction Market Trading and Latency Arbitrage",
     "url": "https://arxiv.org/pdf/2604.03888v1",
     "source": "ArXiv",
@@ -5974,29 +5998,5 @@
     "summary": "本文提出了一种可复现的市场微观结构研究框架，结合了确定性的C++限价订单簿（LOB）模拟器与由多元标记霍克斯过程生成的随机订单流。论文推导了线性和非线性霍克斯模型的完整稳定性和遍历性证明，实现了时间重标度和拟合优度诊断，并在Binance BTCUSDT和LOBSTER AAPL数据集上校准了指数核和幂律核。实证结果强调，近乎不稳定的亚临界状态对于再现订单流中的真实聚类至关重要。所有代码、数据集和配置文件均已公开。",
     "fetch_date": "2026-02-01",
     "id": "20260201_29c13236"
-  },
-  {
-    "title": "An Adaptive Multi Agent Bitcoin Trading System",
-    "url": "https://arxiv.org/pdf/2510.08068v2",
-    "source": "ArXiv",
-    "date": "2025-10-09",
-    "abstract": "This paper presents a Multi Agent Bitcoin Trading system that utilizes Large Language Models (LLMs) for alpha generation and portfolio management in the cryptocurrencies market. Unlike equities, cryptocurrencies exhibit extreme volatility and are heavily influenced by rapidly shifting market sentiments and regulatory announcements, making them difficult to model using static regression models or neural networks trained solely on historical data. The proposed framework overcomes this by structuring LLMs into specialised agents for technical analysis, sentiment evaluation, decision-making, and performance reflection. The agents improve over time via a novel verbal feedback mechanism where a Reflect agent provides daily and weekly natural-language critiques of trading decisions. These textual evaluations are then injected into future prompts of the agents, allowing them to adjust allocation logic without weight updates or finetuning. Back-testing on Bitcoin price data from July 2024 to April 2025 shows consistent outperformance across market regimes: the Quantitative agent delivered over 30\\% higher returns in bullish phases and 15\\% overall gains versus buy-and-hold, while the sentiment-driven agent turned sideways markets from a small loss into a gain of over 100\\%. Adding weekly feedback further improved total performance by 31\\% and reduced bearish losses by 10\\%. The results demonstrate that verbal feedback represents a new, scalable, and low-cost approach of tuning LLMs for financial goals.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种基于大语言模型（LLMs）的多智能体比特币交易系统，用于加密货币市场的阿尔法生成和投资组合管理。针对加密货币市场波动剧烈、易受市场情绪和监管公告影响的特点，该系统克服了传统静态回归模型或仅基于历史数据训练的神经网络的局限性。该框架将LLMs构建为专门用于技术分析、情绪评估、决策制定和绩效反思的智能体。通过一种新颖的言语反馈机制，反思智能体每日和每周对交易决策提供自然语言批评，这些文本评估随后被注入到智能体的未来提示中，使其无需权重更新或微调即可调整分配逻辑。在2024年7月至2025年4月的比特币价格数据上进行回测显示，该系统在不同市场环境下均表现优异：量化智能体在牛市阶段实现了超过30%的更高回报，整体收益比买入并持有策略高出15%。",
-    "fetch_date": "2026-02-01",
-    "id": "20260201_889ea21e"
-  },
-  {
-    "title": "Tail-Safe Stochastic-Control SPX-VIX Hedging: A White-Box Bridge Between AI Sensitivities and Arbitrage-Free Market Dynamics",
-    "url": "https://arxiv.org/pdf/2510.15937v1",
-    "source": "ArXiv",
-    "date": "2025-10-09",
-    "abstract": "We present a white-box, risk-sensitive framework for jointly hedging SPX and VIX exposures under transaction costs and regime shifts. The approach couples an arbitrage-free market teacher with a control layer that enforces safety as constraints. On the market side, we integrate an SSVI-based implied-volatility surface and a Cboe-compliant VIX computation (including wing pruning and 30-day interpolation), and connect prices to dynamics via a clipped, convexity-preserving Dupire local-volatility extractor. On the control side, we pose hedging as a small quadratic program with control-barrier-function (CBF) boxes for inventory, rate, and tail risk; a sufficient-descent execution gate that trades only when risk drop justifies cost; and three targeted tail-safety upgrades: a correlation/expiry-aware VIX weight, guarded no-trade bands, and expiry-aware micro-trade thresholds with cooldown. We prove existence/uniqueness and KKT regularity of the per-step QP, forward invariance of safety sets, one-step risk descent when the gate opens, and no chattering with bounded trade rates. For the dynamics layer, we establish positivity and second-order consistency of the discrete Dupire estimator and give an index-coherence bound linking the teacher VIX to a CIR-style proxy with explicit quadrature and projection errors. In a reproducible synthetic environment mirroring exchange rules and execution frictions, the controller reduces expected shortfall while suppressing nuisance turnover, and the teacher-surface construction keeps index-level residuals small and stable.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种白盒、风险敏感的框架，用于在交易成本和制度转换下联合对冲SPX和VIX风险敞口。该方法将无套利市场模型与强制执行安全约束的控制层相结合。在市场端，集成了基于SSVI的隐含波动率曲面和符合Cboe标准的VIX计算（包括翼部修剪和30天插值），并通过裁剪、保持凸性的Dupire局部波动率提取器将价格与动态联系起来。在控制端，将对冲建模为一个带有控制屏障函数（CBF）约束的小型二次规划，用于管理库存、速率和尾部风险；包含一个充分下降执行门，仅在风险下降证明成本合理时交易；并提出了三项针对尾部安全的改进：相关性/到期日感知的VIX权重、受保护的无交易区间，以及带有冷却期的到期日感知微交易阈值。证明了每步二次规划的存在性/唯一性和KKT正则性、安全集的前向不变性、执行门开启时的一步风险下降，以及有界交易速率下的无抖动特性。对于动态层，建立了离散Dupire估计量的正性和二阶一致性。",
-    "fetch_date": "2026-02-01",
-    "id": "20260201_98845a89"
   }
 ]
