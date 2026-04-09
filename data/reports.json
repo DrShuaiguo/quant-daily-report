@@ -1,5 +1,29 @@
 [
   {
+    "title": "Efficient Simulation and Calibration of the Rough Bergomi Model via Wasserstein Distance",
+    "url": "https://arxiv.org/pdf/2512.00448v2",
+    "source": "ArXiv",
+    "date": "2025-11-29",
+    "abstract": "Despite the empirical success of the rough Bergomi (rBergomi) model in modeling volatility dynamics, its practical use remains challenging due to high computational complexity in both pricing and calibration arising from its non-Markovian structure. To address these difficulties, we develop an efficient computational framework. First, we propose a modified-sum-of-exponentials (mSOE) Monte Carlo scheme within the class of hybrid multifactor approximations. The method combines an exact treatment of the singular kernel over the first time step with a sum-of-exponentials approximation over the remaining time interval, and exact Gaussian simulation of the resulting multifactor components. For a fixed number of exponential terms, the method maintains linear online complexity with respect to the number of time steps. It achieves high pricing accuracy in numerical experiments, particularly for out-of-the-money options. Second, building on this pricing engine, we formulate a calibration approach based on distributional matching of the terminal underlying asset via the Wasserstein-1 distance. Instead of fitting option prices only at selected strikes, this method compares model-generated and market-implied terminal distributions through the Kantorovich-Rubinstein dual representation. Numerical experiments indicate that the mSOE scheme exhibits stable convergence, and the Wasserstein-based calibration scheme improves parameter recovery, optimization stability, and out-of-sample performance relative to conventional MSE-based fitting in the rBergomi setting considered in this paper.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "针对粗糙Bergomi（rBergomi）模型在波动率动态建模中虽经验证有效，但因非马尔可夫结构导致定价与校准计算复杂度高、实际应用受限的问题，本文提出高效计算框架。首先，在混合多因子近似类中设计改进指数和（mSOE）蒙特卡洛方案，结合首时间步奇异核的精确处理与剩余区间指数和近似，并对生成的多因子成分进行精确高斯模拟；该方法在固定指数项数下保持与时间步数线性在线复杂度，数值实验中实现高定价精度（尤其对价外期权）。其次，基于此定价引擎，构建通过Wasserstein-1距离匹配终端标的资产分布特征的校准方法，突破传统仅拟合选定行权价期权价格的局限，提升模型市场拟合效率。",
+    "fetch_date": "2026-04-10",
+    "id": "20260410_a4bd24fa"
+  },
+  {
+    "title": "Asymptotic Analysis of Optimal Diversification in Catastrophe Risk Pooling",
+    "url": "https://arxiv.org/pdf/2512.18790v2",
+    "source": "ArXiv",
+    "date": "2025-12-21",
+    "abstract": "Catastrophe risk has long been recognized to pose a serious threat to the insurance sector. Catastrophe risk pooling offers an effective way to diversify losses arising from catastrophic events. In this paper, we investigate a structure of catastrophe risk pool and optimize it so that participants can attain the maximum diversification benefit from joining the pool. Determining the practical optimal pool entails solving a high-dimensional optimization problem, for which analytical solutions are typically unavailable and numerical methods can be computationally intensive and potentially unreliable. To address this challenge, we evaluate the diversification benefit in the limit and use it to derive an asymptotically optimal pool which approximates the practical optimal pool. Through simulation studies, we show that the asymptotically optimal pool provides an accurate and reliable approximation to the practical optimal pool. We also conduct an empirical analysis using data from the U.S. National Flood Insurance Program to illustrate how the framework can be applied in practice.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文研究了巨灾风险池的结构并对其进行优化，以使参与者获得最大的分散化收益。确定实际最优池需要解决高维优化问题，通常无法获得解析解，数值方法计算量大且可能不可靠。为解决此问题，作者在极限条件下评估分散化收益，并推导出渐近最优池来近似实际最优池。通过模拟研究，表明渐近最优池能准确可靠地近似实际最优池。作者还使用美国国家洪水保险计划的数据进行了实证分析，以说明该框架如何应用于实践。",
+    "fetch_date": "2026-04-10",
+    "id": "20260410_1cf5e46a"
+  },
+  {
     "title": "Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models",
     "url": "https://arxiv.org/pdf/2604.06068v1",
     "source": "ArXiv",
@@ -5974,29 +5998,5 @@
     "summary": "在金融市场复杂多变的背景下，投资组合优化对投资者和资产管理人仍是一项严峻挑战。传统方法往往难以捕捉市场行为的复杂动态并满足多样化的投资者偏好。为此，我们提出了一种创新框架——扩散增强强化学习（DARL），它将去噪扩散概率模型（DDPM）与深度强化学习（DRL）协同整合，用于投资组合管理。通过利用DDPM生成基于不同压力强度的合成市场崩盘情景，我们的方法显著增强了训练数据的鲁棒性。实证评估表明，DARL优于传统基准方法，提供了更优的风险调整后收益，并对如2025年关税危机等意外危机展现出更强的韧性。这项工作为增强DRL驱动的金融应用中的压力韧性提供了一种鲁棒且实用的方法。",
     "fetch_date": "2026-02-01",
     "id": "20260201_9c5770e6"
-  },
-  {
-    "title": "Multi-Agent Analysis of Off-Exchange Public Information for Cryptocurrency Market Trend Prediction",
-    "url": "https://arxiv.org/pdf/2510.08268v1",
-    "source": "ArXiv",
-    "date": "2025-10-09",
-    "abstract": "Cryptocurrency markets present unique prediction challenges due to their extreme volatility, 24/7 operation, and hypersensitivity to news events, with existing approaches suffering from key information extraction and poor sideways market detection critical for risk management. We introduce a theoretically-grounded multi-agent cryptocurrency trend prediction framework that advances the state-of-the-art through three key innovations: (1) an information-preserving news analysis system with formal theoretical guarantees that systematically quantifies market impact, regulatory implications, volume dynamics, risk assessment, technical correlation, and temporal effects using large language models; (2) an adaptive volatility-conditional fusion mechanism with proven optimal properties that dynamically combines news sentiment and technical indicators based on market regime detection; (3) a distributed multi-agent coordination architecture with low communication complexity enabling real-time processing of heterogeneous data streams. Comprehensive experimental evaluation on Bitcoin across three prediction horizons demonstrates statistically significant improvements over state-of-the-art natural language processing baseline, establishing a new paradigm for financial machine learning with broad implications for quantitative trading and risk management systems.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "加密货币市场因极端波动性、全天候运行和对新闻事件高度敏感而呈现独特的预测挑战，现有方法在关键信息提取和横盘市场检测方面存在不足，这对风险管理至关重要。本文提出一种理论驱动的多代理加密货币趋势预测框架，通过三项关键创新推动前沿发展：(1) 具有正式理论保证的信息保留新闻分析系统，利用大型语言模型系统量化市场影响、监管影响、成交量动态、风险评估、技术相关性和时间效应；(2) 具有证明最优特性的自适应波动条件融合机制，基于市场状态检测动态结合新闻情绪和技术指标；(3) 低通信复杂度的分布式多代理协调架构，支持异构数据流的实时处理。在比特币上跨三个预测周期的综合实验评估显示，相比现有方法取得了统计显著的改进。",
-    "fetch_date": "2026-02-01",
-    "id": "20260201_4de969eb"
-  },
-  {
-    "title": "A Deterministic Limit Order Book Simulator with Hawkes-Driven Order Flow",
-    "url": "https://arxiv.org/pdf/2510.08085v1",
-    "source": "ArXiv",
-    "date": "2025-10-09",
-    "abstract": "We present a reproducible research framework for market microstructure combining a deterministic C++ limit order book (LOB) simulator with stochastic order flow generated by multivariate marked Hawkes processes. The paper derives full stability and ergodicity proofs for both linear and nonlinear Hawkes models, implements time-rescaling and goodness-of-fit diagnostics, and calibrates exponential and power-law kernels on Binance BTCUSDT and LOBSTER AAPL datasets. Empirical results highlight the nearly-unstable subcritical regime as essential for reproducing realistic clustering in order flow. All code, datasets, and configuration files are publicly available at https://github.com/sohaibelkarmi/High-Frequency-Trading-Simulator",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种可复现的市场微观结构研究框架，结合了确定性的C++限价订单簿（LOB）模拟器与由多元标记霍克斯过程生成的随机订单流。论文推导了线性和非线性霍克斯模型的完整稳定性和遍历性证明，实现了时间重标度和拟合优度诊断，并在Binance BTCUSDT和LOBSTER AAPL数据集上校准了指数核和幂律核。实证结果强调，近乎不稳定的亚临界状态对于再现订单流中的真实聚类至关重要。所有代码、数据集和配置文件均已公开。",
-    "fetch_date": "2026-02-01",
-    "id": "20260201_29c13236"
   }
 ]
