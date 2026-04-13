@@ -1,5 +1,65 @@
 [
   {
+    "title": "RAMP: Hybrid DRL for Online Learning of Numeric Action Models",
+    "url": "https://arxiv.org/pdf/2604.08685v1",
+    "source": "ArXiv",
+    "date": "2026-04-09",
+    "abstract": "Automated planning algorithms require an action model specifying the preconditions and effects of each action, but obtaining such a model is often hard. Learning action models from observations is feasible, but existing algorithms for numeric domains are offline, requiring expert traces as input. We propose the Reinforcement learning, Action Model learning, and Planning (RAMP) strategy for learning numeric planning action models online via interactions with the environment. RAMP simultaneously trains a Deep Reinforcement Learning (DRL) policy, learns a numeric action model from past interactions, and uses that model to plan future actions when possible. These components form a positive feedback loop: the RL policy gathers data to refine the action model, while the planner generates plans to continue training the RL policy. To facilitate this integration of RL and numeric planning, we developed Numeric PDDLGym, an automated framework for converting numeric planning problems to Gym environments. Experimental results on standard IPC numeric domains show that RAMP significantly outperforms PPO, a well-known DRL algorithm, in terms of solvability and plan quality.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "论文提出RAMP策略，一种结合深度强化学习（DRL）、动作模型学习和规划的混合方法，用于在线学习数值动作模型。该方法通过与环境交互，同时训练DRL策略、从过往交互中学习数值动作模型，并利用该模型规划未来动作。这些组件形成正向反馈循环：RL策略收集数据以优化动作模型，而规划器生成计划以继续训练RL策略。实验结果表明，在标准IPC数值领域，RAMP在可解性和计划质量上显著优于知名DRL算法PPO。",
+    "fetch_date": "2026-04-14",
+    "id": "20260414_adc0cce1"
+  },
+  {
+    "title": "PRAGMA: Revolut Foundation Model",
+    "url": "https://arxiv.org/pdf/2604.08649v1",
+    "source": "ArXiv",
+    "date": "2026-04-09",
+    "abstract": "Modern financial systems generate vast quantities of transactional and event-level data that encode rich economic signals. This paper presents PRAGMA, a family of foundation models for multi-source banking event sequences. Our approach pre-trains a Transformer-based architecture with masked modelling on a large-scale, heterogeneous banking event corpus using a self-supervised objective tailored to the discrete, variable-length nature of financial records. The resulting model supports a wide range of downstream tasks such as credit scoring, fraud detection, and lifetime value prediction: strong performance can be achieved by training a simple linear model on top of the extracted embeddings and can be further improved with lightweight fine-tuning. Through extensive evaluation on downstream tasks, we demonstrate that PRAGMA achieves superior performance across multiple domains directly from raw event sequences, providing a general-purpose representation layer for financial applications.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "本文提出了PRAGMA，一个面向多源银行事件序列的基础模型家族。该方法基于Transformer架构，在大规模异构银行事件语料库上通过针对金融记录离散、变长特性定制的自监督目标进行掩码建模预训练。生成的模型支持多种下游任务，如信用评分、欺诈检测和终身价值预测：通过在提取的嵌入上训练简单线性模型即可实现强大性能，并可通过轻量级微调进一步提升。通过在下游任务上的广泛评估，我们证明PRAGMA能够直接从原始事件序列在多个领域取得卓越性能，为金融应用提供通用表示层。",
+    "fetch_date": "2026-04-14",
+    "id": "20260414_c73aecf3"
+  },
+  {
+    "title": "Reliability-Aware ETF Tail-Risk Monitoring",
+    "url": "https://arxiv.org/pdf/2604.08765v1",
+    "source": "ArXiv",
+    "date": "2026-04-09",
+    "abstract": "Daily ETF risk monitoring can become unreliable when market data quality degrades, market conditions shift, or predictive performance becomes unstable. This paper develops a reliability-aware risk monitoring service for next-day tail-risk surveillance. The proposed framework combines service-time quality checks, lower-tail prediction, uncertainty scoring, and conservative risk adjustment. We evaluate the system on a daily panel of multiple ETFs augmented with VIX and yield-curve information under a rolling walk-forward design. The empirical results suggest that the proposed framework improves tail-risk reliability during stressed periods while preserving full evaluable coverage. Under deliberate input corruption, the quality layer enhances service robustness.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "《可靠性感知的ETF尾部风险监控》提出了一种可靠性感知的次日尾部风险监控服务框架。该框架整合了服务时质量检查、下尾预测、不确定性评分和保守风险调整。在滚动前向设计的每日多ETF面板（增强VIX和收益率曲线信息）上进行评估，结果表明该框架在压力时期提高了尾部风险监控的可靠性，同时保持了完整的可评估覆盖范围。在故意输入损坏的情况下，质量层增强了服务的鲁棒性。",
+    "fetch_date": "2026-04-14",
+    "id": "20260414_7c974b2e"
+  },
+  {
+    "title": "Entropy Regularization under Bayesian Drift Uncertainty",
+    "url": "https://arxiv.org/pdf/2602.16862v2",
+    "source": "ArXiv",
+    "date": "2026-02-18",
+    "abstract": "We study entropy-regularized mean-variance portfolio optimization under Bayesian drift uncertainty. Gaussian policies remain optimal under partial information, the value function is quadratic in wealth, and belief-dependent coefficients admit closed-form solutions. The mean control is identical to deterministic Bayesian Markowitz feedback; entropy regularization affects only the policy variance. Additionally, this variance does not affect information gain, and instead provides belief-dependent robustness. Notably, optimal policy variance increases with posterior conviction $|m_t|$, forcing greater action randomization when mean position is most aggressive.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文研究在贝叶斯漂移不确定性下的熵正则化均值-方差投资组合优化。结果表明，在部分信息下高斯策略仍保持最优，价值函数是财富的二次函数，且依赖信念的系数存在闭式解。均值控制与确定性贝叶斯马科维茨反馈相同；熵正则化仅影响策略方差。此外，该方差不影响信息增益，而是提供依赖信念的鲁棒性。值得注意的是，最优策略方差随后验信念强度|m_t|增加而增加，当平均头寸最激进时，强制更大的行动随机化。",
+    "fetch_date": "2026-04-14",
+    "id": "20260414_78be4eba"
+  },
+  {
+    "title": "SafeAdapt: Provably Safe Policy Updates in Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2604.09452v1",
+    "source": "ArXiv",
+    "date": "2026-04-10",
+    "abstract": "Safety guarantees are a prerequisite to the deployment of reinforcement learning (RL) agents in safety-critical tasks. Often, deployment environments exhibit non-stationary dynamics or are subject to changing performance goals, requiring updates to the learned policy. This leads to a fundamental challenge: how to update an RL policy while preserving its safety properties on previously encountered tasks? The majority of current approaches either do not provide formal guarantees or verify policy safety only a posteriori. We propose a novel a priori approach to safe policy updates in continual RL by introducing the Rashomon set: a region in policy parameter space certified to meet safety constraints within the demonstration data distribution. We then show that one can provide formal, provable guarantees for arbitrary RL algorithms used to update a policy by projecting their updates onto the Rashomon set. Empirically, we validate this approach across grid-world navigation environments (Frozen Lake and Poisoned Apple) where we guarantee an a priori provably deterministic safety on the source task during downstream adaptation. In contrast, we observe that regularisation-based baselines experience catastrophic forgetting of safety constraints while our approach enables strong adaptation with provable guarantees that safety is preserved.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "SafeAdapt：深度强化学习中可证明安全的策略更新。安全保证是将强化学习（RL）智能体部署于安全关键任务的前提。部署环境常呈现非平稳动态或受性能目标变化影响，需更新学习策略。这带来核心挑战：如何在更新RL策略时，保持其在先前任务上的安全属性？现有方法大多不提供形式化保证，或仅事后验证策略安全性。本文提出一种持续RL中安全策略更新的先验方法，引入Rashomon集：策略参数空间中经认证在演示数据分布内满足安全约束的区域。研究表明，通过将任意RL算法的更新投影至Rashomon集，可为策略更新提供形式化、可证明的保证。实验在网格世界导航环境（Frozen Lake和Poisoned Apple）中验证了该方法，确保下游适应期间在源任务上具有先验可证明的确定性安全。相比之下，基于正则化的基线方法...",
+    "fetch_date": "2026-04-14",
+    "id": "20260414_4ef89031"
+  },
+  {
     "title": "Measuring Strategy-Decay Risk: Minimum Regime Performance and the Durability of Systematic Investing",
     "url": "https://arxiv.org/pdf/2604.08356v1",
     "source": "ArXiv",
@@ -5938,65 +5998,5 @@
     "summary": "本文提出蒙特卡洛置换搜索（MCPS），一种改进GRAVE算法的通用蒙特卡洛树搜索（MCTS）算法。适用于深度强化学习不可行或计算资源有限的情况（如通用游戏博弈）。核心原理是在节点探索项中纳入从根节点到该节点路径上所有走法的统计信息。在棋盘游戏、战争游戏、投资游戏、视频游戏及多人游戏等广泛测试中，MCPS在双人游戏中表现优于GRAVE，多人游戏中因游戏平衡性而效果相当。研究还表明使用走法抽象编码（非精确编码）可提升置换统计和AMAF统计效果，并提供了改进GRAVE公式的数学推导。",
     "fetch_date": "2026-02-02",
     "id": "20260202_9f6b917c"
-  },
-  {
-    "title": "A Microstructure Analysis of Coupling in CFMMs",
-    "url": "https://arxiv.org/pdf/2510.06095v1",
-    "source": "ArXiv",
-    "date": "2025-10-07",
-    "abstract": "The programmable and composable nature of smart contract protocols has enabled the emergence of novel market structures and asset classes that are architecturally frictional to implement in traditional financial paradigms. This fluidity has produced an understudied class of market dynamics, particularly in coupled markets where one market serves as an oracle for the other. In such market structures, purchases or liquidations through the intermediate asset create coupled price action between the intermediate and final assets; leading to basket inflation or deflation when denominated in the riskless asset. This paper examines the microstructure of this inflationary dynamic given two constant function market makers (CFMMs) as the intermediate market structures; attempting to quantify their contributions to the former relative to familiar pool metrics such as price drift, trade size, and market depth. Further, a concrete case study is developed, where both markets are constant product markets. The intention is to shed light on the market design process within such coupled environments.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文研究了智能合约协议中两个恒定函数做市商（CFMMs）作为中间市场结构时，耦合市场（一个市场作为另一个市场的预言机）的微观结构动态。重点分析了通过中间资产进行的交易或清算如何导致中间资产与最终资产之间的价格联动，从而产生以无风险资产计价时的篮子通胀或通缩效应。论文试图量化这些动态相对于常见的资金池指标（如价格漂移、交易规模和市场深度）的贡献，并以两个恒定乘积市场为例进行了具体案例研究，旨在揭示此类耦合环境中的市场设计过程。",
-    "fetch_date": "2026-02-02",
-    "id": "20260202_7fb25a54"
-  },
-  {
-    "title": "Uncovering Representation Bias for Investment Decisions in Open-Source Large Language Models",
-    "url": "https://arxiv.org/pdf/2510.05702v2",
-    "source": "ArXiv",
-    "date": "2025-10-07",
-    "abstract": "Large Language Models are increasingly adopted in financial applications to support investment workflows. However, prior studies have seldom examined how these models reflect biases related to firm size, sector, or financial characteristics, which can significantly impact decision-making. This paper addresses this gap by focusing on representation bias in open-source Qwen models. We propose a balanced round-robin prompting method over approximately 150 U.S. equities, applying constrained decoding and token-logit aggregation to derive firm-level confidence scores across financial contexts. Using statistical tests and variance analysis, we find that firm size and valuation consistently increase model confidence, while risk factors tend to decrease it. Confidence varies significantly across sectors, with the Technology sector showing the greatest variability. When models are prompted for specific financial categories, their confidence rankings best align with fundamental data, moderately with technical signals, and least with growth indicators. These results highlight representation bias in Qwen models and motivate sector-aware calibration and category-conditioned evaluation protocols for safe and fair financial LLM deployment.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文针对开源Qwen大语言模型在投资决策中的表征偏差进行研究。通过平衡轮询提示方法分析约150只美股，采用约束解码和词元对数聚合技术，得出企业在不同金融情境下的置信度评分。研究发现：企业规模和估值会系统性提升模型置信度，而风险因素则会降低置信度；不同行业间置信度差异显著，其中科技板块波动最大；模型在基本面数据上表现最佳，技术指标次之，增长指标最弱。这些发现揭示了Qwen模型存在的表征偏差，为行业感知校准和类别条件评估提供了依据。",
-    "fetch_date": "2026-02-02",
-    "id": "20260202_603a9b46"
-  },
-  {
-    "title": "Concentrated N-dimensional AMM with Polar Coordinates in Rust",
-    "url": "https://arxiv.org/pdf/2510.05428v1",
-    "source": "ArXiv",
-    "date": "2025-10-06",
-    "abstract": "We expand on the recent development of n-dimensional automated market makers for stablecoins by showing a way to build concentrated liquidity positions with ticks in polar coordinates in Rust, including the featured ability to skew said concentrated liquidity. We highlight the risk of stacking too many stablecoin pools and how to hedge said risk.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文在Rust语言中实现了基于极坐标的n维自动化做市商（AMM）集中流动性方案，重点展示了如何构建带刻度（ticks）的集中流动性头寸，并具备流动性偏斜（skew）功能。论文还探讨了稳定币池过度集中的风险及相应的对冲策略。",
-    "fetch_date": "2026-02-02",
-    "id": "20260202_f1a615be"
-  },
-  {
-    "title": "Signed network models for portfolio optimization",
-    "url": "https://arxiv.org/pdf/2510.05377v1",
-    "source": "ArXiv",
-    "date": "2025-10-06",
-    "abstract": "In this work, we consider weighted signed network representations of financial markets derived from raw or denoised correlation matrices, and examine how negative edges can be exploited to reduce portfolio risk. We then propose a discrete optimization scheme that reduces the asset selection problem to a desired size by building a time series of signed networks based on asset returns. To benchmark our approach, we consider two standard allocation strategies: Markowitz's mean-variance optimization and the 1/N equally weighted portfolio. Both methods are applied on the reduced universe as well as on the full universe, using two datasets: (i) the Market Champions dataset, consisting of 21 major S&P500 companies over the 2020-2024 period, and (ii) a dataset of 199 assets comprising all S&P500 constituents with stock prices available and aligned with Google's data. Empirical results show that portfolios constructed via our signed network selection perform as good as those from classical Markowitz model and the equal-weight benchmark in most occasions.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文提出了一种基于符号网络模型的资产选择方法，用于投资组合优化。通过从原始或去噪的相关性矩阵构建带权重的符号网络，利用负相关边来降低投资组合风险，并采用离散优化方案将资产选择问题缩减至目标规模。在实证测试中，使用标准普尔500成分股数据（包括21家主要公司和199只完整成分股），对比了Markowitz均值-方差优化和等权重1/N策略。结果显示，该方法构建的投资组合在多数情况下表现与经典模型和基准相当。",
-    "fetch_date": "2026-02-02",
-    "id": "20260202_523621a5"
-  },
-  {
-    "title": "Probability equivalent level for CoVaR and VaR in bivariate Student-\\textit{t} copulas with application to foreign exchange risk monitoring",
-    "url": "https://arxiv.org/pdf/2510.15934v1",
-    "source": "ArXiv",
-    "date": "2025-10-06",
-    "abstract": "We extend the \"probability-equivalent level of VaR and CoVaR\" (PELCoV) methodology to accommodate bivariate risks modeled by a Student-t copula, relaxing the strong dependence assumptions of earlier approaches and enhancing the framework's ability to capture tail dependence and asymmetric co-movements. While the theoretical results are developed in a static setting, we implement them dynamically to track evolving risk spillovers over time. We illustrate the practical relevance of our approach through an application to the foreign exchange market, monitoring the USD/GBP exchange rate with the USD/EUR series as an auxiliary early warning indicator over the period 1999-2024. Our results highlight the potential of the extended PELCoV framework to detect early signs of risk underestimation during periods of financial stress.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文扩展了“VaR与CoVaR的概率等价水平”（PELCoV）方法，使其适用于由Student-t copula建模的双变量风险，放宽了早期方法的强依赖假设，增强了捕捉尾部依赖和不对称共变的能力。虽然在静态设定中发展了理论结果，但作者动态实施以追踪随时间演化的风险溢出。通过在外汇市场的应用（以1999-2024年期间的USD/EUR系列作为辅助预警指标监测USD/GBP汇率）展示了该方法的实际相关性。结果突显了扩展的PELCoV框架在金融压力期间检测风险低估早期迹象的潜力。",
-    "fetch_date": "2026-02-02",
-    "id": "20260202_6eced8fe"
   }
 ]
