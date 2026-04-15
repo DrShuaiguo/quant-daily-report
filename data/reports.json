@@ -1,5 +1,53 @@
 [
   {
+    "title": "Dynamic Forecasting and Temporal Feature Evolution of Stock Repurchases in Listed Companies Using Attention-Based Deep Temporal Networks",
+    "url": "https://arxiv.org/pdf/2604.09650v1",
+    "source": "ArXiv",
+    "date": "2026-03-29",
+    "abstract": "Accurately predicting stock repurchases is crucial for quantitative investment and risk management, yet traditional static models fail to capture the complex temporal dependencies of corporate financial conditions. This paper proposes a dynamic early warning system integrating economic theory with deep temporal networks. Using Chinese A-share panel data (2014-2024), we employ a hybrid Temporal Convolutional Network (TCN) and Attention-based LSTM to capture long- and short-term financial evolutionary patterns. Rolling-window cross-validation demonstrates our model significantly outperforms static baselines like Logistic Regression and XGBoost. Furthermore, utilizing Explainable AI (XAI), we reveal the temporal dynamics of repurchase decisions: prolonged \"undervaluation\" serves as the long-term underlying motive, while a sharp increase in \"cash flow\" acts as the decisive short-term trigger. This study provides a robust deep learning paradigm for financial forecasting and offers dynamic empirical support for classic corporate finance hypotheses.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "本文提出了一种动态预警系统，结合经济理论与深度时序网络，用于预测上市公司股票回购。基于中国A股面板数据（2014-2024），采用混合时序卷积网络（TCN）和基于注意力的LSTM模型，捕捉长短期财务演化模式。滚动窗口交叉验证表明，该模型显著优于逻辑回归和XGBoost等静态基线。通过可解释AI（XAI）揭示了回购决策的时序动态：长期“低估”是根本动机，而“现金流”的急剧增长是短期触发因素。该研究为金融预测提供了稳健的深度学习范式，并为经典公司财务假设提供了动态实证支持。",
+    "fetch_date": "2026-04-16",
+    "id": "20260416_4534cac1"
+  },
+  {
+    "title": "When Forecast Accuracy Fails: Rank Correlation and Decision Quality in Multi-Market Battery Storage Optimization",
+    "url": "https://arxiv.org/pdf/2604.12082v1",
+    "source": "ArXiv",
+    "date": "2026-04-13",
+    "abstract": "Battery energy storage systems (BESS) participating in multi-market electricity trading require price forecasts to optimize dispatch decisions. A widely held assumption is that forecast accuracy, measured by standard metrics such as mean absolute error (MAE), drives trading performance. We challenge this assumption using a hierarchical three-layer optimization system trading simultaneously on frequency containment reserve (FCR), automatic frequency restoration reserve (aFRR), day-ahead, and continuous intraday (XBID) markets in Germany and Switzerland over 2020-2025, with real market data from Regelleistung.net and Swissgrid. We find that rank correlation (Kendall tau), rather than MAE, is the primary predictor of intraday dispatch value: forecasts above an empirical threshold of tau approximately 0.85-0.95 capture up to 97-100% of perfect-foresight revenue, while persistence forecasts with near-zero tau capture only 33%. This threshold is stable across market regimes and volatility levels, and reflects the ordinal structure of the dispatch problem. Furthermore, under reserve market constraints, FCR capacity revenue exceeds XBID by 6.5x per MW, making capacity allocation -- not forecast accuracy -- the primary driver of total revenue. In the Swiss market, hydrological surplus anomalies are significantly associated with balancing market revenue (p = 0.0005), a mechanism absent from existing German-focused literature. These findings reframe forecast evaluation for BESS operators: the relevant question is not what the MAE is, but whether the forecast achieves tau-sufficiency.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "论文挑战了电池储能系统（BESS）在多市场电力交易中依赖传统预测准确性指标（如平均绝对误差MAE）的假设。通过使用德国和瑞士2020-2025年真实市场数据，在频率控制储备（FCR）、自动频率恢复储备（aFRR）、日前市场和连续日内（XBID）市场进行三层优化交易，研究发现秩相关性（Kendall tau）而非MAE是日内调度价值的主要预测指标：当tau达到0.85-0.95的经验阈值时，可捕获完美预见收益的97-100%，而接近零tau的持续性预测仅能捕获33%。该阈值在市场机制和波动水平下保持稳定，反映了调度问题的序数结构。此外，在储备市场约束下，FCR容量收益是XBID的6.5倍/兆瓦，表明容量分配而非价格预测精度对实战交易更具决定性价值。",
+    "fetch_date": "2026-04-16",
+    "id": "20260416_99f8307e"
+  },
+  {
+    "title": "Forecasting Oil Prices Across the Distribution: A Quantile VAR Approach",
+    "url": "https://arxiv.org/pdf/2604.12927v1",
+    "source": "ArXiv",
+    "date": "2026-04-14",
+    "abstract": "We develop a Quantile Bayesian Vector Autoregression (QBVAR) to forecast real oil prices across different quantiles of the conditional distribution. The model allows predictor effects to vary across quantiles, capturing asymmetries that standard mean-focused approaches miss. Using monthly data from 1975 to 2025, we document three findings. First, the QBVAR improves median forecasts by 2-5\\% relative to Bayesian VARs, demonstrating that quantile-specific dynamics matter even for point prediction. Second, uncertainty and financial condition variables strongly predict downside risk, with left-tail forecast improvements of 10-25\\% that intensify during crisis episodes. Third, right-tail forecasting remains difficult; stochastic volatility models dominate for upside risk, though forecast combinations that include the QBVAR recover these losses. The results show that modeling the conditional distribution yields substantial gains for tail risk assessment, particularly during major oil market disruptions.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文开发了一种分位数贝叶斯向量自回归（QBVAR）模型，用于预测真实石油价格在条件分布不同分位数上的表现。该模型允许预测变量效应随分位数变化，捕捉标准均值方法忽略的不对称性。基于1975年至2025年的月度数据，研究得出三个主要发现：1）QBVAR相对于贝叶斯VAR将中位数预测精度提高了2-5%，表明分位数特定动态对点预测也很重要；2）不确定性和金融状况变量对下行风险有强预测能力，左尾预测精度提高10-25%，在危机期间尤为显著；3）右尾预测仍具挑战性，随机波动模型在上涨风险预测中占优，但包含QBVAR的预测组合可弥补这些损失。结果表明，建模条件分布对尾部风险评估（尤其是在重大石油市场动荡期间）具有显著价值。",
+    "fetch_date": "2026-04-16",
+    "id": "20260416_a3976738"
+  },
+  {
+    "title": "Emergence of Statistical Financial Factors by a Diffusion Process",
+    "url": "https://arxiv.org/pdf/2604.12197v1",
+    "source": "ArXiv",
+    "date": "2026-04-14",
+    "abstract": "Factor models characterize the joint behavior of large sets of financial assets through a smaller number of underlying drivers. We develop a network-based framework in which factors emerge naturally from the structure of interactions among assets rather than being imposed statistically. The market is modeled as a system of coupled iterated maps, where assets' return depends on its own past returns and those of related assets. Effectively modeling the influence of irrational traders whose decisions are based on the past movements of a collection of stocks. The interaction structure between stock returns is defined by a coupling matrix derived from an orthogonal transformation of a Laplacian matrix that gradually links initially isolated clusters into a fully connected network. Within this structure, stable patterns of co-movement arise and can be interpreted as financial factors. The relationship between the initial clustering and the number of observed factors is consistent with a center manifold reduction. We identify an optimal regime in which assets' variance is effectively explained by the set of factors produced by the network. Our framework offers a structural perspective based on interaction-based factor formation and dimension reduction in financial markets.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出了一种基于网络的框架，其中因子从资产间相互作用的结构中自然涌现，而非通过统计方法强加。市场被建模为一个耦合迭代映射系统，资产收益取决于其自身过去收益及相关资产的收益，有效模拟了基于股票集合过去走势做出决策的非理性交易者的影响。股票收益间的相互作用结构由一个耦合矩阵定义，该矩阵源自拉普拉斯矩阵的正交变换，逐渐将初始孤立的集群连接成完全连接的网络。在此结构中，稳定的协同运动模式出现，可被解释为金融因子。初始聚类与观测因子数量之间的关系与中心流形约化一致。作者识别了一个最优机制，其中资产的方差可由网络产生的因子集有效解释。该框架提供了一个结构性视角，但主要侧重于理论建模和机制解释，而非直接的实战交易策略或算法开发。",
+    "fetch_date": "2026-04-16",
+    "id": "20260416_77c2de6d"
+  },
+  {
     "title": "OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Based Multi-Agent Systems",
     "url": "https://arxiv.org/pdf/2604.11477v1",
     "source": "ArXiv",
@@ -5950,53 +5998,5 @@
     "summary": "本文提出了一种基于分位数回归森林和保形校准的实时风险价值（VaR）估计方法，采用离线模拟在线估计（OSOA）框架。该方法离线训练模型学习VaR与风险因子的关系，在线实时估计VaR，并通过保形校准确保可靠性。理论分析证明了一致性和覆盖有效性，数值实验验证了其实际有效性。",
     "fetch_date": "2026-02-04",
     "id": "20260204_1fe1516b"
-  },
-  {
-    "title": "Explainable Patterns in Cryptocurrency Microstructure",
-    "url": "https://arxiv.org/pdf/2602.00776v1",
-    "source": "ArXiv",
-    "date": "2026-01-31",
-    "abstract": "We document stable cross-asset patterns in cryptocurrency limit-order-book microstructure: the same engineered order book and trade features exhibit remarkably similar predictive importance and SHAP dependence shapes across assets spanning an order of magnitude in market capitalization (BTC, LTC, ETC, ENJ, ROSE). The data covers Binance Futures perpetual contract order books and trades on 1-second frequency starting from January 1st, 2022 up to October 12th, 2025. Using a unified CatBoost modeling pipeline with a direction-aware GMADL objective and time-series cross validation, we show that feature rankings and partial effects are stable across assets despite heterogeneous liquidity and volatility. We connect these SHAP structures to microstructure theory (order flow imbalance, spread, and adverse selection) and validate tradability via a conservative top-of-book taker backtest as well as fixed depth maker backtest. Our primary novelty is a robustness analysis of a major flash crash, where the divergent performance of our taker and maker strategies empirically validates classic microstructure theories of adverse selection and highlights the systemic risks of algorithmic trading. Our results suggest a portable microstructure representation of short-horizon returns and motivate universal feature libraries for crypto markets.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "该论文揭示了加密货币限价订单簿微观结构中稳定的跨资产模式：相同的工程化订单簿和交易特征在市值跨度达一个数量级的资产（BTC、LTC、ETC、ENJ、ROSE）中展现出高度相似的预测重要性和SHAP依赖形状。数据涵盖2022年1月1日至2025年10月12日币安期货永续合约订单簿和每秒频率的交易。通过采用具有方向感知GMADL目标和时间序列交叉验证的统一CatBoost建模流程，研究表明尽管资产间存在流动性异质性和波动性差异，但特征排名和部分效应保持稳定。这些SHAP结构与微观结构理论（订单流不平衡、价差和逆向选择）相关联，并通过保守的顶级订单簿接受者回测以及固定深度做市商回测验证了可交易性。主要创新点在于对一次重大闪崩的稳健性分析，其中接受者和做市商策略的差异化表现实证验证了经典的逆向选择微观结构理论，并突显了算法交易的系统性风险。",
-    "fetch_date": "2026-02-04",
-    "id": "20260204_3cab3620"
-  },
-  {
-    "title": "Generative AI for Stock Selection",
-    "url": "https://arxiv.org/pdf/2602.00196v1",
-    "source": "ArXiv",
-    "date": "2026-01-30",
-    "abstract": "We study whether generative AI can automate feature discovery in U.S. equities. Using large language models with retrieval-augmented generation and structured/programmatic prompting, we synthesize economically motivated features from analyst, options, and price-volume data. These features are then used as inputs to a tabular machine-learning model to forecast short-horizon returns. Across multiple datasets, AI-generated features are consistently competitive with baselines, with Sharpe improvements ranging from 14% to 91% depending on dataset and configuration. Retrieval quality is pivotal: better knowledge bases materially improve outcomes. The AI-generated signals are weakly correlated with traditional features, supporting combination. Overall, generative AI can meaningfully augment feature discovery when retrieval quality is controlled, producing interpretable signals while reducing manual engineering effort.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "该研究探讨了生成式AI在美国股票特征发现中的自动化应用。通过结合检索增强生成（RAG）和结构化/程序化提示的大型语言模型，从分析师报告、期权数据以及价量数据中合成具有经济意义的特征。这些特征作为表格机器学习模型的输入，用于预测短期收益。在多个数据集上，AI生成的特征表现始终优于基线，夏普比率提升幅度在14%至91%之间，具体取决于数据集和配置。检索质量至关重要：更好的知识库能显著改善结果。AI生成的信号与传统特征相关性较弱，支持组合使用。总体而言，在控制检索质量的情况下，生成式AI能有效增强特征发现，产生可解释的信号，同时减少人工工程工作量。",
-    "fetch_date": "2026-02-04",
-    "id": "20260204_8ddbadca"
-  },
-  {
-    "title": "Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents",
-    "url": "https://arxiv.org/pdf/2602.00929v1",
-    "source": "ArXiv",
-    "date": "2026-01-31",
-    "abstract": "Humans learn abstractions and use them to plan efficiently to quickly generalize across tasks -- an ability that remains challenging for state-of-the-art large language model (LLM) agents and deep reinforcement learning (RL) systems. Inspired by the cognitive science of how people form abstractions and intuitive theories of their world knowledge, Theory-Based RL (TBRL) systems, such as TheoryCoder, exhibit strong generalization through effective use of abstractions. However, they heavily rely on human-provided abstractions and sidestep the abstraction-learning problem. We introduce TheoryCoder-2, a new TBRL agent that leverages LLMs' in-context learning ability to actively learn reusable abstractions rather than relying on hand-specified ones, by synthesizing abstractions from experience and integrating them into a hierarchical planning process. We conduct experiments on diverse environments, including BabyAI, Minihack and VGDL games like Sokoban. We find that TheoryCoder-2 is significantly more sample-efficient than baseline LLM agents augmented with classical planning domain construction, reasoning-based planning, and prior program-synthesis agents such as WorldCoder. TheoryCoder-2 is able to solve complex tasks that the baselines fail, while only requiring minimal human prompts, unlike prior TBRL systems.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "论文《Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents》提出TheoryCoder-2，一种基于理论的强化学习（TBRL）智能体，利用大语言模型（LLM）的上下文学习能力，从经验中主动学习可重用的抽象概念，而非依赖人工指定的抽象，并将其整合到分层规划过程中。该智能体在BabyAI、Minihack和VGDL游戏（如Sokoban）等多样化环境中进行了实验，结果显示，相比基线LLM智能体（增强经典规划领域构建、基于推理的规划）及先前的程序合成智能体（如WorldCoder），TheoryCoder-2的样本效率显著更高。该研究对实战交易的价值在于：其分层规划和抽象学习机制可应用于交易策略的自动生成和优化，提高策略适应性和样本效率，但需注意其在金融市场的泛化能力和实时性挑战。",
-    "fetch_date": "2026-02-04",
-    "id": "20260204_eb46027a"
-  },
-  {
-    "title": "Keeping Up with the Correlations: Stochastic Spot/Volatility Correlation and Exotic Pricing",
-    "url": "https://arxiv.org/pdf/2602.01376v1",
-    "source": "ArXiv",
-    "date": "2026-02-01",
-    "abstract": "We consider a novel use case for the Double Heston model (Christoffersen et al,, 2009), where the two Heston sub-variances have different spot/volatility correlations but the same volatility of volatility and mean reversion speed.\n  This parameterization generalizes the traditional Heston stochastic volatility model (Heston, 1993) to include stochastic spot/volatility correlation. It is an affine model, allowing European options to be priced efficiently by numerically integrating over a closed-form characteristic function.\n  This model incorporates a key dynamic relevant for pricing barrier derivatives in the foreign exchange markets: a positive correlation between moves in implied volatility skew and moves in the spot price. We analyze that correlation and its impact on both barrier option pricing and volatility swap pricing. Those price impacts are comparable to or larger than the bid/ask spreads for these products.\n  Adding stochastic spot/volatility correlation increases the prices of out-of-the-money knockout options and one touch options, assuming that the model is calibrated to market vanilla option prices. It also increases the fair strike of volatility swaps compared to the Heston model.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出了一种基于双Heston模型的新应用，其中两个Heston子方差具有不同的现货/波动率相关性，但共享相同的波动率波动率和均值回归速度。该参数化将传统的Heston随机波动率模型推广至包含随机现货/波动率相关性，属于仿射模型，可通过数值积分闭式特征函数高效定价欧式期权。模型捕捉了外汇市场中间障碍衍生品定价的关键动态：隐含波动率偏斜变动与现货价格变动之间的正相关性。分析表明，该相关性对障碍期权和波动率互换定价的影响与这些产品的买卖价差相当或更大。在校准至市场普通期权价格后，引入随机现货/波动率相关性会提高价外敲出期权和一击即付期权的价格，并增加波动率互换的公平执行价。",
-    "fetch_date": "2026-02-04",
-    "id": "20260204_057ba082"
   }
 ]
