@@ -1,5 +1,77 @@
 [
   {
+    "title": "Risk-Sensitive Specialist Routing for Volatility Forecasting",
+    "url": "https://arxiv.org/pdf/2604.10402v3",
+    "source": "ArXiv",
+    "date": "2026-04-12",
+    "abstract": "Volatility forecasting becomes challenging when market conditions shift and model performance varies across market states. Motivated by this instability, we develop a risk-sensitive specialist routing framework for ETF volatility forecasting. The framework uses online risk-sensitive evaluation and state-dependent gating to combine different forecasting specialists across calm and stressed market states. Using a daily panel of six ETFs under a rolling walk-forward design, we find that the strongest forecaster is regime-dependent rather than stable across all states. Relative to the rolling-best baseline, the proposed routing framework reduces high-volatility forecast loss by about 24% and underprediction loss by about 22%. These results suggest that specialist routing provides a practical forecasting architecture that adapts to changing market conditions.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "针对市场条件变化时波动率预测模型表现不稳定的问题，本文提出了一个风险敏感型专家路由框架。该框架通过在线风险敏感评估和状态依赖门控机制，在平静和压力市场状态下动态组合不同的预测专家。基于六只ETF的滚动向前测试显示，最佳预测器具有状态依赖性而非全局稳定。相比滚动最优基线，该路由框架将高波动率预测损失降低约24%，欠预测损失降低约22%。结果表明专家路由提供了一种能适应市场条件变化的实用预测架构。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_a91c5b13"
+  },
+  {
+    "title": "PolyBench: Benchmarking LLM Forecasting and Trading Capabilities on Live Prediction Market Data",
+    "url": "https://arxiv.org/pdf/2604.14199v1",
+    "source": "ArXiv",
+    "date": "2026-04-03",
+    "abstract": "Predicting real-world events from live market signals demands systems that fuse qualitative news with quantitative order-book dynamics under strict temporal discipline -- a challenge existing benchmarks fail to capture. We present \\textbf{PolyBench}, a multimodal benchmark derived from Polymarket that records point-in-time cross-sections of 38,666 binary prediction markets spanning 4,997 events, synchronously coupling each snapshot with a Central Limit Order Book (CLOB) state and a real-time news stream. Using PolyBench, we evaluate seven state-of-the-art Large Language Models -- spanning open- and closed-source families -- generating 36,165 predictions under identical, timestamp-locked market states collected between February 6 and 12, 2026. Our multidimensional framework assesses directional accuracy, our proposed Confidence-Weighted Return (CWR), Annualized Percentage Yield (APY), and Sharpe ratio via realistic order-book execution simulation. The results reveal a pronounced performance divergence: only two of seven models achieve positive financial returns -- MiMo-V2-Flash at \\textbf{17.6%} CWR and Gemini-3-Flash at 6.2% CWR -- while the remaining five incur losses despite uniformly high stated confidence. These findings highlight the gap between surface-level language fluency and genuine probabilistic reasoning under live market uncertainty, and establish PolyBench as a contamination-proof, financially-grounded evaluation standard for future LLM research. Our dataset and code available at \\underline{\\href{https://github.com/PolyBench/PolyBench}{https://github.com/PolyBench/PolyBench}}.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "《PolyBench：基于实时预测市场数据评估LLM预测与交易能力的基准测试》提出了一种多模态基准测试框架，该框架从Polymarket平台提取数据，包含38,666个二元预测市场（涉及4,997个事件）的实时快照，每个快照均同步关联中央限价订单簿（CLOB）状态和实时新闻流。研究在2026年2月6日至12日期间，在时间戳锁定的相同市场状态下，评估了七个最先进的大语言模型（涵盖开源和闭源系列），生成了36,165个预测。通过多维框架（包括方向准确性、提出的置信加权回报（CWR）、年化百分比收益率（APY）和夏普比率）并结合现实的订单簿执行模拟进行评估。结果显示性能差异显著：七个模型中仅有两个实现正财务回报——MiMo-V2-Flash的CWR为17.6%，Gemini-3-Flash的CWR为6.2%——其余五个模型尽管在统一条件下测试，仍产生亏损。该工作通过整合实时市场信号、新闻流和订单簿动态，并模拟真实交易执行，为评估模型在实际交易环境中的预测与盈利能力提供了直接相关的基准和方法，对实战交易具有较高参考价值。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_a3cb76f2"
+  },
+  {
+    "title": "AI-driven algorithmic trading: advanced techniques reshaping financial markets",
+    "url": "https://openlibindex.com/index.php/IJCET/article/view/IJCET_15_05_053",
+    "source": "Scholar",
+    "date": "2026-04-18",
+    "abstract": "… trading strategies, with algorithmic trading emerging as a … crucial in developing robust algorithmic trading strategies [1]. These … of AI applications in algorithmic trading, examining how …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "AI驱动的算法交易：重塑金融市场的高级技术。该论文探讨了人工智能在算法交易中的应用，特别是强化学习、深度学习及Alpha策略等先进技术在开发稳健交易策略中的关键作用。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_e05194f7"
+  },
+  {
+    "title": "Multi periods mean-DCVaR optimization: a Recursive Neural Network resolution",
+    "url": "https://arxiv.org/pdf/2604.14439v1",
+    "source": "ArXiv",
+    "date": "2026-04-09",
+    "abstract": "We study a discrete-time multi-period portfolio optimization problem under an explicit constraint on the Deviation Conditional Value-at-Risk (DCVaR), defined as the excess of Conditional Value-at-Risk over expected terminal wealth. The objective is to maximize expected return subject to a global tail-risk constraint, leading to a time-inconsistent precommitment problem. We propose a recurrent neural-network-based approach to approximate the optimal precommitment policy, which accommodates path-dependent risk constraints and highdimensional state dynamics without relying on dynamic programming. The explicit constraint formulation allows for exact penalty methods and provides a transparent notion of feasibility. The methodology is validated in a classical complete-market financial model and extended to a multi-period portfolio allocation problem in (re)insurance, capturing the long-term risk dynamics of insurance liabilities.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文研究离散时间多周期投资组合优化问题，在偏差条件风险价值（DCVaR）的显式约束下，目标是最大化预期收益并满足全局尾部风险约束，形成时间不一致的预先承诺问题。作者提出一种基于循环神经网络的方法来近似最优预先承诺策略，该方法能够处理路径依赖的风险约束和高维状态动态，无需依赖动态规划。显式约束公式允许使用精确惩罚方法并提供透明的可行性概念。该方法在经典完全市场金融模型中验证，并扩展到（再）保险中的多周期资产配置问题，捕捉保险负债的长期风险动态。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_75443c01"
+  },
+  {
+    "title": "Portfolio Optimization Proxies under Label Scarcity and Regime Shifts via Bayesian and Deterministic Students under Semi-Supervised Sandwich Training",
+    "url": "https://arxiv.org/pdf/2604.14206v1",
+    "source": "ArXiv",
+    "date": "2026-04-04",
+    "abstract": "This paper proposes a machine learning assisted portfolio optimization framework designed for low data environments and regime uncertainty. We construct a teacher student learning pipeline in which a Conditional Value at Risk (CVaR) optimizer generates supervisory labels, and neural models (Bayesian and deterministic) are trained using both real and synthetically augmented data. The synthetic data is generated using a factor based model with t copula residuals, enabling training beyond the limited real sample of 104 labeled observations. We evaluate four student models under a structured experimental framework comprising (i) controlled synthetic experiments (3 x 5 seed grid), (ii) in-distribution real market evaluation (C2A) and (iii) cross-universe generalization (D2A). In real-market settings, models are deployed using a rolling evaluation protocol where a frozen pretrained model is periodically fine tuned on recent observations and reset to its base state, ensuring stability while allowing limited adaptation. Results show that student models can match or outperform the CVaR teacher in several settings, while achieving improved robustness under regime shifts and reduced turnover. These findings suggest that hybrid optimization learning approaches can enhance portfolio construction in data constrained environments",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了一种适用于低数据环境和制度不确定性的机器学习辅助投资组合优化框架。通过构建师生学习流程，其中条件风险价值（CVaR）优化器生成监督标签，神经网络模型（贝叶斯和确定性）使用真实和合成增强数据进行训练。合成数据通过基于因子的t-copula残差模型生成，使训练能够超越有限的104个真实标记观测样本。在结构化实验框架下评估了四种学生模型，包括（i）受控合成实验（3×5种子网格）、（ii）分布内真实市场评估（C2A）和（iii）跨市场泛化（D2A）。在真实市场设置中，模型采用滚动评估协议部署，其中冻结的预训练模型定期在近期观测上进行微调并重置到基础状态，确保稳定性的同时允许有限适应。结果表明，学生模型在多种设置下能够匹配或超越CVaR教师模型，同时在制度转换下实现更强的鲁棒性和更低的换手率。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_71f470cc"
+  },
+  {
+    "title": "The Acoustic Camouflage Phenomenon: Re-evaluating Speech Features for Financial Risk Prediction",
+    "url": "https://arxiv.org/pdf/2604.14619v1",
+    "source": "ArXiv",
+    "date": "2026-04-16",
+    "abstract": "In computational paralinguistics, detecting cognitive load and deception from speech signals is a heavily researched domain. Recent efforts have attempted to apply these acoustic frameworks to corporate earnings calls to predict catastrophic stock market volatility. In this study, we empirically investigate the limits of acoustic feature extraction (pitch, jitter, and hesitation) when applied to highly trained speakers in in-the-wild teleconference environments. Utilizing a two-stream late-fusion architecture, we contrast an acoustic-based stream with a baseline Natural Language Processing (NLP) stream. The isolated NLP model achieved a recall of 66.25% for tail-risk downside events. Surprisingly, integrating acoustic features via late fusion significantly degraded performance, reducing recall to 47.08%. We identify this degradation as Acoustic Camouflage, where media-trained vocal regulation introduces contradictory noise that disrupts multimodal meta-learners. We present these findings as a boundary condition for speech processing applications in high-stakes financial forecasting.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "在计算副语言学中，从语音信号检测认知负荷和欺骗是一个被广泛研究的领域。最近的研究尝试将这些声学框架应用于公司财报电话会议，以预测灾难性的股市波动。本研究实证调查了在真实电话会议环境中，将声学特征提取（音高、抖动和犹豫）应用于经过高度训练的发言人时的局限性。采用双流晚期融合架构，我们将基于声学的流与基线自然语言处理（NLP）流进行对比。孤立的NLP模型对尾部风险下行事件的召回率达到66.25%。令人惊讶的是，通过晚期融合集成声学特征显著降低了性能，将召回率降至47.08%。我们将这种性能下降归因于“声学伪装”现象，即媒体训练的声乐调节引入了矛盾的噪声，扰乱了多模态元学习器。我们提出这些发现作为高风险金融预测中语音处理应用的边界条件。",
+    "fetch_date": "2026-04-18",
+    "id": "20260418_91c1bb3c"
+  },
+  {
     "title": "Interpretable Systematic Risk around the Clock",
     "url": "https://arxiv.org/pdf/2604.13458v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "CADENT：基于门控混合蒸馏的样本高效强化学习迁移方法。该框架通过上下文感知蒸馏与经验门控迁移，将基于自动机的战略知识与策略层面的战术知识统一为连贯的指导信号。其核心创新是经验门控信任机制，能在状态-动作层面动态权衡教师指导与学生自身经验，实现向目标领域特性的优雅适应。在稀疏奖励网格世界到连续控制任务等挑战性环境中，CADENT相比基线方法实现了40-60%的样本效率提升，同时保持优异的渐近性能，为强化学习中的自适应知识迁移提供了稳健方法。",
     "fetch_date": "2026-02-05",
     "id": "20260205_8ce6e203"
-  },
-  {
-    "title": "DiffLOB: Diffusion Models for Counterfactual Generation in Limit Order Books",
-    "url": "https://arxiv.org/pdf/2602.03776v1",
-    "source": "ArXiv",
-    "date": "2026-02-03",
-    "abstract": "Modern generative models for limit order books (LOBs) can reproduce realistic market dynamics, but remain fundamentally passive: they either model what typically happens without accounting for hypothetical future market conditions, or they require interaction with another agent to explore alternative outcomes. This limits their usefulness for stress testing, scenario analysis, and decision-making. We propose \\textbf{DiffLOB}, a regime-conditioned \\textbf{Diff}usion model for controllable and counterfactual generation of \\textbf{LOB} trajectories. DiffLOB explicitly conditions the generative process on future market regimes--including trend, volatility, liquidity, and order-flow imbalance, which enables the model to answer counterfactual queries of the form: ``If the future market regime were X instead of Y, how would the limit order book evolve?'' Our systematic evaluation framework for counterfactual LOB generation consists of three criteria: (1) \\textit{Controllable Realism}, measuring how well generated trajectories can reproduce marginal distributions, temporal dependence structure and regime variables; (2) \\textit{Counterfactual validity}, testing whether interventions on future regimes induce consistent changes in the generated LOB dynamics; (3) \\textit{Counterfactual usefulness}, assessing whether synthetic counterfactual trajectories improve downstream prediction of future market regimes.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "DiffLOB是一种基于扩散模型的限价订单簿（LOB）反事实轨迹生成方法。该方法通过显式地将生成过程条件于未来市场状态（如趋势、波动率、流动性和订单流不平衡），能够回答“如果未来市场状态是X而非Y，限价订单簿将如何演变？”这类反事实查询。其评估框架包括可控真实性（衡量生成轨迹在边际分布、时间依赖结构和状态变量上的再现能力）和反事实有效性。该模型旨在提升压力测试、情景分析和决策制定的实用性，为量化交易中的策略回测、风险管理和情景模拟提供了新的生成工具。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_c0697dc5"
-  },
-  {
-    "title": "A Novel approach to portfolio construction",
-    "url": "https://arxiv.org/pdf/2602.03325v1",
-    "source": "ArXiv",
-    "date": "2026-02-03",
-    "abstract": "This paper proposes a machine learning-based framework for asset selection and portfolio construction, termed the Best-Path Algorithm Sparse Graphical Model (BPASGM). The method extends the Best-Path Algorithm (BPA) by mapping linear and non-linear dependencies among a large set of financial assets into a sparse graphical model satisfying a structural Markov property. Based on this representation, BPASGM performs a dependence-driven screening that removes positively or redundantly connected assets, isolating subsets that are conditionally independent or negatively correlated. This step is designed to enhance diversification and reduce estimation error in high-dimensional portfolio settings. Portfolio optimization is then conducted on the selected subset using standard mean-variance techniques. BPASGM does not aim to improve the theoretical mean-variance optimum under known population parameters, but rather to enhance realized performance in finite samples, where sample-based Markowitz portfolios are highly sensitive to estimation error. Monte Carlo simulations show that BPASGM-based portfolios achieve more stable risk-return profiles, lower realized volatility, and superior risk-adjusted performance compared to standard mean-variance portfolios. Empirical results for U.S. equities, global stock indices, and foreign exchange rates over 1990-2025 confirm these findings and demonstrate a substantial reduction in portfolio cardinality. Overall, BPASGM offers a statistically grounded and computationally efficient framework that integrates sparse graphical modeling with portfolio theory for dependence-aware asset selection.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一种基于机器学习的资产筛选与组合构建框架——最佳路径算法稀疏图模型（BPASGM）。该方法通过将大量金融资产间的线性和非线性依赖关系映射到满足结构马尔可夫性质的稀疏图模型中，扩展了最佳路径算法（BPA）。基于此表示，BPASGM执行依赖驱动筛选，移除正向或冗余连接的资产，隔离条件独立或负相关的子集。该步骤旨在增强高维投资组合设置中的分散化并减少估计误差。随后使用标准均值-方差技术对选定子集进行投资组合优化。BPASGM的目标并非在已知总体参数下改进理论均值-方差最优解，而是在有限样本中提升实际表现，其中基于样本的马科维茨投资组合对估计误差高度敏感。蒙特卡洛模拟显示，基于BPASGM的投资组合实现了更稳定的风险-收益特征、更低的实际波动率和更优的风险调整后收益。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_71986c0c"
-  },
-  {
-    "title": "The Innovation Tax: Generative AI Adoption, Productivity Paradox, and Systemic Risk in the U.S. Banking Sector",
-    "url": "https://arxiv.org/pdf/2602.02607v1",
-    "source": "ArXiv",
-    "date": "2026-02-02",
-    "abstract": "This paper evaluates the causal impact of Generative Artificial Intelligence (GenAI) adoption on productivity and systemic risk in the U.S. banking sector. Using a novel dataset linking SEC 10-Q filings to Federal Reserve regulatory data for 809 financial institutions over 2018--2025, we employ two complementary identification strategies: Dynamic Spatial Durbin Models (DSDM) to capture network spillovers and Synthetic Difference-in-Differences (SDID) for causal inference using the November 2022 ChatGPT release as an exogenous shock. Our findings reveal a striking ``Productivity Paradox'': while DSDM estimates show that AI-adopting banks are high performers ($β> 0$), the causal SDID analysis documents a significant ``Implementation Tax'' -- adopting banks experience a 428-basis-point decline in ROE as they absorb GenAI integration costs. This tax falls disproportionately on smaller institutions, with bottom-quartile banks suffering a 517-basis-point ROE decline compared to 129 basis points for larger banks, suggesting that economies of scale provide significant advantages in AI implementation. Most critically, our DSDM analysis reveals significant positive spillovers ($θ= 0.161$ for ROA, $p < 0.01$; $θ= 0.679$ for ROE, $p < 0.05$), with spillovers among large banks reaching $θ= 3.13$ for ROE, indicating that the U.S. banking system is becoming ``algorithmically coupled.'' This synchronization of AI-driven decision-making creates a new channel for systemic contagion: a technical failure in widely-adopted AI models could trigger correlated shocks across the entire financial network.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文评估了生成式人工智能（GenAI）采用对美国银行业生产率和系统性风险的因果影响。通过结合SEC 10-Q文件和美联储监管数据，采用动态空间杜宾模型（DSDM）和合成双重差分法（SDID）进行分析，以2022年11月ChatGPT发布作为外生冲击。研究发现存在“生产率悖论”：AI采用银行虽为高绩效者（β>0），但因果分析显示存在显著的“实施税”——采用银行的ROE下降428个基点，主要因吸收GenAI整合成本。该税负不成比例地落在小型机构上，规模经济在AI实施中提供显著优势。DSDM分析还揭示了显著的正向溢出效应（θ=0.161）。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_692ffd17"
-  },
-  {
-    "title": "The Compound BSDE Method: A Fully Forward Method for Option Pricing and Optimal Stopping Problems in Finance",
-    "url": "https://arxiv.org/pdf/2601.18634v2",
-    "source": "ArXiv",
-    "date": "2026-01-26",
-    "abstract": "We propose the Compound BSDE method, a fully forward, deep-learning-based approach for solving a broad class of problems in financial mathematics, including optimal stopping. The method is based on a reformulation of option pricing problems in terms of a system of backward stochastic differential equations (BSDEs), which offers a new perspective on the numerical treatment of compound options and optimal stopping problems such as Bermudan option pricing. Building on the classical deep BSDE method for a single BSDE, we develop an algorithm for compound BSDEs and establish its convergence properties. In particular, we derive an a posteriori error estimate for the proposed method. Numerical experiments demonstrate the accuracy and computational efficiency of the approach, and illustrate its effectiveness for high-dimensional option pricing and optimal stopping problems.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "我们提出了复合BSDE方法，一种完全前向的、基于深度学习的方法，用于解决金融数学中的广泛问题，包括最优停止。该方法基于将期权定价问题重新表述为后向随机微分方程（BSDEs）系统，为复合期权和最优停止问题（如百慕大期权定价）的数值处理提供了新视角。基于经典的单BSDE深度学习方法，我们开发了复合BSDEs的算法并建立了其收敛性质。特别地，我们推导了该方法的后验误差估计。数值实验证明了该方法的准确性和计算效率，并说明了其在高维期权定价和最优停止问题中的有效性。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_adcf8d2f"
-  },
-  {
-    "title": "Rough Martingale Optimal Transport: Theory, Implementation, and Regulatory Applications for Non-Modelable Risk Factors",
-    "url": "https://arxiv.org/pdf/2602.00097v1",
-    "source": "ArXiv",
-    "date": "2026-01-24",
-    "abstract": "The Fundamental Review of the Trading Book (FRTB) poses a significant challenge for exotic derivatives pricing, particularly for non-modelable risk factors (NMRF) where sparse market data leads to infinite audit bounds under classical Martingale Optimal Transport (MOT). We propose a unified Rough Martingale Optimal Transport (RMOT) framework that regularizes the transport plan with a rough volatility prior, yielding finite, explicit, and asymptotically tight extrapolation bounds. We establish an identifiability theorem for rough volatility parameters under sparse data, proving that 50 strikes are sufficient to estimate the Hurst exponent within $\\pm 0.05$. For the multi-asset case, we prove that the correlation matrix is locally identifiable from marginal option surfaces provided the Hurst exponents are distinct. Model calibration on SPY and QQQ options (2019--2024) confirms that the optimal martingale measure exhibits stretched exponential tail decay ($\\sim\\exp(-k^{1-H})$), consistent with rough volatility asymptotics, whereas classical MOT yields trivial bounds. We validate the framework on live SPX/NDX data and scale it to $N = 30$ assets using a block-sparse optimization algorithm. Empirical results show that RMOT provides approximately \\$880M in capital relief per \\$1B exotic book compared to classical methods, while maintaining conservative coverage confirmed by 100-seed cross-validation. This constitutes a pricing framework designed to align with FRTB principles for NMRFs with explicit error quantification.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出了粗糙鞅最优传输（RMOT）框架，通过引入粗糙波动率先验正则化传输方案，解决了FRTB下非模型化风险因子（NMRF）因市场数据稀疏导致经典MOT产生无限审计边界的问题。理论证明：仅需50个行权价即可在±0.05误差内估计Hurst指数；多资产场景中，若Hurst指数不同，可从边缘期权曲面局部识别相关性矩阵。实证部分基于SPY/QQQ期权数据（2019-2024）验证了最优鞅测度呈现拉伸指数尾衰减特性（∼exp(-k^{1-H)），与粗糙波动率渐近一致，而经典MOT仅产生平凡边界。该框架已在SPX/NDX实时数据验证，并通过块稀疏优化算法扩展至30种资产。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_df07a02c"
-  },
-  {
-    "title": "Impact of LLMs news Sentiment Analysis on Stock Price Movement Prediction",
-    "url": "https://arxiv.org/pdf/2602.00086v1",
-    "source": "ArXiv",
-    "date": "2026-01-22",
-    "abstract": "This paper addresses stock price movement prediction by leveraging LLM-based news sentiment analysis. Earlier works have largely focused on proposing and assessing sentiment analysis models and stock movement prediction methods, however, separately. Although promising results have been achieved, a clear and in-depth understanding of the benefit of the news sentiment to this task, as well as a comprehensive assessment of different architecture types in this context, is still lacking. Herein, we conduct an evaluation study that compares 3 different LLMs, namely, DeBERTa, RoBERTa and FinBERT, for sentiment-driven stock prediction. Our results suggest that DeBERTa outperforms the other two models with an accuracy of 75% and that an ensemble model that combines the three models can increase the accuracy to about 80%. Also, we see that sentiment news features can benefit (slightly) some stock market prediction models, i.e., LSTM-, PatchTST- and tPatchGNN-based classifiers and PatchTST- and TimesNet-based regression tasks models.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文通过评估三种大语言模型（DeBERTa、RoBERTa和FinBERT）在基于新闻情感分析的股价走势预测任务中的表现，探讨了新闻情感特征对预测模型的贡献。研究发现，DeBERTa模型以75%的准确率表现最佳，而集成三种模型的集成模型可将准确率提升至约80%。此外，情感新闻特征对部分股价预测模型（如基于LSTM、PatchTST和tPatchGNN的分类器，以及基于PatchTST和TimesNet的回归任务模型）有轻微但积极的提升作用。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_8e71527c"
   }
 ]
