@@ -1,5 +1,17 @@
 [
   {
+    "title": "Algorithmic trading with directional changes",
+    "url": "https://link.springer.com/article/10.1007/s10462-022-10307-0",
+    "source": "Scholar",
+    "date": "2026-04-20",
+    "abstract": "… DC-strategy GA algorithm against nine benchmarks: five single DC-based trading strategies, … and risk, and establish multi-threshold DCs as an effective algorithmic trading technique. …",
+    "broker": "Google Scholar",
+    "score": 6,
+    "summary": "论文《Algorithmic trading with directional changes》提出了一种基于方向变化（DC）的算法交易策略，通过遗传算法（GA）优化，并与九种基准策略（包括五种单一DC策略）进行对比。研究结果表明，多阈值DC策略在收益和风险方面表现优异，证实了其作为一种有效算法交易技术的潜力。",
+    "fetch_date": "2026-04-20",
+    "id": "20260420_2c9f7d1a"
+  },
+  {
     "title": "Risk-Sensitive Specialist Routing for Volatility Forecasting",
     "url": "https://arxiv.org/pdf/2604.10402v3",
     "source": "ArXiv",
@@ -5986,17 +5998,5 @@
     "summary": "PredictionMarketBench：一个SWE-bench风格的框架，用于在预测市场上对交易代理进行回测。该框架通过确定性的历史限价订单簿和交易数据的事件驱动回放，评估算法和基于LLM的交易代理。它标准化了：（i）从原始交易所数据流（订单簿、交易、生命周期、结算）构建交易片段；（ii）具有做市商/接受者语义和费用建模的执行现实模拟器；（iii）支持经典策略和具有可重现轨迹的工具调用LLM代理的工具化代理接口。发布了四个基于Kalshi的交易片段，涵盖加密货币、天气和体育。基线结果表明，由于交易成本和结算损失，简单交易代理可能表现不佳，而费用感知的算法策略在波动性片段中保持竞争力。",
     "fetch_date": "2026-02-05",
     "id": "20260205_3fd2a348"
-  },
-  {
-    "title": "CADENT: Gated Hybrid Distillation for Sample-Efficient Transfer in Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2602.02532v1",
-    "source": "ArXiv",
-    "date": "2026-01-28",
-    "abstract": "Transfer learning promises to reduce the high sample complexity of deep reinforcement learning (RL), yet existing methods struggle with domain shift between source and target environments. Policy distillation provides powerful tactical guidance but fails to transfer long-term strategic knowledge, while automaton-based methods capture task structure but lack fine-grained action guidance. This paper introduces Context-Aware Distillation with Experience-gated Transfer (CADENT), a framework that unifies strategic automaton-based knowledge with tactical policy-level knowledge into a coherent guidance signal. CADENT's key innovation is an experience-gated trust mechanism that dynamically weighs teacher guidance against the student's own experience at the state-action level, enabling graceful adaptation to target domain specifics. Across challenging environments, from sparse-reward grid worlds to continuous control tasks, CADENT achieves 40-60\\% better sample efficiency than baselines while maintaining superior asymptotic performance, establishing a robust approach for adaptive knowledge transfer in RL.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "CADENT：基于门控混合蒸馏的样本高效强化学习迁移方法。该框架通过上下文感知蒸馏与经验门控迁移，将基于自动机的战略知识与策略层面的战术知识统一为连贯的指导信号。其核心创新是经验门控信任机制，能在状态-动作层面动态权衡教师指导与学生自身经验，实现向目标领域特性的优雅适应。在稀疏奖励网格世界到连续控制任务等挑战性环境中，CADENT相比基线方法实现了40-60%的样本效率提升，同时保持优异的渐近性能，为强化学习中的自适应知识迁移提供了稳健方法。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_8ce6e203"
   }
 ]
