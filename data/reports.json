@@ -1,5 +1,53 @@
 [
   {
+    "title": "Safe Deep Reinforcement Learning for Building Heating Control and Demand-side Flexibility",
+    "url": "https://arxiv.org/pdf/2604.16033v1",
+    "source": "ArXiv",
+    "date": "2026-04-17",
+    "abstract": "Buildings account for approximately 40% of global energy consumption, and with the growing share of intermittent renewable energy sources, enabling demand-side flexibility, particularly in heating, ventilation and air conditioning systems, is essential for grid stability and energy efficiency. This paper presents a safe deep reinforcement learning-based control framework to optimize building space heating while enabling demand-side flexibility provision for power system operators. A deep deterministic policy gradient algorithm is used as the core deep reinforcement learning method, enabling the controller to learn an optimal heating strategy through interaction with the building thermal model while maintaining occupant comfort, minimizing energy cost, and providing flexibility. To address safety concerns with reinforcement learning, particularly regarding compliance with flexibility requests, we propose a real-time adaptive safety-filter to ensure that the system operates within predefined constraints during demand-side flexibility provision. The proposed real-time adaptive safety filter guarantees full compliance with flexibility requests from system operators and improves energy and cost efficiency -- achieving up to 50% savings compared to a rule-based controller -- while outperforming a standalone deep reinforcement learning-based controller in energy and cost metrics, with only a slight increase in comfort temperature violations.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "建筑物约占全球能源消耗的40%，随着间歇性可再生能源份额的增长，实现需求侧灵活性（特别是在供暖、通风和空调系统中）对电网稳定和能源效率至关重要。本文提出了一种基于安全深度强化学习的控制框架，以优化建筑空间供暖，同时为电力系统运营商提供需求侧灵活性。采用深度确定性策略梯度算法作为核心深度强化学习方法，使控制器能够通过与建筑热模型交互学习最优供暖策略，同时保持居住者舒适度、最小化能源成本并提供灵活性。为解决强化学习中的安全问题（特别是关于灵活性请求的合规性），我们提出了一种实时自适应安全过滤器，确保系统在提供需求侧灵活性期间在预定义约束内运行。该实时自适应安全过滤器保证完全遵守系统运营商的灵活性请求，并提高能源效率。",
+    "fetch_date": "2026-04-21",
+    "id": "20260421_257b1706"
+  },
+  {
+    "title": "Spurious Predictability in Financial Machine Learning",
+    "url": "https://arxiv.org/pdf/2604.15531v1",
+    "source": "ArXiv",
+    "date": "2026-04-16",
+    "abstract": "Adaptive specification search generates statistically significant backtests even under martingale-difference nulls. We introduce a falsification audit testing complete predictive workflows against synthetic reference classes, including zero-predictability environments and microstructure placebos. Workflows generating significant walk-forward evidence in these environments are falsified. For passing workflows, we quantify selection-induced performance inflation using an absolute magnitude gap linking optimized in-sample evidence to disjoint walk-forward realizations, adjusted for effective multiplicity. Simulations validate extreme-value scaling under correlated searches and demonstrate detection power under genuine structure. Empirical case studies confirm that many apparent findings represent methodological artifacts rather than genuine predictability.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文通过引入伪造审计测试，评估金融机器学习中虚假可预测性的问题。它使用合成参考类别（包括零可预测性环境和微观结构安慰剂）来检验完整预测工作流程。在零可预测性环境中产生显著前向证据的工作流程被证伪。对于通过测试的工作流程，论文量化了选择引起的性能膨胀，通过绝对幅度差距将优化的样本内证据与独立的前向实现联系起来，并调整了有效多重性。模拟验证了相关搜索下的极值缩放，并展示了在真实结构下的检测能力。实证案例研究证实，许多表面发现是方法论伪影而非真正的可预测性。",
+    "fetch_date": "2026-04-21",
+    "id": "20260421_d14fdea3"
+  },
+  {
+    "title": "Risk-Sensitive Investment Management via Free Energy-Entropy Duality",
+    "url": "https://arxiv.org/pdf/2604.15463v1",
+    "source": "ArXiv",
+    "date": "2026-04-16",
+    "abstract": "We study a benchmarked risk-sensitive portfolio problem in a factor-based setting to bring together three strands of the literature: benchmarked risk-sensitive investment management, the Kuroda-Nagai change-of-measure method, and the free energy-entropy duality of Dai Pra et al. (1996). We show that the duality yields a direct solution of the benchmarked problem by reformulating it as a linear-quadratic-Gaussian stochastic differential game under a suitable equivalent probability measure, with an entropic regularization. The resulting value function is quadratic, the optimal controls are explicit affine feedback maps, and the optimal allocation admits two complementary interpretations: as a fractional Kelly strategy and as a Kelly portfolio adjusted via the entropic regularization. This formulation, therefore, contributes both a direct analytical route to the solution and a clearer interpretation of risk sensitivity, thereby embedding the classical Kuroda-Nagai change-of-measure approach within a more general framework. An added benefit of this formulation is that it is suitable for implementation via an RL algorithm. A simple implementation on U.S. equity data illustrates the tractability of the framework and numerically confirms the equivalence of the two approaches.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文研究了一个基于因子的基准化风险敏感投资组合问题，通过结合基准化风险敏感投资管理、Kuroda-Nagai测度变换方法以及Dai Pra等人的自由能-熵对偶性，将问题重新表述为具有熵正则化的线性-二次-高斯随机微分博弈。该框架提供了直接解析解（二次价值函数、显式仿射反馈最优控制），并将最优配置解释为分数凯利策略或经熵正则化调整的凯利组合。虽然论文提出了适用于强化学习（RL）算法实现的框架，并在美国股票数据上进行了简单示例，但其核心贡献更偏向于理论框架的整合与解析解的推导，而非具体的实战交易算法或深度实证验证。",
+    "fetch_date": "2026-04-21",
+    "id": "20260421_4d036bbe"
+  },
+  {
+    "title": "Broken Symmetry, Conservation Law, and Scaling in Accumulated Stock Returns -- a Modified Jones-Faddy Skew t-Distribution Perspective",
+    "url": "https://arxiv.org/pdf/2604.15519v1",
+    "source": "ArXiv",
+    "date": "2026-04-16",
+    "abstract": "We analyze historic S&P500 multi-day returns: from daily returns to those accumulated over up to ten days. Despite symmetry breaking between gains and losses in the distribution of returns, resulting in its positive mean and negative skew, realized variance (volatility squared) exhibits remarkably good linear dependence on the number of days of accumulation. Mean of the distribution also shows near perfect linear dependence as well. We analyze this phenomenon both analytically and numerically using a modified Jones-Faddy skew t-distribution.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文通过改进的Jones-Faddy偏斜t分布，分析了S&P500历史多日收益率（从日收益率到累计十日收益率）。研究发现：尽管收益率分布中收益与损失存在对称性破缺（表现为正均值和负偏度），但已实现方差（波动率平方）与累计天数呈现良好的线性依赖关系，分布均值也表现出近乎完美的线性依赖。该现象通过解析和数值方法进行了分析。",
+    "fetch_date": "2026-04-21",
+    "id": "20260421_695ba08f"
+  },
+  {
     "title": "Algorithmic trading with directional changes",
     "url": "https://link.springer.com/article/10.1007/s10462-022-10307-0",
     "source": "Scholar",
@@ -5950,53 +5998,5 @@
     "summary": "本文研究了实值风险的两个基本离散度度量——标准差（SD）与基尼平均差（GMD）之间的序关系。分析基于一个核心结构对象：成对差绝对值|X-X'|的平均超额函数。研究表明，该函数的单调性由底层分布的尾部行为决定，从而产生两种不同的离散度机制。在重尾机制（表现为递减风险率或递增反向风险率）下，SD主导GMD；反之，当分布双尾均为轻尾时，GMD主导SD。这些主导机制在截断、卷积和混合操作下保持稳定。研究还发展了主要结果的离散类比。总体而言，结果为离散度序现象提供了超越现有一般比较的直观解释，对风险建模和精算应用具有直接相关性。",
     "fetch_date": "2026-02-06",
     "id": "20260206_0c058a0d"
-  },
-  {
-    "title": "A Real-Options-Aware Multi-Criteria Framework for Ex-Ante Real Estate Redevelopment Use Selection",
-    "url": "https://arxiv.org/pdf/2601.22166v1",
-    "source": "ArXiv",
-    "date": "2026-01-15",
-    "abstract": "A growing share of the existing real estate stock exhibits persistent underperformance that can no longer be explained by cyclical market phases or inadequate maintenance alone. In many cases, technically recoverable assets located in non-marginal contexts fail to generate economic value consistent with the capital immobilized. This condition reflects a structural misalignment between intended use and effective demand rather than episodic market weakness, and calls for a decision framework capable of integrating value, risk, complexity, and irreversibility in strategic use selection. This study proposes a decision-analytic framework for the ex-ante selection of intended use in real estate redevelopment processes. The framework integrates real-options logic on irreversibility and managerial flexibility with a multi-criteria decision-analysis structure, enabling comparative evaluation of expected economic value, market and operational risk, technical and managerial complexity, and time-to-income. By treating redevelopment primarily as a problem of strategic option selection rather than design or financial optimization, the framework operationalizes option value preservation through disciplined ex-ante screening. Illustrative cases demonstrate how this integration of real options reasoning and MCDA reduces over-complexification and misalignment across different asset types and urban contexts.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种用于房地产再开发事前用途选择的决策分析框架。该框架将实物期权逻辑（关于不可逆性和管理灵活性）与多准则决策分析结构相结合，能够对预期经济价值、市场与运营风险、技术与管理的复杂性以及收益实现时间进行比较评估。通过将再开发主要视为战略期权选择问题而非设计或财务优化问题，该框架通过延迟决策、分阶段实施和适应性设计等方式实现了期权价值的保留。",
-    "fetch_date": "2026-02-06",
-    "id": "20260206_3105331b"
-  },
-  {
-    "title": "UniFinEval: Towards Unified Evaluation of Financial Multimodal Models across Text, Images and Videos",
-    "url": "https://arxiv.org/pdf/2601.22162v1",
-    "source": "ArXiv",
-    "date": "2026-01-09",
-    "abstract": "Multimodal large language models are playing an increasingly significant role in empowering the financial domain, however, the challenges they face, such as multimodal and high-density information and cross-modal multi-hop reasoning, go beyond the evaluation scope of existing multimodal benchmarks. To address this gap, we propose UniFinEval, the first unified multimodal benchmark designed for high-information-density financial environments, covering text, images, and videos. UniFinEval systematically constructs five core financial scenarios grounded in real-world financial systems: Financial Statement Auditing, Company Fundamental Reasoning, Industry Trend Insights, Financial Risk Sensing, and Asset Allocation Analysis. We manually construct a high-quality dataset consisting of 3,767 question-answer pairs in both chinese and english and systematically evaluate 10 mainstream MLLMs under Zero-Shot and CoT settings. Results show that Gemini-3-pro-preview achieves the best overall performance, yet still exhibits a substantial gap compared to financial experts. Further error analysis reveals systematic deficiencies in current models. UniFinEval aims to provide a systematic assessment of MLLMs' capabilities in fine-grained, high-information-density financial environments, thereby enhancing the robustness of MLLMs applications in real-world financial scenarios. Data and code are available at https://github.com/aifinlab/UniFinEval.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "UniFinEval：首个面向高信息密度金融环境的多模态统一基准，涵盖文本、图像和视频。该基准基于真实金融系统构建了五个核心场景：财务报表审计、公司基本面推理、行业趋势洞察、金融风险感知和资产配置分析。通过手动构建包含3767个中英文问答对的高质量数据集，系统评估了10个主流多模态大语言模型在零样本和思维链设置下的表现。结果显示，Gemini-3-pro-preview表现最佳，但与金融专家相比仍存在显著差距。错误分析揭示了当前模型的系统性缺陷。该研究主要聚焦于评估框架开发与模型性能分析，对实战交易策略的直接应用价值有限。",
-    "fetch_date": "2026-02-06",
-    "id": "20260206_c8d9e388"
-  },
-  {
-    "title": "Adaptive Benign Overfitting (ABO): Overparameterized RLS for Online Learning in Non-stationary Time-series",
-    "url": "https://arxiv.org/pdf/2601.22200v1",
-    "source": "ArXiv",
-    "date": "2026-01-29",
-    "abstract": "Overparameterized models have recently challenged conventional learning theory by exhibiting improved generalization beyond the interpolation limit, a phenomenon known as benign overfitting. This work introduces Adaptive Benign Overfitting (ABO), extending the recursive least-squares (RLS) framework to this regime through a numerically stable formulation based on orthogonal-triangular updates. A QR-based exponentially weighted RLS (QR-EWRLS) algorithm is introduced, combining random Fourier feature mappings with forgetting-factor regularization to enable online adaptation under non-stationary conditions. The orthogonal decomposition prevents the numerical divergence associated with covariance-form RLS while retaining adaptability to evolving data distributions. Experiments on nonlinear synthetic time series confirm that the proposed approach maintains bounded residuals and stable condition numbers while reproducing the double-descent behavior characteristic of overparameterized models. Applications to forecasting foreign exchange and electricity demand show that ABO is highly accurate (comparable to baseline kernel methods) while achieving speed improvements of between 20 and 40 percent. The results provide a unified view linking adaptive filtering, kernel approximation, and benign overfitting within a stable online learning framework.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出自适应良性过拟合（ABO）方法，将递归最小二乘（RLS）框架扩展至过参数化模型，通过基于正交三角更新的数值稳定公式实现。引入QR指数加权RLS（QR-EWRLS）算法，结合随机傅里叶特征映射与遗忘因子正则化，支持非平稳条件下的在线自适应。正交分解避免了协方差形式RLS的数值发散问题，同时保持对演化数据分布的适应性。在非线性合成时间序列上的实验证实，该方法能维持有界残差和稳定条件数，并复现过参数化模型特有的双下降行为。应用于外汇预测和电力需求预测显示，ABO在保持高精度（与基线核方法相当）的同时，实现了20%至40%的速度提升。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_de67713f"
-  },
-  {
-    "title": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
-    "url": "https://arxiv.org/pdf/2602.00133v1",
-    "source": "ArXiv",
-    "date": "2026-01-28",
-    "abstract": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) an execution-realistic simulator with maker/taker semantics and fee modeling, and (iii) a tool-based agent interface that supports both classical strategies and tool-calling LLM agents with reproducible trajectories. We release four Kalshi-based episodes spanning cryptocurrency, weather, and sports. Baseline results show that naive trading agents can underperform due to transaction costs and settlement losses, while fee-aware algorithmic strategies remain competitive in volatile episodes.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "PredictionMarketBench：一个SWE-bench风格的框架，用于在预测市场上对交易代理进行回测。该框架通过确定性的历史限价订单簿和交易数据的事件驱动回放，评估算法和基于LLM的交易代理。它标准化了：（i）从原始交易所数据流（订单簿、交易、生命周期、结算）构建交易片段；（ii）具有做市商/接受者语义和费用建模的执行现实模拟器；（iii）支持经典策略和具有可重现轨迹的工具调用LLM代理的工具化代理接口。发布了四个基于Kalshi的交易片段，涵盖加密货币、天气和体育。基线结果表明，由于交易成本和结算损失，简单交易代理可能表现不佳，而费用感知的算法策略在波动性片段中保持竞争力。",
-    "fetch_date": "2026-02-05",
-    "id": "20260205_3fd2a348"
   }
 ]
