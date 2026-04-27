@@ -1,5 +1,65 @@
 [
   {
+    "title": "Automatic optimization of trading strategies based on reinforcement learning",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10968680/",
+    "source": "Scholar",
+    "date": "2026-04-28",
+    "abstract": "… Combined with reinforcement learning theory, quantitative trading strategies can find … Through reinforcement learning, agents can adapt their strategies in a dynamic market environment…",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "基于强化学习理论，量化交易策略能够通过智能体在动态市场环境中自适应调整策略，实现自动优化交易策略。该方法结合深度学习和强化学习，有望提升实战交易中的适应性和收益。",
+    "fetch_date": "2026-04-28",
+    "id": "20260428_b05f697d"
+  },
+  {
+    "title": "A comprehensive investigation of reinforcement learning-based financial quantitative analysis: taking stock trading and risk control as examples",
+    "url": "https://www.itm-conferences.org/articles/itmconf/abs/2025/04/itmconf_iwadi2024_01010/itmconf_iwadi2024_01010.html",
+    "source": "Scholar",
+    "date": "2026-04-28",
+    "abstract": "… in quantitative finance sector, with a particular focus on key areas such as stock prediction & quantitative trading… of RL in stock prediction and quantitative trading. By analyzing historical …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文系统研究了强化学习在股票预测和量化交易中的应用，包括交易策略和风险控制。通过历史数据分析，评估了RL在实战中的有效性，并提供了Alpha策略相关的洞见。属于强实战导向的研究。",
+    "fetch_date": "2026-04-28",
+    "id": "20260428_5cc72548"
+  },
+  {
+    "title": "Quantitative Trading with Machine Learning: Forecasting and Portfolio Optimization",
+    "url": "https://researchportal.bath.ac.uk/files/377152982/Thesis_full.pdf",
+    "source": "Scholar",
+    "date": "2026-04-28",
+    "abstract": "Alternative formats If you require this document in an alternative format, please contact: openaccess@bath.ac.uk Page 1 University of Bath PHD Quantitative Trading with Machine …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文探讨了机器学习在量化交易中的应用，包括市场预测和投资组合优化。核心方法涉及深度学习模型（如LSTM、Transformer）用于价格走势预测，以及强化学习用于动态资产配置和风险控制。实证测试表明，这些模型在历史数据上表现优于传统策略，并具备一定的实战潜力。",
+    "fetch_date": "2026-04-28",
+    "id": "20260428_36676bd3"
+  },
+  {
+    "title": "Liquidity provision in CLMMs: evidence from transactions data",
+    "url": "https://arxiv.org/pdf/2604.22069v1",
+    "source": "ArXiv",
+    "date": "2026-04-23",
+    "abstract": "The emergence of Concentrated Liquidity Market Makers (CLMMs) has made liquidity provision on decentralized exchanges an active and risk-sensitive task. However, the standalone profitability of liquidity provision remains unclear for liquidity providers (LPs) who neither hedge their inventory risk nor receive off-pool profits. This paper studies the actual outcomes of LP activity using historical transaction-level data from WETH/USD liquidity pools on the Base chain across the Uniswap, Aerodrome, PancakeSwap and SushiSwap protocols. We propose a methodology for reconstructing LP PnL dynamics from on-chain events and introduce an original metric that captures both the terminal state of LP capital and its path over time. Based on this framework, we estimate the share of successful LPs, classify their behavior and develop a taxonomy of 15 position types as structural components of PnL. We further identify a distinct class of multi-LPs operating across several pools and show that the dominant profitable position configurations are concentrated around the current pool price. The results show that only about one out of six LPs avoids losses in the selected market segment, raising an open question about the true economic motives of LP participation. Evidence also suggests that successful LPs often close positions before the full range is traversed, making observed behavior closer to profit-target-based strategies.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文通过链上交易数据实证分析CLMM流动性提供的实际盈亏，发现仅有约1/6的LP盈利，并提出分类框架和PnL指标。高度实战，直接指导LP策略，但未涉及对冲或机器学习，评分7。",
+    "fetch_date": "2026-04-28",
+    "id": "20260428_40849e2e"
+  },
+  {
+    "title": "Optimal Investment and Entropy-Regularized Learning Under Stochastic Volatility Models with Portfolio Constraints",
+    "url": "https://arxiv.org/pdf/2604.22188v1",
+    "source": "ArXiv",
+    "date": "2026-04-24",
+    "abstract": "We study the problem of optimal portfolio selection under stochastic volatility within a continuous time reinforcement learning framework with portfolio constraints. Exploration is modeled through entropy-regularized relaxed controls, where the investor selects probability distributions over admissible portfolio allocations rather than deterministic strategies. Using dynamic programming arguments, we derive the associated entropy-regularized Hamilton-Jacobi-Bellman equation, whose Hamiltonian involves optimization over probability measures supported on a compact control set. We show that the optimal exploratory policy takes the form of a truncated Gaussian distribution characterized by spatial derivatives of the solution of the resulting nonlinear quasilinear parabolic partial differential equation. Under suitable structural conditions on the model coefficients, we prove the existence of classical solutions to this nonlinear HJB equation for the value function. We then establish a verification theorem and analyze the policy-improvement structure induced by the entropy-regularized Hamiltonian, showing how the resulting sequence of PDEs provides a continuous-time interpretation of actor-critic learning dynamics. Finally, our PDE analysis with a semi-closed form of optimal value and optimal policy enables the design of an implementable reinforcement learning algorithm by recasting the optimal problem in a martingale framework.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文研究随机波动率下带组合约束的最优投资与熵正则化学习问题。通过连续时间强化学习框架，探索采用熵正则化松弛控制，投资者选择投资组合分配的概率分布而非确定性策略。利用动态规划推导熵正则化HJB方程，得到最优探索策略形式为截断高斯分布，并证明了非线性抛物型偏微分方程古典解的存在性与验证定理。理论性强，但未涉及实战交易中常见的市场微观结构、执行成本、信号处理等，实战价值有限。",
+    "fetch_date": "2026-04-28",
+    "id": "20260428_acd26a66"
+  },
+  {
     "title": "ChatGPT as a Time Capsule: The Limits of Price Discovery",
     "url": "https://arxiv.org/pdf/2604.21433v1",
     "source": "ArXiv",
@@ -5938,65 +5998,5 @@
     "summary": "该论文精确计算了在相交时间段内计算的两个大型经验协方差矩阵的特征向量重叠度，推广了先前非相交区间的结果。方法基于特定形式的Girko线性化和扩展局部定律，并通过数值模拟验证结果，应用于金融数据。",
     "fetch_date": "2026-02-09",
     "id": "20260209_e5d09dae"
-  },
-  {
-    "title": "Trade in minutes! rationality-driven agentic system for quantitative financial trading",
-    "url": "https://arxiv.org/abs/2510.04787",
-    "source": "Scholar",
-    "date": "2026-02-09",
-    "abstract": "… we formulate a multi-agent architecture leveraging specialized LLM capabilities in semantic analysis… depth of agents with the mechanical rationality expected for quantitative trading, and …",
-    "broker": "Google Scholar",
-    "score": 4,
-    "summary": "该论文提出了一种基于多智能体架构的量化金融交易系统，利用大型语言模型（LLM）在语义分析方面的专业能力，并结合量化交易所需的机械理性（mechanical rationality）设计智能体深度。系统旨在实现“分钟级交易”，强调理性驱动（rationality-driven）的智能体化（agentic）框架。",
-    "fetch_date": "2026-02-09",
-    "id": "20260209_e9692617"
-  },
-  {
-    "title": "One More Question is Enough, Expert Question Decomposition (EQD) Model for Domain Quantitative Reasoning",
-    "url": "https://arxiv.org/pdf/2510.01526v1",
-    "source": "ArXiv",
-    "date": "2025-10-01",
-    "abstract": "Domain-specific quantitative reasoning remains a major challenge for large language models (LLMs), especially in fields requiring expert knowledge and complex question answering (QA). In this work, we propose Expert Question Decomposition (EQD), an approach designed to balance the use of domain knowledge with computational efficiency. EQD is built on a two-step fine-tuning framework and guided by a reward function that measures the effectiveness of generated sub-questions in improving QA outcomes. It requires only a few thousand training examples and a single A100 GPU for fine-tuning, with inference time comparable to zero-shot prompting. Beyond its efficiency, EQD outperforms state-of-the-art domain-tuned models and advanced prompting strategies. We evaluate EQD in the financial domain, characterized by specialized knowledge and complex quantitative reasoning, across four benchmark datasets. Our method consistently improves QA performance by 0.6% to 10.5% across different LLMs. Our analysis reveals an important insight: in domain-specific QA, a single supporting question often provides greater benefit than detailed guidance steps.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "领域特定量化推理对大型语言模型（LLM）仍具挑战性，尤其是在需要专家知识和复杂问答（QA）的领域。本文提出专家问题分解（EQD）方法，旨在平衡领域知识使用与计算效率。EQD基于两步微调框架构建，通过奖励函数指导生成子问题以提升QA效果。该方法仅需数千训练样本和单张A100 GPU进行微调，推理时间与零样本提示相当。在金融领域（以专业知识和复杂量化推理为特点）的四个基准数据集上评估，EQD表现优于最先进的领域微调模型和高级提示策略，在不同LLM上持续提升QA性能0.6%至10.5%。分析揭示关键洞见：在领域特定QA中，单个支持性问题通常比详细指导步骤带来更大收益。",
-    "fetch_date": "2026-02-08",
-    "id": "20260208_bb91e2a0"
-  },
-  {
-    "title": "Joint Stochastic Optimal Control and Stopping in Aquaculture: Finite-Difference and PINN-Based Approaches",
-    "url": "https://arxiv.org/pdf/2510.02910v1",
-    "source": "ArXiv",
-    "date": "2025-10-03",
-    "abstract": "This paper studies a joint stochastic optimal control and stopping (JCtrlOS) problem motivated by aquaculture operations, where the objective is to maximize farm profit through an optimal feeding strategy and harvesting time under stochastic price dynamics. We introduce a simplified aquaculture model capturing essential biological and economic features, distinguishing between biologically optimal and economically optimal feeding strategies. The problem is formulated as a Hamilton-Jacobi-Bellman variational inequality and corresponding free boundary problem. We develop two numerical solution approaches: First, a finite difference scheme that serves as a benchmark, and second, a Physics-Informed Neural Network (PINN)-based method, combined with a deep optimal stopping (DeepOS) algorithm to improve stopping time accuracy. Numerical experiments demonstrate that while finite differences perform well in medium-dimensional settings, the PINN approach achieves comparable accuracy and is more scalable to higher dimensions where grid-based methods become infeasible. The results confirm that jointly optimizing feeding and harvesting decisions outperforms strategies that neglect either control or stopping.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究水产养殖中的联合随机最优控制与停止问题，旨在通过最优投喂策略和随机价格动态下的最佳收获时间实现利润最大化。论文建立了简化的水产养殖模型，区分了生物学最优和经济最优投喂策略，并将问题表述为Hamilton-Jacobi-Bellman变分不等式和相应的自由边界问题。开发了两种数值解法：一是作为基准的有限差分法，二是结合深度最优停止算法的物理信息神经网络方法。数值实验表明，有限差分法在中等维度表现良好，而PINN方法在保持可比精度的同时，对高维问题更具可扩展性。结果证实，联合优化投喂和收获决策优于忽略任一控制的策略。",
-    "fetch_date": "2026-02-08",
-    "id": "20260208_ed97c5fb"
-  },
-  {
-    "title": "Do Mutual Funds Make Active and Skilled Liquidity Choices in Portfolio Management? Evidence from India",
-    "url": "https://arxiv.org/pdf/2510.02741v1",
-    "source": "ArXiv",
-    "date": "2025-10-03",
-    "abstract": "This study examines active liquidity management by Indian open-ended equity mutual funds. We find that fund managers respond to inflows by increasing cash holdings, which are later used to purchase less-liquid stocks at favourable valuations. Funds with less liquid portfolios tend to maintain larger cash reserves to manage flows. Funds that make active liquidity choices yield statistically and economically significant gross and net returns. The performance differences between funds with varying activeness in altering liquidity highlight the importance of active liquidity management in markets with substantial cross-sectional liquidity differences such as India.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本研究探讨印度开放式股票型共同基金的主动流动性管理。研究发现，基金经理通过增加现金持有来应对资金流入，随后以有利估值购买流动性较低的股票。投资组合流动性较差的基金倾向于维持更大的现金储备以管理资金流动。进行主动流动性选择的基金在总回报和净回报上均产生统计和经济上显著的收益。不同流动性调整活跃度基金之间的业绩差异凸显了在印度等市场截面流动性差异显著的环境中，主动流动性管理的重要性。",
-    "fetch_date": "2026-02-08",
-    "id": "20260208_2a8e8d20"
-  },
-  {
-    "title": "Rolling intrinsic for battery valuation in day-ahead and intraday markets",
-    "url": "https://arxiv.org/pdf/2510.01956v2",
-    "source": "ArXiv",
-    "date": "2025-10-02",
-    "abstract": "Battery Energy Storage Systems (BESS) are a cornerstone of the energy transition, as their ability to shift electricity across time enables both grid stability and the integration of renewable generation. This paper investigates the profitability of different market bidding strategies for BESS in the Central European wholesale power market, focusing on the day-ahead auction and intraday trading at EPEX Spot. We employ the rolling intrinsic approach as a realistic trading strategy for continuous intraday markets, explicitly incorporating bid--ask spreads to account for liquidity constraints. Our analysis shows that multi-market bidding strategies consistently outperform single-market participation. Furthermore, we demonstrate that maximum cycle limits significantly affect profitability, indicating that more flexible strategies which relax daily cycling constraints while respecting annual limits can unlock additional value.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "电池储能系统（BESS）是能源转型的关键，其跨时间转移电能的能力有助于电网稳定和可再生能源并网。本文研究了中欧批发电力市场（EPEX Spot）中BESS在日前拍卖和日内交易的不同市场竞价策略的盈利能力。采用滚动内在价值法作为日内连续市场的现实交易策略，明确纳入买卖价差以考虑流动性约束。分析表明，多市场竞价策略持续优于单一市场参与。此外，研究表明最大循环限制显著影响盈利能力，表明放宽每日循环约束（同时遵守年度限制）的更灵活策略可释放额外价值。",
-    "fetch_date": "2026-02-08",
-    "id": "20260208_a6ab0657"
   }
 ]
