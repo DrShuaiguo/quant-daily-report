@@ -1,5 +1,77 @@
 [
   {
+    "title": "A Motif-Based Framework for Decomposing Risk Spillovers",
+    "url": "https://arxiv.org/pdf/2604.25406v1",
+    "source": "ArXiv",
+    "date": "2026-04-28",
+    "abstract": "Connectedness measures quantify aggregate risk spillovers but obscure the local interaction patterns that generate systemic risk. We develop a motif-based framework that first extracts multiscale backbones from quantile connectedness networks and then identifies directed triadic motifs whose frequencies exceed randomization baselines. To distinguish how assets' sectoral identities shape local spillover structures, we introduce colored motifs under sector partitions of increasing granularity. Using orbit positions that capture each node's structural role within directed triadic motifs, we construct portfolio strategies that exploit an asset's place in the spillover architecture. Applying the framework to 39 commodity and equity futures across lower, median, and upper conditional quantiles, we find that motif-based portfolios outperform minimum correlation and minimum connectedness benchmarks on risk-adjusted returns. We further show that in tail networks, assets with greater orbit-position diversity tend to act as net spillover transmitters rather than receivers, establishing positional diversity as a tail-specific marker of systemic influence. These findings demonstrate that local triadic topology carries portfolio-relevant information that aggregate connectedness measures miss.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文提出基于模体的框架分解风险溢出，从分位数连接网络提取多尺度骨架并识别三节点模体，引入有色模体分析行业身份对局部溢出结构的影响。利用模体轨道位置构建投资组合策略，在39种商品和股票期货中，基于模体的组合在风险调整收益上优于最小相关和最小连接基准。尾部网络中，轨道位置多样性高的资产往往是净溢出方。框架直接推导可交易策略，实证表现良好，但模体构建和计算相对复杂，适合有量化基础的实战者。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_ebf0dfc4"
+  },
+  {
+    "title": "Corporate Bond Yield Curve Modeling: A Rating-Based Regime-Switching Generalized CIR Approach",
+    "url": "https://arxiv.org/pdf/2604.25403v1",
+    "source": "ArXiv",
+    "date": "2026-04-28",
+    "abstract": "Persistent shifts in term-structure dynamics undermine the stability of single-regime models in long samples. We develop an arbitrage-free regime-switching generalized CIR (RS-GCIR) model that jointly prices the Chinese government bond (CGB) curve and corporate bond curves. To capture the systematic transmission from interest-rate conditions to credit spreads, we structure the model into two blocks and price corporate bonds conditional on the prevailing rate regime. The rate block features a two-state RS-GCIR short-rate process estimated from CGB zero-coupon curves, while the credit block embeds CIR-type credit factors in an intensity-based framework for rating migration and default. We implement a block-recursive Unscented Kalman Filter (UKF) procedure--filtering the rate block first and the credit block next--using weekly data from 2014--2025, a period that begins with the onset of China's modern corporate default cycle. We identify two persistent rate regimes with distinct level--volatility profiles. Relative to single-regime benchmarks, regime switching improves joint curve fit, delivers economically interpretable filtered regime probabilities, and sharpens the decomposition of corporate yields into discounting and credit compensation.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文提出了一个基于评级的区制转换广义CIR模型，用于联合建模中国国债收益率曲线和公司债收益率曲线，并考虑了利率条件向信用利差的系统性传导。模型通过区制转换捕捉期限结构动态的持续性变化，并使用无迹卡尔曼滤波进行估计。该论文对实战交易有一定价值，提供了改进的曲线拟合和利率-信用联动分解，但实现复杂度较高，需根据实际交易场景调整。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_07e44f0e"
+  },
+  {
+    "title": "Yau's Affine-Normal Descent for Large-Scale Unrestricted Higher-Moment Portfolio Optimization",
+    "url": "https://arxiv.org/pdf/2604.25378v1",
+    "source": "ArXiv",
+    "date": "2026-04-28",
+    "abstract": "Unrestricted mean-variance-skewness-kurtosis portfolio optimization can capture asymmetry and tail risk, but sample-moment formulations become computationally impractical when the asset universe is large: they produce dense nonconvex quartic objectives with prohibitive coskewness and cokurtosis tensors and anisotropic, ill-conditioned level sets. We develop a structure-exploiting algorithm based on Yau's affine-normal descent that follows affine-normal directions of the current level set while working directly with the return matrix. The method avoids explicit higher-order tensors and exploits the quartic structure for exact sample oracles, derivative evaluation, and exact line search. We also provide theory for the reduced simplex formulation, including regularity and convexity conditions that separate data-map geometry from investor preference coefficients. Computational results show a clear implementation split: a direct configuration is effective on the standard small benchmark, whereas a preconditioned conjugate-gradient configuration with stall recovery becomes the preferred large-scale implementation by the upper end of the hundreds and remains competitive as the asset universe moves into the thousands. On a 5-minute A-share panel with 5,440 stocks, the method makes direct full-universe comparisons with exact mean-variance portfolios feasible and shows on the baseline split that the incremental value of higher moments is strongest at moderate return targets.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文提出基于Yau仿射正态下降的结构性算法，直接处理收益矩阵，避免显式高阶矩张量，适用于大规模资产下的高阶矩投资组合优化。虽不直接涉及机器学习和Alpha策略，但算法聚焦实用优化方法，可提升实战中协偏度和协峰度处理效率，对高频或大规模组合管理有潜在价值。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_6013f67f"
+  },
+  {
+    "title": "ValueAlpha: Agreement-Gated Stress Testing of LLM-Judged Investment Rationales Before Returns Are Observable",
+    "url": "https://arxiv.org/pdf/2604.25224v1",
+    "source": "ArXiv",
+    "date": "2026-04-28",
+    "abstract": "Long-horizon investment decisions create a pre-realization evaluation problem: realized returns are the eventual arbiter of investment quality, but they arrive too late and are too noisy to guide many model-development and governance decisions. LLM judges offer a tempting substitute for pre-deployment evaluation of AI-finance systems, but unvalidated judges may reward verbosity, confidence, or rubric mimicry rather than financial judgment. This paper introduces \\textbf{ValueAlpha}, a preregistered agreement-gated stress-test protocol for deciding when LLM-judged investment-rationale claims are publishable, qualified, or invalid.\n  In a controlled market-state capital-allocation prototype with 1,000 honest decision cycles and 100 preregistered adversarial controls (1,100 trajectories, 5,500 judge calls), ValueAlpha clears the aggregate agreement gate at \\(\\barκ_w = 0.7168\\) but prevents several overclaims. Lower-rank systems collapse into a tie-class, one rubric dimension fails the per-dimension gate (\\texttt{constraint\\_awareness}, \\(\\barκ_w = 0.2022\\)), single-judge rankings are family-dependent, and terse-correct rationales receive a \\(Δ= -2.81\\) rubric-point penalty relative to honest rationales. A targeted anchor-specificity probe further shows that financial constructs such as constraint awareness are operationally load-bearing.\n  The contribution is therefore not a leaderboard and not a claim to measure true investment skill. ValueAlpha is a pre-calibration metrology layer for AI-finance evaluation: it determines whether a proposed LLM-judge-based investment-rationale claim is stable enough, agreed enough, and uncontaminated enough to be reported at all.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出ValueAlpha协议，通过一致性门控压力测试验证LLM评估的投资理由，在1000个真实决策周期和100个对抗样本中测试，发现LLM评估存在rubric模仿和惩罚简洁但正确理由等问题。该协议可提升AI金融系统在实战中的可靠性，但现有评估仍基于模拟，需进一步验证真实交易环境。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_9801dcc5"
+  },
+  {
+    "title": "Implied Volatility Expansions for VIX Options in Forward Variance Models",
+    "url": "https://arxiv.org/pdf/2604.25123v1",
+    "source": "ArXiv",
+    "date": "2026-04-28",
+    "abstract": "We develop closed-form expansions for the implied volatility of VIX options within the class of forward variance models. Our approach builds on weak-approximation techniques for VIX option prices and yields explicit implied volatility expansions with computable correction terms. The resulting formulas enable fast and accurate calibration without requiring numerical root-finding. We illustrate the performance of the proposed expansions in both standard and rough Bergomi-type models, as well as in mixed specifications, and demonstrate their accuracy through numerical experiments.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文为前向方差模型下的VIX期权隐含波动率提出闭式展开式，基于弱逼近技术推导显式公式，可用于快速校准而无需数值寻根。虽涉及衍生品定价和模型校准，但偏重理论推导，实战直接应用价值中等。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_60eeb73f"
+  },
+  {
+    "title": "Cylindrical Projections of Occupied Diffusions",
+    "url": "https://arxiv.org/pdf/2604.25001v1",
+    "source": "ArXiv",
+    "date": "2026-04-27",
+    "abstract": "Occupied diffusions offer a Markovian framework for path-dependent dynamics by lifting the state space with a flow of occupation measures. Because this additional feature is infinite-dimensional, the simulation of these processes remains computationally intractable. We address this by introducing \\textit{cylindrical projections}, which approximate the occupation flow via a finite-dimensional system. We establish the strong convergence of this approximation to the initial process and derive corresponding convergence rates. The method is validated through Euler--Maruyama simulations of self-interacting diffusions and an application to the Local Occupied Volatility (LOV) model in finance. Finally, we provide a weak error analysis and explore its consequences for Monte Carlo methods and derivatives pricing.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出了一种利用有限维系统近似占据流的方法，以解决占据扩散过程模拟的计算难题，并在金融局部占据波动率（LOV）模型中进行了验证。虽然涉及蒙特卡洛方法和衍生品定价，但侧重于数学收敛性和模拟方法，而非直接提供可部署的交易策略或市场信号，因此实战价值中等。",
+    "fetch_date": "2026-04-30",
+    "id": "20260430_d647d2bc"
+  },
+  {
     "title": "An Explicit Solution to Black-Scholes Implied Volatility",
     "url": "https://arxiv.org/pdf/2604.24480v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本文提出了一种预测个股层面流动性撤出的框架，通过定义流动性撤出指数（LWI）——即最佳报价处订单取消量与挂单深度及新增订单量之和的比值——作为衡量瞬时流动性移除的有界可解释指标。使用纳斯达克逐笔订单数据，比较了线性基准模型（AR、HAR）与非线性树集成模型（XGBoost）在250毫秒至5秒不同预测周期内的表现。研究不仅评估预测准确性，还深入分析了订单放置与取消的动态机制，识别了线性与非线信号主导的市场状态，并强调了流动性撤出的早期预警指标对市场监控和交易执行的实际价值。",
     "fetch_date": "2026-02-10",
     "id": "20260210_0594be96"
-  },
-  {
-    "title": "STRAPSim: A Portfolio Similarity Metric for ETF Alignment and Portfolio Trades",
-    "url": "https://arxiv.org/pdf/2509.24151v1",
-    "source": "ArXiv",
-    "date": "2025-09-29",
-    "abstract": "Accurately measuring portfolio similarity is critical for a wide range of financial applications, including Exchange-traded Fund (ETF) recommendation, portfolio trading, and risk alignment. Existing similarity measures often rely on exact asset overlap or static distance metrics, which fail to capture similarities among the constituents (e.g., securities within the portfolio) as well as nuanced relationships between partially overlapping portfolios with heterogeneous weights. We introduce STRAPSim (Semantic, Two-level, Residual-Aware Portfolio Similarity), a novel method that computes portfolio similarity by matching constituents based on semantic similarity, weighting them according to their portfolio share, and aggregating results via residual-aware greedy alignment. We benchmark our approach against Jaccard, weighted Jaccard, as well as BERTScore-inspired variants across public classification, regression, and recommendation tasks, as well as on corporate bond ETF datasets. Empirical results show that our method consistently outperforms baselines in predictive accuracy and ranking alignment, achieving the highest Spearman correlation with return-based similarity. By leveraging constituent-aware matching and dynamic reweighting, portfolio similarity offers a scalable, interpretable framework for comparing structured asset baskets, demonstrating its utility in ETF benchmarking, portfolio construction, and systematic execution.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "STRAPSim（语义、双层、残差感知投资组合相似度）是一种新颖的投资组合相似度度量方法，通过基于语义相似度匹配成分资产、根据投资组合份额加权，并通过残差感知贪心对齐聚合结果。该方法在公共分类、回归和推荐任务以及公司债券ETF数据集上，相比Jaccard、加权Jaccard和基于BERTScore的变体，在预测准确性和排序对齐方面表现更优，与基于回报的相似度具有最高的Spearman相关性。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_c875f39a"
-  },
-  {
-    "title": "The Price of Liquidity: Implied Volatility of Automated Market Maker Fees",
-    "url": "https://arxiv.org/pdf/2509.23222v1",
-    "source": "ArXiv",
-    "date": "2025-09-27",
-    "abstract": "An automated market maker (AMM) provides a method for creating a decentralized exchange on the blockchain. For this purpose, individual investors lend liquidity to the AMM pool in exchange for a stream of fees earned from its operations as a market maker. Within this work, we reinterpret the loss-versus-rebalancing as the implied fee stream generated by an AMM so that a risk-neutral investor is indifferent in the decision of providing liquidity. With this implied fee structure, we propose a novel fixed-for-floating swap on the fees generated by an AMM in order to quote the implied volatilities and implied correlations of digital assets. We apply this theory to realized fees in different markets to empirically validate the relevance of the deduced fee-based volatility.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文提出了一种将自动化做市商（AMM）的损失与再平衡重新解释为隐含费用流的方法，使风险中性投资者在提供流动性决策中无差异。基于此，作者设计了一种针对AMM费用的固定对浮动互换，用于报价数字资产的隐含波动率和隐含相关性，并通过不同市场的实际费用数据进行了实证验证。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_58f20ecb"
-  },
-  {
-    "title": "Single- and Multi-Level Fourier-RQMC Methods for Multivariate Shortfall Risk",
-    "url": "https://arxiv.org/pdf/2602.06424v1",
-    "source": "ArXiv",
-    "date": "2026-02-06",
-    "abstract": "Multivariate shortfall risk measures provide a principled framework for quantifying systemic risk and determining capital allocations prior to aggregation in interconnected financial systems. Despite their well established theoretical properties, the numerical estimation of multivariate shortfall risk and the corresponding optimal allocations remains computationally challenging, as existing Monte Carlo based approaches can be numerically expensive due to slow convergence.\n  In this work, we develop a new class of single and multilevel numerical algorithms for estimating multivariate shortfall risk and the associated optimal allocations, based on a combination of Fourier inversion techniques and randomized quasi Monte Carlo (RQMC) sampling. Rather than operating in physical space, our approach evaluates the relevant expectations appearing in the risk constraint and its optimization in the frequency domain, where the integrands exhibit enhanced smoothness properties that are well suited for RQMC integration. We establish a rigorous mathematical framework for the resulting Fourier RQMC estimators, including convergence analysis and computational complexity bounds. Beyond the single level method, we introduce a multilevel RQMC scheme that exploits the geometric convergence of the underlying deterministic optimization algorithm to reduce computational cost while preserving accuracy.\n  Numerical experiments demonstrate that the proposed Fourier RQMC methods outperform sample average approximation and stochastic optimization benchmarks in terms of accuracy and computational cost across a range of models for the risk factors and loss structures. Consistent with the theoretical analysis, these results demonstrate improved asymptotic convergence and complexity rates relative to the benchmark methods, with additional savings achieved through the proposed multilevel RQMC construction.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种基于傅里叶反演技术和随机化拟蒙特卡洛（RQMC）采样的单层与多层数值算法，用于估计多元短缺风险及其相关最优配置。该方法在频域而非物理空间评估风险约束及其优化中的相关期望，利用频域中积分函数增强的平滑特性，更适合RQMC积分。研究建立了傅里叶RQMC估计器的严格数学框架，包括收敛性分析和计算复杂度界限。尽管为多元风险度量提供了理论改进，但主要聚焦于数值估计方法而非直接交易策略，对实战交易的直接应用有限。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_041f8d3f"
-  },
-  {
-    "title": "Joint survival annuity derivative valuation in the linear-rational Wishart mortality model",
-    "url": "https://arxiv.org/pdf/2602.06415v1",
-    "source": "ArXiv",
-    "date": "2026-02-06",
-    "abstract": "This study proposes a linear-rational joint survival mortality model based on the Wishart process. The Wishart process, which is a stochastic continuous matrix affine process, allows for a general dependency between the mortality intensities that are constructed to be positive. Using the linear-rational framework along with the Wishart process as state variable, we derive a closed-form expression for the joint survival annuity, as well as the guaranteed joint survival annuity option. Exploiting our parameterisation of the Wishart process, we explicit the distribution of the mortality intensities and their dependency. We provide the distribution (density and cumulative distribution) of the joint survival annuity. We also develop some polynomial expansions for the underlying state variable that lead to fast and accurate approximations for the guaranteed joint survival annuity option. These polynomial expansions also significantly simplify the implementation of the model. Overall, the linear-rational Wishart mortality model provides a flexible and unified framework for modelling and managing joint mortality risk.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本研究提出了一种基于Wishart过程的线性理性联合生存死亡率模型。Wishart过程作为一种随机连续矩阵仿射过程，允许构建正死亡率强度之间的广义依赖性。利用线性理性框架和Wishart过程作为状态变量，我们推导出了联合生存年金及其保证期权的闭式表达式。通过参数化Wishart过程，我们明确了死亡率强度的分布及其依赖性，提供了联合生存年金的分布（密度和累积分布）。我们还开发了状态变量的多项式展开，实现了对保证联合生存年金期权的快速准确近似，并显著简化了模型实施。总体而言，该模型为建模和管理联合死亡率风险提供了一个灵活统一的框架。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_4f2231c4"
-  },
-  {
-    "title": "Wishart conditional tail risk measures: An analytic approach",
-    "url": "https://arxiv.org/pdf/2602.06401v1",
-    "source": "ArXiv",
-    "date": "2026-02-06",
-    "abstract": "This study introduces a new analytical framework for quantifying multivariate risk measures. Using the Wishart process, which is a stochastic process with values in the space of positive definite matrices, we derive several conditional tail risk measures which, thanks to the remarkable analytical properties of the Wishart process, can be explicitly computed up to a one- or two-dimensional integration. These quantities can also be used to solve analytically a capital allocation problem based on conditional moments. Exploiting the stochastic differential equation property of the Wishart process, we show how an intertemporal (i.e., time-lagged) view of these risk measures can be embedded in the proposed framework. Several numerical examples show that the framework is versatile and operational, thus providing a useful tool for risk management.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本研究引入了一种基于Wishart过程（一种取值于正定矩阵空间的随机过程）的多变量风险度量新分析框架。利用Wishart过程的优良解析性质，推导出多个条件尾部风险度量，这些量可通过一维或二维积分显式计算，并能解析解决基于条件矩的资本配置问题。通过Wishart过程的随机微分方程特性，展示了如何将风险度量的跨期（时滞）视角嵌入该框架。数值示例表明该框架灵活且可操作，为风险管理提供了有用工具。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_00280733"
-  },
-  {
-    "title": "Efficient simulation of prices for European call options under Heston stochastic-local volatility model: a comparison of methods",
-    "url": "https://arxiv.org/pdf/2509.24449v2",
-    "source": "ArXiv",
-    "date": "2025-09-29",
-    "abstract": "The Heston stochastic-local volatility model, consisting of a asset price process and a Cox--Ingersoll--Ross-type variance process, offers a wide range of applications in the financial industry. The pursuit for efficient model evaluation has been assiduously ongoing and central to which is the numerical simulation of CIR process. Different from the weakly convergent noncentral chi-squared approximation used in 25, this paper considers two strongly convergent and positivity-preserving methods for CIR process under Lamperti transformation, namely, the truncated Euler method and the backward Euler method. It should be noted that these two methods are completely different. The explicit truncated Euler method is computationally effective and remains robust under high volatility, while the implicit backward Euler method provides high computational accuracy and stable performance. Numerical experiments on European call options are presented to show the superiority of different methods.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文在Heston随机-局部波动率模型下，针对CIR方差过程，比较了两种强收敛且保持正性的数值模拟方法（截断欧拉法和后向欧拉法），并通过欧式看涨期权的数值实验展示了不同方法在计算效率、高波动率稳健性和计算精度方面的优势。该研究主要聚焦于模型数值方法的改进与比较，属于量化建模与计算金融范畴，对实战交易中模型校准、期权定价等后台支持工作具有参考价值，但未直接涉及交易策略生成、风险管理或市场预测等前台交易环节。",
-    "fetch_date": "2026-02-10",
-    "id": "20260210_56e1f30a"
   }
 ]
