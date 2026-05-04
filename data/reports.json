@@ -1,5 +1,77 @@
 [
   {
+    "title": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+    "url": "https://arxiv.org/pdf/2605.00420v1",
+    "source": "ArXiv",
+    "date": "2026-05-01",
+    "abstract": "Evaluating the true forecasting ability of AI agents requires environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy's classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a 50-round live evaluation of five frontier LLM agents plus a random baseline. Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. All smart contracts and evaluation infrastructure are open-source.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文提出了Foresight Arena，一个去中心化、基于链上预测市场的AI预测代理评估基准，性能由Brier Score和Alpha Score衡量。虽然不直接涉及量化交易，但其评估预测能力（如事件概率）的方法对开发预测市场交易或信号生成策略有参考价值。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_cfe76846"
+  },
+  {
+    "title": "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
+    "url": "https://arxiv.org/pdf/2605.00059v1",
+    "source": "ArXiv",
+    "date": "2026-04-30",
+    "abstract": "Deep reinforcement learning (DRL) finds extensive application in autonomous drone navigation within complex, high-risk environments. However, its practical deployment faces a safety-exploration dilemma: soft penalty mechanisms encourage risky trial-and-error, while most constraint-based methods suffer degraded performance under sensor noise and intent uncertainty. We propose Dynamic-TD3, a physically enhanced framework that enforces strict safety constraints while maintaining maneuverability by modeling navigation as a Constrained Markov Decision Process (CMDP). This framework integrates an Adaptive Trajectory Relational Evolution Mechanism (ATREM) to capture long-range intentions and employs a Physically Aware Gated Kalman Filter (PAG-KF) to mitigate non-stationary observation noise. The resulting state representation drives a dual-criterion policy that balances mission efficiency against hard safety constraints via Lagrangian relaxation. In experiments with aggressive dynamic threats, this approach demonstrates superior collision avoidance performance, reduced energy consumption, and smoother flight trajectories.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出Dynamic-TD3算法，将无人机路径规划建模为约束马尔可夫决策过程，集成自适应轨迹关系演化机制和物理感知门控卡尔曼滤波器，以在动态障碍物环境下平衡安全与效率。虽涉及强化学习，但聚焦于机器人导航而非金融交易，实战交易价值有限。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_f0d7f7fb"
+  },
+  {
+    "title": "Do Short Exposure and Systematic Risk Exposure Drive Asymmetries in the Disposition Effect?",
+    "url": "https://arxiv.org/pdf/2605.00016v1",
+    "source": "ArXiv",
+    "date": "2026-04-18",
+    "abstract": "This study examines the disposition effect in both long and short exposure positions in FTSE MIB tracking ETFs using a unique dataset of almost 9 million individual transactions. Building on the integrated framing approach, we extend the analysis to explicitly incorporate leverage and long short exposures, allowing us to assess how portfolio context and systematic risk exposure jointly are associated to investors realization behavior. Methodologically, we generalize Odean canonical Count and Total measures to wide and integrated framing, introduce a novel Value metric that captures the return thresholds required to realize gains versus losses, and implement these measures in dispositionEffect, an open-source R package for large-scale intraday data. We show that short positions exhibit a weaker disposition effect than long positions under narrow framing, but that this asymmetry reverses in positively performing portfolios under integrated framing. Systematic risk further amplifies these behavioral asymmetries across positions. Overall, our findings demonstrate that the disposition effect is not solely asset-specific, but is critically shaped by the interaction between portfolio context, position type, and systematic risk exposure. More broadly, the results are consistent with the joint predictions of Prospect Theory and Regret Theory, highlighting the central role of framing in investor decision-making.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该研究利用近900万笔交易数据，考察FTSE MIB跟踪ETF中多头和空头头寸的处置效应，发现空头在窄框架下处置效应较弱，但在集成框架下反转；系统性风险放大行为不对称。方法论上推广了Odean指标并引入新价值度量。虽涉及交易行为，但偏重实证分析，实战直接性有限，评分5分。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_7b3bef40"
+  },
+  {
+    "title": "Optimal Merton's Problem under Multivariate Affine Volterra Models with Jumps",
+    "url": "https://arxiv.org/pdf/2605.00688v1",
+    "source": "ArXiv",
+    "date": "2026-05-01",
+    "abstract": "This paper is concerned with portfolio selection for an investor with exponential, power, and logarithmic utility in multi-asset financial markets allowing jumps. We investigate the classical Merton's portfolio optimization problem in a Volterra stochastic environment described by a multivariate Volterra--Heston model with jumps driven by an independent Poisson random measure. Owing to the non-Markovian and non-semimartingale nature of the model, classical stochastic control techniques are not directly applicable. Instead, the problem is tackled using the martingale optimality principle by constructing a family of supermartingale processes characterized via solutions to an original Riccati backward stochastic differential equation with jumps (Riccati BSDEJ).The resulting optimal strategies for Merton's problems are derived in semi-closed form depending on the solutions to time-dependent multivariate Riccati-Volterra equations, while the optimal value is expressed using the solution to this original Riccati BSDEJ. Numerical experiments on a two-dimensional rough Heston model illustrate the impact of both path roughness and jumps components on the value function and optimal strategies in the Merton problem.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文研究多资产跳跃扩散的Volterra-Heston模型下的Merton最优投资组合问题，提出通过Riccati BSDEJ求解半闭式最优策略。理论性强，但模型复杂且依赖数值解，实战交易中直接应用难度高，价值有限。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_7f4441bb"
+  },
+  {
+    "title": "ForesightFlow: An Information Leakage Score Framework for Prediction Markets",
+    "url": "https://arxiv.org/pdf/2605.00493v1",
+    "source": "ArXiv",
+    "date": "2026-05-01",
+    "abstract": "ForesightFlow is an Information Leakage Score (ILS) framework for detecting informed trading on decentralized prediction markets. For an event-resolved binary market, the score quantifies the fraction of the terminal information move priced in before the public news event. Three operational scope conditions (edge effect, non-trivial total move, anchor sensitivity) are stated as preconditions for interpretation. The score admits a Murphy-decomposition reading that connects label generation to the proper-scoring-rule literature.\n  A pilot empirical evaluation surfaces three findings. First, a resolution-anchored proxy for the public-event timestamp does not separate event-resolved markets from a matched control population (Mann-Whitney p = 1e-6, separation reversed), demonstrating that proxy quality is itself a binding constraint. Second, the article-derived timestamp on a single high-stakes case shifts the score by 0.444 in magnitude relative to the proxy and lies on the opposite side of zero. Third, an audit of the publicly documented Polymarket insider record reveals that documented cases are systematically deadline-resolved, falling outside the original ILS scope (0 of 24 FFIC inventory markets satisfied original scope conditions).\n  This last finding motivates a deadline-ILS extension introduced in Section 7, anchored at the public-event timestamp rather than the news timestamp, and equipped with a per-category exponential hazard baseline for the time-to-event distribution. The extension closes the gap between the methodology and the population in which insider trading has been empirically documented. An end-to-end evaluation of the extension on the 2026 U.S.-Iran conflict cluster is reported in a companion paper. We release the FFIC inventory, the resolution-typology classification of the 911,237-market corpus, and all code at github.com/ForesightFlow.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "ForesightFlow提出了一种信息泄漏评分（ILS）框架，用于检测去中心化预测市场中的知情交易。论文通过Murphy分解将标签生成与适当评分规则联系起来，并进行了初步实证评估。虽然涉及实战交易场景（预测市场），但框架主要关注信息泄漏检测，而非直接交易策略或alpha生成，实战价值有限。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_258fd5b1"
+  },
+  {
+    "title": "Modeling Stock Returns and Volatility Using Bivariate Gamma Generalized Laplace Law",
+    "url": "https://arxiv.org/pdf/2605.00196v1",
+    "source": "ArXiv",
+    "date": "2026-04-30",
+    "abstract": "We consider a generalization of the variance-gamma (generalized asymmetric Laplace) distribution, defined as a normal mean - variance mixture with a gamma mixing distribution. While this model is typically studied in the univariate setting, we assume that the gamma mixing variable is observed alongside the primary variable, resulting in a bivariate framework. In this setting, maximum likelihood estimation becomes significantly simpler than in the standard univariate case, reducing to a form of classical linear regression. We derive explicit expressions for the resulting estimators. For certain parameter configurations, the estimators exhibit nonstandard convergence rates, exceeding the usual square-root rate. Finally, we illustrate the applicability of this model in financial contexts by analyzing stock index returns and associated volatility for several major indices.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文提出双变量Gamma广义Laplace分布来建模股票收益与波动，通过假设Gamma混合变量可观测简化极大似然估计为经典线性回归。虽涉及金融应用，但模型假设强，实战中观测Gamma变量不现实，且缺乏交易策略或信号生成内容，故实战价值有限。",
+    "fetch_date": "2026-05-05",
+    "id": "20260505_a1701681"
+  },
+  {
     "title": "Sampler-Robust Optimization under Generative Models",
     "url": "https://arxiv.org/pdf/2604.27447v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "该论文提出了一种连续程序搜索方法，通过将遗传编程中的离散程序空间转化为连续潜在空间，解决传统方法中语法突变导致行为不可预测、局部性差和样本效率低的问题。论文设计了可测量的局部性指标，在受控潜在扰动下跟踪行为级差异，并识别出行为局部连续变化的经验信任区域。使用包含四个语义组件（多头/空头入场和出场）的紧凑交易策略领域特定语言，学习匹配的块因子化嵌入，比较了全潜在空间上的各向同性高斯突变与几何编译突变（将更新限制在语义配对的入场-出场子空间，并使用基于流的模型学习突变结果来提出方向）。在相同（μ+λ）进化策略和五个资产固定评估预算下，学习到的突变算子以数量级更少的评估发现强策略，对实战交易具有直接应用价值。",
     "fetch_date": "2026-02-11",
     "id": "20260211_13f5a5ee"
-  },
-  {
-    "title": "LLM as a Risk Manager: LLM Semantic Filtering for Lead-Lag Trading in Prediction Markets",
-    "url": "https://arxiv.org/pdf/2602.07048v1",
-    "source": "ArXiv",
-    "date": "2026-02-04",
-    "abstract": "Prediction markets provide a unique setting where event-level time series are directly tied to natural-language descriptions, yet discovering robust lead-lag relationships remains challenging due to spurious statistical correlations. We propose a hybrid two-stage causal screener to address this challenge: (i) a statistical stage that uses Granger causality to identify candidate leader-follower pairs from market-implied probability time series, and (ii) an LLM-based semantic stage that re-ranks these candidates by assessing whether the proposed direction admits a plausible economic transmission mechanism based on event descriptions. Because causal ground truth is unobserved, we evaluate the ranked pairs using a fixed, signal-triggered trading protocol that maps relationship quality into realized profit and loss (PnL). On Kalshi Economics markets, our hybrid approach consistently outperforms the statistical baseline. Across rolling evaluations, the win rate increases from 51.4% to 54.5%. Crucially, the average magnitude of losing trades decreases substantially from 649 USD to 347 USD. This reduction is driven by the LLM's ability to filter out statistically fragile links that are prone to large losses, rather than relying on rare gains. These improvements remain stable across different trading configurations, indicating that the gains are not driven by specific parameter choices. Overall, the results suggest that LLMs function as semantic risk managers on top of statistical discovery, prioritizing lead-lag relationships that generalize under changing market conditions.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "预测市场提供了一个独特场景，其中事件级时间序列直接与自然语言描述相关联，但由于虚假统计相关性，发现稳健的领先-滞后关系仍然具有挑战性。我们提出了一种混合两阶段因果筛选器来解决这一挑战：（i）统计阶段使用格兰杰因果关系从市场隐含概率时间序列中识别候选领先-跟随者配对；（ii）基于LLM的语义阶段通过评估所提出的方向是否基于事件描述允许合理的经济传导机制来重新排序这些候选配对。由于因果真实情况无法观测，我们使用固定的信号触发交易协议评估排序后的配对，将关系质量映射到实际盈亏（PnL）。在Kalshi Economics市场上，我们的混合方法始终优于统计基线。在滚动评估中，胜率从51.4%提高到54.5%。关键的是，亏损交易的平均幅度从649美元大幅降至347美元。这种减少是由LLM过滤掉统计上脆弱的链接所驱动的。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_afea8d53"
-  },
-  {
-    "title": "Finite-State Controllers for (Hidden-Model) POMDPs using Deep Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2602.08734v1",
-    "source": "ArXiv",
-    "date": "2026-02-09",
-    "abstract": "Solving partially observable Markov decision processes (POMDPs) requires computing policies under imperfect state information. Despite recent advances, the scalability of existing POMDP solvers remains limited. Moreover, many settings require a policy that is robust across multiple POMDPs, further aggravating the scalability issue. We propose the Lexpop framework for POMDP solving. Lexpop (1) employs deep reinforcement learning to train a neural policy, represented by a recurrent neural network, and (2) constructs a finite-state controller mimicking the neural policy through efficient extraction methods. Crucially, unlike neural policies, such controllers can be formally evaluated, providing performance guarantees. We extend Lexpop to compute robust policies for hidden-model POMDPs (HM-POMDPs), which describe finite sets of POMDPs. We associate every extracted controller with its worst-case POMDP. Using a set of such POMDPs, we iteratively train a robust neural policy and consequently extract a robust controller. Our experiments show that on problems with large state spaces, Lexpop outperforms state-of-the-art solvers for POMDPs as well as HM-POMDPs.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出Lexpop框架，用于解决部分可观测马尔可夫决策过程（POMDPs）和隐藏模型POMDPs（HM-POMDPs）。框架采用深度强化学习训练由循环神经网络表示的神经策略，并通过高效提取方法构建模仿该策略的有限状态控制器。与神经策略不同，此类控制器可进行形式化评估并提供性能保证。实验表明，在大型状态空间问题上，Lexpop优于现有最先进的POMDP和HM-POMDP求解器。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_b7f4686b"
-  },
-  {
-    "title": "Nansde-net: A neural sde framework for generating time series with memory",
-    "url": "https://arxiv.org/pdf/2602.08182v1",
-    "source": "ArXiv",
-    "date": "2026-02-09",
-    "abstract": "Modeling time series with long- or short-memory characteristics is a fundamental challenge in many scientific and engineering domains. While fractional Brownian motion has been widely used as a noise source to capture such memory effects, its incompatibility with Itô calculus limits its applicability in neural stochastic differential equation~(SDE) frameworks. In this paper, we propose a novel class of noise, termed Neural Network-kernel ARMA-type noise~(NA-noise), which is an Itô-process-based alternative capable of capturing both long- and short-memory behaviors. The kernel function defining the noise structure is parameterized via neural networks and decomposed into a product form to preserve the Markov property. Based on this noise process, we develop NANSDE-Net, a generative model that extends Neural SDEs by incorporating NA-noise. We prove the theoretical existence and uniqueness of the solution under mild conditions and derive an efficient backpropagation scheme for training. Empirical results on both synthetic and real-world datasets demonstrate that NANSDE-Net matches or outperforms existing models, including fractional SDE-Net, in reproducing long- and short-memory features of the data, while maintaining computational tractability within the Itô calculus framework.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出了一种名为NANSDE-Net的神经随机微分方程（SDE）框架，用于生成具有记忆特性的时间序列。核心创新是引入了基于伊藤过程的神经网络核自回归滑动平均型噪声（NA-noise），能够捕捉长短期记忆效应，同时保持马尔可夫性质。论文证明了模型解的存在唯一性，并开发了高效的反向传播训练方案。实证结果表明，该模型在合成和真实数据集上优于现有方法（如分数SDE-Net），在重现长短期记忆特征方面表现优异。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_3bf129dc"
-  },
-  {
-    "title": "Algorithmic Monitoring: Measuring Market Stress with Machine Learning",
-    "url": "https://arxiv.org/pdf/2602.07066v1",
-    "source": "ArXiv",
-    "date": "2026-02-05",
-    "abstract": "I construct a Market Stress Probability Index (MSPI) that estimates the probability of high stress in the U.S. equity market one month ahead using information from the cross-section of individual stocks. Using CRSP daily data, each month is summarized by a set of interpretable cross-sectional fragility signals and mapped into a forward-looking stress probability via an L1-regularized logistic regression in a real-time expanding-window design. Out of sample, MSPI tracks major stress episodes and improves discrimination and accuracy relative to a parsimonious benchmark based on lagged market return and realized volatility, delivering calibrated stress probabilities on an economically meaningful scale. Further, I illustrate how MSPI can be used as a probability-based measurement object in financial econometrics. The resulting index provides a transparent and easily updated measure of near-term equity-market stress risk.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文构建了一个市场压力概率指数（MSPI），利用个股横截面信息预测美国股市未来一个月的压力概率。基于CRSP日度数据，每月通过可解释的横截面脆弱性信号进行总结，并采用L1正则化逻辑回归在实时扩展窗口设计中映射为前瞻性压力概率。样本外测试显示，MSPI能追踪主要压力事件，相比基于滞后市场收益和已实现波动的简约基准模型，在区分度和准确性上有所提升，并在经济意义上提供校准后的压力概率。此外，文章展示了MSPI如何作为基于概率的测量工具应用于金融计量经济学。该指数为近期股市压力风险提供了透明且易于更新的度量。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_d75ea503"
-  },
-  {
-    "title": "Financial Bond Similarity Search Using Representation Learning",
-    "url": "https://arxiv.org/pdf/2602.07020v1",
-    "source": "ArXiv",
-    "date": "2026-02-02",
-    "abstract": "Finding similar bonds remains challenging in fixed-income analytics, as numerical financial attributes often overshadow categorical non-financial ones such as issuer sector and domicile. This paper shows that these categorical attributes dominate the predictability of spread curves and proposes embedding models to capture their semantic similarities, outperforming one-hot and many other baselines. Evaluated via sparse-issuer augmentation, the approach improves risk modeling and curve construction.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文《基于表示学习的金融债券相似性搜索》针对固定收益分析中债券相似性查找的挑战，指出数值金融属性常掩盖发行人行业、注册地等分类非金融属性的重要性。研究表明这些分类属性主导利差曲线的可预测性，并提出嵌入模型来捕捉其语义相似性，优于独热编码及其他基线方法。通过稀疏发行人增强评估，该方法改进了风险建模与曲线构建。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_2a51e06a"
-  },
-  {
-    "title": "The Extremity Premium: Sentiment Regimes and Adverse Selection in Cryptocurrency Markets",
-    "url": "https://arxiv.org/pdf/2602.07018v1",
-    "source": "ArXiv",
-    "date": "2026-02-01",
-    "abstract": "Using the Crypto Fear & Greed Index and Bitcoin daily data, we document that sentiment extremity predicts excess uncertainty beyond realized volatility. Extreme fear and extreme greed regimes exhibit significantly higher spreads than neutral periods -- a phenomenon we term the \"extremity premium.\" Extended validation on the full Fear & Greed history (February 2018--January 2026, N = 2,896) confirms the finding: within-volatility-quintile comparisons show a significant premium (p < 0.001, Cohen's d = 0.21), Granger causality from uncertainty to spreads is strong (F = 211), and placebo tests reject the null (p < 0.0001). The effect replicates on Ethereum and across 6 of 7 market cycles. However, the premium is sensitive to functional form: comprehensive regression controls absorb regime effects, while nonparametric stratification preserves them. We interpret this as evidence that sentiment extremity captures volatility-regime interactions not fully represented by parametric controls -- consistent with, but not conclusively separable from, the F&G Index's embedded volatility component. An agent-based model reproduces the pattern qualitatively. The results suggest that intensity, not direction, drives uncertainty-linked liquidity withdrawal in cryptocurrency markets, though identification of \"pure\" sentiment effects from volatility remains an open challenge.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文研究了加密货币市场中情绪极端性与买卖价差的关系，发现当市场处于极度恐惧或极度贪婪状态时，会出现显著的'极端性溢价'（买卖价差扩大）。研究基于Crypto Fear & Greed指数和比特币日度数据（2018年2月-2026年1月），通过分位数比较、格兰杰因果检验和安慰剂测试验证了该效应在以太坊和多数市场周期中可复现。然而，该溢价对模型设定敏感：参数化回归控制会吸收该效应，而非参数分层能保留它。这表明情绪极端性捕捉了波动率机制相互作用，但可能与F&G指数内嵌的波动率成分难以完全分离。研究对实战交易的启示在于：情绪极端时期可能存在因不确定性增加导致的流动性成本上升，为交易执行和风险管理提供了参考，但需注意模型依赖性。",
-    "fetch_date": "2026-02-11",
-    "id": "20260211_170a22db"
   }
 ]
