@@ -1,5 +1,77 @@
 [
   {
+    "title": "Beyond Sequential Prediction: Learning Financial Market Dynamics in Volatile and Non-Stationary Environments through Sentiment-Conditioned Generative Modelling",
+    "url": "https://arxiv.org/pdf/2604.22801v2",
+    "source": "ArXiv",
+    "date": "2026-04-13",
+    "abstract": "The problem of time-series forecasting in non-stationary and complex environments is a challenging task in machine learning, especially with heterogeneous numerical and textual data present. Traditional statistical models like AutoRegressive Integrated Moving Average (ARIMA) are based on the assumptions of linearity and stationarity, whereas recurrent neural networks like Long Short-Term Memory (LSTM) models do not necessarily represent distributional properties in highly volatile settings. This paper proposes a hybrid model that combines Generative Adversarial Networks (GANs) with Natural Language Processing (NLP)-based sentiment analysis to enable sentiment-conditioned time-series prediction. The model integrates adversarial learning on numerical sequences with contextual sentiment representations derived from unstructured text, enabling them to be jointly modelled to capture temporal dynamics and exogenous information. These results demonstrate the promise of hybrid generative and language-aware methods to enhance prediction robustness in non-stationary environments.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文提出一种结合生成对抗网络（GANs）与自然语言处理（NLP）情感分析的混合模型，用于非平稳和高波动环境下的时间序列预测。模型通过对抗学习处理数值序列，并融合非结构化文本的情感表示，以捕捉时间动态和外部信息。实验表明该方法在非平稳环境中提升了预测鲁棒性，对实战交易具有参考价值。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_9f271531"
+  },
+  {
+    "title": "Scaling Limits of Bivariate Nearly-Unstable Hawkes Processes and Applications to Rough Volatility",
+    "url": "https://arxiv.org/pdf/2605.03703v1",
+    "source": "ArXiv",
+    "date": "2026-05-05",
+    "abstract": "We prove a functional limit theorem for a pair of nearly unstable Hawkes processes coupled through a triangular cross-excitation mechanism, when the two kernels have distinct heavy-tail exponents. This heterogeneous regime produces two different degrees of roughness and, to the best of our knowledge, had not previously been treated in the multivariate nearly unstable setting.\n  As the system approaches criticality, the renormalized intensity processes converge weakly to the unique solution of a coupled stochastic Volterra system driven by two independent Brownian motions. The first component evolves autonomously as a rough fractional diffusion, while the second is driven both by its own noise and by the first component through a convolution cross-kernel. This kernel, expressed as the convolution of the two associated Mittag-Leffler kernels, encodes both roughness exponents and distinguishes the limit from independent univariate limits or classical bivariate Brownian models.\n  We also derive a short-time decorrelation result showing that the functional correlation between the two limiting components vanishes at an explicit polynomial rate governed by the rougher component. Finally, we show that the scale-matching assumption is not structural: without it, the limiting cross-kernel is replaced by an explicitly time-rescaled convolution kernel. The proof combines kernel convergence, tightness, martingale identification via Rebolledo's theorem, and uniqueness for affine stochastic Volterra equations.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文研究双变量近不稳定霍克斯过程的缩放极限，推导粗糙波动率模型的理论极限，涉及复杂随机微积分和数学证明，缺乏直接交易规则、策略或实证验证，对实战交易价值有限。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_0a6ecc9d"
+  },
+  {
+    "title": "Coordination as an Architectural Layer for LLM-Based Multi-Agent Systems",
+    "url": "https://arxiv.org/pdf/2605.03310v1",
+    "source": "ArXiv",
+    "date": "2026-05-05",
+    "abstract": "Multi-agent LLM systems fail in production at rates between 41% and 87%, mostly due to coordination defects rather than base-model capability. Existing responses split between cataloguing failure modes empirically and shipping declarative orchestration frameworks as engineering tools; neither delivers a principled mapping from coordination configuration to predictable failure-mode signature. We argue that coordination should be treated as a configurable architectural layer, separable from agent logic and from information access, enabling architectural reasoning rather than only engineering productivity.\n  We instantiate this with an information-controlled design on prediction markets: a single LLM, fixed tools, fixed per-call output cap, and fixed prompt template across five reference coordination configurations, with total compute per question treated as an endogenous architectural output. The Murphy decomposition of the Brier score separates calibration from discriminative power, so configurations leave distinguishable signatures even when aggregate scores coincide.\n  On 100 Polymarket binary markets resolved after the model's training cutoff (claude-opus-4-6) we report Murphy signatures, a cost-quality Pareto frontier, category-conditioned analysis, and a bootstrap power-projection. Three of five pre-specified predictions are upheld in direction; two configurations dominate the Pareto frontier within this regime; exploratory bootstrap intervals separate consensus alignment from others, though pairwise tests do not survive Bonferroni correction at n=100. We also deploy the same configurations as live agents on Foresight Arena under web-search-enabled conditions, as an on-chain replication channel accumulating in parallel. Harness, trace dataset, and production agents are released. We position this as a methodology-validating first instantiation, not a general cross-model claim.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出将协调视为LLM多智能体系统的可配置架构层，通过预测市场实例化信息控制设计，利用Brier分数的Murphy分解分离校准与区分能力。尽管涉及实战（预测市场数据），但核心是架构分析与理论映射，未提供直接可执行的交易策略或强化学习/深度学习实战方法，因此实战价值中等偏低。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_a563c4ed"
+  },
+  {
+    "title": "Single-Period Portfolio Selection via Information Projection",
+    "url": "https://arxiv.org/pdf/2605.03184v1",
+    "source": "ArXiv",
+    "date": "2026-05-04",
+    "abstract": "We study the single-period portfolio selection problem under Constant Relative Risk-Aversion (CRRA) utility through the information-theoretic lens. Assuming only that the market payoff vector has finite support, we show that the Certainty-Equivalent (CE) growth rate under CRRA utility can be exactly decomposed into a portfolio-induced Rényi divergence term, a Rényi entropy term of the risk-tilted market law, and a log-partition term. In this setting, the Rényi order has a clear operational meaning: it exactly coincides with the investor's coefficient of relative risk aversion. We further show that CRRA portfolio selection is equivalent to a Rényi information-projection problem. Using a variational representation of Rényi divergence, we obtain a Blahut-Arimoto-style alternating optimization with a closed-form auxiliary update and a KL-type portfolio step. In the low risk-aversion regime, this method empirically requires fewer iterations than both direct CRRA utility optimization and Cover's method.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文在CRRA效用下通过信息理论视角研究单期投资组合选择，将确定性等价增长率分解为Rényi散度、Rényi熵和对数配分函数项，并证明CRRA投资组合选择等价于Rényi信息投影问题。提出Blahut-Arimoto风格交替优化算法，在低风险厌恶下收敛更快。但研究基于有限市场支付向量假设，与实际交易的连续市场、交易成本、冲击等条件差距较大，模型简化过多，实战直接应用价值有限。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_e1bb6ce7"
+  },
+  {
+    "title": "Market-implied time to transition to a low-carbon economy: a stochastic modelling and inference framework",
+    "url": "https://arxiv.org/pdf/2605.03082v1",
+    "source": "ArXiv",
+    "date": "2026-05-04",
+    "abstract": "This paper introduces a new market-implied object, Time to Transition (TtT), extracted from the difference between two selected nodes of the greenium term structure. TtT is defined as the latent waiting time until this cross-maturity greenium difference vanishes, meaning that the greenium becomes equal across the two selected maturities. We develop an inference theory for this object. To model TtT, we introduce two tractable stochastic frameworks: the Regulatory Deadline-Constrained Model, in which the transition date is fixed, and a switching extension, in which alternative transition dates capture heterogeneous perceived deadlines across economic agents. The paper combines two layers of analysis. On a fixed daily grid, a deadline-constrained diffusion provides a tractable benchmark through an exact Gaussian bridge likelihood, while the switching extension preserves tractability through regime-specific bridge densities and filtering recursions. Under a fixed-horizon infill scheme, the same framework yields a structural identification result for the regime-wise diffusion parameters, with full or partial consistency depending on the observed region. The paper therefore contributes both a new inferential object, market-implied transition timing based on cross-maturity differences in the greenium term structure, and a two-layer inference framework: finite-sample filtering provides an operational monitoring tool, while fixed-horizon infill asymptotics specify when the regime-wise diffusion parameters carrying information about competing transition dates can be consistently estimated.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了一个从绿色期限结构差异中提取的市场隐含对象——转型时间(TtT)，并建立了随机建模和推断框架。虽然涉及量化模型，但主题聚焦于低碳经济转型时间，与实战交易（如因子投资、高频交易等）相关性较低，理论性较强，实用性有限。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_068cfbc7"
+  },
+  {
+    "title": "PHBench: A Benchmark for Predicting Startup Series A Funding from Product Hunt Launch Signals",
+    "url": "https://arxiv.org/pdf/2605.02974v1",
+    "source": "ArXiv",
+    "date": "2026-05-03",
+    "abstract": "Structured launch signals on Product Hunt contain statistically significant predictive information for Series A funding outcomes. We construct PHBench from 67,292 featured Product Hunt posts spanning 2019-2025, linked to Crunchbase funding records via deterministic domain matching, identifying 528 verified Series A raises within 18 months of launch (positive rate: 0.78%). Our best-performing model, a three-component ensemble (ENS_avg, ENS_ISO, XGB) selected by validation F0.5, achieves F0.5 = 0.097 and AP = 0.037 (95% CI: 0.024-0.072; 4.7x lift over random) on the private held-out test set (103 positives). A paired bootstrap confirms a statistically credible advantage over the logistic regression baseline (AP delta: +0.013, 95% CI: [0.004, 0.039], p < 0.001; F0.5 delta: +0.056, 95% CI: [0.006, 0.122], p = 0.016). Validation-set metrics (F0.5 = 0.284, AP = 0.126) reflect best-of-144 selection bias on 53 positives and are reported for benchmark reproducibility only.\n  We further evaluate three zero-shot Gemini models (Gemini 2.5 Flash, Gemini 3 Flash, and Gemini 3.1 Pro) in an anonymized numerical setting. The best LLM achieves AP = 0.034 (Gemini 3 Flash), below the LR baseline AP of 0.044. Notably, the most capable Gemini variant (Gemini 3.1 Pro, AP = 0.023) performs worst -- an unexpected pattern that warrants further investigation across providers and prompting strategies. Both ML and LLM models show the same temporal performance decay tracking the 2020-2021 funding boom and subsequent contraction, confirming the dataset captures genuine market structure rather than noise.\n  PHBench provides a reproducible framework comprising public training, validation, and blind test splits; 61 engineered features; a five-metric evaluation harness; and a public leaderboard at https://phbench.com. All code, baseline models, and anonymized dataset splits are publicly available.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究利用Product Hunt启动信号预测A轮融资，最佳模型F0.5仅为0.097，AP为0.037，预测能力极弱。正例率仅0.78%，实际应用中信号过于稀疏，难以用于交易策略。属于学术探索，实战价值低。",
+    "fetch_date": "2026-05-07",
+    "id": "20260507_c2186655"
+  },
+  {
     "title": "SBCA: Cross-Modal BERT-driven Actor-Critic for Multi-Asset Portfolio Optimization",
     "url": "https://arxiv.org/pdf/2605.01384v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "该论文通过整合欧元区重要银行集团的多种监管和统计数据集，构建了一个基于实证的多层网络模型，用于系统性风险评估。模型集成了长期和短期信贷、证券交叉持有、短期有担保融资以及重叠外部投资组合等多个传染渠道，并利用资产负债表信息进行校准。研究发现各层网络在连通性和中心性方面存在显著异质性，且聚合（扁平化）表示会低估系统性风险。该研究在方法论上具有创新性，但主要面向监管和政策制定，对实战交易的直接应用价值有限。",
     "fetch_date": "2026-02-13",
     "id": "20260213_d4fc8b86"
-  },
-  {
-    "title": "Error Propagation in Dynamic Programming: From Stochastic Control to Option Pricing",
-    "url": "https://arxiv.org/pdf/2509.20239v1",
-    "source": "ArXiv",
-    "date": "2025-09-24",
-    "abstract": "This paper investigates theoretical and methodological foundations for stochastic optimal control (SOC) in discrete time. We start formulating the control problem in a general dynamic programming framework, introducing the mathematical structure needed for a detailed convergence analysis. The associate value function is estimated through a sequence of approximations combining nonparametric regression methods and Monte Carlo subsampling. The regression step is performed within reproducing kernel Hilbert spaces (RKHSs), exploiting the classical KRR algorithm, while Monte Carlo sampling methods are introduced to estimate the continuation value. To assess the accuracy of our value function estimator, we propose a natural error decomposition and rigorously control the resulting error terms at each time step. We then analyze how this error propagates backward in time-from maturity to the initial stage-a relatively underexplored aspect of the SOC literature. Finally, we illustrate how our analysis naturally applies to a key financial application: the pricing of American options.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究了离散时间随机最优控制（SOC）的理论与方法论基础。在一般动态规划框架下构建控制问题，引入详细收敛分析所需的数学结构。通过结合非参数回归方法和蒙特卡洛子采样的近似序列估计关联值函数：回归步骤在再生核希尔伯特空间（RKHS）中利用经典KRR算法执行，蒙特卡洛采样方法用于估计延续值。为评估值函数估计器的准确性，提出自然误差分解并严格控制在每个时间步的误差项。随后分析误差如何从到期日向初始阶段反向传播——这是SOC文献中相对未充分探索的方面。最后说明该分析如何自然应用于关键金融应用：美式期权定价。",
-    "fetch_date": "2026-02-13",
-    "id": "20260213_068f2621"
-  },
-  {
-    "title": "Roughness Analysis of Realized Volatility and VIX through Randomized Kolmogorov-Smirnov Distribution",
-    "url": "https://arxiv.org/pdf/2509.20015v1",
-    "source": "ArXiv",
-    "date": "2025-09-24",
-    "abstract": "We introduce a novel distribution-based estimator for the Hurst parameter of log-volatility, leveraging the Kolmogorov-Smirnov statistic to assess the scaling behavior of entire distributions rather than individual moments. To address the temporal dependence of financial volatility, we propose a random permutation procedure that effectively removes serial correlation while preserving marginal distributions, enabling the rigorous application of the KS framework to dependent data. We establish the asymptotic variance of the estimator, useful for inference and confidence interval construction. From a computational standpoint, we show that derivative-free optimization methods, particularly Brent's method and the Nelder-Mead simplex, achieve substantial efficiency gains relative to grid search while maintaining estimation accuracy. Empirical analysis of the CBOE VIX index and the 5-minute realized volatility of the S&P 500 reveals a statistically significant hierarchy of roughness, with implied volatility smoother than realized volatility. Both measures, however, exhibit Hurst exponents well below one-half, reinforcing the rough volatility paradigm and highlighting the open challenge of disentangling local roughness from long-memory effects in fractional modeling.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种基于分布的赫斯特参数估计器，利用Kolmogorov-Smirnov统计量评估整个分布而非单个矩的标度行为。针对金融波动率的时间依赖性，作者提出了一种随机排列方法，有效消除序列相关性同时保留边际分布，使KS框架能严格应用于依赖数据。建立了估计量的渐近方差，可用于推断和置信区间构建。计算上，无导数优化方法（特别是Brent法和Nelder-Mead单纯形法）相比网格搜索在保持估计精度的同时实现了显著的效率提升。对CBOE VIX指数和标普500指数5分钟已实现波动率的实证分析揭示了统计显著的粗糙度层次：隐含波动率比已实现波动率更平滑，但两者的赫斯特指数均远低于0.5，强化了粗糙波动率范式并凸显了相关挑战。",
-    "fetch_date": "2026-02-13",
-    "id": "20260213_65f796dc"
-  },
-  {
-    "title": "Long-Range Dependence in Financial Markets: Empirical Evidence and Generative Modeling Challenges",
-    "url": "https://arxiv.org/pdf/2509.19663v1",
-    "source": "ArXiv",
-    "date": "2025-09-24",
-    "abstract": "This study presents a comprehensive empirical investigation of the presence of long-range dependence (LRD) in the dynamics of major U.S. stock market indexes--S\\&P 500, Dow Jones, and Nasdaq--at daily, weekly, and monthly frequencies. We employ three distinct methods: the classical rescaled range (R/S) analysis, the more robust detrended fluctuation analysis (DFA), and a sophisticated ARFIMA--FIGARCH model with Student's $t$-distributed innovations. Our results confirm the presence of LRD, primarily driven by long memory in volatility rather than in the mean returns. Building on these findings, we explore the capability of a modern deep learning approach, Quant generative adversarial networks (GANs), to learn and replicate the LRD observed in the empirical data. While Quant GANs effectively capture heavy-tailed distributions and some aspects of volatility clustering, they suffer from significant limitations in reproducing the LRD, particularly at higher frequencies. This work highlights the challenges and opportunities in using data-driven models for generating realistic financial time series that preserve complex temporal dependencies.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本研究对美股主要指数（标普500、道琼斯、纳斯达克）在日、周、月频数据中的长程依赖性（LRD）进行了实证分析，采用R/S分析、去趋势波动分析（DFA）和ARFIMA-FIGARCH模型。结果证实LRD主要源于波动率的长记忆性，而非收益率均值。进一步探索了量化生成对抗网络（Quant GANs）对LRD的建模能力，发现其能捕捉厚尾分布和部分波动率聚集特征，但在重现高频LRD时存在显著局限。研究凸显了数据驱动模型在生成保留复杂时间依赖性的金融时间序列时面临的挑战与机遇。",
-    "fetch_date": "2026-02-13",
-    "id": "20260213_3b428188"
-  },
-  {
-    "title": "Fair Volatility: A Framework for Reconceptualizing Financial Risk",
-    "url": "https://arxiv.org/pdf/2509.18837v2",
-    "source": "ArXiv",
-    "date": "2025-09-23",
-    "abstract": "Volatility is the canonical measure of financial risk, a role largely inherited from Modern Portfolio Theory. Yet, its universality rests on restrictive efficiency assumptions that render volatility, at best, an incomplete proxy for true risk. This paper identifies three fundamental inconsistencies: (i) volatility is path-independent and blind to temporal dependence and non-stationarity; (ii) its relevance collapses in derivative-intensive strategies, where volatility often represents opportunity rather than risk; and (iii) it lacks an absolute benchmark, providing no guidance on what level of volatility is economically ``fair'' in efficient markets. To address these limitations, we propose a new paradigm that reconceptualizes risk in terms of predictability rather than variability. Building on a general class of stochastic processes, we derive an analytical link between volatility and the Hurst-Holder exponent within the Multifractional Process with Random Exponent (MPRE) framework. This relationship yields a formal definition of ``fair volatility'', namely the volatility implied under market efficiency, where prices follow semi-martingale dynamics. Extensive empirical analysis on global equity indices supports this framework, showing that deviations from fair volatility provide a tractable measure of market inefficiency, distinguishing between momentum-driven and mean-reverting regimes. Our results advance both the theoretical foundations and empirical assessment of financial risk, offering a definition of volatility that is efficiency-consistent and economically interpretable.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文《公平波动率：重构金融风险的理论框架》指出，作为金融风险标准度量的波动率，其普适性建立在严格的效率假设之上，存在三个根本性缺陷：1）路径无关性，无法捕捉时间依赖和非平稳性；2）在衍生品密集型策略中，波动率常代表机会而非风险；3）缺乏绝对基准，无法界定市场有效条件下的“公平”波动率水平。为此，作者提出以可预测性而非变异性重构风险的新范式，基于随机指数多重分形过程（MPRE）框架，建立了波动率与赫斯特-霍尔德指数之间的解析联系，推导出“公平波动率”的形式化定义——即半鞅动态下市场效率隐含的波动率。论文通过实证分析验证了该框架，但整体偏向理论构建与范式批判，未涉及具体的交易策略、算法实现或实战应用（如强化学习/深度学习/Alpha生成），因此对实战交易的直接价值有限。",
-    "fetch_date": "2026-02-13",
-    "id": "20260213_31158c31"
-  },
-  {
-    "title": "Connecting Quantum Computing with Classical Stochastic Simulation",
-    "url": "https://arxiv.org/pdf/2509.18614v1",
-    "source": "ArXiv",
-    "date": "2025-09-23",
-    "abstract": "This tutorial paper introduces quantum approaches to Monte Carlo computation with applications in computational finance. We outline the basics of quantum computing using Grover's algorithm for unstructured search to build intuition. We then move slowly to amplitude estimation problems and applications to counting and Monte Carlo integration, again using Grover-type iterations. A hands-on Python/Qiskit implementation illustrates these concepts applied to finance. The paper concludes with a discussion on current challenges in scaling quantum simulation techniques.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本教程论文介绍了量子计算在蒙特卡洛方法中的应用，特别关注计算金融领域。论文从Grover算法的基础入手，逐步讲解振幅估计问题及其在计数和蒙特卡洛积分中的应用，并通过Python/Qiskit实现展示金融应用实例。最后讨论了量子模拟技术规模化面临的挑战。",
-    "fetch_date": "2026-02-13",
-    "id": "20260213_3426fa12"
-  },
-  {
-    "title": "Factor-Based Conditional Diffusion Model for Portfolio Optimization",
-    "url": "https://arxiv.org/pdf/2509.22088v1",
-    "source": "ArXiv",
-    "date": "2025-09-26",
-    "abstract": "We propose a novel conditional diffusion model for portfolio optimization that learns the cross-sectional distribution of next-day stock returns conditioned on asset-specific factors. The model builds on the Diffusion Transformer with token-wise conditioning, linking each asset's return to its own factor vector while capturing cross-asset dependencies. Generated return samples are used for daily mean-variance optimization under realistic constraints. Empirical results on the Chinese A-share market show that our approach consistently outperforms benchmark methods based on standard empirical and shrinkage-based estimators across multiple metrics.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种基于因子的条件扩散模型用于投资组合优化，该模型学习在资产特定因子条件下次日股票收益的横截面分布。模型基于具有令牌级条件设置的扩散Transformer，将每个资产的收益与其自身因子向量关联，同时捕捉跨资产依赖性。生成的收益样本用于现实约束下的每日均值-方差优化。在中国A股市场的实证结果表明，该方法在多个指标上持续优于基于标准经验估计和收缩估计的基准方法。",
-    "fetch_date": "2026-02-12",
-    "id": "20260212_1426a05a"
   }
 ]
