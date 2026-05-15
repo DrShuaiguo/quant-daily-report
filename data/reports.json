@@ -1,5 +1,77 @@
 [
   {
+    "title": "Critic-Driven Voronoi-Quantization for Distilling Deep RL Policies to Explainable Models",
+    "url": "https://arxiv.org/pdf/2605.14897v1",
+    "source": "ArXiv",
+    "date": "2026-05-14",
+    "abstract": "Despite many successful attempts at explaining Deep Reinforcement Learning policies using distillation, it remains difficult to balance the performance-interpretability trade-off and select a fitting surrogate model. In addition to this, traditional distillation only minimizes the distance between the behavior of the original and the surrogate policy while other RL-specific components such as action value are disregarded. To solve this, we introduce a new model-agnostic method called Critic-Driven Voronoi State Partitioning, which partitions a black box control policy into regions where a simple class of model can be optimized using gradient descent. By exploiting the critic value network of the original policy, we iteratively introduce new subpolicies in regions with insufficient value, standing in for a measure of policy complexity. The partitioning, a Voronoi quantizer, uses nearest neighbor lookups to assign a linear function to each point in the state space resulting in a cell-like diagram. We validate our approach on several well known benchmarks and proof that this distillation approaches the original policy using a reasonable sized set of linear functions.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "提出一种新方法Critic-Driven Voronoi State Partitioning，利用评论家网络将深度强化学习策略蒸馏为可解释的线性模型，在保持性能的同时提高可解释性。该方法在多个基准测试上验证了有效性，对实战交易中策略解释和风险控制有参考价值，但未直接针对交易场景，故评分7。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_601888ff"
+  },
+  {
+    "title": "Not All Symbols Are Equal: Importance-Aware Constellation Design for Semantic Communication",
+    "url": "https://arxiv.org/pdf/2605.14940v1",
+    "source": "ArXiv",
+    "date": "2026-05-14",
+    "abstract": "Semantic communication systems for goal-oriented transmission must protect task-relevant information not only through source compression but also via physical layer mapping. Existing approaches decouple constellation design and semantic encoding, exposing critical symbols to channel errors at the same rate as irrelevant ones. Contrary to this, in this paper, a joint semantic-physical layer framework is proposed, which is composed of a vector quantized-variational autoencoder that extracts discrete latent concepts, a semantic criticality indicator (SCI) that scores each concept by task relevance, and a deep reinforcement learning agent that dynamically selects the transmission subset based on instantaneous channel conditions. At the physical layer, a learned semantic-aware M -QAM constellation assigns symbol positions according to joint co-occurrence statistics and SCI scores, departing from the uniform spacing and Gray coding of standard M -QAM which minimizes average BER without regard for semantic content. We introduce a novel semantic symbol vulnerability (SSV) metric and a semantic protection probability (SPP) to quantify the exposure of task-critical symbols to decoding errors, and prove that any Gray-coded constellation is strictly suboptimal in SCI-Weighted SSV whenever the source exhibits non-uniform semantic importance and co-occurrence statistics. Simulation results demonstrate that the proposed constellation achieves near 100% SPP across modulation orders from 4-QAM to 1024-QAM versus 50% for standard constellations at high spectral efficiency, a 21:1 compression ratio with semantic quality above 0.9, generalizing across MNIST, Fashion-MNIST, and FSDD without modification.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出联合语义-物理层框架，使用矢量量化变分自编码器提取离散潜在概念，语义关键性指标评分任务相关性，深度强化学习根据信道条件动态选择传输子集，并设计语义感知M-QAM星座，根据共现统计和SCI分数分配符号位置，偏离标准M-QAM的均匀间隔和格雷编码。引入语义符号脆弱性和语义保护概率量化关键符号暴露。虽涉及强化学习，但主要针对通信系统语义编码，与金融量化交易无直接关联，无明显实战指导价值，故评6分。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_69d47a63"
+  },
+  {
+    "title": "Fully Dynamic Rebalancing in Dockless Bike-Sharing Systems via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2605.14501v1",
+    "source": "ArXiv",
+    "date": "2026-05-14",
+    "abstract": "This paper proposes a fully dynamic Deep Reinforcement Learning (DRL) method for rebalancing dockless bike-sharing systems, overcoming the limitations of periodic, system-wide interventions. We model the service through a graph-based simulator and cast rebalancing as a Markov decision process. A DRL agent routes a single truck in real time, executing localized pick-up, drop-off, and charging actions guided by spatiotemporal criticality scores. Experiments on real-world data show significant reductions in availability failures with a minimal fleet size, while limiting spatial inequality and mobility deserts. Our approach demonstrates the value of learning-based rebalancing for efficient and reliable shared micromobility.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出基于深度强化学习的无桩共享单车系统动态重平衡方法，通过图模拟器建模，将重平衡问题转化为马尔可夫决策过程，DRL代理实时调度单辆卡车执行局部操作。实验表明能显著降低可用性故障并减少空间不平等。对实战交易价值中等，因核心是运营优化而非直接金融交易，但DRL方法可借鉴于动态策略交易。评分6分。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_d4d389e4"
+  },
+  {
+    "title": "Synthetic American Option Pricing via Jump-HMM-Driven Heston Implied Volatility",
+    "url": "https://arxiv.org/pdf/2605.13998v1",
+    "source": "ArXiv",
+    "date": "2026-05-13",
+    "abstract": "Generating realistic synthetic option prices requires implied volatility as an input, yet implied volatility is itself derived from observed option prices, creating a circular dependency that limits synthetic data for machine-learning and risk-analysis applications. We break this circularity with a pipeline in which implied volatility emerges as an output of a structural model of equity returns. A Jump Hidden Markov Model produces multi-asset price paths with realistic stylized facts and cross-asset tail dependence; a modified Heston variance process, whose mean-reversion target depends on regime state, days to expiration, moneyness, and a market-mood indicator, converts those paths into implied-volatility paths; and a recombining binomial lattice prices American options from the resulting surface. Initializing variance at its mean-reversion target for each strike-expiration pair lets smile, skew, and term structure emerge without external calibration. We calibrate the shape function through a hierarchy spanning a parametric baseline, a globally shared neural surrogate, and a sector-specific neural surrogate fit to a multi-ticker, multi-sector option ladder. A temporal holdout on a multi-day capture isolated scheduled corporate events as the dominant source of test-time generalization error, and calendar-derived earnings-distance and same-sector peer-coupling features recovered the anticipatory portion of that signal. We then apply the framework as a synthetic-data generator on real near-the-money put and call contracts, forward-simulating price paths, and recovering path-conditional implied volatility, finite-difference American Greeks, and terminal short-premium profit and loss from one coherent simulation, and confirm cross-ticker robustness by re-running on a second underlying from a different sector and volatility regime. The framework is released as an open-source Julia package.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出一种生成合成期权价格的方法，通过跳跃-HMM驱动赫斯顿隐含波动率模型，打破隐含波动率与期权价格之间的循环依赖。模型生成具有真实统计特征的多资产价格路径，并利用修正的赫斯顿方差过程转换得到隐含波动率表面，从而定价美式期权。虽然涉及机器学习（神经代理）和实际应用（合成数据），但核心更偏向定价模型创新，而非直接提供交易信号或策略，实战价值中等。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_897f0630"
+  },
+  {
+    "title": "Interoperability Effects: Extending DeFi Lending Risk Models to Multi-Chain Environments",
+    "url": "https://arxiv.org/pdf/2605.12508v1",
+    "source": "ArXiv",
+    "date": "2026-03-23",
+    "abstract": "On-chain lending has expanded across multiple distributed ledgers as DeFi becomes increasingly multi-chain. This environment introduces novel technical and financial mechanisms, particularly cross-blockchain communication and asset transfer protocols, yet cross-chain elements remain understudied in lending protocol risk management. To address this gap, we applied panel regression fixed effects and OLS models to empirically analyze cross-blockchain interoperability solutions, using TVL and total revenue as performance proxies from October 2022 to January 2025. Our data set covers 15 decentralized lending protocols and 53 cross-chain bridges across 9 EVM-compatible blockchains, categorized as Ethereum, alternative layer-1s, and Ethereum layer-2 networks. Results reveal that cross-chain activity impacts on protocol performance. Bridge volume emerges as a critical driver, exerts a significant effect on TVL and revenue across different categories, though the direction of this effect varies heterogeneously. Increased bridge integrations are associated with decreased TVL and protocol revenue across categories, indicating liquidity escapes from those lending ecosystems. Liquidations produce heterogeneous effects across categories. New network launches do not have as significant relationships with TVL and revenue while bridge hacks show a significant and positive relationship. High R-squared values confirm meaningful explanatory power. We further show Ethereum attracts large depositors, while layer-2s skew toward retail participation. We conclude that effective DeFi risk models should incorporate cross-chain metrics and adopt a layer-aware approach to accurately reflect the evolving multi-chain landscape.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "论文研究了多链环境下DeFi借贷协议的风险模型，通过面板回归分析跨链活动对TVL和收入的影响。发现跨链桥交易量是关键驱动因素，但增加桥集成可能导致流动性外流和TVL下降。提供了跨链风险管理的实证见解，对实战交易有一定的参考价值，但更侧重于风险模型而非直接交易策略。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_e7808cd7"
+  },
+  {
+    "title": "Multi-regime Markov-switching models with time-varying transition probabilities: An application to U.S. Treasury yields",
+    "url": "https://arxiv.org/pdf/2605.14976v1",
+    "source": "ArXiv",
+    "date": "2026-05-14",
+    "abstract": "This paper studies Markov-switching (MS) models with time-varying transition probabilities (TVTP) under various specifications of the transition probability matrix. Especially, we extend the two-regime common-variance setting of the Generalized Autoregressive Score (GAS) model from (Bazzi et al., 2017) to the general $K$-regime case with regime-specific means and variances. Our study contains comprehensive Monte Carlo simulations and we developed an open-source R package, \\texttt{multiregimeTVTP}, for data simulation and parameter estimation. We find that the regime means, variances, and transition probabilities are reliably recovered, whereas the TVTP driving coefficients are harder to identify. Another finding from our paper is that the GAS score coefficient appears to be statistically non-identifiable, due to a ridge in the joint likelihood surface $(σ^2,A)$. In addition, we find that one-step point forecasts are remarkably robust to TVTP misspecification, but filtered regime probabilities are not, so correct specification matters most for characterizing regime dynamics rather than short-horizon forecasting. An empirical application to U.S. Treasury zero-coupon yield changes at four maturities (1961-2024) shows that an exogenous specification driven by the lagged yield level dominates the constant and lagged-change models in fit, while the GAS specification fails to converge, with $\\hat{A}$ collapsing to zero, reflecting the same identifiability issue observed in simulation.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究具有时变转移概率的多区制马尔可夫切换模型，并扩展了GAS模型。蒙特卡洛模拟表明，区制均值和方差可可靠恢复，但转移概率驱动系数和GAS得分系数难以识别。一步点预测对TVTP误设稳健，但滤波区制概率敏感。应用于美国国债收益率变化。论文偏理论，实战价值有限，不涉及高频或机器学习策略。",
+    "fetch_date": "2026-05-16",
+    "id": "20260516_edfda956"
+  },
+  {
     "title": "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction",
     "url": "https://arxiv.org/pdf/2605.13407v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本文研究了在大型投资组合中，环境、社会和治理（ESG）约束对正则化均值-方差（MV）投资组合优化问题的影响。通过推导样本外（OOS）夏普比率（SR）的渐近结果，量化了ESG约束以及资产ESG得分样本均值估计误差的影响。基于随机矩阵理论，建立了夏普比率估计量的渐近性质，并通过模拟验证其性能接近理论最优水平。此外，数值研究了不同正则化矩阵形式对OOS SR的影响，为实际应用提供指导，并提出了基于OOS SR估计的自适应正则化投资组合。",
     "fetch_date": "2026-02-18",
     "id": "20260218_6717b6c9"
-  },
-  {
-    "title": "Application of Quasi Monte Carlo and Global Sensitivity Analysis to Option Pricing and Greeks",
-    "url": "https://arxiv.org/pdf/2602.14354v1",
-    "source": "ArXiv",
-    "date": "2026-02-16",
-    "abstract": "Quasi Monte Carlo (QMC) and Global Sensitivity Analysis (GSA) techniques are applied for pricing and hedging representative financial instruments of increasing complexity. We compare standard Monte Carlo (MC) vs QMC results using Sobol' low discrepancy sequences, different sampling strategies, and various analyses of performance. We find that QMC outperforms MC in most cases, including the highest-dimensional simulations, showing faster and more stable convergence. Regarding greeks computation, we compare standard approaches, based on finite differences (FD) approximations, with adjoint methods (AAD) providing evidences that, when the number of greeks is small, the FD approach combined with QMC can lead to the same accuracy as AAD, thanks to increased convergence rate and stability, thus saving a lot of implementation effort while keeping low computational cost. Using GSA, we are able to fully explain our findings in terms of reduced effective dimension of QMC simulation, allowed in most cases, but not always, by Brownian Bridge discretization or PCA construction. We conclude that, beyond pricing, QMC is a very effcient technique also for computing risk measures, greeks in particular, as it allows to reduce the computational effort of high dimensional Monte Carlo simulations typical of modern risk management.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文探讨了准蒙特卡洛（QMC）和全局敏感性分析（GSA）在期权定价和希腊值计算中的应用。研究发现，QMC在大多数情况下（包括高维模拟）优于标准蒙特卡洛（MC），具有更快、更稳定的收敛性。对于希腊值计算，当希腊值数量较少时，基于有限差分（FD）近似的方法与QMC结合可以达到与伴随方法（AAD）相同的精度，同时节省实现工作量并保持较低计算成本。GSA分析表明，QMC的优越性源于其有效维度的降低，这通常（但非总是）通过布朗桥离散化或PCA构造实现。结论指出，QMC不仅是高效的定价技术，也适用于计算风险度量（尤其是希腊值）。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_cd0bd156"
-  },
-  {
-    "title": "Constrained Portfolio Optimization via Quantum Approximate Optimization Algorithm (QAOA) with XY-Mixers and Trotterized Initialization: A Hybrid Approach for Direct Indexing",
-    "url": "https://arxiv.org/pdf/2602.14827v1",
-    "source": "ArXiv",
-    "date": "2026-02-16",
-    "abstract": "Portfolio optimization under strict cardinality constraints is a combinatorial challenge that defies classical convex optimization techniques, particularly in the context of \"Direct Indexing\" and ESG-constrained mandates. In the Noisy Intermediate-Scale Quantum (NISQ) era, the Quantum Approximate Optimization Algorithm (QAOA) offers a promising hybrid approach. However, standard QAOA implementations utilizing transverse field mixers often fail to strictly enforce hard constraints, necessitating soft penalties that distort the energy landscape. This paper presents a comprehensive analysis of a constraint-preserving QAOA formulation against Simulated Annealing (SA) and Hierarchical Risk Parity (HRP). We implement a specific QAOA ansatz utilizing a Dicke state initialization and an XY-mixer Hamiltonian that strictly preserves the Hamming weight of the solution, ensuring only valid portfolios of size K are explored. Furthermore, we introduce a Trotterized parameter initialization schedule inspired by adiabatic quantum computing to mitigate the \"Barren Plateau\" problem. Backtesting on a basket of 10 US equities over 2025 reveals that our QAOA approach achieves a Sharpe Ratio of 1.81, significantly outperforming Simulated Annealing (1.31) and HRP (0.98). We further analyze the operational implications of the algorithm's high turnover (76.8%), discussing the trade-offs between theoretical optimality and implementation costs in institutional settings.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了一种用于严格基数约束下投资组合优化的混合量子-经典方法，在NISQ时代利用量子近似优化算法（QAOA）配合XY混合器和Trotterized初始化，以解决直接指数化和ESG约束任务中的组合挑战。通过Dicke态初始化和严格保持汉明权重的XY混合器哈密顿量，确保仅探索规模为K的有效投资组合。与模拟退火（SA）和分层风险平价（HRP）的对比分析显示，在2025年10只美国股票的回测中，该方法实现了1.81的夏普比率。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_39b29fcf"
-  },
-  {
-    "title": "Information-Theoretic Approach to Financial Market Modelling",
-    "url": "https://arxiv.org/pdf/2602.14575v1",
-    "source": "ArXiv",
-    "date": "2026-02-16",
-    "abstract": "The paper treats the financial market as a communication system, using four information-theoretic assumptions to derive an idealized model with only one parameter. State variables are scalar stationary diffusions. The model minimizes the surprisal of the market and the Kullback-Leibler divergence between the benchmark-neutral pricing measure and the real-world probability measure. The state variables, their sums, and the growth optimal portfolio of the stocks evolve as squared radial Ornstein-Uhlenbeck processes in respective activity times.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文将金融市场视为通信系统，运用四个信息论假设推导出仅含一个参数的理想化模型。状态变量为标量平稳扩散过程。模型最小化市场惊奇度以及基准中性定价测度与现实世界概率测度之间的Kullback-Leibler散度。状态变量、其和以及股票的最优增长投资组合在各自的活动时间内演化为平方径向Ornstein-Uhlenbeck过程。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_53e2a027"
-  },
-  {
-    "title": "Hidden Risks and Optionalities in American Options",
-    "url": "https://arxiv.org/pdf/2602.14350v1",
-    "source": "ArXiv",
-    "date": "2026-02-15",
-    "abstract": "We develop a practical framework for identifying and quantifying the hidden layers of risks and optionality embedded in American options by introducing stochasticity into one or more of their underlying determinants. The heuristic approach remedies the problems of conventional pricing systems, which treat some key inputs deterministically, hence systematically underestimate the flexibility and convexity inherent in early-exercise features.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文通过引入随机性到美式期权的一个或多个基础决定因素中，开发了一个识别和量化美式期权中隐含风险与选择权层次的实用框架。这种启发式方法弥补了传统定价系统的缺陷，后者将某些关键输入视为确定性，从而系统性低估了提前行权特性固有的灵活性与凸性。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_f8cc43a2"
-  },
-  {
-    "title": "Merton's Problem with Recursive Perturbed Utility",
-    "url": "https://arxiv.org/pdf/2602.13544v1",
-    "source": "ArXiv",
-    "date": "2026-02-14",
-    "abstract": "The classical Merton investment problem predicts deterministic, state-dependent portfolio rules; however, laboratory and field evidence suggests that individuals often prefer randomized decisions leading to stochastic and noisy choices. Fudenberg et al. (2015) develop the additive perturbed utility theory to explain the preference for randomization in the static setting, which, however, becomes ill-posed or intractable in the dynamic setting. We introduce the recursive perturbed utility (RPU), a special stochastic differential utility that incorporates an entropy-based preference for randomization into a recursive aggregator. RPU endogenizes the intertemporal trade-off between utilities from randomization and bequest via a discounting term dependent on past accumulated randomization, thereby avoiding excessive randomization and yielding a well-posed problem. In a general Markovian incomplete market with CRRA preferences, we prove that the RPU-optimal portfolio policy (in terms of the risk exposure ratio) is Gaussian and can be expressed in closed form, independent of wealth. Its variance is inversely proportional to risk aversion and stock volatility, while its mean is based on the solution to a partial differential equation. Moreover, the mean is the sum of a myopic term and an intertemporal hedging term (against market incompleteness) that intertwines with policy randomization. Finally, we carry out an asymptotic expansion in terms of the perturbed utility weight to show that the optimal mean policy deviates from the classical Merton policy at first order, while the associated relative wealth loss is of a higher order, quantifying the financial cost of the preference for randomization.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文在经典Merton投资问题中引入了递归扰动效用（RPU），这是一种特殊的随机微分效用，通过基于熵的随机化偏好递归聚合器，将个体对随机决策的偏好内生化。在具有CRRA偏好的不完全市场中，RPU最优投资组合策略（以风险暴露比表示）呈高斯分布，具有闭式解且独立于财富。其方差与风险厌恶系数和股票波动率成反比，均值则基于随机化积累的历史折扣项，避免了过度随机化。该研究主要贡献在于理论建模和解析解推导，为理解动态随机决策偏好提供了理论框架，但未涉及实际市场数据验证或交易策略实施，对实战交易的直接指导价值有限。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_adcf061c"
-  },
-  {
-    "title": "LemonadeBench: Evaluating the Economic Intuition of Large Language Models in Simple Markets",
-    "url": "https://arxiv.org/pdf/2602.13209v1",
-    "source": "ArXiv",
-    "date": "2026-01-14",
-    "abstract": "We introduce LemonadeBench v0.5, a minimal benchmark for evaluating economic intuition, long-term planning, and decision-making under uncertainty in large language models (LLMs) through a simulated lemonade stand business. Models must manage inventory with expiring goods, set prices, choose operating hours, and maximize profit over a 30-day period-tasks that any small business owner faces daily. All models demonstrate meaningful economic agency by achieving profitability, with performance scaling dramatically by sophistication-from basic models earning minimal profits to frontier models capturing 70% of theoretical optimal, a greater than 10x improvement. Yet our decomposition of business efficiency across six dimensions reveals a consistent pattern: models achieve local rather than global optimization, excelling in select areas while exhibiting surprising blind spots elsewhere.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文《LemonadeBench：在简单市场中评估大语言模型的经济直觉》引入了一个通过模拟柠檬水摊位业务来评估大语言模型经济直觉、长期规划和不确定性下决策能力的最小化基准。模型需要管理易腐库存、设定价格、选择营业时间，并在30天内最大化利润——这些都是小企业主日常面临的任务。所有模型都通过实现盈利展示了有意义的经济代理能力，性能随模型复杂度显著提升，从基本模型获得最低利润到前沿模型达到理论最优值的70%，提升超过10倍。然而，我们对六个维度的业务效率分解揭示了一致模式：模型实现的是局部而非全局优化，在某些领域表现出色，而在其他方面存在令人惊讶的盲点。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_ebc3d8dd"
   }
 ]
