@@ -1,5 +1,53 @@
 [
   {
+    "title": "From Feedback Loops to Policy Updates: Reinforcement Fine-Tuning for LLM-Based Alpha Factor Discovery",
+    "url": "https://arxiv.org/pdf/2605.15412v1",
+    "source": "ArXiv",
+    "date": "2026-05-14",
+    "abstract": "Modern quantitative trading increasingly relies on systematic models to extract predictive signals from large-scale financial data, where alpha factor discovery plays a central role in transforming market observations into tradable signals. Recent LLM-based methods have shown promise in automating factor generation, but most of them still rely on prompt-level generation--evaluation--feedback loops for iterative optimization. As the loop becomes longer, repeatedly appended historical candidates and feedback can cause context explosion, increase inference cost, dilute useful information, and introduce feedback drift. Moreover, these methods often depend on very large LLMs whose stable generation preferences may lead to structurally similar expressions, redundant candidates, and search stagnation. To address these limitations, we propose \\textsc{QuantEvolver}, a self-evolving alpha factor discovery framework based on reinforcement fine-tuning. Instead of accumulating feedback in the prompt, \\textsc{QuantEvolver} converts executable quantitative evaluation into policy updates, enabling a Miner LLM to internalize historical optimization experience through parameter learning. Specifically, \\textsc{QuantEvolver} constructs high-quality seed factors, builds diverse seed--time-window training tasks, generates executable Factor DSL expressions, evaluates them through Regime Backtest, and optimizes the Miner LLM with Diversity-Complementarity Reward. During training, high-quality factors are continuously accumulated in a Mined Factor Database, which serves as the final discovered factor library. Extensive experiments on three realistic market benchmarks demonstrate the effectiveness of \\textsc{QuantEvolver}, which consistently improves the primary evaluation metric of each task over existing LLM-based alpha factor discovery baselines, produces higher-quality and more complementary factor pools.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "论文提出QuantEvolver框架，利用强化微调（RL）优化LLM生成Alpha因子，解决传统提示循环的上下文爆炸和搜索停滞问题。通过策略更新内化历史优化经验，提升因子发现效率，对实战交易中的自动化因子挖掘有直接应用价值。",
+    "fetch_date": "2026-05-19",
+    "id": "20260519_39510b6e"
+  },
+  {
+    "title": "The Privacy Subsidy: Kyle's $λ$ under Noise-Perturbed Order-Flow Observation",
+    "url": "https://arxiv.org/pdf/2605.15746v1",
+    "source": "ArXiv",
+    "date": "2026-05-15",
+    "abstract": "Privacy-preserving cryptocurrency exchanges (shielded AMMs, batched swap auctions, sealed-bid order-flow auctions) alter what the pricing mechanism observes about order flow. We derive the unique linear Kyle equilibrium when a committed Bayesian market maker observes order flow perturbed by independent Gaussian privacy noise. The price-impact coefficient and informed-trader strategy both rescale by a single factor in the privacy parameter, and their product is invariant. A welfare decomposition then identifies a closed-form per-period transfer from the protocol's LP pool to traders -- the \"privacy subsidy\", the break-even fee any privacy-aggregated exchange must charge. The result is the single-period closed-form privacy-noise analog of Loss-Versus-Rebalancing (Milionis et al. 2022). The primary application is shielded AMMs with explicit additive-noise injection (e.g., differential privacy); related designs (batched swaps, sealed-bid auctions, oracle-pegged crossings) require separate frameworks that we leave to future work.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文推导了在噪声干扰订单流下的Kyle均衡，提出了隐私补贴的封闭形式，与Loss-Versus-Rebalancing类似。主要应用是屏蔽AMM和差分隐私，但理论性强，实战应用需要额外框架。",
+    "fetch_date": "2026-05-19",
+    "id": "20260519_020c0b66"
+  },
+  {
+    "title": "Clearing in Liability Networks via Sheaves on Directed Hypergraphs",
+    "url": "https://arxiv.org/pdf/2605.15778v1",
+    "source": "ArXiv",
+    "date": "2026-05-15",
+    "abstract": "We associate to a decorated liability network a liability sheaf on a directed hypergraph whose hyperedges separate the distribution of payments from the collection of receipts. Clearing configurations are precisely the global sections of this sheaf, and the global-section object is canonically the equalizer of the identity and a clearing operator $Φ=A\\circ D$ factored into collective distribution $D$ and aggregation $A$; an institution-edge duality identifies it equivalently with the equalizer of the dual operator $D\\circ A$ on the edge side. This identifies liability clearing as a finite-limit construction in the ambient data category. The construction is functorial under change of coefficient category: a Clearing Invariance Theorem shows that a finite-limit-preserving functor compatible with constraint subobjects induces a canonical isomorphism on global-section objects, enabling uniform comparison of clearing problems across categories of payment data. Existence, uniqueness, and iterative computation of clearing sections are organized by the structure carried on payment objects: Tarski's theorem yields existence and a complete-lattice structure under complete-lattice global elements; Scott continuity refines this to convergent Kleene iteration; an acyclic underlying graph admits a unique clearing section in finitely many steps with no order or metric hypothesis; and Banach's theorem on global elements yields uniqueness under metric contraction. The Eisenberg--Noe model and lattice liability networks arise as special cases.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文通过层论和定向超图对负债网络中的清算过程进行数学建模，将清算配置定义为全局截面，并证明了清算算子的存在性、唯一性和迭代计算。该工作偏向理论数学，与实战交易（如强化学习、深度学习、Alpha策略）无直接关联。尽管清算问题在金融中有应用，但本文的抽象范畴和sheaf构造远离实际交易操作，因此评分为4，表明价值有限但非完全无关。",
+    "fetch_date": "2026-05-19",
+    "id": "20260519_79d00f78"
+  },
+  {
+    "title": "TradeMech: A Method to Multilaterally Net Trades Without Altering Counterparty Exposure",
+    "url": "https://arxiv.org/pdf/2605.15210v1",
+    "source": "ArXiv",
+    "date": "2026-05-03",
+    "abstract": "Financial markets such as bond, derivatives, and repo markets form networks of interdependent obligations. Existing multilateral netting methods typically trade off the extent of netting against preservation of counterparty exposure: central clearing reallocates exposure to a central counterparty, while trade compression may alter bilateral counterparty relationships. TradeMech is a mechanism for markets in which one or two homogeneous fungible objects are traded. The mechanism transforms a network of initial bilateral contracts into chains and cycles, nets the designated object multilaterally on those chains and cycles, and replaces initial contracts with multiparty contracts whose assigned trades remain fractions of the original bilateral trades. The construction achieves maximal multilateral netting of the designated object while preserving each agent's contractual profit and preserving the location of counterparty risk. When a party fails to pre-commit a required object, the affected assigned trade is recovered as a bilateral contract between the same original counterparties and the remaining assigned trades are re-netted on residual chains, so no new counterparty exposure is created.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "TradeMech提出了一种在债券、衍生品和回购市场中实现多边净额结算的方法，在不改变交易对手风险暴露的前提下最大化净额结算。该方法将初始双边合约转化为链和环，并用多方合约替代，保留交易对手风险位置和合约利润。然而，该研究侧重于金融市场基础设施和机制设计，而非实战交易策略或alpha挖掘，对量化交易员的直接交易价值有限。",
+    "fetch_date": "2026-05-19",
+    "id": "20260519_0ec753b5"
+  },
+  {
     "title": "Critic-Driven Voronoi-Quantization for Distilling Deep RL Policies to Explainable Models",
     "url": "https://arxiv.org/pdf/2605.14897v1",
     "source": "ArXiv",
@@ -5950,53 +5998,5 @@
     "summary": "本研究分析了基于Solana的启动平台Pump.fun上代币发行的动态，旨在识别决定代币成功（即通过绑定曲线机制引导初始流动性并最终进入链上市场）的关键因素。通过构建预测模型，以当前锁定在绑定曲线中的Solana数量及一系列解释变量（涵盖发行过程的结构性和行为特征）为条件，预测代币的毕业概率。该研究显著提升了预测能力，为早期市场行为、投机与操纵动态以及基于绑定曲线的代币发行的信息效率提供了洞见。",
     "fetch_date": "2026-02-18",
     "id": "20260218_423f8b71"
-  },
-  {
-    "title": "A-H Premium and the Shanghai-Hong Kong Stock Connect",
-    "url": "https://arxiv.org/pdf/2602.14754v1",
-    "source": "ArXiv",
-    "date": "2026-02-16",
-    "abstract": "This paper examines how the Shanghai-Hong Kong Stock Connect (SHHK) affects the A-H share price premium and whether the policy impact depends on market efficiency. Using monthly data for 67 Shanghai-listed A-H dual-listed firms from January 2011 to May 2019, we estimate a dynamic panel model with two-step system GMM to account for premium persistence and potential endogeneity. Market efficiency is proxied by trading-friction measures derived from daily high-low price ranges. We find that the implementation of SHHK is associated with an average 18.4% increase in the A-H premium. However, this effect is heterogeneous. The marginal policy impact is stronger for firms operating in less efficient markets and weaker for those with higher efficiency, indicating that pre-existing trading frictions condition the policy outcome. We find no significant response at the announcement stage. Placebo tests and alternative efficiency measures confirm the robustness of the efficiency-dependent effect. Overall, the results highlight the role of the information environment in shaping liberalization outcomes.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究了沪港通政策对A-H股价溢价的影响，以及政策效果是否取决于市场效率。使用2011年1月至2019年5月67家沪市A-H双重上市公司的月度数据，通过两步系统GMM动态面板模型控制溢价持续性和内生性问题。市场效率通过每日高低价格区间计算的交易摩擦指标衡量。研究发现：沪港通实施后A-H溢价平均上升18.4%，但效果存在异质性——市场效率较低的公司政策边际影响更强，效率较高的公司影响较弱，表明既有交易摩擦条件调节政策效果。政策宣布阶段未发现显著影响。安慰剂检验和替代效率指标证实了效率依赖效应的稳健性。结论强调信息环境在塑造资本市场开放结果中的作用。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_af08b915"
-  },
-  {
-    "title": "Same Returns, Different Risks: How Cryptocurrency Markets Process Infrastructure vs Regulatory Shocks",
-    "url": "https://arxiv.org/pdf/2602.07046v2",
-    "source": "ArXiv",
-    "date": "2026-02-04",
-    "abstract": "We investigate whether cryptocurrency markets differentiate between infrastructure failures and regulatory enforcement at the return level, complementing a companion conditional variance analysis that finds 5.7 times larger volatility impacts from infrastructure events (p = 0.0008). Using event-level block bootstrap inference on 31 events across Bitcoin, Ethereum, Solana, and Cardano (2019-2025), we find no statistically significant difference in cumulative abnormal returns between infrastructure failures (-7.6%) and regulatory enforcement (-11.1%): the difference of +3.6 pp has p = 0.81 with 95% CI [-25.3%, +30.9%]. This null acquires substantive meaning alongside the companion's highly significant variance result: the same events that produce indistinguishable return responses generate dramatically different volatility signatures. Markets differentiate shock types through the risk channel -- the second moment -- rather than expected returns. The block bootstrap methodology, which resamples entire events to preserve cross-sectional correlation, reveals that prior parametric approaches systematically understate uncertainty by inflating degrees of freedom. Results are robust across eight specifications including permutation tests, leave-one-out analysis, and the Ibragimov-Mueller few-cluster test.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究加密货币市场对基础设施故障与监管冲击的反应差异。通过对比特币、以太坊、Solana和Cardano的31个事件（2019-2025）进行事件级块自助法推断，发现基础设施事件（-7.6%）与监管事件（-11.1%）的累积异常收益无显著差异（p=0.81）。然而，配套的方差分析显示基础设施事件对波动率的影响是监管事件的5.7倍（p=0.0008）。这表明市场通过风险渠道（二阶矩）而非预期收益来区分冲击类型。块自助法显示传统参数方法因夸大自由度而系统性地低估不确定性。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_7b6f2ead"
-  },
-  {
-    "title": "Deep convolutional transformer network for stock movement prediction",
-    "url": "https://www.mdpi.com/2079-9292/13/21/4225",
-    "source": "Scholar",
-    "date": "2026-02-18",
-    "abstract": "… In [64], FDG-trans is built by integrating GRU, LSTM, and multi-head attention Transformers. Both TN and DT are stock prediction models based on the standard Transformer architecture…",
-    "broker": "Google Scholar",
-    "score": 7,
-    "summary": "该论文提出了一种基于深度卷积Transformer网络的股票走势预测模型。文中提到FDG-trans模型整合了GRU、LSTM和多头注意力Transformer机制，而TN和DT则是基于标准Transformer架构的股票预测模型。该研究通过融合多种深度学习组件来提升预测性能，对实战交易中的量化策略开发具有参考价值。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_ec739ba3"
-  },
-  {
-    "title": "Sustainable Investment: ESG Impacts on Large Portfolio",
-    "url": "https://arxiv.org/pdf/2602.14439v1",
-    "source": "ArXiv",
-    "date": "2026-02-16",
-    "abstract": "This paper investigates the impact of environmental, social, and governance (ESG) constraint on a regularized mean-variance (MV) portfolio optimization problem in a large-dimensional setting, in which a positive definite regularization matrix is imposed on the sample covariance matrix. We first derive the asymptotic results for the out-of-sample (OOS) Sharpe ratio (SR) of the proposed portfolio, which help quantify the impact of imposing an ESG-level constraint as well as the effect of estimation error arising from the sample mean estimation of the assets' ESG score. Furthermore, to study the influence of the choices of the regularization matrix, we develop an estimator for the OOS Sharpe ratio. The corresponding asymptotic properties of the Sharpe ratio estimator are established based on random matrix theory. Simulation results show that the proposed estimators perform close to the corresponding oracle level. Moreover, we numerically investigate the impact of various forms of regularization matrices on the OOS SR, which provides useful guidance for practical implementation. Finally, based on OOS SR estimator, we propose an adaptive regularized portfolio which uses the best regularization matrix yielding the highest estimated SR (among a set of candidates) at each decision node. Empirical evidence based on the S\\&P 500 index demonstrates that the proposed adaptive ESG-constrained portfolio achieves a high OOS SR while satisfying the required ESG level, offering a practically effective approach for sustainable investment.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文研究了在大型投资组合中，环境、社会和治理（ESG）约束对正则化均值-方差（MV）投资组合优化问题的影响。通过推导样本外（OOS）夏普比率（SR）的渐近结果，量化了ESG约束以及资产ESG得分样本均值估计误差的影响。基于随机矩阵理论，建立了夏普比率估计量的渐近性质，并通过模拟验证其性能接近理论最优水平。此外，数值研究了不同正则化矩阵形式对OOS SR的影响，为实际应用提供指导，并提出了基于OOS SR估计的自适应正则化投资组合。",
-    "fetch_date": "2026-02-18",
-    "id": "20260218_6717b6c9"
   }
 ]
