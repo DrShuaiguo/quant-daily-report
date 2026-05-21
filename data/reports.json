@@ -1,5 +1,77 @@
 [
   {
+    "title": "Behavior-Consistent Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2605.21214v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "Reinforcement learning (RL) often exhibits high variance across training runs, leading to unreliable performance and posing a major challenge to deployment in real-world domains. In this work, we address the challenge of cross-run policy divergence by formalizing the problem of behavior-consistent RL, where the objective is to obtain policies that are both high-performing and distributionally similar across training runs. Our key observation is that maximum-entropy RL provides a direct mechanism for controlling behavioral divergence by anchoring runs to a common (uniform) prior. We prove that, for Boltzmann policies, choosing the temperature proportional to $Q$-function disagreement bounds the pairwise KL divergence between the induced policies. However, we also show that naïvely increasing entropy might impair policy optimization while amplifying off-policy error. Building upon these observations, we propose $Q$-value Expectile Disagreement (QED), a state-dependent temperature schedule that uses double-critic disagreement as a single-run proxy for cross-run disagreement. Empirically, we demonstrate that across 18 continuous-control tasks, QED reduces across-run divergence by two orders of magnitude without sacrificing performance, resulting in a considerable reduction in return variance at modest sample-efficiency costs.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "该论文提出行为一致性深度强化学习，通过最大熵强化学习控制策略分布差异，并引入Q值期望分位数差异（QED）作为状态依赖的温度调度，减少跨运行策略分歧，提升强化学习在连续控制任务中的稳定性和可靠性，对实战交易中强化学习的部署具有较高价值。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_ee632380"
+  },
+  {
+    "title": "Memory-Induced Supra-Competitive Outcomes Between Deep Reinforcement Learning Agents in Optimal Trade Execution",
+    "url": "https://arxiv.org/pdf/2605.20348v1",
+    "source": "ArXiv",
+    "date": "2026-05-19",
+    "abstract": "In this paper, we investigate whether deep reinforcement-learning agents interacting in a shared optimal-execution environment can sustain supra-competitive outcomes, in the sense of achieving lower implementation shortfalls than the relevant game-theoretical competitive benchmark. We study a two-agent Almgren-Chriss liquidation game and examine how learned behavior depends on intra-episode environment feedback, the ability to interpret the mid-price and the agent's knoledge of the past. We first use ex-ante schedule-learning agents to remove intra-episode feedback and isolate what can arise when agents commit to complete liquidation trajectories before execution begins. We then allow agents to condition on the evolving state using a variety of DDQN architectures. We find that, when agents are given access to intra-episode history, especially recent prices and own past actions, supra-competitive outcomes become substantially more frequent and more persistent. These findings indicate that supra-competitive behavior in this execution game is driven not by multi-agent learning or by current price observation alone, but by feedback, memory, and state-contingent interaction along the realized execution path.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "本文研究深度强化学习代理在最优执行共享环境中的超竞争行为，发现具有记忆（尤其是近期价格和自身历史动作）的代理能更频繁地实现低于纳什均衡的实施缺口，表明记忆和状态条件交互是驱动超竞争结果的关键。实战价值高。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_84037a97"
+  },
+  {
+    "title": "Portfolio Preference Elicitation in Institutional Crossing Markets",
+    "url": "https://arxiv.org/pdf/2605.21409v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "Institutional crossing platforms face a hidden-information problem: investors value trades as portfolios, but liquidity discovery is typically organized around individual securities. We model portfolio crossing as limited-communication preference elicitation over signed portfolio trades. The platform first uses price-directed demand queries to search the portfolio space and then verifies selected packages through value queries; an incumbent verification query records the demand-discovered allocation before further exploration. Final allocations are chosen from elicited reports, so the learning model guides queries but does not determine welfare. The analysis shows why search and verification are complementary. Demand queries locate high-value regions of a nonseparable portfolio space, but they provide only conservative welfare evidence unless selected packages are verified. Value queries provide exact welfare comparisons, but they are ineffective when applied to poorly targeted packages. Market-calibrated experiments using equity panels from the United States, Korea, Japan, and Germany show that demand-only and value-only designs recover only about half of full-information welfare under a limited query budget, whereas the hybrid procedure recovers 88\\% and approaches 95\\% as communication expands. We then compare exact security-level packages with factor-completed basket packages within the same allocation rule. Security-level packages are the unadjusted-efficiency mode when exact-securities disclosure is inexpensive. Factor-completed baskets become preferable when pretrade message informativeness is costly. The results characterize portfolio crossing as a selective verification problem and identify disclosure-sensitive package representation as a core design choice for hidden liquidity platforms.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文研究了机构交叉平台中投资组合偏好揭示问题，提出了结合价格导向需求查询和价值查询的偏好学习方法。通过实验证明，该方法比单独使用需求查询或价值查询能更有效地恢复完整信息福利。对量化交易实战有参考价值，尤其是算法交易和流动性挖掘方面。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_b8fdeee3"
+  },
+  {
+    "title": "The Statistical Significance of the Inclusion of Graph Neural Networks in the Financial Time Series Forecasting Problem",
+    "url": "https://arxiv.org/pdf/2605.21192v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "Forecasting univariate time series in the financial market is a challenging endeavor. While numerous statistical and machine learning models have been introduced to address this challenge, they typically concentrate solely on analyzing temporal patterns within the time series data. In this research, we study the statistical significance of the inclusion of geometric patterns in enhancing forecasting accuracy within the context of time series analysis. We introduce the Time-Geometric model, a combination of models designed to exploit both geometric and temporal patterns. The contribution of this research lies in advancing the domain of univariate time series prediction,as demonstrated through extensive empirical evaluations. Our findings underscore that leveraging geometric patterns, captured through Graph Neural Networks, yields statistically significant improvements in forecasting accuracy.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文针对金融时间序列预测问题，提出融合几何模式（通过图神经网络捕捉）与时间模式的时间几何模型，实证表明显著提升预测精度。对实战交易有参考价值，但需进一步验证策略可执行性。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_a4425cd3"
+  },
+  {
+    "title": "Continuous Timing Signals for Growth-Defensive Style Allocation: Factor Attribution, Risk Matching, and Out-of-Sample Evidence",
+    "url": "https://arxiv.org/pdf/2605.20636v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "This paper studies conditional allocation between a growth/technology ETF basket, denoted by $G$, and a defensive income/value-oriented ETF basket, denoted by $D$. The objective is not to discover a new standalone alpha factor, but to examine whether known style exposures can be dynamically allocated using macro-market timing signals. Fama-French five-factor plus momentum attribution shows that the relative portfolio $G-D$ is a recognizable style portfolio: its market beta is 0.273, its HML beta is -0.552, its momentum beta is 0.117, and its annualized alpha is 1.95\\% with a Newey-West t-statistic of only 0.81. The empirical object is therefore interpreted as a growth-versus-defensive style allocation problem rather than a new return anomaly.\n  The allocation framework replaces discrete regime labels and if-then trading rules with a continuous smooth score. The score combines rate relief, SPY drawdown depth, high-VIX stress relief, and a growth-crowding penalty. Interaction terms are smoothed with softplus functions, the total score is mapped to G/D weights through a hyperbolic tangent function, and realized weights are smoothed with EWMA. In the main aligned comparison window from June 28, 2017 to May 15, 2026, with 10bp transaction costs, the selected smooth-score policy uses a 50\\% maximum active tilt and obtains a 19.24\\% CAGR, a Sharpe ratio of 1.01, and a maximum drawdown of -31.63\\%. It improves over 50/50 G/D, matched TNX-only, matched core-only, SPY, and volatility-matched 100\\% G benchmarks. It does not, however, exceed 100\\% G or the best high-G static portfolios in raw CAGR. Walk-forward and post-2022 validations provide additional evidence of drawdown reduction and risk-adjusted allocation value. Overall, the evidence supports continuous, interpretable style timing, while also showing that high static growth exposure remains a strong benchmark.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文研究基于宏观市场时机信号在成长型/科技ETF组合与防御型/价值ETF组合之间进行动态配置，提出了一个连续的平滑得分函数取代传统的离散规则分配框架。论文包含因子归因、风险匹配和样本外证据，对实战交易具有一定的参考价值，但更偏向策略研究而非直接可用的高alpha因子。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_fae825a8"
+  },
+  {
+    "title": "Wartime Controls, Political Connections, and the Pricing of Zaibatsu Rents in Japan, 1930-1943",
+    "url": "https://arxiv.org/pdf/2605.21009v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "This paper examines how wartime economic controls shaped stock-price formation in Japan from 1930 to 1943. We develop a four-portfolio asset-pricing model in which zaibatsu affiliation affects expected payoffs and the translation of valuations into economic scale through lower financing wedges. We then construct daily capitalization-weighted indices and four benchmark portfolios based on a two-by-two sort by zaibatsu affiliation and military orientation. Using a CAPM-AR(p)-SV event-study framework that allows for serial correlation and stochastic volatility, we show that the model rationalizes capitalization concentration, segmented abnormal returns, delayed cumulative adjustment, regime-risk insulation of zaibatsu portfolios, and zaibatsu-concentrated responses to embedded-rent or group-continuation shocks. The evidence is consistent not with a collapse of semi-strong efficiency, but with institutionally contingent efficiency: stock prices continued to respond to news while capitalizing uneven access to credit, materials, and procurement.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "研究了1930-1943年日本战时经济管制下股票价格形成机制，建立四投资组合资产定价模型，分析财阀关联和军事导向对股票回报的影响。发现股票市场在制度约束下仍保持效率，定价反映信贷、物资和采购的不平等获取。对实战交易价值有限，主要贡献在于历史制度分析，而非直接交易策略。",
+    "fetch_date": "2026-05-22",
+    "id": "20260522_46c7cce7"
+  },
+  {
     "title": "Target-Aligned Reinforcement Learning",
     "url": "https://arxiv.org/pdf/2603.29501v2",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本研究识别并量化了SEC Form 144披露制度中一个重要的信息摩擦，称为预测脱钩。文章基于福利经济学理论，论证了当前报告倒置（交易执行Form 4经常先于意向公开通知Form 144）通过诱导非对称定价，违反了帕累托效率条件。利用意向出售窗口的事件研究框架，分析了内部人士提交拟出售通知但未在法定90天内执行的情况。机器学习审计揭示了52.4%的持续不透明率，其中中止信号在统计上与常规执行无法区分，形成了结构性信息天花板，阻止市场耗尽信号的信息内容。与传统的小公司效应相反，研究记录了大市值公司显著性悖论：虽然小市值组合产生更高的绝对异常收益（32.21个基点），但统计显著的阿尔法集中在大市值公司（14.49个基点，p=0.021）。",
     "fetch_date": "2026-02-24",
     "id": "20260224_e76f582d"
-  },
-  {
-    "title": "StockNet: Automatic Stock Prediction Using LSTM and Transformer Structures",
-    "url": "https://ieeexplore.ieee.org/abstract/document/10675296/",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… of stock prediction and introduce a stock prediction model based on LSTM and Transformer. By … and accuracy in the field of stock prediction through experiments. We believe that the …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "StockNet：基于LSTM和Transformer结构的自动股票预测模型。该论文提出了一种结合LSTM和Transformer的股票预测模型，通过实验验证了其在股票预测领域的有效性和准确性。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_f0bf8728"
-  },
-  {
-    "title": "PREDICTING MIDCAP STOCK TRENDS USING TRANSFORMER-BASED MODELS: AN EMPIRICAL ANALYSIS OF THE INDIAN STOCK MARKET (2015-2025 …",
-    "url": "https://journalinformetrics.com/wp-content/uploads/2025/08/15-JOI2345.pdf",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… analysis of transformer-based models for Indian midcap stock prediction reveal several … The Enhanced Transformer with Attention mechanism has emerged as the leading model …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文通过实证分析（2015-2025年）研究基于Transformer的模型在印度中盘股趋势预测中的应用。研究发现，增强型Transformer结合注意力机制成为领先模型，对实战交易具有较高价值，尤其适用于深度学习驱动的量化策略。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_3b2dba85"
-  },
-  {
-    "title": "Stock Market Trend Prediction Using Transformer-Based Reinforcement Learning",
-    "url": "https://ieeexplore.ieee.org/abstract/document/11118296/",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… Research focusing on stock prediction through Transformer models and reinforcement learning approaches gained strong interest throughout the previous decade. Research …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文探讨了基于Transformer模型与强化学习方法进行股票市场趋势预测的研究。在过去十年中，这类结合Transformer与强化学习进行股票预测的研究获得了广泛关注。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_6de13641"
-  },
-  {
-    "title": "Galformer: a transformer with generative decoding and a hybrid loss function for multi-step stock market index prediction",
-    "url": "https://www.nature.com/articles/s41598-024-72045-3",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… models were compared for stock prediction, with LSTM proving to … deep learning frameworks for stock prediction, including … deep learning architecture called Transformer 13 . In contrast …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文提出了一种名为Galformer的Transformer架构，结合了生成式解码和混合损失函数，用于多步股市指数预测。研究比较了包括LSTM在内的多种深度学习模型在股票预测上的表现，并探讨了Transformer等深度学习框架在金融预测中的应用。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_2d4c34f2"
-  },
-  {
-    "title": "Improvement Stock Price Forecasting with a Hybrid Long Short-Term Memory (LSTM) and Transformer Model",
-    "url": "https://ieeexplore.ieee.org/abstract/document/11292442/",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… data efficiency and the Transformer's attention mechanism to … This study proposes a hybrid LSTM-Transformer model to … -term temporal patterns and the Transformer's ability to prioritize …",
-    "broker": "Google Scholar",
-    "score": 7,
-    "summary": "本研究提出了一种混合LSTM-Transformer模型，结合LSTM的数据效率和Transformer的注意力机制，旨在提升股价预测性能。该模型利用LSTM捕捉长期时间模式，并通过Transformer的注意力机制优先处理关键信息，为实战交易提供了潜在的预测工具。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_659675b3"
-  },
-  {
-    "title": "Entropy-regularized penalization schemes for American options and reflected BSDEs with singular generators",
-    "url": "https://arxiv.org/pdf/2602.18078v1",
-    "source": "ArXiv",
-    "date": "2026-02-20",
-    "abstract": "This paper extends our previous work in Chee et al. [9] to continuous-time optimal stopping problems, with a particular focus on American options within an exploratory framework. We pursue two main objectives. First, motivated by reinforcement learning applications, we introduce an entropy-regularized penalization scheme for continuous-time optimal stopping problems. The scheme is inspired by classical penalization techniques for reflected backward stochastic differential equations (RBSDEs) and provides a smooth approximation of the degenerate stopping rule inherent to the American option problem. This regularization promotes exploration, enables the use of gradient-based optimization methods, and leads naturally to policy improvement algorithms. We establish well-posedness and convergence properties of the scheme, and illustrate its numerical feasibility through low-dimensional experiments based on policy iteration and least-squares Monte Carlo methods. Second, from a theoretical perspective, we study the asymptotic limit of the entropy-regularized penalization as the penalization parameter tends to infinity. We show that the limiting value process solves a reflected BSDE with a logarithmically singular driver, and we prove existence and uniqueness of solutions to this new class of RBSDEs via a monotone limit argument. To the best of our knowledge, such equations have not previously been investigated in the literature",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文扩展了作者先前的工作，将研究聚焦于连续时间最优停止问题，特别是探索性框架下的美式期权。研究有两个主要目标：首先，受强化学习应用启发，提出了一种用于连续时间最优停止问题的熵正则化惩罚方案，该方案受经典反射倒向随机微分方程惩罚技术启发，能平滑逼近美式期权问题中固有的退化停止规则，促进探索、支持基于梯度的优化方法，并自然导向策略改进算法；其次，从理论角度研究了熵正则化惩罚在惩罚参数趋于无穷时的渐近极限，证明极限值过程求解了一个具有特定生成元的反射BSDE。论文通过基于策略迭代和最小二乘蒙特卡洛方法的低维实验展示了数值可行性。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_25a2137f"
   }
 ]
