@@ -1,5 +1,77 @@
 [
   {
+    "title": "Faster Monotone Implied Volatility Solver",
+    "url": "https://arxiv.org/pdf/2605.22427v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "We present ThiopheneIV, a Black-Scholes implied-volatility solver with a monotone core and explicit production guards. Prices are first reduced to Jäckel's out-of-the-money normalisation and inverted through a tail-stable logarithmic price equation. The solver starts from the non-iterative Choi-Huh-Su L3 lower-bound seed and applies three Euler-Chebyshev corrections. In exact arithmetic, the seed is below the admissible root and the Euler-Chebyshev map increases monotonically without overshooting; the proof is included. The implementation then adds the floating-point machinery needed in practice: parity normalisation, microscopic Bachelier-limit handling, saturated-price treatment, finite-update checks, fallback seeds, and an optional Jäckel-Newton polish. Against the highly accurate expanded Jäckel reference price, ThiopheneIV is faster than a Java port of Jäckel's Let's Be Rational while keeping regular-grid errors close. ThiopheneIV+ adds one final Jäckel-Newton correction for systems that need closer agreement with that expanded reference price. The broader lesson is that a convergence proof gives a clean core, but robust production inversion still depends on boundary handling and on the pricing objective one chooses to match.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "论文提出ThiopheneIV，一种布莱克-斯科尔斯隐含波动率求解器，具有单调核心和显式生产防护。通过尾稳定对数价格方程和欧拉-切比雪夫校正实现快速求解，并在浮点运算中处理边界情况。相对于高精度参考价格，速度优于Jäckel的Let's Be Rational方法，且精度接近。为需要更一致精度的系统提供可选的Jäckel-牛顿修正。对实战交易中隐含波动率的快速计算有直接价值。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_7df76d5c"
+  },
+  {
+    "title": "A Generative Adversarial Graph Neural Network for Synthetic Time Series Data",
+    "url": "https://arxiv.org/pdf/2605.22215v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "Generating synthetic data for financial time series poses challenges, especially considering their non-stationary nature. Traditional statistical time series models normally assume weak stationarity. However, this assumption can constrain their effectiveness. Deep learning models, particularly Generative Adversarial Networks (GANs), have exhibited considerable potential in emulating complex probability distributions. GANs employ a generator-discriminator framework, where the generator creates data samples, while the discriminator distinguishes real from generated data. In this research, we introduce the Sig-Graph GAN model, which integrates the time-series signature, offering a structured summary of its temporal evolution; the Long Short-Term Memory network, capturing its inherent autoregressive structure; and Graph Neural Networks (GNNs), leveraging geometric patterns within the time-series data. To employ GNNs optimally, we use the visibility graph algorithm to derive a graph-based representation of the underlying time series. Numerical evaluations demonstrate that the Sig-Graph GAN model outperforms baseline methods in replicating the distribution of logarithmic returns across different stock exchanges. The integration of the graph structure with the autoregressive component effectively captures both geometric and temporal patterns embedded in time-series data. This research advances the field of GAN models for time series by introducing a model capable of leveraging both autoregressive properties and geometric structures for synthetic data generation.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文提出Sig-Graph GAN模型，结合时间序列签名、LSTM和图神经网络生成合成金融时间序列数据。模型通过可见图算法将时间序列转换为图结构，利用GAN框架生成非平稳金融数据的逼真样本。实验显示其在复制对数收益分布上优于基线方法，对数据增强和回测有实战价值。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_feec2b18"
+  },
+  {
+    "title": "What Does Deep Hedging Actually Learn? Delta Corrections, Regime Fragility, and Symbolic Distillation",
+    "url": "https://arxiv.org/pdf/2605.21696v1",
+    "source": "ArXiv",
+    "date": "2026-05-20",
+    "abstract": "This paper studies empirical deep hedging for S&P 500 index options under a local downside-shortfall reward. It moves beyond performance comparison by asking what the learned hedge does, when it fails, and whether it can be made auditable. TD3 agents are compared with a daily-updated Black-Scholes delta hedge on the same option episodes. In walk-forward tests from 2015 to 2023, the agents usually learn a systematic delta haircut relative to Black-Scholes. The correction is explained by spot-implied-volatility co-movement and often improves accumulated reward and terminal downside variance, but it is regime-fragile: 2022 exposes losses in adverse daily states, while 2023 shows that underhedging can raise ordinary variance when option P&L is spot-dominated and the volatility channel is unusually weak. Symbolic regression distills the neural policies into compact formulas that can be traded out of sample; these formulas preserve much of the reward, downside-variance, and CVaR advantage over Black-Scholes, and sometimes sharpen it, but inherit the same fragility in difficult regimes.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文研究标普500指数期权的实际深度对冲，使用局部下行短视奖励的TD3智能体与每日更新的Black-Scholes delta对冲对比。智能体通常学习到相对于BS的系统性delta折扣（即少对冲），该修正由现货与隐含波动率的联动解释，能改善累积奖励和终端下行方差，但存在制度脆弱性：2022年在不利日状态下暴露损失，2023年显示在对冲不足且波动率渠道异常弱时，普通方差上升。符号回归将神经策略提炼为可交易的公式，保留了大部分收益和风险优势，但继承了相同脆弱性。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_0dbe65e6"
+  },
+  {
+    "title": "From Arbitrage Removal to Density Extraction: A Model-Free Framework for Short-Dated Options",
+    "url": "https://arxiv.org/pdf/2605.22792v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "We study risk-neutral density extraction from short-dated option chains. As expiry approaches, option premia decline and bid--ask spreads can be large relative to prices, making mid quotes particularly uninformative. Stale or asynchronous quotes may also generate potential static arbitrages, rendering standard procedures infeasible or unstable. We develop a model-free pipeline that treats bid-ask quotes as the primitive market constraint. The pipeline consists of two steps. First, a procedure called ``Arbitrage Removal Iterative Executable Strategy'' (ARIES) filters executable static arbitrage at quoted bid and ask prices under market-depth constraints. Second, the ``Smooth Entropic Density EXtraction'' (SEDEx) then recovers the density through a criterion leveraging smoothness and entropy under bid-ask constraints. We test the pipeline on synthetic Heston panels and short-dated SPX option data, sampled from a few hours to one week before expiry. Computation is fast and returns robust densities across various market conditions, including scheduled macroeconomic announcements. As an empirical application, we use the recovered densities to construct short dated implied-volatility smiles.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文提出了一种模型无关的框架，通过两步骤（ARIES和SEDEx）从短期限权链中提取风险中性密度，处理了接近到期时期权价差大、静态套利等问题。在合成数据和实际SPX期权数据上测试，计算快速且鲁棒。对实战交易有较高价值，特别是短期限期权定价和波动率曲面构建，但非直接交易策略，故评分7。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_84c26b5e"
+  },
+  {
+    "title": "Multivariate Financial Forecasting using the Chronos Time Series Foundation Models",
+    "url": "https://arxiv.org/pdf/2605.21504v1",
+    "source": "ArXiv",
+    "date": "2026-05-08",
+    "abstract": "Using Chronos-2, an open-source time-series foundation model, we evaluate pretrained time-series models for economic and financial forecasting with an emphasis on whether multivariate (MV) inputs improve accuracy relative to univariate (UV) baselines. The study covers two panels -- the Magnificent-7 equities and U.S. Treasury interest rates -- as well as a combined panel, using rolling monthly evaluations from 2000--2025. We vary input window lengths and forecast horizons and report RMSE and MAPE. Across datasets, MV forecasts consistently outperform UV forecasts, with especially strong gains for interest rates and meaningful improvements for equities. Series-level comparisons show MV improvements in every case, and error dispersion is generally lower under MV inputs. We also provide parameter-heatmap and time-series visualizations. However, mixing time series across equity and interest rate markets reduces forecast accuracy, indicating that adding noisy context degrades model performance. Overall, the results indicate that foundation models can leverage cross-series information to improve forecast accuracy in finance, and that the benefits are strongest when related series are modeled jointly under disciplined rolling protocols. Other than using an open-source foundation model, this paper also showcases how AI may be used for financial research.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "使用Chronos-2时间序列基础模型评估多变量金融预测，发现多变量输入比单变量更准确，尤其在利率和股票序列中。混合序列会降低精度。对多资产预测有参考价值，但未涉及交易信号或收益。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_84439f9f"
+  },
+  {
+    "title": "Imperfect Commitment in Maximal Extractable Value Auctions",
+    "url": "https://arxiv.org/pdf/2605.22667v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "Ethereum block builders run sealed auctions among searchers, but nothing in the protocol forces a builder to honor the auction outcome after observing submitted bundles. This paper studies the commitment problem. We model a builder who defects with probability $\\varepsilon$ and, upon defection, replicates a type-specific fraction $γ(τ)$ of the winning MEV opportunity. Searchers anticipate this behavior and choose between a risky first-price bid and a safe deterrence bid that makes frontrunning unprofitable. The resulting equilibrium is piecewise, with the cost of imperfect commitment depending jointly on replicability and competition. Using the \\texttt{libmev} dataset, we estimate $γ(τ)$ from right-tail bribe plateaus and decompose observed auction revenue against the surplus a defecting builder could capture. The results show sharp heterogeneity across MEV types: sandwich opportunities are already highly competitive, while naked arbitrage and liquidations leave substantially more surplus exposed to builder defection. Credible MEV auctions, therefore, require not only an auction format, but also constraints on the builder's ability to use observed bid and payload information ex post.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文研究MEV拍卖中构建者不完全承诺问题，模型构建者以概率ε违约并复制部分套利机会。通过libmev数据集估计参数γ(τ)，发现不同MEV类型异质性大。对实战交易价值有限，主要为理论分析框架，缺乏具体交易策略或信号。适合了解MEV拍卖机制，但直接可操作性低。",
+    "fetch_date": "2026-05-23",
+    "id": "20260523_a372ed2c"
+  },
+  {
     "title": "Behavior-Consistent Deep Reinforcement Learning",
     "url": "https://arxiv.org/pdf/2605.21214v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "该论文研究利用卫星雷达物理开发信号与新闻文本市场叙事相结合的方法，预测迪拜19个次城区每周房地产价格指数，评估2至34周的预测效果。研究发现：短期（10周内）价格历史数据与多模态配置效果相当；中期（14周后）新闻情绪和卫星雷达数据变得关键；长期（26-34周）完整多模态模型将平均绝对误差从4.48降至2.93（降低35%）。非参数学习器在此数据体系中持续优于深度架构。这些发现为每周次城市房地产价格预测建立了基准。",
     "fetch_date": "2026-02-25",
     "id": "20260225_abe346ed"
-  },
-  {
-    "title": "The impact of class imbalance in logistic regression models for low-default portfolios in credit risk",
-    "url": "https://arxiv.org/pdf/2602.19663v1",
-    "source": "ArXiv",
-    "date": "2026-02-23",
-    "abstract": "In this paper, we study how class imbalance, typical of low-default credit portfolios, affects the performance of logistic regression models. Using a simulation study with controlled data-generating mechanisms, we vary (i) the level of class imbalance and (ii) the strength of association between the predictors and the response. The results show that, for a given strength of association, achievable classification accuracy deteriorates markedly as the event rate decreases, and the optimal classification cut-off shifts with the level of imbalance. In contrast, the Gini coefficient is comparatively stable with respect to class imbalance once sample sizes are sufficiently large, even when classification accuracy is strongly affected. As a practical guideline, we summarise attainable classification performance as a function of the event rate and strength of association between the predictors and the response.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究了低违约信用投资组合中典型的类别不平衡问题对逻辑回归模型性能的影响。通过模拟研究，控制数据生成机制，变化（i）类别不平衡程度和（ii）预测变量与响应变量之间的关联强度。结果表明，对于给定的关联强度，随着事件率降低，可实现的分类准确率显著下降，且最优分类阈值随不平衡程度而变化。相比之下，一旦样本量足够大，基尼系数相对于类别不平衡相对稳定，即使分类准确率受到强烈影响。作为实用指南，我们总结了可达到的分类性能作为事件率及预测变量与响应变量之间关联强度的函数。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_94edd597"
-  },
-  {
-    "title": "Metaorder modelling and identification from public data",
-    "url": "https://arxiv.org/pdf/2602.19590v1",
-    "source": "ArXiv",
-    "date": "2026-02-23",
-    "abstract": "Market-order flow in financial markets exhibits long-range correlations. This is a widely known stylised fact of financial markets. A popular hypothesis for this stylised fact comes from the Lillo-Mike-Farmer (LMF) order-splitting theory. However, quantitative tests of this theory have historically relied on proprietary datasets with trader identifiers, limiting reproducibility and cross-market validation. We show that the LMF theory can be validated using publicly available Johannesburg Stock Exchange (JSE) data by leveraging recently developed methods for reconstructing synthetic metaorders. We demonstrate the validation using 3 years of Transaction and Quote Data (TAQ) for the largest 100 stocks on the JSE when assuming that there are either N=50 or N=150 effective traders managing metaorders in the market.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "金融市场中的市价订单流呈现长程相关性，这是金融市场的一个广为人知的特征事实。对此特征事实的一个流行假说来自Lillo-Mike-Farmer（LMF）订单拆分理论。然而，历史上对该理论的定量检验依赖于包含交易者标识符的专有数据集，限制了可重复性和跨市场验证。我们证明，通过利用最近开发的合成元订单重构方法，可以使用公开可用的约翰内斯堡证券交易所（JSE）数据来验证LMF理论。我们使用JSE上最大的100只股票3年的交易与报价数据（TAQ）进行了验证，假设市场中有N=50或N=150个有效交易者管理元订单。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_ef3fb427"
-  },
-  {
-    "title": "Finite Element Solution of the Two-Dimensional Bates Model for Option Pricing Under Stochastic Volatility and Jumps",
-    "url": "https://arxiv.org/pdf/2602.19092v1",
-    "source": "ArXiv",
-    "date": "2026-02-22",
-    "abstract": "We propose a fourth--order compact finite--difference (HOC--FD) scheme for the transformed Bates partial integro--differential equation (PIDE). The method employs an implicit--explicit (IMEX) Crank--Nicolson framework for local terms and Simpson quadrature for the jump integral. Benchmarks against second--order finite differences (FD) and quadratic finite elements (FEM, p=2) confirm near--fourth--order spatial accuracy for HOC--FD, near--second--order for FEM, and second--order temporal convergence for all time integrators. Efficiency tests show that HOC--FD achieves similar accuracy at up to two orders of magnitude lower runtime than FEM, establishing it as a practical baseline for option pricing under stochastic volatility jump--diffusion models.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出了一种用于求解二维Bates模型（包含随机波动率和跳跃）的期权定价偏积分微分方程的四阶紧致有限差分方案。该方法对局部项采用隐式-显式Crank-Nicolson框架，对跳跃积分采用Simpson求积。与二阶有限差分和二次有限元方法的基准测试表明，该方案具有接近四阶的空间精度和二阶时间收敛性。效率测试显示，在达到相近精度时，该方法的运行时间可比有限元方法低两个数量级，为随机波动率跳跃扩散模型下的期权定价提供了一个实用的基准方案。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_87c29345"
-  },
-  {
-    "title": "Transformer-based reinforcement learning model for optimized quantitative trading",
-    "url": "https://ieeexplore.ieee.org/abstract/document/10605424/",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… -making capabilities of reinforcement learning. We propose a quantitative trading framework that … to predict future stock prices and a reinforcement learning agent to optimize investment …",
-    "broker": "Google Scholar",
-    "score": 9,
-    "summary": "本文提出了一种基于Transformer强化学习的量化交易框架，结合Transformer模型预测未来股价与强化学习智能体优化投资决策，旨在提升量化交易中强化学习的决策能力。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_cc687957"
-  },
-  {
-    "title": "An adaptive quantitative trading strategy optimization framework based on meta reinforcement learning and cognitive game theory: Z. Shen, H. Huang",
-    "url": "https://link.springer.com/article/10.1007/s10489-025-06423-3",
-    "source": "Scholar",
-    "date": "2026-02-24",
-    "abstract": "… seamlessly integrates meta reinforcement learning, cognitive game … to quantitative trading, meta reinforcement learning, and … of adaptive, robust, and high-performing trading strategies. …",
-    "broker": "Google Scholar",
-    "score": 9,
-    "summary": "该论文提出了一种基于元强化学习和认知博弈论的自适应量化交易策略优化框架，将元强化学习、认知博弈论与量化交易无缝集成，旨在开发出适应性强、稳健且高性能的交易策略。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_f7843fc7"
-  },
-  {
-    "title": "The Information Dynamics of Insider Intent: How Reporting Inversions (Form 144) Mask Informational Rents in Insider Sales (Form 4)",
-    "url": "https://arxiv.org/pdf/2602.17890v1",
-    "source": "ArXiv",
-    "date": "2026-02-19",
-    "abstract": "This study identifies and quantifies a significant informational friction embedded in the SEC Form 144 disclosure regime, characterized as predictive decoupling. Drawing on a theoretical foundation of welfare economics, the article argues that the current reporting inversion -- where trade execution (Form 4) frequently precedes the public notice of intent (Form 144) -- violates the conditions for Pareto efficiency by inducing non-symmetric pricing. Utilizing an event-study framework of intent-to-sell windows, the analysis examines cases where insiders file a notice of proposed sale but fail to execute within the statutory 90-day period. The machine learning audit reveals a persistent 52.4 percent opacity rate, where aborted signals remain statistically indistinguishable from routine executions, creating a structural information ceiling that prevents the market from exhausting the signal's informational content. Contrary to the traditional small-firm effect, the study documents a large-cap significance paradox: while small-cap portfolios yield higher absolute abnormal returns (32.21 bps), statistically significant alpha is concentrated in large-cap firms (14.49 bps, $p = 0.021$). The results suggest that Institutional Salience enables more reliable processing of this negative non-event when reputational costs are maximized. Cross-sectional tests confirm that prior idiosyncratic volatility serves as a signal amplifier, with causal estimators identifying an illiquidity jump of up to 2.63 times. To mitigate this market failure, the study proposes a mandatory execution confirmation (Form 144-A) to transition the regime toward bilateral accountability, converting a predictive blind spot into a verifiable data stream and restoring the informational symmetry requisite for efficient capital allocation.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本研究识别并量化了SEC Form 144披露制度中一个重要的信息摩擦，称为预测脱钩。文章基于福利经济学理论，论证了当前报告倒置（交易执行Form 4经常先于意向公开通知Form 144）通过诱导非对称定价，违反了帕累托效率条件。利用意向出售窗口的事件研究框架，分析了内部人士提交拟出售通知但未在法定90天内执行的情况。机器学习审计揭示了52.4%的持续不透明率，其中中止信号在统计上与常规执行无法区分，形成了结构性信息天花板，阻止市场耗尽信号的信息内容。与传统的小公司效应相反，研究记录了大市值公司显著性悖论：虽然小市值组合产生更高的绝对异常收益（32.21个基点），但统计显著的阿尔法集中在大市值公司（14.49个基点，p=0.021）。",
-    "fetch_date": "2026-02-24",
-    "id": "20260224_e76f582d"
   }
 ]
