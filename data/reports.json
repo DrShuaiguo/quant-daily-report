@@ -1,5 +1,17 @@
 [
   {
+    "title": "Algorithmic Trading Systems and Strategies: A New Approach",
+    "url": "https://link.springer.com/content/pdf/10.1007/979-8-8688-0357-4.pdf",
+    "source": "Scholar",
+    "date": "2026-05-25",
+    "abstract": "… , while personally I am interested in algorithmic trading. To bring these two ideas together, I … profitable strategies on its own. At that time, developing such a system for algorithmic trading …",
+    "broker": "Google Scholar",
+    "score": 6,
+    "summary": "论文探讨了将个人对算法交易的兴趣与开发自动化交易系统相结合的方法，提出了一种新的算法交易系统和策略设计。虽然涉及算法交易的实际应用，但摘要未明确提及深度学习、强化学习或Alpha策略，可能更偏向传统方法或理论，因此评分为6分。",
+    "fetch_date": "2026-05-25",
+    "id": "20260525_a0113f8e"
+  },
+  {
     "title": "Faster Monotone Implied Volatility Solver",
     "url": "https://arxiv.org/pdf/2605.22427v1",
     "source": "ArXiv",
@@ -5986,17 +5998,5 @@
     "summary": "深度强化学习系统常因非平稳性（学习目标和数据分布随时间变化）导致训练不稳定。本文证明，在非平稳目标下，各向同性高斯嵌入具有理论优势：能稳定跟踪时变目标（对线性读出器），在固定方差预算下实现最大熵，并促进所有表示维度的平衡使用，从而增强智能体的适应性和稳定性。基于此，作者提出使用草图各向同性高斯正则化在训练中将表示塑造成各向同性高斯分布。实验表明，这种简单且计算成本低的方法能在多种领域提升非平稳性下的性能，同时减少表示崩溃、神经元休眠和训练不稳定性。",
     "fetch_date": "2026-02-25",
     "id": "20260225_2f1d25ef"
-  },
-  {
-    "title": "Sub-City Real Estate Price Index Forecasting at Weekly Horizons Using Satellite Radar and News Sentiment",
-    "url": "https://arxiv.org/pdf/2602.18572v1",
-    "source": "ArXiv",
-    "date": "2026-02-20",
-    "abstract": "Reliable real estate price indicators are typically published at city level and low frequency, limiting their use for neighborhood-scale monitoring and long-horizon planning. We study whether sub-city price indices can be forecasted at weekly frequency by combining physical development signals from satellite radar with market narratives from news text. Using over 350,000 transactions from Dubai Land Department (2015-2025), we construct weekly price indices for 19 sub-city regions and evaluate forecasts from 2 to 34 weeks ahead. Our framework fuses regional transaction history with Sentinel-1 SAR backscatter, news sentiment combining lexical tone and semantic embeddings, and macroeconomic context. Results are strongly horizon dependent: at horizons up to 10 weeks, price history alone matches multimodal configurations, but beyond 14 weeks sentiment and SAR become critical. At long horizons (26-34 weeks), the full multimodal model reduces mean absolute error from 4.48 to 2.93 (35% reduction), with gains statistically significant across regions. Nonparametric learners consistently outperform deep architectures in this data regime. These findings establish benchmarks for weekly sub-city index forecasting and demonstrate that remote sensing and news sentiment materially improve predictability at strategically relevant horizons.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文研究利用卫星雷达物理开发信号与新闻文本市场叙事相结合的方法，预测迪拜19个次城区每周房地产价格指数，评估2至34周的预测效果。研究发现：短期（10周内）价格历史数据与多模态配置效果相当；中期（14周后）新闻情绪和卫星雷达数据变得关键；长期（26-34周）完整多模态模型将平均绝对误差从4.48降至2.93（降低35%）。非参数学习器在此数据体系中持续优于深度架构。这些发现为每周次城市房地产价格预测建立了基准。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_abe346ed"
   }
 ]
