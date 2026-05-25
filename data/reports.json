@@ -1,5 +1,41 @@
 [
   {
+    "title": "MadEvolve: Evolutionary Optimization of Trading Systems with Large Language Models",
+    "url": "https://arxiv.org/pdf/2605.23007v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "We explore the application of LLM-driven algorithm optimization to several common tasks in quantitative finance. MadEvolve, a general-purpose algorithm optimization framework inspired by DeepMind's Alpha-Evolve, was recently developed to optimize algorithms in computational cosmology. Here we demonstrate the utility of MadEvolve to optimize algorithmic trading strategies and alpha generation at the example of Bitcoin trading. On our simulation and backtesting setup, we achieve significant improvements on all tasks we considered, such as evolving feature sets for signal generation, optimizing separate components of the trading strategy, and jointly evolving the feature pipeline together with the execution strategy. Additionally, we compare our method to other agentic search approaches, specifically Claude Code, and carefully evaluate p-hacking probabilities on our simulation setup. Our findings strongly support the utility of AI-driven agentic and evolutionary algorithms for algorithmic trading and quantitative finance.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "本文提出MadEvolve框架，利用LLM驱动的进化优化来改进量化交易系统，在比特币交易中显著提升了特征集生成、交易策略组件优化及特征与执行策略的联合进化。通过与Claude Code对比和p-hacking评估，验证了AI驱动进化算法在实战交易中的有效性。",
+    "fetch_date": "2026-05-26",
+    "id": "20260526_c17eb0f1"
+  },
+  {
+    "title": "Leveraging Large Language Models for Sentiment Analysis: Multi-Modal Analysis of Decentraland's MANA Token",
+    "url": "https://arxiv.org/pdf/2605.20192v1",
+    "source": "ArXiv",
+    "date": "2026-04-04",
+    "abstract": "Decentraland, a decentralized virtual reality platform operating within the expanding Metaverse ecosystem, utilizes its native MANA token to facilitate virtual asset transactions and governance. This study investigates the integration of Discord community sentiment with multi-modal financial data to enhance cryptocurrency price prediction within virtual world economies. We address: (1) identifying sentiment patterns within Decentraland's Discord community, and (2) evaluating the impact of multi-modal features on token return forecasting. Using a BERT-based large language model for sentiment analysis, we develop two LSTM architectures: a baseline incorporating historical prices and a multi-modal variant integrating sentiment scores, trading volume, and market capitalization. Results indicate predominantly neutral community sentiment with a positive skew. The multi-modal model significantly outperforms the price-only baseline in prediction accuracy. These findings demonstrate the predictive value of community-derived signals for virtual economy forecasting and establish a foundation for future research at the intersection of immersive virtual environments, natural language processing, and cryptocurrency market analysis.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文利用BERT模型对Decentraland的Discord社区进行情感分析，并结合价格、交易量、市值等多模态特征，构建LSTM模型预测MANA代币收益率。研究发现多模态模型优于仅用价格数据的基线模型，表明社区情感信号对虚拟经济预测有增量价值。虽然方法直接相关，但应用场景局限于特定代币，且未展示实盘策略或回测，实战价值中等。",
+    "fetch_date": "2026-05-26",
+    "id": "20260526_40ac4ffe"
+  },
+  {
+    "title": "Is TabPFN the Silver Bullet for Insurance Pricing?",
+    "url": "https://arxiv.org/pdf/2605.22892v1",
+    "source": "ArXiv",
+    "date": "2026-05-21",
+    "abstract": "Modelling claim frequency and severity for non-life insurance pricing predominantly relies on generalised linear models, with gradient-boosted machines as the leading machine learning alternative. Tabular foundation models (TFMs) offer a fundamentally different paradigm. By pre-training on large collections of synthetic datasets, TFMs enable inference on new data through in-context learning, without any dataset-specific fitting or hyperparameter tuning. This paper presents a first empirical evaluation of TabPFN for motor insurance pricing, benchmarking it against GLM and XGBoost on two publicly available MTPL datasets. Our results show that TabPFN does not consistently outperform established baselines, exhibits substantially longer inference times, and is sensitive to the size of the in-context training set. While tabular foundation models represent a promising direction, particularly in data-scarce settings, their current formulation does not offer a viable replacement for established actuarial methods.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文实证评估了TabPFN在车险定价中的应用，与GLM和XGBoost对比，发现TabPFN无法持续超越基线，推理时间长，且对上下文训练集大小敏感。结论是目前不是成熟精算方法的可行替代，但在数据稀缺场景有潜力。",
+    "fetch_date": "2026-05-26",
+    "id": "20260526_3a597744"
+  },
+  {
     "title": "Algorithmic Trading Systems and Strategies: A New Approach",
     "url": "https://link.springer.com/content/pdf/10.1007/979-8-8688-0357-4.pdf",
     "source": "Scholar",
@@ -5962,41 +5998,5 @@
     "summary": "ALERA：一种基于熵的LLM多智能体框架，用于量化投资中的动态风险度量。该框架通过整合异构的LLM智能体与四种互补的熵度量指标，旨在提升量化交易的风险量化能力。",
     "fetch_date": "2026-02-25",
     "id": "20260225_0a45068e"
-  },
-  {
-    "title": "Schrödinger bridges with jumps for time series generation",
-    "url": "https://arxiv.org/pdf/2602.20011v1",
-    "source": "ArXiv",
-    "date": "2026-02-23",
-    "abstract": "We study generative modeling for time series using entropic optimal transport and the Schrödinger bridge (SB) framework, with a focus on applications in finance and energy modeling. Extending the diffusion-based approach of Hamdouche, Henry-Labordère, Pham, 2023, we introduce a jump-diffusion Schrödinger bridge model that allows for discontinuities in the generative dynamics. Starting from a Schrödinger bridge entropy minimization problem, we reformulate the task as a stochastic control problem whose solution characterizes the optimal controlled jump-diffusion process. When sampled on a fixed time grid, this process generates synthetic time series matching the joint distributions of the observed data. The model is fully data-driven, as both the drift and the jump intensity are learned directly from the data. We propose practical algorithms for training, sampling, and hyperparameter calibration. Numerical experiments on simulated and real datasets, including financial and energy time series, show that incorporating jumps substantially improves the realism of the generated data, in particular by capturing abrupt movements, heavy tails, and regime changes that diffusion-only models fail to reproduce. Comparisons with state-of-the-art generative models highlight the benefits and limitations of the proposed approach.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究基于熵最优输运和薛定谔桥框架的时间序列生成模型，重点应用于金融和能源建模。扩展了Hamdouche等人2023年的扩散模型方法，引入跳跃-扩散薛定谔桥模型，允许生成动力学中的不连续性。从薛定谔桥熵最小化问题出发，将任务重构为随机控制问题，其解刻画了最优受控跳跃-扩散过程。在固定时间网格上采样时，该过程生成与观测数据联合分布匹配的合成时间序列。模型完全数据驱动，漂移和跳跃强度均直接从数据中学习。提出了训练、采样和超参数校准的实用算法。在模拟和真实数据集（包括金融和能源时间序列）上的数值实验表明，引入跳跃显著提高了生成数据的真实性，特别是能捕捉扩散模型难以处理的突变运动、厚尾分布和状态转换。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_3066cc36"
-  },
-  {
-    "title": "VOLatility Archive for Realized Estimates (VOLARE)",
-    "url": "https://arxiv.org/pdf/2602.19732v1",
-    "source": "ArXiv",
-    "date": "2026-02-23",
-    "abstract": "VOLARE (VOLatility Archive for Realized Estimates - https://volare.unime.it) is an open research infrastructure providing standardized realized volatility and covariance measures constructed from ultra-high-frequency financial data. The platform processes tick-level observations across equities, exchange rates, and futures using an asset-specific pipeline that addresses heterogeneous trading calendars, microstructure noise, and timestamp precision. For equities, price series are cleaned using a documented outlier detection procedure and sampled at regular intervals.\n  VOLARE delivers a comprehensive set of realized estimators, including realized variance, range-based measures, bipower variation, semivariances, realized quarticity, realized kernels, and multivariate covariance measures, ensuring methodological consistency and cross-asset comparability. In addition to bulk dataset download, the platform supports interactive visualization and real-time estimation of established volatility models such as HAR and MEM specifications.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "VOLARE（波动率档案实现估计）是一个开放研究基础设施，提供基于超高频金融数据构建的标准化已实现波动率和协方差度量。该平台通过资产特定管道处理股票、汇率和期货的逐笔观测数据，解决异质交易日历、微观结构噪声和时间戳精度问题。对于股票，价格序列使用文档化的异常值检测程序进行清洗并按固定间隔采样。VOLARE提供全面的已实现估计量，包括已实现方差、基于范围的度量、双幂变差、半方差、已实现四次性、已实现核以及多变量协方差度量，确保方法一致性和跨资产可比性。除了批量数据集下载外，平台还支持交互式可视化和实时估计已建立的波动率模型，如HAR和MEM规范。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_29af6c7a"
-  },
-  {
-    "title": "Stable Deep Reinforcement Learning via Isotropic Gaussian Representations",
-    "url": "https://arxiv.org/pdf/2602.19373v1",
-    "source": "ArXiv",
-    "date": "2026-02-22",
-    "abstract": "Deep reinforcement learning systems often suffer from unstable training dynamics due to non-stationarity, where learning objectives and data distributions evolve over time. We show that under non-stationary targets, isotropic Gaussian embeddings are provably advantageous. In particular, they induce stable tracking of time-varying targets for linear readouts, achieve maximal entropy under a fixed variance budget, and encourage a balanced use of all representational dimensions--all of which enable agents to be more adaptive and stable. Building on this insight, we propose the use of Sketched Isotropic Gaussian Regularization for shaping representations toward an isotropic Gaussian distribution during training. We demonstrate empirically, over a variety of domains, that this simple and computationally inexpensive method improves performance under non-stationarity while reducing representation collapse, neuron dormancy, and training instability.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "深度强化学习系统常因非平稳性（学习目标和数据分布随时间变化）导致训练不稳定。本文证明，在非平稳目标下，各向同性高斯嵌入具有理论优势：能稳定跟踪时变目标（对线性读出器），在固定方差预算下实现最大熵，并促进所有表示维度的平衡使用，从而增强智能体的适应性和稳定性。基于此，作者提出使用草图各向同性高斯正则化在训练中将表示塑造成各向同性高斯分布。实验表明，这种简单且计算成本低的方法能在多种领域提升非平稳性下的性能，同时减少表示崩溃、神经元休眠和训练不稳定性。",
-    "fetch_date": "2026-02-25",
-    "id": "20260225_2f1d25ef"
   }
 ]
