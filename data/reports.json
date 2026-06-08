@@ -1,5 +1,77 @@
 [
   {
+    "title": "Diffusive in plain sight: An inconspicuous law of market impact",
+    "url": "https://arxiv.org/pdf/2606.07059v1",
+    "source": "ArXiv",
+    "date": "2026-06-05",
+    "abstract": "Decomposing impact as the difference between realized and counterfactual returns and requiring both to be diffusive yields an identity that restricts admissible impact scaling at the level of individual participants. This constraint implies the square-root law in the information-neutral regime and a crossover to linear impact under strong informational coupling, consistent with empirical observations. In the weak-coupling regime, cumulative market impact is itself diffusive -- a diagnostic that many propagator and latent liquidity models fail to satisfy.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "将冲击分解为已实现收益与反事实收益之差，并要求两者均为扩散过程，推导出一个约束个体参与者冲击模型的恒等式。该约束在信息中性条件下推出平方根定律，在强信息耦合下过渡到线性冲击，与实证一致。弱耦合下累积市场冲击本身是扩散的，这揭示许多传播子和潜在流动性模型不满足该条件。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_558bb96b"
+  },
+  {
+    "title": "SCALE: Scalable Cross-Attention Learning with Extrapolation for Agentic Workflow Scheduling",
+    "url": "https://arxiv.org/pdf/2606.06820v1",
+    "source": "ArXiv",
+    "date": "2026-06-05",
+    "abstract": "Agentic Large Language Model (LLM) systems decompose complex tasks into workflow Directed Acyclic Graphs (DAGs) whose primitives must be scheduled on heterogeneous clusters. Existing deep reinforcement learning (DRL) schedulers are tied to a fixed cluster size and require retraining whenever the number of servers changes. We propose SCALE (Scalable Cross-Attention Learning with Extrapolation), a DRL scheduler that generalizes to unseen cluster scales without fine-tuning. SCALE employs a cross-attention pointer network where task features query against server features, so the architecture accepts any number of servers by construction. We observe, however, that permutation-invariant architecture alone does not guarantee good performance at new scales - the attention feature undergoes distribution shift as the server count grows. To counter this, we introduce Structured Representation Regularization (SRR): a decorrelation loss combined with a KL penalty toward the standard normal, which keeps feature statistics stable regardless of input size. Trained on 16 nodes and tested directly on 32 and 48 nodes, SCALE reduces average response time by 8.9% at N=48 relative to the same architecture without SRR, confirming that explicit regularization is necessary to close the scale-generalization gap.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "本文提出SCALE，一种基于交叉注意力指针网络的可扩展DRL调度器，通过结构化表示正则化应对分布偏移，并在不同规模集群上泛化，减少平均响应时间8.9%。实战价值高，直接优化LLM工作流调度。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_e838fd9c"
+  },
+  {
+    "title": "PandaAI: A Practical Agent CQ2 for Neuro-symbolic Data Analysis And Integrated Decision-Making in Quantitative Finance",
+    "url": "https://arxiv.org/pdf/2606.06823v1",
+    "source": "ArXiv",
+    "date": "2026-06-05",
+    "abstract": "While deep learning has excelled in various domains, its application to sequential decision-making in finance remains challenging due to the low Signal-to-Noise Ratio (SNR) and non-stationarity of financial data. Leveraging the reasoning capabilities of Large Language Models (LLMs), we propose \\textbf{PandaAI}, a closed-loop neuro-symbolic LLM agent with market regime modeling and constrained alpha generation, which bridges general LLM reasoning with financial rigor and suppresses the financial toxicity of LLM-generated outputs. To bridge the gap between general linguistic capability and financial rigor, we fine-tune a domain-specific LLM. Furthermore, we integrate this LLM into a modular architecture and form a closed-loop system. Unlike traditional models that optimize isolated prediction metrics, \\textbf{PandaAI} is designed as a neuro-symbolic agent that navigates the complex, real-world financial environment with explicit risk awareness. Extensive experiments on CSI 300 stock data show that \\textbf{PandaAI} achieves a $18.2\\%$ higher Rank IC and $25.7\\%$ lower maximum drawdown than state-of-the-art time-series models. Our constrained LLM generation and dual-channel adaptation method provide a general paradigm for LLM deployment in high-stakes sequential decision-making scenarios.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "PandaAI提出了一种神经符号LLM智能体，结合市场制度建模和约束alpha生成，在CSI 300数据上实现了Rank IC提升18.2%、最大回撤降低25.7%，实战价值高。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_fd298546"
+  },
+  {
+    "title": "Information Networks of Stock Prices",
+    "url": "https://arxiv.org/pdf/2606.07450v1",
+    "source": "ArXiv",
+    "date": "2026-06-05",
+    "abstract": "The collective movement of stock prices harbors complex interdependencies that are conventionally simplified only through a linear lens. This paper explores computed structural network representations in the Indonesian capital market by testing the limits of Pearson correlation and Mutual Information (MI) in unveiling the spectral dynamics of the market. Across 2,328 rolling observation windows from 2015 to 2025, we examine 24 methodological configurations that combine three dependency estimators (Pearson, MI adaptive binning, and MI-kNN), two graph filtering schemes (Minimum Spanning Tree/MST and Planar Maximally Filtered Graph/PMFG), and four community decoders.\n  The empirical results unveil a fundamental reality: topological richness does not always resonate with sectoral classification precision. The Pearson, MST, and Infomap configuration is shown to remain the most robust foundation for recovering conventional sectoral taxonomy. Nevertheless, when deeper observation demands the exposition of local structures and the weave of heterogeneous communities, the architectural relaxation through PMFG demonstrates its superiority. In the realm of residual information detection, MI adaptive binning appears far more proportional than kNN; histogram-based regularization successfully tames empirical noise without sweeping away traces of non-linear dependency. Ultimately, the synergy of MI and PMFG is not positioned to dethrone the dominance of linear correlation, but rather to provide an essential analytical lens for excavating hidden economic sub-structures -- such as the cohesion of commodity regimes -- that have long transcended the rigid boundaries of the market's formal sectors.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文研究了印尼资本市场的股票价格网络结构，使用Pearson相关和互信息等依赖估计器，结合最小生成树和平面最大滤波图等图滤波方案。实证发现，Pearson、MST和Infomap配置在恢复传统行业分类方面最稳健，而PMFG在揭示局部结构和异构社区方面更优。论文侧重于网络分析理论，对实战交易的直接价值有限，但提供了市场结构分析的视角。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_cb3854ed"
+  },
+  {
+    "title": "Bubbles vs. Baselines: Token Valuation and Institutional Capital in PoS Networks under EIP-1559",
+    "url": "https://arxiv.org/pdf/2606.07445v1",
+    "source": "ArXiv",
+    "date": "2026-06-05",
+    "abstract": "This paper presents an open-economy macroeconomic equilibrium model for Proof-of-Stake (PoS) networks with fee-burn mechanics (EIP-1559) that formalizes the strategic interplay between a Kelly-optimizing rational institutional investor and a utility-driven retail consumer. We analyze network dynamics across two behavioral regimes. In The Unbounded Accumulation Model, the consumer purely accumulates tokens, creating an exclusive buy-side pressure that interacts with institutional portfolio rebalancing to fuel an ever-expanding speculative bubble and generate compounding excess returns for investors. Conversely, in The Utility-Consumption Model, the consumer dynamically buys and sells tokens to balance crypto wealth against real-world fiat consumption. Within this framework, we derive an explicit steady-state equilibrium price for ETH, demonstrating how token valuation anchors to a stable fundamental baseline that scales directly with network adoption while completely dissolving the institutional yield premium. Our numerical simulations show that while exogenous traditional finance (TradFi) shocks propagate through portfolio rebalancing to drive high token price volatility, network inflation remains highly stable. Furthermore, we prove that network security is insulated from institutional monopoly by counter-cyclical consumer behavior. Our findings reveal that institutional excess wealth creation in PoS ecosystems is not native to the staking protocol itself, but is strictly driven by the leveraged extraction of the retail consumer's continuous demand for transactional utility.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文构建PoS网络宏观经济模型，分析EIP-1559下机构与散户博弈。理论性强，推导ETH稳态价格，但缺乏可交易信号或策略，实战价值有限。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_580335c3"
+  },
+  {
+    "title": "Fast-excursion limit of the Heston model",
+    "url": "https://arxiv.org/pdf/2606.06737v1",
+    "source": "ArXiv",
+    "date": "2026-06-04",
+    "abstract": "This article introduces an unconventional model for price processes in finance that emerges from the classical Heston model under Mechkov's fast-reversion limit. This new fast-excursion Heston model exhibits instantaneous (i.e. fast) excursions through an interval of prices at each time, which are invisible to vanilla options but critical for hitting probabilities and continuously monitored exotics. Theoretically, the model provides a rare example of a non-degenerate limit of stochastic volatility models that escapes the Skorokhod topologies. This leads us to a class of interval-valued processes which exist as lifts of subordinated Levy processes, through the concept of selections in the theory of random closed sets. On the practical side, we show how the model can be simulated using price-time parametric representations, and utilise a purpose-built classical Heston simulation scheme in order to visualise convergence. Finally we demonstrate how this model raises hitting probabilities for barrier options considerably (of order 10% for one-month EURUSD options), due to taking excursion risk into account.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出一个从Heston模型经Mechkov快反转极限导出的新模型，该模型在每时刻通过价格区间产生快速往复，对障碍期权敲出概率有显著影响（如对EURUSD期权提升约10%）。但模型偏理论，实战价值有限。",
+    "fetch_date": "2026-06-09",
+    "id": "20260609_ca2f53da"
+  },
+  {
     "title": "Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning",
     "url": "https://arxiv.org/pdf/2606.04574v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "论文《E-TRENDS：用于股票增强型LSTM趋势预测》提出了一种基于LSTM的框架，用于预测标普500前30只股票次日的趋势差异（Δ_t），并在多个市场周期（2005-2025年）进行了验证。核心贡献包括：（i）通过差分法正式证明了偏差-方差的降低；（ii）与OLS、Ridge和Lasso等模型进行了详尽的实证基准测试；（iii）投资组合模拟证实了该模型在整体PNL方面相比OLS、Ridge、Lasso或LightGBM回归器等模型具有经济收益。该研究直接针对趋势跟踪策略在非平稳和非线性市场环境中的挑战，具有明确的实战交易应用价值。",
     "fetch_date": "2026-03-18",
     "id": "20260318_c2600de2"
-  },
-  {
-    "title": "Performance-Driven Causal Signal Engineering for Financial Markets under Non-Stationarity",
-    "url": "https://arxiv.org/pdf/2603.13638v1",
-    "source": "ArXiv",
-    "date": "2026-03-13",
-    "abstract": "We introduce a performance-driven framework for constructing strictly causal forward-oriented observables in strongly non-stationary time series. The method combines a robustly normalized composite of heterogeneous indicators with a causally computed derivative component, yielding a local phase-leading effect that is amplified near regime transitions while remaining fully causal. A hysteresis-based decision functional maps the observable into discrete system states, with execution delayed by one step to preserve strict temporal ordering. Adaptation is achieved through a walk-forward scheme, in which model parameters are selected using rolling train--validation windows and subsequently applied out-of-sample. In this setting, the validation segment acts as an internal performance screen rather than as a statistical validation set, and no claims of generalization are inferred from it alone. The framework is evaluated on high-frequency financial time series as an experimentally accessible realization of a non-stationary complex system. Under a controlled zero-cost setting, the resulting dynamics exhibit a pronounced risk-reshaping effect, characterized by smoother trajectories and reduced drawdowns relative to direct exposure, and should be interpreted as an upper bound on achievable performance. These results illustrate how causal signal engineering can generate anticipatory structure in non-stationary systems without relying on non-causal information, explicit horizon labeling, or high-capacity predictive models.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种面向性能的严格因果信号工程框架，用于处理强非平稳时间序列。该方法结合了稳健归一化的异质指标复合体与因果计算的导数分量，产生局部相位领先效应，在机制转换附近被放大，同时保持完全因果性。基于滞后的决策函数将可观测信号映射为离散系统状态，执行延迟一步以保持严格时间顺序。通过滚动训练-验证窗口选择模型参数并随后应用于样本外，实现自适应。在此设置中，验证段充当内部性能筛选器而非统计验证集，不单独从中推断泛化性。该框架在高频金融时间序列上进行了评估，作为非平稳复杂系统的实验可访问实现。在受控零成本设置下，所得动态表现出显著的风险重塑效应，其特征为更平滑的轨迹和降低的风险。",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_3b838a8d"
-  },
-  {
-    "title": "When Alpha Breaks: Two-Level Uncertainty for Safe Deployment of Cross-Sectional Stock Rankers",
-    "url": "https://arxiv.org/pdf/2603.13252v1",
-    "source": "ArXiv",
-    "date": "2026-02-24",
-    "abstract": "Cross-sectional ranking models are often deployed as if point predictions were sufficient: the model outputs scores and the portfolio follows the induced ordering. Under non-stationarity, rankers can fail during regime shifts. In the AI Stock Forecaster, a LightGBM ranker performs well overall at a 20-day horizon, yet the 2024 holdout coincides with an AI thematic rally and sector rotation that breaks the signal at longer horizons and weakens 20d. This motivates treating deployment as two decisions: (i) whether the strategy should trade at all, and (ii) how to control risk within active trades. We adapt Direct Epistemic Uncertainty Prediction (DEUP) to ranking by predicting rank displacement and defining an epistemic uncertainty signal ehat relative to a point-in-time (PIT-safe) baseline. Empirically, ehat is structurally coupled with signal strength (median correlation between ehat and absolute score is about 0.6 across 1,865 dates), so inverse-uncertainty sizing de-levers the strongest signals and degrades performance. To address this, we propose a two-level deployment policy: a strategy-level regime-trust gate G(t) that decides whether to trade (AUROC around 0.72 overall and 0.75 in FINAL) and a position-level epistemic tail-risk cap that reduces exposure only for the most uncertain predictions. The operational policy, trade only when G(t) is at least 0.2, apply volatility sizing on active dates, and cap the top epistemic tail, improves risk-adjusted performance in the 20d policy comparison and indicates DEUP adds value mainly as a tail-risk guard rather than a continuous sizing denominator.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文《当阿尔法失效时：横截面股票排序模型安全部署的两级不确定性》针对量化交易实战中横截面排序模型在非平稳市场环境下可能失效的问题，提出了一种两级不确定性部署框架。研究发现，在AI主题行情和板块轮动等市场机制转换期间，即使整体表现良好的LightGBM排序模型（如AI股票预测器在20天周期）也会出现信号失效。作者通过直接认知不确定性预测（DEUP）方法，预测排序位移并定义相对于时点安全基线的认知不确定性信号ehat。实证显示ehat与信号强度存在结构性耦合（中位相关系数约0.6），导致传统逆不确定性头寸调整方法会削弱最强信号。为此，论文提出两级部署策略：1）策略层面的机制信任门控G(t)决定是否交易（整体AUROC约0.72）；2）在活跃交易中的风险控制机制。该研究对实战交易具有直接价值，特别是对处理市场机制转换、模型失效检测和动态部署策略的量化团队。",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_1707e34f"
-  },
-  {
-    "title": "Iterative Learning Control-Informed Reinforcement Learning for Batch Process Control",
-    "url": "https://arxiv.org/pdf/2603.15180v1",
-    "source": "ArXiv",
-    "date": "2026-03-16",
-    "abstract": "A significant limitation of Deep Reinforcement Learning (DRL) is the stochastic uncertainty in actions generated during exploration-exploitation, which poses substantial safety risks during both training and deployment. In industrial process control, the lack of formal stability and convergence guarantees further inhibits adoption of DRL methods by practitioners. Conversely, Iterative Learning Control (ILC) represents a well-established autonomous control methodology for repetitive systems, particularly in batch process optimization. ILC achieves desired control performance through iterative refinement of control laws, either between consecutive batches or within individual batches, to compensate for both repetitive and non-repetitive disturbances. This study introduces an Iterative Learning Control-Informed Reinforcement Learning (IL-CIRL) framework for training DRL controllers in dual-layer batch-to-batch and within-batch control architectures for batch processes. The proposed method incorporates Kalman filter-based state estimation within the iterative learning structure to guide DRL agents toward control policies that satisfy operational constraints and ensure stability guarantees. This approach enables the systematic design of DRL controllers for batch processes operating under multiple disturbance conditions.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一种迭代学习控制信息强化学习（IL-CIRL）框架，用于训练深度强化学习（DRL）控制器，应用于双层批间和批内控制架构的批处理过程。该方法通过结合卡尔曼滤波状态估计，引导DRL智能体学习满足操作约束和稳定性保证的控制策略，旨在解决DRL在探索-利用过程中动作随机不确定性带来的安全风险，以及工业过程控制中缺乏形式化稳定性和收敛性保证的问题。",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_03e4e746"
-  },
-  {
-    "title": "Curved Greeks: A Geometric Layer for Option P&L Adjustments",
-    "url": "https://arxiv.org/pdf/2603.14438v1",
-    "source": "ArXiv",
-    "date": "2026-03-15",
-    "abstract": "Short-horizon option book management relies on P&L expansions in a small set of risk factors. In practice, the quadratic term and common desk adjustments (smile corrections, execution cost add-ons) depend on the chosen factor coordinates, so predicted second-order P&L can change when moving between spot, forward, and log-forward parameterizations. We propose a local, model-agnostic framework that makes the quadratic term coordinate invariant. The usual Hessian is replaced by a covariant Hessian defined by an affine connection, yielding an invariant quadratic predictor. The connection is calibrated to match a desk target for quadratic P&L (Vanna-Volga for smile effects or, in principle, a local fit to realized P&L) while leaving first-order hedge Greeks unchanged. Execution frictions enter through a quadratic cost model for hedge trades. Combined with hedge ratios, this induces an equivalent quadratic penalty on factor moves, makes portfolio netting of costs explicit, and provides local liquidity-aware second-order sensitivities and rebalancing directions. Calibration reduces to small linear systems with clear identifiability conditions. Two FX barrier case studies (EURUSD, USDTRY) illustrate the workflow, and we briefly sketch extensions to other quadratic penalties (risk normalization, scenario/gap terms, and xVA/capital add-ons).",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "《曲率希腊字母：期权损益调整的几何层》提出了一种局部、模型无关的框架，使二阶损益预测具有坐标不变性。通过用仿射连接定义的协变Hessian替代传统Hessian，并结合二次成本模型处理执行摩擦，该框架在保持一阶对冲希腊字母不变的同时，校准连接以匹配二阶损益目标（如微笑效应的Vanna-Volga或实际损益的局部拟合）。校准简化为具有明确可识别条件的小型线性系统。两个外汇障碍期权案例研究（EURUSD、USDTRY）展示了其在短期期权簿管理中的实用价值，特别是对波动率微笑调整、执行成本净化和流动性感知二阶敏感性的处理。",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_b4503cfc"
-  },
-  {
-    "title": "Distilling Deep Reinforcement Learning into Interpretable Fuzzy Rules: An Explainable AI Framework",
-    "url": "https://arxiv.org/pdf/2603.13257v1",
-    "source": "ArXiv",
-    "date": "2026-02-24",
-    "abstract": "Deep Reinforcement Learning (DRL) agents achieve remarkable performance in continuous control but remain opaque, hindering deployment in safety-critical domains. Existing explainability methods either provide only local insights (SHAP, LIME) or employ over-simplified surrogates failing to capture continuous dynamics (decision trees). This work proposes a Hierarchical Takagi-Sugeno-Kang (TSK) Fuzzy Classifier System (FCS) distilling neural policies into human-readable IF-THEN rules through K-Means clustering for state partitioning and Ridge Regression for local action inference. Three quantifiable metrics are introduced: Fuzzy Rule Activation Density (FRAD) measuring explanation focus, Fuzzy Set Coverage (FSC) validating vocabulary completeness, and Action Space Granularity (ASG) assessing control mode diversity. Dynamic Time Warping (DTW) validates temporal behavioral fidelity. Empirical evaluation on \\textit{Lunar Lander(Continuous)} shows the Triangular membership function variant achieves 81.48\\% $\\pm$ 0.43\\% fidelity, outperforming Decision Trees by 21 percentage points. The framework exhibits statistically superior interpretability (FRAD = 0.814 vs. 0.723 for Gaussian, $p < 0.001$) with low MSE (0.0053) and DTW distance (1.05). Extracted rules such as ``IF lander drifting left at high altitude THEN apply upward thrust with rightward correction'' enable human verification, establishing a pathway toward trustworthy autonomous systems.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出了一种可解释AI框架，通过分层Takagi-Sugeno-Kang模糊分类器系统，将深度强化学习的神经策略蒸馏为人类可读的IF-THEN规则。该方法使用K-Means聚类进行状态分区，Ridge回归进行局部动作推断，并引入三个量化指标：模糊规则激活密度、模糊集覆盖度和动作空间粒度，通过动态时间规整验证时间行为保真度。在《Lunar Lander(Continuous)》环境中的实证评估显示，三角隶属函数变体达到81.48% ± 0.43%的保真度，比决策树高出21个百分点。该框架在可解释性方面表现出统计上的优越性。",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_3592ea6f"
-  },
-  {
-    "title": "Some general results on risk budgeting portfolios",
-    "url": "https://arxiv.org/pdf/2603.15511v1",
-    "source": "ArXiv",
-    "date": "2026-03-16",
-    "abstract": "Given a reference risk measure, the risk budgeting is the portfolio where each asset contributes a predetermined amount to the total risk. We propose a novel approach, alternative to the ones proposed in the literature, for the calculation of the risk budgeting portfolio. This different perspective on the problem has several interesting consequences. For the calculation of the portfolio, we define a Cauchy sequence within the simplex of R^n, whose limit corresponds to the risk budgeting portfolio. This construction allows for the straightforward implementation of an efficient algorithm, avoiding the need to solve auxiliary, equivalent optimization problems, which may be computationally challenging and hard to interpret in the decision theory context. We compare our algorithm with the standard optimization-based methods proposed in the literature. From a theoretical point of view, starting from the Cauchy sequence, we define a function for which the risk budgeting portfolio is a fixed point. Therefore, sufficient conditions for the existence and uniqueness of the fixed point can be used. The methodology is developed for general risk measures and implemented in detail in the case of standard deviation.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "给定一个参考风险度量，风险预算是每个资产对总风险贡献预定金额的投资组合。我们提出了一种新颖的方法来计算风险预算组合，这是对文献中已有方法的替代。这种不同视角带来了几个有趣的后果。对于组合计算，我们在R^n的单纯形内定义了一个柯西序列，其极限对应于风险预算组合。这种构造允许直接实现高效算法，避免了解决辅助的等效优化问题，这些问题在计算上可能具有挑战性且在决策理论背景下难以解释。我们将我们的算法与文献中标准的基于优化的方法进行比较。从理论角度来看，从柯西序列出发，我们定义了一个函数，风险预算组合是该函数的不动点。因此，可以使用不动点存在性和唯一性的充分条件。该方法针对一般风险度量开发，并在以下情况下详细实现...",
-    "fetch_date": "2026-03-18",
-    "id": "20260318_2ac2d3e0"
   }
 ]
