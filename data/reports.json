@@ -1,5 +1,65 @@
 [
   {
+    "title": "Scenario Generation for Time Series and Curves: A Comparison of Nonparametric and Semiparametric Bootstrap",
+    "url": "https://arxiv.org/pdf/2606.11859v1",
+    "source": "ArXiv",
+    "date": "2026-06-10",
+    "abstract": "Generating stochastic trajectories for asset classes is an increasingly relevant task in quantitative finance. Traditional approaches, such as the stationary bootstrap, preserve by construction the empirical distribution of asset-class returns, but do not ensure that each individual simulated path is economically realistic: scenarios may be valid in distribution while single trajectories fail to represent plausible states of the world. To address this limitation, we review semiparametric simulation methodologies that combine a parametric structure, which enforces realistic dynamics, with the resampling of model residuals, which preserves the stochastic component observed in historical data. The issue is particularly acute for interest rates, where direct resampling of rate changes may produce implausible yield-curve evolutions despite correct distributional properties. Our empirical analysis shows the effectiveness of semiparametric bootstrap methods based on autoregressive or mean-reverting specifications. In the fixed-income setting, combining these methods with fully parametric term-structure models yields more coherent and realistic simulations of yield-curve dynamics.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文比较了非参数和半参数自举方法在时间序列和曲线场景生成中的效果，强调了半参数方法（结合自回归或均值回复模型与残差重抽样）能生成更经济合理的模拟路径，尤其适用于利率曲线。实战价值在于改进风险管理和资产定价中的场景生成，但未涉及机器学习或Alpha策略。",
+    "fetch_date": "2026-06-12",
+    "id": "20260612_12667e60"
+  },
+  {
+    "title": "Artificial Intelligence in Ship Finance: Applications, Opportunities, and a Case Study in AI-Augmented Loan Origination",
+    "url": "https://arxiv.org/pdf/2606.11238v1",
+    "source": "ArXiv",
+    "date": "2026-05-29",
+    "abstract": "Ship finance is a data-intensive and document-heavy segment of asset-based lending, requiring the integration of financial, technical, contractual, and regulatory information from heterogeneous and largely unstructured sources. Increasing environmental regulation and ESG reporting requirements are adding further complexity to underwriting and loan-origination processes. Recent advances in artificial intelligence (AI), particularly large language models (LLMs), create new opportunities for processing and analysing such information. This paper reviews potential applications of AI in ship finance, with a particular focus on LLM-based systems for document comprehension, information extraction, and workflow automation. We present ShipFinance.ai, a modular agentic architecture to support loan application workflows in ship finance. The proposed system combines an LLM-based extraction module, financial analysis components, external maritime data services, and a controlled document-generation module with a chatbot interface to support the preparation of standardized financing applications. The paper discusses the key challenges for using such models in production. We argue that AI-assisted systems can support maritime finance professionals in managing increasingly complex information and reporting requirements.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文探讨AI在船舶金融中的应用，特别是大语言模型用于文档处理、信息提取和流程自动化，并介绍一个模块化系统。虽然涉及实际应用，但与量化交易实战（RL/深度学习/Alpha策略）无关，评分中等。",
+    "fetch_date": "2026-06-12",
+    "id": "20260612_09b55a50"
+  },
+  {
+    "title": "Deterministic Policy Gradient for Learning Equilibrium in Time-Inconsistent Control Problems",
+    "url": "https://arxiv.org/pdf/2606.11798v1",
+    "source": "ArXiv",
+    "date": "2026-06-10",
+    "abstract": "In this paper, we develop a continuous-time model-free reinforcement learning algorithm to learn deterministic equilibrium policies in general time-inconsistent control problems. Utilizing the extended Hamilton-Jacobi-Bellman system, we recast the original time-inconsistent problem into an equivalent two-stage problem. In the first stage, for given auxiliary functions, we employ the deterministic policy gradient approach to learn an optimal policy in an auxiliary time-consistent control problem. In the second stage, given the updated policy, we exploit the inner fixed point iterations and some martingale characterizations to learn the auxiliary functions. As a theoretical contribution, we provide some mild model assumptions and establish the convergence of inner fixed point iterations. By repeating this actor-critic style of iterations across two stages, our algorithm aims to learn the equilibrium under different sources of time-inconsistency in a unified manner. The superior effectiveness of the proposed algorithm are illustrated in two classical financial applications with time-inconsistency: mean-variance portfolio management and optimal tracking portfolio under non-exponential discounting.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出了一种连续时间无模型强化学习算法，用于求解时间不一致控制问题中的确定性均衡策略，涉及均值-方差投资组合管理等金融应用。理论性较强，但未直接提供可落地的交易策略或实证结果，对实战交易价值有限。",
+    "fetch_date": "2026-06-12",
+    "id": "20260612_ad030934"
+  },
+  {
+    "title": "Mean-Variance Optimization in Ambiguous Financial Markets with Learning",
+    "url": "https://arxiv.org/pdf/2606.11318v1",
+    "source": "ArXiv",
+    "date": "2026-06-09",
+    "abstract": "We consider a continuous time investment problem in a multi-asset Black-Scholes market with the following features: The assets' drifts are not known and constitute a source of model ambiguity. However, there is a prior distribution (knowledge) on the possible drifts. Our investor is ambiguity averse and wants to maximize a mean-variance criterion for the terminal wealth where ambiguity aversion is incorporated in a smooth way. We consider here the criterion introduced in Maccheroni et al. 2013 where the variance is decomposed and each part is weighted differently to account for different levels of market risk and model ambiguity aversion. We use a novel approach to find the optimal dynamic investment strategy within the class of all adapted strategies which allow for learning. We also present a number of numerical results which help to understand how the model parameters affect the optimal investment strategy. In general it turns out that ambiguity averse investors invest less in the risky assets.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文研究多资产Black-Scholes市场中，在资产漂移率未知且存在模型模糊性的情况下，使用均值-方差准则进行投资组合优化。投资者通过平滑方式纳入模糊厌恶，并允许通过学习调整策略。数值结果表明模糊厌恶投资者会减少风险资产配置。理论性强，直接应用于实战交易价值有限。",
+    "fetch_date": "2026-06-12",
+    "id": "20260612_14a5b666"
+  },
+  {
+    "title": "Scenario Constraints with Memory: A Finite-State Approach to Quantitative Financial Analysis",
+    "url": "https://arxiv.org/pdf/2606.11223v1",
+    "source": "ArXiv",
+    "date": "2026-05-27",
+    "abstract": "Quantifying worst-case and best-case performance under complex market scenarios is a persistent challenge in financial risk management and the verification of path-dependent financial instruments, such as exotic options and structured products. Simulation-based methods are well suited for probabilistic estimation, but they do not directly provide exhaustive guarantees over all admissible scenarios or explicit witnesses for extremal outcomes.\n  To address this, we introduce a quantitative automata-based framework for the exact extremal analysis of financial systems under declarative scenario constraints. At the core of our approach are event history automata (EHAs), a new formal model that integrates regular-expression event patterns with admissible numerical intervals to represent constrained event histories with memory. Quantitative payoffs are represented by weighted finance finite automata (WFFAs), which allow transition weights to depend on observed market values. By computing the synchronized product of EHAs and WFFAs, our framework enables the exact calculation of upper and lower payoff bounds. Furthermore, the method automatically extracts interpretable witness event histories that realize these extremal outcomes.\n  We demonstrate the practical viability of the approach through a case study of an autocallable structured product with path-dependent mechanisms. The case study analyzes how different scenario constraints affect coupon accumulation, early redemption, and protection-loss outcomes. Scalability experiments indicate that the framework's execution remains computationally feasible for practical contract horizons and nontrivial constraint configurations. Overall, this approach provides a mathematically rigorous complement to standard financial simulation methods.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出基于自动机的形式化框架，用于在声明性场景约束下精确计算金融系统的极端收益边界。核心包括事件历史自动机（EHAs）和加权金融有限自动机（WFFAs），通过同步积计算上下界并提取可解释的路径。方法侧重理论严谨性，适合风险管理中的极端情景分析，但缺乏机器学习或深度学习等实战交易常用技术，实战价值有限。",
+    "fetch_date": "2026-06-12",
+    "id": "20260612_5874bc28"
+  },
+  {
     "title": "Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading",
     "url": "https://arxiv.org/pdf/2606.08228v1",
     "source": "ArXiv",
@@ -5938,65 +5998,5 @@
     "summary": "本文研究了深度强化学习中可塑性损失的根本机制，这是一个关键挑战，即神经网络失去适应非平稳环境的能力。现有研究通常依赖休眠神经元或有效秩等描述性指标，但这些总结未能解释底层的优化动态。我们提出了以优化为中心的可塑性（OCP）假说，认为可塑性损失的出现是因为先前任务的最优点成为新任务的较差局部最优，在任务转换期间困住参数并阻碍后续学习。我们从理论上建立了神经元休眠与零梯度状态之间的等价性，证明梯度信号的缺失是休眠的主要驱动因素。我们的实验表明，可塑性损失是高度任务特定的；值得注意的是，在一个任务中休眠率高的网络，在切换到显著不同的任务时，可以达到与随机初始化网络相当的性能，这表明网络的能力保持完整，但受到特定优化景观的抑制。",
     "fetch_date": "2026-03-25",
     "id": "20260325_fd0fbae7"
-  },
-  {
-    "title": "Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP",
-    "url": "https://arxiv.org/pdf/2603.20702v1",
-    "source": "ArXiv",
-    "date": "2026-03-21",
-    "abstract": "Proper parameter configuration is a prerequisite for the success of Evolutionary Algorithms (EAs). While various adaptive strategies have been proposed, it remains an open question whether all control dimensions contribute equally to algorithmic scalability. To investigate this, we categorize control variables into numerical parameters (e.g., crossover and mutation rates) and structural parameters (e.g., population size and operator switching), hypothesizing that they play distinct roles. This paper presents an empirical study utilizing a dual-level Deep Reinforcement Learning (DRL) framework to decouple and analyze the impact of these two dimensions on the Traveling Salesman Problem (TSP). We employ a Recurrent PPO agent to dynamically regulate these parameters, treating the DRL model as a probe to reveal evolutionary dynamics. Experimental results confirm the effectiveness of this approach: the learned policies outperform static baselines, reducing the optimality gap by approximately 45% on the largest tested instance (rl5915). Building on this validated framework, our ablation analysis reveals a fundamental insight: while numerical tuning offers local refinement, structural plasticity is the decisive factor in preventing stagnation and facilitating escape from local optima. These findings suggest that future automated algorithm design should prioritize dynamic structural reconfiguration over fine-grained probability adjustment. To facilitate reproducibility, the source code is available at https://github.com/StarDream1314/DRLGA-TSP",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了一种基于深度强化学习（DRL）的双层框架，用于解耦和分析进化算法（EAs）中数值参数（如交叉和变异率）与结构参数（如种群规模和算子切换）对旅行商问题（TSP）的影响。通过使用循环PPO代理动态调节这些参数，实验表明学习到的策略优于静态基线，在最大测试实例（rl5915）上将最优性差距减少了约45%。消融分析进一步揭示：数值调优提供局部优化，而结构参数调整对算法可扩展性具有更根本的影响。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_c284f90f"
-  },
-  {
-    "title": "Outperforming a Benchmark with $α$-Bregman Wasserstein divergence",
-    "url": "https://arxiv.org/pdf/2603.20580v1",
-    "source": "ArXiv",
-    "date": "2026-03-21",
-    "abstract": "We consider the problem of active portfolio management, where an investor seeks the portfolio with maximal expected utility of the difference between the terminal wealth of their strategy and a proportion of the benchmark's, subject to a budget and a deviation constraint from the benchmark portfolio. As the investor aims at outperforming the benchmark, they choose a divergence that asymmetrically penalises gains and losses as well as penalises underperforming the benchmark more than outperforming it. This is achieved by the recently introduced $α$-Bregman-Wasserstein divergence, subsuming the Bregman-Wasserstein and the popular Wasserstein divergence. We prove existence and uniqueness, characterise the optimal portfolio strategy, and give explicit conditions when the divergence constraints and the budget constraints are binding. We conclude with a numerical illustration of the optimal quantile function in a geometric Brownian motion market model.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究主动投资组合管理问题，投资者在预算约束和与基准组合偏离约束下，寻求最大化其策略终期财富与基准比例之差的期望效用。为实现超越基准的目标，投资者采用α-Bregman-Wasserstein散度，该散度不对称地惩罚收益与损失，并对跑输基准的惩罚大于跑赢。研究证明了最优解的存在唯一性，刻画了最优投资组合策略，并给出了散度约束和预算约束起作用的显式条件。最后通过几何布朗运动市场模型中的最优分位数函数进行了数值说明。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_fd2d1ee4"
-  },
-  {
-    "title": "DeepStock: Reinforcement Learning with Policy Regularizations for Inventory Management",
-    "url": "https://arxiv.org/pdf/2603.19621v1",
-    "source": "ArXiv",
-    "date": "2026-03-20",
-    "abstract": "Deep Reinforcement Learning (DRL) provides a general-purpose methodology for training inventory policies that can leverage big data and compute. However, off-the-shelf implementations of DRL have seen mixed success, often plagued by high sensitivity to the hyperparameters used during training. In this paper, we show that by imposing policy regularizations, grounded in classical inventory concepts such as \"Base Stock\", we can significantly accelerate hyperparameter tuning and improve the final performance of several DRL methods. We report details from a 100% deployment of DRL with policy regularizations on Alibaba's e-commerce platform, Tmall. We also include extensive synthetic experiments, which show that policy regularizations reshape the narrative on what is the best DRL method for inventory management.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "《DeepStock：基于策略正则化的强化学习在库存管理中的应用》提出，通过引入基于经典库存概念（如“基础库存”）的策略正则化，可显著加速超参数调优并提升多种深度强化学习（DRL）方法的最终性能。论文详细报告了在阿里巴巴电商平台天猫上100%部署带策略正则化的DRL系统的实战案例，并通过大量合成实验证明，策略正则化改变了关于何种DRL方法最适合库存管理的传统认知。",
-    "fetch_date": "2026-03-24",
-    "id": "20260324_8a45a985"
-  },
-  {
-    "title": "Joint Return and Risk Modeling with Deep Neural Networks for Portfolio Construction",
-    "url": "https://arxiv.org/pdf/2603.19288v1",
-    "source": "ArXiv",
-    "date": "2026-03-09",
-    "abstract": "Portfolio construction traditionally relies on separately estimating expected returns and covariance matrices using historical statistics, often leading to suboptimal allocation under time-varying market conditions. This paper proposes a joint return and risk modeling framework based on deep neural networks that enables end-to-end learning of dynamic expected returns and risk structures from sequential financial data. Using daily data from ten large-cap US equities spanning 2010 to 2024, the proposed model is evaluated across return prediction, risk estimation, and portfolio-level performance. Out-of-sample results during 2020 to 2024 show that the deep forecasting model achieves competitive predictive accuracy (RMSE = 0.0264) with economically meaningful directional accuracy (51.9%). More importantly, the learned representation effectively captures volatility clustering and regime shifts. When integrated into portfolio optimization, the proposed Neural Portfolio strategy achieves an annual return of 36.4% and a Sharpe ratio of 0.91, outperforming equal weight and historical mean-variance benchmarks in terms of risk-adjusted performance. These findings demonstrate that jointly modeling return and covariance dynamics can provide consistent improvements over traditional allocation approaches. The framework offers a scalable and practical alternative for data-driven portfolio construction under nonstationary market conditions.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一种基于深度神经网络的联合收益与风险建模框架，用于投资组合构建。传统方法依赖历史统计数据分别估计预期收益和协方差矩阵，在时变市场条件下常导致次优配置。该框架通过端到端学习，从时序金融数据中动态预测预期收益和风险结构。基于2010-2024年十只美国大盘股的日度数据，模型在2020-2024年样本外测试中展现出：预测精度（RMSE=0.0264）和方向准确性（51.9%）具有竞争力；学习表征能有效捕捉波动率聚类和机制转换；应用于投资组合优化时，神经组合策略实现年化收益36.4%、夏普比率0.91，在风险调整后表现上优于等权重和历史均值-方差基准。",
-    "fetch_date": "2026-03-24",
-    "id": "20260324_a5ab6a90"
-  },
-  {
-    "title": "Optimal Hedge Ratio for Delta-Neutral Liquidity Provision under Liquidation Constraints",
-    "url": "https://arxiv.org/pdf/2603.19716v1",
-    "source": "ArXiv",
-    "date": "2026-03-20",
-    "abstract": "We study the problem of optimally hedging the price exposure of liquidity positions in constant-product automated market makers (AMMs) when the hedge is funded by collateralized borrowing. A liquidity provider (LP) who borrows tokens to construct a delta-neutral position faces a trade-off: higher hedge ratios reduce price exposure but increase liquidation risk through tighter collateral utilization. We model token prices as correlated geometric Brownian motions and derive the hedge ratio h that maximizes risk-adjusted return subject to a liquidation-probability constraint expressed via a first-passage-time bound. The unconstrained optimum h* admits a closed-form expression, but at h* the liquidation probability is prohibitively high. The practical optimum h** = min(h*, h_bar(alpha)) is determined by the binding liquidation constraint h_bar(alpha), which we evaluate analytically via the first-passage-time formula and confirm with Monte Carlo simulation. Simulations calibrated to on-chain data validate the analytical results, demonstrate robustness across realistic parameter ranges, and show that the optimal hedge ratio lies between 50% and 70% for typical DeFi lending conditions. Practical guidelines for rebalancing frequency and position sizing are also provided.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文研究了在恒定乘积自动做市商（AMMs）中，当对冲资金来自抵押借贷时，流动性头寸价格风险的最优对冲问题。流动性提供者（LP）通过借贷代币构建Delta中性头寸面临权衡：更高的对冲比率降低价格风险，但通过更紧的抵押品利用率增加清算风险。作者将代币价格建模为相关的几何布朗运动，推导出在清算概率约束下最大化风险调整收益的对冲比率h。无约束最优h*有闭式解，但清算概率过高；实际最优h**由约束h_bar(alpha)决定，通过首达时公式解析计算并经蒙特卡洛模拟验证。基于链上数据的模拟验证了分析结果，显示在典型DeFi借贷条件下，最优对冲比率在50%至70%之间。",
-    "fetch_date": "2026-03-24",
-    "id": "20260324_f236054a"
   }
 ]
