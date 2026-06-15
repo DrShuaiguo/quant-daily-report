@@ -1,5 +1,65 @@
 [
   {
+    "title": "On Reference-Regulated Multiperiod Mean-Variance Portfolio Optimization in High Dimensions",
+    "url": "https://arxiv.org/pdf/2606.13697v1",
+    "source": "ArXiv",
+    "date": "2026-05-31",
+    "abstract": "The multiperiod mean-variance (MV) portfolio optimization serves as a vital expansion of Markowitz's static MV portfolio selection framework. Just like its static counterpart, the multiperiod MV portfolio remains susceptible to estimation errors. We propose a reference-regulated multiperiod mean-variance (RRMV) framework that penalizes deviations from a reference policy. Therefore, this new optimization successfully combines the advantages of dynamic strategies and reference portfolios. A key contribution of this paper is the characterization of the out-of-sample Sharpe ratio under high-dimensional asymptotics with estimation errors in both the mean vector and the covariance matrix. We show how the reference penalty and the investment horizon jointly affect the optimized portfolio performance, and how regularization operates differently from the single-period portfolio optimization. Extensive simulation and real data studies demonstrate that the proposed framework improves the stability and out-of-sample Sharpe ratios of multiperiod policies significantly.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文提出参考调控的多期均值-方差（RRMV）框架，通过惩罚偏离参考策略来结合动态策略和参考组合的优势，并在高维渐近下刻画了样本外夏普比率。研究表明，参考惩罚和投资期限共同影响优化组合表现，且正则化在多期优化中的作用不同于单期。模拟和实证显示该框架显著提升多期策略的稳定性和样本外夏普比率。对实战有一定价值，但偏理论且需高维数据处理能力。",
+    "fetch_date": "2026-06-16",
+    "id": "20260616_13e5effb"
+  },
+  {
+    "title": "Discovery under Hypothesis Redundancy: A Geometric Theory of Discovery Bottlenecks",
+    "url": "https://arxiv.org/pdf/2606.14386v1",
+    "source": "ArXiv",
+    "date": "2026-06-12",
+    "abstract": "Scientific discovery saturates when new hypotheses cease to provide independent information, even if the nominal hypothesis space remains large. We study hybrid discovery systems that combine structured local search with LLM-generated non-local proposals and pose the Search Compression Hypothesis: non-local exploration helps only when three geometric conditions co-occur: spectral compression, orthogonal escape from the explored span, and residual signal alignment with the target. We formalize these conditions, derive necessary conditions for hybrid advantage, and test the mechanism in controlled synthetic environments, large-scale A-share factor discovery, and symbolic-regression benchmarks; a public tabular operational sanity check tests the associated budget-allocation implication. Signal-planting and directed-versus-random experiments show that novelty alone is insufficient: random orthogonal jumps expand coverage but do not improve yield without predictive alignment. Across compression sweeps, real factor archives, and LLM-SRBench tasks, hybrid gains concentrate in weakly represented but target-bearing directions and vanish as the hypothesis space approaches full rank. The framework turns LLM-guided discovery from generic novelty search into a diagnostic procedure for deciding when directed non-local exploration is warranted.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文研究混合发现系统（结合结构局部搜索与LLM生成的非局部提议）中的假设冗余与发现瓶颈，提出搜索压缩假说并验证条件。虽然涉及因子发现，但偏重理论几何条件，非直接交易策略或实操框架，实战价值中等。",
+    "fetch_date": "2026-06-16",
+    "id": "20260616_5db26702"
+  },
+  {
+    "title": "Battery Bidding under Price Uncertainty in Wholesale Electricity Markets",
+    "url": "https://arxiv.org/pdf/2606.14050v1",
+    "source": "ArXiv",
+    "date": "2026-06-12",
+    "abstract": "Grid-scale batteries increasingly influence outcomes in wholesale electricity markets, but their observed bid patterns remain difficult to interpret. In particular, bids that appear to reflect strategic withholding may instead arise from rational operations under price uncertainty and risk management. We develop an asset-level model of a price-taking battery that submits stepwise buy and sell bid curves in the day-ahead market under a finite set of price scenarios. The battery chooses quantity--price pairs to maximize a mean--CVaR objective subject to physical and market constraints. A direct formulation is a mixed-integer linear program, but we show that its integer decisions can be removed, yielding an exact linear programming reformulation suitable for empirical analysis. Our empirical results deliver three insights. First, withholding behavior can arise even without market power, because scarce stored energy and uncertain future prices increase the value of holding energy. Second, the effect of uncertainty depends on the state of charge: when stored energy is scarce, greater uncertainty raises sell bid prices, whereas when stored energy is abundant it can lower them. Third, risk management reshapes bid curves into layered structures that secure profitable execution across a broad set of scenarios while preserving some exposure to rare but valuable price spikes.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "论文研究电池储能在批发电力市场中面对价格不确定性的报价策略，使用均值-CVaR优化和线性规划求解。模型涉及风险管理与物理约束，但未使用强化学习或深度学习，属于优化理论应用，实战价值中等。",
+    "fetch_date": "2026-06-16",
+    "id": "20260616_121bdbf2"
+  },
+  {
+    "title": "Quantum Horizon: An evaluation of quantum computing as a threat to Bitcoin and Ethereum",
+    "url": "https://arxiv.org/pdf/2606.14484v1",
+    "source": "ArXiv",
+    "date": "2026-06-12",
+    "abstract": "Quantum computing poses a real, broad-based, but bounded and substantially mitigable threat to Bitcoin and Ethereum. We separate the two quantum algorithms that public discussion routinely conflates: Shor's algorithm breaks the elliptic-curve signatures (ECDSA over secp256k1, BLS over BLS12-381) that authorize spending, whereas Grover's algorithm does not meaningfully threaten proof-of-work mining, which is protected by a merely quadratic speedup, fault-tolerant per-operation costs, a square-root parallelization wall, and difficulty adjustment. Folding hardware scaling, the falling resource requirement, a fault-tolerance readiness lag, and expert surveys into a single Monte-Carlo forecast yields a wide, bimodal arrival distribution for a cryptographically relevant quantum computer: about a one-in-six chance by 2035, near 30% by 2040, and about 60% by 2050. Exposure is concentrated and mostly migratable: of Bitcoin's roughly six million quantum-exposed coins only about 2.3 million are irreducibly at risk, while 50 to 65% of Ether sits at key-revealed accounts that can adopt post-quantum signatures. A timely migration beats even an optimistic 2035 machine, so the binding constraint is governance, not technology. A survey of the top twenty cryptocurrencies finds none fully post-quantum. Reproducible models accompany every quantitative claim.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文评估量子计算对比特币和以太坊的威胁，区分了Shor算法（威胁椭圆曲线签名）和Grover算法（威胁甚微）。通过蒙特卡洛预测，量子计算机在2035年前威胁概率约1/6，2040年30%，2050年60%。论文指出大部分暴露资产可通过迁移签名规避风险，但缺乏实战交易策略或量化模型，对直接交易价值有限，主要作为风险背景参考。",
+    "fetch_date": "2026-06-16",
+    "id": "20260616_ef84c324"
+  },
+  {
+    "title": "CFOs Meet LLMs",
+    "url": "https://arxiv.org/pdf/2606.13812v1",
+    "source": "ArXiv",
+    "date": "2026-06-11",
+    "abstract": "Business sentiment is a closely watched economic signal, but measuring it is slow and costly: surveys reach only a few hundred firms, arrive periodically, and take time to compile. We show that large language models hold the potential to address these shortcomings. We prompt an LLM to role-play as the CFO of a specific company at a specific date and focus on the economic-optimism question on the Duke-Federal Reserve CFO Survey over 2002-2025. We find that the LLM reproduces individual human responses: the predicted optimism score significantly forecasts the CFO's actual answer, surviving firm and year-quarter fixed effects and a control for the most recent prior response. Predictive accuracy increases with the amount of information supplied, as both respondent history and firm characteristics improve fit, and the relationship persists under quarterly aggregation. With appropriate conditioning, LLMs may be able to serve as credible digital twins of executives, offering scalable, high-frequency expectations data for financial research and policy.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文使用大语言模型（LLM）模拟公司CFO对经济乐观度的调查回答，发现LLM能有效预测真实人类回答，具有高频、低成本的优势。但该方法需要大量历史数据，且依赖LLM的准确性，实际交易应用场景有限，更多是经济预测研究，而非直接交易信号，因此实战价值较低。",
+    "fetch_date": "2026-06-16",
+    "id": "20260616_dd7ea467"
+  },
+  {
     "title": "Realtime price impact detection",
     "url": "https://arxiv.org/pdf/2606.13419v1",
     "source": "ArXiv",
@@ -5938,65 +5998,5 @@
     "summary": "FinRL-X是一个AI原生的模块化量化交易基础设施，通过权重中心接口统一了数据处理、策略构建、回测和经纪商执行。该框架解决了现有开源平台在研发评估与实盘部署之间缺乏系统级一致性的问题，采用可组合的策略流水线，在统一协议下集成选股、资产配置、择时和组合级风险覆盖。支持基于规则和AI驱动的组件（包括强化学习分配器和基于大语言模型的情感信号），而不改变下游执行语义，为可复现的端到端量化交易研发与部署提供了可扩展基础。",
     "fetch_date": "2026-03-25",
     "id": "20260325_36d7f3ed"
-  },
-  {
-    "title": "Approximate Dynamic Programming for Degradation-aware Market Participation of Battery Energy Storage Systems: Bridging Market and Degradation Timescales",
-    "url": "https://arxiv.org/pdf/2603.21089v1",
-    "source": "ArXiv",
-    "date": "2026-03-22",
-    "abstract": "We present an approximate dynamic programming framework for designing degradation-aware market participation policies for battery energy storage systems. The approach employs a tailored value function approximation that reduces the state space to state of charge and battery health, while performing dynamic programming along a pseudo-time axis encoded by state of health. This formulation enables an offline/online computation split that separates long-term degradation dynamics (months to years) from short-term market dynamics (seconds to minutes) -- a timescale mismatch that renders conventional predictive control and dynamic programming approaches computationally intractable. The main computational effort occurs offline, where the value function is approximated via coarse-grained backward induction along the health dimension. Online decisions then reduce to a real-time tractable one-step predictive control problem guided by the precomputed value function. This decoupling allows the integration of high-fidelity physics-informed degradation models without sacrificing real-time feasibility. Backtests on historical market data show that the resulting policy outperforms several benchmark strategies with optimized hyperparameters.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种近似动态规划框架，用于设计电池储能系统的退化感知市场参与策略。该方法采用定制的价值函数近似，将状态空间简化为荷电状态和电池健康状态，同时沿着由健康状态编码的伪时间轴进行动态规划。该公式实现了离线/在线计算分离，将长期退化动态（数月到数年）与短期市场动态（秒到分钟）分开——这种时间尺度不匹配使得传统的预测控制和动态规划方法在计算上难以处理。主要计算工作发生在离线阶段，通过沿健康维度的粗粒度反向归纳来近似价值函数。在线决策则简化为由预计算价值函数指导的实时可处理的一步预测控制问题。这种解耦允许集成高保真物理信息退化模型，而不牺牲实时可行性。历史市场数据的回测表明，所得策略优于多个基准。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_3954cc29"
-  },
-  {
-    "title": "Cyber Deception for Mission Surveillance via Hypergame-Theoretic Deep Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2603.20981v1",
-    "source": "ArXiv",
-    "date": "2026-03-21",
-    "abstract": "Unmanned Aerial Vehicles (UAVs) are valuable for mission-critical systems like surveillance, rescue, or delivery. Not surprisingly, such systems attract cyberattacks, including Denial-of-Service (DoS) attacks to overwhelm the resources of mission drones (MDs). How can we defend UAV mission systems against DoS attacks? We adopt cyber deception as a defense strategy, in which honey drones (HDs) are proposed to bait and divert attacks. The attack and deceptive defense hinge upon radio signal strength: The attacker selects victim MDs based on their signals, and HDs attract the attacker from afar by emitting stronger signals, despite this reducing battery life. We formulate an optimization problem for the attacker and defender to identify their respective strategies for maximizing mission performance while minimizing energy consumption. To address this problem, we propose a novel approach, called HT-DRL. HT-DRL identifies optimal solutions without a long learning convergence time by taking the solutions of hypergame theory into the neural network of deep reinforcement learning. This achieves a systematic way to intelligently deceive attackers. We analyze the performance of diverse defense mechanisms under different attack strategies. Further, the HT-DRL-based HD approach outperforms existing non-HD counterparts up to two times better in mission performance while incurring low energy consumption.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种名为HT-DRL的创新方法，用于保护无人机任务系统（如监视、救援或投递）免受拒绝服务（DoS）攻击。该方法采用网络欺骗作为防御策略，引入诱饵无人机（HDs）来引诱和转移攻击。攻击者和防御者的策略都基于无线电信号强度：攻击者根据信号强度选择目标任务无人机（MDs），而诱饵无人机通过发射更强的信号从远处吸引攻击者，尽管这会减少电池寿命。HT-DRL通过将超博弈论（hypergame theory）的解决方案融入深度强化学习（DRL）的神经网络，实现了快速收敛，无需长时间学习，从而智能地欺骗攻击者，优化任务性能并最小化能耗。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_926f6c08"
-  },
-  {
-    "title": "Neural Hidden Markov Model with Adaptive Granularity Attention for High-Frequency Order Flow Modeling",
-    "url": "https://arxiv.org/pdf/2603.20456v1",
-    "source": "ArXiv",
-    "date": "2026-03-20",
-    "abstract": "We propose a Neural Hidden Markov Model (HMM) with Adaptive Granularity Attention (AGA) for high-frequency order flow modeling. The model addresses the challenge of capturing multi-scale temporal dynamics in financial markets, where fine-grained microstructure signals and coarse-grained liquidity trends coexist.\n  The proposed framework integrates parallel multi-resolution encoders, including a dilated convolutional network for tick-level patterns and a wavelet-LSTM module for low-frequency dynamics. A gating mechanism conditioned on local volatility and transaction intensity adaptively fuses multi-scale representations, while a multi-head attention layer further enhances temporal dependency modeling. Within this architecture, a Neural HMM with conditional normalizing flow emissions is employed to jointly model latent market regimes and complex observation distributions.\n  Empirical results on high-frequency limit order book data demonstrate that the proposed model outperforms fixed-resolution baselines in predicting short-term price movements and liquidity shocks. The adaptive granularity mechanism enables the model to dynamically adjust its focus across time scales, providing improved performance particularly during volatile market conditions.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种用于高频订单流建模的神经隐马尔可夫模型（Neural HMM），并引入了自适应粒度注意力（Adaptive Granularity Attention, AGA）机制。该模型旨在解决金融市场中多尺度时间动态的捕捉难题，即同时处理细粒度（如逐笔数据模式）和粗粒度（如流动性趋势）的信号。其框架整合了并行多分辨率编码器，包括用于逐笔级模式的扩张卷积网络（dilated convolutional network）和用于低频动态的小波-LSTM模块（wavelet-LSTM module）。一个基于局部波动率和交易强度的门控机制（gating mechanism）自适应地融合多尺度表示，而多头注意力层（multi-head attention layer）则进一步增强了时间依赖建模。在此架构中，采用带有条件归一化流（conditional normalizing flow）发射的神经HMM来联合建模潜在市场状态（latent market regimes）和复杂的观测分布。在高频限价订单簿数据上的实证结果表明，该模型在预测短期价格变动和流动性冲击方面优于固定分辨率的基线模型。自适应粒度机制使模型能够动态调整其在时间尺度上的关注点，从而为实战交易提供了更精细的市场状态识别和预测能力。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_a15dec56"
-  },
-  {
-    "title": "Learning to Aggregate Zero-Shot LLM Agents for Corporate Disclosure Classification",
-    "url": "https://arxiv.org/pdf/2603.20965v1",
-    "source": "ArXiv",
-    "date": "2026-03-21",
-    "abstract": "This paper studies whether a lightweight trained aggregator can combine diverse zero-shot large language model judgments into a stronger downstream signal for corporate disclosure classification. Zero-shot LLMs can read disclosures without task-specific fine-tuning, but their predictions often vary across prompts, reasoning styles, and model families. I address this problem with a multi-agent framework in which three zero-shot agents independently read each disclosure and output a sentiment label, a confidence score, and a short rationale. A logistic meta-classifier then aggregates these signals to predict next-day stock return direction. I use a sample of 18,420 U.S. corporate disclosures issued by Nasdaq and S&P 500 firms between 2018 and 2024, matched to next-day stock returns. Results show that the trained aggregator outperforms all single agents, majority vote, confidence-weighted voting, and a FinBERT baseline. Balanced accuracy rises from 0.561 for the best single agent to 0.612 for the trained aggregator, with the largest gains in disclosures combining strong current performance with weak guidance or elevated risk. The results suggest that zero-shot LLM agents capture complementary financial signals and that supervised aggregation can turn cross-agent disagreement into a more useful classification target.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究了一种轻量级训练聚合器，用于整合多个零样本大语言模型（LLM）代理的判断，以生成更强的公司披露分类下游信号。零样本LLM无需任务特定微调即可阅读披露文件，但其预测结果常因提示词、推理风格和模型系列而异。作者采用多代理框架解决此问题：三个零样本代理独立阅读每份披露，输出情感标签、置信度得分和简短理由；随后，一个逻辑元分类器聚合这些信号，以预测次日股票回报方向。研究使用2018年至2024年间纳斯达克和标普500公司发布的18,420份美国公司披露样本，并与次日股票回报匹配。结果显示，训练后的聚合器性能优于所有单一代理、多数投票、置信度加权投票及FinBERT基线。平衡准确率从最佳单一代理的0.561提升至训练聚合器的0.612，在结合强劲当前业绩与弱指导或高风险披露中增益最大。结果表明，零样本LLM代理捕捉了互补信息，其聚合可增强对次日股票回报方向的预测。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_02ed8c62"
-  },
-  {
-    "title": "Discovering parametrizations of implied volatility with symbolic regression",
-    "url": "https://arxiv.org/pdf/2603.21892v1",
-    "source": "ArXiv",
-    "date": "2026-03-23",
-    "abstract": "We investigate the data-driven discovery of parametric representations for implied volatility slices. Using symbolic regression, we search for simple analytic formulas that approximate the total implied variance as a function of log-moneyness and maturity. Our approach generates candidate parametrizations directly from market data without imposing a predefined functional form. We compare the resulting formulas with the widely used SVI parametrization in terms of accuracy and simplicity. Numerical experiments indicate that symbolic regression can identify compact parametrizations with competitive fitting performance.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "我们研究数据驱动的隐含波动率切片参数化表示发现方法。利用符号回归，我们寻找近似总隐含方差作为对数货币性和到期期限函数的简单解析公式。我们的方法直接从市场数据生成候选参数化，无需预先定义函数形式。我们将所得公式与广泛使用的SVI参数化在准确性和简洁性方面进行比较。数值实验表明，符号回归能够识别具有竞争性拟合性能的紧凑参数化。",
-    "fetch_date": "2026-03-25",
-    "id": "20260325_60027222"
   }
 ]
