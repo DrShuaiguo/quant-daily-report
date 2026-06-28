@@ -1,5 +1,17 @@
 [
   {
+    "title": "Improving Financial Forecasting with a Synergistic LLM-Transformer Architecture: A Hybrid Approach to Stock Price Prediction",
+    "url": "https://arxiv.org/abs/2601.02878",
+    "source": "Scholar",
+    "date": "2026-06-29",
+    "abstract": "… the Transformer to adaptively weigh semantic and quantitative information. Empirical evaluations demonstrate that the proposed Hybrid LLM–Transformer … Hybrid stock prediction model …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文提出一种混合LLM-Transformer架构，用于股票价格预测，能够自适应加权语义与定量信息。实验表明该混合模型在预测性能上优于传统方法，对实战交易具有较高参考价值。",
+    "fetch_date": "2026-06-29",
+    "id": "20260629_162a848b"
+  },
+  {
     "title": "Deep Reinforcement Learning for Stock, Portfolio, and Crypto Trading: Insights and Trends (2020–2025)",
     "url": "https://assets.cureusjournals.com/artifacts/upload/review_article/pdf/12720/CureusJournals_1272020260526-144932-fteo84.pdf",
     "source": "Scholar",
@@ -5987,17 +5999,5 @@
     "summary": "该论文探讨了投资与信息论之间的深刻联系，核心是将多期投资问题重构为乘积之和而非和之乘积，从而揭示投资问题的信息结构。论文强调了凯利准则在最大化长期财富、最小化破产风险以及竞争最优性方面的客观最优性，并介绍了汤姆·科弗的通用投资组合理论，该理论在渐近意义上与事后最佳恒定再平衡投资组合表现相当。尽管算法较为抽象，但其揭示的信息结构使投资问题可应用信息论技术，对实战交易中优化投资策略和风险管理具有重要理论指导价值。",
     "fetch_date": "2026-04-15",
     "id": "20260415_7c354d4c"
-  },
-  {
-    "title": "On the Structure of Risk Contribution: A Leave-One-Out Decomposition into Inherent and Correlation Risk",
-    "url": "https://arxiv.org/pdf/2604.10375v1",
-    "source": "ArXiv",
-    "date": "2026-04-11",
-    "abstract": "This paper develops a decomposition of standard Risk Contribution (RC) into two economically interpretable components: inherent risk and correlation risk. Using a leave-one-out representation, each position's RC separates into a term reflecting its own volatility contribution independent of the portfolio and a term capturing its covariance with the remainder of the portfolio. The inherent component is always positive, arising from the intrinsic volatility of the position, while the correlation component may amplify or mitigate total portfolio risk depending on how the position moves relative to other holdings. Because the decomposition operates within standard RC, it preserves the property of strict additivity. This separation provides diagnostic insight not visible from aggregate risk contributions alone. It distinguishes whether a position contributes risk because it is volatile in isolation or because it is highly correlated with the rest of the portfolio, and it clarifies when a negatively correlated position functions as an effective hedge. Two approaches to time-series analysis are presented to track how inherent and correlation risk evolve across market regimes, revealing whether changes in portfolio risk during stress periods are driven by volatility shocks, correlation shifts, or both. Empirical illustrations suggest that the decomposition provides stable, transparent, and easily implementable risk diagnostics that can support portfolio risk reporting, stress testing, and performance attribution.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一种将标准风险贡献分解为两个经济可解释成分的方法：内在风险和相关性风险。通过留一法表示，每个头寸的风险贡献被分离为反映其独立于投资组合的波动性贡献项，以及捕捉其与投资组合其余部分协方差的项。内在成分始终为正，源于头寸的内在波动性；而相关性成分可能放大或减轻总组合风险，具体取决于该头寸相对于其他持仓的变动。该分解在标准风险贡献框架内操作，保留了严格可加性。这种分离提供了仅从聚合风险贡献中无法获得的诊断洞察，区分了头寸是因自身孤立波动性还是因与投资组合高度相关而贡献风险，并阐明了负相关头寸何时作为有效对冲。提出了两种时间序列分析方法来跟踪内在风险和相关性风险在不同市场环境中的演变。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_b5c8ddd1"
   }
 ]
