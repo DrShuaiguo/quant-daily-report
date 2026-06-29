@@ -1,5 +1,65 @@
 [
   {
+    "title": "CryptoGAT: Are Time Series Models Effective for Cryptocurrency Forecasting?",
+    "url": "https://arxiv.org/pdf/2606.27670v1",
+    "source": "ArXiv",
+    "date": "2026-06-26",
+    "abstract": "Cryptocurrency price prediction is a significant challenge in quantitative investment. In recent years, time series models have made significant progress in financial forecasting tasks, especially in the stock market. Despite the growing performance over the past few years, we question the validity of this line of research in cryptocurrency prediction. Specifically, time series models (e.g., LSTM, GRU, and Transformers) are effective at extracting temporal relationships in stock market data. However, in pure price-based cryptocurrency prediction, facing data with extreme volatility and wild swings, time series models have difficulty learning effective information. To validate our claim, we propose CryptoGAT, a lightweight Graph Attention Network that recasts cryptocurrency pure price prediction as a cross-asset graph problem rather than a temporal modeling task. Extensive experiments on real cryptocurrency benchmarks demonstrate that our proposed CryptoGAT outperforms various state-of-the-art forecasting methods with a notable margin. Moreover, we conduct comprehensive empirical studies to explore the fundamental differences exposed by time series models in stock and cryptocurrency prediction: differences in predictability of the signal and cross-asset dependencies. This finding opens up new research directions for the cryptocurrency pure price prediction task and inspires further graph-based exploration in the field. The source code is available at https://github.com/FanBroWell/CryptoGAT",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文质疑时间序列模型（如LSTM、GRU、Transformer）在加密货币预测中的有效性，并提出基于图注意力网络（GAT）的CryptoGAT模型，将纯价格预测重构为跨资产图问题。实验表明CryptoGAT优于现有方法。虽然模型创新，但实战中需考虑更多因素，评分7。",
+    "fetch_date": "2026-06-30",
+    "id": "20260630_88052b26"
+  },
+  {
+    "title": "An AI-based hyperautomation framework for algorithmic trading: forecasting automated trading strategy profitability from market data",
+    "url": "https://www.tandfonline.com/doi/abs/10.1080/17517575.2026.2628644",
+    "source": "Scholar",
+    "date": "2026-06-30",
+    "abstract": "… In Taiwan, algorithmic trading has become an important tool … the execution methods of algorithmic trading still pose both … Even though platforms offer diversified strategies, profitability …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文提出了一个基于AI的超自动化框架，用于算法交易中预测策略盈利能力。结合台湾市场数据，可能涉及深度学习或强化学习方法，具有一定的实战应用价值。",
+    "fetch_date": "2026-06-30",
+    "id": "20260630_00312760"
+  },
+  {
+    "title": "The Decision Geometry of Covariance Estimation for the Global Minimum-Variance Portfolio under Heavy Tails",
+    "url": "https://arxiv.org/pdf/2606.27462v1",
+    "source": "ArXiv",
+    "date": "2026-06-25",
+    "abstract": "The global minimum-variance portfolio (GMVP) is the canonical decision built from an estimated covariance matrix, yet covariance estimators are universally evaluated by matrix-norm loss, which is not the object the decision depends on. We characterise exactly how covariance-estimation error maps into GMVP suboptimality. We prove an exact regret identity and a non-asymptotic bound showing decision regret depends on the estimation error only through its action on the portfolio weights, scaled by portfolio concentration and the conditioning of the true covariance. From this we derive the decision geometry: GMVP regret is invariant to a (p-1)-dimensional projection of the p^2-dimensional error matrix, with invariance to the covariance-scale direction as an exact special case. We then apply the framework to heavy-tailed returns (tail index kappa in (2,4)), establishing the regret convergence rate implied by the centred operator-norm rate, and confirm the theory on a skew-t/t-copula simulation design with pre-registered analysis. The decision-focused advantage is a sharper constant and a concentration discount rather than a faster rate; we report an honest high-conditioning boundary of the rate prediction. The results complement recent decision-focused learning approaches by supplying the exact estimation geometry and consistency theory they lack.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文从理论上推导了协方差估计误差对全局最小方差组合（GMVP）次优性的影响，提出了决策几何框架，并应用于重尾分布。虽与实战投资组合优化相关，但偏重理论推导，实用价值有限。",
+    "fetch_date": "2026-06-30",
+    "id": "20260630_d75b19eb"
+  },
+  {
+    "title": "(In)Efficient Market States and Rough Volatility Detected via Grunwald-Letnikov Fractional Derivative",
+    "url": "https://arxiv.org/pdf/2606.27932v1",
+    "source": "ArXiv",
+    "date": "2026-06-26",
+    "abstract": "Testing self-similarity in fractional processes from a single observed trajectory is difficult under long-range dependence, because the associated Kolmogorov--Smirnov (KS) statistic undergoes a phase transition when $H>1/2$. In this regime, the classical limit collapses to a non-functional absolute Gaussian law and finite-sample convergence becomes severely distorted. This paper introduces a regime-adaptive KS/GL--KS framework based on the discrete Grünwald--Letnikov (GL) fractional derivative. The GL filter removes the low-frequency long-memory singularity while preserving the finite-dimensional $H$-self-similarity needed for distributional identification. We derive the filtered empirical-process limit, prove consistency and local asymptotic behavior of the resulting Hurst estimator, and validate the method through Monte Carlo simulations. Financial applications to realized volatility and equity index prices show how the procedure detects rough volatility and persistent, anti-persistent, or efficient market states.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文提出基于Grünwald-Letnikov分数阶导数的Hurst指数自适应估计方法，用于检测市场状态（粗糙波动、有效、持久/反持久）。方法偏统计理论，提供了策略框架但缺少直接交易信号，实战价值有限。",
+    "fetch_date": "2026-06-30",
+    "id": "20260630_22db0a53"
+  },
+  {
+    "title": "Action-Space Entropy Regularization in Bayesian Markowitz",
+    "url": "https://arxiv.org/pdf/2602.16862v4",
+    "source": "ArXiv",
+    "date": "2026-02-18",
+    "abstract": "We solve the entropy-regularized mean--variance portfolio problem under Bayesian drift uncertainty. We combine continuous-time Bayesian filtering with stochastic policy optimization; the main finding is negative: the two mechanisms are orthogonal. Posterior dynamics are policy-independent, so entropy regularization cannot accelerate learning about the unknown drift. The mean control is identical to the deterministic Bayesian Markowitz feedback, and entropy enters only through policy variance. On the technical side, the optimal policy is Gaussian, the value function is quadratic in wealth, and the leading belief-dependent coefficient closes in exponential form. The framework recovers both parent models as limiting cases.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究了贝叶斯漂移不确定性下的熵正则化均值-方差投资组合问题，主要发现是贝叶斯滤波与随机策略优化是正交的，即熵正则化无法加速对未知漂移的学习，最优控制与确定性贝叶斯Markowitz反馈相同。理论上证明了最优策略为高斯分布，价值函数为财富的二次函数。论文偏重理论推导，缺乏实战交易所需的具体alpha策略或深度学习应用，因此实战价值较低。",
+    "fetch_date": "2026-06-30",
+    "id": "20260630_3a6fc7df"
+  },
+  {
     "title": "Improving Financial Forecasting with a Synergistic LLM-Transformer Architecture: A Hybrid Approach to Stock Price Prediction",
     "url": "https://arxiv.org/abs/2601.02878",
     "source": "Scholar",
@@ -5939,65 +5999,5 @@
     "summary": "本文提出了一种名为“资金耗尽强化学习（OOM-RL）”的目标对齐范式，旨在解决多智能体系统在自主软件工程中的对齐问题。通过将智能体部署到非平稳、高摩擦的真实金融市场中，利用关键资本耗尽作为不可篡改的负梯度，迫使系统放弃过度拟合的幻觉，转而采用严格的测试驱动智能体工作流（STDAW）。该研究基于长达20个月的实证研究，展示了系统从高周转、谄媚的基线演变为稳健、流动性感知架构的过程。",
     "fetch_date": "2026-04-15",
     "id": "20260415_577c04d6"
-  },
-  {
-    "title": "Preference-Agile Multi-Objective Optimization for Real-time Vehicle Dispatching",
-    "url": "https://arxiv.org/pdf/2604.10664v1",
-    "source": "ArXiv",
-    "date": "2026-04-12",
-    "abstract": "Multi-objective optimization (MOO) has been widely studied in literature because of its versatility in human-centered decision making in real-life applications. Recently, demand for dynamic MOO is fast-emerging due to tough market dynamics that require real-time re-adjustments of priorities for different objectives. However, most existing studies focus either on deterministic MOO problems which are not practical, or non-sequential dynamic MOO decision problems that cannot deal with some real-life complexities. To address these challenges, a preference-agile multi-objective optimization (PAMOO) is proposed in this paper to permit users to dynamically adjust and interactively assign the preferences on the fly. To achieve this, a novel uniform model within a deep reinforcement learning (DRL) framework is proposed that can take as inputs users' dynamic preference vectors explicitly. Additionally, a calibration function is fitted to ensure high quality alignment between the preference vector inputs and the output DRL decision policy. Extensive experiments on challenging real-life vehicle dispatching problems at a container terminal showed that PAMOO obtains superior performance and generalization ability when compared with two most popular MOO methods. Our method presents the first dynamic MOO method for challenging \\rev{dynamic sequential MOO decision problems",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种偏好敏捷多目标优化（PAMOO）方法，用于解决实时车辆调度中的动态多目标优化问题。该方法基于深度强化学习（DRL）框架，允许用户在运行时动态调整和交互式分配偏好向量，并通过校准函数确保偏好输入与DRL决策策略的高质量对齐。在集装箱码头实际车辆调度问题上的实验表明，PAMOO取得了优越性能。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_0666a453"
-  },
-  {
-    "title": "Regime-Aware Specialist Routing for Volatility Forecasting",
-    "url": "https://arxiv.org/pdf/2604.10402v1",
-    "source": "ArXiv",
-    "date": "2026-04-12",
-    "abstract": "Volatility forecasting becomes challenging when market conditions change and model performance varies across regimes. Motivated by this instability, we develop a regime-aware specialist routing framework for ETF volatility forecasting. The framework uses online risk-sensitive evaluation and state-dependent gating to combine different forecasting specialists across calm and stressed market states. Using a daily panel of six ETFs under a rolling walk-forward design, we find that the strongest forecaster is regime-dependent rather than global. Relative to the rolling-best baseline, the proposed routing framework reduces high-volatility forecast loss by about 24\\% and underprediction loss by about 22\\%. These results suggest that specialist routing provides a practical adaptive forecasting architecture for changing market conditions.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文《Regime-Aware Specialist Routing for Volatility Forecasting》针对市场条件变化时波动率预测的挑战，提出了一个基于状态感知的专家路由框架。该框架通过在线风险敏感评估和状态依赖门控机制，结合不同市场状态（平静与压力）下的预测专家。在六只ETF的日度面板数据滚动前向测试中，研究发现最优预测者具有状态依赖性而非全局性。相比滚动最优基线，该路由框架将高波动率预测损失降低了约24%，预测不足损失降低了约22%。结果表明，专家路由为变化市场条件提供了一种实用的自适应预测架构。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_8995b0f2"
-  },
-  {
-    "title": "Deep Learning for Sequential Decision Making under Uncertainty: Foundations, Frameworks, and Frontiers",
-    "url": "https://arxiv.org/pdf/2604.11507v1",
-    "source": "ArXiv",
-    "date": "2026-04-13",
-    "abstract": "Artificial intelligence (AI) is moving increasingly beyond prediction to support decisions in complex, uncertain, and dynamic environments. This shift creates a natural intersection with operations research and management sciences (OR/MS), which have long offered conceptual and methodological foundations for sequential decision-making under uncertainty. At the same time, recent advances in deep learning, including feedforward neural networks, LSTMs, transformers, and deep reinforcement learning, have expanded the scope of data-driven modeling and opened new possibilities for large-scale decision systems. This tutorial presents an OR/MS-centered perspective on deep learning for sequential decision-making under uncertainty. Its central premise is that deep learning is valuable not as a replacement for optimization, but as a complement to it. Deep learning brings adaptability and scalable approximation, whereas OR/MS provides the structural rigor needed to represent constraints, recourse, and uncertainty. The tutorial reviews key decision-making foundations, connects them to the major neural architectures in modern AI, and discusses leading approaches to integrating learning and optimization. It also highlights emerging impact in domains such as supply chains, healthcare and epidemic response, agriculture, energy, and autonomous operations. More broadly, it frames these developments as part of a wider transition from predictive AI toward decision-capable AI and highlights the role of OR/MS in shaping the next generation of integrated learning--optimization systems.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "人工智能正从预测转向支持复杂、不确定、动态环境中的决策，这自然与长期为不确定性下序贯决策提供概念和方法基础的运筹学与管理科学相交汇。同时，深度学习的最新进展（如前馈神经网络、LSTM、Transformer和深度强化学习）扩展了数据驱动建模的范围，并为大规模决策系统开辟了新可能。本教程从OR/MS中心视角探讨深度学习在不确定性下序贯决策中的应用，核心前提是：深度学习的价值并非替代优化，而是作为其补充——深度学习带来适应性和可扩展的近似能力，而OR/MS则提供表示约束、追索和不确定性所需的结构严谨性。教程回顾关键决策基础，将其与现代AI主要神经架构连接，并讨论整合学习与优化的前沿方法。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_75ef17ca"
-  },
-  {
-    "title": "Temperature Anomalies and Climate Physical Risk in Portfolio Construction",
-    "url": "https://arxiv.org/pdf/2604.11143v1",
-    "source": "ArXiv",
-    "date": "2026-04-13",
-    "abstract": "Driven by the increasing frequency and intensity of natural disasters and chronic climate threats, we investigate the impact of physical climate risk on global equity portfolios. By employing a panel regression analysis on sectoral returns, we provide statistical evidence that extreme temperature events exert a negative effect on most sectors. We introduce two novel metrics based on these temperature anomalies, Climate Risk Exposure and Climate Exposure Volatility, in order to measure the environmental vulnerability of a portfolio. Unlike available static country-level indices, these metrics incorporate the time varying probability of extreme events and their relations with firm-specific asset intensity. We integrate these measures into a multi-objective portfolio optimization framework. This approach extends the traditional Mean-Variance paradigm, allowing investors to construct portfolios that are resilient to physical climate shocks without sacrificing diversification. Finally, we conduct a backtesting analysis to show the practical benefits of incorporating these climate risk metrics into the investment process, evaluating how climate-aware strategies perform relative to traditional benchmarks.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文研究了物理气候风险对全球股票投资组合的影响。通过行业回报的面板回归分析，提供了极端温度事件对多数行业产生负面影响的统计证据。作者引入了两个基于温度异常的新指标——气候风险敞口和气候敞口波动率，用于衡量投资组合的环境脆弱性。与现有的静态国家层面指数不同，这些指标纳入了极端事件随时间变化的概率及其与公司特定资产强度的关系。作者将这些指标整合到一个多目标投资组合优化框架中，扩展了传统的均值-方差范式，使投资者能够构建既能抵御物理气候冲击又不牺牲多样化的投资组合。最后，通过回测分析展示了将气候风险指标纳入投资过程的实际益处，评估了气候意识策略相对于传统策略的表现。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_8edc43e6"
-  },
-  {
-    "title": "Investing Is Compression",
-    "url": "https://arxiv.org/pdf/2604.10758v1",
-    "source": "ArXiv",
-    "date": "2026-04-12",
-    "abstract": "Bell Labs describing the relationship between gambling and Information Theory. What became known as the Kelly criterion is an objective or utility function and a closed form solution in simple cases. The economist Paul Samuelson argued that it was an arbitrary utility function, and he successfully kept it out of mainstream economics. But he was wrong. We now know, largely through the work of Tom Cover at Stanford, that Kelly's proposal is objectively optimal: it maximizes long-term wealth, it minimizes the risk of ruin, and in a game-theoretic sense, it is competitively optimal, even over the short term.\n  One of Cover's most surprising contributions to portfolio theory was the universal portfolio, related to universal compression in information theory, which performs asymptotically as well as the best constant-rebalanced portfolio in hindsight. Although the algorithm itself is very abstract, one of the key steps Cover used -- rewriting the multi-period investing problem as a sum of products rather than a product of sums -- reveals the information structure of the investing problem, making it accessible to the techniques of information theory.\n  That same technique is applied here to show that even in the most general form, Kelly's objective factors the investing problem into three terms: a money term, an entropy term, and a divergence term. Because the first two terms are independent of the allocation, the only way to maximize the compounding growth rate is to minimize the friction from the divergence term, which measures, in bits, the difference between the chosen distribution and the unknown true distribution. This means that investing is, fundamentally, a compression problem.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文探讨了投资与信息论之间的深刻联系，核心是将多期投资问题重构为乘积之和而非和之乘积，从而揭示投资问题的信息结构。论文强调了凯利准则在最大化长期财富、最小化破产风险以及竞争最优性方面的客观最优性，并介绍了汤姆·科弗的通用投资组合理论，该理论在渐近意义上与事后最佳恒定再平衡投资组合表现相当。尽管算法较为抽象，但其揭示的信息结构使投资问题可应用信息论技术，对实战交易中优化投资策略和风险管理具有重要理论指导价值。",
-    "fetch_date": "2026-04-15",
-    "id": "20260415_7c354d4c"
   }
 ]
