@@ -1,5 +1,65 @@
 [
   {
+    "title": "Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model",
+    "url": "https://arxiv.org/pdf/2607.01595v1",
+    "source": "ArXiv",
+    "date": "2026-07-02",
+    "abstract": "As the scale and complexity of cloud-based AI systems continue to escalate, ensuring service reliability through rapid fault detection and adaptive recovery has become a critical challenge. While existing approaches integrate Large Language Models (LLMs) for semantic understanding and Deep Reinforcement Learning (DRL) for policy optimization, they often rely on sequential, loosely coupled architectures that underutilize the generative and reasoning capabilities of LLMs. In this paper, we propose a paradigm shift with PASE, a Planning-Aware Semantic self-healing engine, a novel fault self-healing framework that reconceptualizes recovery as a neuro-symbolic program synthesis task. PASE employs an LLM as a core Plan Synthesis Engine to generate structured recovery plans from a library of semantic primitives. A Neural-Symbolic World Model verifies plan feasibility through simulation, while a Meta-Prompt Optimizer, trained via DRL, learns to generate optimal prompts that guide the LLM's planning process. This tight reason-plan-verify-adapt loop enables dynamic, context-aware recovery strategy generation beyond predefined action spaces. Experiments on a real-world cloud fault injection dataset demonstrate that PASE significantly outperforms state-of-the-art methods, reducing average system recovery time by over 40% and improving fault detection accuracy in unknown fault scenarios. Our framework advances autonomous system management by unifying LLM-based reasoning with model-assisted verification and meta-learned guidance.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文提出PASE框架，将LLM用于生成结构化的恢复计划，并通过神经符号世界模型验证可行性，DRL优化提示。核心是自适应云故障恢复，结合深度强化学习和LLM，对实战交易中动态策略生成有借鉴意义。",
+    "fetch_date": "2026-07-04",
+    "id": "20260704_e36639b2"
+  },
+  {
+    "title": "Liquidity Premium and Investment Horizons",
+    "url": "https://arxiv.org/pdf/2607.01377v1",
+    "source": "ArXiv",
+    "date": "2026-07-01",
+    "abstract": "We estimate Kyle's (1985) price-impact coefficient $λ$ directly from daily equity order flow and test its ability to forecast the cross-section of subsequent stock returns. Using CRSP data from 2020 to 2025, we construct firm-month measures of signed order flow and two estimators of $\\hatλ_{it}$: a within-month price-impact regression and an Amihud-style ratio. Signed order flow strongly predicts contemporaneous and one-month-ahead returns, while volume volatility predicts lower subsequent returns, consistent with widening price impact degrading price discovery. Fama-MacBeth regressions confirm that our order-flow signal carries significant cross-sectional return information after Newey--West adjustment. Theoretically, we resolve the liquidity premium puzzle of Constantinides (1986) through an adverse-selection mechanism: low order flow widens $λ$ and depresses prices today; subsequent normalization restores prices, generating the illiquidity premium without risk-based compensation.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "论文直接估计Kyle的λ（价格冲击系数），并在2020-2025年CRSP数据中检验其对股票截面收益的预测能力。结果表明，有符号订单流显著预测当月及下月收益，而成交量波动预示后续收益较低。Fama-MacBeth回归证实订单流信号携带显著的截面收益信息。实战价值高，因为直接提供了可量化的订单流因子，可转化为交易信号。",
+    "fetch_date": "2026-07-04",
+    "id": "20260704_a759677f"
+  },
+  {
+    "title": "Portfolio Optimization under Fast and Slow Latent Mean-Reverting and Momentum Drift",
+    "url": "https://arxiv.org/pdf/2607.01705v1",
+    "source": "ArXiv",
+    "date": "2026-07-02",
+    "abstract": "We consider a class of partial-information portfolio optimization problems in which the drift of a risky asset is driven by two latent stochastic factors evolving at distinct time scales. We show that the filtered estimate of the latent mean-reversion level is driven by the difference between fast and slow exponential moving average (EMA)-type processes of the trailing price history, yielding a Moving Average Convergence Divergence (MACD)-type signal, along with a deterministic Volterra correction. Under logarithmic, power, and exponential utility, we derive candidate optimal strategies in explicit feedback form and establish admissibility and verification results. In particular, the results provide a mathematical foundation for the endogenous emergence of MACD-type trading signals as estimators of latent drift information contained in observed price paths.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文将部分信息下的投资组合优化问题与MACD指标联系起来，为MACD交易信号提供了理论基础，并推导出显式的策略形式。虽然理论性较强，但由于MACD是实战中常用指标，且论文给出了可操作的策略形式，对价格动量驱动的交易策略有一定参考价值，因此给予6分。",
+    "fetch_date": "2026-07-04",
+    "id": "20260704_17479724"
+  },
+  {
+    "title": "Is Trend Still Your Friend?: A Microstructural Account of the Demise of Short-Term Trend-Following",
+    "url": "https://arxiv.org/pdf/2607.01550v1",
+    "source": "ArXiv",
+    "date": "2026-07-02",
+    "abstract": "Systematic trend following has, on average, been profitable for at least two centuries; yet since approximately 2009, short-term trends have ceased to deliver reliable returns. Using a cross-section of roughly 100 liquid futures contracts spanning 1995-2025, together with an industry-representative CTA proxy, we document the break and characterise its dependence on signal speed and asset class. We evaluate four candidate explanations - capacity constraints, market electronification, a regime change in CTA-versus-order-flow interactions, and a microstructural mechanism - and find that the first three fail on grounds of timing, magnitude, or cross-sectional heterogeneity.\n  Our central empirical finding is that the cross-sectional variable distinguishing degraded from surviving trends is the volatility-normalised tick size: post-2008 trend PnL has collapsed on small-tick contracts across all signal horizons, while remaining essentially intact on large-tick ones. Neither asset class nor liquidity replicates this dichotomy.\n  We interpret this result through a self-fulfilling feedback loop that, in our view, lies at the heart of the trend anomaly itself: trend signals trigger directional trades, whose market impact reinforces the very price moves that generated the signal. Both the profitability and the persistence of trend are sustained by this impact channel, which requires that trend followers can execute aggressively at reasonable cost. We argue that the post-crisis transition to HFT-dominated market making, whose liquidity-withdrawal behaviour in front of predictable directional flow has sharply contrasting consequences for sparse (small-tick) and dense (large-tick) limit order books, has broken this loop on small-tick contracts. On large-tick contracts, residual depth remains sufficient, and the loop continues to operate.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文研究趋势跟踪策略在2009年后对短期趋势失效的现象，发现其根本原因在于波动率归一化后的tick大小：小tick合约趋势收益崩塌，大tick合约则保持有效。论文提供基于微观结构的实证解释，对交易员调整策略参数、区分合约有实战价值，但未提供可直接部署的alpha信号或深度学习模型，因此评分为6。",
+    "fetch_date": "2026-07-04",
+    "id": "20260704_9454f9e6"
+  },
+  {
+    "title": "A Cap-Axis Integral Diagnostic of Factor Models",
+    "url": "https://arxiv.org/pdf/2607.01765v1",
+    "source": "ArXiv",
+    "date": "2026-07-02",
+    "abstract": "I propose a cap-axis integral diagnostic for factor-model evaluation. Low-dimensional factor models can improve the maximum-Sharpe frontier while leaving zero-alpha violations on economically fixed subspaces. The diagnostic studies one such subspace by lifting pricing errors into a bridge-alpha curve along the market-capitalization rank axis. Under an aggregate-market gate, a zero curve is equivalent to pricing the market's internal cap-rank subspace. In 1967-2024 CRSP data, q5's daily negative bridge attenuates under lead-lag correction, while Fama-French and Carhart bridges are more visible monthly. Across 154 factors, the cap-axis norm is distinct from Sharpe gain and size exposure.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "论文提出一种基于市值轴积分的因子模型诊断方法，通过构建桥alpha曲线评估定价误差，属于因子模型评估的理论方法，对实战策略的直接影响有限，但可能间接用于因子选择。",
+    "fetch_date": "2026-07-04",
+    "id": "20260704_be939787"
+  },
+  {
     "title": "End-to-End Parametric Portfolio Policies for Cross-Asset Futures Timing: When Do AI Models Beat Simple Rules?",
     "url": "https://arxiv.org/pdf/2607.00475v1",
     "source": "ArXiv",
@@ -5939,65 +5999,5 @@
     "summary": "稀疏性与复杂性？在现代高维资产定价中，这两者常被视为对立原则：更丰富的特征空间似乎倾向于复杂性，而经济学直觉则长期青睐简约性。本文表明这种对立是错误的。我们区分了容量稀疏性（候选特征空间的维度）与因子稀疏性（定价风险的简约结构），并论证两者是互补的：扩大容量有助于发现因子稀疏性。通过重新审视Didisheim等人（2025）的基准实证设计，并将其推向更高复杂性机制，我们证明非线性特征扩展结合基追踪方法产生的投资组合，在超过临界复杂性阈值后，其样本外表现优于无岭基准。证据表明，复杂性带来的收益并非源于保留更多因子，而是源于扩大可从中识别定价风险稀疏结构的空间。资产定价中复杂性的价值通过因子稀疏性发挥作用。",
     "fetch_date": "2026-04-22",
     "id": "20260422_7fb6b3fc"
-  },
-  {
-    "title": "Topological Risk Parity",
-    "url": "https://arxiv.org/pdf/2604.16773v1",
-    "source": "ArXiv",
-    "date": "2026-04-18",
-    "abstract": "We develop \\emph{Topological Risk Parity} (TRP), a tree-based portfolio construction approach intended for long/short, market neutral, factor-aware portfolios. The method is motivated by the dominance of passive/factor flows that naturally create a tree-like structure in markets. We introduce two implementation variants: (i) a rooted minimum-spanning-tree allocator, and (ii) a market/sector-anchored variant referred to here as \\emph{Semi-Supervised TRP}, which imposes SPY as the root node and the 11 sector ETFs as the second layer. In both cases, the key object is a sparse rooted topology extracted from a correlation-distance graph, together with a propagation law that maps signed signals into portfolio weights.\n  Relative to classical Hierarchical Risk Parity (HRP), TRP is non-binary and designed for signed cross-sectional signals and hedged long-short portfolios: it preserves signal direction while using return-dependence geometry to shape exposures. It accounts for the fact that there is imperfect correlation between parent and child nodes, and thus does not propagate weights entirely to the children. We can also impose economically motivated hierarchy that involves industries, sub-industries or factors, etc. This makes it much more robust to macroeconomic shocks and crises, where within-cluster correlations might spike. These features make TRP well suited for market-neutral, equity stat-arb or L/S trend-type strategies, where enforcing neutrality or limiting exposures at the market, sector or factor level is extremely important.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文提出了一种名为“拓扑风险平价”（TRP）的树状投资组合构建方法，专为多空、市场中性和因子感知的投资组合设计。该方法基于市场中的被动/因子流自然形成的树状结构，引入了两种实现变体：一是根最小生成树分配器，二是以市场/行业为锚的“半监督TRP”，后者将SPY作为根节点，11个行业ETF作为第二层。核心是通过相关性距离图提取稀疏根拓扑结构，并结合传播法则将带符号的信号映射为投资组合权重。相较于经典的分层风险平价（HRP），TRP是非二元的，适用于带符号的横截面信号和对冲多空投资组合：它在利用收益依赖几何形状调整敞口的同时，保留了信号方向。该方法考虑了父子节点间的不完全相关性，因此不会将权重完全传播给子节点，并可施加基于行业的经济动机层次结构。",
-    "fetch_date": "2026-04-22",
-    "id": "20260422_8a68821a"
-  },
-  {
-    "title": "SAFE machine learning in quantitative trading",
-    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5015984",
-    "source": "Scholar",
-    "date": "2026-04-22",
-    "abstract": "… model outputs serve as trading signals for IBM stock. In contrast, deep learning models are … , which are then transformed into trading signals through additional processing. Moreover, …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文探讨了在量化交易中应用SAFE机器学习方法，具体以IBM股票为案例，将模型输出直接作为交易信号。相比之下，深度学习模型需要额外处理步骤来转化为交易信号。这表明论文具有实战导向，直接关联交易信号生成，对量化交易实践有较高参考价值。",
-    "fetch_date": "2026-04-22",
-    "id": "20260422_69d821be"
-  },
-  {
-    "title": "An Advanced Ensemble Deep Learning Framework for Stock Price Prediction Using VAE, Transformer, and LSTM Model",
-    "url": "https://arxiv.org/abs/2503.22192",
-    "source": "Scholar",
-    "date": "2026-04-22",
-    "abstract": "… This research develops an ensemble architecture to combine VAE features with transformer … stock prediction outcomes than traditional approaches or standalone modeling approaches. …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "本研究开发了一种集成架构，将变分自编码器（VAE）的特征与Transformer和LSTM模型相结合，用于股票价格预测。该集成方法相比传统方法或独立建模方法，在股票预测结果上表现更优。",
-    "fetch_date": "2026-04-22",
-    "id": "20260422_63db118e"
-  },
-  {
-    "title": "Post-Screening Portfolio Selection",
-    "url": "https://arxiv.org/pdf/2604.17593v1",
-    "source": "ArXiv",
-    "date": "2026-04-19",
-    "abstract": "We propose post-screening portfolio selection (PS$^2$), a two-step framework for high-dimensional mean--variance investing. First, assets are screened by Lasso-type regression of a constant on excess returns without an intercept. Second, portfolio weights are estimated on the selected set using standard low-dimensional methods. Because strong factors can destroy sparsity in real data, we further introduce PS$^2$ with factors (FPS$^2$), which defactors returns before screening and allows factor investing in the final step. We establish theoretical guarantees, and simulations and an empirical application show competitive performance, especially when sparse screening is appropriate or strong factors are explicitly accommodated.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "我们提出后筛选投资组合选择（PS²），这是一个用于高维度均值-方差投资的两步框架。首先，通过无截距的常数对超额收益进行Lasso型回归来筛选资产。其次，在选定集合上使用标准低维度方法估计投资组合权重。由于实际数据中强因子可能破坏稀疏性，我们进一步引入带因子的PS²（FPS²），它在筛选前对收益进行去因子处理，并允许在最终步骤中进行因子投资。我们建立了理论保证，模拟和实证应用显示出具有竞争力的性能，特别是在稀疏筛选适用或明确考虑强因子的情况下。",
-    "fetch_date": "2026-04-22",
-    "id": "20260422_6431a2dd"
-  },
-  {
-    "title": "Vault as a credit instrument",
-    "url": "https://arxiv.org/pdf/2604.17579v1",
-    "source": "ArXiv",
-    "date": "2026-04-19",
-    "abstract": "We derive five tractable credit risk metrics for DeFi lending vault depositors, grounded in a formal three level decomposition of vault risk into mechanical loss channels (Level~1), governance quality (Level~2) and smart contract code integrity (Level~3). For Level~1, we show that six structural features of onchain execution (oracle execution divergence, endogenous recovery, full information run dynamics, timelock constrained governance, oracle manipulation and congestion driven liquidation failure) break canonical TradFi analogies and generate depositor loss channels absent from standard credit frameworks. Vault credit risk metrics translate these channels into measurable risk components which are aggregated into a vault credit score. The empirical contribution is an implementable estimation architecture for credit risk metrics, including required onchain data, identification strategies for core parameters, partial identification bounds and a coherent stress scenario methodology. The results have direct implications for vault risk management and for minimum transparency standards necessary for depositor risk assessment.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一种针对DeFi借贷金库存款人的信用风险度量框架，将金库风险分解为三个层级：执行机制损失渠道（Level 1）、治理质量（Level 2）和智能合约代码完整性（Level 3）。研究指出，链上执行的六个结构特征（预言机执行偏差、内生恢复、完全信息挤兑动态、时间锁约束治理、预言机操纵和拥堵驱动的清算失败）打破了传统金融的类比，并产生了标准信用框架中不存在的存款人损失渠道。这些渠道被转化为可测量的风险组件，并汇总为金库信用评分。实证贡献包括一个可实施的信用风险度量估计架构，涵盖所需链上数据、核心参数的识别策略、部分识别边界以及一致的压力情景方法。研究结果对金库风险管理和存款人风险评估所需的最低透明度标准具有直接意义。",
-    "fetch_date": "2026-04-22",
-    "id": "20260422_3b02bbcf"
   }
 ]
