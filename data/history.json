@@ -1,4 +1,8 @@
 [
+  "Pretrained llm adapted with lora as a decision transformer for offline rl in quantitative trading",
+  "AI and financial fragility: A framework for measuring systemic risk in deployment of generative AI for stock price predictions",
+  "BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting",
+  "Optimizing Multi-agent and Functional Architectures for Enhanced Financial Trading Performance: VinTradeAgent Case Study",
   "Optimal Prediction of Resistance and Support Levels under Constant Elasticity of Variance Processes",
   "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers",
   "Estimating the Stochastic Discount Factor from Option Prices and Predicting the Equity Premium",

@@ -1,5 +1,41 @@
 [
   {
+    "title": "BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting",
+    "url": "https://arxiv.org/abs/2605.17937",
+    "source": "Scholar",
+    "date": "2026-07-12",
+    "abstract": "… This context prompts us to investigate whether LLM-based agents can reliably automate the … TradeMaster: a holistic quantitative trading platform empowered by reinforcement learning. …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "本文提出BacktestBench基准，用于评估基于LLM的智能体在自动化量化策略回测中的可靠性。核心利用TradeMaster平台（强化学习驱动）进行实验，表明LLM可辅助回测流程自动化，对实战中应用RL/DL策略有参考价值。",
+    "fetch_date": "2026-07-12",
+    "id": "20260712_ee2a7f8d"
+  },
+  {
+    "title": "Optimizing Multi-agent and Functional Architectures for Enhanced Financial Trading Performance: VinTradeAgent Case Study",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-13203-1_37",
+    "source": "Scholar",
+    "date": "2026-07-12",
+    "abstract": "… domain, particularly in quantitative trading. Recent research has … is to extend the potential of LLM agents beyond trading, … in the Vietnamese stock market, LLM agents can transform key …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "论文研究了越南股票市场中使用LLM智能体的多智能体和功能架构，以提升交易性能。通过优化智能体协作，实现了alpha生成和风险管理的增强，属于实战性强的应用研究。",
+    "fetch_date": "2026-07-12",
+    "id": "20260712_6972dbbc"
+  },
+  {
+    "title": "Pretrained llm adapted with lora as a decision transformer for offline rl in quantitative trading",
+    "url": "https://arxiv.org/abs/2411.17900",
+    "source": "Scholar",
+    "date": "2026-07-12",
+    "abstract": "… quantitative trading, where data is often limited in diversity. … Our experimental setup involves first training expert RL agents in a … We then collect trajectories from these RL agents and use …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文探讨了使用预训练大语言模型结合LoRA微调作为决策Transformer，应用于离线强化学习的量化交易场景。实验先训练专家RL代理，再收集其轨迹用于训练，旨在解决数据多样性有限的问题。对实战有较高参考价值。",
+    "fetch_date": "2026-07-12",
+    "id": "20260712_12acdb24"
+  },
+  {
     "title": "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy",
     "url": "https://arxiv.org/pdf/2607.08346v1",
     "source": "ArXiv",
@@ -5963,41 +5999,5 @@
     "summary": "本文提出Dynamic-TD3算法，将无人机路径规划建模为约束马尔可夫决策过程，集成自适应轨迹关系演化机制和物理感知门控卡尔曼滤波器，以在动态障碍物环境下平衡安全与效率。虽涉及强化学习，但聚焦于机器人导航而非金融交易，实战交易价值有限。",
     "fetch_date": "2026-05-05",
     "id": "20260505_f0d7f7fb"
-  },
-  {
-    "title": "Do Short Exposure and Systematic Risk Exposure Drive Asymmetries in the Disposition Effect?",
-    "url": "https://arxiv.org/pdf/2605.00016v1",
-    "source": "ArXiv",
-    "date": "2026-04-18",
-    "abstract": "This study examines the disposition effect in both long and short exposure positions in FTSE MIB tracking ETFs using a unique dataset of almost 9 million individual transactions. Building on the integrated framing approach, we extend the analysis to explicitly incorporate leverage and long short exposures, allowing us to assess how portfolio context and systematic risk exposure jointly are associated to investors realization behavior. Methodologically, we generalize Odean canonical Count and Total measures to wide and integrated framing, introduce a novel Value metric that captures the return thresholds required to realize gains versus losses, and implement these measures in dispositionEffect, an open-source R package for large-scale intraday data. We show that short positions exhibit a weaker disposition effect than long positions under narrow framing, but that this asymmetry reverses in positively performing portfolios under integrated framing. Systematic risk further amplifies these behavioral asymmetries across positions. Overall, our findings demonstrate that the disposition effect is not solely asset-specific, but is critically shaped by the interaction between portfolio context, position type, and systematic risk exposure. More broadly, the results are consistent with the joint predictions of Prospect Theory and Regret Theory, highlighting the central role of framing in investor decision-making.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "该研究利用近900万笔交易数据，考察FTSE MIB跟踪ETF中多头和空头头寸的处置效应，发现空头在窄框架下处置效应较弱，但在集成框架下反转；系统性风险放大行为不对称。方法论上推广了Odean指标并引入新价值度量。虽涉及交易行为，但偏重实证分析，实战直接性有限，评分5分。",
-    "fetch_date": "2026-05-05",
-    "id": "20260505_7b3bef40"
-  },
-  {
-    "title": "Optimal Merton's Problem under Multivariate Affine Volterra Models with Jumps",
-    "url": "https://arxiv.org/pdf/2605.00688v1",
-    "source": "ArXiv",
-    "date": "2026-05-01",
-    "abstract": "This paper is concerned with portfolio selection for an investor with exponential, power, and logarithmic utility in multi-asset financial markets allowing jumps. We investigate the classical Merton's portfolio optimization problem in a Volterra stochastic environment described by a multivariate Volterra--Heston model with jumps driven by an independent Poisson random measure. Owing to the non-Markovian and non-semimartingale nature of the model, classical stochastic control techniques are not directly applicable. Instead, the problem is tackled using the martingale optimality principle by constructing a family of supermartingale processes characterized via solutions to an original Riccati backward stochastic differential equation with jumps (Riccati BSDEJ).The resulting optimal strategies for Merton's problems are derived in semi-closed form depending on the solutions to time-dependent multivariate Riccati-Volterra equations, while the optimal value is expressed using the solution to this original Riccati BSDEJ. Numerical experiments on a two-dimensional rough Heston model illustrate the impact of both path roughness and jumps components on the value function and optimal strategies in the Merton problem.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文研究多资产跳跃扩散的Volterra-Heston模型下的Merton最优投资组合问题，提出通过Riccati BSDEJ求解半闭式最优策略。理论性强，但模型复杂且依赖数值解，实战交易中直接应用难度高，价值有限。",
-    "fetch_date": "2026-05-05",
-    "id": "20260505_7f4441bb"
-  },
-  {
-    "title": "ForesightFlow: An Information Leakage Score Framework for Prediction Markets",
-    "url": "https://arxiv.org/pdf/2605.00493v1",
-    "source": "ArXiv",
-    "date": "2026-05-01",
-    "abstract": "ForesightFlow is an Information Leakage Score (ILS) framework for detecting informed trading on decentralized prediction markets. For an event-resolved binary market, the score quantifies the fraction of the terminal information move priced in before the public news event. Three operational scope conditions (edge effect, non-trivial total move, anchor sensitivity) are stated as preconditions for interpretation. The score admits a Murphy-decomposition reading that connects label generation to the proper-scoring-rule literature.\n  A pilot empirical evaluation surfaces three findings. First, a resolution-anchored proxy for the public-event timestamp does not separate event-resolved markets from a matched control population (Mann-Whitney p = 1e-6, separation reversed), demonstrating that proxy quality is itself a binding constraint. Second, the article-derived timestamp on a single high-stakes case shifts the score by 0.444 in magnitude relative to the proxy and lies on the opposite side of zero. Third, an audit of the publicly documented Polymarket insider record reveals that documented cases are systematically deadline-resolved, falling outside the original ILS scope (0 of 24 FFIC inventory markets satisfied original scope conditions).\n  This last finding motivates a deadline-ILS extension introduced in Section 7, anchored at the public-event timestamp rather than the news timestamp, and equipped with a per-category exponential hazard baseline for the time-to-event distribution. The extension closes the gap between the methodology and the population in which insider trading has been empirically documented. An end-to-end evaluation of the extension on the 2026 U.S.-Iran conflict cluster is reported in a companion paper. We release the FFIC inventory, the resolution-typology classification of the 911,237-market corpus, and all code at github.com/ForesightFlow.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "ForesightFlow提出了一种信息泄漏评分（ILS）框架，用于检测去中心化预测市场中的知情交易。论文通过Murphy分解将标签生成与适当评分规则联系起来，并进行了初步实证评估。虽然涉及实战交易场景（预测市场），但框架主要关注信息泄漏检测，而非直接交易策略或alpha生成，实战价值有限。",
-    "fetch_date": "2026-05-05",
-    "id": "20260505_258fd5b1"
   }
 ]
