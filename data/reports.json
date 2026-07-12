@@ -1,5 +1,53 @@
 [
   {
+    "title": "Reinforcement learning for algorithmic trading in financial markets",
+    "url": "https://search.proquest.com/openview/bf3b2bf0fadeaddb9b621c17b1c4a8a7/1?pq-origsite=gscholar&cbl=18750&diss=y",
+    "source": "Scholar",
+    "date": "2026-07-13",
+    "abstract": "… In multi-period algorithmic trading, determining algorithms that are ideal for riskaverse … of model-free reinforcement learning (RL) in algorithmic trading and analyzed the relationship …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "本文研究了基于强化学习的算法交易策略，重点探讨了模型无关强化学习在多期算法交易中的风险规避应用。实战价值高，RL方法可直接用于交易决策优化。",
+    "fetch_date": "2026-07-13",
+    "id": "20260713_f40added"
+  },
+  {
+    "title": "Adaptive Stock Market Prediction Using Node Transformer Architectures with Sentiment Analysis and Reinforcement Learning Control",
+    "url": "https://ruor.uottawa.ca/items/bc830b7a-def1-4ba3-b5c7-0161d07905b4",
+    "source": "Scholar",
+    "date": "2026-07-13",
+    "abstract": "… using autoencoder-gated dual node transformers with reinforcement learning control. … Multi-dimensional behavioral evaluation of agentic stock prediction systems using LLM judges with …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "本文提出自适应股票预测模型，结合自动编码器门控双节点变换器、情感分析和强化学习控制。通过LLM法官进行多维行为评估，强调实战中RL和深度学习对Alpha的增强。",
+    "fetch_date": "2026-07-13",
+    "id": "20260713_26f7365d"
+  },
+  {
+    "title": "Intelligent financial forecasting using transformers, neuro-symbolic AI, and agent-based systems",
+    "url": "https://www.nature.com/articles/s41598-026-49558-0",
+    "source": "Scholar",
+    "date": "2026-07-13",
+    "abstract": "… As a matter of fact, experimental research demonstrated that transformers outperform both … for real-time stock prediction tasks [8]. Consequently, several transformer-driven models such …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文评估了Transformer、神经符号AI和基于智能体的方法在实际金融预测中的表现。实验表明，Transformer在实时股票预测任务中优于其他模型。这些技术可直接应用于量化交易策略开发，具有较高的实战价值。",
+    "fetch_date": "2026-07-13",
+    "id": "20260713_abc1f734"
+  },
+  {
+    "title": "Cryptocurrency Quantitative Trading Strategy Based On Machine Learning Approach",
+    "url": "http://eprints.usm.my/63845/1/Pages%20from%20FU%20DINGYU%20-%20TESIS.pdf",
+    "source": "Scholar",
+    "date": "2026-07-13",
+    "abstract": "… To address these limitations, researchers have increasingly turned to machine learning and deep learning techniques. Among them, Recurrent Neural Networks (RNNs) have shown …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文提出基于机器学习（特别是RNN）的加密货币量化交易策略，涉及实战应用，但缺乏强化学习或Alpha策略等前沿方法，评分7分。",
+    "fetch_date": "2026-07-13",
+    "id": "20260713_8b0e985d"
+  },
+  {
     "title": "BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting",
     "url": "https://arxiv.org/abs/2605.17937",
     "source": "Scholar",
@@ -5951,53 +5999,5 @@
     "summary": "该论文评估了一种预测市场内幕交易检测方法的实证表现，基于Polymarket的合约数据。虽然涉及交易相关的时间泄露评分（ILS-dl），但更偏向金融经济学或信息效率的理论验证，缺乏可直接应用的交易策略或信号。对于量化实战，尤其是高频或alpha策略，价值有限。",
     "fetch_date": "2026-05-06",
     "id": "20260506_eee86926"
-  },
-  {
-    "title": "Analytic approximation for Bachelier option prices and applications",
-    "url": "https://arxiv.org/pdf/2605.02040v1",
-    "source": "ArXiv",
-    "date": "2026-05-03",
-    "abstract": "It is well-known that, in the Bachelier model, when asset prices and volatilities are uncorrelated, the implied volatility coincides with the fair value of the volatility swap. In this paper, via classical Itô calculus and Taylor expansions, we write the price for out-of-the-money (OTM) and in-the-money (ITM) options as an expansion with respect to the moneyness, where the coefficients are related to the negative (non-integer) powers of the future mean volatility. As an a application, we use it as a control variate to reduce the variance of Monte Carlo option prices in the correlated case.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文在Bachelier模型下，通过伊藤引理和泰勒展开，推导了价外和价内期权价格关于货币性的展开式，并将其作为控制变量来降低相关情形下蒙特卡洛期权定价的方差。论文侧重于理论推导和定价方差缩减，未直接涉及实战交易策略、机器学习或Alpha信号，因此实战价值较低。",
-    "fetch_date": "2026-05-06",
-    "id": "20260506_0ea162b6"
-  },
-  {
-    "title": "Martingale Cohomology, Holonomy, and Homological Arbitrage",
-    "url": "https://arxiv.org/pdf/2605.01370v1",
-    "source": "ArXiv",
-    "date": "2026-05-02",
-    "abstract": "We develop a cohomological framework for martingale theory based on categorical filtrations, where time is modeled by a small category and a filtration is defined as a contravariant functor to the category of probability spaces. By constructing a simplicial cochain complex associated with such filtrations, we show that martingales arise naturally as $0$-cocycles. A key feature of the construction is the presence of a multiplicative distortion encoded by a density operator, which prevents the naive coboundary from forming a cochain complex. We introduce a normalization procedure, called the $β$-gauge, which removes this obstruction and yields a well-defined cochain complex. Within this framework, $1$-cochains represent gain systems, and the first cohomology group captures consistent gains that cannot be generated by any price process. This leads to the notion of homological arbitrage, interpreted as a global cohomological obstruction. We further introduce an additive holonomy along loops in the time category, defined by transporting gains via conditional expectation. This provides an observable quantity measuring total gain accumulation along loops. By factoring out transport effects arising from price systems, we define a cohomological holonomy that depends only on the cohomology class and isolates the intrinsic loop-level arbitrage component. These results suggest a geometric perspective on financial markets in which arbitrage arises from global structures associated with nonlinear time.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文将鞅理论置于上同调框架中，用范畴论定义滤子，构造单纯上链复形，并引入β-规范消除密度算子导致的障碍。1-上链对应收益系统，第一上同调群捕捉无法由价格过程生成的持续收益，定义为同调套利。还引入沿环路和乐以测量累积收益。理论性强，实战价值低。",
-    "fetch_date": "2026-05-06",
-    "id": "20260506_1f4ff938"
-  },
-  {
-    "title": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
-    "url": "https://arxiv.org/pdf/2605.00420v1",
-    "source": "ArXiv",
-    "date": "2026-05-01",
-    "abstract": "Evaluating the true forecasting ability of AI agents requires environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy's classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a 50-round live evaluation of five frontier LLM agents plus a random baseline. Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. All smart contracts and evaluation infrastructure are open-source.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出了Foresight Arena，一个去中心化、基于链上预测市场的AI预测代理评估基准，性能由Brier Score和Alpha Score衡量。虽然不直接涉及量化交易，但其评估预测能力（如事件概率）的方法对开发预测市场交易或信号生成策略有参考价值。",
-    "fetch_date": "2026-05-05",
-    "id": "20260505_cfe76846"
-  },
-  {
-    "title": "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
-    "url": "https://arxiv.org/pdf/2605.00059v1",
-    "source": "ArXiv",
-    "date": "2026-04-30",
-    "abstract": "Deep reinforcement learning (DRL) finds extensive application in autonomous drone navigation within complex, high-risk environments. However, its practical deployment faces a safety-exploration dilemma: soft penalty mechanisms encourage risky trial-and-error, while most constraint-based methods suffer degraded performance under sensor noise and intent uncertainty. We propose Dynamic-TD3, a physically enhanced framework that enforces strict safety constraints while maintaining maneuverability by modeling navigation as a Constrained Markov Decision Process (CMDP). This framework integrates an Adaptive Trajectory Relational Evolution Mechanism (ATREM) to capture long-range intentions and employs a Physically Aware Gated Kalman Filter (PAG-KF) to mitigate non-stationary observation noise. The resulting state representation drives a dual-criterion policy that balances mission efficiency against hard safety constraints via Lagrangian relaxation. In experiments with aggressive dynamic threats, this approach demonstrates superior collision avoidance performance, reduced energy consumption, and smoother flight trajectories.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出Dynamic-TD3算法，将无人机路径规划建模为约束马尔可夫决策过程，集成自适应轨迹关系演化机制和物理感知门控卡尔曼滤波器，以在动态障碍物环境下平衡安全与效率。虽涉及强化学习，但聚焦于机器人导航而非金融交易，实战交易价值有限。",
-    "fetch_date": "2026-05-05",
-    "id": "20260505_f0d7f7fb"
   }
 ]
