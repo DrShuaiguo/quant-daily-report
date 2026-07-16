@@ -1,5 +1,77 @@
 [
   {
+    "title": "Measuring Sentiment News with Transformer-Based Language Models",
+    "url": "https://arxiv.org/pdf/2607.13968v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "Measuring sentiment from financial news is a central task in economics and finance, yet most existing indicators rely on dictionary-based approaches that infer sentiment from word counts and only partially capture context, negation, and semantic structure. This paper proposes a framework for constructing daily news mood indices using transformer-based language models and evaluates whether they better represent sentiment than dictionary-based alternatives. Using 143,755 financial news articles from Factiva, we classify sentiment at the sentence level with FinBERT and aggregate these predictions into article-level and daily sentiment measures through alternative normalization schemes. We compare the resulting indices with benchmark measures based on Shapiro et al., 2022 and Barbaglia et al., 2025. A central contribution is the validation of alternative sentiment measures against human judgments. We conducted an incentivized annotation exercise in which 444 participants evaluated a validation subsample of 588 financial news articles. Consensus ratings from independent human evaluations serve as an external benchmark for assessing the quality of automated sentiment measures. Across correlation, regression, and classification exercises, transformer-based measures show stronger agreement with human judgments than vocabulary-based alternatives and perform substantially better in distinguishing positive, neutral, and negative articles. Overall, the results suggest that incorporating contextual information through transformer-based language models produces sentiment measures that more closely reflect human assessments of financial news.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文使用基于Transformer的语言模型（FinBERT）从金融新闻中构建每日情绪指标，并与基于词典的方法对比，通过人工标注验证情绪质量。核心贡献在于提出更精准的情绪度量方法，可直接用于量化交易策略（如情绪因子构建、事件驱动策略）。实战价值高。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_7265c3a0"
+  },
+  {
+    "title": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling",
+    "url": "https://arxiv.org/pdf/2607.13929v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "Financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs. We introduce Vector-Input Autoregressive Inference for Ordinal-Return Modeling (VAIOM), a decoder-only Transformer for probabilistic next-return modeling on one-hour foreign-exchange bars. VAIOM separates input representation from output likelihood: continuous multivariate financial-event vectors preserve numerical structure at the input, while a categorical distribution over the next volatility-normalized return bucket supports cross-entropy training and likelihood evaluation. The selected 0.9M Hybrid Continuous Input model combines continuous event features with categorical asset metadata, a Mixture-of-Market-States return head, Gap, volatility-regime, and Ordinal auxiliary objectives, and full-sequence supervision. Models and preprocessing are fit using pre-2024 Train data; models are selected on 2024H2 Validation and evaluated without refitting on two 2025 Test periods. Across three independent training seeds, every model outperforms fixed single-bar LightGBM baseline in both Test halves. For the canonical checkpoint, paired gains over LightGBM are 0.029 and 0.043 bits per event. Validation experiments show that continuous input improves over discrete-token input under the same categorical return objective, full-sequence supervision improves over last-position training, and auxiliary representation shaping together with a mixture-structured return head improves return likelihood in controlled comparisons. A supporting capacity study finds that the smallest evaluated complete architecture rung achieves the strongest Validation likelihood on the present corpus.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "VAIOM提出了一种新颖的解码器仅Transformer结构，用于外汇数据上的概率性下一回报预测。它将连续输入向量与离散输出（波动率归一化的回报类别）相结合，支持交叉熵训练和极大似然评估。模型包含混合市场状态、波动率区间辅助目标等实用设计，且在2025年测试周期上优于LightGBM基线。该方法对实战交易有直接参考价值，尤其适用于概率预测和有序回报建模。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_e33199d0"
+  },
+  {
+    "title": "Is Deep Hedging Reinforcement Learning?",
+    "url": "https://arxiv.org/pdf/2607.13353v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "The deep hedging framework of Buehler et al. (2019) trains a neural network policy, via Monte Carlo simulation of price paths and stochastic gradient descent, to minimize a risk measure applied to the terminal hedging error. In a recent stream of papers, my coauthors and I have referred to this technique as reinforcement learning (RL), a characterization that referees on several submissions have challenged on two grounds, among others: first, that because feedback is generated only at the terminal date, with no intermediate reward signal, the method cannot constitute genuine RL; and second, that the absence of a value function, a Bellman equation, temporal-difference (TD) learning, and an explicit exploration mechanism disqualifies the method from the RL category altogether, so that it should instead be labeled a neural-network method for stochastic optimal control. I argue that both objections rest on an unduly narrow, TD-centric reading of what constitutes RL. Once RL is understood, as it is in the standard references of the field, to include Monte Carlo policy-gradient methods and direct (actor-only) policy search as first-class members, the deep hedging algorithm of Buehler et al. (2019) falls squarely within the RL umbrella.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文论证了深度对冲中的神经网络策略训练方法（通过蒙特卡洛模拟价格路径和随机梯度下降最小化终端对冲误差的风险度量）可以被视为强化学习（RL）中的策略梯度方法，即使没有中间奖励信号或显式价值函数。这为将RL技术应用于对冲策略提供了理论支持，但偏向方法论分类，而非具体交易策略。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_512e417d"
+  },
+  {
+    "title": "How Effective Is Mamba-Augmented Transformer for Stock Market Price Forecasting?",
+    "url": "https://www.mdpi.com/2674-1032/5/1/15",
+    "source": "Scholar",
+    "date": "2026-07-17",
+    "abstract": "",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文研究Mamba增强的Transformer在股票价格预测中的有效性。Mamba是一种新的状态空间模型，结合注意力机制可提升捕捉长序列依赖的能力，可能带来改进的预测性能。虽然偏向深度学习模型实验，未直接涉及强化学习或alpha策略，但模型改进对实战交易具有潜在价值，尤其是高频或时序预测场景。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_f2e3c8cb"
+  },
+  {
+    "title": "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures",
+    "url": "https://arxiv.org/pdf/2607.13916v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "Artificial transaction generation remains an important source of potential market manipulation on cryptocurrency exchanges, as it may distort reported liquidity and reduce market transparency. This study proposes a diagnostic framework for detecting unusual trading patterns based on complexity and statistical-structure measures derived from high-frequency trade-level data. The analysis considers log-returns, trading volume, and transaction counts, using tail distributions, autocorrelation functions, multifractal characteristics, approximate entropy, and detrended cross-correlations. The methodology is applied to BTC, ETH, and XRP traded on Binance, Bitget, KuCoin, and Kraken over the period from April 1 to June 30, 2025. The results reveal a pronounced anomaly on Bitget for BTC and ETH after mid-May 2025. The number of transactions increases sharply, but there is no proportional increase in traded volume or return fluctuations. This regime is characterised by numerous low-volume trades, weaker autocorrelations, reduced multifractal organisation, higher short-pattern irregularity, and weaker cross-correlations involving the transaction-count series. These features are consistent with a noise-like component in trading activity and may indicate artificially increased transaction counts, although they do not provide direct proof of wash trading. The findings show that complexity-based indicators can be useful for detecting exchange-specific trading anomalies that remain hidden in price-based measures.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文提出基于复杂度和统计结构指标（如尾部分布、自相关、多分形特征、近似熵、去趋势互相关）的诊断框架，利用高频逐笔数据检测加密货币交易所的异常交易模式。应用于2025年4-6月Binance、Bitget等交易所的BTC、ETH、XRP数据，发现Bitget在5月中旬后出现大量低价交易、成交量与回报未同步增加、自相关弱化、多分形组织减少、短模式不规则性增强等异常特征，符合潜在市场操纵模式。对实战交易具有参考价值，但主要聚焦检测而非交易策略，且方法偏统计，非直接可执行信号。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_d58969bb"
+  },
+  {
+    "title": "Anchored Geodesic Analysis for Multivariate Extremes",
+    "url": "https://arxiv.org/pdf/2607.13112v1",
+    "source": "ArXiv",
+    "date": "2026-07-14",
+    "abstract": "Extremal dependence is naturally described by the angular law of large multivariate observations. We introduce anchored geodesic component analysis (AGCA), a dimension-reduction method for extremal angular laws on the positive unit sphere. AGCA approximates angular variation by great subspheres constrained to pass through a chosen reference direction, with balanced complete dependence as the default anchor. Under a bounded sine-squared geodesic loss, the population and empirical problems reduce exactly to eigenanalysis of a second-moment matrix of anchored tangent departures. The resulting scores, loadings, residual risks and explained-variation summaries describe departures from the benchmark and remain well defined for face and near-axis extremes. Low-rank AGCA reconstructions also support tail simulation: bounded Lipschitz functionals and homogeneous tail scores, including portfolio capped excesses and value-at-risk, inherit explicit error bounds from the AGCA residual risk. We establish top-\\(k\\) consistency for oracle and rank-Pareto AGCA summaries and an oracle central limit theorem whose covariance is that of an independent sample from the limiting angular law. In daily equity-portfolio losses, AGCA finds concentrated benchmark-relative tail directions: ten components explain about \\(91\\%\\) of anchored variation and approximate capped-excess and normalized value-at-risk summaries with about \\(1.25\\%\\) average relative error.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文介绍了一种针对多变量极值的锚定测地线分析方法（AGCA），用于降维和尾部模拟。虽然涉及极端依赖结构和风险度量（如VaR），但方法较理论化，未直接提供可交易的信号或策略。",
+    "fetch_date": "2026-07-17",
+    "id": "20260717_17089054"
+  },
+  {
     "title": "When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting",
     "url": "https://arxiv.org/pdf/2607.12248v1",
     "source": "ArXiv",
@@ -5927,77 +5999,5 @@
     "summary": "论文提出了一种基于演员-评论家随机策略梯度的方法，结合近端策略优化和浅层神经网络，用于解决多维不确定波动率模型下的稳健期权定价问题。方法通过C藤表示参数化策略矩阵保证正定性，并在数值实验中展示了准确性和计算效率。属于机器学习在金融衍生品定价中的应用，有一定实战参考价值，但更偏重算法研究，直接实战应用需进一步适配。",
     "fetch_date": "2026-05-12",
     "id": "20260512_c5bfc407"
-  },
-  {
-    "title": "Reason to Play: Behavioral and Brain Alignment Between Frontier LRMs and Human Game Learners",
-    "url": "https://arxiv.org/pdf/2605.08019v1",
-    "source": "ArXiv",
-    "date": "2026-05-08",
-    "abstract": "Humans rapidly learn abstract knowledge when encountering novel environments and flexibly deploy this knowledge to guide efficient and intelligent action. Can modern AI systems learn and plan in a similar way? We study this question using a dataset of complex human gameplay with concurrent fMRI recordings, in which participants learn novel video games that require rule discovery, hypothesis revision, and multi-step planning. We jointly evaluate models by their ability to play the games, match human learning behavior, and predict brain activity during the same task, comparing a suite of frontier Large Reasoning Models (LRMs) against model-free and model-based deep reinforcement learning agents and a Bayesian theory-based agent. We find that frontier LRMs most closely match human behavioral patterns during game discovery and predict brain activity an order of magnitude better than both reinforcement learning alternatives across cortical and subcortical regions, with effects robust to permutation controls. Through targeted manipulations, we further show that brain alignment reflects the model's in-context representation of the game state rather than its downstream planning or reasoning. Our results establish LRMs as compelling computational accounts of human learning and decision making in complex, naturalistic environments. Project page with interactive replays: https://botcs.github.io/reason-to-play/",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "前沿大推理模型在视频游戏学习任务中匹配人类行为模式并预测大脑活动，相比强化学习方法表现更优，但更偏向认知和神经科学探索，实战交易中可直接应用价值有限，但大推理模型在规则发现、假设修订和规划能力对量化交易策略探索有潜在启发。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_548c9c4c"
-  },
-  {
-    "title": "American Options Pricing under Heston Model via Curriculum Learning in Coupled PINNs",
-    "url": "https://arxiv.org/pdf/2605.06688v1",
-    "source": "ArXiv",
-    "date": "2026-05-01",
-    "abstract": "In American options, the early exercise feature allows the option to be exercised at any time prior to expiration. However, this flexibility introduces a challenge: the pricing model must value the option while simultaneously determining an unknown, time-varying exercise boundary. The Heston model is one of the most popular ways to model real market behavior because it allows volatility to change over time. However, unlike European options, there is no closed-form solution for American options under the Heston model, so we have to use numerical methods. In this paper, we propose a novel approach to solving the stochastic Heston partial differential equation for American options, using coupled physics-informed neural networks (PINNs) to predict both the option price and the free boundary, while employing curriculum learning and adaptive resampling to stabilize model training. Our work builds on recent deep learning methods but introduces a more effective training strategy to address the limitations of these approaches. The numerical results demonstrate the effectiveness of the proposed learning framework, providing a robust and efficient alternative to pricing American options, enabling rapid inference and accurate estimation under stochastic volatility.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出基于课程学习的耦合物理信息神经网络（PINNs）来定价Heston模型下的美式期权，同时预测期权价格和自由边界，通过课程学习和自适应重采样稳定训练。数值结果表明该方法有效、鲁棒。虽涉及深度学习，但偏重数值方法改进，非直接交易策略或因子，实战价值中等。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_695140ae"
-  },
-  {
-    "title": "Corporate transparency and the disposition effect",
-    "url": "https://arxiv.org/pdf/2605.07352v1",
-    "source": "ArXiv",
-    "date": "2026-05-08",
-    "abstract": "The disposition effect describes investors' irrational behavior of selling profitable assets too soon while holding onto losing assets for too long. This study examines the impact of transparency at the firm level on the disposition effect of individual investors who hold that company's stock. Our results show that an increase in corporate transparency significantly reduces the disposition effect. Further analysis reveals that for companies with greater transparency, when the held stock is profitable, investors' confidence in holding it increases, leading to a reduced bias toward selling profitable stocks. When the stock is held at a loss, investors' confidence in holding it weakens, but they often perceive the loss as temporary and maintain confidence in the company's long-term prospects, thus exacerbating the bias toward holding losing stocks. The effect of increased transparency on the selling behavior of profitable stocks is greater than its effect on the selling behavior of losing stocks. Overall, an increase in corporate transparency significantly reduces the disposition effect.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "研究公司透明度对个人投资者处置效应的影响。发现透明度提高会显著降低处置效应，主要通过增强盈利股票持有信心（减少过早卖出）和加剧亏损股票持有倾向（认为亏损暂时且看好长期）。透明度对盈利卖出行为的抑制效果大于对亏损持有行为的加剧效果。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_d2b22ac5"
-  },
-  {
-    "title": "Extrema, Barrier Options, and Semi-Analytic Leverage Corrections in Stochastic-Clock Volatility Models",
-    "url": "https://arxiv.org/pdf/2605.06677v1",
-    "source": "ArXiv",
-    "date": "2026-04-22",
-    "abstract": "Barrier derivatives depend on extrema and first-passage events and are therefore highly sensitive to volatility dynamics -- especially to the instantaneous return-volatility correlation $ρ$, often called ``leverage''. This sensitivity makes accurate and fast pricing under realistic stochastic-volatility specifications difficult: two-dimensional PDE solvers are expensive inside calibration loops, while Monte Carlo methods converge slowly when barrier hits are rare and discretely monitored. In equity markets in particular, the pronounced implied-volatility skew motivates factoring in a negative return-volatility correlation. We study a class of continuous-path stochastic-clock volatility models in which the log-price is represented as a Brownian motion run on a random increasing clock. In the baseline independent-clock case (ρ=0), a broad family of barrier-relevant objects-maximum distributions, survival probabilities, and killed joint laws-reduces to one-dimensional quantities determined by the Laplace transform of the terminal clock. This yields transform-only pricing formulas for single- and double-barrier contracts that are fast and numerically stable once the clock transform is available, notably for affine and quadratic clocks. To incorporate leverage without forfeiting tractability, we develop a systematic small-ρexpansion around the ρ=0 backbone. The expansion produces a hierarchy of forced problems whose forcing terms are semi-analytic and computable from baseline barrier objects. We provide two implementable leverage-correction routes\\,: forced PDEs and a Duhamel-type Monte Carlo representation, and we show how Pad{é} acceleration can extend practical accuracy to equity-like correlations. Calibration then proceeds by\\,: (i) fitting clock parameters from vanillas using only one-dimensional transforms, (ii) precomputing the ρ=0 barrier backbone once, and (iii) iterating on ρ(and any remaining parameters) using the fast semi-analytic corrections-optionally Pad{é}-accelerated-inside a standard least-squares loop.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "论文研究随机时钟波动率模型中的极值、障碍期权和杠杆校正，提出基于拉普拉斯变换的半解析定价公式，提高了障碍期权定价的速度和数值稳定性。但该工作偏向理论定价方法，与实战交易中的策略开发、因子挖掘或机器学习直接关联较弱。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_bd1cf410"
-  },
-  {
-    "title": "Tuning in to Frequencies: How Global Assets Align with U.S. Put-Call Parity Residuals",
-    "url": "https://arxiv.org/pdf/2604.19605v5",
-    "source": "ArXiv",
-    "date": "2026-04-21",
-    "abstract": "Put-call parity is a risk-neutral identity, but enforcing it is path-dependent and capital-using. I study the carry gap, the annualized wedge between option-implied and OIS discount factors, in SPX and RUT options. Because parity enforcement ties up scarce capital, its opportunity cost may reflect outside investment opportunities. Adding low-frequency global asset-return components to an OIS-based baseline improves in-sample and leave-one-year-out out-of-sample R^2, with gains robust to broad-dollar neutralization, alternative asset blocks, and nested horizon selection. The evidence indicates reduced-form P-Q alignment: the carry gap is not empirically separable from physical-measure outside-option proxies, rather than behaving as a purely OIS-contained wedge.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "该论文研究美股期权隐含贴现因子与OIS贴现因子之间的利差（carry gap），发现其与全球资产收益的低频成分相关，表明该利差并非纯金融工具定价。虽有实证分析，但聚焦宏观金融联系而非可直接交易的alpha策略，实战价值中等。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_c01d0c1f"
-  },
-  {
-    "title": "Stochastic Calculus and the Black-Scholes-Merton Model: A Simplified Approach",
-    "url": "https://arxiv.org/pdf/2605.07558v1",
-    "source": "ArXiv",
-    "date": "2026-05-08",
-    "abstract": "This paper refutes the claim that the expected rate of return of the underlying asset plays no role in the Black-Scholes-Merton option pricing model.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文驳斥了在Black-Scholes-Merton期权定价模型中标的资产预期收益率不起作用的观点，属于理论探讨，对实战交易价值有限。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_1b4b4b81"
   }
 ]
