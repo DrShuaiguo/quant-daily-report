@@ -1,5 +1,77 @@
 [
   {
+    "title": "SciPhy Reinforcement Learning for Portfolio Optimization",
+    "url": "https://arxiv.org/pdf/2607.15195v1",
+    "source": "ArXiv",
+    "date": "2026-07-16",
+    "abstract": "This paper introduces a dynamic portfolio optimization framework for large institutional investors using Scientific Physics-Informed Reinforcement Learning (SciPhyRL). Formulated in continuous time over an extended state space that includes explicit cumulative costs, the approach leverages offline historical data to learn optimal, distribution-aware strategies. A core innovation reduces the optimization challenge to solving an HJB equation by projecting it onto observed trajectories as a pathwise Hamilton-Jacobi equation. This is solved directly from data using PINN in a single offline sweep, eliminating the need for traditional value or policy iteration. To make the method effective at practical short horizons, the control variable is recast from a continuous trading rate to a discrete target holding. This ensures signal-implied positions are reached immediately, while execution costs are evaluated against a microstructure-grounded quadratic price impact model. Evaluated on a $14$-asset ETF universe using an engineered oracle signal, the learned Gibbs policy yields substantial out-of-sample Sharpe ratio improvements over static and myopic baselines. The results demonstrate that the proposed framework successfully translates known signal quality into a robust, multi-period, and cost-aware allocation mechanism with strictly controlled volatility and turnover.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "该论文提出了一种基于科学物理信息强化学习（SciPhyRL）的动态投资组合优化框架，用于大型机构投资者。核心创新是将优化问题简化为求解HJB方程，并利用物理学-informed神经网络（PINN）直接从数据中离线求解，无需传统的值或策略迭代。通过将控制变量从连续交易率转换为离散目标持仓，使得方法在短期有效，同时使用微观结构基础的二次价格影响模型评估执行成本。在14个ETF资产上使用工程化oracle信号进行评估，学习到的Gibbs策略在样本外显著提升了夏普比率。该方法结合了强化学习、深度学习与物理信息，实战价值高。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_9eaaf097"
+  },
+  {
+    "title": "SMC-ES: Automated synthesis of formally verified control policies",
+    "url": "https://arxiv.org/pdf/2607.15003v1",
+    "source": "ArXiv",
+    "date": "2026-07-16",
+    "abstract": "The deployment of autonomous cyber-physical systems in safety-critical environments requires closed-loop control strategies (i.e., policies) that are not only performant but also provably safe and robust. While learning-based methodologies such as Reinforcement Learning offer flexible and scalable approaches to automatically synthesize such controllers, they typically lack the formal guarantees necessary for safe deployment. To bridge this gap, we propose a novel simulation-based methodology to automatically synthesize policies with formal guarantees regarding performance, safety, and robustness specifications. Specifically, given a set of properties to verify, a confidence parameter $δ$ and an allowable failure probability $\\varepsilon$, our method guarantees that the synthesized policy comes with a certificate: with confidence at least $1 - δ$, the probability of encountering a scenario where the given properties are violated is at most $\\varepsilon$. We demonstrate the feasibility of our approach by developing SMC-ES, an algorithm that integrates Evolutionary Strategies with Statistical Model Checking-based verification. We evaluate SMC-ES on a suite of continuous control tasks using Gymnasium and Safety Gymnasium testbeds. Results show that, at the price of a sustainable increase in computational cost, our algorithm provides formal guarantees regarding performance, safety, and robustness specifications, while performing competitively against leading model-free Deep Reinforcement Learning (DRL) and Safe-DRL baselines.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "提出SMC-ES算法，结合进化策略与统计模型检验，自动合成具有形式化安全与性能保证的控制策略，保证以至少1-δ置信度违反属性的概率≤ε。适用于连续控制任务，兼顾性能与安全性验证。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_13ab9506"
+  },
+  {
+    "title": "A Noise-Robust Elicit-to-Optimize Framework for Distortion Riskmetrics via Inverse Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2607.14373v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "We propose a noise-robust elicit-to-optimize framework that integrates inverse reinforcement learning (IRL) and reinforcement learning (RL) for eliciting agents' risk preferences and optimizing policies under a broad class of risk objectives characterized by distortion riskmetrics. On the elicitation side, we propose an adaptive Bayesian IRL method that infers agents' latent risk objectives from their noisy observed decisions, explicitly allowing agents to take stochastic and suboptimal actions. We establish the existence of a finite set of distinguishing questions that identifies the preferred distortion riskmetric within the candidate class and prove that the convergence rate of the algorithm is of order $O(\\exp(-cm+O(\\sqrt{m\\log m})))$ under general settings, where $c>0$ is a constant and $m$ denotes the number of algorithm iterations. On the optimization side, we develop a model-free RL algorithm for optimizing policies under conditional distortion riskmetrics. By representing the objective as an integral of the conditional cost quantile function with respect to the distortion function, the method unifies distortion-riskmetric objectives. We optimize diverse risk objectives by extending the Proximal Policy Optimization (PPO) algorithm with policy, value, and quantile neural networks, where the quantile network estimates the full conditional cost quantile function and enables numerical evaluation of general risk objectives. A comprehensive empirical study demonstrates the framework's elicitation accuracy and effectiveness in complex financial environments.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "提出一种噪声鲁棒的 elicit-to-optimize 框架，结合逆强化学习和强化学习，用于在扭曲风险度量下推断风险偏好并优化策略。该框架在激励端通过自适应贝叶斯逆强化学习从噪声观测中推断潜在风险目标，在优化端开发了模型无关的强化学习算法以优化条件扭曲风险度量下的策略。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_424dba08"
+  },
+  {
+    "title": "How Much of a 10-K Matters? Aggregation-Dependent Value of Full-Text versus Risk-Factor Sentiment",
+    "url": "https://arxiv.org/pdf/2607.14174v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "Financial sentiment extraction has largely relied on news text and supervised extraction against return labels alone, leaving 10-K filings -- and volatility, the target risk disclosure is arguably best suited to informing -- comparatively unexplored. We extend a supervised lexicon-learning approach to 10-K filings and their Item 1A risk-factor sections, training sentiment scores against both return and volatility labels at three levels of aggregation: sector, portfolio, and individual firm. Across 1,383 filings from 94 Nasdaq-100 technology constituents (2006--2023), we evaluate the resulting twelve sentiment metrics on classification accuracy, correlation with realised market outcomes, and qualitative lexical content. Full-filing text produces more accurate sentiment at the sector and portfolio level for both targets, but this reverses at the individual-firm level, where the narrower Item 1A section performs better -- an effect we attribute to the interaction between document volume and the amount of independent training signal available at each level of aggregation. A Loughran-McDonald dictionary baseline is consistently, strongly negatively correlated with price at every level tested, underscoring the value of a supervised approach for regulatory disclosure text. These findings, and the design choices they motivate, establish the sentiment-generation methodology underlying a subsequent, larger-scale, multi-source system.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "论文研究了10-K文件全文与风险因素部分的情感分析对交易的价值，发现全文情感在行业和投资组合层面更准确，而风险因素部分在个股层面更优。该方法直接利用情感与波动率标签训练，对量化策略中风险预测有参考价值，但实战性略逊于直接交易信号。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_09b87b13"
+  },
+  {
+    "title": "Structure-Aware Variational State Preparation for Quantum Basket Option Pricing",
+    "url": "https://arxiv.org/pdf/2607.14518v1",
+    "source": "ArXiv",
+    "date": "2026-07-16",
+    "abstract": "Basket option pricing often relies on Monte Carlo estimation, for which quantum amplitude estimation (QAE) provides a quadratic speed-up. However, the practical benefit of QAE can be limited by the depth of the state-preparation circuit. We propose a structure-aware quantum state-preparation framework for QAE-based basket option pricing. The framework uses tensor-train (TT) rank information to design shallow variational state-preparation circuits. In the independent regime, TT ranks remove unnecessary entangling links from a hardware-efficient ansatz. In correlated basket settings, we instead prepare asset-wise marginals locally and train a compact latent block to match the basket cumulative distribution function. The Basket-CDF objective targets the basket pushforward distribution rather than the full joint state, directly aligning state preparation with basket-dependent payoffs. Numerical experiments show that the proposed circuits replace the exponential state-preparation depth scaling of exact amplitude loading with linear scaling, while maintaining low-percent basket-pricing errors. Additional sampling-based training experiments and an end-to-end QAE integration study support compatibility with sample-estimated training and standard QAE-based pricing workflows.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文提出了一种结构感知的量子状态准备框架，用于基于量子幅度估计（QAE）的篮子期权定价，利用张量列（TT）秩信息设计浅层变分电路，以降低状态准备深度。虽然涉及期权定价，但主要贡献在量子计算理论层面，与实战交易中的传统量化方法（如机器学习和深度学习）关联较弱。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_00e9a769"
+  },
+  {
+    "title": "NeuralChaos: Optimal Adapted Approximation of Square Integrable Predictable Processes",
+    "url": "https://arxiv.org/pdf/2607.14361v1",
+    "source": "ArXiv",
+    "date": "2026-07-15",
+    "abstract": "We address fundamental challenges in representing and computing $\\mathbb{R}^{d}$-valued predictable square-integrable processes over $[0,T]$, collected in the space $\\mathcal{H}^2_T(\\mathbb{R}^{d})$. These processes are central to continuous-time stochastic control, reinforcement learning, and mathematical finance. Although Wiener-chaos expansions offer strong theoretical tools, traditional computational methods are hindered by the need for large chaos dictionaries and high-order iterated integrals. To overcome these obstacles, we introduce NeuralChaos -- a neural operator architecture that produces elements of $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ using only finitely many evaluations of the driving Brownian motion, while preserving predictability and square-integrability. We prove that NeuralChaos is dense in $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ and achieves the best $N$-term chaoslet approximation rates for compressible and Malliavin--Sobolev regular processes. Moreover, compressibility is shown to be typical for processes from $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ under non-degenerate sub-Gaussian sampling. In contrast, we show that finite-dimensional Markovian neural SDE models constitute a meagre and Gaussian-null subset in $\\mathcal{H}^2_T(\\mathbb{R}^{d})$, regardless of discretization, whereas compressible processes are generic. Numerical experiments on a stochastic optimal control problem and dynamic hedging highlight the practical effectiveness of our approach. Our results enable more efficient and expressive modelling in stochastic analysis and mathematical finance.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文研究平方可积可料过程的神经算子表示，理论性强，涉及随机控制与金融数学，但未直接提供交易策略或实践指导，实战价值有限。",
+    "fetch_date": "2026-07-18",
+    "id": "20260718_79e85413"
+  },
+  {
     "title": "Measuring Sentiment News with Transformer-Based Language Models",
     "url": "https://arxiv.org/pdf/2607.13968v1",
     "source": "ArXiv",
@@ -5927,77 +5999,5 @@
     "summary": "研究投资者驱动的信息扩散对超额联动的影响，发现中国市场中散户驱动的信息扩散主导，美国市场中机构驱动主导。机制为交易行为，信息扩散有预测能力。可用于理解市场联动和交易时机，但无直接交易信号或策略，实战价值中等。",
     "fetch_date": "2026-05-13",
     "id": "20260513_d2269957"
-  },
-  {
-    "title": "Manipulation, Insider Information, and Regulation in Leveraged Event-Linked Markets",
-    "url": "https://arxiv.org/pdf/2605.10486v1",
-    "source": "ArXiv",
-    "date": "2026-05-11",
-    "abstract": "The introduction of leverage on prediction-market event contracts raises three structurally distinct questions that have not been addressed jointly: how leverage changes manipulation incentives, how it interacts with informed-trading rents, and how regulatory frameworks should respond. This paper develops a theoretical framework for the first two and a synthesis of the existing regulatory landscape for the third. The principal analytical move is a two-axis manipulation taxonomy distinguishing market-price manipulation from real-world outcome manipulation, where the manipulator affects the underlying event itself. Continuous-underlying derivative markets generally do not make outcome manipulation a venue-level payoff channel; event-linked markets do. Within this taxonomy, leverage plays asymmetric roles: it scales market-price manipulation linearly but shifts the cost-benefit threshold for outcome manipulation, and it scales informed-trading rents in three ways (direct multiplication, Sharpe-ratio preservation, detection-cost amortization). Section 7 connects Paper 1's pre-emption and halt-protocol findings (CC-007b, CC-008) to three manipulation channels: pre-emption introduced by the dynamic-margin engine, halt-arbitrage introduced by the resolution-zone halt protocol, and strategic bad-debt-shifting that no engine in Paper 1's framework family addresses. The framework's manipulation-resistance contribution is a re-allocation of attack surface, not a net reduction. The regulatory synthesis covers principal jurisdictions (US, EU, UK, Singapore, offshore) and identifies three regulatory-arbitrage pathways. The paper concludes with 14 recommendations for venue operators, regulatory bodies, and the research community, separated into framework-independent and framework-conditional categories.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文通过理论框架分析杠杆对预测市场操纵、内幕交易和监管的影响，区分市场价格操纵与真实结果操纵，但对实战交易策略（如强化学习、深度学习或alpha模型）无直接贡献，属于纯理论分析，实战价值低。",
-    "fetch_date": "2026-05-13",
-    "id": "20260513_859b3737"
-  },
-  {
-    "title": "Revisiting Adam for Streaming Reinforcement Learning",
-    "url": "https://arxiv.org/pdf/2605.06764v1",
-    "source": "ArXiv",
-    "date": "2026-05-07",
-    "abstract": "Learning from a sequence of interactions, as soon as observations are perceived and acted upon, without explicitly storing them, holds the promise of simpler, more efficient and adaptive algorithms. For over a decade, however, deep reinforcement learning walked the contrary path, augmenting agents with replay buffers or parallel sampling routines, in an effort to tame learning instability. Recently, this topic has been revisited by Elsayed et al. (2024), focusing on update computation through eligibility traces and modifications to the optimisation routine, resulting in the StreamQ algorithm. In this work we take a step back, investigating the efficacy of established updates, such as those implemented by DQN and C51 within this online setting. Not only do we find that they perform well, but through analysing how the optimisation algorithm generally, and Adam in particular, interacts with these updates, we contend that two properties are essential for robust performance: i) the derivative of the objective is to be bounded and ii) weight updates are variance-adjusted. Rigorous and exhaustive experimentation demonstrates that C51, which exhibits both characteristics, is competitive with StreamQ across a subset of 55 Atari games. Using these insights, we derive a variance-adjusted algorithm based on eligibility traces, termed Adaptive Q$(λ)$, which approaches double the human baseline on the same subset, surpassing existing methods by all performance metrics.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "论文重新审视了流式强化学习中的优化问题，发现C51等算法在在线设置中表现优异，并通过分析Adam优化器的交互，提出目标导数有界和权重更新方差调整是稳健性能的关键。提供了严格的实验验证，对实战交易中改进在线学习算法有直接参考价值。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_2626a3e8"
-  },
-  {
-    "title": "Multi-agent llm framework for formulaic alpha generation and selection in quantitative trading",
-    "url": "https://ieeexplore.ieee.org/abstract/document/11400963/",
-    "source": "Scholar",
-    "date": "2026-05-12",
-    "abstract": "… a multi-agent Large Language Model (LLM) framework for … While a single LLM can generate candidate alphas, relying … To address this, we adopt a multi-agent approach where …",
-    "broker": "Google Scholar",
-    "score": 9,
-    "summary": "提出一个多智能体LLM框架，用于量化交易中的公式化alpha生成和选择。相比单智能体LLM，多智能体方法通过协作与对立机制提升alpha质量与多样性，直接服务于实战中的因子挖掘与组合优化。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_eead07a9"
-  },
-  {
-    "title": "A Review of Large Language Models for Stock Price Forecasting from a Hedge-Fund Perspective",
-    "url": "https://arxiv.org/pdf/2605.05211v1",
-    "source": "ArXiv",
-    "date": "2026-04-10",
-    "abstract": "Large language models (LLMs) are increasingly deployed in quantitative finance for stock price forecasting. This review synthesizes recent applications of LLMs in this domain, including extracting sentiment from financial news and social media, analyzing financial reports and earnings-call transcripts, tokenizing or symbolizing stock price series, and constructing multi-agent trading systems. Particular attention is paid to practical pitfalls that are often understated in the literature, such as fragility in sentiment analysis, dataset and horizon design, performance evaluation metrics, data leakage, illiquidity premia, and limits of stock price predictability. Organized from a hedge-fund perspective, the review is intended to guide both academic researchers and hedge fund managers in integrating LLMs into real-world trading pipelines and in stress-testing their robustness under realistic market frictions.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文从对冲基金视角，综述了大语言模型在股价预测中的应用，包括情感提取、财报分析、序列建模和多智能体系统，并强调了实际部署中的常见陷阱（如数据泄露、流动性溢价等）。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_df867f41"
-  },
-  {
-    "title": "Modeling Dynamic Correlation Matrices with Shrinkage Priors",
-    "url": "https://arxiv.org/pdf/2605.06818v1",
-    "source": "ArXiv",
-    "date": "2026-05-07",
-    "abstract": "Estimating time-varying correlation matrices is challenging because existing methods may adapt slowly to structural changes, impose insufficient regularization, or produce diffuse posterior uncertainty. In moderate dimensions, an additional difficulty is summarizing the estimated evolving dependence structure for downstream decision-making tasks. We propose a Bayesian approach based on a low-rank factor representation, with latent states evolving under a dynamic shrinkage prior and observation errors following a multivariate factor stochastic volatility model. This specification allows locally adaptive regularization of the estimated correlation structure over time and informative uncertainty quantification. We establish, to our knowledge, a first-of-its-kind posterior contraction result for dynamically regularized Bayesian models, showing contraction around the true model parameters at an explicit rate under averaged Hellinger distance. To summarize the estimated correlation matrices, we build on the information-theoretic concept of total correlation to obtain a scalar measure of cross-sectional dependence. Simulation studies show improved accuracy and responsiveness relative to competing methods in a range of challenging scenarios. We then apply our method to monitoring the correlation evolution of equity portfolios during periods of financial market stress, providing an ex post framework for assessing the changing benefits of diversification in backtesting analyses.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "论文提出了一种基于收缩先验的动态相关矩阵贝叶斯建模方法，通过低秩因子表示和动态收缩先验实现时变正则化，能够自适应估计相关结构并提供不确定性量化。该方法对量化交易中风险管理和投资组合优化有直接应用价值，但主要侧重统计建模，未涉及交易信号或执行策略，因此实战性中等偏高。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_8e9f37b0"
-  },
-  {
-    "title": "Stochastic Policy Gradient Methods in the Uncertain Volatility Model",
-    "url": "https://arxiv.org/pdf/2605.06670v1",
-    "source": "ArXiv",
-    "date": "2026-04-01",
-    "abstract": "The multidimensional Uncertain Volatility Model leads to robust option pricing problems under joint volatility and correlation uncertainty. Their numerical resolution quickly becomes challenging because the associated stochastic control problem is high-dimensional. We propose a backward actor-critic stochastic policy gradient scheme tailored to this setting. The method combines a discrete dynamic programming principle with Proximal Policy Optimization and shallow neural-network approximations of both the value function and the control policy. A key ingredient is the policy parameterization: continuous controls are represented through a squashed Gaussian policy built on a C-vine representation of correlation matrices, which enforces positive semidefiniteness by construction. Numerical experiments on a range of multidimensional derivatives show that the method yields accurate prices, remains computationally efficient, and compares favorably with existing Monte Carlo and machine-learning-based benchmarks for robust pricing in the Uncertain Volatility Model.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "论文提出了一种基于演员-评论家随机策略梯度的方法，结合近端策略优化和浅层神经网络，用于解决多维不确定波动率模型下的稳健期权定价问题。方法通过C藤表示参数化策略矩阵保证正定性，并在数值实验中展示了准确性和计算效率。属于机器学习在金融衍生品定价中的应用，有一定实战参考价值，但更偏重算法研究，直接实战应用需进一步适配。",
-    "fetch_date": "2026-05-12",
-    "id": "20260512_c5bfc407"
   }
 ]
