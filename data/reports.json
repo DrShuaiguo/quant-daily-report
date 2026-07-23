@@ -1,5 +1,65 @@
 [
   {
+    "title": "Quantum Kernels and the Cross-Section of Stock Returns: Anatomy of a Vanishing Advantage",
+    "url": "https://arxiv.org/pdf/2607.20168v1",
+    "source": "ArXiv",
+    "date": "2026-07-22",
+    "abstract": "Do quantum kernels improve cross-sectional stock return prediction? We run a controlled horse race on the Chinese A-share market in which a quantum fidelity kernel, a projected quantum kernel, and a classical RBF control share identical training subsamples, solver, and tuning budgets, so that only the kernel is exchanged. On the main evaluation -- a point-in-time universe and 170 walk-forward windows (2012-2025) -- no quantum advantage exists: the fidelity kernel is indistinguishable from its RBF control ($Δ$IC $=+0.005$, $p=0.42$), and a $2\\times2$ design crossing kernel type with training budget (a Nystrom extension to the full ~38,000-observation windows) shows quantum kernels matching, but never beating, equal-budget linear models; after family-wise correction no pairwise difference among eleven models is significant, with point estimates favoring penalized linear regressions throughout. We then document how the opposite conclusion arises: a 60-window evaluation on a universe screened with full-sample information makes the same quantum kernel appear dominant on stability criteria and significantly better than neural baselines. Interaction characteristics from the anomalies literature help nothing, quantum or classical; a widened bandwidth grid reveals an interior optimum rather than the near-classical endpoint a coarse grid suggests; and the geometric difference, while large throughout ($g \\gg 1$), does not predict out-of-sample gains ($ρ=-0.20$). We propose protocol standards -- kernel-swap controls, budget-equalized comparisons, point-in-time universes, and multiplicity-robust inference -- for empirical claims of quantum advantage in finance.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文通过严格的回测框架（170个滚动窗口，2012-2025年）对比了量子核与经典RBF核在中国A股横截面收益预测中的表现，发现量子核无显著优势，且线性模型表现更优。这对实战交易者的价值在于：量化评估了量子计算在选股中的实际效果，揭示了样本外检验、回测偏差等关键问题，避免了高估新兴技术。但主题偏小众，且未提供直接可用的alpha策略。",
+    "fetch_date": "2026-07-24",
+    "id": "20260724_6dace66a"
+  },
+  {
+    "title": "The Science and Practice of Trend-Following Systems",
+    "url": "https://arxiv.org/pdf/2607.19497v1",
+    "source": "ArXiv",
+    "date": "2026-07-21",
+    "abstract": "We present a unified approach to designing trend-following (TF) systems and classify them into European, American, and Time Series Momentum categories. For European TF systems, we derive an exact relationship between profit-and-loss, autocorrelation, and drift in volatility-normalized returns. We analyze the expected return under fractional ARFIMA processes and show that TF systems are profitable when the long-term autocorrelation is positive, even under short-term mean reversion. In the frequency domain, the expected return is represented as a Poisson-kernel reading of the analytical or empirical spectrum of the volatility-normalized returns: the system profits at zero drift when the kernel-weighted spectral mass exceeds one, so trend-following alpha is excess spectral mass at low frequencies. Longer lookbacks benefit in addition from the squared drift of the return process. We derive the closed-form Sharpe ratio, with the excess kurtosis of the innovations entering through a single loading, and the net Sharpe ratio and cost-optimal span under trading costs. Under white noise, we derive the closed-form skewness of aggregated TF returns, which is positive at every horizon and peaks near half the filter span. Monte Carlo experiments confirm the analytical results. We show that the positive skewness of TF returns is structural under various model assumptions. Empirically, we evaluate the systems on liquid contracts, and show that all TF systems are strongly correlated and our analytical results can be applied for their performance attribution. Our results enable design, simulation, and performance attribution of TF systems from trend persistence, mean reversion, drift, and skewness.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了趋势跟踪系统的统一分类（欧式、美式、时间序列动量），推导了收益与自相关、漂移的精确关系，并从频域角度揭示了趋势跟踪alpha源于低频超额谱质量。给出了封闭形式的夏普比率、偏度以及交易成本下的最优参数。理论扎实，对实战有直接定量指导。",
+    "fetch_date": "2026-07-24",
+    "id": "20260724_5eb87d9c"
+  },
+  {
+    "title": "Retail Trader's Ruin: An Anatomy of Popular Signal Failure",
+    "url": "https://arxiv.org/pdf/2607.20093v1",
+    "source": "ArXiv",
+    "date": "2026-07-22",
+    "abstract": "We test whether five widely promoted retail signal families - trend, oscillator, candlestick, volume, and calendar rules - deliver a positive, economically meaningful, net-of-cost, and survivable edge. Practical viability is the conjunction of three predeclared gates: statistical edge after multiplicity correction, economic viability after trading costs, and finite-bankroll survival under leverage. Exposure-matched benchmarks, stationary-bootstrap confidence intervals, hierarchical Benjamini-Yekutieli control, one-sided claim-exclusion tests, and equivalence tests distinguish positive evidence, statistically refuted materiality, and unresolved cases. Four of six candidates - oscillator, volume, calendar, and candlestick - are REFUTED, ruled out on statistical and/or economic materiality grounds; trend and a momentum calibration benchmark are INCONCLUSIVE, with confidence intervals too wide at this sample size to resolve the claim; none is SUPPORTED. Cross-sectional tests use point-in-time membership and delisting corrections. The momentum benchmark itself does not clear the statistical gate and is classified INCONCLUSIVE, not REFUTED - the critical validity signature that a genuinely uncertain positive control is never falsely falsified by this design. Under FINRA- and ESMA-anchored leverage and margin scenarios, survival is not the binding constraint for any tested family at the US headline scenario, though it becomes discriminating for trend and oscillator under the higher-leverage EU CFD scenario. The results reject specific promoted deployability claims where confidence bounds rule out the declared effect threshold and classify the remaining cases as unresolved rather than treating non-significance as proof.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文实证检验了五种流行散户信号家族（趋势、振荡器、K线、成交量、日历规则）的实际可行性，通过统计多重性校正、交易成本后的经济可行性以及杠杆下的生存性三个门槛。结果发现振荡器、成交量、日历和K线信号被证伪，趋势和动量基准不确定，无信号得到支持。对实战交易有负面指导价值，建议避免使用被证伪的信号，对趋势和动量保持谨慎。",
+    "fetch_date": "2026-07-24",
+    "id": "20260724_26d80b72"
+  },
+  {
+    "title": "Flux-Corrected Diagonal Frog: second order and positivity at all time steps",
+    "url": "https://arxiv.org/pdf/2607.20415v1",
+    "source": "ArXiv",
+    "date": "2026-07-22",
+    "abstract": "By Godunov's theorem, linear second-order finite-difference schemes for the Fokker-Planck equation cannot preserve positivity. The Diagonal Frog (DF) framework previously bypassed this barrier using eventual positivity, but required a strict minimum time step. This paper resolves the small-step limitation using a nonlinear extension of the DF solvers. We split the second-order directional operator into a monotone M-matrix core and an antidiffusive flux correction. A Zalesak-type limiter is then applied iteratively within the implicit banded solve. The resulting Flux-Corrected DF (FCDF) schemes (variants A and B) are unconditionally positive across all time steps. Because the limiter acts on fluxes rather than point values, these schemes conserve discrete mass exactly and maintain second-order accuracy. Crucially, the limiter activates only within unresolved layers. This ensures the global $L_1$ convergence remains second-order uniformly in the cell Péclet number, avoiding the first-order degradation seen in the Chang-Cooper scheme. The method's Picard iteration is contractive under a purely convective step restriction. To support arbitrary step sizes, we develop an active-set reformulation. This solves the system using a semismooth Newton iteration, where computational cost scales only with the number of nodes where positivity binds. Finally, we introduce a defect-corrected time stepping approach that restores second-order time accuracy. Numerical experiments on Ornstein-Uhlenbeck and advection-dominated benchmarks confirm our claims.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出通量校正对角蛙跳（FCDF）格式，用于Fokker-Planck方程，保证无条件正性和二阶精度。但该方法聚焦于偏微分方程数值解，属于数值分析中的数学方法，缺乏量化交易实战所需的金融模型、市场数据或交易策略内容，对实战交易直接价值较低。",
+    "fetch_date": "2026-07-24",
+    "id": "20260724_cb55710b"
+  },
+  {
+    "title": "Model Risk via Signature-Induced Optimal Transport",
+    "url": "https://arxiv.org/pdf/2607.20343v1",
+    "source": "ArXiv",
+    "date": "2026-07-22",
+    "abstract": "We propose a signature-induced, optimal transport framework for path-space model risk, in which ambiguity between stochastic path laws is factorized through optimal transport costs on signature coordinates under a common coupling. Via an ambient feature-space relaxation, we derive for affine signature scores and affine half-space events explicit robust expectation and probability bounds that depend only on the baseline model. In both cases, the correction is governed by the same effective budget, which depends only on the affine score and the budget vector of the ambiguity set. Moreover, the same quantity leads to a budget-aware sparse signature surrogate method for more general, possibly implicit, or data-driven, path functionals. We illustrate the resulting methodology through controlled stress tests and benchmark model-misspecification problems in finance and insurance.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文提出了一种基于签名诱导最优传输的路径空间模型风险框架，通过签名坐标上的最优传输成本因子化随机路径律之间的模糊性，并推导了仿射签名得分和仿射半空间事件的鲁棒期望与概率界，依赖于基线模型。该方法通过预算感知的稀疏签名替代方法处理更一般的路径泛函，并在金融和保险中通过压力测试和模型误设定问题进行验证。",
+    "fetch_date": "2026-07-24",
+    "id": "20260724_0f4fe53f"
+  },
+  {
     "title": "FinRL-Podracer: High performance and scalable deep reinforcement learning for quantitative finance",
     "url": "https://dl.acm.org/doi/abs/10.1145/3490354.3494413",
     "source": "Scholar",
@@ -5939,65 +5999,5 @@
     "summary": "提出从情感分类转向情感强度评估的生成式框架，通过构建情感强度数据集并微调生成语言模型输出0-100的连续值，在金融等领域表现更优。但主要是改进情感分析，非直接交易策略或量化模型。",
     "fetch_date": "2026-05-20",
     "id": "20260520_0a4e9fbe"
-  },
-  {
-    "title": "Scheduling That Speaks: An Interpretable Programmatic Reinforcement Learning Framework",
-    "url": "https://arxiv.org/pdf/2605.18454v1",
-    "source": "ArXiv",
-    "date": "2026-05-18",
-    "abstract": "Deep reinforcement learning (DRL) has recently emerged as a promising approach to solve combinatorial optimization problems such as job shop scheduling. However, the policies learned by DRL are typically represented by deep neural networks (DNNs), whose opaque neural architectures and non-interpretable policy decisions can lead to critical trust and usability concerns for human decision makers. In addition, the computational requirements of DNNs can further hinder practical deployment in resource constrained environments. In this work, we propose ProRL, a novel interpretable programmatic reinforcement learning framework that achieves high-performance scheduling with human-readable and editable programmatic policies (i.e., programs). We first introduce a domain-specific language for scheduling (DSL-S) to represent scheduling strategies as structured programs. ProRL then explores the program space defined by DSL-S using local search to identify incomplete programs, which are subsequently completed by learning their parameters via Bayesian optimization. ProRL learns which scheduling heuristic rules to select, and hence, it naturally incorporates existing heuristics already used in industrial scenarios. Experiments on widely used benchmark instances demonstrate the strong performance of ProRL against existing heuristics and DRL baselines. Furthermore, ProRL performs well under strongly constrained computational resources, such as training with only 100 episodes. Our code is available at https://github.com/HcPlu/ProRL.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "提出ProRL框架，将调度策略表示为可读的程序化策略，使用本地搜索和贝叶斯优化学习。虽然可解释性有价值，但方法偏理论且针对调度问题，与量化交易实战关联弱。核心贡献在可解释AI和组合优化，非交易策略。评分4分。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_ab0153a5"
-  },
-  {
-    "title": "A data-driven Fourier-mixture neural-network method for density estimation",
-    "url": "https://arxiv.org/pdf/2605.18019v1",
-    "source": "ArXiv",
-    "date": "2026-05-18",
-    "abstract": "We propose a data-driven Fourier-trained neural-network method for estimating fixed-horizon probability densities from empirical characteristic-function (CF) information. The estimator is a positive Gaussian--Laplace mixture with closed-form CF, so training can be performed directly in Fourier space while preserving nonnegativity and unit mass. We consider two sampling settings. In the direct i.i.d. sampling setting, the method is trained against an empirical CF constructed from i.i.d. samples. In the resampling-based pseudo-sampling setting, it is trained against an empirical pseudo-CF constructed from dependent data by resampling. For the direct i.i.d. case, we derive an expected $L_2$ error bound that separates Fourier truncation, empirical training error, discretization, and CF sampling error. For the pseudo-sampling case, we obtain a conditional analogue with two additional pseudo-law discrepancy terms. We develop a multidimensional extension of the framework and analyze its computational complexity. Numerical experiments show competitive performance relative to Expectation--Maximization on Gaussian-mixture benchmarks, clear gains on heavy-tailed targets, $L_2$ error decay consistent with the theory in a well-specified setting, and effective estimation of one-year Australian equity return law from resampled dependent data.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "提出一种数据驱动的傅里叶混合神经网络方法，用于从经验特征函数估计固定期限概率密度。该方法使用正的高斯-拉普拉斯混合模型，在傅里叶空间中训练，保持非负性和单位质量。考虑了直接i.i.d.采样和基于重采样的伪采样两种设置。推导了预期L2误差界，并开发了多维扩展。数值实验显示在高斯混合基准上表现与EM相当，在重尾目标上有明显优势，且L2误差衰减。方法偏统计学与机器学习，非直接交易策略或因子模型，实战价值较低。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_25626680"
-  },
-  {
-    "title": "The Viability of Blockchain Markets under Discrete Clearing and Paid Priority",
-    "url": "https://arxiv.org/pdf/2605.17425v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "This paper develops a model to evaluate the viability of blockchain markets as the sole venue for price formation. Blockchains clear at discrete intervals called block time, and transactions are executed sequentially according to priority fees paid by traders who compete for queue position. We show that these features undermine the viability of markets. Paid-priority ordering induces endogenous selection, where only traders with sufficiently high valuations participate. The participation cutoff rises with competition, which intensifies with lower information costs or higher liquidity demand. This hinders price discovery and biases prices. It also impairs liquidity: the cutoff concentrates trading among aggressive traders and increases adverse selection that liquidity suppliers absorb in a single clearing round. Although longer block times enhance consensus security, they amplify these effects and can cause markets to shut down.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文研究区块链市场在离散结算与付费优先排序下的可行性，指出付费优先导致交易者内生选择，抬高参与门槛，阻碍价格发现，损害流动性，且区块时间越长影响越严重。纯理论分析，无实战策略或机器学习应用。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_0c6f04da"
-  },
-  {
-    "title": "Geometric Brownian motion with intermittent entries and exits",
-    "url": "https://arxiv.org/pdf/2605.17299v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "We study a generalized geometric Brownian motion framework that incorporates both entries of new units and exit mechanisms for the current population, extending earlier stochastic resetting models where these rates are treated as identical. The model captures realistic features observed in many economic observables, which can be explained as market-driven firm entries/exits, worker inflow/outflow, and income growth/loss. This model is not conservative and, despite the asymmetry in the entry and exit rates, we find that the system eventually relaxes to a stationary distribution. Moreover, our analysis reveals three distinct dynamical regimes in the moments of the distribution, arising from the interplay between volatility, drift, entry, and exit rates. We further derive the survival probability and the mean first-passage time associated with the observed variable reaching certain threshold under the competing entry-exit processes. Interestingly, we identify an optimal exit rate that minimizes the mean first-passage time, providing insights into how entry and exit policies can influence the outcome of the system. These results should be useful for understanding the long-run behavior of economic systems in which growth, volatility, entry, and exit jointly shape the evolution of heterogeneous units.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文研究带间歇性进入和退出的几何布朗运动，分析了非守恒系统的平稳分布、动力学 regimes 及首次通过时间。虽涉及经济变量，但模型过于理论化，未提供具体交易策略或市场微观结构应用，对实战交易价值有限。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_1ac78a67"
-  },
-  {
-    "title": "Your SaaS Is an Insurance Product: A Modeling Framework",
-    "url": "https://arxiv.org/pdf/2605.16699v1",
-    "source": "ArXiv",
-    "date": "2026-05-15",
-    "abstract": "Capped-usage SaaS products -- LLM subscriptions such as Claude Code and ChatGPT, cloud platforms such as Vercel and Cloudflare Workers, corporate benefit platforms, identity-verification services with liability transfer -- share a structural signature with insurance products: a fixed premium decoupled from realized consumption, stochastic per-user demand with heavy-tailed severity, a non-fungible cap that resets on a fixed schedule, and a portfolio-level exposure that requires reserve adequacy under tail risk. We argue that this is not an analogy. It is the same operational problem actuarial science has been tooled for decades to address, restated with new dependent variables (tokens, bandwidth bytes, function-invocations, gym check-ins) in place of medical claims. This paper proposes a modeling framework for capped-usage SaaS pricing built from frequency-severity decomposition, premium calculation principles, and Monte Carlo reserve adequacy. We map the framework to publicly observable subscription tiers in two domains (LLM services and cloud platforms), ground it in canonical health-insurance economics (Arrow 1963; Pauly 1968; Manning et al. 1987; Brot-Goldberg et al. 2017), and demonstrate divergence from traditional unit economics through a worked example. The contribution is operational rather than theoretical: not a new theorem, but vocabulary and tools currently absent from cs.LG/stat.ML practice.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文提出有上限使用量SaaS产品的建模框架，将其与保险产品类比，使用频率-严重性分解、保费计算原理和蒙特卡洛储备充足性方法。虽然框架具有理论严谨性，但主要面向定价和风险管理，不直接涉及量化交易策略，对实战交易价值有限。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_e1c5f2e5"
   }
 ]
