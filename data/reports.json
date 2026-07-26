@@ -1,5 +1,17 @@
 [
   {
+    "title": "Improving financial forecasting with a synergistic LLM-transformer architecture: A hybrid approach to stock price prediction",
+    "url": "https://www.icck.org/article/abs/TIS.2025.976754",
+    "source": "Scholar",
+    "date": "2026-07-27",
+    "abstract": "… architectures particularly the Transformer and the reasoning … , while the Transformer architecture revolutionized sequential … and XAI-augmented stock prediction models, which show …",
+    "broker": "Google Scholar",
+    "score": 9,
+    "summary": "论文提出一种结合LLM和Transformer的混合架构用于股票价格预测，利用LLM的推理能力和Transformer的序列建模优势，并引入可解释AI（XAI）增强模型透明度。该方法直接针对实战交易中的预测任务，具有实际应用潜力。",
+    "fetch_date": "2026-07-27",
+    "id": "20260727_36d4e37b"
+  },
+  {
     "title": "Quantum Kernels and the Cross-Section of Stock Returns: Anatomy of a Vanishing Advantage",
     "url": "https://arxiv.org/pdf/2607.20168v1",
     "source": "ArXiv",
@@ -5987,17 +5999,5 @@
     "summary": "论文比较LSTM和梯度提升在微型E-迷你纳斯达克100期货（MNQ）日内方向预测上的表现，使用5分钟OHLCV数据，发现所有模型在样本外均无统计显著的预测能力，提示该时间框架下可能不存在稳定的序列结构。对实战交易有参考价值，但结论为负，不宜直接采用。",
     "fetch_date": "2026-05-20",
     "id": "20260520_43a00f27"
-  },
-  {
-    "title": "Beyond Sentiment Classification: A Generative Framework for Emotion Intensity Evaluation in Text",
-    "url": "https://arxiv.org/pdf/2605.16613v1",
-    "source": "ArXiv",
-    "date": "2026-05-15",
-    "abstract": "We introduce a novel approach to emotion modeling that shifts the focus from\n  identification to evaluation, addressing the limitations of discrete classification in\n  applied domains such as finance. By constructing a dataset of emotional intensity\n  scores and fine-tuning open-weight generative language models to output continuous\n  values from 0-100, we demonstrate a more expressive, generalizable framework for\n  sentiment and emotion analysis. Our findings not only outperform classification\n  baselines but also reveal surprising generalization capabilities and transfer effects\n  to related constructs such as sentiment and arousal. This work contributes to the\n  interdisciplinary recontextualization of NLP by introducing emotion intensity\n  evaluation as an alternative to classification, arguing that this shift better aligns\n  with the needs of domains--such as finance--where the degree of emotional content is\n  central to interpretation and decision-making.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "提出从情感分类转向情感强度评估的生成式框架，通过构建情感强度数据集并微调生成语言模型输出0-100的连续值，在金融等领域表现更优。但主要是改进情感分析，非直接交易策略或量化模型。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_0a4e9fbe"
   }
 ]
