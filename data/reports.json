@@ -1,5 +1,53 @@
 [
   {
+    "title": "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses",
+    "url": "https://arxiv.org/pdf/2607.21826v1",
+    "source": "ArXiv",
+    "date": "2026-07-23",
+    "abstract": "The growth of peer-to-peer exchanges and the blockchain technology has led to a proliferation of cryptocurrencies and to a massive increase in the number of investors who actually negotiate digital money. Cryptocurrencies trade at prices mainly driven by investor sentiment, becoming a potential source of financial bubbles and instabilities. In this work, we apply quantitative models to the study of Bitcoin and Ether, two of the most famous cryptocurrencies. Our bubble detection methodology combines the Log Periodic Power Law (LPPL) model, originally created by Johansen, Ledoit and Sornette (JLS), and the statistical model developed by Phillips, Shi, and Yu (PSY). In particular, we employ three different versions of JLS model, i.e. Ordinary Least Square (OLS), Generalised Least Squares (GLS) and Maximum Likelihood Estimation (MLE), and two PSY statistical tests (BSADF and BSADF*). We find that, during the sample period 1st December 2016 - 16th January 2018, Bitcoin shows typical hallmarks of a bubble phase in mid December 2017 and in the first half of January 2018, anticipating the large crashes observed thereafter. Also the Ether price dynamics reveals bubble evidence in mid June 2017, anticipating the crash observed on 12th June, and a weaker signal around 12th January 2018, anticipating the crash observed in the same days. This paper confirms the high risk of speculative bubbles associated with cryptocurrencies, related to investor exuberance pumping market prices far away from their fundamental values, thus creating critical situations subject to possible crashes. Our methodology is general and can be applied to virtually any financial time series, and may support investing and risk management strategies.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文使用对数周期幂律模型（LPPL）和PSY统计检验对加密货币泡沫进行检测，发现比特币和以太坊在2017年底至2018年初存在泡沫迹象。对于实战交易，泡沫检测模型可用于识别市场极端情况，但模型基于历史数据，时效性有限，且加密货币市场变化快，直接应用存在风险。中等价值。",
+    "fetch_date": "2026-07-28",
+    "id": "20260728_fc12c8df"
+  },
+  {
+    "title": "Settlement Infrastructure, Inside Money Elasticity, and the Network Economics of Distributed Ledger Technology",
+    "url": "https://arxiv.org/pdf/2607.22459v1",
+    "source": "ArXiv",
+    "date": "2026-07-24",
+    "abstract": "We construct the Settlement Modernisation Index, a panel dataset of 809 reform events across 24 advanced economies between 1993 and 2024, decomposed into three economic channels and three adoption phases. We document an S-curve in inside money elasticity with two interior turning points at SMI = 0.27 and 0.93, separating a liberation phase, a post-global-financial-crisis compliance valley, and a mature-infrastructure recovery phase. We show that settlement modernisation generates network-conditional balance sheet efficiencies through a T2S event-study with year-by-year EMIR decomposition (saturation beta = +0.557, p < 0.01) and an out-of-sample synthetic control null on Switzerland's post-2021 SDX deployment. Applied along the BIS three-layer connectivity taxonomy, the framework forecasts +13.4 percent efficiency recovery from the ECB's Pontes initiative over 2027-2032. Conditional UK and US accession to the Appia composability layer (2028) raises the ceiling to +37.5 percent. Balance-sheet efficiencies from atomic settlement are a property of the bilateral pair, not the node.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "该论文构建了结算现代化指数(SMI)，分析了24个发达经济体1993-2024年的809次改革事件，提出内部货币弹性的S形曲线，并通过事件研究等方法评估了结算现代化对资产负债表效率的影响。研究涉及分布式账本技术(DLT)在结算基础设施中的应用，但与实战交易策略的直接相关性较低，偏宏观和基础设施层面。",
+    "fetch_date": "2026-07-28",
+    "id": "20260728_7da759f2"
+  },
+  {
+    "title": "Latent Fragility and Clustered Withdrawals in Dynamic Banks Runs",
+    "url": "https://arxiv.org/pdf/2607.22317v1",
+    "source": "ArXiv",
+    "date": "2026-07-24",
+    "abstract": "Using a mean-field game framework, we study a dynamic model of bank runs in which more withdrawals raise the risk of bank failure. Even though depositors receive gradual and idiosyncratic shocks, withdrawals occur in clusters. The main mechanism is latent fragility: run-prone depositors accumulate gradually over time and may prefer to wait individually, but they withdraw together once collective exit becomes self-fulfilling. We establish equilibrium existence and characterize earliest-run and latest-run equilibria. The clustering mechanism arises whether depositor heterogeneity is discrete or continuous. A common aggregate state coordinates withdrawal timing and leads to a unique threshold equilibrium.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "利用平均场博弈框架研究银行挤兑的动态模型，发现储户虽受渐进异质冲击，但提款行为呈聚集性。核心机制是潜在脆弱性：易挤兑储户随时间累积，个体倾向等待，但集体退出演变成自我实现。建立了均衡存在性，刻画了最早和最晚挤兑均衡，聚集机制在离散或连续异质性下均存在。共同聚合状态协调提款时机，产生唯一阈值均衡。",
+    "fetch_date": "2026-07-28",
+    "id": "20260728_99c77671"
+  },
+  {
+    "title": "Neilson's Weak vs. Strong Loss Aversion: A Characterization and a Generalized CPT-Utility Function",
+    "url": "https://arxiv.org/pdf/2607.22085v1",
+    "source": "ArXiv",
+    "date": "2026-07-24",
+    "abstract": "In multi-objective and multi-criteria decision-making under risk, especially in settings involving individual behavior, risk-aware analysis based on subjective evaluation has become increasingly important. Moving beyond risk-neutral modeling and the constraints of Expected Utility Theory (EUT), Cumulative Prospect Theory (CPT) provides a behaviorally grounded framework for capturing how individuals perceive and evaluate risky prospects. This paper conducts a rigorous theoretical analysis of Neilson's definitions of aversion. We provide a gamble-based interpretation, sharpen key conceptual distinctions, and make explicit the conditions under which the weak and strong notions coincide as well as when they diverge. Furthermore, we examine the Kobberling-Wakker utility function and related standard CPT specifications, highlighting structural limitations and inconsistencies that arise when these forms are required to satisfy Neilson-type aversion conditions. To address these issues, we propose a generalized CPT-utility function that retains the canonical reference-dependent shape while offering additional flexibility. This generalization extends the descriptive scope of CPT and provides an explicit functional form that is useful for sensitivity analysis and utility function-based optimization.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "论文对Neilson的弱/强损失厌恶概念进行理论分析，提出广义CPT效用函数。属于纯理论探讨，对实战交易价值有限。",
+    "fetch_date": "2026-07-28",
+    "id": "20260728_e7134187"
+  },
+  {
     "title": "Improving financial forecasting with a synergistic LLM-transformer architecture: A hybrid approach to stock price prediction",
     "url": "https://www.icck.org/article/abs/TIS.2025.976754",
     "source": "Scholar",
@@ -5951,53 +5999,5 @@
     "summary": "论文指出标准量子退火投资组合优化的惩罚公式在D-Wave硬件上失败，并提出无惩罚的流水线：仅构建目标函数QUBO，采样后经典实施基数约束，简化了量子-经典混合优化流程，对实战有参考价值。",
     "fetch_date": "2026-05-20",
     "id": "20260520_dbeb9f97"
-  },
-  {
-    "title": "Deep Reinforcement Learning Framework for Diversified Portfolio Management Across Global Equity Markets",
-    "url": "https://arxiv.org/pdf/2605.17307v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "This study develops and evaluates a deep reinforcement learning framework for dynamic portfolio allocation across global equity markets. The Soft Actor-Critic algorithm is used to learn continuous portfolio weights within a Markov Decision Process, incorporating transaction costs, turnover penalties, and diversification constraints into the reward function. Five model configurations are compared, varying in reward formulation, policy structure (flat versus hierarchical Dirichlet), portfolio constraints, and temporal encoder (LSTM versus Transformer), and evaluated via walk-forward optimization across sixteen out-of-sample folds spanning 2003-2026 on the Nasdaq-100, Nikkei 225, and Euro Stoxx 50. Results show that RL strategies achieve competitive risk-adjusted performance primarily in the Euro Stoxx 50, where statistically significant abnormal returns are observed, but the central hypothesis is only partially confirmed: no strategy achieves statistically significant excess returns relative to Buy and Hold under HAC-robust inference across all markets. Regime analysis reveals that RL adds the most value during periods of elevated uncertainty, while ensemble aggregation across markets improves risk-adjusted performance and confirms the benefits of geographic diversification.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出了一个深度强化学习框架，使用SAC算法在全球股票市场（纳斯达克100、日经225、欧洲斯托克50）进行动态投资组合管理，考虑了交易成本、换手率惩罚和分散化约束。在2003-2026年的16个样本外折叠中，RL策略在欧洲斯托克50上取得了显著的异常收益，但整体未能持续超越买入并持有策略。价值在于将RL应用于实战，但效果有限，适合参考其框架设计。风险调整后表现仅部分市场有效，实战指导价值中等。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_c3bb2626"
-  },
-  {
-    "title": "A Hybrid Gaussian Process Regression Framework for Stable Volatility-Covariance Estimation: Evidence from Global Equity Indices",
-    "url": "https://arxiv.org/pdf/2605.17275v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "Accurate forecasting of the Volatility-Covariance Matrix (VCV) is central to regulatory capital adequacy processes such as the Internal Capital Adequacy Assessment Process (ICAAP) and the Comprehensive Capital Analysis and Review (CCAR). Traditional econometric models, including GARCH-family and Exponentially Weighted Moving Average (EWMA) approaches, suffer from parametric rigidity, distributional assumptions, and numerical instability under stress, leading to systematic underestimation of tail risk. This paper proposes and validates a novel Hybrid Gaussian Process Regression-Historical Simulation (GPR-HS) framework for estimating Value-at-Risk (VaR) and Expected Shortfall (ES) across a diversified portfolio of seven major global equity indices. The framework decouples the VCV estimation problem: individual asset volatilities are modelled dynamically using Univariate GPR with a Matern 5/2 kernel, while inter-asset correlations are estimated via stable historical covariance. A key methodological contribution is the Aggressive Noise Initialization (ANI) strategy, which sets the initial White Noise kernel variance equal to the empirical variance of the training returns, ensuring Gram matrix positive-definiteness, regularization, and conservative, regulatory-compliant forecasts. Evaluated using an expanding window forward-chaining cross-validation scheme over June 2020 -June 2025, the GPR-HS framework achieves regulatory compliance in the majority of test splits; including a 100% ES pass rate at the portfolio level, while outperforming the static Historical VaR benchmark in 71.4% of univariate cases by Quadratic Loss and 100% of cases by violation count.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "提出混合高斯过程回归-历史模拟(GPR-HS)框架，用于波动率-协方差矩阵估计和VaR/ES计算。通过单独建模资产波动率和历史协方差，并采用激进噪声初始化策略，在7个全球股指组合上验证了稳定性。实战价值较高，但侧重风险管理和资本充足率评估，非直接交易策略。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_6da424d0"
-  },
-  {
-    "title": "DiPRL: Learning Discrete Programmatic Policies via Architecture Entropy Regularization",
-    "url": "https://arxiv.org/pdf/2605.18508v1",
-    "source": "ArXiv",
-    "date": "2026-05-18",
-    "abstract": "Programmatic reinforcement learning (PRL) offers an interpretable alternative to deep reinforcement learning by representing policies as human-readable and -editable programs. While gradient-based methods have been developed to optimize continuous relaxations of programs, they face a significant performance drop when converting the continuous relaxations back into discrete programs. Post-hoc discretization can discard optimized branches and parameters in a program, which results in a collapse of policy expressivity and lowered task performance, leading in turn to a need for additional fine-tuning. To overcome these limitations, we propose Differentiable Discrete Programmatic Reinforcement Learning (DiPRL), a method that learns programmatic policies that become nearly discrete during training, avoiding a separate post-hoc fine-tuning stage. We first analyze the inherent risks of performance drop introduced by post-hoc discretization of gradient-based methods. Then, we introduce programmatic architecture entropy regularization, which enables smooth, differentiable training that encourages convergence toward a discrete program. DiPRL maintains the efficiency of gradient-based optimization while mitigating the risks of post-hoc discretization. Our experiments across multiple discrete and continuous RL tasks demonstrate that DiPRL can achieve strong performance via interpretable programmatic policies.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文提出DiPRL方法，通过架构熵正则化学习几乎离散的程序化策略，避免后处理离散化导致的性能下降。虽然涉及强化学习和程序化策略，但更偏向程序化RL的算法改进，与实战交易中常用的深度学习RL方法（如Alpha系列）关联较弱。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_401ed67f"
-  },
-  {
-    "title": "Sequential Structure in Intraday Futures Data: LSTM vs Gradient Boosting on MNQ",
-    "url": "https://arxiv.org/pdf/2605.17724v1",
-    "source": "ArXiv",
-    "date": "2026-05-18",
-    "abstract": "This paper compares gradient boosting and long short-term memory (LSTM) architectures for intraday directional prediction in Micro E-Mini Nasdaq 100 futures (MNQ). Motivated by recent foundation-model research on financial candlestick data, including the Kronos architecture, we test whether five-minute OHLCV bar sequences contain exploitable sequential predictive structure at the scale of a single instrument dataset. Using 944 trading days from 2021-2025, four model configurations are evaluated under strict expanding-window walk-forward validation across three out-of-sample periods. The target variable is whether the session close exceeds the 10:30 AM open by more than ten points. No configuration produces statistically significant out-of-sample accuracy above the 51.8% base rate. Combined OOS accuracies range from 50.00% to 50.89% across gradient boosting variants, while the LSTM achieves 50.59%. Permutation tests yield p-values of 0.135 for the best gradient boosting model and 0.515 for the LSTM, indicating no statistically significant predictive edge. Feature importance instability across walk-forward folds suggests noise fitting rather than stable structural signal capture. The results indicate that four years of single-instrument five-minute OHLCV data are insufficient for reliable sequential ML-based intraday forecasting. The primary contribution is a documented evaluation of a Kronos-inspired architecture on a constrained real-world dataset, providing an empirical lower bound on data scale requirements for sequential financial ML.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "论文比较LSTM和梯度提升在微型E-迷你纳斯达克100期货（MNQ）日内方向预测上的表现，使用5分钟OHLCV数据，发现所有模型在样本外均无统计显著的预测能力，提示该时间框架下可能不存在稳定的序列结构。对实战交易有参考价值，但结论为负，不宜直接采用。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_43a00f27"
   }
 ]
