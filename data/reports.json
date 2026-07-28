@@ -1,5 +1,53 @@
 [
   {
+    "title": "Neural Network-Driven Volatility Drag Mitigation under Aggressive Leverage",
+    "url": "https://arxiv.org/pdf/2607.23068v1",
+    "source": "ArXiv",
+    "date": "2026-07-25",
+    "abstract": "This paper introduces a compact reformulation of a modular end-to-end neural network for global minimum-variance portfolio optimization that decouples model complexity from both look-back window length and universe size. A five-parameter hyperbolic weighted moving average combined with a saturating exponential replaces the original 2,400-parameter lag-transformation layer, and a bidirectional gated-recurrent-unit eigencleaning module together with a streamlined marginal-volatility network reduce total learnable parameters from 39,586 to just 2,175. In out-of-sample tests against state-of-the-art nonlinear-shrinkage and risk-parity benchmarks, the compact network attains the lowest realized portfolio variance without compromising expected return. Under long-only constraints, the variance reduction supports substantially higher leverage while maintaining comparable drawdown control. Validation in a high-fidelity trading simulator that incorporates realistic margin-call dynamics confirms enhanced over-leverage resilience. These findings demonstrate that end-to-end variance-minimization architectures can achieve substantial parameter efficiency and robust capital-efficiency gains without sacrificing risk-adjusted performance.",
+    "broker": "Cornell Univ",
+    "score": 9,
+    "summary": "本文提出一种紧凑端到端神经网络，用于在高杠杆下通过全局最小方差投资组合优化来缓解波动率拖累。通过五参数双曲加权移动平均和饱和指数替代2400参数滞后变换层，以及双向门控循环单元特征清洗模块和简化边际波动率网络，将可学习参数从39,586降至2,175。在样本外测试中，紧凑网络实现了最低实现组合方差，且在仅多头约束下支持更高杠杆并保持相当的回撤控制。高频交易模拟器验证了其抗过度杠杆能力。",
+    "fetch_date": "2026-07-29",
+    "id": "20260729_028f16a5"
+  },
+  {
+    "title": "The Fundamental Structure of Risk: From Characteristics to Covariance",
+    "url": "https://arxiv.org/pdf/2607.24410v1",
+    "source": "ArXiv",
+    "date": "2026-07-27",
+    "abstract": "Estimating the covariance structure of financial assets typically relies on his- torical returns, making risk models dependent on noisy and asset-specific time se- ries. We propose the Characteristic-Driven Dynamic Factor Model (CD-DFM), a non-linear latent factor model that instead constructs a representation of the asset cross-section directly from observable firm characteristics, primarily company funda- mentals. The learned latent space jointly determines interpretable factor exposures and a forward covariance estimator, and is trained end to end on an objective that combines a Stein covariance loss with a factor reconstruction term, targeting the out-of-sample second moments used in risk management. Because the latent repre- sentation, i.e. the encoder depends only on characteristics, previously unseen assets can be embedded at inference time without retraining. Experiments on S&P 500 equities show that CD-DFM produces economically structured latent representa- tions, interpretable factor portfolios, and competitive covariance forecasts despite relying on substantially lower-frequency information than return-based approaches. Among the benchmarked methods, it is the only model that simultaneously combines characteristic-driven representations, factor interpretability, competitive covariance calibration, and zero-shot onboarding of unseen assets.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "提出基于公司基本面的非线性潜在因子模型CD-DFM，通过可观测特征直接学习资产协方差结构，生成可解释的因子暴露和向前协方差估计。模型无需历史收益，能处理未见过资产，在S&P 500上取得竞争性协方差预测，对风险管理有直接实战价值。",
+    "fetch_date": "2026-07-29",
+    "id": "20260729_5532c180"
+  },
+  {
+    "title": "One Other Option Pricing Scheme",
+    "url": "https://arxiv.org/pdf/2607.24680v1",
+    "source": "ArXiv",
+    "date": "2026-07-27",
+    "abstract": "We present a distinctive approach to parameterizing the risk neutral distribution. Using parsimonious and interpretable parameters, the model provides direct and localized control over the shape of the implied volatility curve. It captures a wide variety of shapes, including those with local concavity. Empirical results demonstrate accurate calibration across a quarter million curves from a two-year Standard and Poor's 500 index option dataset. The fitted parameters exhibit stable patterns across tenors, enabling term structure interpolation and dynamic process construction without static arbitrage.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "提出一种新方法参数化风险中性分布，通过简洁可解释的参数直接局部控制隐含波动率曲线形状，能捕捉多种形状（包括局部凸性）。基于25万条S&P 500指数期权曲线的实证校准准确，参数在期限结构上稳定，支持无静态套利的期限结构插值和动态过程构建。对实战有价值，但非直接策略或alpha生成。",
+    "fetch_date": "2026-07-29",
+    "id": "20260729_8cebb39a"
+  },
+  {
+    "title": "Risk Aversion in the Small and in the Large: Beyond Arrow-Pratt A Wiener Chaos Hierarchy of Dynamic Risk Premia",
+    "url": "https://arxiv.org/pdf/2607.23161v1",
+    "source": "ArXiv",
+    "date": "2026-07-25",
+    "abstract": "The Arrow-Pratt approximation is one of the cornerstones of expected utility theory, providing the classical local approximation of certainty equivalents and risk premia in terms of absolute risk aversion. Despite its widespread use, its mathematical scope and relationship to higher-order risk preferences remain only partially understood. This paper develops a new framework for the analysis of certainty equivalents and dynamic risk premia based on Malliavin calculus and Wiener chaos analysis. We first show that the classical Arrow-Pratt approximation is not asymptotically valid for arbitrary sequences of vanishing risks, thereby identifying precise limitations of the traditional theory. Motivated by this observation, we formulate certainty equivalents dynamically by considering the progressive revelation of uncertainty through a Brownian filtration. Combining Itô calculus, the Clark--Ocone representation and the Wiener chaos decomposition, we derive a complete hierarchy of higher-order dynamic risk premia and obtain explicit representations of the corresponding coefficients in terms of Malliavin derivatives. For mixed Wiener chaos expansions, higher-order preference measures, including prudence and temperance, emerge naturally through interactions between chaos components and are characterised using Bell polynomial representations. Explicit results for quadratic Gaussian functionals and the Vasicek interest-rate model illustrate the theory and identify a broad class of regular Wiener functionals for which the classical Arrow-Pratt approximation is recovered as the leading-order term. The results establish a unified framework linking expected utility theory, stochastic analysis and Wiener chaos expansions, opening a new perspective on higher-order certainty equivalents and the dynamic measurement of risk.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文基于Malliavin演算和Wiener混沌分析，提出了动态风险溢价的高阶层次框架，但主要贡献在理论扩展，与实战交易中的强化学习或深度学习直接关联较弱。",
+    "fetch_date": "2026-07-29",
+    "id": "20260729_12830b2c"
+  },
+  {
     "title": "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses",
     "url": "https://arxiv.org/pdf/2607.21826v1",
     "source": "ArXiv",
@@ -5951,53 +5999,5 @@
     "summary": "该论文构建了一个简单的理论模型，研究人工智能在算法交易中如何加速信息处理并影响市场结构。内容偏重理论分析，未涉及深度学习、强化学习或具体实战策略，对实际交易的直接指导价值有限。",
     "fetch_date": "2026-05-21",
     "id": "20260521_db8798b2"
-  },
-  {
-    "title": "Robust Volatility Index Calculation with OTM Option-implied Probability",
-    "url": "https://arxiv.org/pdf/2605.17446v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "In financial markets, accurately measuring the risk of future fluctuations in asset prices is of paramount importance. Studies such as Carr and Madan have shown that the expected value of the quadratic variation of log prices can be expressed as an integral of European option prices over a continuum of strikes. This has led to the widespread estimation of model-free volatility (implied variance). However, this theoretical calculation assumes that options are continuously traded across all strike prices, which creates a fundamental gap with real-world market environments where options are only traded at discrete strikes. How to appropriately address this gap and robustly estimate volatility is a crucial issue for both practitioners and academics, and is the primary objective of this paper.\n  Focusing on the fact that volatility indices are primarily calculated from the prices of out-of-the-money (OTM) options, this paper proposes a novel method for constructing a continuous European option pricing function that is consistent with the bid-ask spreads of observed OTM options and strictly satisfies arbitrage-free conditions (such as monotonicity and convexity). Although previous studies have attempted to construct arbitrage-free option pricing functions from bid-ask spreads, the construction method proposed in this paper requires fewer market parameters than existing methods. This makes it possible to robustly calculate volatility indices while maintaining theoretical consistency, even in markets with extremely low liquidity.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文提出一种利用OTM期权隐含概率稳健计算波动率指数的方法，通过构建与市场买卖价差一致且无套利的连续期权定价函数，解决了实际市场中离散执行价与理论连续假设的差距。该方法对实战交易中的波动率估计和风险对冲有直接应用价值。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_a8baa6e3"
-  },
-  {
-    "title": "Geometric Observables for Financial Regime Detection",
-    "url": "https://arxiv.org/pdf/2605.17117v1",
-    "source": "ArXiv",
-    "date": "2026-05-16",
-    "abstract": "We extract four geometric observables -- Berry Phase Rate, Spectral Entropy, Reduced State Purity, and Hamiltonian Sensitivity -- from a learned spectral embedding of equity-index returns and evaluate them as regime-shift detectors against 46 classical and machine-learning baselines on 17 historical crises spanning 2000-2024. Under walk-forward nested hyperparameter selection on nine labelled windows, the Berry Phase Rate achieves an unbiased out-of-sample median Cohen's $d = 0.72$ (95% percentile-bootstrap CI $[0.34, 1.18]$, 10,000 resamples) and produces approximately 67% fewer false alarms per year than a label-supervised Random Forest (1.2 vs. 3.6 per year). Reduced State Purity attains the highest in-sample separability of any method ($d = 0.83$), tied closely by the Absorption Ratio ($d = 0.80$); geometric and classical channels are largely uncorrelated (mean $|ρ| \\approx 0.22$), suggesting they capture distinct risk signals. Score construction is unsupervised; hyperparameter selection is the only supervised step.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "论文从学习的谱嵌入中提取Berry相位率、谱熵等四个几何观测量，作为制度转换检测器，在17次历史危机中与46个基线对比。Berry相位率在样本外实现中位Cohen's d=0.72，每年误报比随机森林少67%。构建无监督，仅超参数选择有监督。具有实战价值。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_7b4579c0"
-  },
-  {
-    "title": "Explicit Rational Formulae for Bachelier (Normal) Implied Volatility",
-    "url": "https://arxiv.org/pdf/2605.18343v1",
-    "source": "ArXiv",
-    "date": "2026-05-18",
-    "abstract": "We present two explicit rational formulae for Bachelier, or normal, implied volatility. The formulae take the option price, forward, strike, and expiry as inputs and return the implied normal volatility without iteration. They follow the branch structure of LFK-4, but use the simpler near-the-money variable given by the absolute forward-strike difference divided by the tail time value, avoiding a logarithm and a small-argument Taylor branch in that region. LFK-2026 is the accuracy-oriented formula and approximates reciprocal absolute standardized moneyness directly in the far tail. LFK-2026C keeps the same shifted out-of-the-money rational tail approximation, but splits the near-the-money branch into a very small low- \\(u\\) rational and a mid-range rational. In double precision tests both remain close to machine accuracy, while LFK-2026C is the faster scalar implementation on the current benchmark mix",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出了两个解析公式用于计算Bachelier（正态）隐含波动率，无需迭代，精度接近机器精度。在实战交易中可快速计算期权隐含波动率，对定价和风险管理有直接应用价值，但属于数值方法改进，非交易策略本身。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_38d03340"
-  },
-  {
-    "title": "A Penalty-Free Pipeline for Direct Quantum-Annealer Portfolio Optimization",
-    "url": "https://arxiv.org/pdf/2605.17628v1",
-    "source": "ArXiv",
-    "date": "2026-05-17",
-    "abstract": "Direct quantum-annealer portfolio optimization is commonly formulated as a penalty-encoded QUBO and submitted to D-Wave hardware. We show that this standard formulation fails on current devices and identify the structural reason: the cardinality penalty contributes a dense rank-one term proportional to the all-ones matrix that makes the logical interaction graph complete regardless of the covariance structure. On Pegasus and Zephyr, chain-break fractions reach 83 percent at N equal to 24 and 92 percent at N equal to 49, producing no feasible samples. Attempting to fix this through topology-aware sparsification reveals a second problem: any sparsifier that removes off-diagonal entries also dilutes the cardinality constraint, so raw samples remain infeasible even when chains no longer break, and an ablation shows that for structurally favorable cases such as betting with settlement-graph priors the classical feasibility projector alone explains the result rather than the QPU. We propose dropping the penalty entirely: build an objective-only QUBO from the expected returns and the risk-scaled covariance, sample it on hardware, and enforce the cardinality constraint classically as a post-processing step. On D-Wave Advantage and Advantage2 for equities up to N equal to 49 and betting up to N equal to 48, mean chain-break fractions per sample averaged over reads drop from the range of 71 to 92 percent down to at most 0.04 percent. The QPU returns lower-energy feasible portfolios than the greedy heuristic on betting at N equal to 39 and 48, which is an energy comparison and not a proof of optimality, and the equity post-processed regret is at most 0.03 percent at all tested scales. These results establish that the penalty encoding, not the sparse hardware topology, is the binding constraint for direct QPU portfolio optimization at currently accessible scales.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "论文指出标准量子退火投资组合优化的惩罚公式在D-Wave硬件上失败，并提出无惩罚的流水线：仅构建目标函数QUBO，采样后经典实施基数约束，简化了量子-经典混合优化流程，对实战有参考价值。",
-    "fetch_date": "2026-05-20",
-    "id": "20260520_dbeb9f97"
   }
 ]
