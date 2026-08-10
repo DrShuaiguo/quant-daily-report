@@ -1,5 +1,77 @@
 [
   {
+    "title": "Aftab: A Comprehensive Benchmark of CNN Encoders and Advanced Value Functions in Parallelized Q-Networks",
+    "url": "https://arxiv.org/pdf/2608.07335v1",
+    "source": "ArXiv",
+    "date": "2026-08-07",
+    "abstract": "Recent advancements in deep reinforcement learning have increasingly favored simplified, highly parallelized paradigms. Notably, the Parallelized Q-Network (PQN) algorithm achieves stable off-policy learning without relying on computationally expensive replay buffers or target networks. However, the representational capacity and parameter efficiency of visual encoders operating in these buffer-free settings remain underexplored. In this work, we systematically investigate the architectural design space of Convolutional Neural Networks for PQN. We design and rigorously evaluate eight distinct CNN topologies, optimizing for sample efficiency under strict parameter constraints. Furthermore, we study the impact of representation and value estimation enhancements by integrating the Hadamax encoding paradigm and advanced Q-learning extensions, including distributional, ensemble, and dueling heads. Extensive experiments on the Atari-57 benchmark demonstrate that our proposed composite architecture, Aftab, achieves an Interquartile Mean (IQM) Human-Normalized Score of 6.479, establishing a 0.86 Probability of Improvement over the standard PQN baseline. Additionally, structural resilience evaluations on the highly non-stationary Procgen Hard benchmark confirm out-of-distribution generalization, with Aftab yielding an IQM Procgen Normalized Score of 0.418 compared to the baseline's 0.382. Ultimately, this work establishes an efficient, probabilistically superior structural reference for model-free reinforcement learning, all while preserving the simplicity and memory efficiency of unbuffered, parallelized optimization.\n  The complete Aftab framework, including all model definitions, training configurations, and raw experimental logs, is open-sourced and available on our GitHub repository: https://github.com/tahashieenavaz/aftab",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "本文研究了并行化Q网络（PQN）中视觉编码器的架构设计，提出了一种名为Aftab的复合架构，在Atari-57基准上显著提升了性能（IQM人类标准化分数6.479，改进概率0.86）。该工作聚焦于深度强化学习中的实际算法优化，对实战交易中强化学习模型的改进具有直接参考价值，故评分为8。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_6c6bb420"
+  },
+  {
+    "title": "Certified High-Dimensional Wasserstein Robust Portfolio Optimization",
+    "url": "https://arxiv.org/pdf/2608.07032v1",
+    "source": "ArXiv",
+    "date": "2026-08-07",
+    "abstract": "We develop a certified, scalable approximation for high-dimensional Wasserstein distributionally robust portfolio optimization. For expected-utility maximization under order-one Wasserstein ambiguity, standard duality yields a semi-infinite convex program. For long-only portfolios with box support under the one-norm ground metric, an exact sample-specific vertex reformulation provides an exponential-size computational benchmark. We then majorize the utility by supporting hyperplanes and dualize the support subproblems, obtaining a finite hyperplane--dual formulation over compact polyhedral supports. Under the one-norm ground metric and polyhedral portfolio constraints, this formulation is a polynomial-size linear program. The uniform utility-approximation error bounds both the robust-value error and the near-optimality gap for the original robust problem. Experiments validate the certified approximation and demonstrate monthly 476-asset rebalancing and computational scalability to 1,000 assets.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了一种针对高维Wasserstein分布鲁棒投资组合优化的可认证近似方法。对于一阶Wasserstein模糊集下的期望效用最大化，标准对偶产生半无限凸规划。对于具有盒型支撑和单范数地面度量的纯多头投资组合，精确的样本特定顶点重构提供了指数规模的计算基准。通过支撑超平面和支撑子问题的对偶化，作者获得了有限超平面-对偶公式，在单范数地面度量和多面体投资组合约束下，该公式是一个多项式规模的线性规划。均匀效用近似误差界同时约束了鲁棒价值误差和原始鲁棒问题的近最优性差距。实验验证了该认证近似，并展示了月度476资产再平衡和计算扩展至1000资产。该方法提供了一种可扩展且可认证的高维鲁棒优化求解方案，对实际量化交易中的组合优化问题具有较高的应用价值，但由于其数学优化理论深度较高，实战操作门槛也较高。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_3e1f1024"
+  },
+  {
+    "title": "Beyond Co-Movement: Locality by Exposures Enables a Joint Factor-Graph Framework for Portfolio Diversification",
+    "url": "https://arxiv.org/pdf/2608.06618v1",
+    "source": "ArXiv",
+    "date": "2026-08-06",
+    "abstract": "Current portfolio construction methods are either agnostic to the effects of idiosyncratic shocks (standard factor models) or to the latent data structure driving systematic returns (recent graph-based approaches). This presents an opportunity to combine the complementary market aspects captured by the factor and graph domains, allowing asset allocations to operate directly on the underlying market structure, rather than on its observed co-movement or its finite-sample artefacts. In this work, we introduce the Mutually-INformed Graph-Locality and Exposures framework (MINGLE), which mutually regularises the factor and graph domains by redefining graph locality through systematic factor exposure profiles, rather than via observed co-movements. This is formalised through a unified Alternating Direction Method of Multipliers (ADMM) framework that jointly learns a latent factor representation and its induced graph topology directly from market returns. The resulting exposure-similarity graph aligns more closely with established economic sectors than conventional correlation-based graphs. Portfolios constructed from this representation are shown to consistently outperform their correlation-based counterparts across a range of volatility regimes and transaction cost levels. For rigour, paired statistical testing confirms that these gains stem from the reconciliation of the graph and factor domains.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出MINGLE框架，将因子模型与图模型结合，通过暴露相似性而非协动性定义图的局部性，并在ADMM框架下联合学习因子表示和图拓扑。实证表明，基于该表示的组合优于传统相关性组合，且更符合经济行业分类。该方法为组合构建提供了新视角，但需进一步验证其在实际交易中的稳定性和可操作性。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_24ae5b65"
+  },
+  {
+    "title": "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings",
+    "url": "https://arxiv.org/pdf/2608.07400v1",
+    "source": "ArXiv",
+    "date": "2026-08-07",
+    "abstract": "Financial question answering is typically evaluated by answer correctness, yet in SEC filings a plausible and even numerically correct answer can be grounded in the wrong evidence. Similar facts and disclosures recur across sections of a filing, across reporting periods of the same firm, and across comparable firms. FinRank targets this provenance-sensitive retrieval problem by requiring systems to identify evidence for the intended entity, reporting period, and disclosure context. The benchmark contains 1185 manually authored question-answer records over the 10-K and 10-Q filings of 22 companies. Each record includes a reference answer, gold supporting passages, and hand-curated hard negatives drawn from confusable passages within filings, across reporting periods, and across comparable firms. FinRank evaluates passage retrieval, reranking, and hard-negative discrimination as separately measured tasks. Baseline results demonstrate the difficulty of this setting: among the evaluated systems, even a 7B instruction-tuned embedder reaches only 44.8% Recall@10 on the pooled evidence corpus; sub-billion-parameter encoders gain at most 3.5 points over BM25, a finance-adapted embedder trails BM25 by 9.7 points, and pairwise accuracy falls by 13.0-20.5 percentage points when random negatives are replaced with the curated hard negatives. FinRank provides an evidence-first benchmark for developing financial question answering systems that are not only accurate but also grounded in the correct disclosure.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出FinRank基准，用于评估SEC文件中金融问答的证据溯源能力，重点关注检索和重排序性能。虽然不直接提供交易信号，但提升信息检索准确性对量化分析中的基本面数据提取有实践价值，尤其在处理复杂文档时。评分6分，因其方法论和基准具有应用潜力，但非直接交易策略。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_e14e94ef"
+  },
+  {
+    "title": "Momba: Network Modernization Improves Multi-Objective Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2608.07180v1",
+    "source": "ArXiv",
+    "date": "2026-08-07",
+    "abstract": "Recent advances in deep reinforcement learning (RL) have shown that improving neural network architectures can yield substantial gains in sample efficiency and asymptotic performance without altering the underlying algorithms. In contrast, work on multi-objective reinforcement learning (MORL), which aims to discover a set of policies that balance trade-offs among conflicting objectives, has predominantly focused on algorithmic innovations, leaving the area of architectures underexplored. While the optimal policies and value functions can differ significantly depending on the trade-offs, MORL algorithms commonly represent them with simple feedforward networks conditioned on the trade-off. This raises the question of whether the performance of the algorithms could be improved with more expressive function approximators. In this paper, we integrate recent advances in neural network design: (i) observation and feature normalization, (ii) weight normalization, and (iii) modeling of distributional returns with an entropy-regularized MORL algorithm. The empirical results across standard continuous control benchmarks demonstrate that these changes substantially improve the quality of the produced solution sets without requiring major changes to the underlying algorithm.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文研究多目标强化学习（MORL），通过引入网络架构现代化（如特征归一化、权重归一化、分布回报建模）来提升算法性能，而无需改变底层算法。在连续控制基准测试中，这些改动显著提高了所获策略的质量。对于实战交易而言，多目标优化（如风险与收益的权衡）有一定参考价值，但论文聚焦于RL架构改进，并未直接应用于金融场景，因此实战性中等。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_52404b18"
+  },
+  {
+    "title": "Vehicle routing problem using deep reinforcement learning - A case study about truck planning in the industry",
+    "url": "https://arxiv.org/pdf/2608.06668v1",
+    "source": "ArXiv",
+    "date": "2026-08-07",
+    "abstract": "As an important component of the supply chain industry, transportation has experienced rapid development in the past decade with the assistance of digital platforms and intelligent algorithms. Within the field of transportation research, Vehicle Routing Problem (VRP) has remained a persistent and enduring challenge. In the realm of management science, experts, and scholars from both the industrial and academic sectors have continuously explored optimization models and algorithms to effectively address routing problems, from the classical Traveling Salesman Problem to the more general Vehicle Routing Problem. These models and algorithms are applied in real-world industrial scenarios to achieve cost optimization and reduce carbon footprints. However, due to the complexity of real-world problems, numerous specific constraints are often added, and challenges such as information opacity, uncertainty, and irrational human behavior may arise. Therefore, deploying and optimizing mathematical models for VRP in practical scenarios while maintaining optimal results poses numerous challenges. This paper discusses and provides solutions for three different logistic use cases involving external truck network design. Through these industrial case study, the paper introduces how deep reinforcement learning-based vehicle routing optimization has been implemented. As a result, it can be observed that the routes optimized by reinforcement learning agent have over 10% total cost compared to baseline results. Furthermore, the paper proposes that in future research, DRL algorithms for vehicle routing problems could be generalized into more variations of VRP.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文聚焦于深度强化学习在车辆路径规划问题中的应用，并通过工业案例研究展示了其可行性。虽然与量化交易无直接关联，但其方法论（如深度强化学习处理复杂约束优化）对策略优化和动态决策具有一定借鉴意义，因此给予中等偏上评分。",
+    "fetch_date": "2026-08-11",
+    "id": "20260811_cad4e774"
+  },
+  {
     "title": "Deep Learning Meets Statistical Arbitrage: An Application of Long Short-Term Memory Networks to Algorithmic Trading.",
     "url": "https://openurl.ebsco.com/contentitem/gcd:169649441?sid=ebsco:plink:crawler-gcd&id=ebsco:gcd:169649441&crl=c&jrnl=26403943",
     "source": "Scholar",
@@ -5927,77 +5999,5 @@
     "summary": "本文提出了一种自演化科学Agent工作流，利用大语言模型和迭代代码生成自动构建物理控制策略，并在流体-结构交互问题中验证。该方法强调可解释性和物理推理，但偏向科学研究而非实战交易，且未涉及金融或交易领域，因此实战价值中等。",
     "fetch_date": "2026-06-10",
     "id": "20260610_f0e23cbb"
-  },
-  {
-    "title": "Axiomatic Market Making",
-    "url": "https://arxiv.org/pdf/2606.09454v1",
-    "source": "ArXiv",
-    "date": "2026-06-08",
-    "abstract": "This paper axiomatizes the bid-ask market maker's quoting rule. A quoting rule maps the maker's state, namely inventory, belief, variance, trade intensity, and informed-trader fraction, to a bid-ask pair. Eight natural axioms, together with six environmental assumptions on the maker's inventory cost, force a unique three-parameter family: the mid-quote is linear in inventory, and the spread decomposes additively into inventory and adverse-selection components. Each of the three parameters is identified from a distinct moment of the observable quoting rule, with the three identifications mutually decoupled. The eight axioms partition into a four-axiom indispensable core, one structural choice, and three modularity extensions. Two structural corollaries follow: the latent inventory cost function is recoverable from the limit order book, and a sharp phase transition separates a functioning regime from a frozen one. A closing meta-theorem identifies four features invariant across all admissible structural primitives within the axiom system. To our knowledge, this is the first forced-uniqueness axiomatization of the quoting rule.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文对做市商报价规则进行了公理化推导，提出了一个唯一的三参数报价函数族，并从理论上分析了库存成本与逆向选择的影响。尽管提供了理论框架，但缺乏实战所需的深度强化学习或深度学习模型，且未涉及交易策略优化或高频数据，实战价值有限。",
-    "fetch_date": "2026-06-10",
-    "id": "20260610_3924ce60"
-  },
-  {
-    "title": "Proof of Stake economy under centralized exchanges--a mean field model",
-    "url": "https://arxiv.org/pdf/2606.09003v1",
-    "source": "ArXiv",
-    "date": "2026-06-08",
-    "abstract": "We consider the interaction between centralized trading and decentralized Proof of Stake (PoS) blockchain ecosystems. Motivated by the increasing dominance of centralized exchanges and the institutionalization of crypto markets, we study how trading activities on centralized exchanges affect staking behavior, token allocation, and decentralization within a PoS blockchain. We formulate a continuous-time mean field model, where the miners simultaneously act as validators in the PoS protocol and traders in a centralized market with price impact. Under suitable assumptions, we establish the local well-posedness of the mean field system, and derive a semi-explicit characterization of the equilibrium trading strategy. Numerical results suggest that centralized trading activities may enhance staking participation, and promote decentralization of the staking distribution through market incentives. We also study the effects of transaction costs and token supply mechanisms on the equilibrium staking ratio and concentration profile. These results illustrate how market microstructure and centralized liquidity provision can exert significant influence on decentralized blockchain protocols.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文通过平均场模型研究中心化交易所与PoS区块链的交互，分析交易活动对质押行为、代币分配和去中心化的影响。理论性强，数值结果展示了市场激励对质押分布和去中心化的促进作用，但缺乏可直接应用的交易策略或阿尔法因子，实战价值有限。",
-    "fetch_date": "2026-06-10",
-    "id": "20260610_4f07ab87"
-  },
-  {
-    "title": "Stock Investment: The p-index Approach",
-    "url": "https://arxiv.org/pdf/2606.08569v1",
-    "source": "ArXiv",
-    "date": "2026-06-07",
-    "abstract": "This paper has used European put option to construct the p-index risk measure to evaluate the performance of different investment strategies in China's SSE 50 index and the US SP500 index during 2018-2023. The p-index measures the insurance fee for each insured dollar to guarantee that the asset achieves at least a delta rate of return on a specified future date. It is found that with the fair price strategy, one-week and one-month holding periods can earn more, and among seven economic sectors, materials sector stocks generated highest annualized rates of return: 11.04% (one-week period), 11.93% (two-week period) and 10.18% (one-month period). With momentum and contrarian strategies of one-week holding period, the p-ratio-efficient-contrarian strategy produced the highest annualized rate of return (9.97%), followed by the p-index-inefficient-momentum strategy (9.01%) and the p-index-efficient-contrarian strategy (6.48%), the MCIRS method employing the p-index consistently delivered higher returns than its beta-based approach, and efficient (outperforming) stocks failed to sustain their momentum while inefficient (underperforming) stocks exhibited no mean reversion. It is also found that the p-index-efficient-contrarian strategy outperformed in low-sentiment (low-volume) regimes, while the p-index-inefficient-momentum strategy outperformed during high-sentiment (high-volume) periods. For the five hundred stocks of the US S&P 500 index during 2018-2023, it is found that efficient stocks sustained their momentum while inefficient stocks exhibited mean reversion. The p-index-efficient-momentum strategy produced the highest annualized rate of return (3.69%), followed by the p-ratio-inefficient-contrarian strategy (3.67%) and the beta-efficient-momentum strategy (3.48%).",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文提出使用欧式看跌期权构建p-index风险度量，评估不同投资策略在沪深300和标普500上的表现。研究发现公平价格策略下持有期一周和一月收益较高，材料板块年化回报最高。动量和反转策略中，p-ratio有效反转策略收益最高。但论文聚焦于风险度量构建和策略测试，实战指导有限，评分较低。",
-    "fetch_date": "2026-06-10",
-    "id": "20260610_07152efd"
-  },
-  {
-    "title": "Diffusive in plain sight: An inconspicuous law of market impact",
-    "url": "https://arxiv.org/pdf/2606.07059v1",
-    "source": "ArXiv",
-    "date": "2026-06-05",
-    "abstract": "Decomposing impact as the difference between realized and counterfactual returns and requiring both to be diffusive yields an identity that restricts admissible impact scaling at the level of individual participants. This constraint implies the square-root law in the information-neutral regime and a crossover to linear impact under strong informational coupling, consistent with empirical observations. In the weak-coupling regime, cumulative market impact is itself diffusive -- a diagnostic that many propagator and latent liquidity models fail to satisfy.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "将冲击分解为已实现收益与反事实收益之差，并要求两者均为扩散过程，推导出一个约束个体参与者冲击模型的恒等式。该约束在信息中性条件下推出平方根定律，在强信息耦合下过渡到线性冲击，与实证一致。弱耦合下累积市场冲击本身是扩散的，这揭示许多传播子和潜在流动性模型不满足该条件。",
-    "fetch_date": "2026-06-09",
-    "id": "20260609_558bb96b"
-  },
-  {
-    "title": "SCALE: Scalable Cross-Attention Learning with Extrapolation for Agentic Workflow Scheduling",
-    "url": "https://arxiv.org/pdf/2606.06820v1",
-    "source": "ArXiv",
-    "date": "2026-06-05",
-    "abstract": "Agentic Large Language Model (LLM) systems decompose complex tasks into workflow Directed Acyclic Graphs (DAGs) whose primitives must be scheduled on heterogeneous clusters. Existing deep reinforcement learning (DRL) schedulers are tied to a fixed cluster size and require retraining whenever the number of servers changes. We propose SCALE (Scalable Cross-Attention Learning with Extrapolation), a DRL scheduler that generalizes to unseen cluster scales without fine-tuning. SCALE employs a cross-attention pointer network where task features query against server features, so the architecture accepts any number of servers by construction. We observe, however, that permutation-invariant architecture alone does not guarantee good performance at new scales - the attention feature undergoes distribution shift as the server count grows. To counter this, we introduce Structured Representation Regularization (SRR): a decorrelation loss combined with a KL penalty toward the standard normal, which keeps feature statistics stable regardless of input size. Trained on 16 nodes and tested directly on 32 and 48 nodes, SCALE reduces average response time by 8.9% at N=48 relative to the same architecture without SRR, confirming that explicit regularization is necessary to close the scale-generalization gap.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "本文提出SCALE，一种基于交叉注意力指针网络的可扩展DRL调度器，通过结构化表示正则化应对分布偏移，并在不同规模集群上泛化，减少平均响应时间8.9%。实战价值高，直接优化LLM工作流调度。",
-    "fetch_date": "2026-06-09",
-    "id": "20260609_e838fd9c"
-  },
-  {
-    "title": "PandaAI: A Practical Agent CQ2 for Neuro-symbolic Data Analysis And Integrated Decision-Making in Quantitative Finance",
-    "url": "https://arxiv.org/pdf/2606.06823v1",
-    "source": "ArXiv",
-    "date": "2026-06-05",
-    "abstract": "While deep learning has excelled in various domains, its application to sequential decision-making in finance remains challenging due to the low Signal-to-Noise Ratio (SNR) and non-stationarity of financial data. Leveraging the reasoning capabilities of Large Language Models (LLMs), we propose \\textbf{PandaAI}, a closed-loop neuro-symbolic LLM agent with market regime modeling and constrained alpha generation, which bridges general LLM reasoning with financial rigor and suppresses the financial toxicity of LLM-generated outputs. To bridge the gap between general linguistic capability and financial rigor, we fine-tune a domain-specific LLM. Furthermore, we integrate this LLM into a modular architecture and form a closed-loop system. Unlike traditional models that optimize isolated prediction metrics, \\textbf{PandaAI} is designed as a neuro-symbolic agent that navigates the complex, real-world financial environment with explicit risk awareness. Extensive experiments on CSI 300 stock data show that \\textbf{PandaAI} achieves a $18.2\\%$ higher Rank IC and $25.7\\%$ lower maximum drawdown than state-of-the-art time-series models. Our constrained LLM generation and dual-channel adaptation method provide a general paradigm for LLM deployment in high-stakes sequential decision-making scenarios.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "PandaAI提出了一种神经符号LLM智能体，结合市场制度建模和约束alpha生成，在CSI 300数据上实现了Rank IC提升18.2%、最大回撤降低25.7%，实战价值高。",
-    "fetch_date": "2026-06-09",
-    "id": "20260609_fd298546"
   }
 ]
