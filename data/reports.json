@@ -1,5 +1,65 @@
 [
   {
+    "title": "A novel hybrid temporal fusion transformer graph neural network model for stock market prediction",
+    "url": "https://www.mdpi.com/2673-9909/5/4/176",
+    "source": "Scholar",
+    "date": "2026-08-17",
+    "abstract": "… Moving Average (SARIMA) and Exponential Smoothing (ES) in the Error, Trend, Seasonal (ETS) framework, with deep learning architectures such as the Temporal Fusion Transformer (…",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文提出了一种新颖的混合模型，结合了时间融合变换器（Temporal Fusion Transformer）和图神经网络（GNN），用于股票市场预测。该模型将统计方法（如SARIMA和ETS框架下的指数平滑）与深度学习架构相结合，旨在捕捉时间序列中的复杂模式和变量间的相互关系。鉴于其结合了先进的深度学习和图结构，并直接针对股市预测，具有较高的实战应用潜力。",
+    "fetch_date": "2026-08-17",
+    "id": "20260817_756d3240"
+  },
+  {
+    "title": "LLM-Augmented Enhanced Graph Transformer for Stock Movement Prediction",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11144933/",
+    "source": "Scholar",
+    "date": "2026-08-17",
+    "abstract": "… Enhanced Graph Transformer framework, effectively combining numerical indicators, semantic textual embeddings, and structured graph information for stock prediction. Empirical …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "提出了一种增强图Transformer框架，结合数值指标、语义文本嵌入和结构化图信息进行股票预测。实证结果表明其有效性，适合实战应用，尤其是涉及多源数据融合的场景。",
+    "fetch_date": "2026-08-17",
+    "id": "20260817_dde3c84c"
+  },
+  {
+    "title": "MambaLLM: Integrating macro-index and micro-stock data for enhanced stock price prediction",
+    "url": "https://www.mdpi.com/2227-7390/13/10/1599",
+    "source": "Scholar",
+    "date": "2026-08-17",
+    "abstract": "… —including LSTMs and transformers—have bolstered … dependencies and outperform traditional Transformer and Long Short… ) not only excel in stock prediction tasks but also outperform …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文提出MambaLLM模型，结合宏观指标与微观股票数据，利用状态空间模型（Mamba）和大型语言模型（LLM）提升股价预测性能。实验表明，该方法在预测任务中优于传统Transformer和LSTM，具备较强的实战潜力，适用于量化交易中的多因子建模与预测。",
+    "fetch_date": "2026-08-17",
+    "id": "20260817_d72a202e"
+  },
+  {
+    "title": "Stock Prediction Based on Transformer Model",
+    "url": "https://nepjol.info/index.php/nccsrj/article/view/84356",
+    "source": "Scholar",
+    "date": "2026-08-17",
+    "abstract": "… However, using Transformers for stock price forecasting, especially in … Transformer model for stock price prediction. We analyze the optimal look-back period for the Transformer to …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文研究了基于Transformer模型的股票价格预测，特别关注于寻找最优的回看周期。Transformer作为一种深度学习模型，能够捕捉长期依赖关系，在时间序列预测中展现出潜力，对实战中的量化交易策略开发有较强的参考价值。",
+    "fetch_date": "2026-08-17",
+    "id": "20260817_47ed4463"
+  },
+  {
+    "title": "Evolution of Algorithmic Trading Research: A Systematic Literature Review and Identification of Future Research Directions",
+    "url": "https://ijisem.com/journal/index.php/ijisem/article/view/632",
+    "source": "Scholar",
+    "date": "2026-08-17",
+    "abstract": "… The review systematically examines the evolution of algorithmic trading, major algorithmic trading strategies, theoretical foundations, data sources, research methodologies, and …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文系统综述了算法交易研究的演变，包括主要策略、理论基础、数据来源和研究方法。虽然为综述类文章，非直接实战策略，但提供了对算法交易领域的全面概览，有助于量化交易员把握领域脉络和未来方向，具有一定的实战参考价值。",
+    "fetch_date": "2026-08-17",
+    "id": "20260817_704c98b9"
+  },
+  {
     "title": "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
     "url": "https://arxiv.org/pdf/2608.12841v1",
     "source": "ArXiv",
@@ -5939,65 +5999,5 @@
     "summary": "论文将深度学习方法应用于多项金融任务，展示了深度学习模型如何增强时间序列和横截面动量交易，对实战交易有直接指导价值。",
     "fetch_date": "2026-06-18",
     "id": "20260618_eede5c46"
-  },
-  {
-    "title": "Conformal Prediction Intervals with Tail-Specific Guarantees",
-    "url": "https://arxiv.org/pdf/2606.18199v1",
-    "source": "ArXiv",
-    "date": "2026-06-16",
-    "abstract": "This paper extends classical conformal frameworks for constructing prediction intervals with global marginal coverage $1-α$ to intervals that provide explicitly calibrated guarantees for the upper and lower tails separately. Focusing on split conformal prediction, we first construct lower and upper one-sided conformal intervals that achieve marginal validity, and then derive the induced two-sided interval by intersection. Theoretical results prove both tail-specific and global marginal coverage of the induced two-sided interval. Results are presented first for the exchangeable setting, where coverage has finite-sample guarantees, and then for non-exchangeable data, where guarantees are asymptotic. Simulation studies show that the proposed approach achieves improved directional calibration relative to classical two-sided intervals, especially relevant in skewed data. Finally, the benefit of the proposed framework is showcased in a financial application, where one aims for return maximization while seeking strict control on the left tail.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文扩展了传统共形预测框架，通过构造单侧共形区间并取交集得到双侧区间，分别校准上下尾部的覆盖概率，在可交换和非交换数据下提供有限样本或渐近保证。模拟表明在偏斜数据中方向校准优于经典方法，并在金融应用中用于收益最大化同时严格控制左尾风险。",
-    "fetch_date": "2026-06-18",
-    "id": "20260618_beccabce"
-  },
-  {
-    "title": "Model Validation of Agentic AI Systems: A POMDP-Based Framework for Belief-State, Forecast, and Policy Validation",
-    "url": "https://arxiv.org/pdf/2606.17383v1",
-    "source": "ArXiv",
-    "date": "2026-06-16",
-    "abstract": "Agentic artificial intelligence systems introduce a new class of model risk. Unlike traditional predictive models, autonomous agents continuously acquire information, form beliefs regarding latent states of the environment, generate forecasts, select actions, and adapt their behavior over time. Existing validation methodologies focus primarily on predictive accuracy and therefore provide limited insight into the quality of the underlying decision process. This paper proposes a model validation framework for agentic AI based on Partially Observable Markov Decision Processes (POMDPs). The framework decomposes autonomous decision making into information, beliefs, forecasts, actions, and utility, allowing each component to be validated independently. Large language models (LLMs) are formalized as approximate Bayesian filtering operators, and a model-risk taxonomy is developed encompassing state-space, filtering, forecast, policy, utility-specification, and parameter risks.\n  The model risk validation methodology is demonstrated through a portfolio-management case study in which an agent infers latent market regimes from market and macroeconomic information, generates belief-conditioned forecasts, and constructs portfolios using a Black--Litterman framework. Empirical validation combines performance analysis, belief calibration diagnostics, coverage tests, ablation studies, and parameter-sensitivity analysis. The results indicate that latent-state inference contributes independently to decision quality and that the principal conclusions remain robust across a broad range of parameter values. The principal contribution of the paper is a practical framework for extending established model risk management concepts to autonomous AI systems and providing a rigorous foundation for their validation, governance, and monitoring.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "提出基于POMDP的智能AI系统模型验证框架，将自主决策分解为信息、信念、预测、行动和效用，并单独验证各组件。通过投资组合管理案例展示模型风险验证，强调信念状态过滤、预测和政策验证。实战价值中等偏高，因直接关联量化交易中的风险管理与模型验证，但偏重框架而非交易信号或策略。",
-    "fetch_date": "2026-06-18",
-    "id": "20260618_93468ae9"
-  },
-  {
-    "title": "Two Sides of Schur Damping: High-Dimensional Pseudo-Likelihoods and Portfolio Allocation",
-    "url": "https://arxiv.org/pdf/2606.14798v1",
-    "source": "ArXiv",
-    "date": "2026-06-11",
-    "abstract": "Two communities that rarely cite each other -- spatial statisticians fitting high-dimensional weather fields, and quantitative investors building portfolios -- have independently arrived at the same mathematical object: a Schur complement, damped by one interpretable parameter. In spatial modeling the Schur complement is the conditional covariance that makes a Gaussian (Vecchia) pseudo-likelihood estimable at scale, and recent work regularizes it by shrinking toward a base model. In allocation it is the residual risk of a bet net of its hedge, and the same parameter interpolates hierarchical risk parity and the minimum-variance portfolio. We show these are one operation -- reliability shrinkage of a conditional Gaussian -- so that the damping a weather model needs to remain estimable when stations outnumber observations is, term for term, the damping a portfolio needs to remain stable when assets outnumber returns. The optimal amount is a closed-form reliability, a James-Stein shrinkage that is simultaneously a Ledoit-Wolf intensity. The shrinkage machinery is classical, but the identity appears to be new: to our knowledge neither literature has noted that the conditional shrinkage a spatial model fits and the diversification-variance tilt a portfolio chooses are one and the same quantity. We make the correspondence precise, note that the two literatures have each supplied what the other lacks, and report a small experiment on the one genuinely open choice -- how to set the damping -- suggesting the spatial community's fitted intensity is, if anything, the better recipe.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "论文连接了空间统计中的Schur补（用于高维天气场伪似然估计）与量化投资中的资产组合分配（风险平价和最小方差组合），提出通过一个可解释参数进行条件协方差收缩，实现了James-Stein型最优收缩。理论统一，但未直接提供实战alpha信号或交易策略，偏方法论。价值在于为组合优化提供新视角，但实战应用需额外工程。评分6分。",
-    "fetch_date": "2026-06-18",
-    "id": "20260618_49e9053f"
-  },
-  {
-    "title": "Mixture-Preserving, Arbitrage-Free Interpolation for Volatility-Surface Models",
-    "url": "https://arxiv.org/pdf/2606.12717v2",
-    "source": "ArXiv",
-    "date": "2026-06-10",
-    "abstract": "Given risk-neutral densities of a tradeable forward, fitted as $N$-component mixtures at a finite set of expiration pillars, we look for a continuous-time interpolation that is (i) \\emph{mixture-preserving}, remaining a mixture of the same kernel (generically with more components than either pillar), and (ii) \\emph{arbitrage-free} across expiries. The second requirement is the \\emph{peacock} (convex-order) property, equivalently a non-negative Dupire local volatility; for full-support kernels (Gaussian, lognormal) it gives a unique continuous local-volatility diffusion (Lowther). We construct such an interpolation in a fixed $2N$-component family, freezing both pillars' components and moving only their weights. Applied to mixture term-structure models, it lifts Brigo--Mercurio to time-varying weights and reaches the free-per-strike-width generality of SANOS at additive cost.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "论文提出了一种保持混合结构且无套利的波动率曲面插值方法，用于期权定价。虽然直接实战价值有限，但有助于提高波动率建模的精度和稳定性，对量化交易中的期权定价和风险管理有间接帮助。",
-    "fetch_date": "2026-06-18",
-    "id": "20260618_a1eecb29"
-  },
-  {
-    "title": "Beyond the Smile: A Hybrid Convolutional VAE for Crypto Volatility Surfaces",
-    "url": "https://arxiv.org/pdf/2606.16961v1",
-    "source": "ArXiv",
-    "date": "2026-06-15",
-    "abstract": "We present a convolutional variational autoencoder for cryptocurrency implied-volatility surfaces, together with a deployable predictor that combines it with a quadratic smile re-fit through a deterministic per-tenor routing rule. Trained on 6,034 fully-filled hourly Binance Options surfaces of BTC and ETH spanning May-October 2023 and parameterised on a common $6 \\times 7$ tenor-delta grid, the model attains a hidden-cell surface-completion RMSE in the 0.94-1.56 vol-point range across both markets and mask rates 10-50%. The hybrid predictor attains 0.83 vol points at 50% masking against 7.00 for the smile re-fit alone, an eightfold reduction obtained at no additional inference cost. Under structurally-correlated hole patterns that emulate the withdrawal of an entire tenor of strikes, the smile re-fit incurs 9.6-13.1 vol points of error while the learned model remains at 1.5-1.9, isolating a regime in which the generative model is the only viable predictor. Joint training on BTC and ETH improves the in-distribution model on both markets by 9-27% relative to the better-performing single-symbol counterpart, indicating a substantially shared vol-surface manifold across the two largest cryptocurrencies over the observation window. The hybrid is calendar- and butterfly-arbitrage-free at the listed strikes, a property that the parametric smile re-fit alone fails at high mask rates. The per-snapshot reconstruction error of the trained model flags the late-October ETF-anticipation rally and the August $17$, $2023$ flash crash as elevated-error periods without supervision. All training and evaluation infrastructure is released to support reproducible follow-on work.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "本文提出一种混合卷积变分自编码器用于加密货币隐含波动率曲面，结合二次微笑重新拟合与确定性到期时间路由规则。在BTC和ETH的Binance期权数据上训练，曲面补全RMSE为0.94-1.56波动率点，混合预测器在50%遮蔽下误差0.83点，相比纯微笑拟合降低八倍。当模拟整条到期日行权价缺失时，生成模型误差仅1.5-1.9点，而微笑拟合误差达9.6-13.1点。联合训练两市场比单市场提升9-27%。该模型可直接用于交易中波动率曲面补全与预测，实战价值高。",
-    "fetch_date": "2026-06-17",
-    "id": "20260617_ba53637d"
   }
 ]
