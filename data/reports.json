@@ -1,5 +1,29 @@
 [
   {
+    "title": "QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies",
+    "url": "https://arxiv.org/abs/2604.15151",
+    "source": "Scholar",
+    "date": "2026-08-30",
+    "abstract": "… First, we introduce a benchmark specifically designed for the generation of executable algorithmic trading strategies. Second, we propose a multi-level evaluation framework that …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该论文引入了一个专门用于生成可执行算法交易策略的基准测试QuantCode-Bench，并提出多级评估框架，旨在评估大型语言模型在实战交易中的策略生成能力。尽管未直接涉及RL或深度学习，但专注于可执行策略的生成与评估，对实战交易具有较高价值。",
+    "fetch_date": "2026-08-30",
+    "id": "20260830_087c61eb"
+  },
+  {
+    "title": "Algorithmic trading: Financial markets using artificial intelligence",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10593357/",
+    "source": "Scholar",
+    "date": "2026-08-30",
+    "abstract": "This research study gives an in - depth view of the recent developments in the fields of Machine Learning (ML) and Reinforced Learning (RL) techniques as they are related to various …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "该研究深入探讨了机器学习（ML）和强化学习（RL）技术在金融市场中的最新进展，特别是与算法交易相关的应用。内容涉及RL/DeepLearning/Alpha策略，对实战交易具有较高价值。",
+    "fetch_date": "2026-08-30",
+    "id": "20260830_d497b6d7"
+  },
+  {
     "title": "Dynamic datasets and market environments for financial reinforcement learning",
     "url": "https://link.springer.com/article/10.1007/s10994-023-06511-w",
     "source": "Scholar",
@@ -5974,29 +5998,5 @@
     "summary": "本文系统评估了算法交易策略在不同市场条件下的表现，重点关注结构、技术等方面，对实战交易具有参考价值。",
     "fetch_date": "2026-07-06",
     "id": "20260706_22e19e17"
-  },
-  {
-    "title": "Stock prediction by means of XGBoost, LSTM, and Transformer",
-    "url": "https://www.itm-conferences.org/articles/itmconf/abs/2026/04/itmconf_atcids2026_02012/itmconf_atcids2026_02012.html",
-    "source": "Scholar",
-    "date": "2026-07-06",
-    "abstract": "… This paper compares the performance of XGBoost, LSTM, and Transformer models in stock prediction using long-term historical data of NVIDIA from 1999 up to 2025. The findings …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "本文使用NVIDIA 1999-2025年的长期历史数据，比较了XGBoost、LSTM和Transformer模型在股票预测中的表现。研究发现提供了实际交易中可能应用的模型比较结果，对实战有一定价值。",
-    "fetch_date": "2026-07-06",
-    "id": "20260706_557a413d"
-  },
-  {
-    "title": "Toward expert investment teams: A multi-agent LLM system with fine-grained trading tasks",
-    "url": "https://www.pm-research.com/content/iijjfds/early/2026/06/16/jfds.2026.008.full.pdf",
-    "source": "Scholar",
-    "date": "2026-07-06",
-    "abstract": "… We begin by casting each LLM agent as a stochastic policy. Let X denote the space of input … An LLM agent πθ defines a conditional distribution πθ(y | x) over outputs y ∈ Y given input x …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文提出一种多智能体LLM系统用于专家投资团队，将每个LLM代理视为随机策略以处理精细交易任务。通过将市场数据与代理输出结合，系统能实现交易决策的自动优化。该方法结合了强化学习与深度学习，在实战中具有较高的直接应用价值。",
-    "fetch_date": "2026-07-06",
-    "id": "20260706_1fa66350"
   }
 ]

@@ -1,4 +1,7 @@
 [
+  "QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies",
+  "Optimal algorithmic trading and market microstructure",
+  "Algorithmic trading: Financial markets using artificial intelligence",
   "CIFQA: A Deterministic Tool-Grounded Multi-Agent LLM Framework for Financial Query Answering",
   "A Statistical-Finance Benchmark for Same-Day Directional Stock Prediction: Walk-Forward Evidence from SPY",
   "Adaptive alpha weighting with PPO: Enhancing prompt-based LLM-generated alphas in quant trading",
