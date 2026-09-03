@@ -1,5 +1,77 @@
 [
   {
+    "title": "Eliciting ESG Preferences for Reinforcement Learning-Based Portfolio Optimization",
+    "url": "https://arxiv.org/pdf/2609.02677v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "Modern portfolio management increasingly demands a balance between traditional risk-adjusted returns and strict Environmental, Social, and Governance (ESG) mandates. Current Reinforcement Learning (RL) approaches typically optimize for a single ESG provider, neglecting the significant divergence in rating methodologies across the industry and the unintuitive nature of manually weighting conflicting objectives. This paper addresses these limitations by formulating ESG-aware portfolio optimization as a Multi-Objective Reinforcement Learning (MORL) problem that simultaneously incorporates ratings from three distinct ESG agencies. To bridge the gap between high-dimensional algorithmic trade-offs and human decision-making, we integrate a Preference Elicitation framework using Gaussian Processes. This system enables practitioners to infer their latent utility functions through intuitive pairwise comparisons of candidate portfolios based on their Sharpe ratios and aggregate ESG scores. We systematically evaluate our framework by employing Large Language Model (LLM) personas to simulate Portfolio Managers operating under varied regional contexts. Empirical results using historical market data reveal that regional backgrounds fundamentally shift the derived preference weights. For instance, European-based personas tend to prioritize ESG alignment over financial returns, while Texas-based personas favor risk-adjusted performance. This work offers a highly adaptable framework that successfully aligns multi-objective algorithmic trading with diverse, real-world human sustainability preferences.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "本文提出了一种将ESG偏好整合进强化学习投资组合优化的多目标方法，通过高斯过程进行偏好elicitation，并使用大语言模型模拟不同地区的投资经理进行评估。虽然涉及前沿的RL和偏好建模，但主要聚焦于ESG维度，与传统alpha或交易信号获取的直接实战性相比略逊；实际应用需额外的数据与工程集成，因此实战评分适中。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_60e4867e"
+  },
+  {
+    "title": "Insights on Time-consistent Deep Hedging under Elicitable Dynamic Risk Measures",
+    "url": "https://arxiv.org/pdf/2609.02014v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "We study deep hedging in the context of dynamics risk measures, where sequential decisions are time-consistent. Whereas the literature in such context mainly considers low-dimensional problems with simple environment dynamics, we tackle the high-dimensional problem of basket option hedging; we show that the approach is feasible and can be used conveniently in the presence of more complex state spaces. We rely on the conditional elicitability of spectral risk measures to represent the optimization objective. We provide insights on how the choice of scoring function impacts the training of the hedging agent. Lastly, the time-consistent hedging strategies are benchmark against deep hedging approaches relying on static risk measures leading to precommitment.",
+    "broker": "Cornell Univ",
+    "score": 7,
+    "summary": "该论文研究深度对冲在动态风险度量中的应用，强调时间一致性决策。与以往考虑低维简单环境的研究不同，本文处理了篮子期权对冲的高维问题，并基于谱风险度量的条件可elicability来构建优化目标。文中探讨了评分函数选择对对冲智能体训练的影响，并将时间一致性策略与基于静态风险度量的深度对冲（预承诺）方法进行了基准比较。该研究对实战交易有一定价值，特别是为处理复杂状态空间和高维对冲问题提供了新方法，但其主要侧重理论框架和实施细节，而非直接产生交易信号或alpha策略，因此评分不为极高。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_5273174c"
+  },
+  {
+    "title": "Modeling Trade Durations under Temporal Granularity Effects in Forex Markets",
+    "url": "https://arxiv.org/pdf/2609.02660v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "Trade durations in high-frequency foreign exchange data exhibit increased occurrence near integer values. To address this empirical phenomenon, we propose the granularity-adjusted autoregressive conditional duration (GA-ACD) model. It is based on a novel two-component mixture distribution consisting of a standard generalized gamma component for regular durations and a second component that locally redistributes probability mass around integer values to capture heaping. Conditional dynamics are modeled within a score-driven framework, allowing the scale parameter to vary over time in response to past durations, and enabling maximum likelihood estimation of all model parameters. A simulation study shows that ignoring heaping leads to biased parameter estimates and distorted inference regarding both the distribution and the dynamics of durations. An empirical analysis demonstrates that integer-duration clustering is pervasive across major currency pairs and that the GA-ACD model outperforms the standard generalized gamma ACD model.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文聚焦于外汇高频数据中交易持续时间的整数聚集现象，提出了一种新的粒度调整的自回归条件持续时间模型。该模型通过双组分混合分布和基于分数驱动的动态框架，能够更准确地捕捉交易持续时间的分布和条件动态，避免因忽略整数聚集而导致的参数估计偏差和推断失真。尽管研究属于计量经济学与实证金融领域，而非直接的机器学习或深度学习交易策略，但其对高频交易中事件间隔建模的精细处理，对于量化交易中的执行算法和微观结构分析具有实际参考价值。因此，该论文在实战交易中给予6分。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_94cdd592"
+  },
+  {
+    "title": "Uniform Inference and Certified Capacity at a Reflexive Stability Boundary",
+    "url": "https://arxiv.org/pdf/2609.02535v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "This paper develops uniform inference and certified capacity decisions for an estimated financial stability boundary. Conditional risk, temporary cross-impact, and effective risk-bearing capacity are jointly estimated from dependent observations. Conventional pointwise inference is reliable at a separated simple spectral root but can fail near semisimple or defective collisions. Projecting a valid joint confidence region for the underlying inputs avoids this local approximation and yields a three-way regime decision with abstention and a one-sided capacity bound. A verified two-dimensional implementation keeps numerical error from creating a resolved sign. Structural simulations recover the predicted tradeoff between coverage and resolution, while observed-risk stresses distinguish statistical abstention from an insufficient computational budget. The financial conclusions remain conditional on the identification of cross-impact, the normalization of capacity, and stability of the inputs over the action horizon.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文探讨了金融稳定边界的统计推断与容量决策，涉及条件风险、瞬时交叉影响和有效风险承受能力的联合估计。虽然具有理论深度，但内容侧重于统计推断的稳健性（如近半简单或缺陷谱根的推断问题），并提出了基于联合置信区域的决策方法，而非直接的实战策略或交易模型。因此，对实战交易的价值有限，得分4分。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_5406f954"
+  },
+  {
+    "title": "Switching Frictions, Heterogeneous Trading Horizons, and Long-Memory Order Flow",
+    "url": "https://arxiv.org/pdf/2609.02525v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "This paper develops a mechanism through which costly changes in the representations used for portfolio choice can contribute to persistent signed order flow. Heterogeneous switching thresholds and opportunity volatility generate heterogeneous residence times, and renewal aggregation maps their execution-weighted tail into the decay of aggregate flow covariance. Under common execution weights, the same tail determines the exponent of representation-spell durations, the order-flow memory exponent, and the horizon at which finite-market scaling must end. First-passage renewal analysis establishes these joint restrictions. Structural simulations recover them from realized paths, quantify the distortion created by mismatched weights, and show how finite cross sections shorten the usable inference horizon. The resulting empirical protocol converts an aggregate persistence fit into cross-dataset restrictions that can determine whether a duration-based kernel is suitable for a separate execution-cost model.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出了一种机制，其中投资组合选择中表示形式的昂贵变化可促成持续的指令流。异质切换阈值和机会波动性产生异质驻留时间，更新聚合将其执行加权尾部映射到聚合流量协方差的衰减中。在常见的执行权重下，同一尾部决定了表示状态持续时间指数、指令流记忆指数以及有限市场缩放必须结束的时间范围。首次通过更新分析建立了这些联合限制。结构模拟从实现的路径中恢复了这些限制，量化了错配权重造成的失真，并展示了有限横截面如何缩短可用的推断范围。由此产生的实证协议将聚合持续性拟合转化为跨数据集限制，这些限制可以确定基于持续时间的核是否适用于单独的执行成本模型。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_047a0590"
+  },
+  {
+    "title": "Price manipulation in nonlinear transient impact models: rigidity before memory and complete positivity after memory",
+    "url": "https://arxiv.org/pdf/2609.02447v1",
+    "source": "ArXiv",
+    "date": "2026-09-02",
+    "abstract": "Transient impact models compose a nonlinearity with a memory kernel, and the order of composition determines the criterion for absence of price manipulation. We classify both orders. If an arbitrary instantaneous law $f$ acts on the trading rate before any nonzero integrable Volterra kernel, nonnegative cost on every finite piecewise-constant round trip forces $f$ to be affine, and linear for every nonzero convolution kernel. In particular, the power law $\\mathrm{sgn}(x)|x|^δ$, $δ>0$, combined with power-law decay $t^{-γ}$, $0<γ<1$, admits manipulation if and only if $δ\\ne1$: square-root impact is manipulable at every decay exponent, and the region left open by Gatheral's slow-rate two-block bound $δ+γ\\ge1$ collapses to the line $δ=1$. Earlier rigidity theorems require a kernel that is bounded at zero; the argument here is a zero-volume chattering pump read out by two thin baseline trades, and it applies to singular kernels. If instead a monotone readout acts on the impact state after the kernel, safety for all inputs and all readouts is equivalent to complete positivity of the kernel, with a constructive converse; in particular, square-root impact after power-law memory is manipulation-free. A remote compensating block shows that round-trip safety and all-input safety coincide for kernels with uniformly vanishing tails and differ, for permanent memory, by an explicit storage quotient. These mechanisms classify every two-mode Prony kernel, first-order time-inhomogeneous memory, and stable fully actuated matrix memory, and they quantify the friction, the two-block phase, and the switching complexity behind the power-law case. Calibrated exponent pairs all lie in the manipulable set: absent friction, concavity has to enter after the memory, not before it.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究价格操纵在非线性瞬态影响模型中的存在条件，分别针对两种模型结构进行分类。论文证明当任意非线性函数作用于交易速率后再与记忆核卷积时，无操纵性迫使该函数为仿射（线性）函数，且对幂律影响函数和市场记忆，操纵仅在线性情形下被排除，这与先前需核有界的结论不同。另一种结构下，若单调读出函数作用于记忆核后的影响状态，则对所有输入和读出函数杜绝操纵等价于记忆核是完全正的。论文属于市场微观结构的理论分析，对定量交易建模中冲击函数和记忆核的合规性选择有指导意义，但不直接提供信号或策略，属纯理论性质，实战价值较低。",
+    "fetch_date": "2026-09-04",
+    "id": "20260904_2ebf9fbf"
+  },
+  {
     "title": "Agentic Empirical Asset Pricing: Methodological Foundations",
     "url": "https://arxiv.org/pdf/2609.00731v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "本文在Solana pump.fun市场上检测到1012个持久钱包群体，这些群体在多个代币发布中系统性协同买入。研究发现，群体触及的发布在前30分钟买家数量和SOL流入量上分别有+132.3%和+136.5%的提升，而活动匹配的安慰剂组反而显示出更大的提升，反驳了群体因果效应的朴素推断。该研究为识别狙击手群体和评估早期流动性提供了可操作的检测方法和反事实分析框架，对实战交易具有直接参考价值。",
     "fetch_date": "2026-07-10",
     "id": "20260710_9cb33765"
-  },
-  {
-    "title": "FinRL: A deep reinforcement learning library for automated stock trading in quantitative finance",
-    "url": "https://arxiv.org/abs/2011.09607",
-    "source": "Scholar",
-    "date": "2026-07-10",
-    "abstract": "… reinforcement learning (DRL) has been recognized as an effective approach in quantitative … However, to train a practical DRL trading agent that decides where to trade, at what price, …",
-    "broker": "Google Scholar",
-    "score": 9,
-    "summary": "该论文提出了FinRL，一个用于量化金融中自动股票交易的深度强化学习库。它解决了训练实用DRL交易代理的挑战，包括市场环境模拟、策略优化和回测。提供了模块化框架和多个成熟算法，适合实战部署。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_f0aeae8a"
-  },
-  {
-    "title": "Innovating Risk Modelling for Global Funds",
-    "url": "https://arxiv.org/pdf/2607.07465v1",
-    "source": "ArXiv",
-    "date": "2026-07-08",
-    "abstract": "Markowitz defined portfolio risk as an internal property, built from the covariance among a book's own holdings rather than the distance to any index. Seventy years of simplification reversed that. The market beta of CAPM, the fixed style and industry axes of Barra-type models, and the promotion of benchmark deviation to the definition of risk all traded the inward view for an external one. Risk became distance from an index. For a fund that fits no benchmark, that trade fails. A global book concentrated in a few markets and a few innovation sectors has no natural index to deviate from, and the active-risk number it produces measures the mismatch, not the risk. We return to the covariance. Principal component analysis (PCA) recovers the systematic structure inside the portfolio directly from its own returns. PCA has always carried one cost: its factors resist a plain-English reading. We clear that with a generative-AI labelling layer. It names the leading factors, ranked by their actual contribution to risk rather than by universe variance, and a deterministic rubric keeps it from inventing structure the loadings do not contain. Around this sit four independent signals. Density-based clustering with a mismatch ratio flags groups whose risk outruns their capital. A sign-invariant PCA Risk Score (PRS) marks the names that build the dominant factor bets. A standalone Bleed score catches the slow capital destroyers PCA cannot see. A trailing-return timing gate routes disagreements between the risk signals and recent price action to human judgment. We run the full engine on a proxy global-innovation book of thirty names over one year.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文针对全球基金提出一种创新的风险建模方法，使用主成分分析从组合自身收益中提取系统性结构，并借助生成式AI标注主成分，同时结合四个独立信号构建风险模型。该方法不依赖外部基准，适用于集中投资于少数市场和创新行业的基金，具有实战价值。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_924c5107"
-  },
-  {
-    "title": "A novel sentiment correlation-based method with dual transformer model for stock price prediction",
-    "url": "https://link.springer.com/article/10.1007/s41060-025-00932-7",
-    "source": "Scholar",
-    "date": "2026-07-10",
-    "abstract": "… dimension often ignored in previous Transformer-based financial models. Therefore, our work not only applies Transformer architecture to stock prediction but also extends its capability …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "本文提出了一种新颖的基于情感相关性的双Transformer模型，用于股票价格预测，整合了情感特征并扩展了Transformer在金融领域的应用，具有实战价值。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_de485441"
-  },
-  {
-    "title": "tsbootstrap: Distribution-Free Uncertainty Quantification and Conformal Prediction for Time Series",
-    "url": "https://arxiv.org/pdf/2607.06690v1",
-    "source": "ArXiv",
-    "date": "2026-07-07",
-    "abstract": "Finance, sensing, and demand streams violate the exchangeability that IID conformal prediction and the IID bootstrap assume, and existing libraries implement either a general resampling engine or conformal calibration without the other. tsbootstrap provides block, residual, sieve, and wild resampling, classical bootstrap confidence intervals, and adaptive conformal calibrators (EnbPI, ACI, NexCP, AgACI) through a single typed API in which a specification object selects each method. In a controlled coverage study the IID bootstrap undercovers sharply under dependence; dependence-aware methods reduce the coverage deficit, the sieve nearest to nominal under short-memory linear dependence. On the shared fixed-statistic path a compiled backend runs several times faster than arch, and a streaming reduce avoids materializing the $O(Bn)$ replicate tensor, limiting peak extra memory to $O(B)$ for the statistic array. The software is MIT licensed (v0.6.1).",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "tsbootstrap提供了针对时间序列的分布自由不确定性量化和共形预测方法，包括块、残差、筛和野生重采样，以及经典bootstrap置信区间和自适应共形校准器。在依赖数据下，IID bootstrap覆盖不足，而依赖感知方法能减少覆盖缺陷。软件支持编译后端加速和流式减少以节省内存。对实战交易有中等价值，因为时间序列依赖性的处理可提升回测和风险估计的可靠性。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_30585d58"
-  },
-  {
-    "title": "Deep Reinforcement Learning for Reliability Based Bi-Objective Portfolio Optimization",
-    "url": "https://arxiv.org/pdf/2607.06610v1",
-    "source": "ArXiv",
-    "date": "2026-07-07",
-    "abstract": "Portfolio optimization under uncertainty is inherently a multi-objective decision problem involving complex interactions among return, risk, market dynamics, and practical investment constraints. Existing reliability based portfolio optimization approaches primarily rely on static optimization frameworks and often fail to capture sequential decision making, tail risk, and market frictions such as transaction costs. To address these limitations, we propose a deep reinforcement learning framework for multi-objective reliability based portfolio optimization (MORP-DRL). The proposed framework jointly optimizes expected return and downside risk using three complementary risk measures: variance, Conditional Value-at-Risk (CVaR), and Entropic Value-at-Risk (EVaR). To model uncertainty and heavy-tailed market behavior, asset returns are represented using GARCH(1,1), Extreme Value Theory, and a t-copula dependence structure, while realistic scenarios are generated through quasi-Monte Carlo simulation. A Proximal Policy Optimization (PPO) based strategy is developed under practical constraints including transaction costs and portfolio bounds, and is benchmarked against NSGA-II. Experiments on ten global equity indices across pre-COVID, COVID, and post-COVID market regimes demonstrate that MORP-DRL achieves competitive risk-return performance, reduced downside risk during periods of market stress, and scalability to high-dimensional portfolio settings.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "本文提出基于深度强化学习（PPO）的多目标可靠性投资组合优化框架，联合优化预期收益与下行风险（方差、CVaR、EVaR），融合GARCH、极值理论和t-copula建模不确定性，考虑交易成本等实际约束。实战价值在于将DRL应用于多目标组合优化，但未明确展示alpha信号生成能力。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_7ba3c7c3"
-  },
-  {
-    "title": "A Novel Hybrid Temporal Fusion Transformer Graph Neural Network Model for Stock Market Prediction",
-    "url": "https://www.mdpi.com/2673-9909/5/4/176",
-    "source": "Scholar",
-    "date": "2026-07-10",
-    "abstract": "… Moving Average (SARIMA) and Exponential Smoothing (ES) in the Error, Trend, Seasonal (ETS) framework, with deep learning architectures such as the Temporal Fusion Transformer (…",
-    "broker": "Google Scholar",
-    "score": 7,
-    "summary": "该论文提出了一种混合模型，结合传统时间序列方法（SARIMA、ETS）与深度学习架构（Temporal Fusion Transformer、图神经网络），用于股票市场预测。虽然涉及深度学习并可能生成alpha，但基于实盘验证的细节缺失，且混合模型复杂度较高，在实际交易中的可解释性和稳定性存疑，因此给出7分。",
-    "fetch_date": "2026-07-10",
-    "id": "20260710_756d3240"
   }
 ]
