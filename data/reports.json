@@ -1,5 +1,65 @@
 [
   {
+    "title": "Deep Learning of Robust Market Making under Regime-Switching Order Flow",
+    "url": "https://arxiv.org/pdf/2609.11614v1",
+    "source": "ArXiv",
+    "date": "2026-09-10",
+    "abstract": "Classical market-making strategies based on stochastic control, such as the Avellaneda-Stoikov and the Guéant-Lehalle-Fernandez-Tapia (GLFT) extension, provide closed-form quoting rules, but rest on assumptions that break down at realistic microstructure timescales. One of them is that order flow is stationary, while empirical evidence points to the existence of regimes, possibly associated with algorithmic execution of metaorders. In this case, existing methods provide negative PnL. In this paper, we develop a deep reinforcement-learning market maker (RLMM) - a Rainbow-style distributional DQN (C51) which is calibrated and tested in a zero-intelligence limit order book. We find that, in the stationary setting, RLMM outperforms GLFT across the entire observed risk-return frontier. The RLMM is more robust to flow asymmetry than GLFT, but, like any stationarily trained strategy, it still suffers large drawdowns from inventory saturation under persistent directional imbalance. Augmenting the state of RLMM with two auxiliary signals - a Bayesian online change-point filter over the directional flow bias and a queue-adjusted quote-exposure imbalance -restores profitability. A final scenario-bandit step that reweights low-return regime scenarios further improves performance under random-persistence and correlated-direction stress.",
+    "broker": "Cornell Univ",
+    "score": 8,
+    "summary": "经典做市策略（如Avellaneda-Stoikov及GLFT扩展）依赖订单流平稳性假设，但在真实微观结构时间尺度下该假设失效，存在与算法执行元订单相关的状态切换机制，导致现有方法出现负盈亏。本文提出深度强化学习做市商（RLMM），采用Rainbow风格分布式DQN（C51），在零智能限价订单簿中校准和测试。在平稳环境下，RLMM在整个风险-收益前沿上优于GLFT；对订单流不对称性更稳健，但持续方向性失衡下仍因库存饱和而遭受大幅回撤。通过向RLMM状态中增加两个辅助信号——基于方向流偏差的贝叶斯在线变点滤波器和队列调整的报价暴露失衡——可恢复盈利能力。最终场景（略）。",
+    "fetch_date": "2026-09-12",
+    "id": "20260912_b71bd6c2"
+  },
+  {
+    "title": "Entropic Value-at-Risk parity for tempered stable returns",
+    "url": "https://arxiv.org/pdf/2609.11905v1",
+    "source": "ArXiv",
+    "date": "2026-09-10",
+    "abstract": "We develop Entropic Value-at-Risk (EVaR) parity for tempered stable returns. EVaR-based inverse risk parity (IRP) and equal risk contribution (ERC) portfolios are constructed using multivariate normal tempered stable models and independent component analysis with tempered stable components. We derive the corresponding asset-level EVaR and EVaR-deviation contributions and use the latter to separate the fitted location term from EVaR risk contributions. Under Gaussian returns, EVaR-deviation IRP and ERC recover conventional volatility IRP and ERC weights. We evaluate the resulting portfolios in three investment universes. Empirically, EVaR-based ERC portfolios achieve positive Sharpe differences relative to equal weight across the universes.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "本文提出针对温度稳定收益的熵值风险价值（EVaR）平价方法，构建了基于EVaR的逆风险平价（IRP）和等风险贡献（ERC）投资组合。通过多元正态温度稳定模型和独立成分分析（ICA）提取温度稳定成分，推导了资产层面的EVaR及EVaR偏差贡献，并利用后者分离拟合位置项与EVaR风险贡献。在高斯收益下，EVaR偏差IRP和ERC退化为传统波动率IRP和ERC权重。在三个投资域中评估，实证显示基于EVaR的ERC组合相对于等权组合在各域均取得正的夏普比率差异。",
+    "fetch_date": "2026-09-12",
+    "id": "20260912_cadbb748"
+  },
+  {
+    "title": "Market-Informed Networks for Modeling and Forecast Evaluation of Financial Extremes",
+    "url": "https://arxiv.org/pdf/2609.11575v1",
+    "source": "ArXiv",
+    "date": "2026-09-10",
+    "abstract": "Modeling the joint distribution of extreme values in high-dimensional financial time series is challenging because extremes are sparse and locally extreme observations are not necessarily extreme relative to their full marginal distribution. To address this, we introduce a time-dependent network Hüsler-Reiss model in which market-informed adjacency matrices determine how strongly observations contribute to the estimation. We propose binary and weighted specifications, including the Joint Extremes Adjacency Matrix (JEAM) which combines information about individual extremeness with historical patterns of joint extreme movements. In the forecasting evaluation part, covering one-minute stock returns from three sectors of the S&P 100, JEAM achieves the best out-of-sample log scores for both tail directions; improving scores by 12.5-13.6% in the lower tail and 11.4-14.9% in the upper tail. The results show that incorporating market-informed network structures in the estimation, improves forecast evaluation of extremes across time series.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出了一种时间依赖的网络Hüsler-Reiss模型，通过市场信息邻接矩阵（包括二元和加权设定，如联合极值邻接矩阵JEAM）来估计高维金融时间序列的极值联合分布。在预测评估部分，使用标普100三个行业的一分钟股票收益率，JEAM在上下尾的样本外对数得分上分别提升了12.5-13.6%和11.4-14.9%。结果表明，在估计中融入市场信息网络结构可以改善跨时间序列的极值预测评估。",
+    "fetch_date": "2026-09-12",
+    "id": "20260912_0a6a0ab8"
+  },
+  {
+    "title": "AI Economist Agent: An Agentic Framework for Evidence-Based Economic and Financial Analysis with RAG, Knowledge Graphs, and Large Language Models",
+    "url": "https://arxiv.org/pdf/2606.20041v2",
+    "source": "ArXiv",
+    "date": "2026-06-18",
+    "abstract": "We propose an AI economist agent for economic and financial scenario analysis. Scenario design often requires analysts to assess emerging risks with limited historical precedent, combine information from many sources, and translate qualitative mechanisms into internally consistent quantitative paths. Large language models (LLMs) can search and synthesize this information, but fluent narratives alone do not establish the model-based calculations needed for economic conclusions. Our framework uses LLM agents to plan the analysis, retrieve relevant evidence, and organize economic mechanisms, while registered quantitative models generate numerical outcomes and predefined tests determine whether intermediate results can be used in the final report. We apply the framework to European macro-financial stress scenarios and bank capital analysis. The empirical analysis evaluates retrieval of economic mechanisms, scenario construction, model execution, and report generation under a historical information cutoff. The results show how the AI economist agent can combine flexible evidence retrieval and scenario construction while keeping the resulting analysis linked to identifiable sources and explicit model calculations.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文提出一种面向经济与金融情景分析的“AI经济学家智能体”框架，结合大语言模型（LLM）智能体、检索增强生成（RAG）、知识图谱与已注册的定量模型：LLM负责规划分析、检索证据并组织经济机制，定量模型生成数值结果，预定义测试判定中间结果能否进入最终报告。作者将其应用于欧洲宏观金融压力情景与银行资本分析，在历史信息截止条件下评估经济机制检索、情景构建、模型执行与报告生成。该框架偏向宏观经济与金融稳定研究支持，并非面向实战交易的信号挖掘、组合优化、执行或高频/中频Alpha生成；对量化交易的价值主要在于宏观情景与风险叙事的结构化与可追溯性，而非直接产生可交易策略，因此评分偏中低。",
+    "fetch_date": "2026-09-12",
+    "id": "20260912_1eaf51ba"
+  },
+  {
+    "title": "The Privacy Subsidy in Market Microstructure",
+    "url": "https://arxiv.org/pdf/2609.10543v1",
+    "source": "ArXiv",
+    "date": "2026-06-11",
+    "abstract": "Privacy-preserving exchange designs price on a coarsened view of order flow. We show that a market maker committed to informationally efficient (posterior-mean) pricing on a signal strictly coarser than the flow it settles necessarily cedes a closed-form welfare transfer to traders -- the privacy subsidy -- and that no rule restricted to the coarse signal is simultaneously efficient and zero-profit against the settled flow. We establish this impossibility for a general coarsening, then characterise the subsidy in closed form across three canonical microstructure models: single-period Kyle with Gaussian flow noise, Glosten-Milgrom with a binary direction channel, and continuous-time Kyle-Back with a Brownian channel. The subsidy obeys a structural correspondence with Loss-Versus-Rebalancing, both welfare rates factorising as a squared noise driver times a committed-object factor. Gross of fees the subsidy is a pure transfer recovered by a break-even fee; once levied, that fee distorts volume, and the resulting deadweight -- under an explicit allocative value of trade -- is fourth-order in the noise scale while the gross subsidy is second-order, so privacy is welfare-neutral to leading order with a strictly smaller irrecoverable loss. Endogenising the privacy level, a protocol trading a differential-privacy benefit against this deadweight chooses an interior noise scale in closed form; doing so leaves the half-revealing product of price impact and informed intensity intact while unpinning the volatility-elasticity of price impact from its textbook value of one.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "隐私保护型交易所设计基于对订单流的粗化视图进行定价。论文证明：承诺对严格粗于其结算订单流的信号进行信息有效（后验均值）定价的做市商，必然向交易者让渡一个具有闭式解的价值转移——即“隐私补贴”；并且任何仅依赖粗化信号的规则，都无法在结算订单流下同时实现有效性与零利润。作者先对一般粗化建立不可能性定理，再在三种经典微观结构模型中用闭式刻画补贴：单期高斯噪声的Kyle模型、二元方向通道的Glosten-Milgrom模型、以及布朗通道的连续时间Kyle-Back模型。该补贴与损失对冲再平衡（LVR）存在结构对应关系，两者福利率均可分解为噪声驱动因子的平方乘以承诺对象因子。在未计费用时，补贴是纯转移，可通过盈亏平衡手续费回收；一旦征收该费用会扭曲成交量，由此产生的无谓损失（在显式配置交易价值下）为噪声尺度的四阶项，而毛补贴是二阶项，因此在主导阶上隐私对福利中性。",
+    "fetch_date": "2026-09-12",
+    "id": "20260912_90163bc2"
+  },
+  {
     "title": "R-DDQN: Optimizing algorithmic trading strategies using a reward network in a double DQN",
     "url": "https://www.mdpi.com/2227-7390/12/11/1621",
     "source": "Scholar",
@@ -5938,65 +5998,5 @@
     "summary": "提出递归自改进框架（RHI），将执行框架视为提示级规范，通过成对反馈迭代优化，在30个合成ML任务中提升低推理成本智能体的性能上限，降低推理成本60%，涵盖量化金融等实战场景。",
     "fetch_date": "2026-07-21",
     "id": "20260721_738a34e1"
-  },
-  {
-    "title": "Behaviorally informed deep reinforcement learning for portfolio optimization with loss aversion and overconfidence",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12909882/",
-    "source": "Scholar",
-    "date": "2026-07-21",
-    "abstract": "",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "本文提出将损失厌恶和过度自信等行为偏差融入深度强化学习框架，用于投资组合优化。核心是结合行为金融学与DRL，在奖励函数中加入行为因素，并设计动态投资组合策略。实验显示该方法在风险调整后收益优于传统RL和基准策略。对实战交易有参考价值，尤其是考虑投资者心理约束。",
-    "fetch_date": "2026-07-21",
-    "id": "20260721_861572b0"
-  },
-  {
-    "title": "From Black Box to Executable Logic: Explainable Reinforcement Learning through Prolog Expert Systems",
-    "url": "https://arxiv.org/pdf/2607.15459v1",
-    "source": "ArXiv",
-    "date": "2026-07-16",
-    "abstract": "A trained deep reinforcement learning policy is a black box, and we ask whether it can be made explainable by rewriting it as an executable logic program that reproduces its behaviour and that a person can read, a logic engine can run, and an optimizer can edit. We present a three-stage post-hoc transformation that extracts a frozen proximal policy optimization teacher, induces an ordered rule list from its decisions in the manner of classical relational learning, and emits the result as a Prolog program whose every decision is executed by an off-the-shelf logic engine; a subsequent expansion stage edits the rule base and accepts an edit only when policy evaluation certifies a return increase. We prove four guarantees. A return-loss bound makes the distilled program a machine-checkable certificate in a finite Markov decision process, and the expansion loop improves monotonically and terminates. For the continuous-observation setting we answer whether the conversion is possible at all: the propositional threshold instantiation converts the network to arbitrary fidelity as the resolution B grows, with disagreement O(1/B) and a return gap that closes at the same rate, and a matching lower bound shows the cost is exponential in the observation dimension for an oblique decision boundary. Empirically, on a two-room key-and-door task with 16,944 reachable states the expanded Prolog program attains exact optimal return in every seed and, in a budget-capped regime, exceeds the stochastic teacher on exact return in ten of ten seeds. On three continuous-control tasks the emitted program substitutes the network, matching the neural teacher within noise on Acrobot with eleven clauses and recovering about 97% of its return on CartPole, while on the finer-control LunarLander it recovers only partially, exactly the ceiling the exponential lower bound predicts.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文提出将深度强化学习策略（如PPO）转换为可执行的Prolog逻辑程序，实现可解释性。方法包括三阶段：提取教师策略、归纳规则列表、生成Prolog程序，并通过策略评估进行编辑优化。理论证明该转换在有限MDP中有回报损失界和单调改进保证，连续观测空间下可通过命题阈值实例化逼近任意精度。对于实战交易，可解释性有助于理解和调试交易策略，但直接应用于高频交易可能受限于计算效率；价值中等偏上，实战可参考其可解释性框架但需结合领域优化。",
-    "fetch_date": "2026-07-21",
-    "id": "20260721_ed5d25aa"
-  },
-  {
-    "title": "AI Trading: Evaluating Large Language Models for Technical Market Analysis",
-    "url": "https://arxiv.org/pdf/2607.15414v1",
-    "source": "ArXiv",
-    "date": "2026-07-16",
-    "abstract": "Large Language Models (LLMs) have emerged as powerful tools for processing the heterogeneous information environments of modern financial markets. This paper presents a systematic, comparative evaluation of five prominent LLMs: GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and the domain-specialized FinGPT, with respect to their capacity for technical market analysis. The evaluation spans four structured tasks: candlestick pattern recognition from OHLCV data, directional signal generation (BUY/SELL/HOLD), backtesting of signal quality through a simulated execution pipeline, and financial report comprehension. Our experimental framework employs rigorous quantitative metrics, including Sharpe ratio, maximum drawdown, Sortino ratio, information coefficient, F1-score, and BLEU score. Findings from simulated backtesting indicate that GPT-4 Turbo achieves the highest annualized return and Sharpe ratio among general-purpose models, while FinGPT demonstrates competitive risk-adjusted performance due to domain-specific fine-tuning. Both models outperform a passive S&P 500 benchmark under the tested conditions. The study identifies persistent failure modes across all evaluated models, including numerical hallucination, context-window limitations, and inconsistent performance in sideways market regimes. We conclude that while LLMs hold genuine promise within AI trading systems, robust deployment requires careful task decomposition, rigorous backtesting protocols, and domain-aware fine-tuning strategies.",
-    "broker": "Cornell Univ",
-    "score": 7,
-    "summary": "该论文比较了GPT-4、Claude 3、FinGPT等大语言模型在技术分析（K线模式识别、多空信号生成、回测）中的表现。GPT-4和FinGPT在夏普比率、回撤等指标上优于标普500基准，表明LLM可直接用于生成交易信号。评分7分：实战价值较高，但需注意回测环境局限性和模型替代使用风险。",
-    "fetch_date": "2026-07-21",
-    "id": "20260721_689d37b7"
-  },
-  {
-    "title": "Multi-agent Reinforcement Learning for Financial Market Trading: An Expert-System Approach",
-    "url": "https://link.springer.com/chapter/10.1007/978-3-032-19096-3_34",
-    "source": "Scholar",
-    "date": "2026-07-21",
-    "abstract": "… ZMR (Z-score Mean Reversion): A quantitative trading strategy based on the assumption that asset prices revert to their historical mean. It calculates the z-score of the asset’s price …",
-    "broker": "Google Scholar",
-    "score": 7,
-    "summary": "该论文提出多智能体强化学习方法用于金融市场交易，结合专家系统以提升策略稳健性。实验基于Z-score均值回归策略，在模拟交易中表现优于传统方法，但部分回测场景假设较理想化，需进一步验证实盘效果。",
-    "fetch_date": "2026-07-21",
-    "id": "20260721_e1290629"
-  },
-  {
-    "title": "Consistent pricing of bivariate interest rate exotics via constrained Schrödinger optimal transport",
-    "url": "https://arxiv.org/pdf/2607.15952v1",
-    "source": "ArXiv",
-    "date": "2026-07-17",
-    "abstract": "We develop a modeling framework for pricing bivariate interest rate exotic derivatives that maintains consistency across three interconnected markets: CMS spread options and the two underlying CMS option markets that define the spread. Our approach also enables the computation of no-arbitrage bounds for exotic derivatives given observable market prices in the spread option and underlying CMS option markets. The method relies on solving the dual Lagrangian of a constrained version of the Shrödinger optimal transport problem and we demonstrate the practical applicability of our framework through concrete numerical examples that illustrate both the pricing methodology and the computation of no-arbitrage bounds. The approach offers a robust tool for pricing complex interest rate derivatives while ensuring consistency with liquid market instruments.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文开发了一个通过约束Schrödinger最优传输问题对二元利率奇异衍生品进行定价的框架，确保CMS价差期权与底层CMS期权市场间的一致性，并计算无套利边界。虽然涉及实际定价方法，但偏重理论建模与数值示例，缺乏实战交易中的高频、Alpha策略或深度学习应用，因此评分较低。",
-    "fetch_date": "2026-07-21",
-    "id": "20260721_f695c8a6"
   }
 ]
