@@ -1,4 +1,24 @@
 [
+  "Optimal entry and exit for variance swaps: closed-form rules for the perpetual contract",
+  "Quadratic G-BSDEs for bond pricing with endogenous short-rate feedback",
+  "Regularity of a Multidimensional Principal-Agent Problem with Separable Effort Costs",
+  "Who Audits Whom, on What Substrate, with What Evidence? An Independence-Graded Audit Protocol for Agentic AI",
+  "Designing Agentic AI Workflow Portfolios under Imperfect Selection and Compute Cost",
+  "Model-Free Passive Execution via Order-Level Shadowing",
+  "Demystifying the Bergomi-Guyon expansion",
+  "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity",
+  "CALOS: Control-Affine Lyapunov On-manifold Safety Layer for Safe Deep Reinforcement Learning for Quadrotors",
+  "From Public Evidence to Contractual Outcome: First and Stable Decidability on Kalshi",
+  "On-Demand Combinatorial Event Markets on Kalshi: Instantiation, Concentration, and Effective Market Breadth",
+  "Separated Signal Libraries: Packing, Saturation, and Joint Spectral Limits",
+  "Same Book, Different Fills: Partial Identification of FIFO Execution from Aggregate Order Books",
+  "Diffusion models for dynamic volatility surface generation and data-driven hedging",
+  "VertiFuseX: Generalizable Financial Forecasting via Multi-Stream Temporal Fusion",
+  "Exact calibration of structural models via time-change",
+  "Arbitrage in Estimate Nothing: an example",
+  "Large Signal Libraries: Equal-Weight Limits and the Divergent Spectra of Signals and PnL",
+  "Seasonal Trading in Commodity Futures: Evidence from Regression and Singular Spectrum Signals",
+  "Policy-Selected Transaction Tapes in Automated Market Makers: Ranking Certification under Hidden Opportunities",
   "Strategic Index Reconstitution: Differential Games, Closed-Loop Equilibria and Mean-Field Dynamics",
   "Design of a Deep Learning Credit Risk Early Warning System Integrating Multi-source Heterogeneous Data",
   "Quantifying the 2027 Solvency II Risk Margin Reform",
@@ -2978,6 +2998,5 @@
   "Learning General Policies with Policy Gradient Methods",
   "Institutional Backing and Crypto Volatility: A Hybrid Framework for DeFi Stabilization",
   "Needles in a haystack: using forensic network science to uncover insider trading",
-  "Optimal Catastrophe Risk Pooling",
-  "Optimal Signal Extraction from Order Flow: A Matched Filter Perspective on Normalization and Market Microstructure"
+  "Optimal Catastrophe Risk Pooling"
 ]
