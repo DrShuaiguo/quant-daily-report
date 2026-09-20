@@ -1,5 +1,77 @@
 [
   {
+    "title": "Ensemble Deep Reinforcement Learning (DRL) for Adaptive Crypto Trading with Risk Control",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11681775/",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… trading methods, requiring innovative automated solutions. This study proposes an ensemble framework based on Deep Reinforcement Learning (DRL) for automated trading of the …",
+    "broker": "Google Scholar",
+    "score": 8,
+    "summary": "本研究提出一种基于深度强化学习（DRL）的集成框架，用于加密货币的自动化交易。该方法旨在应对传统交易方法的不足，通过集成学习和风险控制实现自适应交易决策，属于强化学习在实战交易中的直接应用。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_3ff5781d"
+  },
+  {
+    "title": "Reinforcement learning-optimized trading strategies: A deep Q-network approach for high-frequency finance",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10691261/",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… a novel trading strategy for highfrequency finance using reinforcement learning techniques, specifically Deep Q-Networks (DQN). The objective is to optimize trading decisions in real-…",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "本文提出一种面向高频金融交易的新型策略，采用强化学习技术，特别是深度Q网络（DQN）。目标是优化高频场景下的交易决策，即通过DQN学习最优买卖动作以提升交易绩效。该研究属于强化学习与深度学习在交易执行/高频择时中的应用，具有实战参考价值，但需关注其回测过拟合、交易成本与市场冲击建模等落地问题。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_7d95ecaf"
+  },
+  {
+    "title": "Conditional value-at-risk for quantitative trading: A direct reinforcement learning approach",
+    "url": "https://ieeexplore.ieee.org/abstract/document/9966017/",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… work takes the research of trading systems with the DRL notion … trading systems under the notion of DRL are summarized as follows: • We bridge the divide between quantitative trading …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "论文将条件风险价值（CVaR）与深度强化学习（DRL）结合，提出直接强化学习方法用于量化交易系统。核心在于弥合量化交易与DRL之间的鸿沟，总结现有DRL交易系统的研究，可能涉及风险敏感的策略优化。对实战交易有中等价值，因RL应用有潜力但需验证实际表现。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_a34739e3"
+  },
+  {
+    "title": "A Deep Learning Framework for Momentum-Based Trading on US equities Combining Technical and Sentiment Factors",
+    "url": "https://tfa-epfl.ch/research/papers/TFA_paper_sentiment_score.pdf",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… deep learning and natural language processing have opened new avenues for automating this process. In this paper, we propose a sentiment-augmented deep learning … deep learning-…",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文提出一个情感增强的深度学习框架，用于美国股票动量交易，结合技术因子与NLP情感因子。属于量化实战中的Alpha策略方向，但基于摘要信息有限，未明确具体模型结构、回测表现及交易成本，故评7分。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_2933a7e8"
+  },
+  {
+    "title": "Leveraging social media sentiment for predictive algorithmic trading strategies",
+    "url": "https://arxiv.org/abs/2508.02089",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… We then implemented two different investment strategies that … strategies over four years (2020-2023) our strategies significantly outperformed a comparable buy-and-hold (B&H) strategy …",
+    "broker": "Google Scholar",
+    "score": 6,
+    "summary": "论文提出利用社交媒体情绪构建预测性算法交易策略，并在2020-2023四年间回测了两种不同的投资策略，结果显示显著优于买入持有基准。核心术语：社交媒体情绪、算法交易策略、投资策略、买入持有（B&H）。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_4aaced34"
+  },
+  {
+    "title": "Automated bitcoin trading dApp using price prediction from a deep learning model",
+    "url": "https://www.mdpi.com/2227-9091/13/1/17",
+    "source": "Scholar",
+    "date": "2026-09-21",
+    "abstract": "… trading strategies and conducting the buy/sell trading between wBTC and USDC. In this research, three trading strategies were used and compared for trading … For all three trading …",
+    "broker": "Google Scholar",
+    "score": 5,
+    "summary": "本研究实现了一个自动化比特币交易dApp，利用深度学习模型的预测信号在wBTC和USDC之间执行买卖交易。研究比较了三种交易策略，但摘要未披露具体策略细节、模型架构或回测/实盘表现。对实战交易有一定参考价值，但缺乏策略透明度和实证结果，属于应用型工作，评分5分。",
+    "fetch_date": "2026-09-21",
+    "id": "20260921_0158333e"
+  },
+  {
     "title": "A multi-agent deep reinforcement learning framework using multiple timeframe data for algorithmic trading",
     "url": "https://upcommons.upc.edu/entities/publication/2b83f758-56df-44d7-8121-6fa3e8185c50",
     "source": "Scholar",
@@ -5926,77 +5998,5 @@
     "summary": "论文提供了一个用于高频预测市场研究的同步Polymarket-Binance数据集，包含毫秒级数据。尽管作者的交易策略未产生正收益，但数据集和基础设施可用于交叉市场分析、微观结构研究及高频策略开发。对实战交易有一定参考价值，特别是对于跨市场套利或高频预测方向的研究者。",
     "fetch_date": "2026-07-31",
     "id": "20260731_631a6d09"
-  },
-  {
-    "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
-    "url": "https://arxiv.org/pdf/2607.27188v1",
-    "source": "ArXiv",
-    "date": "2026-07-29",
-    "abstract": "Accurate option prices do not imply accurate recovery of the latent risk-neutral density. We study this distinction with two complementary benchmarks. A controlled benchmark exposes simulator-truth densities for latent evaluation, while a chronological NIFTY benchmark tests only held-out market prices. A two-component lognormal mixture has the lowest aggregate price, $L^1$, Wasserstein, and fixed-tail errors on the synthetic benchmark. Learned operators retain narrower strengths: DeepONet reduces 1% quantile and variance error by 39.0% and 34.6% relative to the mixture, and a quote transformer reduces $L^1$ by 16.4% on the structurally misspecified Merton family. A numerical conditioning analysis explains why these rankings can differ: after enforcing mass and forward constraints, 95 of 126 pricing directions are numerically null, and two densities separated by $L^1 = 0.061$ produce identical prices on the covered strikes. On 524 held-out NIFTY calls, validation-selected test-time adaptation reduces DeepONet RMSE by 28.3%, but per-expiry mixture and SVI fits remain much more accurate. The evidence supports target-dependent inductive bias, not a universal winner.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "论文研究从期权报价中恢复隐含风险中性密度，对比混合模型与深度学习方法（DeepONet、Transformer）在合成与真实数据上的表现。发现简单混合模型在合成基准上最优，而深度学习方法在特定误差指标上有优势，但实测NIFTY数据上混合与SVI拟合更准确。强调目标依赖性，无通用最优解。对实战有参考价值，但非直接交易策略或alpha信号，故评分6分。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_03d048b5"
-  },
-  {
-    "title": "Manipulation, Informed Trading, and Regulation in Leveraged Event-Linked Markets",
-    "url": "https://arxiv.org/pdf/2605.10486v2",
-    "source": "ArXiv",
-    "date": "2026-05-11",
-    "abstract": "Leverage does not create manipulation or informed trading in event markets, but it changes their economics. We separate four conduct channels: market-price manipulation, real-world outcome manipulation, resolution-process manipulation, and informed trading that exploits non-public information without changing the event or resolution rule. A capital-constrained amplification model shows that gross directional gains scale with financed exposure while information, influence, concealment, execution, and enforcement costs need not scale proportionally. Leverage therefore weakly enlarges profitable influence opportunities under fixed-cost conditions, but endogenous price impact, convex detection costs, or enforceable position limits can reverse the result. We connect this model to the revised non-portability, taxonomy, and fill-side evidence of the companion papers. Historical-path replay identifies mechanical rule channels, not equilibrium conduct; fill-side address data support concentration analysis but not address-level spoofing or quote-withdrawal claims. The regulatory contribution is a functions-first framework covering product authorization, market-integrity surveillance, event-influence controls, resolution governance, and loss-bearing capital. A July 2026 source snapshot indicates an evolving United States framework and no harmonized cross-jurisdictional category for leveraged event contracts. Legal status remains product- and jurisdiction-specific.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "研究杠杆如何影响事件驱动市场的操纵与内幕交易行为，提出资本约束放大模型，并给出监管框架。虽涉及实际市场行为，但偏向理论分析，缺乏可直接落地的交易策略或因子。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_74435731"
-  },
-  {
-    "title": "Resolution-Aware Perpetual Futures on Binary Prediction Markets: Failure Modes and Mechanical Stress Tests Using Polymarket Data",
-    "url": "https://arxiv.org/pdf/2605.10400v2",
-    "source": "ArXiv",
-    "date": "2026-05-11",
-    "abstract": "We study whether crypto-style perpetual-futures mechanics can be applied to a binary event claim that ultimately pays 0 or 1. A synthetic long entered at price p0 with collateral xp0/L has terminal equity -xp0(1-1/L) when the claim pays 0, if the position survives to resolution without a top-up, close, or conversion. Thus any L > 1 creates an adverse-outcome account shortfall under these conditions, independent of the pre-resolution mark. We also derive a funding trilemma: basis-only funding loses relative force near a boundary, while uniform relative-basis correction requires unbounded transfers and conflicts with payer solvency or participation. We then apply a mechanical stress test to observed Polymarket paths from 21-27 April 2026. Of 61,087 enriched candidate markets, 13,298 pass the stated adequacy gates. Two structural diagnostics pass, but three of five pre-specified materiality tests fail. Dynamic margin and leverage compression pre-empt more observed paths than the static baseline, pooled drawdown falls by only 5.1 percent, and a staged halt reduces final-hour liquidations mechanically while leaving terminal shortfall incidence slightly worse. The contribution is a corrected non-portability analysis, a reusable observed-path replay design, and negative design lessons; the results do not establish equilibrium performance or deployment safety.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文研究二元预测市场中的永续合约机制，通过Polymarket数据实证分析清算、资金费率等失败模式。对设计预测市场或理解其风险有参考价值，但并非主流交易策略，实战价值中等。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_5729b670"
-  },
-  {
-    "title": "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades",
-    "url": "https://arxiv.org/pdf/2607.27070v1",
-    "source": "ArXiv",
-    "date": "2026-07-29",
-    "abstract": "Do crypto perpetual-futures crashes carry a reproducible early-warning fingerprint of a critical transition, and in which state variable? We study seven major BTC liquidation cascades (2022-2025, including the record 19B USD event of 10 October 2025) using minute-level price and 5-minute leverage/order-flow data. On detrended residuals we compute rolling variance and lag-1 autocorrelation and test their pre-cascade trend with the Kendall-tau statistic, sweeping 39 analysis configurations per variable per event. No variable is event-invariant. Price carries the critical-slowing-down signature in five of seven events but is silent in exactly the two sudden-news (tariff) shocks, suggesting a two-type structure: endogenous-buildup versus exogenous-shock cascades. The October 2025 event, whose in-sample analysis suggests the signature lives in leverage rather than price, turns out to be the outlier, not the rule. The one regularity surviving all events with data is a compression of taker order-flow variance, which passes a 300-onset placebo test (Fisher-combined p ~ 5e-6) but is a population-level precursor, not a per-event alarm. Single-event critical-slowing-down claims in crypto derivatives are therefore fragile by construction. We argue the pattern of failures is itself diagnostic: slowing down is absent exactly where the destabilising mechanism is most abrupt, as one would expect if these cascades are discontinuous, shock-driven transitions rather than critical ones.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "研究加密永续合约清算级联的早期预警信号，发现价格和杠杆率等变量在不同事件中表现不一致，无法提供一致的交易信号。虽然发现了一些规律，但整体实用价值有限。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_c4d3c8a0"
-  },
-  {
-    "title": "Herding, Momentum, and Reversal in China's A-Share Market: An Agent-Based Network Model with Information Diffusion",
-    "url": "https://arxiv.org/pdf/2607.27063v1",
-    "source": "ArXiv",
-    "date": "2026-07-29",
-    "abstract": "This study develops an agent-based financial market model to explain stock-price momentum and reversal through the joint effects of local herding and delayed information diffusion. Investors form heterogeneous Gaussian beliefs about the next-period price, choose among buying, selling, and remaining inactive, and revise their action probabilities in response to neighboring investors. The local interaction structure is represented by von Neumann and Moore lattices and is later replaced by Erdős--Rényi and Watts--Strogatz networks for robustness. A separate information process updates investor beliefs through a finite-speed diffusion mechanism, allowing informational adjustment to be distinguished from behavioral imitation. The simulations show that stronger herding produces spatially clustered trading, larger price fluctuations, and more pronounced excess kurtosis in returns. Faster information diffusion reduces the time required for prices to approach the signal-implied value, whereas the combination of information diffusion and social reinforcement generates overshooting and subsequent reversal. An empirical application to China's A-share market compares conventional CSAD and LSV measures with a rolling tail-based herding indicator obtained after Johnson $S_U$ transformation. The indicators display similar time variation and rise during major market disruptions. These findings identify information delay, local social reinforcement, and the eventual decay of herding as complementary mechanisms behind momentum and reversal.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文开发了一个基于主体的金融市场模型，通过局部羊群效应和延迟信息扩散的联合效应解释股票价格动量与反转。投资者形成异质性高斯信念，选择买入、卖出或不交易，并根据邻居行为调整行动概率。模拟显示，更强的羊群效应导致交易空间聚类、价格波动更大和超额峰度更明显；信息扩散更快则缩短价格趋近信号价值的时间，而信息扩散与社会强化的组合引发过度反应和随后的反转。虽然对理解市场微观机制有理论价值，但缺乏可直接用于实战交易的可执行策略或信号。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_e2b15391"
-  },
-  {
-    "title": "Crossing-Free Probabilistic K-Line Forecasts Without Retraining",
-    "url": "https://arxiv.org/pdf/2607.26792v1",
-    "source": "ArXiv",
-    "date": "2026-07-29",
-    "abstract": "Probabilistic K-line forecasting describes uncertainty in four complementary prices, namely open--high--low--close (OHLC). However, it introduces two consistency problems: quantile crossing and K-line crossing. Quantile crossing occurs when a higher-quantile forecast falls below a lower-quantile forecast, while K-line crossing occurs when the forecast low exceeds the open or close, or the forecast high falls below the open or close. Existing solutions generally address only one problem through output reordering, specialized architectures, or penalized training objectives. We propose K-line--Quantile Sequential Projection (KQSP), a parameter-free and training-free reconciliation method applicable to forecasts produced by any model. Compared with other crossing solutions, KQSP preserves predictive accuracy while producing substantially smaller corrections to the original forecasts. To mitigate model bias, we evaluate KQSP using various models, including pretrained foundation models. KQSP reduces both quantile and K-line crossing rates to zero for all test data undertaken. These results show that probabilistic K-line consistency can be enforced independently of forecast generation and without retraining.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文提出KQSP方法，在无需重新训练的情况下，解决概率K线预测中的分位数交叉和K线交叉问题，确保OHLC预测的一致性。方法参数无关且可应用于任何模型，对实战交易中提高预测可靠性有一定价值，但属于后处理技术，非核心策略创新，实用性中等。",
-    "fetch_date": "2026-07-31",
-    "id": "20260731_f73e2fc3"
   }
 ]

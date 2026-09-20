@@ -1,4 +1,10 @@
 [
+  "Ensemble Deep Reinforcement Learning (DRL) for Adaptive Crypto Trading with Risk Control",
+  "Reinforcement learning-optimized trading strategies: A deep Q-network approach for high-frequency finance",
+  "Conditional value-at-risk for quantitative trading: A direct reinforcement learning approach",
+  "Automated bitcoin trading dApp using price prediction from a deep learning model",
+  "A Deep Learning Framework for Momentum-Based Trading on US equities Combining Technical and Sentiment Factors",
+  "Leveraging social media sentiment for predictive algorithmic trading strategies",
   "A multi-agent deep reinforcement learning framework using multiple timeframe data for algorithmic trading",
   "QUANTITATIVE TRADING IN SET MARKET WITH FinRL",
   "Quantum reinforcement learning trading agent for sector rotation in the taiwan stock market",
@@ -2992,11 +2998,5 @@
   "Conflict-Driven Clause Learning with VSIDS Heuristics for Discrete Facility Layout",
   "Visualization of The Content of Surah al Fiil using Marker-Based Augmented Reality",
   "Near-Maturity Asymptotics of Critical Prices of American Put Options under Exponential Lévy Models",
-  "Relative arbitrage problem under eigenvalue lower bounds",
-  "Implementation of Augmented Reality as an Educational Tool for Practice in Early Childhood",
-  "Modelling financial time series with $φ^{4}$ quantum field theory",
-  "Systemic Risk Radar: A Multi-Layer Graph Framework for Early Market Crash Warning",
-  "Asymptotic and finite-sample distributions of one- and two-sample empirical relative entropy, with application to change-point detection",
-  "Global universal approximation with Brownian signatures",
-  "Interpretable Deep Learning for Stock Returns: A Consensus-Bottleneck Asset Pricing Model"
+  "Relative arbitrage problem under eigenvalue lower bounds"
 ]
