@@ -1,4 +1,14 @@
 [
+  "Multi-period Mean-Expectile Portfolio Optimization under Wasserstein Ambiguity: Reformulation, Degeneracy and the Role of the Ground Metric",
+  "Weighted selection from elliptical distributions: a stochastic representation and an application to portfolio separation",
+  "Diffusive Market Impact: A Consistent Microfoundation",
+  "Constrained Command-Conditioned Reinforcement Learning with Bandit Strategy Selection in Real-Time Strategy Games",
+  "Learning to Orchestrate Evolutionary Search: Progression-Aware Deep Reinforcement Learning for Dynamic DE-CMA-ES Coordination in Optimization and Structural Model Updating",
+  "Deep Learning vs. Statistical Models for Multi-Horizon Price Forecasting of Second-Hand Electronics: A Systematic Benchmark",
+  "Explicit Finite-Sum Tail Risk Measures for Hierarchical Market--Credit Copula Aggregation",
+  "Recursive Copula Aggregation for Market and Credit Portfolios",
+  "Optimal Transport for Actuarial Science",
+  "Execution Realism and Reproducibility in LLM-Based Trading Systems: A Systematic Scoping Review and Evidence Audit",
   "A Hawkes Microfoundation for Multitype Inverse Gaussian Subordinators",
   "From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions",
   "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions",
@@ -2988,15 +2998,5 @@
   "Optimal dividend and capital injection under self-exciting claims",
   "Carbon-Penalised Portfolio Insurance Strategies in a Stochastic Factor Model with Partial Information",
   "Diagram-to-Circuit QNLP for Financial Sentiment Analysis",
-  "A calibrated model of debt recycling with interest costs and tax shields: viability under different fiscal regimes and jurisdictions",
-  "Re(Visiting) Time Series Foundation Models in Finance",
-  "BitRL-Light: 1-bit LLM Agents with Deep Reinforcement Learning for Energy-Efficient Smart Home Lighting Optimization",
-  "A Novel and Practical Universal Adversarial Perturbations against Deep Reinforcement Learning based Intrusion Detection Systems",
-  "Partial multivariate transformer as a tool for cryptocurrencies time series prediction",
-  "Superhedging under Proportional Transaction Costs in Continuous Time",
-  "Random processes for long-term market simulations",
-  "Diffusive Limit of Hawkes Driven Order Book Dynamics With Liquidity Migration",
-  "A New Error Temporal Difference Algorithm for Deep Reinforcement Learning in Microgrid Optimization",
-  "Reinforcement Learning for Portfolio Optimization with a Financial Goal and Defined Time Horizons",
-  "Hybrid LSTM and PPO Networks for Dynamic Portfolio Optimization"
+  "A calibrated model of debt recycling with interest costs and tax shields: viability under different fiscal regimes and jurisdictions"
 ]
