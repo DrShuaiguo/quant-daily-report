@@ -1,5 +1,77 @@
 [
   {
+    "title": "Self-augmenting technical indicator with recurrent reinforcement learning: evidence from Forex markets",
+    "url": "https://link.springer.com/article/10.1007/s40622-026-00479-x",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… Nevertheless, most current research focuses on ML-based trading systems that utilize … improved trading decisions. In the light of this, our central research question is whether a trading …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该论文研究将自增强技术指标与循环强化学习（recurrent reinforcement learning）相结合，用于外汇市场（Forex markets）的交易决策。核心研究问题是：这种将技术指标与RL结合的方法能否改善交易表现。论文指出现有基于机器学习的交易系统研究多集中于某些方向，而本文探索技术指标的自增强机制配合循环强化学习架构。对实战交易有一定参考价值，属于RL交易系统类研究，但摘要信息有限，未见明确的Alpha来源或回测细节，故评为7分。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_16a966fb"
+  },
+  {
+    "title": "NoxTrader: LSTM-Based Stock Return Momentum Prediction for Quantitative Trading",
+    "url": "https://arxiv.org/abs/2310.00747",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… in algorithmic and machine learning-based trading, financial markets are undergoing a … as SVM and random forest, as well as deep learning models like LSTM and RNN, giving us an …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "NoxTrader：基于LSTM的股票收益动量预测用于量化交易。论文聚焦算法交易与机器学习交易，综述并应用了SVM、随机森林等传统模型以及LSTM、RNN等深度学习模型，核心是用LSTM对股票收益动量进行预测以服务量化交易策略。属于深度学习在选股/动量预测方向的实战型工作，但摘要未披露具体交易规则、回测细节与风控，实战价值需看完整实验。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_df8dee27"
+  },
+  {
+    "title": "AlphaZeroBeta: deep reinforcement learning for market-neutral portfolios",
+    "url": "https://link.springer.com/article/10.1186/s40854-026-00955-4",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… patterns that can be systematically exploited using quantitative techniques. The efficient market … of hedge funds and quantitative trading desks (Patton 2009; Feghali and Villalon 2015). …",
+    "broker": "Google Scholar",
+    "score": 6,
+    "summary": "论文题为《AlphaZeroBeta：用于市场中性组合的深度强化学习》，核心是将深度强化学习应用于构建市场中性（market-neutral）投资组合，并指出市场中存在可被量化技术系统性利用的模式，同时引用对冲基金与量化交易台的相关研究。该方法属于RL+Alpha策略范畴，对实战交易有一定参考价值，但摘要未披露具体模型结构、回测结果与交易成本处理，实战验证信息不足，故给予中等偏上评分。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_f5449c3e"
+  },
+  {
+    "title": "Evolution and Challenges of Reinforcement Learning in Intraday Algorithmic Trading: A Systematic Literature Review",
+    "url": "https://www.mdpi.com/2076-3417/16/20/10060",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… These studies emphasize recent advances in reinforcement learning, hybrid models, and … review focuses on reinforcement learning applications for intraday stock prediction and trading. …",
+    "broker": "Google Scholar",
+    "score": 5,
+    "summary": "这是一篇关于日内算法交易中强化学习应用的系统性文献综述，梳理了强化学习、混合模型的最新进展，聚焦于日内股票预测与交易场景。作为综述类论文，它本身不提出可直接落地的策略或Alpha信号，偏重理论梳理与现状总结，对实战交易的直接价值有限，但可作为了解RL在日内交易领域方法与挑战的参考地图。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_b6a2b7b2"
+  },
+  {
+    "title": "Which Deep Learning Model Works Best for Emerging Market Stocks? Comparing LSTM and Transformer Models on 47 Indonesian Banks",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050926029388",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… The LSTM excels at stock prediction through its input, forget, and output gates [3], which let it retain long-term memory and filter irrelevant signals when modeling temporal dependencies…",
+    "broker": "Google Scholar",
+    "score": 4,
+    "summary": "该论文针对47家印尼银行，比较LSTM与Transformer在新兴市场股票预测中的表现。LSTM通过输入门、遗忘门和输出门建模时序依赖，保留长期记忆并过滤无关信号。摘要仅强调LSTM的机制优势，未给出具体实证结果或交易策略细节，偏向模型对比研究，实战价值有限，故评4分。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_0fa75761"
+  },
+  {
+    "title": "Publishing media stock prediction based on TransXFormer",
+    "url": "https://www.sciencedirect.com/science/article/pii/S105905602600794X",
+    "source": "Scholar",
+    "date": "2026-10-19",
+    "abstract": "… The TransXFormer long-time series stock prediction model proposed in this paper … the multi-head self-attention mechanism of Transformer for global feature mining. Through extensive …",
+    "broker": "Google Scholar",
+    "score": 4,
+    "summary": "论文提出TransXFormer长时序股票预测模型，利用Transformer多头自注意力机制进行全局特征挖掘，并探讨其在媒体发布股票预测中的应用。该工作属于深度学习时序预测的架构改进，偏学术方法验证，缺乏明确的实盘交易逻辑、风控与成本考量，对实战交易的直接价值有限。",
+    "fetch_date": "2026-10-19",
+    "id": "20261019_2ad68c24"
+  },
+  {
     "title": "Market Impact Estimation via Causal Foundation Models",
     "url": "https://arxiv.org/pdf/2610.12537v1",
     "source": "ArXiv",
@@ -5926,77 +5998,5 @@
     "summary": "该论文提出了一种结合Transformer编码器与多特征Time2Vec的金融预测方法，重点在于利用Transformer的编码器结构处理金融时间序列数据。虽然未明确提及强化学习或深度学习策略，但其在金融预测中的应用具有实战价值，但可能更偏向于预测而非直接交易信号生成。",
     "fetch_date": "2026-08-20",
     "id": "20260820_43b00472"
-  },
-  {
-    "title": "Self-Consistent Adjoint Policy Iteration for Constrained Dynamic Portfolio Choice",
-    "url": "https://arxiv.org/pdf/2608.17808v1",
-    "source": "ArXiv",
-    "date": "2026-08-18",
-    "abstract": "We develop simulation-based policy iteration for continuous-time portfolio choice with predictable returns and convex constraints. Each outer step re-evaluates a fixed-latent OL-BPTT adjoint after deployment and solves the constrained update. Shifted-adjoint cancellation controls the adjoint--HJB Hamiltonian-gradient discrepancy by the policy-improvement residual. For CRRA portfolios, exact HJB policy iteration identifies the optimal reduced value factor, while population OL-BPTT iteration converges globally under an occupation-measure relative-error condition. A theorem-matched audit yields a maximal 95% upper endpoint of 0.074 against the required 0.75 threshold. In a three-factor, fifty-asset design, current-policy re-evaluation outperforms matched pooled refinement under both evaluation laws.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文提出一种基于模拟的策略迭代方法用于连续时间投资组合选择，该方法结合了预测收益和凸约束。其核心是采用固定潜在变量的OL-BPTT伴随方法，在部署后重新评估并解决约束更新问题，同时通过位移伴随抵消来控制策略改进残差，以减小伴随与HJB哈密顿梯度之间的差异。对于CRRA投资组合，精确的HJB策略迭代能识别最优的降低值因子，而群体OL-BPTT迭代在占用测度相对误差条件下全局收敛。定理匹配审计给出的最大95%上限端点为0.074，低于所需的0.75阈值。在因子数量为3、资产数量为50的设计中，当前策略重新评估在两种评估法则下均优于匹配的合并精化方法。尽管该方法包含实践相关元素，但整体上偏重于理论推导和算法细节，而非直接提供可操作的交易策略或实证表现，因此实战价值有限。",
-    "fetch_date": "2026-08-20",
-    "id": "20260820_5213cc94"
-  },
-  {
-    "title": "Multiple objectives escaping bird search optimization and its application in stock market prediction based on transformer model",
-    "url": "https://www.nature.com/articles/s41598-025-88883-8",
-    "source": "Scholar",
-    "date": "2026-08-20",
-    "abstract": "… traditional Transformer models to establish the Transformer as … the MOEBS-Transformer with Transformer models optimized … -Transformer, MSSA-Transformer, and MOEAD-Transformer. …",
-    "broker": "Google Scholar",
-    "score": 5,
-    "summary": "论文提出一种多目标优化算法（MOEBS）来优化Transformer模型，应用于股票市场预测。涉及深度学习但与实战交易有一定距离，需进一步验证实际交易效果。",
-    "fetch_date": "2026-08-20",
-    "id": "20260820_106201b2"
-  },
-  {
-    "title": "Conservation of Short-term Flows: Signed Optimal Transport",
-    "url": "https://arxiv.org/pdf/2608.17363v1",
-    "source": "ArXiv",
-    "date": "2026-08-18",
-    "abstract": "This paper develops a theoretical framework for signed optimal transport. A global flatness measure induced by the continuum transport equation serves as the regularizer. We examine transport networks from a harmonic analysis perspective, prove the existence and uniqueness of the optimal coupling in the variational problem, and provide an algorithmic scheme that guarantees lossless information transport under bi-marginal constraints. To bridge theory with practice, we design an empirical analysis framework for the resulting optimal estimators, which is sufficiently general to accommodate both time-series and panel-structural analyses of the network, owing to the intrinsic invariance properties of locally compact abelian groups.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文提出了带符号最优传输的理论框架，从调和分析视角研究传输网络，并保证信息无损传输。虽然提供了算法和实证框架，但主要内容偏向数学理论与方法论，缺乏直接的实战交易应用或策略。因此实战价值有限，评分为4分。",
-    "fetch_date": "2026-08-20",
-    "id": "20260820_7d354306"
-  },
-  {
-    "title": "Self-Supervised Auxiliary Task Discovery for Stable Reinforcement Learning in Stock Trading",
-    "url": "https://arxiv.org/pdf/2608.15841v1",
-    "source": "ArXiv",
-    "date": "2026-08-16",
-    "abstract": "Reinforcement learning has gained increasing attention as a data-driven approach for stock trading. However, learning a policy that is both profitable and stable remains challenging due to non-stationary market behaviour and noisy reward signals. Auxiliary tasks are often used to improve representation learning and stabilize training, yet they are usually designed manually and depend heavily on prior assumptions about targets and prediction horizons. Such fixed designs may not remain suitable across changing market regimes. In this work, we propose a self-supervised framework that automatically discovers auxiliary tasks to support reinforcement learning for stock trading. The auxiliary tasks are formulated as General Value Functions so that their predictions enrich the learned state representation and assist policy optimization. The framework consists of two networks. The main network learns the trading policy along with the auxiliary predictions, while the secondary network generates the definitions of auxiliary tasks through learned cumulants and discount factors. These tasks are updated using a meta gradient mechanism that accounts for their long-term impact on trading performance and improves training stability. We evaluate the proposed approach across four major equity indices: DJI, FTSE, Sensex, and TAIEX. The empirical results demonstrate that automatically discovered auxiliary tasks lead to more robust learning and improved trading performance compared to existing baselines.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一种自监督辅助任务发现框架，用于股票交易的强化学习。其核心思想是自动学习辅助任务（通过通用价值函数定义），以增强状态表示并稳定策略训练。该框架包括主网络（学习交易策略和辅助预测）和辅助网络（生成任务定义），并利用元梯度机制优化任务以提升长期交易性能。该工作针对非平稳市场和噪声奖励，采用数据驱动方式，不依赖人工预设，具有较高的实战潜力。",
-    "fetch_date": "2026-08-19",
-    "id": "20260819_38302ad1"
-  },
-  {
-    "title": "Scalable Pontryagin-Guided Adjoint-to-Control Recovery for Constrained Dynamic Portfolio Choice",
-    "url": "https://arxiv.org/pdf/2608.15667v1",
-    "source": "ArXiv",
-    "date": "2026-08-16",
-    "abstract": "We develop a scalable adjoint-to-control framework for continuous-time portfolio choice under smooth pointwise constraints. A feasible direct-policy-optimization (DPO) policy supplies rollouts; after training, fixed-latent open-loop BPTT (OL-BPTT) yields first- and second-order pathwise sensitivities, whose conditional projections produce adapted adjoint inputs. A nested antithetic common-random-number regression estimates the shifted wealth-row martingale input, and deployment solves the local generalized-Hamiltonian problem by an exact QP for quadratic-affine blocks or by a log barrier otherwise. We prove an OL-BPTT--PMP correspondence retaining orthogonal projection residuals, a local barrier--KKT approximation, and a performance-to-adjoint bridge under local quadratic growth. In an n=100 constrained Merton benchmark, the learned first adjoint has 0.46% mean relative error; under the analytical policy, the first adjoint, wealth curvature, and Brownian coefficient have nRMSEs of 0.031%, 0.035%, and 0.326%. In a terminal-only predictable-return CRRA benchmark, wealth homogeneity gives $P^{X\\bullet,*}=D^2_{X\\bullet}V$ and $ζ^{X,*}=0$. At the primary $512\\times16$ projection budget, the full estimated-shift decoder has policy RMSE below $8.5\\times10^{-3}$, while the benchmark-specific zero-shift oracle is below $2\\times10^{-4}$. Across constraint, factor, barrier, and switching-region audits, recovery sharply reduces local KKT residuals and remains practical for portfolios with up to 100 risky assets.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一种可扩展的伴随控制恢复框架，用于在平滑逐点约束下进行连续时间投资组合选择。它结合了直接策略优化（DPO）和开环BPTT（OL-BPTT）来计算路径敏感度，并通过条件投影和反对偶随机数回归估计伴随输入，最终通过QP或对数障碍求解局部广义哈密顿问题。作者证明了OL-BPTT与庞特里亚金极大值原理（PMP）的对应关系，并在约束Merton基准（n=100）中展示了高精度（第一伴随平均相对误差0.46%，解析策略下nRMSE低至0.031%）。该方法在终端可预测回报CRRA基准中也验证了财富齐次性。该框架提供了计算高效的部署方式（二次规划或对数障碍），在实战交易中具有高价值，适合实时风险控制和动态资产配置。",
-    "fetch_date": "2026-08-19",
-    "id": "20260819_06baf38a"
-  },
-  {
-    "title": "zLend: A Dual-Scope Cash-Flow Reconstruction Framework for On-Chain Credit Underwriting",
-    "url": "https://arxiv.org/pdf/2608.16856v1",
-    "source": "ArXiv",
-    "date": "2026-08-17",
-    "abstract": "Decentralized lending lacks a credit bureau: a borrower's capacity to repay must be inferred entirely from public on-chain activity, without income verification or a liability record. This paper presents zLend, a deployed cash-flow underwriting framework that reconstructs a wallet's daily balance history from raw token transfers and derives short-duration repayment-capacity signals from it. The reconstruction is performed twice per wallet, once restricted to a fixed stablecoin basket and once over all fungible transfers, on the premise that a wallet's total token holdings and its liquid, spendable balance are distinct quantities whose conflation misprices risk. From each series we derive liquidity coverage against a fixed loan size, cash-flow volatility and regularity, a drawdown-and-recovery statistic adapted from quantitative finance, and a recurring-counterparty detector that identifies salary-like payment cadence from transfer timing alone. The two views are then compared: a wallet with large aggregate holdings whose stablecoin reserve rarely covers the loan size is flagged as a liquidity mismatch irrespective of total wealth. We specify the pipeline formally, document the golden-master methodology used to verify a cross-language production migration to numerical tolerance 1e-9, and characterize the tier function's parameter sensitivity with an independent reimplementation validated to exact agreement (78 of 78 field assertions) against the deployed system's reference fixtures. Tier assignment is governed predominantly by the reference loan size, with four of six reference wallets changing tier across loan sizes from USD 10 to USD 25,000; the drawdown and coverage criteria bind on disjoint wallets, so neither subsumes the other; and no criterion in the tier rule is inert. zLend is deployed in production, informing real lending decisions via third-party API integrations.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "该论文提出了一种名为zLend的双范围现金流重建框架，用于链上信用评估。它通过重建钱包的每日余额历史，并从中提取流动性覆盖、现金流波动性、回撤恢复统计和周期性对手方检测等信号，来评估借款人的还款能力。该框架已在实践中部署，并对稳定币和非稳定币资产进行双重分析，以识别流动性错配。该方法结合了量化金融技术，具有较强的实战价值，因此评分为8分。",
-    "fetch_date": "2026-08-19",
-    "id": "20260819_c593e19c"
   }
 ]

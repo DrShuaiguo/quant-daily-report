@@ -1,4 +1,12 @@
 [
+  "AlphaZeroBeta: deep reinforcement learning for market-neutral portfolios",
+  "Evolution and Challenges of Reinforcement Learning in Intraday Algorithmic Trading: A Systematic Literature Review",
+  "Self-augmenting technical indicator with recurrent reinforcement learning: evidence from Forex markets",
+  "NoxTrader: LSTM-Based Stock Return Momentum Prediction for Quantitative Trading",
+  "Which Deep Learning Model Works Best for Emerging Market Stocks? Comparing LSTM and Transformer Models on 47 Indonesian Banks",
+  "Artificial Intelligence and Machine Learning for Stock Market Prediction: A Systematic Literature Review of Methods, Emerging Paradigms, Reproducibility, and …",
+  "Publishing media stock prediction based on TransXFormer",
+  "A Dynamic Graph–Transformer Fusion Network for Multimodal Stock Price Fluctuation Prediction",
   "FOMO: FLEX Options and Market Outcomes",
   "The Financing of Debt Relief: Intermediary Liquidity and the Value of Borrower Information",
   "A Distributional Framework for Behavioral Characterization and Risk Management of Large Language Models",
@@ -2990,13 +2998,5 @@
   "Stationary Distributions of the Mode-switching Chiarella Model",
   "Learning to Solve Resource-Constrained Project Scheduling Problems with Duration Uncertainty using Graph Neural Networks",
   "An approach of deep reinforcement learning for maximizing the net present value of stochastic projects",
-  "Impact by design: translating Lead times in flux into an R handbook with code",
-  "Discovery of a 13-Sharpe OOS Factor: Drift Regimes Unlock Hidden Cross-Sectional Predictability",
-  "Cryptocurrency Portfolio Management with Reinforcement Learning: Soft Actor--Critic and Deep Deterministic Policy Gradient Algorithms",
-  "Sharpening Shapley Allocation: from Basel 2.5 to FRTB",
-  "All That Glisters Is Not Gold: A Benchmark for Reference-Free Counterfactual Financial Misinformation Detection",
-  "Sharp Transitions and Systemic Risk in Sparse Financial Networks",
-  "Diversification Preferences and Risk Attitudes",
-  "Smart Predict--then--Optimize Paradigm for Portfolio Optimization in Real Markets",
-  "Quantum computing for multidimensional option pricing: End-to-end pipeline"
+  "Impact by design: translating Lead times in flux into an R handbook with code"
 ]
