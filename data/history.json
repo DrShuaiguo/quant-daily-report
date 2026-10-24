@@ -1,4 +1,5 @@
 [
+  "Stock Price Prediction Using Transformers",
   "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders",
   "Directionally Correct Views in Portfolio Optimization",
   "Multichoice Modeling: Exploring Decision Configuration Space under Uncertainty",
@@ -2997,6 +2998,5 @@
   "Reinforcement Learning for Micro-Level Claims Reserving",
   "Universal basic income in a financial equilibrium",
   "Temporal-Aligned Meta-Learning for Risk Management: A Stacking Approach for Multi-Source Credit Scoring",
-  "The Limits of Complexity: Why Feature Engineering Beats Deep Learning in Investor Flow Prediction",
-  "Emissions-Robust Portfolios"
+  "The Limits of Complexity: Why Feature Engineering Beats Deep Learning in Investor Flow Prediction"
 ]

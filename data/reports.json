@@ -1,5 +1,17 @@
 [
   {
+    "title": "Stock Price Prediction Using Transformers",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10911285/",
+    "source": "Scholar",
+    "date": "2026-10-25",
+    "abstract": "… study focuses on the capabilities of Transformer architecture to handle intricate, non-linear trends effectively. Traditional approaches to stock prediction, including autoregressive and …",
+    "broker": "Google Scholar",
+    "score": 5,
+    "summary": "该论文研究Transformer架构在股票价格预测中的应用，核心主张是利用Transformer捕捉复杂非线性趋势的能力，并与自回归等传统方法对比。摘要信息有限，未明确具体交易策略、回测框架、风控或Alpha构造，更偏向模型能力验证与预测方法研究，而非可直接落地的实战交易系统，因此实战价值中等。",
+    "fetch_date": "2026-10-25",
+    "id": "20261025_81c4d64f"
+  },
+  {
     "title": "When News Gets Old: Portfolio Allocation with Reinforcement Learning and Large Language Models",
     "url": "https://arxiv.org/pdf/2610.30564v1",
     "source": "ArXiv",
@@ -5986,17 +5998,5 @@
     "summary": "该论文提出了一个端到端的learning-to-rank框架，应用于S&P 500每周零日到期期权（SPXW），结合保证金感知的头寸调整、基于模型不确定性的弃权规则和严格的时间外验证。使用LightGBM LambdaRank对八种delta目标空头看跌期权和SKIP候选进行排序，并基于一分钟分辨率路径感知Sortino标签训练。在2021-2024年的四个窗口滚动前向测试和严格保留的2025年时间外切片中，七种头寸调整方法实现了4.31至5.76的年化Sharpe比率，优于多个被动基准。该方法在实战中展现了高收益风险比，且考虑了交易成本和保证金，具有很强的实践价值。",
     "fetch_date": "2026-08-27",
     "id": "20260827_faefefcc"
-  },
-  {
-    "title": "Equity Strategy Backtesting: Luck or Edge? The MinervaScore as a Statistical Robustness Grade",
-    "url": "https://arxiv.org/pdf/2608.23808v1",
-    "source": "ArXiv",
-    "date": "2026-08-24",
-    "abstract": "Backtests of trading strategies are often selected after many parameter trials. A strong historical result can therefore reflect search luck rather than a persistent signal. Standard summaries such as return, Sharpe ratio, and drawdown do not record how many candidates were tried, whether the selected rule survives out-of-sample validation, or whether the available history is long enough to support the result.\n  This paper describes the MinervaScore, a post-selection robustness grade for trading strategies. The score combines four established validation quantities: Deflated Sharpe Ratio, Probability of Backtest Overfitting, Superior Predictive Ability, and Minimum Track Record Length, with a regime-stability diagnostic. These components are converted into signed margins from their admissibility thresholds, aggregated into a raw score, and then mapped to a 0-100 display. The display is tied to a binary Robustness Seal: scores of 80 or higher are shown only when all five gates pass. The calibration uses 359,062 production backtest records. The score is intended to rank statistical support, not to estimate the probability of future profit.\n  In synthetic markets with known ground truth, the MinervaScore separates true signal from lucky backtest outcomes, with an AUROC of 0.989 at the headline difficulty. Its improvement over the GT-Score proxy and the gates-passed baseline is modest, and it remains close to the corrected DSR-alone baseline. In a pre-registered test on unseen real-market data, the score showed no significant forward relationship in a population with limited surviving edge (Spearman rho_s = 0.013, one-sided permutation p = 0.40). We therefore present the MinervaScore as an auditable validation and reporting layer, rather than as evidence of demonstrated real-market predictability.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一种用于交易策略回测的统计稳健性评分系统MinervaScore，结合了Deflated Sharpe Ratio、回测过拟合概率、优越预测能力、最小记录长度和制度稳定性诊断五个指标，并通过生产环境中的359,062次回测记录进行校准。该评分旨在量化策略的统计支持度而非预测未来盈利，有助于实战交易者避免过度拟合和回测中的运气成分，从而选择更可靠的策略，具有很高的实战价值。",
-    "fetch_date": "2026-08-27",
-    "id": "20260827_28744bc9"
   }
 ]
