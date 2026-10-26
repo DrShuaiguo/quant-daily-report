@@ -1,4 +1,11 @@
 [
+  "On the continuity of conditional distributions and stratification for derivative pricing",
+  "Optimal collective investment under regulatory uncertainty",
+  "Risk Adequacy and Anti-Discrimination in Insurance Pricing: Classification, Aggregation, and Transfers",
+  "Duality of Shortfall Aversion",
+  "Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading",
+  "Optimal Size in Market Making under State-Dependent Hawkes Process",
+  "Mimicking Volatilities under Marginal Constraints via $q_x$-Bass Martingales: A Parallel Computing Approach",
   "Stock Price Prediction Using Transformers",
   "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders",
   "Directionally Correct Views in Portfolio Optimization",
@@ -2991,12 +2998,5 @@
   "Bitcoin Forecasting with Classical Time Series Models on Prices and Volatility",
   "Push-response anomalies in high-frequency S&P 500 price series",
   "Failure-Aware RL: Reliable Offline-to-Online Reinforcement Learning with Self-Recovery for Real-World Manipulation",
-  "Non-Convex Portfolio Optimization via Energy-Based Models: A Comparative Analysis Using the Thermodynamic HypergRaphical Model Library (THRML) for Index Tracking",
-  "Physics-Informed Singular-Value Learning for Cross-Covariances Forecasting in Financial Markets",
-  "Tab-TRM: Tiny Recursive Model for Insurance Pricing on Tabular Data",
-  "Crypto Pricing with Hidden Factors",
-  "Reinforcement Learning for Micro-Level Claims Reserving",
-  "Universal basic income in a financial equilibrium",
-  "Temporal-Aligned Meta-Learning for Risk Management: A Stacking Approach for Multi-Source Credit Scoring",
-  "The Limits of Complexity: Why Feature Engineering Beats Deep Learning in Investor Flow Prediction"
+  "Non-Convex Portfolio Optimization via Energy-Based Models: A Comparative Analysis Using the Thermodynamic HypergRaphical Model Library (THRML) for Index Tracking"
 ]

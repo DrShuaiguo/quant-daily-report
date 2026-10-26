@@ -1,5 +1,77 @@
 [
   {
+    "title": "Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading",
+    "url": "https://arxiv.org/pdf/2610.32237v1",
+    "source": "ArXiv",
+    "date": "2026-10-23",
+    "abstract": "In modern financial markets, more than 3/4th of the large volume trade is executed by algorithmic trading based on advanced trading strategies to attain higher precision and speed than traditional human traders. The conventional strategies focused on price-based indicators are inadequate in capturing the market dynamism arising from real-world events such as social sentiments, political instability, or sudden economic shifts. With the rise of Deep Reinforcement Learning (DRL) and data availability, there is a requirement for more efficient algorithms that can incorporate these external factors in trading strategies. DRL has shown potential in simulating real-world scenarios and in simplifying complex decision-making since DRL agents can automate the trading process i.e. executing trades in a manner comparable to human traders. They have shown reliable performance since they can update their policies based on risk and quantitative factors. In this paper, we propose a DRL approach based on partial and deep-infusion of sentimental analysis. It features distinct policy designs of actor-critic-based agents: only policy optimization (A2C & PPO) and policy optimization along with Q-learning principles (DDPG, TD3 & SAC). Our findings reveal, that the agents based on policy optimization combined with Q-learning, significantly and consistently demonstrate improved performance upon sentiment deep-infusion in profit maximization as well as risk-averse trading.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文提出一种基于情感分析部分与深度注入的DRL方法，设计actor-critic类智能体（A2C、PPO及结合Q-learning的策略优化）用于股票交易，将社会情绪、政治不稳定、经济突变等外生因素纳入交易策略以弥补纯价格指标的不足。属于RL+另类数据的实证方向，具备一定实战参考价值，但摘要未给出回测、成本、滑点及实盘验证细节，且仅摘要信息有限，故评为6分。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_013fbb99"
+  },
+  {
+    "title": "Optimal Size in Market Making under State-Dependent Hawkes Process",
+    "url": "https://arxiv.org/pdf/2610.31903v1",
+    "source": "ArXiv",
+    "date": "2026-10-22",
+    "abstract": "We study market making with a parametric model of executed volume that accounts for quote placement and state-dependent order flow. Executed volume is expressed as the product of an average order size, an exponential demand function, and a Prony-series multiplier depending on quote depth, market-order count constructed from a state-dependent Hawkes model. An approximation result for finite Prony sums on a compact state domain provides a mathematical basis for the representation. An empirical study of limit-order-book data examines the calibrated demand and intensity models, sensitivity to inventory restrictions, and the resulting placement policies. In retrospective evaluations conditional on realised order-flow paths, the selected calibration achieves higher terminal utility than a baseline while respecting the prescribed inventory bound. The comparisons also distinguish the contribution of trading revenues from that of inventory control. The resulting closed-form volume specification takes placement levels as inputs and can therefore be used with alternative quoting rules.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文研究做市中的最优报价规模，提出一个参数化的成交量模型：成交量由平均订单规模、指数需求函数与Prony级数乘子相乘构成，其中乘子依赖报价深度及基于状态依赖Hawkes模型构建的市价单数量。作者证明了紧致状态域上有限Prony和的一个近似结果，为模型表示提供数学依据。基于限价订单簿数据的实证研究检验了校准后的需求与强度模型、对库存约束的敏感性以及由此得到的报价策略；在条件于已实现订单流路径的回溯评估中，所选校准在遵守库存上限的前提下实现了高于基准的终端效用，并区分了交易收益与库存控制的贡献。该闭式成交量设定以报价水平为输入，可与其它报价规则配合使用。整体属偏理论/实证的做市微观结构工作，对实盘做市报价与库存管理有一定参考价值，但非RL/深度学习/alpha类，实战迁移性中等。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_66dd48bb"
+  },
+  {
+    "title": "On the continuity of conditional distributions and stratification for derivative pricing",
+    "url": "https://arxiv.org/pdf/2610.32970v1",
+    "source": "ArXiv",
+    "date": "2026-10-23",
+    "abstract": "Stratification can reduce the estimator variance in Monte Carlo simulations by partitioning the sample space according to a low-dimensional factor and sampling separately within the resulting strata, making it well suited to the valuation of path-dependent claims in high-dimensional financial models. Its performance, however, depends critically on the choice of the stratification factor, and effective low-dimensional factors are generally difficult to identify in complex continuous-time models. Neural networks provide a flexible approximation class for this purpose and have proved useful in related variance-reduction problems in quantitative finance. In this paper, we study the construction of neural stratification factors for derivative pricing under proportional allocation in continuous-time models. Since the numerical construction of a stratification factor typically involves approximation, we establish continuity results for the associated conditional expectations and, more generally, conditional distributions, and provide several counterexamples showing the limits of this continuity theory. Combined with density results for neural networks, our findings yield a universal approximation theorem for admissible stratification factors. We conclude with numerical experiments involving a constant-maturity-swap range accrual in a two-factor Gaussian short-rate model and a worst-of autocallable in a Wishart stochastic covariance model, where the learned factors outperform all considered benchmarks.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "该论文研究在连续时间模型下为衍生品定价构建神经网络分层因子，以减少蒙特卡洛估计方差；作者建立了相关条件期望与条件分布的连续性结果，并给出若干反例说明该连续性理论的局限，结合神经网络密度结果得到通用逼近结论。属于蒙特卡洛方差缩减与数值方法的理论研究，对实战交易（RL/深度学习/Alpha）直接价值有限。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_9d1773e7"
+  },
+  {
+    "title": "Optimal collective investment under regulatory uncertainty",
+    "url": "https://arxiv.org/pdf/2610.32959v1",
+    "source": "ArXiv",
+    "date": "2026-10-23",
+    "abstract": "We study optimal collective investment subject to a Value-at-Risk (VaR)-type constraint that accounts for uncertainty about future regulatory requirements. The constraint incorporates several possible wealth thresholds and imposes a minimum weighted average probability of meeting them. We characterize the optimal terminal wealth, which combines regions of constant wealth at regulatory thresholds with Merton-type investment regions. Unlike a classical VaR constraint with only one threshold, our formulation generates protection against several thresholds. For two possible thresholds, we identify when both are protected and when protection concentrates on the larger one. Numerical results show that the regulatory constraint can substantially reshape the optimal payoff and generate large welfare losses relative to unconstrained investment when the required compliance probability is high, even the smaller wealth threshold is high, or initial capital is limited. In heterogeneous investor pools, welfare losses depend strongly on the composition of the risk aversions and the Pareto weights governing risk sharing. Losses are particularly pronounced when highly risk-averse investors dominate the pool. Moreover, investors with smaller capital contributions can bear disproportionately large shares of the total welfare loss, while larger contributors may bear less than their capital-proportional share. Thus, regulatory uncertainty not only reduces aggregate welfare but can also create substantial disparities in how its costs are distributed among investors.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "研究在VaR型约束下（考虑未来监管要求不确定性）的最优集体投资问题。约束包含多个可能的 wealth 阈值，并要求满足这些阈值的最低加权平均概率。刻画了最优终端财富，其结构为在监管阈值处的常数财富区域与 Merton 型投资区域的组合。与仅含单一阈值的经典 VaR 约束不同，该设定可对多个阈值提供保护；对两个阈值情形，给出何时两者均被保护、何时保护集中于较大阈值。数值结果表明：当合规概率要求较高、较小财富阈值也较高或初始资本有限时，监管约束会显著重塑最优收益结构，并相对无约束投资产生较大福利损失。在异质投资者池中，福利损失强烈依赖于风险厌恶构成与支配风险分担的 Pareto 权重，尤其在高风险厌恶投资者占主导时损失更明显。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_6586fa07"
+  },
+  {
+    "title": "Duality of Shortfall Aversion",
+    "url": "https://arxiv.org/pdf/2610.32350v1",
+    "source": "ArXiv",
+    "date": "2026-10-23",
+    "abstract": "Shortfall aversion describes a form of consumption habit formation in which an individual's utility depends on consumption relative to the historical consumption peak. This study develops a duality framework for a broad class of utility functions, with and without discounting, avoiding the need for determining the local optimality required by the HJB approaches commonly adopted in the literature. We show that shortfall aversion can instead be incorporated directly into the dual problem through a singular-control mechanism characterized by a variational inequality. Furthermore, we establish that the resulting value function strictly dominates those obtained in the existing literature while remaining attainable under an admissible optimal control. We demonstrate that the suboptimality of existing solutions stems from their myopic treatment of updates to the consumption peak, whereas our duality approach enlarges the admissible class to treat the consumption peak as a separate nondecreasing control and determines its optimal evolution through duality, accounting for future consumption opportunities. These results reveal a previously unrecognized advantage of the dual formulation and provide a more general and flexible framework for consumption optimization under shortfall aversion.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文为短fall厌恶（消费习惯形成）效用建立对偶框架，采用奇异控制与变分不等式刻画，避免HJB局部最优性求解，证明所得值函数严格优于现有文献且可由可行最优控制达到，并指出既有解的次优性源于对消费峰值更新的短视处理。属随机控制/效用理论层面的纯理论工作，未涉及RL、深度学习或Alpha生成等实战信号，对实战交易价值有限，评4分。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_c0bb2863"
+  },
+  {
+    "title": "Mimicking Volatilities under Marginal Constraints via $q_x$-Bass Martingales: A Parallel Computing Approach",
+    "url": "https://arxiv.org/pdf/2610.31825v1",
+    "source": "ArXiv",
+    "date": "2026-10-22",
+    "abstract": "We study the calibration of continuous-time martingale models to observed derivative prices via a dynamic martingale optimal transport problem that penalizes deviations from the volatility of a prescribed reference model. Using $q_x$-Bass martingales, we approximate this problem through a sequence of discrete-time problems and prove that the continuous-time interpolations of their optimizers are asymptotically optimal. Building on the theory of $q_x$-Bass martingales, we develop numerical methods for the discrete-time problems that do not require full marginal distributions at calibration maturities.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文研究连续时间鞅模型对已观测衍生品价格的校准问题，将其建模为动态鞅最优传输问题，并对偏离参考模型波动率的程度施加惩罚。作者利用 q_x-Bass 鞅，将问题近似为一系列离散时间问题，并证明其优化器的连续时间插值具有渐近最优性。基于 q_x-Bass 鞅理论，作者还发展了离散时间问题的数值方法，这些方法不需要在全校准期限上拥有完整的边际分布。",
+    "fetch_date": "2026-10-27",
+    "id": "20261027_4c06e820"
+  },
+  {
     "title": "Stock Price Prediction Using Transformers",
     "url": "https://ieeexplore.ieee.org/abstract/document/10911285/",
     "source": "Scholar",
@@ -5926,77 +5998,5 @@
     "summary": "该论文提出DTD-VAE模型，用于信用风险预测，通过解耦时间依赖和特征推断模块捕捉客户行为中的风险相关模式。模型虽基于VAE（深度学习），但重点在于信用风险评估，而非直接交易信号生成或策略优化，故实战交易价值中等。",
     "fetch_date": "2026-08-28",
     "id": "20260828_2ae9e593"
-  },
-  {
-    "title": "Analysis of the Principal Components of Correlation Matrices of S&P 500 Financial Data from an Econophysics Perspective",
-    "url": "https://arxiv.org/pdf/2608.26128v1",
-    "source": "ArXiv",
-    "date": "2026-06-23",
-    "abstract": "This thesis analyzes the collective dynamics of the S&P 500 from an econophysics perspective, treating the financial market as a complex system. Using daily logarithmic returns of 430 companies, time-dependent Pearson correlation matrices are constructed over sliding windows and their spectral structure is studied through the leading eigenvalues and eigenvectors. Market States (MS) are identified by applying k-Means clustering to several spectral quantities: the largest eigenvalue (interpreted as the State of the Market), the squared entries of the dominant eigenvector (read as a relative participation of each stock), and truncated matrix reconstructions C^l built from the l largest eigenpairs and normalized to retain a correlation-matrix interpretation.\n  The stability of the resulting clusters is assessed, transition matrices and their stationary vectors are computed, and the inverse participation ratio is used to quantify how participation spreads across assets. The COVID-19 episode emerges as an atypical state in the full correlation matrices; reconstructing it requires more than one principal component, and the C^2 and C^3 constructions reproduce it, particularly for window length q=40 and k=5. During crisis periods the relative participation distributes over a larger number of assets, while the 2017-2018 interval contributes to the dynamics without appearing as an isolated regime. The analysis is descriptive rather than predictive, and provides conceptual and methodological tools relevant to portfolio design and trading strategies, with natural extensions to other international exchanges.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "该论文从经济物理学视角分析S&P 500的相关矩阵主成分，通过滑动窗口构建相关系数矩阵并研究其谱结构，识别市场状态，并考察COVID-19期间的特殊性。虽然涉及量化交易中的风险管理和市场状态识别，但主要侧重理论分析，未直接提供交易策略或Alpha信号，实战价值中等。",
-    "fetch_date": "2026-08-28",
-    "id": "20260828_ab3bf883"
-  },
-  {
-    "title": "Interpretable hybrid credit scoring for thin-file and underbanked populations",
-    "url": "https://arxiv.org/pdf/2608.26837v1",
-    "source": "ArXiv",
-    "date": "2026-08-27",
-    "abstract": "We extend a residual-learning hybrid credit scoring framework (logistic regression scorecard plus a gradient-boosting correction on its residuals, decomposed at each prediction into an interpretability ratio $ρ(x)$ that measures the share attributable to the linear branch) along three axes: an East African empirical instantiation on the Zindi Financial Inclusion in Africa data (Kenya, Rwanda, Tanzania, Uganda); a fairness audit at the granularity of the framework's three interpretability regions; and a thin-file segmentation analysis. On the Taiwan Credit Default benchmark retained for continuity, the calibrated hybrid attains AUC $= 0.776$ ($Δ\\mathrm{AUC} = +0.057$ vs.\\ standalone logistic regression, $+0.001$ vs.\\ standalone XGBoost), reduces Brier Score by 23\\%, and concentrates the highest-default-rate borrowers (69.5\\%) in the fully interpretable region. On Zindi, the calibrated hybrid attains AUC $= 0.869$ ($Δ\\mathrm{AUC} = +0.015$ vs.\\ LR, $p < 0.001$; $-0.004$ vs.\\ XGBoost), cuts Brier from $0.158$ to $0.085$ (a 46\\% reduction), and replicates the regional routing pattern. The fairness audit detects severe routing into the opaque ML-driven region along socioeconomic axes: rural respondents by 18 percentage points relative to urban, primary-or-less-educated by 32 points relative to secondary-and-above, and Ugandan respondents by 22 points relative to Kenyan, while gender shows essentially no routing disparity. The audit pipeline surfaces subgroup-routing violations that aggregate fairness metrics miss, in a form directly usable by African central-bank supervisors of digital credit.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "该论文提出了一种可解释的混合信用评分框架，将逻辑回归评分卡与梯度提升残差校正相结合，并通过可解释性比率ρ(x)在每个预测中分解线性贡献。论文在非洲金融包容性数据集和台湾信用违约基准上进行了验证，混合模型在AUC和Brier评分上优于纯线性模型，性能接近XGBoost。对于实战交易，该框架在信用风险领域有实用价值，但非直接针对交易策略，且是理论性研究，因此得分为5。",
-    "fetch_date": "2026-08-28",
-    "id": "20260828_c7db57a9"
-  },
-  {
-    "title": "On the hedging problem in general 1D diffusion markets",
-    "url": "https://arxiv.org/pdf/2608.25223v1",
-    "source": "ArXiv",
-    "date": "2026-08-25",
-    "abstract": "We develop a PDE-based methodology for pricing and hedging European contingent claims in general one-dimensional diffusion markets characterized solely by their scale function and speed measure, possibly without a classical SDE representation, and with constant interest rate. We derive a hedging equation whose solution generates a self-financing hedging strategy and provide sufficient conditions on scale, speed, and interest rate, under which this strategy achieves the minimal hedging capital, expressed through the no free lunch with vanishing risk (NFLVR) condition. We further prove necessary and sufficient conditions for NFLVR and characterize the class of equivalent local martingale measures through an auxiliary diffusion whose scale and speed characteristics are determined by those of the real-world diffusion and by the interest rate. When the NFLVR condition fails, the framework may produce multiple hedging equations corresponding to non-minimal strategies, whose associated prices can exceed the minimal hedging capital. We illustrate both the effectiveness and limitations of the approach through numerical experiments involving diffusion models with irregular features.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文发展了一种基于PDE的方法，用于在一般一维扩散市场中为欧式或有索赔进行定价和对冲，这些市场仅由其尺度函数和速度测度刻画，可能没有经典的SDE表示，且利率恒定。文中推导了对冲方程，其解生成自融资对冲策略，并提供了关于尺度、速度和利率的充分条件，使得该策略在无套利（NFLVR）条件下实现最小对冲资本。进一步证明了NFLVR的充要条件，并通过辅助扩散的特征刻画了等价局部鞅测度类。当NFLVR条件不成立时，框架可能产生多个对冲方程，对应非最小策略，其价格可能超过最小对冲资本。通过涉及不规则特征的扩散模型的数值实验，展示了该方法的有效性和局限性。该工作偏向理论推导，但为特定市场模型下的对冲提供了数学基础，对实务交易有一定参考价值。",
-    "fetch_date": "2026-08-28",
-    "id": "20260828_f3ed8274"
-  },
-  {
-    "title": "Distribution-constrained optimal multiple stopping: the Root-type solution",
-    "url": "https://arxiv.org/pdf/2608.27374v1",
-    "source": "ArXiv",
-    "date": "2026-08-27",
-    "abstract": "We consider the distribution-constrained optimal stopping problem introduced by Bayraktar and Miller (Mathematical Finance, 2019) and Beiglbock et al. (PTRF, 2018). Motivated by the multi-marginal Skorokhod embedding problems (SEP) and applications in mathematical finance, we generalize (a class of) its solution to the multi-marginal case. First, we give a probabilistic characterization of the solution as the first hitting times of barrier sets by some time-reversed process, in the same spirit as Cox et al. (PTRF, 2019). Then, we prove the optimality results using martingale inequality arguments, which extends the type of cost functions considered in Beiglbock et al. (PTRF, 2018).",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "本文研究分布约束下的最优多重停时问题，推广了Bayraktar和Miller及Beiglbock等人的工作，通过时间倒向过程的障碍集首达时给出了概率刻画，并利用鞅不等式证明了最优性。虽涉及金融应用，但侧重于数学理论推导，属于纯理论性质，对实战交易的直接指导价值有限。",
-    "fetch_date": "2026-08-28",
-    "id": "20260828_6893c96a"
-  },
-  {
-    "title": "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation",
-    "url": "https://arxiv.org/pdf/2608.25844v1",
-    "source": "ArXiv",
-    "date": "2026-08-26",
-    "abstract": "Coupled feedback networks are often monitored channel by channel even though cross-channel paths alter both stability margins and transmitted disturbances. We study identification of a structured feedback matrix L_t = Phi diag(gamma_t) in an output-only setting: no commanded, probing, or reference input exists -- only temporally separated outputs and the scheduling gains gamma_t are observed, while the coupling response Phi and the clearing-window inputs are not. Identification rests jointly on the persistent excitation of the observed pre-window output and on two structural features separating coupling from confounds: the known time variation of the gains, which modulates the closed-loop response in a predictable pattern, and a partial-reversal moment by which a known fraction of transient displacement is corrected in a subsequent window. We give a hierarchy of results: exact local identification of the coupling under a Jacobian rank condition on the gain regimes; a first-order interaction estimator whose identification strength is the minimum eigenvalue of the residualized interaction information matrix (provably unidentified under constant gains); and a characterization of the estimand as a resolvent sensitivity -- the right object for screening transmitted disturbances and a first-stage input to spectral-margin recovery -- with sqrt(T) asymptotics for the first-order estimator, a cross-identification theorem mapping each varying gain to exactly identified resolvent rows and columns, and bootstrap validity under consistent selection; the implemented heuristic's empirical coverage (90% at nominal 95%) quantifies the remaining gap. Simulations verify sharpness of the rank condition and quantify benchmark failures under confounding. A case study on leveraged-fund rebalancing feedback, where daily fund disclosures play the role of the known gains, illustrates the method on real data.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "论文研究反馈网络的输出识别与谱监测，侧重于理论方法和数学条件，未直接涉及实战交易策略或强化学习/深度学习应用，因此实战价值较低。",
-    "fetch_date": "2026-08-28",
-    "id": "20260828_685cd91d"
-  },
-  {
-    "title": "Harvesting the Volatility Risk Premium: A Learning-to-Rank Approach",
-    "url": "https://arxiv.org/pdf/2608.24786v1",
-    "source": "ArXiv",
-    "date": "2026-08-25",
-    "abstract": "This paper develops the first end-to-end application of cross-sectional learning-to-rank to the S&P 500 weekly options (SPXW) zero-day-to-expiration surface, integrated with margin-aware position sizing, an abstention rule driven by model uncertainty, and a strict out-of-time integrity check. A LightGBM LambdaRank ranker scores a daily nine-strategy cross-section composed of eight delta-targeted short-put positions and a \\textit{SKIP} candidate, trained against a path-aware Sortino-on-bars label computed at one-minute resolution. The framework is evaluated under index-option margin requirements, a tiered fee schedule, and bid-to-mid execution assumptions across a four-window walk-forward over 2021-2024 and a strictly held-out 2025 out-of-time slice. Seven sizing methods produce out-of-time annualized Sharpe ratios between 4.31 and 5.76, with the headline method reaching a Probabilistic Sharpe Ratio of 0.964 and a sample-period maximum drawdown of -2.28%, on a single hold-out year against a walk-forward range of 1.90 to 3.11. Out of time, every method exceeds three passive benchmarks (CBOE PUT, CBOE WPUT, SPX buy-and-hold) by at least 3.84 in Sharpe ratio and five internal selection baselines by at least 3.69. A two-by-two ablation of the confidence gate against the tail-risk features places 5.05 of the 5.59 out-of-time Sharpe gap over the CBOE PUT with the ranker and the selection layer, the two risk controls adding 0.54 between them. On walk-forward, where the gate binds, neither control comes close to the headline alone and their interaction supplies most of the result. A fifteen-group feature ablation shows that removing the multiplicative regime interactions collapses walk-forward statistical confidence.",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "该论文提出了一个端到端的learning-to-rank框架，应用于S&P 500每周零日到期期权（SPXW），结合保证金感知的头寸调整、基于模型不确定性的弃权规则和严格的时间外验证。使用LightGBM LambdaRank对八种delta目标空头看跌期权和SKIP候选进行排序，并基于一分钟分辨率路径感知Sortino标签训练。在2021-2024年的四个窗口滚动前向测试和严格保留的2025年时间外切片中，七种头寸调整方法实现了4.31至5.76的年化Sharpe比率，优于多个被动基准。该方法在实战中展现了高收益风险比，且考虑了交易成本和保证金，具有很强的实践价值。",
-    "fetch_date": "2026-08-27",
-    "id": "20260827_faefefcc"
   }
 ]
