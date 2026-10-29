@@ -1,4 +1,5 @@
 [
+  "Comparing LSTM and Transformer Architectures for Daily Close Price Prediction on Chinese A-Share Stocks",
   "Strategyproof Deep Reinforcement Learning for Online Resource Allocation",
   "Contemporaneous Transmission Networks and Systemic Risk in European Banking",
   "Optimal Order Placement under a State-Dependent Hawkes Process Limit Order Book model",
@@ -2997,6 +2998,5 @@
   "Simulation-Based Validation of an Integrated 4D/5D Digital-Twin Framework for Predictive Construction Control",
   "LiveTradeBench: Seeking Real-World Alpha with Large Language Models",
   "Defining the payback period for nonconventional cash flows: an axiomatic approach",
-  "PELVE from a regulatory perspective",
-  "On a Stationarity Theory for Stochastic Volterra Integral Equations"
+  "PELVE from a regulatory perspective"
 ]
