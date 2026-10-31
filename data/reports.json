@@ -1,5 +1,17 @@
 [
   {
+    "title": "Chain-of-Alpha: unleashing the power of large language models for alpha mining in quantitative trading",
+    "url": "https://aclanthology.org/2026.findings-emnlp.506/",
+    "source": "Scholar",
+    "date": "2026-11-01",
+    "abstract": "… Alpha factor mining is a fundamental task in quantitative trading… However, existing LLM-based alpha mining approaches … simple, yet effective and efficient LLM-based framework for fully …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "Chain-of-Alpha 提出一个简洁而有效的基于大语言模型（LLM）的框架，用于量化交易中的 Alpha 因子挖掘。论文针对现有基于 LLM 的 Alpha 挖掘方法存在的不足，利用 LLM 进行全流程的因子生成与评估，属于 Alpha 因子挖掘与 LLM 应用结合的实战方向，对实际量化研究具有参考价值，但缺乏实盘或高频交易验证，故评为 7 分。",
+    "fetch_date": "2026-11-01",
+    "id": "20261101_fad91af6"
+  },
+  {
     "title": "Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns",
     "url": "https://arxiv.org/pdf/2610.39205v1",
     "source": "ArXiv",
@@ -5986,17 +5998,5 @@
     "summary": "该论文探讨了在算法交易代理中应用认知和分布不确定性量化的方法，旨在提高交易策略的稳健性与适应性。通过结合深度强化学习和不确定性估计，论文提出了一种能更好应对市场变动和模型误差的实战交易框架，在风险管理与决策制定方面具有直接应用价值。",
     "fetch_date": "2026-09-01",
     "id": "20260901_e9348b1c"
-  },
-  {
-    "title": "Novel data-driven fuzzy algorithmic volatility forecasting models with applications to algorithmic trading",
-    "url": "https://ieeexplore.ieee.org/abstract/document/9177735/",
-    "source": "Scholar",
-    "date": "2026-09-01",
-    "abstract": "… Abstract—The explosion of algorithmic trading has been one of the … strategies for algorithmic trading such as Bollinger bands and the simple moving average (SMA) crossover strategy …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "本文提出了一种新颖的数据驱动机器学习波动率预测模型，并应用于算法交易策略（如布林带和简单移动平均线交叉策略）中，以提高交易决策的准确性和盈利能力。该模型结合了模糊逻辑和机器学习技术，能够自适应地捕捉市场波动率的变化，从而为实战交易提供了更有效的预测工具和策略优化方法。",
-    "fetch_date": "2026-09-01",
-    "id": "20260901_e4e1cd7a"
   }
 ]
