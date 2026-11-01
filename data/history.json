@@ -1,4 +1,9 @@
 [
+  "Reinforcement learning in quantitative trading: A survey",
+  "Algorithmic trading: winning strategies and their rationale",
+  "Algorithmic trading",
+  "Intelligent algorithmic trading strategy using reinforcement learning and directional change",
+  "Algorithmic trading and quantitative strategies",
   "Chain-of-Alpha: unleashing the power of large language models for alpha mining in quantitative trading",
   "Exponential Convergence of the Lifted Gradient Flow of the Bass Functional",
   "Comparing tail forecasts: the number of exceedances is the sample size",
@@ -2993,10 +2998,5 @@
   "Option market making with hedging-induced market impact",
   "Modeling Hawkish-Dovish Latent Beliefs in Multi-Agent Debate-Based LLMs for Monetary Policy Decision Classification",
   "Adaptive Cooperative Transmission Design for Ultra-Reliable Low-Latency Communications via Deep Reinforcement Learning",
-  "Asset-liability management with Epstein-Zin utility under stochastic interest rate and unknown market price of risk",
-  "JaxMARL-HFT: GPU-Accelerated Large-Scale Multi-Agent Reinforcement Learning for High-Frequency Trading",
-  "ABIDES-MARL: A Multi-Agent Reinforcement Learning Environment for Endogenous Price Formation and Execution in a Limit Order Book",
-  "Numerical methods for solving PIDEs arising in swing option pricing under a two-factor mean-reverting model with jumps",
-  "Differential Beliefs in Financial Markets Under Information Constraints: A Modeling Perspective",
-  "Trade Execution Flow as the Underlying Source of Market Dynamics"
+  "Asset-liability management with Epstein-Zin utility under stochastic interest rate and unknown market price of risk"
 ]

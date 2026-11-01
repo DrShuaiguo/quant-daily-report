@@ -1,5 +1,41 @@
 [
   {
+    "title": "Algorithmic trading: winning strategies and their rationale",
+    "url": "https://books.google.com/books?hl=en&lr=&id=CIwCTVqEj4oC&oi=fnd&pg=PR9&dq=%22algorithmic+trading%22+strategy+after:2024&ots=kVGEHpFBDF&sig=uyZ_qj1YtBFQWbK3dT6_I13B0Kk",
+    "source": "Scholar",
+    "date": "2026-11-02",
+    "abstract": "… to algorithmic trading strategies that can be readily implemented by both retail and institutional traders alike. More than an academic treatise on financial theory, Algorithmic Trading is …",
+    "broker": "Google Scholar",
+    "score": 7,
+    "summary": "该书聚焦于散户和机构交易者都能直接落地的算法交易策略，而非纯学术金融理论探讨。核心在于提供可实现的交易策略及其背后的逻辑依据（rationale），属于实战导向的量化/算法交易著作，涵盖策略构建与执行层面，但未涉及强化学习（RL）、深度学习（Deep Learning）或具体Alpha因子挖掘等前沿方法，故实战价值较高但非最强档。",
+    "fetch_date": "2026-11-02",
+    "id": "20261102_5c76247a"
+  },
+  {
+    "title": "Intelligent algorithmic trading strategy using reinforcement learning and directional change",
+    "url": "https://ieeexplore.ieee.org/abstract/document/9514595/",
+    "source": "Scholar",
+    "date": "2026-11-02",
+    "abstract": "… , employing an algorithmic trading strategy remains a challenge … algorithmic trading strategy using the proposed DCRL model, specifically, we present two algorithmic trading strategies …",
+    "broker": "Google Scholar",
+    "score": 5,
+    "summary": "论文提出一种结合强化学习与方向性变化（Directional Change）的算法交易策略DCRL模型，并基于此给出两种算法交易策略。核心在于用方向性变化事件驱动采样与建模，再用RL学习交易决策；摘要未披露具体网络结构、回测细节与业绩指标，实战可复现性与Alpha强度信息有限。",
+    "fetch_date": "2026-11-02",
+    "id": "20261102_cefab63f"
+  },
+  {
+    "title": "Reinforcement learning in quantitative trading: A survey",
+    "url": "https://www.techrxiv.org/doi/abs/10.36227/techrxiv.19303853",
+    "source": "Scholar",
+    "date": "2026-11-02",
+    "abstract": "… two concepts on quantitative trading evolved with time along with the emergence of RL. To this end, we devote one section to discuss the literature of quantitative trading with the tools of …",
+    "broker": "Google Scholar",
+    "score": 4,
+    "summary": "本文是强化学习在量化交易中的综述（survey），梳理了量化交易随RL发展而演变的两个概念，并专设一节讨论运用RL工具进行量化交易的文献。核心内容为领域文献回顾与概念梳理，偏理论与综述性质，未提出可直接落地的RL策略、深度学习模型或Alpha因子，对实战交易的直接指导价值有限，故评为4分。",
+    "fetch_date": "2026-11-02",
+    "id": "20261102_62eff62b"
+  },
+  {
     "title": "Chain-of-Alpha: unleashing the power of large language models for alpha mining in quantitative trading",
     "url": "https://aclanthology.org/2026.findings-emnlp.506/",
     "source": "Scholar",
@@ -5962,41 +5998,5 @@
     "summary": "本文针对Deribit交易所的比特币逆期权，在粗糙Bergomi模型下构建了校准和定价框架。该模型结合了极端粗糙波动率动态与非线性的加密货币结算payoff，并比较了三种基于不同分数布朗运动模拟方案和蒙特卡洛估计器的计算管线。利用2022年5月至2025年3月Deribit交易数据（涵盖七个市场压力事件和九种波动率基线状态）进行校准，混合方案在精度上显著优于Cholesky方案，实现了平均未加权RMSE 22.83个百分点。对实战而言，该方法可直接用于逆期权定价与风险对冲，并提供了高效计算方案，具有高实用价值。",
     "fetch_date": "2026-09-01",
     "id": "20260901_cea11a4e"
-  },
-  {
-    "title": "RetailAgent: Structured Adverse Timing in Self-Conditioned Multimodal LLM Trading Agents",
-    "url": "https://arxiv.org/pdf/2608.28399v1",
-    "source": "ArXiv",
-    "date": "2026-08-28",
-    "abstract": "In financial markets, a sequential policy that reacts systematically to price movements may become predictable to other market participants. This paper studies whether large language model (LLM) agents exhibit such directional structure through RetailAgent, an experimental framework in which an LLM observes anonymized intraday equity price histories and permitted state, then repeatedly chooses long (hold the stock) or flat (stay out) before the subsequent interval return is revealed. We compare returns during long and flat intervals along the same stock's intraday path after removing the overall fraction of long decisions. This exposure-matched measure reveals persistent negative timing across modality, horizon, state, and model family. Shuffling saved action sequences substantially attenuates the effect, showing that alignment between actions and subsequent returns drives the negative score. Feeding self-authored memories into decisions further increases policy persistence, while timing becomes more negative among stock-days on which the agent uses both actions. These results reveal stable, recoverable directional structure in sequential LLM financial decisions and a behavioral signal for studying how another participant could respond to a predictable policy.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "该论文研究了大语言模型（LLM）交易代理在日内股票价格走势中的结构化时序行为。通过对比在同一股票路径中做多与空仓区间的收益（去除整体多头比例后），发现LLM代理在不同模态、时间尺度、状态和模型家族中均表现出持续的负向择时能力。打乱行动序列会显著削弱这种效应，表明行动与后续回报之间的对齐驱动了负向得分。引入自生成的记忆进一步加剧了策略的持续性，而同时使用两种行动（多头与空仓）的股票日内，其择时负向性更强。这些结果揭示了顺序LLM金融决策中稳定且可恢复的方向性结构，以及一种行为偏差。实战价值在于，该框架可用于识别和利用LLM交易代理的系统性模式，为开发更优的交易策略或风险控制提供依据。",
-    "fetch_date": "2026-09-01",
-    "id": "20260901_9ce00803"
-  },
-  {
-    "title": "What survives honest evaluation? Leakage-safe, search-aware assessment of LLM-driven trading strategy discovery",
-    "url": "https://arxiv.org/pdf/2608.27734v1",
-    "source": "ArXiv",
-    "date": "2026-08-27",
-    "abstract": "Large language models (LLMs) are increasingly used to discover trading strategies, and much of the resulting literature shares a methodological weakness: many candidate strategies are generated, the best is reported, and neither look-ahead bias nor the intensity of the search behind the reported result is corrected for. We present a strategy-discovery system that makes both corrections structural rather than procedural. First, the agent can only act through registry-validated tools whose feature space excludes look-ahead by construction; we show that this guardrail is not redundant with statistical correction: a deliberately leaky oracle posting a Sharpe ratio of 35 survives Deflated Sharpe and probability-of-backtest-overfitting testing completely. Second, the system records every strategy evaluation its search performs and deflates all reported performance by that trial count, tracing how the best in-sample Sharpe ratio climbs with each trial while the deflation threshold, driven by the agent's own search, climbs faster. Across a 453-stock point-in-time US equity universe and a 39-ETF multi-asset universe with realistic transaction, impact, and borrow costs, honest evaluation certifies passive benchmarks (out-of-sample confidence intervals excluding zero), rejects every LLM-discovered strategy (across two frontier models, search budgets up to one hundred candidates, and five repeated runs), catching selection luck, predicted rank degradation, and out-of-sample collapse through complementary instruments, and evaluates a human trader's production rule system under identical instruments. The framework formalizes why pre-registered hypotheses earn lower evidential bars than brute search, and quantifies the sample sizes that credible certification of moderate edges actually requires.",
-    "broker": "Cornell Univ",
-    "score": 8,
-    "summary": "本文针对LLM生成交易策略时常见的过拟合与搜索偏差问题，提出了一种结构性的评估框架。系统通过注册验证工具排除前视偏差，并记录所有尝试以调整报告绩效，确保评估的诚实性。在真实数据集（453只美股和39只ETF）的测试中，该方法显著优于传统统计修正，显示了实战中的高价值。",
-    "fetch_date": "2026-09-01",
-    "id": "20260901_ac19d0fa"
-  },
-  {
-    "title": "Exploring epistemic and distributional uncertainties in algorithmic trading agents",
-    "url": "https://ieeexplore.ieee.org/abstract/document/10807444/",
-    "source": "Scholar",
-    "date": "2026-09-01",
-    "abstract": "… Algorithmic trading agents have become a cornerstone of modern financial markets, executing high-frequency trades based on predefined strategies with … of trading strategies not only …",
-    "broker": "Google Scholar",
-    "score": 8,
-    "summary": "该论文探讨了在算法交易代理中应用认知和分布不确定性量化的方法，旨在提高交易策略的稳健性与适应性。通过结合深度强化学习和不确定性估计，论文提出了一种能更好应对市场变动和模型误差的实战交易框架，在风险管理与决策制定方面具有直接应用价值。",
-    "fetch_date": "2026-09-01",
-    "id": "20260901_e9348b1c"
   }
 ]
