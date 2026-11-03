@@ -1,5 +1,77 @@
 [
   {
+    "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
+    "url": "https://arxiv.org/pdf/2610.42119v1",
+    "source": "ArXiv",
+    "date": "2026-10-30",
+    "abstract": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文针对最差表现自动赎回结构化产品的风险管理，提出用hp函数张量列车（hp-FTT）求解逆向定价递归，将延续价值以分段多项式核心存储并在障碍处拆分，使最差表现障碍事件精确作用且秩为一；对高斯转移证明达到误差ε所需多项式次数仅随√log(1/ε)增长。一次求解即可通过似然比权重积分得到任意现货点的所有希腊值且无采样噪声，并以未来日期存储价值替代嵌套模拟。与最强蒙特卡洛估计器相比，希腊阶数与精度决定哪种方法更便宜。对实战交易有价值：直接服务于结构化产品做市/对冲的希腊值与未来敞口尾部风险管理，但偏重定价与风险引擎而非Alpha/RL策略。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_f86770e1"
+  },
+  {
+    "title": "QBX: A Compiler for Well-Formed, Auditable Alpha Programs",
+    "url": "https://arxiv.org/pdf/2610.41689v1",
+    "source": "ArXiv",
+    "date": "2026-10-30",
+    "abstract": "Formulaic alpha miners increasingly differ in how they generate candidates, yet each system typically couples its own representation, evaluator, and selector into a bespoke pipeline whose results are difficult to reproduce or compare. We present QBX, a compiler that defines a well-formed, auditable space of alpha programs. A finite, versioned block registry and whole-strategy port-DAG language define the candidate space; the compiler either rejects a proposal with structured diagnostics or emits an evidence-carrying IR with types, time-availability effects, executable linkage, and Merkle-style content identities. Compiler-closed actions keep search inside the admitted space, node identities support incremental evaluation, and context-bound root identities govern program deduplication and trial provenance. The availability-effect system rejects contract-visible look-ahead while admitting legal point-in-time forecasts.\n  On Chinese A-share panels, evaluation-valid proposals increase from 26.8% for free strings and 36.4% for a grammar-only control to 97.7% for typed programs. Incremental evaluation replays search lineages 7.5 times faster with numerical parity, while the availability checker admits zero registered-contract violations across 23,342 candidates. Under matched LLM-call budgets, compiler-closed search reaches the pool-specific diagnostic frontier with substantially fewer calls. These results concern validity, reuse, and search efficiency within the registered vocabulary, not an increase in the information available from the market panel.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "QBX是一款将公式化Alpha挖掘中的候选程序定义为良构、可审计空间的编译器：有限版本化的积木注册表与全策略port-DAG语言界定候选空间，编译器要么以结构化诊断拒绝提案，要么输出携带证据的IR（含类型、时间可用性效应、可执行链接与Merkle式内容标识）。编译器闭合动作将搜索限制在准入空间内，节点标识支持增量求值，上下文绑定根标识管理程序去重与试验溯源；可用性效应系统拒绝合约可见的未来函数，同时允许合法的时点预测。在A股面板上，有效提案比例从自由字符串的26.8%、仅语法控制的36.4%提升至类型化程序的97.7%；增量求值以数值一致性回放搜索谱系快7.5倍。对实战交易有价值（提升Alpha挖掘的可复现性、可审计性与搜索效率），但偏基础设施/工程，非直接盈利策略，故评6分。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_c1d4be7c"
+  },
+  {
+    "title": "Expected shortfall estimation and capital coverage under overlapping scenarios",
+    "url": "https://arxiv.org/pdf/2610.41624v1",
+    "source": "ArXiv",
+    "date": "2026-10-30",
+    "abstract": "Expected shortfall (ES) is routinely estimated from a short sample of profit-and-loss (P&L) scenarios built from overlapping multi-day returns, while the non-parametric estimators applied to such data are designed under independent sampling. We study how this mismatch affects estimation accuracy and capital coverage, and how it interacts with serial dependence and heavy tails in the underlying P&L. Working within the coherent risk estimation framework, we compare six order-statistic-based ES estimators on fit, bias, and capital-coverage metrics. Following the Fundamental Review of the Trading Book (FRTB), we use a one-year estimation window and ES at the $2.5\\%$ confidence level as a benchmark setup. We combine simulations with market data on twelve risk factors and ninety-nine equity portfolios. We show that overlapping sampling does not merely add noise but shifts ES estimates systematically downward, thereby weakening capital coverage. Serial dependence acts in the same direction, and heavy tails amplify both effects. More conservative weighting mitigates the underestimation but does not remove it. On market data, the confidence level at which the estimated capital covers realized losses roughly doubles in median under overlapping sampling for every estimator, while the $\\textrm{ES}_{2.5\\%}$-to-$\\textrm{VaR}_{1\\%}$ ratio, which links the FRTB base market risk capital metric to its pre-FRTB predecessor, changes comparatively little. Overlapping sampling can thus substantially understate ES-based capital. Since many banks apply a small set of standard estimators in their FRTB regulatory or economic capital model in a historical simulation approach, this understatement is likely to be common for many institutions, and combining simulation-based assessment of estimation risk with coverage-based diagnostics offers a practical method to detect it in model validation and monitoring.",
+    "broker": "Cornell Univ",
+    "score": 6,
+    "summary": "该论文研究重叠多日损益情景下期望损失(ES)估计的准确性及其对资本覆盖的影响。核心发现：重叠采样并不只是增加噪声，而是系统性下移ES估计，削弱资本覆盖；序列相关同向加剧，厚尾放大两者；更保守的加权可缓解但无法消除低估。基于FRTB标准，采用一年窗口与2.5%置信水平，比较六种基于次序统计量的ES估计量，结合模拟与12个风险因子、99个股票组合的市场数据检验。对实战交易有中等价值：提示风险度量与资本计量中重叠窗口与序列相关导致的系统性低估偏差，直接影响仓位/风控与资本规划，但偏风险管理与回测方法论，非直接Alpha或深度学习策略，故给6分。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_a944441a"
+  },
+  {
+    "title": "A New GAUSS Software Component for Implementing Dynamic Tests of Contagion with an Application",
+    "url": "https://arxiv.org/pdf/2610.41740v1",
+    "source": "ArXiv",
+    "date": "2026-10-30",
+    "abstract": "The main goal of this article is to present a new software component created by the authors in GAUSS for implementing dynamic tests for contagion. These tests are aimed at providing the possibilities of testing for spiller-over effects between financial markets during a crisis or during a pandemic situation such as the one that we experienced recently. Unlike standard tests for contagion that have fixed dates for a potential shift, the tests implemented here are dynamic in the sense that the potential contagion effect is measured across the time span. The leverage bootstrap simulation technique is utilized in order to generate critical values that are reliable when the tests are implemented in order to make sure that the conducted inference is accurate. Since the approach is new, software component needs to be created for conducting the underlying tests, which is accomplished via this article. The module is very easy to implement by the general practitioners via a graphical user interface. An application is offered by using real data from stock markets in order to demonstrate how the software component can be used.",
+    "broker": "Cornell Univ",
+    "score": 5,
+    "summary": "本文介绍了一个用GAUSS编写的软件组件，用于实现金融市场间传染效应的动态检验，可衡量危机或疫情期间市场间的溢出效应。与固定日期偏移的标准传染检验不同，该动态检验在整个时间跨度上测量潜在传染效应，并采用杠杆自助法（leverage bootstrap）模拟生成可靠临界值以保证推断准确性。由于方法较新，作者开发了带图形用户界面的软件组件以便实务人员使用，并用真实股市数据演示了其应用。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_cdaa7364"
+  },
+  {
+    "title": "Neural Network Methods in the 2BSDE Formalism for Solving the High-Dimensional Black--Scholes Equation with Transaction Costs",
+    "url": "https://arxiv.org/pdf/2610.41019v1",
+    "source": "ArXiv",
+    "date": "2026-10-29",
+    "abstract": "A 2BSDE system is written down for a $(D+1)$-dimensional Black--Scholes partial differential equation (PDE) with the Leland transaction cost model which incorporates the sign of the curvature. The 2BSDE system takes input from the ``speed'' (derivative of the curvature). This system is solved using a single ResNet neural network which learns both the solution to the PDE as well as the degrees of freedom in the curvature matrix. The network is used to learn the price of derivatives such as call options and butterfly spreads on geometric baskets for $D=10,100$ achieving a time-averaged RMSE of less than $0.1$ in each case.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文针对含Leland交易成本模型的(D+1)维Black-Scholes PDE，构建了一个2BSDE系统，该系统以曲率的“速度”（曲率导数）为输入，并纳入曲率符号。使用单一ResNet神经网络同时求解PDE解与曲率矩阵自由度，学习几何篮子上的看涨期权与蝶式价差等衍生品价格，在D=10和100时时间平均RMSE均低于0.1。本质是高维PDE数值求解的理论/方法论文，未涉及策略生成、alpha或实盘执行，实战价值有限。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_5b5173f2"
+  },
+  {
+    "title": "Admissible Portfolio Optimization: Information Constraints, Conditional Efficient Frontiers and the Price of Causal Identification",
+    "url": "https://arxiv.org/pdf/2610.00147v2",
+    "source": "ArXiv",
+    "date": "2026-09-10",
+    "abstract": "Mean--variance portfolio choice takes the conditioning information as given, so that two errors about it, using variables not available at the decision time and treating common variation as idiosyncratic, pass into the portfolio unseen. This paper turns what that practice assumes into a condition declared before estimation, certified from data and priced when it fails. The conditioning information becomes a decision variable subject to admissibility constraints on availability, arbitrage, statistical separation and, for interventional claims, invariance across regimes; an order in which no risk--return quantity enters selects an information class, and the classical problem is solved inside it. We prove that solutions exist, that the value of information is monotone only under an embedding that portfolio constraints can break, so that selection by decision loss admits look-ahead information whenever offered, that the two-stage solution and the joint envelope are minimal elements of two orders on one set, that the diversifiable part of risk is a property of the admissible class, and that causal identification has an explicit price. Allocation performance is downstream of the framework, since the information decision enters the decision regret at second order and the reported risk at first order, while the weights themselves move at first order. On market data the condition holds on small sets of individual securities and fails on pre-diversified portfolios and on books of realistic size, where a factor model with diagonal residual understates its portfolio's variance by a factor that the consequence statistic announces in advance; selecting the same information by decision loss yields portfolios that promise a fraction of the risk they realize.",
+    "broker": "Cornell Univ",
+    "score": 4,
+    "summary": "本文属纯理论计量金融研究，将均值-方差组合的条件信息从既定假设转为带可采纳性约束的决策变量（可用性、套利、统计可分性、跨区制不变性），并证明解的存在性、信息价值的单调性仅在特定嵌入下成立、两阶段解与联合包络为同一集合上两个序的极小元、可分散风险取决于可采纳类，以及因果识别具有显式价格。概念上对避免前视偏差和伪独立同分布假设有启发，但摘要未给出可回测策略、实证或代码，对实战交易的直接落地价值有限。",
+    "fetch_date": "2026-11-03",
+    "id": "20261103_a8fe1ad9"
+  },
+  {
     "title": "Algorithmic trading: winning strategies and their rationale",
     "url": "https://books.google.com/books?hl=en&lr=&id=CIwCTVqEj4oC&oi=fnd&pg=PR9&dq=%22algorithmic+trading%22+strategy+after:2024&ots=kVGEHpFBDF&sig=uyZ_qj1YtBFQWbK3dT6_I13B0Kk",
     "source": "Scholar",
@@ -5926,77 +5998,5 @@
     "summary": "该论文研究了跳跃-扩散价格下AMM流动性提供者的最优区块时间，指出LVR成本被分为扩散和跳跃两个渠道，跳跃渠道不随区块时间趋于零，为LP损失设定了下限。在实战中，这意味着缩短区块时间并不能消除所有损失，选择最优区块时间需权衡共识成本。虽然模型偏理论，但对链上做市策略和协议设计有直接参考价值。",
     "fetch_date": "2026-09-02",
     "id": "20260902_4f75ade0"
-  },
-  {
-    "title": "Portfolio Risk Bounds without Cross-Asset Return Covariances: Distributional Fields from Language-Model Representations",
-    "url": "https://arxiv.org/pdf/2608.29692v1",
-    "source": "ArXiv",
-    "date": "2026-08-30",
-    "abstract": "Portfolio risk assessment ordinarily relies on reliable estimates of cross-asset return covariances, which are difficult to obtain in short, high-dimensional panels. We show that firm-level distribution-valued characteristics can instead provide one-sided certificates of portfolio risk. Under maintained links from characteristics to systematic exposures and from exposures to returns, multi-firm Wasserstein-2 dispersion yields a sharp upper bound on systematic portfolio variance and a corresponding bound for standardized returns. A weighted pairwise relaxation produces an objective that is convex under a checkable condition and requires marginal volatility scales but no cross-asset return covariances. With zero firm-specific slack, the common-map scale changes the certified variance reduction but not the normalized allocation, which depends only on observed information geometry. In a 52-firm panel from 2018-2022, an allocation constructed from Qwen3-Embedding-8B news representations lies between the 0.69th and 1.33rd in-sample variance percentiles across four prespecified capped portfolio populations; equal risk weighting lies between the 21.1st and 28.6th percentiles. The lower in-sample variance ranking relative to equal risk also appears across the reported frozen language-model representations. The framework therefore distribution-valued firm information into a coherent risk bound and an implementable allocation rule constructed without cross-asset return covariances.",
-    "broker": "Cornell Univ",
-    "score": 6,
-    "summary": "本文提出了一种无需跨资产收益协方差矩阵的投资组合风险度量方法，利用企业层面的分布值特征和语言模型表示来构建风险上界。该方法在52家公司样本中验证了其有效性，但主要侧重于理论推导和风险度量，而非直接的交易策略或alpha生成，因此对实战交易有中等参考价值。",
-    "fetch_date": "2026-09-02",
-    "id": "20260902_4dfa3e50"
-  },
-  {
-    "title": "Importance Sampling Enhanced with the COS Method for the Portfolio Risk Allocation",
-    "url": "https://arxiv.org/pdf/2608.30749v1",
-    "source": "ArXiv",
-    "date": "2026-08-31",
-    "abstract": "We introduce ISCOS, a cross-entropy importance-sampling calibration method for rare credit-portfolio losses. We derive Gaussian and Gaussian--inverse-Gamma proposals and analyse the propagation of finite-COS approximation errors to the fitted parameters. Numerical experiments for Gaussian and Student t-copula credit portfolios show the efficiency of this method.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "本文提出了一种用于稀有信用组合损失的重要性采样增强方法（ISCOS），结合交叉熵和COS方法进行参数校准。通过高斯和高斯-逆伽马提议分布，并分析有限COS近似误差的传播。数值实验表明该方法在高斯和Student t-copula信用组合中的有效性。该研究偏向于风险度量与数值方法，而非直接实战策略或机器学习方法，因此评分为5。",
-    "fetch_date": "2026-09-02",
-    "id": "20260902_39a91ad1"
-  },
-  {
-    "title": "Recovering Posterior Beliefs in Credit Risk: A Latent-State EM Extension of the Information-Geometric Framework",
-    "url": "https://arxiv.org/pdf/2608.29786v1",
-    "source": "ArXiv",
-    "date": "2026-08-30",
-    "abstract": "This paper develops a latent-state framework for recovering borrower-level posterior beliefs in credit-risk analysis. Creditworthiness and financial fragility are represented as latent dimensions, while observed borrower scores follow a finite Gaussian mixture model and default depends on the latent profile. Borrower-specific probabilities of default are obtained by averaging profile-specific default probabilities over the posterior distribution of latent states. A joint Expectation--Maximization procedure is used to estimate the mixture structure and the profile-specific default probabilities from observed score--default pairs. After estimation, predictive posterior beliefs are computed using the observed scores alone, thereby preserving the information available before default realization. A controlled simulation experiment evaluates the recovery of structural parameters, posterior beliefs, and borrower-level probabilities of default. Posterior distributions are interpreted as points on the probability simplex, and their recovery is assessed using both conventional error measures and information-geometric divergences. The results provide a controlled benchmark for studying the interaction between latent economic structure, posterior uncertainty, and credit-risk prediction.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "该论文构建了一个用于信用风险分析中恢复借款人级后验信念的潜在状态框架，将信用度和财务脆弱性表示为潜在维度，观测评分服从有限高斯混合模型，违约概率由潜在状态决定。通过联合EM算法从评分-违约对估计混合结构和违约概率，然后仅基于观测评分计算预测后验信念，保留了违约实现前的信息。模拟实验评估了参数恢复和信念准确性。该研究侧重方法论和理论评估，未直接提供实战交易策略或信号，但信用风险模型对风控和债券定价有间接参考价值。",
-    "fetch_date": "2026-09-02",
-    "id": "20260902_25a74711"
-  },
-  {
-    "title": "Improving Swaption Calibration in Factor HJM Stochastic Volatility Models: A First-Order Correction to Frozen Swap-Rate Loadings",
-    "url": "https://arxiv.org/pdf/2608.29423v1",
-    "source": "ArXiv",
-    "date": "2026-08-29",
-    "abstract": "The factor HJM stochastic volatility model introduced by Sepp and Rakhmonov (2025) obtains tractable swaption pricing by freezing the nonlinear swap-rate loading along a deterministic expected-state path. This removes the dependence of conditional swap-rate variance on the current yield-curve state. We introduce a first-order Taylor correction to the loading that adds no calibration parameters. Conditional on retaining the frozen annuity-measure drift, we show that the first variation of the swap-rate transform is affine in the centered rate states and reduces to one-dimensional equations in volatility. For quadratic-drift lognormal stochastic volatility, these equations yield a finite-dimensional ODE representation and a direct log-volatility formulation. Calibrations to independently generated nonlinear-model prices show substantially lower stochastic volatility parameter bias and held-out pricing error, with only modest changes in local calibration identifiability.",
-    "broker": "Cornell Univ",
-    "score": 5,
-    "summary": "该论文聚焦于因子HJM随机波动率模型中的掉期期权校准改进，提出一阶泰勒修正以提高定价精度，但理论性强，实战应用价值有限。",
-    "fetch_date": "2026-09-02",
-    "id": "20260902_aacfff70"
-  },
-  {
-    "title": "Two Kinds of Nothing: What Insignificant Results in Finance Actually Show",
-    "url": "https://arxiv.org/pdf/2608.30490v1",
-    "source": "ArXiv",
-    "date": "2026-08-31",
-    "abstract": "Claims of the form \"we find no evidence that X affects Y\" appear throughout the applied finance literature, yet whether such a claim contains evidence of absence or absence of evidence depends entirely on its confidence interval. The term \"statistically insignificant\" is routinely read to mean zero economic effect. However, a more honest description is that zero could not be rejected along with a range of other coefficient effect sizes. The crucial question is whether effect sizes in that range are consequential. This note distinguishes two kinds of insignificant results that are indistinguishable in a standard regression table: bounded null claims where the intervals reject effect sizes of consequence and thus represent a genuine finding, and vacuous null claims where even consequential effects remain unrejected and therefore establish nothing. I propose a minimal reporting standard for regression results in applied finance, where the smallest consequential effect size is stated (in the units of the decision, per a named increment of the regressor) alongside the descriptive statistics and compared with the relevant edges of the confidence intervals of null claims. Using only the reported coefficient and standard error, authors can distinguish bounded (informative) null claims that reject consequential effect sizes from vacuous null claims that establish no information, perhaps due to deficiencies in data or the identification strategy. The symmetric phrase \"no effect\" conceals, in particular, the frequent split verdict: bounded in one direction, vacuous in the other. In ongoing work, I apply this framework to published null claims in leading finance journals, beginning with my own.",
-    "broker": "Cornell Univ",
-    "score": 4,
-    "summary": "该论文讨论金融研究中统计不显著结果的含义，强调区分“有界零假设”与“空洞零假设”，并提出报告最小重要效应量的标准。虽然对实证研究有方法论价值，但未涉及实战交易中的量化模型、机器学习或交易策略，因此实战价值较低。",
-    "fetch_date": "2026-09-02",
-    "id": "20260902_c78e23c3"
-  },
-  {
-    "title": "Pricing and Calibration of Bitcoin Inverse Options via the Rough Bergomi Model",
-    "url": "https://arxiv.org/pdf/2608.27575v1",
-    "source": "ArXiv",
-    "date": "2026-08-27",
-    "abstract": "Bitcoin inverse options, traded on the Deribit exchange and settled in the underlying cryptocurrency rather than in fiat currency, combine extreme and genuinely rough volatility dynamics with a non-linear, currency-dependent payoff structure. This paper develops and empirically validates a pricing and calibration framework for these instruments based on the rough Bergomi (rBergomi) model of Bayer, Friz and Gatheral (2016). We adapt the rBergomi dynamics to the inverse payoff max(S_T - K, 0)/S_T, and implement and compare three computational pipelines that differ in the simulation scheme for the driving fractional Brownian motion (coarse-grid Cholesky vs. the Hybrid Scheme of Bennedsen et al., 2017) and in the Monte Carlo pricing estimator (plain log-Euler vs. the Mixed Estimator of McCrickerd and Pakkanen, 2018). The model is calibrated to thirty implied volatility surfaces extracted from Deribit trade data between May 2022 and March 2025, spanning seven major market-stress events and nine baseline regimes stratified by volatility level. The Hybrid and Mixed pipeline is simultaneously the most accurate (mean unweighted RMSE 22.83 percentage points, versus 41.76 pp for the Cholesky and Euler benchmark) and the fastest (17 seconds per snapshot, a 20-fold speed-up). The calibrated Hurst exponent is consistently close to the lower bound of the search space (H approximately equal to 0.01--0.06 in most regimes), confirming that Bitcoin's volatility is genuinely rough, and calibration error scales approximately linearly with the level of at-the-money implied volatility (Pearson r = 0.89).",
-    "broker": "Cornell Univ",
-    "score": 9,
-    "summary": "本文针对Deribit交易所的比特币逆期权，在粗糙Bergomi模型下构建了校准和定价框架。该模型结合了极端粗糙波动率动态与非线性的加密货币结算payoff，并比较了三种基于不同分数布朗运动模拟方案和蒙特卡洛估计器的计算管线。利用2022年5月至2025年3月Deribit交易数据（涵盖七个市场压力事件和九种波动率基线状态）进行校准，混合方案在精度上显著优于Cholesky方案，实现了平均未加权RMSE 22.83个百分点。对实战而言，该方法可直接用于逆期权定价与风险对冲，并提供了高效计算方案，具有高实用价值。",
-    "fetch_date": "2026-09-01",
-    "id": "20260901_cea11a4e"
   }
 ]

@@ -1,4 +1,11 @@
 [
+  "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
+  "When is the deepest drawdown also the longest?",
+  "A New GAUSS Software Component for Implementing Dynamic Tests of Contagion with an Application",
+  "QBX: A Compiler for Well-Formed, Auditable Alpha Programs",
+  "Expected shortfall estimation and capital coverage under overlapping scenarios",
+  "Neural Network Methods in the 2BSDE Formalism for Solving the High-Dimensional Black--Scholes Equation with Transaction Costs",
+  "Admissible Portfolio Optimization: Information Constraints, Conditional Efficient Frontiers and the Price of Causal Identification",
   "Reinforcement learning in quantitative trading: A survey",
   "Algorithmic trading: winning strategies and their rationale",
   "Algorithmic trading",
@@ -2991,12 +2998,5 @@
   "Data-driven Feynman-Kac Discovery with Applications to Prediction and Data Generation",
   "Robust optimal consumption, investment and reinsurance for recursive preferences",
   "Value of Information-Enhanced Exploration in Bootstrapped DQN",
-  "Numerical valuation of European options under two-asset infinite-activity exponential Lévy models",
-  "Natural-gas storage modelling by deep reinforcement learning",
-  "How FinTech affects financial sustainability: Evidence from Chinese commercial banks using a three-stage network DEA-Malmquist model",
-  "An End-to-End Learning Approach for Solving Capacitated Location-Routing Problems",
-  "Option market making with hedging-induced market impact",
-  "Modeling Hawkish-Dovish Latent Beliefs in Multi-Agent Debate-Based LLMs for Monetary Policy Decision Classification",
-  "Adaptive Cooperative Transmission Design for Ultra-Reliable Low-Latency Communications via Deep Reinforcement Learning",
-  "Asset-liability management with Epstein-Zin utility under stochastic interest rate and unknown market price of risk"
+  "Numerical valuation of European options under two-asset infinite-activity exponential Lévy models"
 ]
