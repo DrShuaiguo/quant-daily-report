@@ -1,4 +1,15 @@
 [
+  "The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs",
+  "Drift-invariant kernels for discount curve models",
+  "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&P 500 Stocks Excluding Heavily Traded Names",
+  "Joint modelling of financial cost and carbon footprint in motor insurance claims: a BINAR(1) decision framework for circular auto parts adoption",
+  "TailDART: Compute-Efficient Foundation Models for Financial Time-Series Forecasting",
+  "Towards Robust Reinforcement Learning Market Making: Lessons from Loss Function Experimentation",
+  "Portfolio-aware scenario transfer of reserve movements: evidence from Lloyd's syndicates",
+  "Does a Trading Policy Need to Know What It Trades? Microstructure Invariance and Zero-Shot Transfer of Execution Policies",
+  "Price-Volume Correlations Are Always Zero",
+  "Shared AI Decision Interfaces and Credit Allocation in a Simulated Lending Market",
+  "Who Are a Firm's Economic Peers? Mapping a Latent Information Field with Language Models",
   "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
   "Information-Theoretic Model for the Growth Optimal Portfolio of Stocks",
   "Neural Realized Measures: Forecast-Supervised Intraday Aggregation for Volatility Forecasting",
@@ -2987,16 +2998,5 @@
   "Optimal Underreporting and Competitive Equilibrium",
   "Admissible Information Structures and the Non-Existence of Global Martingale Pricing",
   "On the Order Between the Standard Deviation and Gini Mean Difference",
-  "Optimal Power Allocation and Sub-Optimal Channel Assignment for Downlink NOMA Systems Using Deep Reinforcement Learning",
-  "Distributional Fitting and Tail Analysis of Lead-Time Compositions: Nights vs. Revenue on Airbnb",
-  "Autonomous Market Intelligence: Agentic AI Nowcasting Predicts Stock Returns",
-  "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
-  "The Physics of Price Discovery: Deconvolving Information, Volatility, and the Critical Breakdown of Signal during Retail Herding",
-  "Latent Variable Phillips Curve",
-  "Hybrid LLM and Higher-Order Quantum Approximate Optimization for CSA Collateral Management",
-  "Learning to Manage Investment Portfolios beyond Simple Utility Functions",
-  "Budget Forecasting and Integrated Strategic Planning for Leaders",
-  "Estimating cognitive biases with attention-aware inverse planning",
-  "Multi-Agent Reinforcement Learning for Market Making: Competition without Collusion",
-  "A mathematical study of the excess growth rate"
+  "Optimal Power Allocation and Sub-Optimal Channel Assignment for Downlink NOMA Systems Using Deep Reinforcement Learning"
 ]
